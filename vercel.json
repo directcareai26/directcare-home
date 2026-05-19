@@ -1,6 +1,18 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/old-home", "destination": "/", "permanent": true },
+    { "source": "/contact-old", "destination": "/contact-us", "permanent": true },
+    { "source": "/terms-and-conditions-old", "destination": "/terms-and-conditions", "permanent": true },
+    { "source": "/safety-policy", "destination": "/safety", "permanent": true },
+    { "source": "/about-us", "destination": "/about", "permanent": true },
+    { "source": "/contact", "destination": "/contact-us", "permanent": true },
+    { "source": "/journeys", "destination": "/products", "permanent": true },
+    { "source": "/blogs", "destination": "/", "permanent": false },
+    { "source": "/blog", "destination": "/", "permanent": false }
+  ],
   "rewrites": [
     { "source": "/start-hrt", "destination": "/hormone-replacement-therapy" },
     { "source": "/start-hrt/", "destination": "/hormone-replacement-therapy" },
@@ -10,6 +22,12 @@
 
     { "source": "/blood-labs", "destination": "/blood-test" },
     { "source": "/blood-labs/", "destination": "/blood-test" },
+
+    { "source": "/rpm", "destination": "/remote-patient-monitoring" },
+    { "source": "/rpm/", "destination": "/remote-patient-monitoring" },
+
+    { "source": "/patients", "destination": "/patient" },
+    { "source": "/patients/", "destination": "/patient" },
 
     { "source": "/womens-health", "destination": "https://women.directcare.ai/womens-health/" },
     { "source": "/womens-health/", "destination": "https://women.directcare.ai/womens-health/" },

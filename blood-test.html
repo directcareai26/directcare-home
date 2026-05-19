@@ -64,6 +64,9 @@
   h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
   h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
   p { margin: 0; color: var(--muted); }
+  /* Italic-emphasis pattern: bold sans + italic accent phrase */
+  .h-italic { font-style: italic; font-weight: 700; color: var(--brand-deep); letter-spacing: -0.02em; }
+  h1 .h-italic { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
   .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
   .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
@@ -224,7 +227,11 @@
   .price-amt .num { font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.03em; }
   .price-amt .per { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
   .price-amt .num small { font-size: 1.4rem; font-weight: 800; color: var(--muted); }
-  .price-foot { font-size: 0.84rem; color: var(--muted); margin-bottom: 24px; }
+  .price-foot { font-size: 0.84rem; color: var(--muted); margin-bottom: 18px; }
+  .price-reframe { margin: 0 0 22px; padding: 12px 14px; background: rgba(20,152,58,0.08); border: 1px solid rgba(20,152,58,0.22); border-radius: 12px; display: flex; flex-direction: column; gap: 2px; }
+  .reframe-was { font-size: 0.80rem; color: var(--muted); line-height: 1.35; }
+  .reframe-was s { color: rgba(91,77,101,0.75); }
+  .reframe-save { font-size: 0.92rem; font-weight: 800; color: var(--green); font-family: 'Manrope', sans-serif; letter-spacing: -0.01em; }
   .price-list { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
   .price-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); line-height: 1.5; }
   .price-list li svg { flex-shrink: 0; color: var(--green); margin-top: 3px; }
@@ -439,7 +446,7 @@
     <div class="hero-grid">
       <div class="hero-copy">
         <span class="eyebrow rise"><span class="dot"></span> Blood Labs · Biomarker Testing</span>
-        <h1 class="rise d1">Move Better.<br/>Feel Stronger.<br/><span class="accent">Live Fully.</span></h1>
+        <h1 class="rise d1">Move Better.<br/>Feel Stronger.<br/><span class="accent h-italic">Live Fully.</span></h1>
         <p class="hero-sub rise d2">Your health is personal — and your care should be too. DirectCare AI translates a full panel of <strong>clinician-ordered blood biomarkers</strong> into a plain-English roadmap: what's working, what's not, and the daily steps that actually move the needle.</p>
         <div class="hero-cta-row rise d3">
           <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">Start Your Journey →</a>
@@ -509,7 +516,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Your Path Forward</span>
-      <h2>Your Health Journey,<br/>Made for You.</h2>
+      <h2>Your Health Journey,<br/><span class="h-italic">Made for You.</span></h2>
       <p>With DirectCare AI and FullScript, your care continues long after the appointment ends. Each digital journey gives you clear steps to follow each day, helping you build momentum at your own pace.</p>
     </div>
     <div class="journey-grid">
@@ -540,7 +547,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Patient Experience</span>
-      <h2>How It Works</h2>
+      <h2>How it <span class="h-italic">actually</span> works.</h2>
       <p>Four simple steps. Zero waiting rooms. A complete picture of what's happening inside your body — and exactly what to do about it.</p>
     </div>
 
@@ -599,7 +606,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> What We Measure</span>
-      <h2>Eight systems. One full-body picture.</h2>
+      <h2>Eight systems. <span class="h-italic">One full-body picture.</span></h2>
       <p>From thyroid to testosterone, glucose to inflammation, vitamin D to iron stores — every panel covers the biomarkers that drive how you feel, perform, and age.</p>
     </div>
     <div class="biomarker-grid">
@@ -652,7 +659,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Not Your Average Checkup</span>
-      <h2>What your annual physical <em style="font-style: italic; color: var(--brand-deep); font-family: 'Manrope', sans-serif;">doesn't</em> tell you.</h2>
+      <h2>What your annual physical <span class="h-italic">doesn't</span> tell you.</h2>
       <p>Most primary-care annuals stop at ~30 basic markers. Every DirectCare AI Journey runs a 70–80 biomarker panel and a clinician writes you a plain-English plan you can actually follow.</p>
     </div>
 
@@ -762,8 +769,9 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Pricing</span>
-      <h2>Ready to Begin Your Journey?</h2>
+      <h2>Ready to begin <span class="h-italic">your</span> journey?</h2>
       <p>Choose the path that fits your goals. Every plan includes clinician interpretation, a personalized supplement protocol, lifestyle recommendations, and permanent access to your results.</p>
+      <p style="margin-top: 14px; font-size: 0.96rem; color: var(--ink);">À la carte at a typical lab + clinician, this is <strong>$1,200&ndash;$2,200+</strong>. At DirectCare AI: <strong style="color: var(--brand-deep);">$196&ndash;$346</strong>.</p>
     </div>
     <div class="price-grid">
       <!-- Plan 1: Essential -->
@@ -772,6 +780,10 @@
         <h3>Essential Journey</h3>
         <div class="price-amt"><span class="num">$196</span><span class="per">one-time</span></div>
         <div class="price-foot">Best for an annual baseline check-in</div>
+        <div class="price-reframe">
+          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$1,200</s></span>
+          <span class="reframe-save">You save ~$1,000</span>
+        </div>
         <ul class="price-list">
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>70 biomarkers</strong> — full CBC, CMP, thyroid, lipid, insulin, hsCRP &amp; homocysteine</span></li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
@@ -788,6 +800,10 @@
         <h3>Men's Health Journey</h3>
         <div class="price-amt"><span class="num">$296</span><span class="per">one-time</span></div>
         <div class="price-foot">Built around testosterone, metabolic &amp; cardiovascular health</div>
+        <div class="price-reframe">
+          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$1,800</s></span>
+          <span class="reframe-save">You save ~$1,500</span>
+        </div>
         <ul class="price-list">
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>75 biomarkers</strong> — full hormone panel (testosterone, DHEA, DHT, cortisol, SHBG), Free T3 &amp; Free T4</span></li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
@@ -804,6 +820,10 @@
         <h3>Women's Health Journey</h3>
         <div class="price-amt"><span class="num">$346</span><span class="per">one-time</span></div>
         <div class="price-foot">Hormones, thyroid, metabolic &amp; bone-health focused</div>
+        <div class="price-reframe">
+          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$2,200</s></span>
+          <span class="reframe-save">You save ~$1,850</span>
+        </div>
         <ul class="price-list">
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>80 biomarkers</strong> — full female hormones (estradiol, progesterone, FSH, LH, DHEA, cortisol, SHBG), Free T3 &amp; Free T4</span></li>
           <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
@@ -846,7 +866,7 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Common questions</span>
-      <h2>Everything you'd ask a clinician.</h2>
+      <h2>Everything you'd ask <span class="h-italic">a clinician.</span></h2>
       <p>Honest answers about labs, results, and what happens next. Have a question we missed? Message a clinician once you're inside.</p>
     </div>
     <div class="faq-wrap">
@@ -883,7 +903,7 @@
   <div class="container">
     <div class="final-cta" id="final-cta">
       <span class="eyebrow on-dark"><span class="dot"></span> Start your health journey</span>
-      <h2>Modern healthcare.<br/>Directly to you.</h2>
+      <h2>Modern healthcare.<br/><span class="h-italic" style="background: linear-gradient(135deg, #f7e8ff 0%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">Directly to you.</span></h2>
       <p>Get a clinician-built plan tied to your real biomarkers. Order in minutes — results, interpretation, and protocol delivered to your portal.</p>
       <a href="#pricing" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Find your panel →</a>
       <form class="subscribe-row" onsubmit="event.preventDefault(); var b = this.querySelector('button'); b.textContent='Thanks!'; setTimeout(function(){ b.textContent='Subscribe'; }, 2400);">

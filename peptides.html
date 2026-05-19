@@ -132,6 +132,16 @@
   .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
   .drawer-cta { margin-top: 20px; }
 
+  /* Coming-soon CTA — non-functional buttons */
+  .btn-soon { pointer-events: none; cursor: not-allowed; opacity: 0.88; }
+  .btn-soon.btn-primary { background: linear-gradient(135deg, #b388e0 0%, #8d5fc7 100%); box-shadow: 0 8px 22px -8px rgba(118,43,164,0.30); }
+  .btn-soon.btn-ghost { background: rgba(40,26,49,0.04); color: var(--ink); border: 1px dashed rgba(40,26,49,0.18); }
+  .btn-soon.btn-light-on-dark { background: rgba(255,255,255,0.92); color: var(--brand-darker); }
+  .btn-soon::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.6; animation: soon-pulse 1.8s ease-in-out infinite; margin-right: 2px; }
+  @keyframes soon-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+  .soon-banner { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; background: linear-gradient(135deg, rgba(175,75,237,0.10), rgba(232,111,196,0.10)); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-darker); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
+  .soon-banner .dot-live { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); animation: soon-pulse 1.6s ease-in-out infinite; }
+
   /* BUTTONS */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 1rem; letter-spacing: -0.005em; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; text-decoration: none; }
   .btn-primary { background: var(--brand); color: white; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
@@ -347,7 +357,7 @@
       <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
       </a>
-      <a class="btn btn-primary nav-cta" href="https://www.directcare.ai/#offerings" style="padding: 12px 22px; font-size: 0.92rem;">Get Started &rarr;</a>
+      <button type="button" class="btn btn-primary btn-soon nav-cta" disabled aria-disabled="true" style="padding: 12px 22px; font-size: 0.92rem;">Coming Soon</button>
       <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
         <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
@@ -381,7 +391,7 @@
   <a href="/supplements/">Supplements</a>
   <a href="/blood-test/">Blood Labs</a>
   <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
-  <a class="btn btn-primary btn-primary-xl drawer-cta" style="width:100%;" href="https://www.directcare.ai/#offerings">Get Started &rarr;</a>
+  <button type="button" class="btn btn-primary btn-primary-xl btn-soon drawer-cta" disabled aria-disabled="true" style="width:100%;">Coming Soon</button>
 </div>
 
 <!-- HERO -->
@@ -393,7 +403,7 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow rise"><span class="dot"></span> Peptide Therapy · Clinician-Guided</span>
+        <span class="soon-banner rise"><span class="dot-live"></span> Peptide Therapy · Coming Soon</span>
         <h1 class="rise d1">Targeted peptides for<br/><span class="accent">recovery, sleep &amp; longevity.</span></h1>
         <p class="hero-sub rise d2">Personalized, clinician-prescribed peptide protocols — <strong>BPC-157, ipamorelin, sermorelin, GHK-Cu, PT-141</strong> and more — for tissue repair, growth hormone optimization, sexual function, skin and hair, and metabolic health.</p>
         <div class="hero-answer rise d2" aria-label="Plain-English answer">
@@ -401,8 +411,8 @@
           <div><strong>What are peptides?</strong> Short chains of amino acids that signal your body to do specific things — release growth hormone, accelerate tissue repair, modulate libido. Targeted, dose-controlled, and clinician-supervised.</div>
         </div>
         <div class="hero-cta-row rise d3" style="margin-top:24px;">
-          <a href="#peptide-list" class="btn btn-primary btn-primary-xl pulse-glow">See our peptide protocols →</a>
-          <a href="https://directcareai.portal.tellescope.com/" class="btn btn-ghost btn-primary-xl">Talk to a clinician</a>
+          <button type="button" class="btn btn-primary btn-primary-xl btn-soon" disabled aria-disabled="true">Coming Soon</button>
+          <button type="button" class="btn btn-ghost btn-primary-xl btn-soon" disabled aria-disabled="true">Coming Soon</button>
         </div>
         <div class="hero-trust rise d4">
           <span class="hero-trust-item">
@@ -608,7 +618,7 @@
           </li>
         </ul>
         <div style="margin-top:30px;">
-          <a href="https://directcareai.portal.tellescope.com/" class="btn btn-primary btn-primary-xl">Talk to a clinician →</a>
+          <button type="button" class="btn btn-primary btn-primary-xl btn-soon" disabled aria-disabled="true">Coming Soon</button>
         </div>
       </div>
     </div>
@@ -645,7 +655,7 @@
       <span class="eyebrow"><span class="dot"></span> What is DirectCare AI?</span>
       <h2><span class="accent">A clinician-guided care model,</span> built for the way you actually live.</h2>
       <p>DirectCare AI is a HIPAA-compliant telehealth platform connecting patients with US-licensed providers for peptide therapy, hormone replacement, weight loss, sexual health, hair regrowth, blood labs, and chronic condition care — coordinated end-to-end, from intake to refills.</p>
-      <a href="/" class="btn btn-ghost btn-primary-xl" style="margin-top:6px;">See everything we treat →</a>
+      <button type="button" class="btn btn-ghost btn-primary-xl btn-soon" disabled aria-disabled="true" style="margin-top:6px;">Coming Soon</button>
     </div>
   </div>
 </section>
@@ -707,11 +717,11 @@
 <section class="section">
   <div class="container">
     <div class="final-cta">
-      <span class="eyebrow on-dark"><span class="dot"></span> Ready?</span>
-      <h2>Talk to a clinician<br/>about peptide therapy.</h2>
-      <p>No credit card to start. If a peptide protocol is right for you, you'll be routed to a personalized intake. If it isn't, we'll tell you honestly.</p>
-      <a href="https://directcareai.portal.tellescope.com/" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Talk to a clinician →</a>
-      <div class="meta">Your info is private and HIPAA-protected.</div>
+      <span class="eyebrow on-dark"><span class="dot"></span> Launching soon</span>
+      <h2>Peptide therapy is<br/>almost ready.</h2>
+      <p>Our peptide program is in final clinical review. We'll announce availability soon — check back, or explore everything we already treat.</p>
+      <button type="button" class="btn btn-light-on-dark btn-primary-xl btn-soon" disabled aria-disabled="true" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Coming Soon</button>
+      <div class="meta">Your info will stay private and HIPAA-protected when we open enrollment.</div>
     </div>
   </div>
 </section>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>Terms of Use | DirectCare AI</title>
+<meta name="description" content="DirectCare AI Terms of Use — your rights and responsibilities when using the DirectCare AI website, mobile applications, and related products and services. Includes mandatory arbitration agreement and class action waiver." />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="Terms of Use | DirectCare AI" />
+<meta property="og:url" content="https://www.directcare.ai/terms-and-conditions" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff; --soft: #fbf5fe; --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2; --lavender-200: #D185FF;
+    --ink: #281A31; --muted: #5b4d65; --line: rgba(40,26,49,0.08);
+    --brand: #af4bed; --brand-deep: #9043bf; --brand-darker: #762ba4; --brand-text: #44215A;
+    --gold: #d99b1f;
+    --radius: 18px; --radius-lg: 28px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  a { color: var(--brand-deep); text-decoration: underline; text-decoration-color: rgba(175,75,237,0.3); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--brand); }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.2; color: var(--ink); }
+  h1 { font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: 16px; letter-spacing: -0.03em; }
+  h2 { font-size: clamp(1.4rem, 2.2vw, 1.7rem); margin: 56px 0 14px; }
+  h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 700; }
+  p { margin: 0 0 16px; color: var(--ink); }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; color: var(--ink); }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+
+  /* ============ NAV (matches canonical) ============ */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; text-decoration: none; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "▾"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); text-decoration: none; }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); text-decoration: none; }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); padding: 0; }
+  @media (max-width: 980px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; text-decoration: none; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+
+  /* ============ DOC HEADER ============ */
+  .doc-hero { padding: 56px 0 32px; background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); border-bottom: 1px solid var(--lavender-100); }
+  .doc-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); margin-bottom: 18px; }
+  .doc-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .doc-updated { color: var(--muted); font-size: 0.92rem; margin-top: 8px; }
+
+  /* ============ DOC CONTENT ============ */
+  .doc { padding: 48px 0 80px; }
+  .doc-toc { background: var(--soft); border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 28px; margin: 0 0 40px; }
+  .doc-toc h3 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-deep); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 12px; }
+  .doc-toc ol { column-count: 2; column-gap: 32px; margin: 0; padding-left: 0; list-style: none; }
+  .doc-toc ol li { break-inside: avoid; margin-bottom: 6px; font-size: 0.9rem; }
+  .doc-toc a { color: var(--ink); text-decoration: none; }
+  .doc-toc a:hover { color: var(--brand); }
+  @media (max-width: 640px) { .doc-toc ol { column-count: 1; } }
+
+  .doc-section { scroll-margin-top: 88px; }
+  .doc-section + .doc-section { margin-top: 20px; }
+  .doc h2 .num { color: var(--brand-deep); font-weight: 800; margin-right: 12px; font-size: 0.9em; }
+  .doc-callout { background: rgba(175,75,237,0.06); border-left: 3px solid var(--brand); padding: 18px 22px; border-radius: 0 var(--radius) var(--radius) 0; margin: 24px 0; }
+  .doc-callout p:last-child { margin-bottom: 0; }
+  .doc-callout strong { color: var(--brand-darker); }
+  .doc-emerg { background: linear-gradient(135deg, rgba(208,69,69,0.06), rgba(175,75,237,0.06)); border-left: 4px solid #d04545; padding: 18px 22px; border-radius: 0 var(--radius) var(--radius) 0; margin: 0 0 32px; }
+  .doc-emerg strong { color: #c53b3b; }
+
+  .doc-divider { border: 0; border-top: 1px solid var(--lavender-100); margin: 40px 0; }
+
+  .doc address { font-style: normal; line-height: 1.7; color: var(--ink); margin: 0 0 16px; }
+
+  /* ============ FOOTER (matches canonical) ============ */
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; margin-top: 40px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; color: var(--muted); margin-bottom: 16px; }
+  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 18px; }
+  .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; text-decoration: none; transition: color .15s ease; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+
+  @media (max-width: 760px) {
+    .doc-hero { padding: 40px 0 24px; }
+    .doc { padding: 32px 0 60px; }
+    footer { padding: 48px 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/hormone-replacement-therapy">HRT</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/peptides">Peptides</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/womens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/peptides">Peptides</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/mens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
+        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details open>
+    <summary>Women's Health</summary>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/peptides">Peptides</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/womens-health/">View All &rarr;</a>
+  </details>
+  <details>
+    <summary>Men's Health</summary>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/peptides">Peptides</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/mens-health/">View All &rarr;</a>
+  </details>
+  <a href="/supplements/">Supplements</a>
+  <a href="/blood-test/">Blood Labs</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
+</div>
+
+<!-- ============ DOC HERO ============ -->
+<header class="doc-hero">
+  <div class="container">
+    <span class="doc-eyebrow"><span class="dot"></span> Legal</span>
+    <h1>Terms of Use</h1>
+    <p class="doc-updated">Last Updated: April 7, 2026</p>
+  </div>
+</header>
+
+<!-- ============ DOC BODY ============ -->
+<main class="doc">
+  <div class="container">
+
+    <div class="doc-emerg">
+      <p><strong>IMPORTANT:</strong> DirectCare AI is intended only for certain non-emergency healthcare-related services. If you believe you are experiencing a medical emergency, call <strong>911</strong> immediately or go to the nearest emergency room. Do not use the Platform for urgent or emergency medical needs.</p>
+    </div>
+
+    <p>These Terms of Use, together with the <a href="/privacy-policy">DirectCare AI Privacy Policy</a> and any additional consents or disclosures presented to you in connection with specific services, govern your access to and use of the DirectCare AI website, mobile applications, and related products, features, content, communications, and services (collectively, the &ldquo;Platform&rdquo;).</p>
+
+    <p>DirectCare AI (&ldquo;DirectCare AI,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is a trade name of Meta Digital Developers LLC, a Wyoming limited liability company, with a principal place of business at:</p>
+
+    <address>
+      30 N Gould St, Ste N<br/>
+      Sheridan, WY 82801<br/>
+      United States
+    </address>
+
+    <p>By accessing or using the Platform, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use.</p>
+
+    <div class="doc-callout">
+      <p><strong>IMPORTANT DISPUTE NOTICE:</strong> These Terms contain a <strong>mandatory arbitration agreement</strong>, a <strong>class action waiver</strong>, and a <strong>jury trial waiver</strong>. Please read the Dispute Resolution section carefully.</p>
+    </div>
+
+    <!-- Table of contents -->
+    <div class="doc-toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#sec-1">I. Introduction</a></li>
+        <li><a href="#sec-2">II. Changes to These Terms</a></li>
+        <li><a href="#sec-3">III. Description of the Platform</a></li>
+        <li><a href="#sec-4">IV. Eligibility</a></li>
+        <li><a href="#sec-5">V. Availability</a></li>
+        <li><a href="#sec-6">VI. Registration and Accounts</a></li>
+        <li><a href="#sec-7">VII. Information You Submit</a></li>
+        <li><a href="#sec-8">VIII. Your Responsibilities</a></li>
+        <li><a href="#sec-9">IX. Prohibited Conduct</a></li>
+        <li><a href="#sec-10">X. Limited License</a></li>
+        <li><a href="#sec-11">XI. No Emergency Services</a></li>
+        <li><a href="#sec-12">XII. Telehealth and Clinical Consents</a></li>
+        <li><a href="#sec-13">XIII. Payments, Fees, and Refunds</a></li>
+        <li><a href="#sec-14">XIV. Privacy</a></li>
+        <li><a href="#sec-15">XV. Intellectual Property</a></li>
+        <li><a href="#sec-16">XVI. Third-Party Services</a></li>
+        <li><a href="#sec-17">XVII. Disclaimer of Warranties</a></li>
+        <li><a href="#sec-18">XVIII. Limitation of Liability</a></li>
+        <li><a href="#sec-19">XIX. Indemnification</a></li>
+        <li><a href="#sec-20">XX. Suspension and Termination</a></li>
+        <li><a href="#sec-21">XXI. Dispute Resolution</a></li>
+        <li><a href="#sec-22">XXII. Copyright Complaints</a></li>
+        <li><a href="#sec-23">XXIII. Miscellaneous</a></li>
+        <li><a href="#sec-24">XXIV. Contact Information</a></li>
+      </ol>
+    </div>
+
+    <section class="doc-section" id="sec-1">
+      <h2><span class="num">I.</span>Introduction</h2>
+      <p>These Terms of Use (&ldquo;Terms&rdquo;) describe your rights and responsibilities when using the Platform.</p>
+      <p>In these Terms, &ldquo;you&rdquo; and &ldquo;your&rdquo; mean the individual accessing or using the Platform. By using the Platform, you agree to these Terms and our <a href="/privacy-policy">Privacy Policy</a>. If you do not agree, you must not access or use the Platform.</p>
+      <p>You agree that electronic communications, signatures, disclosures, notices, and records satisfy any legal requirement that such communications be in writing, to the extent permitted by law. You also consent to receive communications from us electronically, including by email, SMS, in-app messaging, and other digital means, subject to applicable law and your communication preferences.</p>
+    </section>
+
+    <section class="doc-section" id="sec-2">
+      <h2><span class="num">II.</span>Changes to These Terms</h2>
+      <p>We may update these Terms from time to time in our discretion. When we do, we will post the revised version on the Platform and update the &ldquo;Last Updated&rdquo; date above. Your continued use of the Platform after revised Terms become effective constitutes your acceptance of the updated Terms, except where additional notice or consent is required by law.</p>
+      <p>If you do not agree to any revised Terms, you must stop using the Platform.</p>
+    </section>
+
+    <section class="doc-section" id="sec-3">
+      <h2><span class="num">III.</span>Description of the Platform</h2>
+      <p>The Platform is a technology and administrative platform that may support healthcare-related services, including: collection and organization of information you provide for healthcare-related purposes; scheduling, intake, communications, billing support, and other administrative functions; technology tools that facilitate access to independent licensed healthcare providers or clinical organizations; support for prescription fulfillment coordination, laboratory or diagnostic coordination, and device-related workflows where applicable; and remote monitoring, digital communications, and related support services.</p>
+      <p>The Platform may collect and transmit information you provide, including health-related information, for review by independent licensed healthcare providers or affiliated clinical organizations involved in your care.</p>
+      <p>You understand and agree that any diagnosis, treatment decision, prescription decision, medical advice, or other clinical service is made solely by the applicable licensed healthcare provider or clinical entity in their independent professional judgment.</p>
+      <p>DirectCare AI does not practice medicine or pharmacy, does not provide medical advice, and does not control clinical decision-making. Licensed medical services, if any, are provided by independent providers or provider organizations, which may include OpenLoop or other independent clinical partners involved in care delivery.</p>
+      <p>DirectCare AI is not a pharmacy, laboratory, or device manufacturer, and does not itself dispense medications or perform laboratory services.</p>
+    </section>
+
+    <section class="doc-section" id="sec-4">
+      <h2><span class="num">IV.</span>Eligibility</h2>
+      <p>To use the Platform, you must:</p>
+      <ul>
+        <li>be at least 18 years old;</li>
+        <li>reside in the United States and in a state or jurisdiction where the relevant services are available;</li>
+        <li>have legal capacity to enter into these Terms;</li>
+        <li>provide truthful, accurate, and complete information; and</li>
+        <li>have compatible internet access, software, and device capabilities.</li>
+      </ul>
+      <p>Meeting these eligibility requirements does not guarantee that any particular service will be available to you or appropriate for you. Access to healthcare-related services may depend on provider judgment, licensing limitations, state-by-state availability, medical appropriateness, and other requirements.</p>
+    </section>
+
+    <section class="doc-section" id="sec-5">
+      <h2><span class="num">V.</span>Availability</h2>
+      <p>The Platform and some services may not be available at all times, in all locations, or for all users. We may change, suspend, restrict, or discontinue any aspect of the Platform at any time, with or without notice, subject to applicable law.</p>
+    </section>
+
+    <section class="doc-section" id="sec-6">
+      <h2><span class="num">VI.</span>Registration and Accounts</h2>
+      <p>Some parts of the Platform may require registration. When you create an account, you agree to:</p>
+      <ul>
+        <li>provide accurate, current, and complete information;</li>
+        <li>keep your account information updated;</li>
+        <li>maintain the confidentiality of your login credentials;</li>
+        <li>use only your own account; and</li>
+        <li>notify us promptly of any unauthorized use of your account or any suspected security incident.</li>
+      </ul>
+      <p>You are responsible for all activity that occurs under your account to the extent caused by your failure to safeguard your credentials or comply with these Terms.</p>
+      <p>We reserve the right to suspend or terminate access to your account if we reasonably believe the information you provided is inaccurate, incomplete, misleading, fraudulent, or being used in violation of these Terms.</p>
+    </section>
+
+    <section class="doc-section" id="sec-7">
+      <h2><span class="num">VII.</span>Information You Submit</h2>
+      <p>You may submit information through the Platform, including account information, communications, forms, questionnaires, recordings, images, device data, and health-related information (&ldquo;User Data&rdquo;).</p>
+      <p>You represent and warrant that all User Data you provide is accurate, current, complete, and submitted by you or with lawful authority.</p>
+      <p>You acknowledge that the completeness and accuracy of User Data may affect the quality, availability, or appropriateness of services provided through the Platform.</p>
+      <p>You grant DirectCare AI a limited, non-exclusive, worldwide right to use, host, process, transmit, store, reproduce, and display User Data as necessary to:</p>
+      <ul>
+        <li>operate and maintain the Platform;</li>
+        <li>provide requested services;</li>
+        <li>communicate with you;</li>
+        <li>support care coordination and administrative workflows;</li>
+        <li>comply with legal, regulatory, audit, and security obligations; and</li>
+        <li>improve, develop, test, and support Platform features and services, subject to applicable law and our Privacy Policy.</li>
+      </ul>
+      <p>This license does not transfer ownership of your User Data to DirectCare AI.</p>
+    </section>
+
+    <section class="doc-section" id="sec-8">
+      <h2><span class="num">VIII.</span>Your Responsibilities</h2>
+      <p>As a condition of using the Platform, you agree that:</p>
+      <ul>
+        <li>the information you provide is truthful and complete;</li>
+        <li>you will use the Platform only for lawful purposes and only for yourself unless expressly authorized otherwise;</li>
+        <li>you will not misrepresent your identity, medical history, symptoms, eligibility, or payment information;</li>
+        <li>you will promptly update materially inaccurate or outdated information;</li>
+        <li>you will comply with applicable instructions, warnings, and safety information associated with any service, prescription, or device; and</li>
+        <li>you will seek appropriate in-person care or emergency care when clinically necessary.</li>
+      </ul>
+      <p>You understand that withholding requested information may limit or prevent access to services.</p>
+    </section>
+
+    <section class="doc-section" id="sec-9">
+      <h2><span class="num">IX.</span>Prohibited Conduct</h2>
+      <p>You may not:</p>
+      <ul>
+        <li>use the Platform for any unlawful, fraudulent, abusive, or unauthorized purpose;</li>
+        <li>use the Platform on behalf of another person without appropriate authority;</li>
+        <li>interfere with or disrupt the Platform or its security features;</li>
+        <li>attempt to gain unauthorized access to systems, accounts, or data;</li>
+        <li>scrape, harvest, crawl, copy, or monitor Platform content or data by automated means except as expressly permitted;</li>
+        <li>upload malware, malicious code, or harmful content;</li>
+        <li>reverse engineer, decompile, or attempt to derive source code from the Platform except where prohibited by law;</li>
+        <li>use the Platform to develop or support a competing product or service;</li>
+        <li>remove or alter copyright, trademark, or other proprietary notices; or</li>
+        <li>use a modified, compromised, or jailbroken device in a manner that could impair Platform security or expose sensitive data.</li>
+      </ul>
+      <p>We may investigate violations and take any action we deem appropriate, including suspension, termination, reporting to authorities, or legal action.</p>
+    </section>
+
+    <section class="doc-section" id="sec-10">
+      <h2><span class="num">X.</span>Limited License</h2>
+      <p>Subject to your compliance with these Terms, DirectCare AI grants you a personal, limited, revocable, non-exclusive, non-transferable license to access and use the Platform for your personal, non-commercial use.</p>
+      <p>Except for this limited license, no right, title, or interest in the Platform or any content is transferred to you. All rights not expressly granted are reserved by DirectCare AI and its licensors.</p>
+    </section>
+
+    <section class="doc-section" id="sec-11">
+      <h2><span class="num">XI.</span>No Emergency Services; No Comprehensive Medical Care</h2>
+      <p>The Platform is not an emergency service and is not a substitute for emergency care, in-person evaluation where needed, or an ongoing relationship with a primary care provider.</p>
+      <p>The Platform is not intended to provide comprehensive medical care for all conditions. <strong>If you have a medical emergency, call 911 immediately.</strong></p>
+      <p>Always seek the advice of a qualified healthcare professional regarding medical questions, diagnoses, medications, or treatment decisions.</p>
+    </section>
+
+    <section class="doc-section" id="sec-12">
+      <h2><span class="num">XII.</span>Telehealth and Clinical Consents</h2>
+      <p>If you access telehealth or provider services through the Platform, you may be required to review and agree to additional informed consent documents, provider disclosures, financial responsibility terms, or state-specific notices.</p>
+      <p>Your use of the Platform in connection with telehealth services is also subject to any applicable provider-facing or clinical consent documentation presented to you at the time of care.</p>
+    </section>
+
+    <section class="doc-section" id="sec-13">
+      <h2><span class="num">XIII.</span>Payments, Fees, and Refunds</h2>
+      <p>If you purchase services or submit information in connection with paid services, you agree to pay all applicable charges.</p>
+      <p>By providing payment information, you authorize DirectCare AI and its third-party payment processors to charge the applicable payment method for authorized fees, including fees for platform-related services, provider services, devices, subscriptions, and other amounts disclosed to you at the time of purchase.</p>
+      <p>Payment processing may be performed by third-party processors such as Stripe.</p>
+      <p>Unless otherwise stated:</p>
+      <ul>
+        <li>consultation or provider fees already earned are non-refundable;</li>
+        <li>prescription products are generally not returnable once dispensed;</li>
+        <li>diagnostic, laboratory, or third-party fulfillment charges may be subject to separate terms; and</li>
+        <li>refunds, if any, are governed by the specific service terms or applicable law.</li>
+      </ul>
+      <p>You are responsible for all amounts owed unless otherwise expressly stated. Insurance coverage, reimbursement, HSA/FSA eligibility, or out-of-network reimbursement is not guaranteed.</p>
+      <p>If your payment method fails, expires, or is declined, we may suspend services until payment is successfully processed.</p>
+    </section>
+
+    <section class="doc-section" id="sec-14">
+      <h2><span class="num">XIV.</span>Privacy</h2>
+      <p>Our collection, use, disclosure, and protection of information is described in the <a href="/privacy-policy">DirectCare AI Privacy Policy</a>. Certain health information may also be governed by a separate Notice of Privacy Practices where required.</p>
+      <p>By using the Platform, you acknowledge that you have reviewed the Privacy Policy.</p>
+    </section>
+
+    <section class="doc-section" id="sec-15">
+      <h2><span class="num">XV.</span>Intellectual Property</h2>
+      <p>The Platform, including its software, design, text, graphics, logos, interfaces, audiovisual content, workflows, compilations, and functionality, is owned by DirectCare AI or its licensors and is protected by applicable intellectual property laws.</p>
+      <p>Any feedback, suggestions, or ideas you provide regarding the Platform may be used by DirectCare AI without restriction or compensation to you.</p>
+      <p>&ldquo;DirectCare AI&rdquo; and related names, logos, and branding are trademarks or trade dress of DirectCare AI or its affiliates or licensors. You may not use them without prior written permission.</p>
+    </section>
+
+    <section class="doc-section" id="sec-16">
+      <h2><span class="num">XVI.</span>Third-Party Services and Links</h2>
+      <p>The Platform may contain links to or integrations with third-party websites, tools, pharmacies, labs, device companies, analytics services, payment processors, or other services. We do not control and are not responsible for third-party services, content, products, policies, or practices.</p>
+      <p>Your use of third-party services is at your own risk and may be subject to separate terms and privacy policies.</p>
+    </section>
+
+    <section class="doc-section" id="sec-17">
+      <h2><span class="num">XVII.</span>Disclaimer of Warranties</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE PLATFORM AND ALL RELATED CONTENT AND SERVICES ARE PROVIDED &ldquo;AS IS&rdquo; AND &ldquo;AS AVAILABLE,&rdquo; WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</p>
+      <p>DIRECTCARE AI DISCLAIMS ALL IMPLIED WARRANTIES, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, AVAILABILITY, SECURITY, AND UNINTERRUPTED OPERATION.</p>
+      <p>WE DO NOT WARRANT THAT THE PLATFORM WILL BE ERROR-FREE, SECURE, UNINTERRUPTED, TIMELY, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED.</p>
+      <p>NO INFORMATION PROVIDED THROUGH THE PLATFORM CREATES ANY WARRANTY UNLESS EXPRESSLY STATED IN WRITING.</p>
+    </section>
+
+    <section class="doc-section" id="sec-18">
+      <h2><span class="num">XVIII.</span>Limitation of Liability</h2>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, DIRECTCARE AI AND ITS OFFICERS, DIRECTORS, EMPLOYEES, AFFILIATES, CONTRACTORS, LICENSORS, SERVICE PROVIDERS, AND AGENTS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, GOODWILL, OR BUSINESS INTERRUPTION, ARISING OUT OF OR RELATING TO YOUR USE OF OR INABILITY TO USE THE PLATFORM.</p>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE TOTAL AGGREGATE LIABILITY OF DIRECTCARE AI FOR ALL CLAIMS ARISING OUT OF OR RELATING TO THESE TERMS OR THE PLATFORM WILL NOT EXCEED THE GREATER OF: (A) THE AMOUNT YOU PAID TO DIRECTCARE AI FOR USE OF THE PLATFORM IN THE THREE MONTHS BEFORE THE EVENT GIVING RISE TO THE CLAIM; OR (B) ONE HUNDRED U.S. DOLLARS ($100).</p>
+      <p>NOTHING IN THESE TERMS EXCLUDES LIABILITY THAT CANNOT BE EXCLUDED UNDER APPLICABLE LAW.</p>
+      <p>DIRECTCARE AI IS NOT LIABLE FOR THE ACTS, OMISSIONS, OR CLINICAL JUDGMENT OF INDEPENDENT HEALTHCARE PROVIDERS, PHARMACIES, LABORATORIES, OR OTHER THIRD PARTIES.</p>
+    </section>
+
+    <section class="doc-section" id="sec-19">
+      <h2><span class="num">XIX.</span>Indemnification</h2>
+      <p>To the extent permitted by law, you agree to defend, indemnify, and hold harmless DirectCare AI and its officers, directors, employees, affiliates, contractors, licensors, service providers, and agents from and against third-party claims, liabilities, damages, judgments, awards, losses, costs, and expenses, including reasonable attorneys&rsquo; fees, arising out of or relating to:</p>
+      <ul>
+        <li>your violation of these Terms;</li>
+        <li>your misuse of the Platform;</li>
+        <li>your violation of applicable law; or</li>
+        <li>your infringement of a third party&rsquo;s rights.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-20">
+      <h2><span class="num">XX.</span>Suspension and Termination</h2>
+      <p>We may suspend, limit, or terminate your access to the Platform at any time if we believe you have violated these Terms, pose a security or fraud risk, provided false information, or if continued access could create legal, operational, or clinical risk.</p>
+      <p>You may stop using the Platform at any time.</p>
+      <p>Sections that by their nature should survive termination will survive, including provisions relating to intellectual property, disclaimers, limitations of liability, indemnification, dispute resolution, and any payment obligations accrued before termination.</p>
+      <p>We may retain or delete records in accordance with applicable law, retention requirements, contractual obligations, and internal policies.</p>
+    </section>
+
+    <section class="doc-section" id="sec-21">
+      <h2><span class="num">XXI.</span>Dispute Resolution; Arbitration; Class Action Waiver</h2>
+      <div class="doc-callout">
+        <p><strong>Please read this section carefully. It affects your legal rights.</strong></p>
+      </div>
+
+      <h3>A. Informal Resolution First</h3>
+      <p>Before starting arbitration or filing a claim, you and DirectCare AI agree to try to resolve disputes informally first. To begin this process, either party must send written notice describing the dispute and requested relief.</p>
+      <p>Notices to DirectCare AI must be sent to:</p>
+      <address>
+        DirectCare AI<br/>
+        30 N Gould St, Ste N<br/>
+        Sheridan, WY 82801<br/>
+        <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a><br/>
+        <a href="mailto:contact@directcareai.com">contact@directcareai.com</a>
+      </address>
+      <p>If the dispute is not resolved within 60 days after receipt of notice, either party may pursue arbitration or another permitted remedy.</p>
+
+      <h3>B. Agreement to Arbitrate</h3>
+      <p>Except for disputes that qualify for small claims court or claims relating to intellectual property, you and DirectCare AI agree that any dispute, claim, or controversy arising out of or relating to these Terms, the Platform, your account, payments, communications, or your relationship with DirectCare AI will be resolved by final and binding arbitration on an individual basis.</p>
+
+      <h3>C. No Class Actions or Jury Trials</h3>
+      <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, YOU AND DIRECTCARE AI WAIVE ANY RIGHT TO A JURY TRIAL AND ANY RIGHT TO PARTICIPATE IN A CLASS ACTION, COLLECTIVE ACTION, MASS ACTION, PRIVATE ATTORNEY GENERAL ACTION, OR OTHER REPRESENTATIVE PROCEEDING.</p>
+      <p>Arbitration will proceed only on an individual basis unless applicable law requires otherwise.</p>
+
+      <h3>D. Arbitration Rules and Forum</h3>
+      <p>Unless otherwise required by law, arbitration will be administered by National Arbitration and Mediation (&ldquo;NAM&rdquo;) under its applicable rules then in effect. If NAM is unavailable, the parties will agree on another administrator, or a court may appoint one.</p>
+      <p>The Federal Arbitration Act governs this arbitration provision to the fullest extent permitted by law.</p>
+      <p>The arbitrator will have authority to resolve disputes relating to the interpretation, applicability, and enforceability of this arbitration section, except that a court of competent jurisdiction will decide issues specifically reserved to courts under applicable law.</p>
+
+      <h3>E. Opt-Out Right</h3>
+      <p>You may opt out of this arbitration provision by sending written notice within 30 days after you first accept these Terms. Your notice must include your full name, contact information, and a clear statement that you wish to opt out of arbitration.</p>
+
+      <h3>F. Small Claims and Injunctive Relief</h3>
+      <p>Either party may bring an individual claim in small claims court if the claim qualifies. Either party may also seek temporary or preliminary injunctive relief in court where necessary to protect rights pending arbitration.</p>
+
+      <h3>G. Severability</h3>
+      <p>If any part of this arbitration section is found unenforceable, the remainder will remain in effect to the fullest extent permitted by law, except that if the class action waiver is found unenforceable as to a particular claim and that determination is not subject to appeal, that claim will proceed in court and not in arbitration.</p>
+    </section>
+
+    <section class="doc-section" id="sec-22">
+      <h2><span class="num">XXII.</span>Copyright Complaints</h2>
+      <p>If you believe that content on the Platform infringes your copyright, you may submit a notice to:</p>
+      <address>
+        <a href="mailto:contact@directcareai.com">contact@directcareai.com</a>
+      </address>
+      <p>Your notice should include:</p>
+      <ul>
+        <li>your physical or electronic signature;</li>
+        <li>identification of the copyrighted work claimed to be infringed;</li>
+        <li>identification of the allegedly infringing material and its location;</li>
+        <li>your contact information;</li>
+        <li>a statement that you have a good-faith belief the use is unauthorized; and</li>
+        <li>a statement, under penalty of perjury, that the information in your notice is accurate and that you are authorized to act on behalf of the copyright owner.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-23">
+      <h2><span class="num">XXIII.</span>Miscellaneous</h2>
+      <p>These Terms constitute the entire agreement between you and DirectCare AI regarding the Platform, except for any additional terms, provider consents, or service-specific agreements that apply to particular services.</p>
+      <p>If any provision is held invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
+      <p>Our failure to enforce any provision is not a waiver of that provision or any other provision.</p>
+      <p>You may not assign these Terms without our prior written consent. We may assign these Terms in connection with a merger, acquisition, financing, corporate reorganization, or sale of assets.</p>
+      <p>These Terms are drafted in English. Any translated version is provided for convenience only.</p>
+    </section>
+
+    <section class="doc-section" id="sec-24">
+      <h2><span class="num">XXIV.</span>Contact Information</h2>
+      <p>If you have questions about these Terms, contact:</p>
+      <address>
+        DirectCare AI<br/>
+        30 N Gould St, Ste N<br/>
+        Sheridan, WY 82801<br/>
+        <a href="mailto:contact@directcareai.com">contact@directcareai.com</a><br/>
+        <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a><br/>
+        <a href="tel:+18882986718">888-298-6718</a>
+      </address>
+    </section>
+
+    <hr class="doc-divider" />
+
+    <div class="doc-callout">
+      <p><strong>Footer Disclosure.</strong> DirectCare AI is a technology and administrative platform that may facilitate access to independent licensed healthcare providers and related healthcare services. DirectCare AI does not itself provide medical care, pharmacy services, or emergency services. Payment does not guarantee that a prescription will be written, dispensed, or covered by insurance. Any medical services are provided by independent healthcare providers. Information on the Platform is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container" style="max-width: 1280px;">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements and blood labs.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Women's Health</h5>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/start-hrt/">HRT</a>
+        <a href="/womans-hair-loss/">Hair Regrowth</a>
+        <a href="/supplements/">Supplements</a>
+        <a href="/blood-test/">Blood Labs</a>
+        <a href="/womens-health/">View All</a>
+      </div>
+      <div class="foot-col">
+        <h5>Men's Health</h5>
+        <a href="/start-trt/">Testosterone (TRT)</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair Regrowth</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/peptides">Peptides</a>
+        <a href="/mens-health/">View All</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://directcareai.portal.tellescope.com/">Patient Portal</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+        <a href="/bill-of-rights">Bill of Rights</a>
+      </div>
+    </div>
+    <div class="footer-trust" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 28px; padding: 36px 0 8px;">
+      <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block; opacity: 0.9; transition: opacity .2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+        <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+      </a>
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hipaa-compliance-1.jpg" alt="HIPAA Compliant" style="display: block; height: 56px; width: auto;" />
+      <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer" title="Download DirectCare AI on the App Store" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer" title="Get DirectCare AI on Google Play" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 64px; width: auto;" />
+      </a>
+      <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare AI Prescription Savings Card" style="display: inline-block; opacity: 0.95; transition: opacity .2s ease; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08);" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.95'">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Front.png" alt="DirectCare AI Prescription Savings Card — therxcard.net/ZW6727" style="display: block; height: 72px; width: auto;" />
+      </a>
+    </div>
+    <div class="legal">
+      <div>&copy; 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant &middot; US Licensed Clinicians &middot; US Compounding Pharmacy</div>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Image disclaimer:</strong> All photographs on this site are for representation only. They do not depict actual DirectCare AI patients and are not a guarantee of any specific outcome.
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* === Mobile drawer === */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    var openIco = t.querySelector('.icon-open');
+    var closeIco = t.querySelector('.icon-close');
+    function setOpen(open) {
+      d.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      d.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (openIco) openIco.style.display = open ? 'none' : '';
+      if (closeIco) closeIco.style.display = open ? '' : 'none';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    t.addEventListener('click', function() { setOpen(!d.classList.contains('open')); });
+    d.addEventListener('click', function(e) { if (e.target.tagName === 'A') setOpen(false); });
+    window.addEventListener('resize', function() { if (window.innerWidth > 980 && d.classList.contains('open')) setOpen(false); });
+  })();
+</script>
+
+<!-- ============ AFFILIATE CLICK-ID CAPTURE + PROPAGATION ============ -->
+<script>
+(function() {
+  var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
+  var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+  var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
+  var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com'];
+  function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
+  function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
+  function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}
+  function load(){try{var s=sessionStorage.getItem(STORAGE_KEY);if(s)return s;var l=localStorage.getItem(STORAGE_KEY);var ts=parseInt(localStorage.getItem(STORAGE_TS)||'0',10);if(l&&Date.now()-ts<TTL_MS){sessionStorage.setItem(STORAGE_KEY,l);return l;}if(l){localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(STORAGE_TS);}}catch(e){}return null;}
+  var cid=fromQuery();if(cid)save(cid);else cid=load();if(!cid)return;
+  function rewriteAll(){document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#'||raw.indexOf('mailto:')===0||raw.indexOf('tel:')===0||raw.indexOf('javascript:')===0)return;var u=U(a.href);if(!u||HOSTS.indexOf(u.hostname)===-1)return;if(!u.searchParams.has('utm_clickId')){u.searchParams.set('utm_clickId',cid);a.href=u.toString();}});}
+  rewriteAll();
+  if('MutationObserver' in window){var mo=new MutationObserver(rewriteAll);mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect();},4000);}
+  try{window.__dcaiClickId=cid;}catch(e){}
+})();
+</script>
+
+</body>
+</html>

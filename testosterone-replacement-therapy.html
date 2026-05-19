@@ -121,6 +121,9 @@
     .nav-links { display: none; }
     .mobile-toggle { display: inline-flex; }
   }
+  @media (max-width: 640px) {
+    .nav-right .btn-primary { display: none; }
+  }
   .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
   .mobile-drawer.open { display: flex; }
   .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; }

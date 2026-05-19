@@ -312,9 +312,99 @@
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 30px; font-size: 1rem; }
   }
+
+  /* ============== SCROLL PROGRESS BAR ============== */
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: transparent; z-index: 100; pointer-events: none; }
+  .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); box-shadow: 0 0 12px rgba(175,75,237,0.6); transition: width 60ms linear; }
+
+  /* ============== ANIMATED ORBS (drifting in hero) ============== */
+  @keyframes drift-a { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -30px) scale(1.08); } }
+  @keyframes drift-b { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-50px, 40px) scale(1.1); } }
+  .orb.a { animation: drift-a 14s ease-in-out infinite; }
+  .orb.b { animation: drift-b 17s ease-in-out infinite; }
+
+  /* ============== KINETIC HERO WORD ROTATOR ============== */
+  .hero-rotator { display: block; position: relative; min-height: 1.05em; }
+  .hero-rotator-word { position: absolute; top: 0; left: 0; right: 0; white-space: nowrap; background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+
+  /* ============== HERO FLOATING SHAPES ============== */
+  .hero-shapes { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
+  .hero-shape { position: absolute; }
+  .hero-shape svg { display: block; }
+  @keyframes float-rotate { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(8deg); } }
+  @keyframes float-rotate-rev { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(12px) rotate(-10deg); } }
+  .hero-shape.s1 { top: 18%; left: 6%; animation: float-rotate 7s ease-in-out infinite; opacity: 0.4; }
+  .hero-shape.s2 { top: 70%; left: 3%; animation: float-rotate-rev 9s ease-in-out infinite; opacity: 0.3; }
+  .hero-shape.s3 { top: 12%; right: 48%; animation: float-rotate 11s ease-in-out infinite; opacity: 0.5; }
+  .hero-shape.s4 { bottom: 14%; left: 44%; animation: float-rotate-rev 8s ease-in-out infinite; opacity: 0.35; }
+  @media (max-width: 980px) { .hero-shape.s3, .hero-shape.s4 { display: none; } }
+
+  /* ============== MARQUEE BAND ============== */
+  .marquee-band { background: var(--soft); border-top: 1px solid var(--lavender-100); border-bottom: 1px solid var(--lavender-100); overflow: hidden; padding: 22px 0; position: relative; }
+  .marquee-band::before, .marquee-band::after { content: ""; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
+  .marquee-band::before { left: 0; background: linear-gradient(90deg, var(--soft) 0%, transparent 100%); }
+  .marquee-band::after { right: 0; background: linear-gradient(-90deg, var(--soft) 0%, transparent 100%); }
+  .marquee-track { display: inline-flex; gap: 44px; white-space: nowrap; animation: marquee-scroll 38s linear infinite; font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-darker); align-items: center; }
+  .marquee-track .dot { color: var(--brand); opacity: 0.55; font-size: 1.4rem; }
+  .marquee-track .star { color: var(--brand); font-size: 0.85rem; }
+  @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-band:hover .marquee-track { animation-play-state: paused; }
+
+  /* ============== 3D TILT OFFERING CARDS ============== */
+  .offer-card { transform-style: preserve-3d; will-change: transform; perspective: 800px; }
+  .offer-img-wrap { transform: translateZ(0); transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1); }
+  .offer-card:hover .offer-img-wrap { transform: translateZ(20px); }
+  .offer-card .offer-body h3, .offer-card .offer-body p, .offer-card .offer-meta { transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1); }
+  .offer-card:hover .offer-body h3 { transform: translateZ(14px); }
+  .offer-card:hover .offer-body p { transform: translateZ(8px); }
+
+  /* ============== HOW IT WORKS — SVG CONNECTOR ============== */
+  .how-section { position: relative; }
+  .how-grid { position: relative; z-index: 2; }
+  .how-connector { position: absolute; top: 60px; left: 0; right: 0; height: 80px; z-index: 1; pointer-events: none; opacity: 0.55; }
+  @media (max-width: 900px) { .how-connector { display: none; } }
+  .how-connector path { stroke-dasharray: 1400; stroke-dashoffset: 1400; }
+  .how-connector.is-visible path { animation: how-draw 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+  @keyframes how-draw { to { stroke-dashoffset: 0; } }
+
+  /* ============== AURORA FINAL CTA ============== */
+  .final-cta.aurora { background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; }
+  @keyframes aurora-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .final-cta.aurora::before { background: radial-gradient(ellipse 50% 50% at 20% 30%, rgba(231,176,255,0.4), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 70%, rgba(208,133,255,0.30), transparent 60%), radial-gradient(ellipse 60% 50% at 50% 100%, rgba(118,43,164,0.45), transparent 60%); animation: aurora-glow 11s ease-in-out infinite; }
+  @keyframes aurora-glow { 0%, 100% { opacity: 0.7; } 50% { opacity: 1; } }
+  .final-cta-sparkle { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: white; box-shadow: 0 0 12px 2px rgba(255,255,255,0.9); pointer-events: none; opacity: 0; }
+  @keyframes sparkle-twinkle { 0%, 100% { opacity: 0; transform: scale(0.5); } 50% { opacity: 1; transform: scale(1); } }
+
+  /* ============== MAGNETIC CTA ============== */
+  @media (hover: hover) and (pointer: fine) { .magnetic { transition: transform 200ms cubic-bezier(0.22, 1, 0.36, 1); } }
+
+  /* ============== TICKER ============== */
+  .ticker { font-variant-numeric: tabular-nums; }
+
+  /* ============== GENDER SPLIT — SHIMMER ON HOVER ============== */
+  .split-card { position: relative; }
+  .split-card::after { content: ""; position: absolute; top: 0; left: -75%; height: 100%; width: 50%; background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.35) 50%, transparent 100%); transform: skewX(-22deg); pointer-events: none; transition: left .9s cubic-bezier(0.22, 1, 0.36, 1); z-index: 3; }
+  .split-card:hover::after { left: 130%; }
+
+  /* ============== TESTIMONIAL SPOTLIGHT ============== */
+  .testi { position: relative; overflow: hidden; }
+  .testi::before { content: ""; position: absolute; inset: -2px; background: radial-gradient(circle 180px at var(--mx, 50%) var(--my, 50%), rgba(175,75,237,0.10), transparent 70%); opacity: 0; transition: opacity .3s ease; pointer-events: none; z-index: 0; border-radius: var(--radius-lg); }
+  .testi:hover::before { opacity: 1; }
+  .testi > * { position: relative; z-index: 1; }
+
+  /* ============== FAQ ANIMATED ICON ============== */
+  .faq summary::after { transform: rotate(0deg); transition: transform .25s ease, color .25s ease; }
+  .faq[open] summary::after { transform: rotate(180deg); }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orb.a, .orb.b, .hero-shape, .marquee-track, .final-cta.aurora, .final-cta.aurora::before { animation: none !important; }
+  }
 </style>
 </head>
 <body>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scroll-progress-bar"></div></div>
 
 <!-- ============ NAV ============ -->
 <nav class="nav">
@@ -396,15 +486,31 @@
     <span class="orb a"></span>
     <span class="orb b"></span>
   </div>
+
+  <!-- Decorative floating shapes -->
+  <div class="hero-shapes" aria-hidden="true">
+    <span class="hero-shape s1">
+      <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><circle cx="32" cy="32" r="28" stroke="#af4bed" stroke-width="2" stroke-dasharray="4 6"/><circle cx="32" cy="32" r="14" fill="#af4bed" fill-opacity="0.12"/></svg>
+    </span>
+    <span class="hero-shape s2">
+      <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><rect x="6" y="6" width="36" height="36" rx="10" stroke="#9043bf" stroke-width="2" stroke-dasharray="3 5"/></svg>
+    </span>
+    <span class="hero-shape s3">
+      <svg width="56" height="56" viewBox="0 0 56 56" fill="none"><path d="M28 4 L52 28 L28 52 L4 28 Z" stroke="#af4bed" stroke-width="2" fill="#af4bed" fill-opacity="0.08"/></svg>
+    </span>
+    <span class="hero-shape s4">
+      <svg width="72" height="22" viewBox="0 0 72 22" fill="none"><rect x="1" y="1" width="70" height="20" rx="10" stroke="#762ba4" stroke-width="1.5" fill="#af4bed" fill-opacity="0.06"/><circle cx="11" cy="11" r="3" fill="#af4bed"/><circle cx="36" cy="11" r="3" fill="#9043bf" fill-opacity="0.55"/><circle cx="61" cy="11" r="3" fill="#d185ff" fill-opacity="0.6"/></svg>
+    </span>
+  </div>
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
         <span class="eyebrow rise"><span class="dot"></span> Physician Care · Direct-To-You</span>
-        <h1 class="rise d1">Physician care, <span class="accent">delivered.</span></h1>
-        <p class="hero-sub rise d2">Personalized, clinician-prescribed care for <strong>weight loss, hormones, sexual health, hair regrowth, supplements and blood labs</strong> — without insurance, waiting rooms, or guesswork. Compounded in the USA. Shipped directly to your door.</p>
+        <h1 class="rise d1">Modern healthcare,<br/><span class="accent hero-rotator" id="hero-rotator" data-words="on your terms.|made personal.|directly to you.|truly yours."><span class="hero-rotator-word is-visible">on your terms.</span></span></h1>
+        <p class="hero-sub rise d2">One platform for <strong>weight loss, hormones, sexual health, hair regrowth, supplements, blood labs and chronic care</strong> — every protocol clinician-prescribed, compounded in the USA, and shipped directly to your door. No insurance, no waiting rooms, no guesswork.</p>
         <div class="hero-cta-row rise d3">
-          <a href="#offerings" class="btn btn-primary btn-primary-xl pulse-glow">Find your treatment →</a>
-          <a href="#how" class="btn btn-ghost btn-primary-xl">How it works</a>
+          <a href="#offerings" class="btn btn-primary btn-primary-xl pulse-glow magnetic">Find your treatment →</a>
+          <a href="#how" class="btn btn-ghost btn-primary-xl magnetic">How it works</a>
         </div>
         <div class="hero-trust rise d4">
           <span class="hero-trust-item">
@@ -461,6 +567,30 @@
       <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
       <span class="seal-text"><strong>Available in 50 states</strong><span>Discreet, unmarked shipping</span></span>
     </div>
+  </div>
+</div>
+
+<!-- ============ MARQUEE BAND — All categories ============ -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track" id="marquee-track">
+    <span>Weight Loss · GLP-1</span><span class="dot">·</span>
+    <span>Hormone Replacement</span><span class="dot">·</span>
+    <span>Testosterone (TRT)</span><span class="dot">·</span>
+    <span>Sexual Health</span><span class="dot">·</span>
+    <span>Hair Regrowth</span><span class="dot">·</span>
+    <span>Blood Labs</span><span class="dot">·</span>
+    <span>Supplements</span><span class="dot">·</span>
+    <span>Chronic Care</span><span class="dot">·</span>
+    <span class="star">★</span><span>4.8 / 5 from 12,000+ patients</span><span class="dot">·</span>
+    <span>Weight Loss · GLP-1</span><span class="dot">·</span>
+    <span>Hormone Replacement</span><span class="dot">·</span>
+    <span>Testosterone (TRT)</span><span class="dot">·</span>
+    <span>Sexual Health</span><span class="dot">·</span>
+    <span>Hair Regrowth</span><span class="dot">·</span>
+    <span>Blood Labs</span><span class="dot">·</span>
+    <span>Supplements</span><span class="dot">·</span>
+    <span>Chronic Care</span><span class="dot">·</span>
+    <span class="star">★</span><span>4.8 / 5 from 12,000+ patients</span><span class="dot">·</span>
   </div>
 </div>
 
@@ -669,13 +799,24 @@
 </section>
 
 <!-- ============ HOW IT WORKS ============ -->
-<section class="section" id="how">
+<section class="section how-section" id="how">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> How it works</span>
       <h2>Three steps. Zero waiting rooms.</h2>
       <p>From assessment to your doorstep in days — not weeks. A US-licensed clinician reviews every prescription. You only pay if you qualify and decide to start.</p>
     </div>
+    <svg class="how-connector" id="how-connector" viewBox="0 0 1200 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="howConnectorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#af4bed" stop-opacity="0"/>
+          <stop offset="20%" stop-color="#af4bed" stop-opacity="0.9"/>
+          <stop offset="80%" stop-color="#762ba4" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#762ba4" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M 100 40 C 300 -20, 500 100, 700 40 S 1000 -20, 1100 40" stroke="url(#howConnectorGrad)" stroke-width="3" stroke-dasharray="4 8" stroke-linecap="round"/>
+    </svg>
     <div class="how-grid">
       <div class="how-card">
         <div class="how-num">01</div>
@@ -718,19 +859,19 @@
     </div>
     <div class="stats-row">
       <div class="stat">
-        <div class="stat-num">100%</div>
+        <div class="stat-num ticker" data-ticker="100" data-suffix="%">0%</div>
         <div class="stat-label">Board-certified clinicians</div>
       </div>
       <div class="stat">
-        <div class="stat-num">94%</div>
+        <div class="stat-num ticker" data-ticker="94" data-suffix="%">0%</div>
         <div class="stat-label">Report visible improvement</div>
       </div>
       <div class="stat">
-        <div class="stat-num">50</div>
+        <div class="stat-num ticker" data-ticker="50" data-suffix="">0</div>
         <div class="stat-label">US states served</div>
       </div>
       <div class="stat">
-        <div class="stat-num">4.8★</div>
+        <div class="stat-num ticker" data-ticker="4.8" data-decimals="1" data-suffix="★">0★</div>
         <div class="stat-label">Average patient rating</div>
       </div>
     </div>
@@ -862,11 +1003,11 @@
 <!-- ============ FINAL CTA ============ -->
 <section class="section">
   <div class="container">
-    <div class="final-cta">
+    <div class="final-cta aurora" id="final-cta">
       <span class="eyebrow on-dark"><span class="dot"></span> Get started today</span>
-      <h2>Physician care, delivered.<br/>Directly to you.</h2>
+      <h2>Modern healthcare.<br/>Directly to you.</h2>
       <p>Take the 3-minute evaluation. A US-licensed clinician will review your file within 24 hours. No charge if you don't qualify.</p>
-      <a href="#offerings" class="btn btn-primary-xl pulse-glow" style="background: white; color: var(--brand-darker); box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Find your treatment →</a>
+      <a href="#offerings" class="btn btn-primary-xl pulse-glow magnetic" style="background: white; color: var(--brand-darker); box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Find your treatment →</a>
     </div>
   </div>
 </section>
@@ -975,6 +1116,177 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  /* === Scroll progress bar === */
+  (function() {
+    var bar = document.getElementById('scroll-progress-bar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement;
+      var max = (h.scrollHeight - h.clientHeight) || 1;
+      var p = Math.min(100, Math.max(0, (h.scrollTop / max) * 100));
+      bar.style.width = p + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  /* === Hero word rotator (inline styles — bypass class-based transition) === */
+  (function() {
+    var el = document.getElementById('hero-rotator');
+    if (!el) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var words = (el.dataset.words || '').split('|').filter(Boolean);
+    if (words.length < 2) return;
+    var TRANS = 'opacity 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1)';
+    // Make the initial word use inline styles too, so cycle handoff is consistent
+    var current = el.querySelector('.hero-rotator-word');
+    if (current) {
+      current.style.opacity = '1';
+      current.style.transform = 'translateY(0)';
+      current.style.transition = TRANS;
+      current.style.display = 'inline-block';
+    }
+    var i = 0;
+    function rotate() {
+      i = (i + 1) % words.length;
+      var next = document.createElement('span');
+      next.className = 'hero-rotator-word';
+      next.textContent = words[i];
+      next.style.opacity = '0';
+      next.style.transform = 'translateY(20px)';
+      next.style.transition = TRANS;
+      next.style.display = 'inline-block';
+      el.appendChild(next);
+      // Small delay lets the browser commit the initial state before we change it
+      setTimeout(function() {
+        next.style.opacity = '1';
+        next.style.transform = 'translateY(0)';
+      }, 30);
+      if (current) {
+        current.style.opacity = '0';
+        current.style.transform = 'translateY(-20px)';
+      }
+      var stale = current;
+      setTimeout(function() { if (stale && stale.parentNode) stale.parentNode.removeChild(stale); }, 620);
+      current = next;
+    }
+    setInterval(rotate, 2800);
+  })();
+
+  /* === Number tickers === */
+  (function() {
+    var tickers = document.querySelectorAll('.ticker[data-ticker]');
+    if (!tickers.length) return;
+    function format(n, decimals) {
+      return decimals > 0 ? n.toFixed(decimals) : Math.round(n).toString();
+    }
+    function animate(el) {
+      if (el.dataset.played === '1') return;
+      el.dataset.played = '1';
+      var target = parseFloat(el.dataset.ticker);
+      var decimals = parseInt(el.dataset.decimals || '0', 10);
+      var suffix = el.dataset.suffix || '';
+      var dur = 1500, steps = 60, s = 0;
+      var id = setInterval(function() {
+        s++;
+        var p = Math.min(1, s / steps);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = format(target * eased, decimals) + suffix;
+        if (p >= 1) { el.textContent = format(target, decimals) + suffix; clearInterval(id); }
+      }, dur / steps);
+    }
+    if (!('IntersectionObserver' in window)) { tickers.forEach(animate); return; }
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { animate(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.4 });
+    tickers.forEach(function(t) { io.observe(t); });
+  })();
+
+  /* === Magnetic CTAs === */
+  (function() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var MAX = 14, STRENGTH = 0.26;
+    document.querySelectorAll('.magnetic').forEach(function(btn) {
+      btn.addEventListener('mousemove', function(e) {
+        var r = btn.getBoundingClientRect();
+        var dx = (e.clientX - (r.left + r.width / 2)) * STRENGTH;
+        var dy = (e.clientY - (r.top + r.height / 2)) * STRENGTH;
+        dx = Math.max(-MAX, Math.min(MAX, dx));
+        dy = Math.max(-MAX, Math.min(MAX, dy));
+        btn.style.transform = 'translate(' + dx + 'px, ' + dy + 'px)';
+      });
+      btn.addEventListener('mouseleave', function() { btn.style.transform = ''; });
+    });
+  })();
+
+  /* === 3D tilt on offering cards === */
+  (function() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var MAX_TILT = 6;
+    document.querySelectorAll('.offer-card').forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var r = card.getBoundingClientRect();
+        var px = ((e.clientX - r.left) / r.width - 0.5) * 2;
+        var py = ((e.clientY - r.top) / r.height - 0.5) * 2;
+        var rx = (-py * MAX_TILT).toFixed(2);
+        var ry = (px * MAX_TILT).toFixed(2);
+        card.style.transform = 'translateY(-6px) perspective(800px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+      });
+      card.addEventListener('mouseleave', function() { card.style.transform = ''; });
+    });
+  })();
+
+  /* === Testimonial spotlight cursor === */
+  (function() {
+    if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    document.querySelectorAll('.testi').forEach(function(t) {
+      t.addEventListener('mousemove', function(e) {
+        var r = t.getBoundingClientRect();
+        t.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        t.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+  })();
+
+  /* === How It Works SVG connector — draw on view === */
+  (function() {
+    var c = document.getElementById('how-connector');
+    if (!c || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { c.classList.add('is-visible'); io.unobserve(c); }
+      });
+    }, { threshold: 0.3 });
+    io.observe(c);
+  })();
+
+  /* === Final CTA sparkles (twinkling stars in aurora) === */
+  (function() {
+    var cta = document.getElementById('final-cta');
+    if (!cta) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var positions = [
+      [12, 18], [28, 70], [58, 22], [82, 78], [88, 32], [22, 88], [68, 54], [42, 12], [76, 14], [16, 48]
+    ];
+    positions.forEach(function(p, i) {
+      var s = document.createElement('span');
+      s.className = 'final-cta-sparkle';
+      s.style.left = p[0] + '%';
+      s.style.top = p[1] + '%';
+      s.style.animation = 'sparkle-twinkle ' + (2.5 + (i % 4) * 0.7) + 's ease-in-out infinite';
+      s.style.animationDelay = (i * 0.4) + 's';
+      cta.appendChild(s);
+    });
   })();
 </script>
 

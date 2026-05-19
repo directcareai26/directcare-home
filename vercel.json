@@ -20,6 +20,10 @@
 
     { "source": "/surge-max", "destination": "https://sexual-health-mocha.vercel.app/" },
     { "source": "/surge-max/", "destination": "https://sexual-health-mocha.vercel.app/" },
-    { "source": "/surge-max/:path*", "destination": "https://sexual-health-mocha.vercel.app/:path*" }
+    { "source": "/surge-max/:path*", "destination": "https://sexual-health-mocha.vercel.app/:path*" },
+
+    { "source": "/weight-loss", "destination": "https://directcare-weight-loss.vercel.app/" },
+    { "source": "/weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/" },
+    { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" }
   ]
 }

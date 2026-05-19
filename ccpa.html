@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>California Consumer Privacy Notice (CCPA) | DirectCare AI</title>
+<meta name="description" content="DirectCare AI California Consumer Privacy Notice — rights of California residents under the CCPA/CPRA, including the right to know, delete, correct, limit sensitive data, and opt out of sale/sharing." />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="California Consumer Privacy Notice (CCPA) | DirectCare AI" />
+<meta property="og:url" content="https://www.directcare.ai/ccpa" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff; --soft: #fbf5fe; --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2; --lavender-200: #D185FF;
+    --ink: #281A31; --muted: #5b4d65; --line: rgba(40,26,49,0.08);
+    --brand: #af4bed; --brand-deep: #9043bf; --brand-darker: #762ba4; --brand-text: #44215A;
+    --gold: #d99b1f;
+    --radius: 18px; --radius-lg: 28px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  a { color: var(--brand-deep); text-decoration: underline; text-decoration-color: rgba(175,75,237,0.3); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: var(--brand); }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.2; color: var(--ink); }
+  h1 { font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: 16px; letter-spacing: -0.03em; }
+  h2 { font-size: clamp(1.4rem, 2.2vw, 1.7rem); margin: 56px 0 14px; }
+  h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 700; }
+  p { margin: 0 0 16px; color: var(--ink); }
+  ul, ol { margin: 0 0 16px; padding-left: 22px; color: var(--ink); }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  .container { max-width: 880px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; text-decoration: none; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "\25BE"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); text-decoration: none; }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); text-decoration: none; }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); padding: 0; }
+  @media (max-width: 980px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; text-decoration: none; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "\25BE"; float: right; opacity: 0.6; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+
+  /* DOC */
+  .doc-hero { padding: 56px 0 32px; background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); border-bottom: 1px solid var(--lavender-100); }
+  .doc-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); margin-bottom: 18px; }
+  .doc-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .doc-updated { color: var(--muted); font-size: 0.92rem; margin-top: 8px; }
+  .doc { padding: 48px 0 80px; }
+  .doc-toc { background: var(--soft); border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 28px; margin: 0 0 40px; }
+  .doc-toc h3 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-deep); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 12px; }
+  .doc-toc ol { column-count: 2; column-gap: 32px; margin: 0; padding-left: 0; list-style: none; }
+  .doc-toc ol li { break-inside: avoid; margin-bottom: 6px; font-size: 0.9rem; }
+  .doc-toc a { color: var(--ink); text-decoration: none; }
+  .doc-toc a:hover { color: var(--brand); }
+  @media (max-width: 640px) { .doc-toc ol { column-count: 1; } }
+  .doc-section { scroll-margin-top: 88px; }
+  .doc-section + .doc-section { margin-top: 20px; }
+  .doc h2 .num { color: var(--brand-deep); font-weight: 800; margin-right: 12px; font-size: 0.9em; }
+  .doc-callout { background: rgba(175,75,237,0.06); border-left: 3px solid var(--brand); padding: 18px 22px; border-radius: 0 var(--radius) var(--radius) 0; margin: 24px 0; }
+  .doc-callout p:last-child { margin-bottom: 0; }
+  .doc-callout strong { color: var(--brand-darker); }
+  .doc-emerg { background: linear-gradient(135deg, rgba(208,69,69,0.06), rgba(175,75,237,0.06)); border-left: 4px solid #d04545; padding: 18px 22px; border-radius: 0 var(--radius) var(--radius) 0; margin: 0 0 32px; }
+  .doc-emerg strong { color: #c53b3b; }
+  .doc-divider { border: 0; border-top: 1px solid var(--lavender-100); margin: 40px 0; }
+  .doc address { font-style: normal; line-height: 1.7; color: var(--ink); margin: 0 0 16px; }
+
+  /* FOOTER */
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; margin-top: 40px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; color: var(--muted); margin-bottom: 16px; }
+  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 18px; }
+  .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; text-decoration: none; transition: color .15s ease; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  @media (max-width: 760px) {
+    .doc-hero { padding: 40px 0 24px; }
+    .doc { padding: 32px 0 60px; }
+    footer { padding: 48px 0 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/hormone-replacement-therapy">HRT</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/peptides">Peptides</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/womens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/peptides">Peptides</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/mens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
+        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details open>
+    <summary>Women's Health</summary>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/peptides">Peptides</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/womens-health/">View All &rarr;</a>
+  </details>
+  <details>
+    <summary>Men's Health</summary>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/peptides">Peptides</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/mens-health/">View All &rarr;</a>
+  </details>
+  <a href="/supplements/">Supplements</a>
+  <a href="/blood-test/">Blood Labs</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
+</div>
+
+<!-- DOC HERO -->
+<header class="doc-hero">
+  <div class="container">
+    <span class="doc-eyebrow"><span class="dot"></span> California Residents</span>
+    <h1>California Consumer Privacy Notice (CCPA)</h1>
+    <p class="doc-updated">Last Updated: April 7, 2026</p>
+  </div>
+</header>
+
+<!-- DOC BODY -->
+<main class="doc">
+  <div class="container">
+    <p>This California Consumer Privacy Notice supplements our <a href="/privacy-policy">Privacy Policy</a> and applies to California residents (&ldquo;you&rdquo;) under the California Consumer Privacy Act of 2018, as amended by the California Privacy Rights Act (collectively, the &ldquo;CCPA&rdquo;).</p>
+    <p>Capitalized terms used but not defined here have the meaning given in the CCPA or our Privacy Policy.</p>
+
+    <div class="doc-toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#sec-1">I. Notice at Collection</a></li>
+        <li><a href="#sec-2">II. Categories of Personal Information We Collect</a></li>
+        <li><a href="#sec-3">III. Sources of Personal Information</a></li>
+        <li><a href="#sec-4">IV. Business Purposes</a></li>
+        <li><a href="#sec-5">V. Categories Disclosed or Shared</a></li>
+        <li><a href="#sec-6">VI. Sensitive Personal Information</a></li>
+        <li><a href="#sec-7">VII. Sale or Sharing of Personal Information</a></li>
+        <li><a href="#sec-8">VIII. Retention</a></li>
+        <li><a href="#sec-9">IX. Your California Privacy Rights</a></li>
+        <li><a href="#sec-10">X. How to Submit a Request</a></li>
+        <li><a href="#sec-11">XI. Authorized Agents</a></li>
+        <li><a href="#sec-12">XII. Verification</a></li>
+        <li><a href="#sec-13">XIII. Non-Discrimination</a></li>
+        <li><a href="#sec-14">XIV. Financial Incentives</a></li>
+        <li><a href="#sec-15">XV. Shine the Light</a></li>
+        <li><a href="#sec-16">XVI. Do Not Track &amp; GPC</a></li>
+        <li><a href="#sec-17">XVII. Children</a></li>
+        <li><a href="#sec-18">XVIII. Changes</a></li>
+        <li><a href="#sec-19">XIX. Contact</a></li>
+      </ol>
+    </div>
+
+    <section class="doc-section" id="sec-1">
+      <h2><span class="num">I.</span>Notice at Collection</h2>
+      <p>At or before the point of collection, we provide California residents with notice of the categories of personal information we collect and the purposes for which the information will be used. This Notice serves that purpose. Most information collected through the Platform is collected to provide telehealth, support care coordination, fulfill prescriptions, process payments, and operate and secure the Platform.</p>
+    </section>
+
+    <section class="doc-section" id="sec-2">
+      <h2><span class="num">II.</span>Categories of Personal Information We Collect</h2>
+      <p>In the past 12 months, we may have collected the following CCPA categories of personal information:</p>
+      <ul>
+        <li><strong>Identifiers</strong> — name, postal address, email, phone, IP address, account identifiers, government-issued ID where required.</li>
+        <li><strong>Customer records</strong> — name, address, payment information.</li>
+        <li><strong>Protected classifications</strong> — age, sex, gender, marital status, where relevant to clinical care.</li>
+        <li><strong>Commercial information</strong> — products or services purchased, purchasing histories.</li>
+        <li><strong>Internet/network activity</strong> — browsing on the Platform, interactions with content and ads, device data.</li>
+        <li><strong>Geolocation data</strong> — approximate location derived from IP address.</li>
+        <li><strong>Audio, electronic, visual</strong> — call recordings (where lawful), chat transcripts, support session recordings.</li>
+        <li><strong>Professional/employment</strong> — limited information if you apply for a role.</li>
+        <li><strong>Inferences</strong> — preferences, characteristics, or behavior derived from the categories above.</li>
+        <li><strong>Sensitive personal information</strong> — account log-in plus password, precise geolocation (where applicable), and health information. See Section VI.</li>
+      </ul>
+      <p>We do <em>not</em> sell personal information for money, but the CCPA's broad definition of &ldquo;sharing&rdquo; may include certain advertising and analytics activities. See Section VII.</p>
+      <p>Protected health information (&ldquo;PHI&rdquo;) handled by our healthcare partners is governed by HIPAA and is not subject to the CCPA to the extent HIPAA applies. Our Notice of Privacy Practices governs PHI.</p>
+    </section>
+
+    <section class="doc-section" id="sec-3">
+      <h2><span class="num">III.</span>Sources of Personal Information</h2>
+      <ul>
+        <li>Directly from you when you use the Platform, submit forms, or communicate with us.</li>
+        <li>Automatically through cookies, analytics tools, server logs, and device APIs.</li>
+        <li>From healthcare providers and clinical partners involved in your care.</li>
+        <li>From service providers (e.g., payment processors, identity verification).</li>
+        <li>From advertising and analytics partners.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-4">
+      <h2><span class="num">IV.</span>Business Purposes for Collection</h2>
+      <ul>
+        <li>Providing, maintaining, and improving the Platform and services.</li>
+        <li>Connecting you with independent licensed clinicians and pharmacies.</li>
+        <li>Processing payments and managing subscriptions.</li>
+        <li>Communicating with you about your account, orders, and services.</li>
+        <li>Security, fraud prevention, debugging, and audits.</li>
+        <li>Compliance with legal, regulatory, and audit obligations.</li>
+        <li>Limited advertising and analytics consistent with this Notice.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-5">
+      <h2><span class="num">V.</span>Categories Disclosed or Shared with Third Parties</h2>
+      <p>We may disclose categories of personal information to the following recipients for business purposes:</p>
+      <ul>
+        <li>Independent licensed healthcare providers and clinical partners (for care delivery).</li>
+        <li>Service providers and contractors (cloud hosting, payment processing, analytics, communications).</li>
+        <li>Pharmacies, laboratories, and device fulfillment partners.</li>
+        <li>Government authorities, regulators, and law enforcement when required by law.</li>
+        <li>Parties to a corporate transaction (merger, acquisition, financing).</li>
+        <li>Advertising and analytics partners, for purposes described in Section VII.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-6">
+      <h2><span class="num">VI.</span>Sensitive Personal Information</h2>
+      <p>We collect sensitive personal information only to provide the services you request, comply with our legal obligations, prevent fraud, and ensure the security and integrity of the Platform. We do not use or disclose sensitive personal information for purposes other than those permitted by the CCPA's exemptions.</p>
+      <p>California residents have the right to limit the use and disclosure of sensitive personal information to purposes permitted by the CCPA. See Section IX.</p>
+    </section>
+
+    <section class="doc-section" id="sec-7">
+      <h2><span class="num">VII.</span>Sale or Sharing of Personal Information</h2>
+      <p>We do <strong>not</strong> sell personal information in exchange for money. However, the CCPA defines &ldquo;sharing&rdquo; to include disclosing personal information for cross-context behavioral advertising, even without monetary payment. To the extent our use of advertising or analytics technologies (such as cookies, pixels, or SDKs from Google or Meta) constitutes &ldquo;sharing,&rdquo; you may opt out at any time.</p>
+      <p>To opt out of sharing for cross-context behavioral advertising:</p>
+      <ul>
+        <li>Click the &ldquo;Do Not Sell or Share My Personal Information&rdquo; link in the website footer (where available).</li>
+        <li>Enable the Global Privacy Control (GPC) signal in your browser. We honor GPC for browser-based interactions.</li>
+        <li>Email <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a> with the subject line &ldquo;CCPA Opt-Out.&rdquo;</li>
+      </ul>
+      <p>We have not knowingly sold or shared personal information of minors under 16 in the past 12 months.</p>
+    </section>
+
+    <section class="doc-section" id="sec-8">
+      <h2><span class="num">VIII.</span>Retention</h2>
+      <p>We retain personal information for as long as necessary to provide the services, comply with legal and regulatory obligations (including HIPAA where applicable), resolve disputes, and enforce our agreements. Retention periods are determined by the type of information, the purpose for which it was collected, and applicable legal requirements.</p>
+    </section>
+
+    <section class="doc-section" id="sec-9">
+      <h2><span class="num">IX.</span>Your California Privacy Rights</h2>
+      <p>Subject to certain exemptions, California residents have the following rights:</p>
+      <ul>
+        <li><strong>Right to know</strong> the categories and specific pieces of personal information collected, the sources, the purposes, and the third parties to whom it was disclosed.</li>
+        <li><strong>Right to delete</strong> personal information we have collected, subject to legal exceptions.</li>
+        <li><strong>Right to correct</strong> inaccurate personal information.</li>
+        <li><strong>Right to opt out</strong> of the sale or sharing of personal information.</li>
+        <li><strong>Right to limit</strong> the use and disclosure of sensitive personal information to purposes permitted by the CCPA.</li>
+        <li><strong>Right to non-discrimination</strong> for exercising your CCPA rights.</li>
+        <li><strong>Right to data portability</strong> — receive a copy of personal information in a portable format.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section" id="sec-10">
+      <h2><span class="num">X.</span>How to Submit a Request</h2>
+      <p>You may submit a verifiable consumer request by any of the following methods:</p>
+      <ul>
+        <li>Email: <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a> with the subject line &ldquo;CCPA Request.&rdquo;</li>
+        <li>Phone: <a href="tel:+18882986718">888-298-6718</a></li>
+        <li>Mail: DirectCare AI, 30 N Gould St, Ste N, Sheridan, WY 82801</li>
+      </ul>
+      <p>Please describe the request and identify the right(s) you wish to exercise. We will respond within the timeframes required by the CCPA.</p>
+    </section>
+
+    <section class="doc-section" id="sec-11">
+      <h2><span class="num">XI.</span>Authorized Agents</h2>
+      <p>You may designate an authorized agent to submit requests on your behalf. We may require the agent to provide written permission signed by you, and we may require you to verify your own identity directly with us.</p>
+    </section>
+
+    <section class="doc-section" id="sec-12">
+      <h2><span class="num">XII.</span>Verification of Requests</h2>
+      <p>To protect your information, we verify the identity of every requester before disclosing or deleting personal information. Verification may require matching at least two pieces of information you provide with information we already have on file.</p>
+    </section>
+
+    <section class="doc-section" id="sec-13">
+      <h2><span class="num">XIII.</span>Non-Discrimination</h2>
+      <p>We will not discriminate against you for exercising your CCPA rights. We will not deny you services, charge you different prices, or provide a different level or quality of service based on your exercise of those rights, except as permitted by law.</p>
+    </section>
+
+    <section class="doc-section" id="sec-14">
+      <h2><span class="num">XIV.</span>Financial Incentives</h2>
+      <p>We do not currently offer financial incentives in exchange for personal information.</p>
+    </section>
+
+    <section class="doc-section" id="sec-15">
+      <h2><span class="num">XV.</span>Shine the Light</h2>
+      <p>California's &ldquo;Shine the Light&rdquo; law (Civil Code § 1798.83) permits California residents to request certain disclosures regarding our sharing of personal information with third parties for the third parties' direct marketing purposes. To submit such a request, email <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a> with the subject line &ldquo;Shine the Light Request.&rdquo;</p>
+    </section>
+
+    <section class="doc-section" id="sec-16">
+      <h2><span class="num">XVI.</span>Do Not Track and Global Privacy Control</h2>
+      <p>Some browsers send &ldquo;Do Not Track&rdquo; (DNT) signals. There is no industry standard for how websites should respond to DNT signals. We honor the Global Privacy Control (GPC) signal as an opt-out preference for sharing in browser-based contexts.</p>
+    </section>
+
+    <section class="doc-section" id="sec-17">
+      <h2><span class="num">XVII.</span>Children</h2>
+      <p>The Platform is not directed to children under 18. We do not knowingly collect personal information from individuals under 16 for sale or sharing. If you believe we have collected information from a child, please contact us at <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a>.</p>
+    </section>
+
+    <section class="doc-section" id="sec-18">
+      <h2><span class="num">XVIII.</span>Changes to This Notice</h2>
+      <p>We may update this Notice from time to time. Updates will be posted with a revised &ldquo;Last Updated&rdquo; date. Continued use of the Platform after the effective date constitutes acceptance of the updated Notice.</p>
+    </section>
+
+    <section class="doc-section" id="sec-19">
+      <h2><span class="num">XIX.</span>Contact Information</h2>
+      <address>
+        DirectCare AI<br/>
+        30 N Gould St, Ste N<br/>
+        Sheridan, WY 82801<br/>
+        <a href="mailto:privacy@directcareai.com">privacy@directcareai.com</a><br/>
+        <a href="tel:+18882986718">888-298-6718</a>
+      </address>
+    </section>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container" style="max-width: 1280px;">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements and blood labs.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Women's Health</h5>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/start-hrt/">HRT</a>
+        <a href="/womans-hair-loss/">Hair Regrowth</a>
+        <a href="/supplements/">Supplements</a>
+        <a href="/blood-test/">Blood Labs</a>
+        <a href="/womens-health/">View All</a>
+      </div>
+      <div class="foot-col">
+        <h5>Men's Health</h5>
+        <a href="/start-trt/">Testosterone (TRT)</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair Regrowth</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/peptides">Peptides</a>
+        <a href="/mens-health/">View All</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="https://directcareai.portal.tellescope.com/">Patient Portal</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/ccpa">CCPA</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+        <a href="/bill-of-rights">Bill of Rights</a>
+      </div>
+    </div>
+    <div class="footer-trust" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 28px; padding: 36px 0 8px;">
+      <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block; opacity: 0.9; transition: opacity .2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+        <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+      </a>
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hipaa-compliance-1.jpg" alt="HIPAA Compliant" style="display: block; height: 56px; width: auto;" />
+      <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer" title="Download DirectCare AI on the App Store" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer" title="Get DirectCare AI on Google Play" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 64px; width: auto;" />
+      </a>
+      <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare AI Prescription Savings Card" style="display: inline-block; opacity: 0.95; transition: opacity .2s ease; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08);" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.95'">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Front.png" alt="DirectCare AI Prescription Savings Card &mdash; therxcard.net/ZW6727" style="display: block; height: 72px; width: auto;" />
+      </a>
+    </div>
+    <div class="legal">
+      <div>&copy; 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant &middot; US Licensed Clinicians &middot; US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile drawer */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    var openIco = t.querySelector('.icon-open');
+    var closeIco = t.querySelector('.icon-close');
+    function setOpen(open) {
+      d.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      d.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (openIco) openIco.style.display = open ? 'none' : '';
+      if (closeIco) closeIco.style.display = open ? '' : 'none';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    t.addEventListener('click', function() { setOpen(!d.classList.contains('open')); });
+    d.addEventListener('click', function(e) { if (e.target.tagName === 'A') setOpen(false); });
+    window.addEventListener('resize', function() { if (window.innerWidth > 980 && d.classList.contains('open')) setOpen(false); });
+  })();
+</script>
+
+<!-- AFFILIATE CLICK-ID -->
+<script>
+(function() {
+  var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
+  var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+  var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
+  var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com'];
+  function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
+  function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
+  function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}
+  function load(){try{var s=sessionStorage.getItem(STORAGE_KEY);if(s)return s;var l=localStorage.getItem(STORAGE_KEY);var ts=parseInt(localStorage.getItem(STORAGE_TS)||'0',10);if(l&&Date.now()-ts<TTL_MS){sessionStorage.setItem(STORAGE_KEY,l);return l;}if(l){localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(STORAGE_TS);}}catch(e){}return null;}
+  var cid=fromQuery();if(cid)save(cid);else cid=load();if(!cid)return;
+  function rewriteAll(){document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#'||raw.indexOf('mailto:')===0||raw.indexOf('tel:')===0||raw.indexOf('javascript:')===0)return;var u=U(a.href);if(!u||HOSTS.indexOf(u.hostname)===-1)return;if(!u.searchParams.has('utm_clickId')){u.searchParams.set('utm_clickId',cid);a.href=u.toString();}});}
+  rewriteAll();
+  if('MutationObserver' in window){var mo=new MutationObserver(rewriteAll);mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect();},4000);}
+  try{window.__dcaiClickId=cid;}catch(e){}
+})();
+</script>
+
+</body>
+</html>

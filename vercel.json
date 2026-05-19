@@ -2,6 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "rewrites": [
+    { "source": "/start-hrt", "destination": "/hormone-replacement-therapy" },
+    { "source": "/start-hrt/", "destination": "/hormone-replacement-therapy" },
+
     { "source": "/womens-health", "destination": "https://women.directcare.ai/womens-health/" },
     { "source": "/womens-health/", "destination": "https://women.directcare.ai/womens-health/" },
     { "source": "/womens-health/:path*", "destination": "https://women.directcare.ai/womens-health/:path*" },

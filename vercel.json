@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/womens-health", "destination": "https://women.directcare.ai/womens-health/" },
+    { "source": "/womens-health/", "destination": "https://women.directcare.ai/womens-health/" },
+    { "source": "/womens-health/:path*", "destination": "https://women.directcare.ai/womens-health/:path*" },
+
+    { "source": "/mens-health", "destination": "https://mens.directcare.ai/mens-health/" },
+    { "source": "/mens-health/", "destination": "https://mens.directcare.ai/mens-health/" },
+    { "source": "/mens-health/:path*", "destination": "https://mens.directcare.ai/mens-health/:path*" },
+
+    { "source": "/mens-hair-loss", "destination": "https://mens-hair-loss.vercel.app/" },
+    { "source": "/mens-hair-loss/", "destination": "https://mens-hair-loss.vercel.app/" },
+    { "source": "/mens-hair-loss/:path*", "destination": "https://mens-hair-loss.vercel.app/:path*" },
+
+    { "source": "/womans-hair-loss", "destination": "https://womens-hair-loss.vercel.app/" },
+    { "source": "/womans-hair-loss/", "destination": "https://womens-hair-loss.vercel.app/" },
+    { "source": "/womans-hair-loss/:path*", "destination": "https://womens-hair-loss.vercel.app/:path*" },
+
+    { "source": "/surge-max", "destination": "https://sexual-health-mocha.vercel.app/" },
+    { "source": "/surge-max/", "destination": "https://sexual-health-mocha.vercel.app/" },
+    { "source": "/surge-max/:path*", "destination": "https://sexual-health-mocha.vercel.app/:path*" }
+  ]
+}

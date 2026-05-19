@@ -711,6 +711,25 @@
       <span class="foot-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> LegitScript Certified</span>
     </div>
 
+    <div class="footer-trust" style="display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 36px 0 8px;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 28px;">
+        <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block; opacity: 0.9; transition: opacity .2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+          <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+        </a>
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hipaa-compliance-1.jpg" alt="HIPAA Compliant" style="display: block; height: 64px; width: auto;" />
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px;">
+        <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer" title="Download DirectCare AI on the App Store" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer" title="Get DirectCare AI on Google Play" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 70px; width: auto;" />
+        </a>
+        <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare AI Prescription Savings Card" style="display: inline-block; opacity: 0.95; transition: opacity .2s ease; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08);" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.95'">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Front.png" alt="DirectCare AI Prescription Savings Card — therxcard.net/ZW6727" style="display: block; height: 96px; width: auto;" />
+        </a>
+      </div>
+    </div>
     <div class="legal-disclaimer">
       <strong>DirectCare AI is a patient management platform designed to support independent physicians and practitioners through the DirectCare AI Patient Engagement Platform.</strong> DirectCare AI does not directly provide medical or pharmacy services, and payment does not guarantee the prescribing or dispensing of any medication. All medical services are delivered by independent providers. The information on this website is for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. If you have any questions or concerns about your health, please consult with your doctor. This site serves as an advertisement for services, not for any specific medication.
     </div>
@@ -769,6 +788,25 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
   })();
+</script>
+
+<!-- ============ AFFILIATE CLICK-ID CAPTURE + PROPAGATION ============ -->
+<script>
+(function() {
+  var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
+  var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+  var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
+  var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com'];
+  function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
+  function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
+  function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}
+  function load(){try{var s=sessionStorage.getItem(STORAGE_KEY);if(s)return s;var l=localStorage.getItem(STORAGE_KEY);var ts=parseInt(localStorage.getItem(STORAGE_TS)||'0',10);if(l&&Date.now()-ts<TTL_MS){sessionStorage.setItem(STORAGE_KEY,l);return l;}if(l){localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(STORAGE_TS);}}catch(e){}return null;}
+  var cid=fromQuery();if(cid)save(cid);else cid=load();if(!cid)return;
+  function rewriteAll(){document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#'||raw.indexOf('mailto:')===0||raw.indexOf('tel:')===0||raw.indexOf('javascript:')===0)return;var u=U(a.href);if(!u||HOSTS.indexOf(u.hostname)===-1)return;if(!u.searchParams.has('utm_clickId')){u.searchParams.set('utm_clickId',cid);a.href=u.toString();}});}
+  rewriteAll();
+  if('MutationObserver' in window){var mo=new MutationObserver(rewriteAll);mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect();},4000);}
+  try{window.__dcaiClickId=cid;}catch(e){}
+})();
 </script>
 
 </body>

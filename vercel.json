@@ -8,6 +8,9 @@
     { "source": "/start-trt", "destination": "/testosterone-replacement-therapy" },
     { "source": "/start-trt/", "destination": "/testosterone-replacement-therapy" },
 
+    { "source": "/blood-labs", "destination": "/blood-test" },
+    { "source": "/blood-labs/", "destination": "/blood-test" },
+
     { "source": "/womens-health", "destination": "https://women.directcare.ai/womens-health/" },
     { "source": "/womens-health/", "destination": "https://women.directcare.ai/womens-health/" },
     { "source": "/womens-health/:path*", "destination": "https://women.directcare.ai/womens-health/:path*" },

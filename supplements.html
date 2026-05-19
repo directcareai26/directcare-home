@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>Supplements — Clinically Trusted Wellness Plans · DirectCare AI</title>
+<meta name="description" content="Physician-grade supplements and curated wellness plans from DirectCare AI — Blood Sugar, Heart, Hair, Hormones, Menopause, GLP-1 support, Immune, Anti-Aging, Energy and General Wellness. Backed by clinical research, shipped to your door." />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="Supplements — Clinically Trusted Wellness Plans · DirectCare AI" />
+<meta property="og:description" content="Physician-grade supplements and curated wellness plans — Blood Sugar, Heart, Hair, Hormones, Menopause, GLP-1 support, Immune, Anti-Aging, Energy, General Wellness." />
+<meta property="og:url" content="https://www.directcare.ai/supplements" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Supplements · DirectCare AI" />
+<meta name="twitter:description" content="Curated, clinically trusted wellness plans — shipped to your door." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --soft: #fbf5fe;
+    --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2;
+    --lavender-200: #D185FF;
+    --ink: #281A31;
+    --muted: #5b4d65;
+    --line: rgba(40,26,49,0.08);
+    --brand: #af4bed;
+    --brand-deep: #9043bf;
+    --brand-darker: #762ba4;
+    --brand-text: #44215A;
+    --green: #14983A;
+    --gold: #d99b1f;
+    --dark: #1a0f24;
+    --dark-2: #2a1a3c;
+
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+    --shadow-soft: 0 18px 50px -16px rgba(118,43,164,0.22);
+    --shadow-lg: 0 30px 70px -20px rgba(118,43,164,0.30);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); }
+  h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+  h3 { font-size: clamp(1.1rem, 1.8vw, 1.4rem); }
+  h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
+  p { margin: 0; color: var(--muted); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .section { padding: clamp(56px, 9vw, 110px) 0; position: relative; }
+  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+  .section.lavender { background: var(--soft); }
+
+  @keyframes rise { 0% { opacity: 0; transform: translateY(16px); } 100% { opacity: 1; transform: translateY(0); } }
+  .rise { animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .rise.d1 { animation-delay: 120ms; }
+  .rise.d2 { animation-delay: 240ms; }
+  .rise.d3 { animation-delay: 360ms; }
+  .rise.d4 { animation-delay: 480ms; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 850ms cubic-bezier(0.22, 1, 0.36, 1), transform 850ms cubic-bezier(0.22, 1, 0.36, 1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+    50% { box-shadow: 0 12px 36px -4px rgba(175,75,237,0.65); }
+  }
+  .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise, .reveal, .pulse-glow { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+    .reveal.is-visible { opacity: 1 !important; transform: none !important; }
+  }
+
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+
+  /* ============ NAV ============ */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-link.active { color: var(--brand-deep); font-weight: 700; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "▾"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: inline-flex; }
+  }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+
+  /* ============ ANNOUNCEMENT BAR ============ */
+  .announce { background: linear-gradient(90deg, #44215A 0%, #762ba4 50%, #9043bf 100%); color: #fff; text-align: center; padding: 9px 16px; font-size: 0.82rem; letter-spacing: 0.02em; font-weight: 500; display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; align-items: center; }
+  .announce span { display: inline-flex; align-items: center; gap: 6px; opacity: 0.95; }
+  .announce a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 720px) { .announce { gap: 12px; font-size: 0.74rem; } }
+
+  /* ============ BUTTONS ============ */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 26px; border-radius: 999px; font-weight: 600; font-size: 0.96rem; letter-spacing: -0.005em; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; }
+  .btn-primary { background: var(--brand); color: white; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+  .btn-primary:hover { background: var(--brand-deep); transform: translateY(-2px); box-shadow: 0 16px 36px -6px rgba(144,67,191,0.55); }
+  .btn-primary-xl { padding: 18px 34px; font-size: 1.04rem; }
+  .btn-ghost { background: rgba(40,26,49,0.04); color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { background: rgba(40,26,49,0.08); }
+  .btn-small { padding: 10px 18px; font-size: 0.86rem; }
+
+  /* ============ HERO ============ */
+  .hero { position: relative; padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); overflow: hidden; isolation: isolate; }
+  .hero-card-wrap { position: relative; background: linear-gradient(135deg, #f4eefb 0%, #ead6fb 55%, #e2c5fa 100%); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-soft); }
+  .hero-card-wrap::before { content: ""; position: absolute; bottom: -120px; left: -120px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(175,75,237,0.35) 0%, transparent 70%); filter: blur(20px); }
+  .hero-card-wrap::after { content: ""; position: absolute; top: -60px; right: -60px; width: 280px; height: 280px; border-radius: 50%; background: radial-gradient(circle, rgba(209,133,255,0.35) 0%, transparent 70%); filter: blur(20px); }
+  .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(20px, 4vw, 48px); align-items: center; padding: clamp(32px, 5vw, 60px); }
+  @media (max-width: 880px) { .hero-grid { grid-template-columns: 1fr; padding: 28px; } }
+  .hero-copy h1 { margin: 16px 0 18px; }
+  .hero-copy h1 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: clamp(1rem, 1.4vw, 1.18rem); max-width: 540px; margin: 0 0 28px; color: var(--muted); line-height: 1.6; }
+  .hero-trust-line { display: flex; align-items: center; gap: 10px; margin-top: 22px; font-size: 0.82rem; color: var(--brand-text); font-weight: 500; flex-wrap: wrap; }
+  .hero-trust-line .dot-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(118,43,164,0.4); }
+  .hero-visual { position: relative; aspect-ratio: 1/1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); }
+  .hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 880px) { .hero-visual { aspect-ratio: 5/4; } }
+
+  /* ============ SECTION HEAD ============ */
+  .section-head { text-align: center; max-width: 720px; margin: 0 auto clamp(36px, 5vw, 60px); }
+  .section-head .eyebrow { margin-bottom: 16px; }
+  .section-head h2 { margin-bottom: 16px; }
+  .section-head p { font-size: clamp(1rem, 1.3vw, 1.1rem); }
+
+  /* ============ CATEGORY GRID ============ */
+  .cat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 2vw, 24px); }
+  @media (max-width: 980px) { .cat-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .cat-grid { grid-template-columns: 1fr; } }
+  .cat-card { position: relative; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease, border-color .2s ease; display: flex; flex-direction: column; }
+  .cat-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); border-color: rgba(175,75,237,0.30); }
+  .cat-art { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+  .cat-art .bg-grad { position: absolute; inset: 0; }
+  .cat-art .bg-grad.g1 { background: linear-gradient(135deg, #fde6f0 0%, #f7c8e0 100%); }
+  .cat-art .bg-grad.g2 { background: linear-gradient(135deg, #e7d4fb 0%, #c8a4f0 100%); }
+  .cat-art .bg-grad.g3 { background: linear-gradient(135deg, #ffd7d2 0%, #f7a39c 100%); }
+  .cat-art .bg-grad.g4 { background: linear-gradient(135deg, #ffe6c7 0%, #f6c187 100%); }
+  .cat-art .bg-grad.g5 { background: linear-gradient(135deg, #d4f4e8 0%, #98e0c1 100%); }
+  .cat-art .bg-grad.g6 { background: linear-gradient(135deg, #f9e2ff 0%, #e1aef7 100%); }
+  .cat-art .bg-grad.g7 { background: linear-gradient(135deg, #d4ecff 0%, #9fcaf3 100%); }
+  .cat-art .bg-grad.g8 { background: linear-gradient(135deg, #f5e3d2 0%, #dbb693 100%); }
+  .cat-art .bg-grad.g9 { background: linear-gradient(135deg, #e8f0d7 0%, #b9d18a 100%); }
+  .cat-art .bg-grad.g10 { background: linear-gradient(135deg, #fff1c2 0%, #f4cf6f 100%); }
+  .cat-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; opacity: 0.92; transition: transform .5s cubic-bezier(0.22,1,0.36,1); }
+  .cat-card:hover .cat-art img { transform: scale(1.05); }
+  .cat-icon { position: absolute; left: 18px; top: 18px; width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.92); backdrop-filter: blur(6px); display: grid; place-items: center; color: var(--brand-darker); box-shadow: 0 8px 22px -10px rgba(40,26,49,0.20); }
+  .cat-body { padding: 22px 22px 24px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+  .cat-body h3 { font-family: 'Manrope', sans-serif; font-size: 1.18rem; }
+  .cat-body p { font-size: 0.92rem; line-height: 1.5; flex: 1; }
+  .cat-cta { margin-top: 8px; align-self: flex-start; background: var(--brand); color: white; padding: 10px 22px; border-radius: 999px; font-weight: 600; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 6px; transition: background .2s ease, transform .15s ease; }
+  .cat-card:hover .cat-cta { background: var(--brand-deep); transform: translateX(2px); }
+
+  /* ============ FEATURED PRODUCT ============ */
+  .feat-wrap { position: relative; background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); border-radius: var(--radius-xl); padding: clamp(32px, 5vw, 64px); border: 1px solid var(--lavender-100); }
+  .feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 56px); align-items: center; }
+  @media (max-width: 880px) { .feat-grid { grid-template-columns: 1fr; } }
+  .feat-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-soft); }
+  .feat-visual img { width: 100%; height: 100%; object-fit: cover; }
+  .feat-copy h2 { margin-bottom: 14px; font-size: clamp(1.8rem, 3.2vw, 2.6rem); }
+  .feat-copy .stars { color: var(--gold); font-size: 1rem; letter-spacing: 2px; margin-bottom: 10px; display: inline-flex; align-items: center; gap: 10px; }
+  .feat-copy .stars .num { color: var(--muted); font-size: 0.82rem; letter-spacing: 0; font-weight: 600; }
+  .feat-product h3 { font-family: 'Manrope', sans-serif; font-size: clamp(1.6rem, 2.4vw, 2.1rem); color: var(--brand-darker); margin: 10px 0 12px; }
+  .feat-product p { font-size: 1.04rem; max-width: 460px; margin-bottom: 24px; }
+  .feat-divider { height: 1px; background: var(--lavender-100); margin: 28px 0 18px; }
+  .feat-fineprint { font-size: 0.84rem; color: var(--muted); max-width: 420px; line-height: 1.55; }
+
+  /* ============ TESTIMONIALS ============ */
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(18px, 2vw, 26px); margin-top: clamp(24px, 4vw, 40px); }
+  @media (max-width: 880px) { .testi-grid { grid-template-columns: 1fr; } }
+  .testi { background: var(--soft); border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 28px; position: relative; }
+  .testi::before { content: "\201C"; position: absolute; left: 22px; top: 10px; font-family: 'Manrope', serif; font-size: 3.6rem; color: var(--brand); opacity: 0.45; line-height: 1; font-weight: 900; }
+  .testi p { font-size: 1rem; color: var(--ink); font-style: italic; margin: 28px 0 18px; line-height: 1.55; }
+  .testi .who { font-size: 0.84rem; color: var(--brand-deep); font-weight: 700; letter-spacing: 0.04em; }
+  .testi-cta-row { display: flex; justify-content: center; margin-top: clamp(28px, 4vw, 44px); }
+
+  /* ============ EMAIL CTA ============ */
+  .email-cta { background: var(--soft); border-radius: var(--radius-xl); padding: clamp(36px, 5vw, 64px) clamp(24px, 4vw, 48px); text-align: center; }
+  .email-cta h2 { font-size: clamp(1.6rem, 2.6vw, 2.2rem); margin-bottom: 20px; }
+  .email-form { display: flex; gap: 10px; max-width: 520px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
+  .email-form input { flex: 1; min-width: 220px; padding: 14px 20px; border-radius: 999px; border: 1px solid var(--lavender-100); background: white; font-size: 0.95rem; font-family: inherit; color: var(--ink); outline: none; transition: border-color .15s ease, box-shadow .15s ease; }
+  .email-form input:focus { border-color: var(--brand); box-shadow: 0 0 0 3px rgba(175,75,237,0.15); }
+  .social-row { display: flex; gap: 14px; justify-content: center; margin-top: 28px; }
+  .social-row a { width: 36px; height: 36px; border-radius: 50%; background: white; border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease; }
+  .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
+  .app-badges { display: flex; gap: 12px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
+  .app-badges a { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; border-radius: 12px; background: #1a0f24; color: white; font-size: 0.78rem; font-weight: 500; }
+  .app-badges a small { display: block; font-size: 0.66rem; opacity: 0.7; line-height: 1; margin-bottom: 2px; }
+  .app-badges a strong { font-family: 'Manrope', sans-serif; font-size: 1rem; font-weight: 700; line-height: 1; }
+
+  /* ============ FOOTER ============ */
+  footer { background: white; border-top: 1px solid var(--lavender-100); padding: 64px 0 36px; }
+  .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr 1.1fr; gap: 40px; margin-bottom: 36px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 580px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 28px; margin-bottom: 16px; }
+  .foot-brand p { font-size: 0.86rem; line-height: 1.55; }
+  .foot-col h5 { margin-bottom: 14px; color: var(--brand-deep); }
+  .foot-col a { display: block; font-size: 0.86rem; color: var(--muted); padding: 5px 0; transition: color .15s ease; }
+  .foot-col a:hover { color: var(--brand); }
+  .foot-savings { background: linear-gradient(135deg, #44215A 0%, #762ba4 50%, #af4bed 100%); border-radius: 16px; padding: 22px; color: white; box-shadow: 0 16px 36px -16px rgba(118,43,164,0.45); }
+  .foot-savings .save-eyebrow { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.85; }
+  .foot-savings h4 { font-family: 'Manrope', sans-serif; font-size: 1.15rem; color: white; margin: 8px 0 4px; }
+  .foot-savings .save-num { font-family: 'Manrope', sans-serif; font-size: 1.6rem; font-weight: 800; }
+  .foot-savings p { color: rgba(255,255,255,0.85); font-size: 0.78rem; margin-top: 8px; }
+  .foot-badges { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; padding: 24px 0; border-top: 1px solid var(--lavender-100); border-bottom: 1px solid var(--lavender-100); margin-bottom: 24px; }
+  .foot-badge { display: inline-flex; align-items: center; gap: 8px; color: var(--brand-text); font-size: 0.78rem; font-weight: 600; padding: 8px 14px; background: var(--soft); border: 1px solid var(--lavender-100); border-radius: 999px; }
+  .foot-badge svg { color: var(--brand); }
+  .legal { display: flex; gap: 24px; justify-content: space-between; flex-wrap: wrap; font-size: 0.78rem; color: var(--muted); padding-top: 18px; }
+  .legal-disclaimer { font-size: 0.74rem; color: var(--muted); line-height: 1.55; padding: 18px 0 6px; max-width: 100%; }
+  .legal-disclaimer strong { color: var(--ink); }
+
+</style>
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ -->
+<div class="announce">
+  <span>No Insurance Required</span>
+  <span>·</span>
+  <span>Discreet Shipping</span>
+  <span>·</span>
+  <span>Free Delivery</span>
+  <span>·</span>
+  <span>Call Now: <a href="tel:8885593876">888-559-3876</a></span>
+</div>
+
+<!-- ============ NAV ============ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="https://www.directcare.ai/start-hrt">HRT</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements">Supplements</a>
+          <a href="https://www.directcare.ai/journeys">Blood Labs</a>
+          <a href="/womens-health/">View All →</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/mens-health/#testosterone">Testosterone (TRT)</a>
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/mens-health/#weight">Weight Loss (GLP-1)</a>
+          <a href="/supplements">Supplements</a>
+          <a href="https://www.directcare.ai/journeys">Blood Labs</a>
+          <a href="/mens-health/">View All →</a>
+        </div>
+      </div>
+      <a class="nav-link active" href="/supplements">Supplements</a>
+      <a class="nav-link" href="https://www.directcare.ai/journeys">Blood Tests</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <a class="btn btn-primary btn-small" href="#plans">Shop Plans →</a>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
+        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details>
+    <summary>Women's Health</summary>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="https://www.directcare.ai/start-hrt">HRT</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements">Supplements</a>
+    <a href="https://www.directcare.ai/journeys">Blood Labs</a>
+    <a href="/womens-health/">View All →</a>
+  </details>
+  <details>
+    <summary>Men's Health</summary>
+    <a href="/mens-health/#testosterone">Testosterone (TRT)</a>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/mens-health/#weight">Weight Loss (GLP-1)</a>
+    <a href="/supplements">Supplements</a>
+    <a href="https://www.directcare.ai/journeys">Blood Labs</a>
+    <a href="/mens-health/">View All →</a>
+  </details>
+  <a href="/supplements" style="color: var(--brand-deep); font-weight: 700;">Supplements</a>
+  <a href="https://www.directcare.ai/journeys">Blood Tests</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal →</a>
+  <a class="btn btn-primary btn-primary-xl" style="width:100%; margin-top:20px;" href="#plans">Shop Plans →</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-card-wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow rise"><span class="dot"></span> Take Control of Your Health</span>
+          <h1 class="rise d1">With Smarter,<br/><span class="accent">Clinically Trusted</span> Products.</h1>
+          <p class="hero-sub rise d2">Your body deserves more than guesswork. Access professional-grade supplements and wellness essentials trusted by healthcare practitioners and backed by clinical research.</p>
+          <div class="rise d3">
+            <a href="https://directcareai.portal.tellescope.com/register" class="btn btn-primary btn-primary-xl pulse-glow">Create Your Free Account →</a>
+          </div>
+          <div class="hero-trust-line rise d4">
+            <span>Clinically Trusted</span>
+            <span class="dot-sep"></span>
+            <span>Quality Assured</span>
+            <span class="dot-sep"></span>
+            <span>Reviewed by SubScript</span>
+          </div>
+        </div>
+        <div class="hero-visual rise d2">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Authentic%20black%2045-year-old%20woman%20wearing%20lavender%20in%20soft%20natural%20morning%20light%20sitt%20977551.png" alt="Woman holding phone with DirectCare AI supplements app" loading="eager" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ CURATED WELLNESS PLANS ============ -->
+<section class="section" id="plans">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Curated Wellness Plans</span>
+      <h2>Professionally guided support for better health.</h2>
+      <p>Our curated wellness plans combine clinically trusted supplements and evidence-based protocols to support specific health goals — from energy and focus to metabolism, immune strength, and more.</p>
+    </div>
+
+    <div class="cat-grid">
+
+      <!-- BLOOD SUGAR -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=blood-sugar">
+        <div class="cat-art">
+          <div class="bg-grad g1"></div>
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M5 8l1.5 1.5"/><path d="M19 8l-1.5 1.5"/><circle cx="12" cy="15" r="7"/><path d="M9 15h6"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Blood Sugar Support</h3>
+          <p>Promote balanced blood sugar and healthy metabolism.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- MEN'S VITALITY -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=mens-vitality">
+        <div class="cat-art">
+          <div class="bg-grad g2"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v10"/><path d="M7 12h10"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Men's Vitality</h3>
+          <p>Support vitality, performance, and hormonal balance.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- HEART HEALTH -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=heart-health">
+        <div class="cat-art">
+          <div class="bg-grad g3"></div>
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Heart Health</h3>
+          <p>Support circulation and healthy blood pressure you can count on.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- HAIR GROWTH -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=hair-growth">
+        <div class="cat-art">
+          <div class="bg-grad g4"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 0-7 3-7 7 0 3 2 5 2 8h10c0-3 2-5 2-8 0-4-3-7-7-7z"/><path d="M9 11c0-2 1.5-3 3-3s3 1 3 3"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Hair Growth</h3>
+          <p>Strengthen hair and scalp health for thicker, fuller results.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- GLP-1 SUPPORT -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=glp1-support">
+        <div class="cat-art">
+          <div class="bg-grad g5"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12l-2 16H8L6 4z"/><path d="M4 4h16"/><path d="M10 9v6"/><path d="M14 9v6"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>GLP-1 Support</h3>
+          <p>Maintain muscle, balance metabolism, and feel your best every day.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- MENOPAUSE -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=menopause">
+        <div class="cat-art">
+          <div class="bg-grad g6"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M12 15v6"/><path d="M9 18h6"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Menopause Support</h3>
+          <p>Promote hormonal balance, better sleep, and overall well-being.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- IMMUNE -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=immune">
+        <div class="cat-art">
+          <div class="bg-grad g7"></div>
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Immune Support</h3>
+          <p>Strengthen immune defenses and resilience year-round.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- ANTI-AGING -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=anti-aging">
+        <div class="cat-art">
+          <div class="bg-grad g8"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5 5.6.8-4 3.9.9 5.6L12 14.8 7.1 17.3 8 11.7 4 7.8l5.6-.8L12 2z"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Anti-Aging</h3>
+          <p>Support healthy aging, radiant skin, and renewed cellular energy.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- GENERAL WELLNESS -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=general-wellness">
+        <div class="cat-art">
+          <div class="bg-grad g9"></div>
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/age-diverse%20women.png" alt="" loading="lazy" />
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>General Wellness</h3>
+          <p>Support daily energy, gut balance, and overall wellness.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+      <!-- ENERGY -->
+      <a class="cat-card" href="https://directcareai.portal.tellescope.com/register?category=energy">
+        <div class="cat-art">
+          <div class="bg-grad g10"></div>
+          <span class="cat-icon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </span>
+        </div>
+        <div class="cat-body">
+          <h3>Energy</h3>
+          <p>Boost focus, stamina, and endurance to power through your day.</p>
+          <span class="cat-cta">Shop Now →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED PRODUCT ============ -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Featured Products</span>
+      <h2>Doctor-Recommended. Patient-Approved.</h2>
+      <p>Our most-loved formulas, trusted by thousands of patients who want real, measurable results.</p>
+    </div>
+    <div class="feat-wrap">
+      <div class="feat-grid">
+        <div class="feat-visual">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" alt="DirectCare AI patients enjoying daily wellness routine" loading="lazy" />
+        </div>
+        <div class="feat-copy">
+          <div class="feat-product">
+            <div class="stars">★★★★★ <span class="num">4.9/5 (812+ reviews)</span></div>
+            <h3>Women's Balance Complete</h3>
+            <p>Restores calm, energy, and hormonal harmony — formulated with clinically dosed adaptogens, magnesium glycinate, and B-complex to support women through every stage.</p>
+            <a class="btn btn-primary" href="https://directcareai.portal.tellescope.com/register?product=womens-balance-complete">Shop Now →</a>
+          </div>
+          <div class="feat-divider"></div>
+          <p class="feat-fineprint">All products are practitioner-grade, tested for purity, and shipped directly from SubScript's verified pharmacy network.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> What patients say</span>
+      <h2>Trusted by thousands.</h2>
+      <p>Real patients. Real outcomes. Reviewed and verified by US-licensed clinicians.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <p>I finally found a supplement plan that fits my life.</p>
+        <span class="who">— Karen, 54</span>
+      </div>
+      <div class="testi">
+        <p>My doctor recommended DirectCare AI — it just works.</p>
+        <span class="who">— Michael, 38</span>
+      </div>
+      <div class="testi">
+        <p>Being able to get blood labs through DirectCare AI has been stress free.</p>
+        <span class="who">— Brenda, 43</span>
+      </div>
+    </div>
+    <div class="testi-cta-row">
+      <a class="btn btn-primary btn-primary-xl pulse-glow" href="https://directcareai.portal.tellescope.com/register">Get Started →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMAIL CTA ============ -->
+<section class="section">
+  <div class="container">
+    <div class="email-cta">
+      <h2>Start Your Health Journey with DirectCare AI</h2>
+      <form class="email-form" onsubmit="event.preventDefault(); window.location.href='https://directcareai.portal.tellescope.com/register?email='+encodeURIComponent(this.email.value);">
+        <input type="email" name="email" placeholder="Enter your email address" aria-label="Email address" required />
+        <button class="btn btn-primary" type="submit">Subscribe →</button>
+      </form>
+      <div class="social-row" aria-label="Follow DirectCare AI">
+        <a href="https://www.facebook.com/directcareai" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.98H7.9V12h2.5V9.8c0-2.46 1.46-3.82 3.7-3.82 1.07 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.98A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="https://www.instagram.com/directcareai" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+        <a href="https://twitter.com/directcareai" aria-label="X / Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.523 7.452L22.5 22h-6.84l-4.97-6.456L4.9 22H2.14l6.978-7.973L1.5 2h7.005l4.5 5.94L18.244 2zm-1.197 18.18h1.598L7.05 3.74H5.328L17.047 20.18z"/></svg></a>
+        <a href="https://www.tiktok.com/@directcareai" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1.84-.39z"/></svg></a>
+        <a href="https://www.youtube.com/@directcareai" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.96-1.97C18.84 4.25 12 4.25 12 4.25s-6.84 0-8.58.45a2.78 2.78 0 0 0-1.96 1.97C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.96 1.97c1.74.45 8.58.45 8.58.45s6.84 0 8.58-.45a2.78 2.78 0 0 0 1.96-1.97C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12l-5.75 3.27z"/></svg></a>
+      </div>
+      <div class="app-badges">
+        <a href="https://play.google.com/store/apps/details?id=ai.directcare">
+          <svg width="22" height="24" viewBox="0 0 22 24" fill="currentColor"><path d="M.5 1.4v21.2c0 .55.3 1.04.78 1.27L13.5 12 1.28.13C.8.36.5.85.5 1.4zM16.81 14.71l-3.31-1.86-2.5 2.5 5.81 3.27c.62.35 1.4.13 1.75-.48a1.28 1.28 0 0 0-.48-1.75l-1.27-1.68zM2 23.74l11.5-6.45 2.5-2.5L4 11.79 2 23.74zM21.22 11.27l-2.97-1.69-3.31 1.86 2.5 2.5 3.78-1.91c.62-.35.83-1.13.48-1.75a1.28 1.28 0 0 0-.48-.48z"/></svg>
+          <span><small>GET IT ON</small><strong>Google Play</strong></span>
+        </a>
+        <a href="https://apps.apple.com/us/app/directcare-ai/id0000000000">
+          <svg width="22" height="24" viewBox="0 0 22 24" fill="currentColor"><path d="M16.4 12.8c0-2.8 2.3-4.1 2.4-4.2-1.3-1.9-3.3-2.2-4-2.2-1.7-.2-3.3 1-4.2 1-.9 0-2.2-1-3.6-1-1.9 0-3.6 1.1-4.6 2.8C1 12.9 2.3 17.7 3.9 20.3c.8 1.3 1.7 2.7 2.9 2.6 1.2 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.3 2.8-2.5.9-1.4 1.3-2.8 1.3-2.9-.1 0-2.5-1-2.5-3.7zm-2.7-7c.7-.8 1.1-2 1-3.1-1 .1-2.2.7-2.9 1.4-.6.7-1.2 1.9-1 3 1.1.1 2.2-.5 2.9-1.3z"/></svg>
+          <span><small>Download on the</small><strong>App Store</strong></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Popular</h5>
+        <a href="/womens-health/">Women's Health</a>
+        <a href="/mens-health/">Men's Health</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair</a>
+        <a href="https://www.directcare.ai/blog">Blogs</a>
+        <a href="https://www.directcare.ai/chronicconditioncare">Remote Patient Monitoring</a>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <a href="https://www.directcare.ai/medical-consent">Medical Consent</a>
+        <a href="https://www.directcare.ai/bill-of-rights">Bill of Rights</a>
+        <a href="https://www.directcare.ai/contact">Contact</a>
+        <a href="https://www.directcare.ai/faq">FAQs</a>
+        <a href="https://www.directcare.ai/about">Corporate</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="https://www.directcare.ai/terms-and-conditions">Terms and Conditions</a>
+        <a href="https://www.directcare.ai/privacy-policy">Privacy Policy</a>
+        <a href="https://www.directcare.ai/safety">Safety</a>
+        <a href="https://www.directcare.ai/ccpa">CCPA</a>
+      </div>
+      <div class="foot-savings">
+        <div class="save-eyebrow">DirectCare</div>
+        <h4>Prescription Savings Card</h4>
+        <div class="save-num">Save up to 80%</div>
+        <p>On select medications at 64,000+ US pharmacies. Free for every DirectCare AI patient.</p>
+      </div>
+    </div>
+
+    <div class="foot-badges">
+      <span class="foot-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/></svg> Made in USA</span>
+      <span class="foot-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> HIPAA Compliant</span>
+      <span class="foot-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg> LegitScript Certified</span>
+    </div>
+
+    <div class="legal-disclaimer">
+      <strong>DirectCare AI is a patient management platform designed to support independent physicians and practitioners through the DirectCare AI Patient Engagement Platform.</strong> DirectCare AI does not directly provide medical or pharmacy services, and payment does not guarantee the prescribing or dispensing of any medication. All medical services are delivered by independent providers. The information on this website is for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. If you have any questions or concerns about your health, please consult with your doctor. This site serves as an advertisement for services, not for any specific medication.
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* === Mobile drawer === */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    var openIco = t.querySelector('.icon-open');
+    var closeIco = t.querySelector('.icon-close');
+    function setOpen(open) {
+      d.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      d.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (openIco) openIco.style.display = open ? 'none' : '';
+      if (closeIco) closeIco.style.display = open ? '' : 'none';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    t.addEventListener('click', function() { setOpen(!d.classList.contains('open')); });
+    d.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 980 && d.classList.contains('open')) setOpen(false);
+    });
+  })();
+
+  /* === Scroll-triggered reveal === */
+  (function() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var TARGETS = ['.section-head', '.cat-card', '.feat-grid', '.testi', '.email-cta'];
+    TARGETS.forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(el) {
+        if (!el.classList.contains('reveal')) el.classList.add('reveal');
+      });
+    });
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+</script>
+
+</body>
+</html>

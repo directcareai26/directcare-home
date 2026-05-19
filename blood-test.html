@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>Blood Labs &amp; Biomarker Testing — DirectCare AI</title>
+<meta name="description" content="At-home blood labs and biomarker panels reviewed by US-licensed clinicians. Get hormones, metabolic health, inflammation, micronutrients, and full-body biomarkers tested — plus a personalized, clinician-built plan and supplement protocol." />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="Blood Labs &amp; Biomarker Testing — DirectCare AI" />
+<meta property="og:description" content="At-home blood labs and full-body biomarker panels reviewed by US-licensed clinicians. Personalized plan, supplements, and lifestyle protocol — built for you." />
+<meta property="og:url" content="https://www.directcare.ai/blood-test" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Blood Labs &amp; Biomarker Testing — DirectCare AI" />
+<meta name="twitter:description" content="At-home blood labs reviewed by clinicians. Personalized plan + supplements." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --soft: #fbf5fe;
+    --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2;
+    --lavender-200: #D185FF;
+    --ink: #281A31;
+    --muted: #5b4d65;
+    --line: rgba(40,26,49,0.08);
+    --brand: #af4bed;
+    --brand-deep: #9043bf;
+    --brand-darker: #762ba4;
+    --brand-text: #44215A;
+    --green: #14983A;
+    --bad: #d04545;
+    --gold: #d99b1f;
+    --dark: #1a0f24;
+
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+    --shadow-soft: 0 18px 50px -16px rgba(118,43,164,0.22);
+    --shadow-lg: 0 30px 70px -20px rgba(118,43,164,0.30);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); }
+  h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+  h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
+  p { margin: 0; color: var(--muted); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
+  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+  .section.lavender { background: var(--soft); }
+
+  @keyframes rise { 0% { opacity: 0; transform: translateY(16px); } 100% { opacity: 1; transform: translateY(0); } }
+  .rise { animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .rise.d1 { animation-delay: 120ms; }
+  .rise.d2 { animation-delay: 240ms; }
+  .rise.d3 { animation-delay: 360ms; }
+  .rise.d4 { animation-delay: 480ms; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 850ms cubic-bezier(0.22, 1, 0.36, 1), transform 850ms cubic-bezier(0.22, 1, 0.36, 1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+    50% { box-shadow: 0 12px 36px -4px rgba(175,75,237,0.65); }
+  }
+  .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise, .reveal, .pulse-glow { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+    .reveal.is-visible { opacity: 1 !important; transform: none !important; }
+  }
+
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .eyebrow.on-dark { background: rgba(255,255,255,0.10); color: #f7e8ff; border-color: rgba(255,255,255,0.20); }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-link.is-active { color: var(--brand-deep); font-weight: 700; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "▾"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: inline-flex; }
+  }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+  .drawer-cta { margin-top: 20px; }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 1rem; letter-spacing: -0.005em; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; }
+  .btn-primary { background: var(--brand); color: white; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+  .btn-primary:hover { background: var(--brand-deep); transform: translateY(-2px); box-shadow: 0 16px 36px -6px rgba(144,67,191,0.55); }
+  .btn-primary-xl { padding: 20px 38px; font-size: 1.08rem; }
+  .btn-ghost { background: rgba(40,26,49,0.04); color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { background: rgba(40,26,49,0.08); }
+  .btn-light-on-dark { background: white; color: var(--brand-darker); }
+  .btn-light-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
+
+  /* HERO */
+  .hero { position: relative; overflow: hidden; padding: 72px 0 100px; isolation: isolate; background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
+  .hero-bg-orbs { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+  .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.55; }
+  .orb.a { width: 540px; height: 540px; background: radial-gradient(circle, #d185ff 0%, transparent 70%); top: -200px; right: -120px; }
+  .orb.b { width: 480px; height: 480px; background: radial-gradient(circle, #af4bed 0%, transparent 70%); bottom: -240px; left: -160px; opacity: 0.35; }
+  @keyframes drift-a { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -30px) scale(1.08); } }
+  @keyframes drift-b { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-50px, 40px) scale(1.1); } }
+  .orb.a { animation: drift-a 14s ease-in-out infinite; }
+  .orb.b { animation: drift-b 17s ease-in-out infinite; }
+
+  .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; }
+  @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .hero-copy h1 { margin-top: 22px; }
+  .hero-copy h1 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 560px; margin: 24px 0 32px; color: var(--muted); line-height: 1.55; }
+  .hero-sub strong { color: var(--ink); font-weight: 700; }
+  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; margin-top: 32px; font-size: 0.86rem; color: var(--muted); }
+  .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-trust-item svg { color: var(--brand); flex-shrink: 0; }
+  .hero-trust-divider { width: 1px; height: 16px; background: var(--line); }
+
+  .hero-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
+  .hero-visual img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-visual-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(40,26,49,0.55) 100%); pointer-events: none; }
+  .hero-card { position: absolute; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-radius: 18px; padding: 14px 18px; box-shadow: 0 20px 40px -16px rgba(40,26,49,0.25); display: flex; align-items: center; gap: 12px; }
+  .hero-card.tl { top: 22px; left: 22px; }
+  .hero-card.br { bottom: 22px; right: 22px; }
+  .hero-card .pill-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--soft); display: grid; place-items: center; color: var(--brand-deep); flex-shrink: 0; }
+  .hero-card .pill-text { font-size: 0.78rem; color: var(--muted); line-height: 1.25; }
+  .hero-card .pill-text strong { display: block; color: var(--ink); font-weight: 800; font-size: 0.9rem; }
+
+  /* TRUST BAR */
+  .trust-seal-bar { padding: 28px 0; background: white; border-bottom: 1px solid var(--lavender-100); }
+  .trust-seal-inner { display: flex; gap: 14px 40px; flex-wrap: wrap; justify-content: center; align-items: center; }
+  .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
+  .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
+  .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .seal-text strong { font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
+  @media (max-width: 760px) {
+    .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
+    .seal-icon { width: 34px; height: 34px; }
+    .seal-text strong { font-size: 0.78rem; }
+    .seal-text span { font-size: 0.68rem; }
+  }
+
+  /* JOURNEY (3 numbered cards) */
+  .journey-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  @media (max-width: 900px) { .journey-grid { grid-template-columns: 1fr; } }
+  .journey-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.08); }
+  .journey-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+  .journey-card.elev { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-color: rgba(175,75,237,0.30); transform: translateY(-12px); box-shadow: var(--shadow-soft); }
+  @media (max-width: 900px) { .journey-card.elev { transform: none; } }
+  .journey-num { font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
+  .journey-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .journey-card p { font-size: 0.98rem; }
+  .journey-note { max-width: 720px; margin: 36px auto 0; padding: 18px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; text-align: center; color: var(--muted); font-size: 0.96rem; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
+  .journey-note strong { color: var(--ink); }
+
+  /* HOW IT WORKS (Patient Experience) — image + steps */
+  .pe-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
+  @media (max-width: 980px) { .pe-grid { grid-template-columns: 1fr; gap: 40px; } }
+  .pe-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
+  .pe-visual img { width: 100%; height: 100%; object-fit: cover; }
+  .pe-steps { display: flex; flex-direction: column; gap: 16px; }
+  .pe-step { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: flex-start; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 22px 24px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
+  .pe-step:hover { transform: translateX(4px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
+  .pe-step-icon { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); color: white; display: grid; place-items: center; box-shadow: 0 8px 18px -6px rgba(175,75,237,0.45); }
+  .pe-step-icon svg { width: 22px; height: 22px; }
+  .pe-step-label { font-family: 'Manrope', sans-serif; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); margin-bottom: 4px; }
+  .pe-step h3 { font-size: 1.12rem; margin-bottom: 6px; }
+  .pe-step p { font-size: 0.94rem; }
+
+  /* PRICING (3 plans) */
+  .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  @media (max-width: 980px) { .price-grid { grid-template-columns: 1fr; } }
+  .price-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; display: flex; flex-direction: column; position: relative; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
+  .price-card:hover { transform: translateY(-6px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
+  .price-card.featured { background: linear-gradient(160deg, var(--soft) 0%, white 70%); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
+  .price-card.featured::before { content: "Most popular"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--brand); color: white; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; box-shadow: 0 8px 18px -6px rgba(175,75,237,0.55); white-space: nowrap; }
+  .price-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); }
+  .price-tag .dot-mini { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .price-card h3 { font-size: 1.55rem; margin: 14px 0 18px; }
+  .price-amt { display: flex; align-items: baseline; gap: 6px; margin-bottom: 6px; }
+  .price-amt .num { font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.03em; }
+  .price-amt .per { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
+  .price-amt .num small { font-size: 1.4rem; font-weight: 800; color: var(--muted); }
+  .price-foot { font-size: 0.84rem; color: var(--muted); margin-bottom: 24px; }
+  .price-list { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .price-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); line-height: 1.5; }
+  .price-list li svg { flex-shrink: 0; color: var(--green); margin-top: 3px; }
+  .price-list li strong { font-weight: 700; }
+  .price-card .btn { width: 100%; }
+
+  /* DR PEPIN */
+  .doctor-card { position: relative; background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 55%, var(--brand-deep) 100%); border-radius: var(--radius-xl); overflow: hidden; color: white; padding: 0; box-shadow: var(--shadow-lg); }
+  .doctor-card::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 15% 25%, rgba(255,255,255,0.18), transparent 60%), radial-gradient(ellipse 50% 50% at 90% 80%, rgba(255,255,255,0.12), transparent 60%); pointer-events: none; }
+  .doctor-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 1fr; gap: 0; align-items: stretch; }
+  @media (max-width: 900px) { .doctor-grid { grid-template-columns: 1fr; } }
+  .doctor-copy { padding: clamp(40px, 5vw, 64px) clamp(28px, 5vw, 64px); }
+  .doctor-copy .eyebrow { background: rgba(255,255,255,0.14); color: #f7e8ff; border-color: rgba(255,255,255,0.22); }
+  .doctor-copy h2 { color: white; margin-top: 18px; font-size: clamp(2rem, 3.6vw, 2.8rem); }
+  .doctor-copy .role { display: block; margin-top: 8px; font-size: 1.05rem; color: rgba(255,255,255,0.86); font-weight: 600; }
+  .doctor-copy p { color: rgba(255,255,255,0.88); font-size: 1.02rem; margin: 22px 0 32px; max-width: 540px; }
+  .doctor-credentials { display: flex; gap: 22px; flex-wrap: wrap; margin: 0 0 32px; font-size: 0.86rem; color: rgba(255,255,255,0.82); }
+  .doctor-credentials span { display: inline-flex; align-items: center; gap: 8px; }
+  .doctor-credentials svg { color: #f7e8ff; }
+  .doctor-visual { position: relative; min-height: 360px; }
+  .doctor-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+  .doctor-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(76,34,124,0.45) 100%); pointer-events: none; }
+
+  /* BIOMARKER GROUPS */
+  .biomarker-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  @media (max-width: 980px) { .biomarker-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .biomarker-grid { grid-template-columns: 1fr; } }
+  .biomarker-cat { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 22px 20px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .biomarker-cat:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.35); box-shadow: 0 18px 36px -18px rgba(118,43,164,0.20); }
+  .biomarker-cat .ico { width: 38px; height: 38px; border-radius: 10px; background: var(--soft); color: var(--brand-deep); display: grid; place-items: center; margin-bottom: 14px; }
+  .biomarker-cat h4 { font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; color: var(--ink); margin: 0 0 6px; }
+  .biomarker-cat p { font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
+
+  /* FAQ */
+  .faq-wrap { max-width: 820px; margin: 0 auto; }
+  .faq { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
+  .faq summary { padding: 22px 26px; cursor: pointer; font-weight: 700; font-size: 1.04rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Manrope', sans-serif; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .25s ease; flex-shrink: 0; }
+  .faq[open] summary::after { content: "−"; }
+  .faq .faq-body { padding: 0 26px 22px; color: var(--muted); font-size: 0.96rem; line-height: 1.6; }
+
+  /* FINAL CTA */
+  .final-cta { position: relative; background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
+  @keyframes aurora-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .final-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 50% 50% at 20% 30%, rgba(231,176,255,0.40), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 70%, rgba(208,133,255,0.30), transparent 60%), radial-gradient(ellipse 60% 50% at 50% 100%, rgba(118,43,164,0.45), transparent 60%); pointer-events: none; }
+  .final-cta > * { position: relative; z-index: 2; }
+  .final-cta h2 { color: white; max-width: 760px; margin: 22px auto 24px; }
+  .final-cta p { color: rgba(255,255,255,0.90); max-width: 620px; margin: 0 auto 36px; font-size: 1.1rem; }
+  .final-cta .subscribe-row { display: flex; gap: 10px; max-width: 480px; margin: 28px auto 0; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.22); padding: 6px 6px 6px 18px; border-radius: 999px; backdrop-filter: blur(8px); }
+  .final-cta .subscribe-row input { flex: 1; background: transparent; border: none; outline: none; color: white; font-size: 1rem; font-family: inherit; }
+  .final-cta .subscribe-row input::placeholder { color: rgba(255,255,255,0.65); }
+  .final-cta .subscribe-row button { background: white; color: var(--brand-darker); border: none; border-radius: 999px; padding: 12px 22px; font-weight: 700; font-size: 0.96rem; cursor: pointer; font-family: inherit; transition: transform .15s ease, background .2s ease; }
+  .final-cta .subscribe-row button:hover { background: #fbf5fe; transform: translateY(-1px); }
+
+  /* FOOTER */
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; margin-top: 60px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
+  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; transition: color .15s ease; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+
+  .section-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+  .section-head p { margin-top: 18px; font-size: 1.06rem; }
+  .section-head h2 { margin-top: 22px; }
+
+  @media (max-width: 760px) {
+    .section { padding: 64px 0; }
+    .section-head { margin-bottom: 40px; }
+    .hero { padding: 48px 0 64px; }
+    footer { padding: 48px 0 24px; }
+    .btn-primary-xl { padding: 18px 30px; font-size: 1rem; }
+  }
+
+  /* SCROLL PROGRESS BAR */
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: transparent; z-index: 100; pointer-events: none; }
+  .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); box-shadow: 0 0 12px rgba(175,75,237,0.6); transition: width 60ms linear; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .orb.a, .orb.b, .final-cta { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scroll-progress-bar"></div></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="https://www.directcare.ai/weight-loss-program">Weight Loss (GLP-1)</a>
+          <a href="https://www.directcare.ai/start-hrt">HRT</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="https://www.directcare.ai/supplements">Supplements</a>
+          <a href="/blood-test">Blood Labs</a>
+          <a href="/womens-health/">View All →</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/mens-health/#testosterone">Testosterone (TRT)</a>
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/mens-health/#weight">Weight Loss (GLP-1)</a>
+          <a href="https://www.directcare.ai/supplements">Supplements</a>
+          <a href="/blood-test">Blood Labs</a>
+          <a href="/mens-health/">View All →</a>
+        </div>
+      </div>
+      <a class="nav-link" href="https://www.directcare.ai/supplements">Supplements</a>
+      <a class="nav-link is-active" href="/blood-test">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <a class="btn btn-primary" href="#pricing" style="padding: 12px 22px; font-size: 0.92rem;">Start Your Journey →</a>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
+        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details>
+    <summary>Women's Health</summary>
+    <a href="https://www.directcare.ai/weight-loss-program">Weight Loss (GLP-1)</a>
+    <a href="https://www.directcare.ai/start-hrt">HRT</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="https://www.directcare.ai/supplements">Supplements</a>
+    <a href="/blood-test">Blood Labs</a>
+    <a href="/womens-health/">View All →</a>
+  </details>
+  <details>
+    <summary>Men's Health</summary>
+    <a href="/mens-health/#testosterone">Testosterone (TRT)</a>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/mens-health/#weight">Weight Loss (GLP-1)</a>
+    <a href="https://www.directcare.ai/supplements">Supplements</a>
+    <a href="/blood-test">Blood Labs</a>
+    <a href="/mens-health/">View All →</a>
+  </details>
+  <a href="https://www.directcare.ai/supplements">Supplements</a>
+  <a href="/blood-test" style="color: var(--brand-deep); font-weight: 700;">Blood Labs</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal →</a>
+  <a class="btn btn-primary btn-primary-xl drawer-cta" style="width:100%;" href="#pricing">Start Your Journey →</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg-orbs" aria-hidden="true">
+    <span class="orb a"></span>
+    <span class="orb b"></span>
+  </div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow rise"><span class="dot"></span> Blood Labs · Biomarker Testing</span>
+        <h1 class="rise d1">Move Better.<br/>Feel Stronger.<br/><span class="accent">Live Fully.</span></h1>
+        <p class="hero-sub rise d2">Your health is personal — and your care should be too. DirectCare AI translates a full panel of <strong>clinician-ordered blood biomarkers</strong> into a plain-English roadmap: what's working, what's not, and the daily steps that actually move the needle.</p>
+        <div class="hero-cta-row rise d3">
+          <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">Start Your Journey →</a>
+          <a href="#how" class="btn btn-ghost btn-primary-xl">How it works</a>
+        </div>
+        <div class="hero-trust rise d4">
+          <span class="hero-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Clinician-reviewed results
+          </span>
+          <span class="hero-trust-divider"></span>
+          <span class="hero-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            HIPAA-compliant
+          </span>
+          <span class="hero-trust-divider"></span>
+          <span class="hero-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            Results in days, not weeks
+          </span>
+        </div>
+      </div>
+      <div class="hero-visual rise d2">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/virtual%20clinician%20consult.png" alt="Couple receiving personalized health guidance through DirectCare AI" loading="eager" />
+        <div class="hero-visual-overlay"></div>
+        <div class="hero-card tl">
+          <span class="pill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="M5 9a7 7 0 0 0 14 0"/></svg>
+          </span>
+          <div class="pill-text"><strong>Up to 81 biomarkers</strong>Hormones · metabolic · nutrient</div>
+        </div>
+        <div class="hero-card br">
+          <span class="pill-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </span>
+          <div class="pill-text"><strong>Plain-English results</strong>No more guesswork</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- TRUST BAR -->
+<div class="trust-seal-bar">
+  <div class="container trust-seal-inner">
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+      <span class="seal-text"><strong>LegitScript Certified</strong><span>Verified safe telehealth</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+      <span class="seal-text"><strong>HIPAA Compliant</strong><span>Encrypted &amp; private</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="seal-text"><strong>Results in 3–5 days</strong><span>CLIA-certified labs</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+      <span class="seal-text"><strong>2,000+ draw sites</strong><span>Nationwide access</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- JOURNEY -->
+<section class="section soft" id="journey">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Your Path Forward</span>
+      <h2>Your Health Journey,<br/>Made for You.</h2>
+      <p>With DirectCare AI and FullScript, your care continues long after the appointment ends. Each digital journey gives you clear steps to follow each day, helping you build momentum at your own pace.</p>
+    </div>
+    <div class="journey-grid">
+      <div class="journey-card">
+        <div class="journey-num">01</div>
+        <h3>Easy, step-by-step support from your care team</h3>
+        <p>A US-licensed clinician reads every result, flags what matters, and builds a roadmap you can actually follow — no medical jargon required.</p>
+      </div>
+      <div class="journey-card elev">
+        <div class="journey-num">02</div>
+        <h3>Nutrition, movement, and supplement plans built for your goals</h3>
+        <p>Targeted protocols based on <strong>your</strong> biomarkers — sleep, energy, recovery, hormones, weight. Pharmaceutical-grade supplements shipped through Fullscript.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">03</div>
+        <h3>Simple progress tracking so you can see your growth over time</h3>
+        <p>Retest at 90 or 180 days. Compare every number side-by-side and watch your trends move — visible proof your plan is working.</p>
+      </div>
+    </div>
+    <div class="journey-note">
+      Real progress happens <strong>between visits</strong>. Journeys keep you connected, informed, and motivated.
+    </div>
+  </div>
+</section>
+
+<!-- PATIENT EXPERIENCE / HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Patient Experience</span>
+      <h2>How It Works</h2>
+      <p>Four simple steps. Zero waiting rooms. A complete picture of what's happening inside your body — and exactly what to do about it.</p>
+    </div>
+
+    <div class="pe-grid">
+      <div class="pe-visual">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/virtual%20clinician%20consult.png" alt="Patient reviewing lab results and personalized supplement plan on DirectCare AI" loading="lazy" />
+      </div>
+      <div class="pe-steps">
+        <div class="pe-step">
+          <div class="pe-step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M5 14h14l-1.5 6h-11Z"/><path d="M9 4V2h6v2"/></svg>
+          </div>
+          <div>
+            <div class="pe-step-label">Step 01</div>
+            <h3>Get your lab test</h3>
+            <p>Pick a panel, complete a 3-minute intake, and book a draw at one of 2,000+ partner labs near you — or request mobile phlebotomy at home.</p>
+          </div>
+        </div>
+        <div class="pe-step">
+          <div class="pe-step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>
+          </div>
+          <div>
+            <div class="pe-step-label">Step 02</div>
+            <h3>See your results explained clearly</h3>
+            <p>Every marker is translated into plain English with context, reference ranges, and what each number actually means for your health.</p>
+          </div>
+        </div>
+        <div class="pe-step">
+          <div class="pe-step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <div>
+            <div class="pe-step-label">Step 03</div>
+            <h3>Receive a personalized wellness plan</h3>
+            <p>A clinician builds a targeted protocol — nutrition, movement, supplements, and (if indicated) medication — designed around <em>your</em> numbers.</p>
+          </div>
+        </div>
+        <div class="pe-step">
+          <div class="pe-step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9 11l4 4 8-8"/><path d="M14 7h7v7"/></svg>
+          </div>
+          <div>
+            <div class="pe-step-label">Step 04</div>
+            <h3>Follow guided next steps, including check-ins and trends</h3>
+            <p>Track progress in the portal, message your clinician, and retest at 90 or 180 days to see exactly how much you've moved the needle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIOMARKER CATEGORIES -->
+<section class="section lavender">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> What We Measure</span>
+      <h2>Eight systems. One full-body picture.</h2>
+      <p>From thyroid to testosterone, glucose to ApoB, vitamin D to inflammation — every panel covers the biomarkers that drive how you feel, perform, and age.</p>
+    </div>
+    <div class="biomarker-grid">
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        <h4>Hormones</h4>
+        <p>Total &amp; free testosterone, estradiol, progesterone, DHEA, cortisol, SHBG.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M4.93 10.93 9.17 15.17"/><path d="M2 18h6"/><path d="M22 18h-6"/><path d="m19.07 10.93-4.24 4.24"/><path d="M12 22v-6"/></svg></div>
+        <h4>Thyroid</h4>
+        <p>TSH, free T3, free T4, reverse T3, TPO &amp; thyroglobulin antibodies.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <h4>Metabolic Health</h4>
+        <p>Glucose, fasting insulin, HOMA-IR, HbA1c, leptin — your insulin resistance picture.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
+        <h4>Cardiovascular</h4>
+        <p>ApoB, Lp(a), full lipid panel, hsCRP, homocysteine — beyond the basic cholesterol test.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m4.93 19.07 1.41-1.41"/><path d="m17.66 6.34 1.41-1.41"/></svg></div>
+        <h4>Micronutrients</h4>
+        <p>Vitamin D, B12, folate, ferritin, iron panel, magnesium, zinc.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2a8 8 0 0 1 16 0h2"/><path d="M5 12v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6"/></svg></div>
+        <h4>Inflammation</h4>
+        <p>hsCRP, ESR, fibrinogen, ferritin — chronic inflammation markers that drive aging.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M6 21h12"/></svg></div>
+        <h4>Liver &amp; Kidney</h4>
+        <p>AST, ALT, GGT, albumin, BUN, creatinine, eGFR — vital filtering function.</p>
+      </div>
+      <div class="biomarker-cat">
+        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div>
+        <h4>CBC &amp; Whole Blood</h4>
+        <p>Full red &amp; white cell count, platelets, hemoglobin, hematocrit — your baseline.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section soft" id="pricing">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Pricing</span>
+      <h2>Ready to Begin Your Journey?</h2>
+      <p>Choose the path that fits your goals. Every plan includes clinician interpretation, a personalized supplement protocol, lifestyle recommendations, and permanent access to your results.</p>
+    </div>
+    <div class="price-grid">
+      <!-- Plan 1: Essential -->
+      <div class="price-card">
+        <span class="price-tag"><span class="dot-mini"></span> Plan One</span>
+        <h3>Essential Journey</h3>
+        <div class="price-amt"><span class="num">$199</span><span class="per">one-time</span></div>
+        <div class="price-foot">Best for an annual baseline check-in</div>
+        <ul class="price-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>50 biomarkers</strong> — full CBC, metabolic, thyroid, lipid &amp; vitamin D</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Clinician interpretation of every result</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement list (Fullscript)</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; nutrition recommendations</li>
+        </ul>
+        <a href="https://www.directcare.ai/journeys" class="btn btn-ghost">Start Here →</a>
+      </div>
+
+      <!-- Plan 2: Men's (Featured) -->
+      <div class="price-card featured">
+        <span class="price-tag"><span class="dot-mini"></span> Plan Two</span>
+        <h3>Men's Health Journey</h3>
+        <div class="price-amt"><span class="num">$299</span><span class="per">one-time</span></div>
+        <div class="price-foot">Built around testosterone, metabolic &amp; cardiovascular health</div>
+        <ul class="price-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>71 biomarkers</strong> — Essential + full male hormone, ApoB, Lp(a), PSA</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed clinician interpretation of every result</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement protocol</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; training recommendations</li>
+        </ul>
+        <a href="https://www.directcare.ai/journeys" class="btn btn-primary">Start Here →</a>
+      </div>
+
+      <!-- Plan 3: Women's -->
+      <div class="price-card">
+        <span class="price-tag"><span class="dot-mini"></span> Plan Three</span>
+        <h3>Women's Health Journey</h3>
+        <div class="price-amt"><span class="num">$349</span><span class="per">one-time</span></div>
+        <div class="price-foot">Hormones, thyroid, metabolic &amp; bone-health focused</div>
+        <ul class="price-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>81 biomarkers</strong> — Essential + estradiol, progesterone, full thyroid, iron, AMH</span></li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed clinician interpretation of every result</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement protocol</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; nutrition recommendations</li>
+        </ul>
+        <a href="https://www.directcare.ai/journeys" class="btn btn-ghost">Start Here →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DR. PEPIN -->
+<section class="section">
+  <div class="container">
+    <div class="doctor-card">
+      <div class="doctor-grid">
+        <div class="doctor-copy">
+          <span class="eyebrow on-dark"><span class="dot"></span> Meet Your Clinical Lead</span>
+          <h2>Dr. Tim Pepin<span class="role">Director of Clinical Nutrition &amp; Integrative Health</span></h2>
+          <p>Discover a personalized supplement program built around your unique health needs. Using lab-based insights and clinical expertise, Dr. Pepin and the DirectCare AI team help you restore balance, boost energy, and feel your best — every day.</p>
+          <div class="doctor-credentials">
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg> Board-certified clinician</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 20+ years clinical nutrition</span>
+            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M5 14h14l-1.5 6h-11Z"/></svg> Integrative &amp; functional medicine</span>
+          </div>
+          <a href="#pricing" class="btn btn-light-on-dark btn-primary-xl">Start My Plan Today →</a>
+        </div>
+        <div class="doctor-visual" aria-hidden="true">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/virtual%20clinician%20consult.png" alt="Dr. Tim Pepin, Director of Clinical Nutrition &amp; Integrative Health at DirectCare AI" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section lavender" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Common questions</span>
+      <h2>Everything you'd ask a clinician.</h2>
+      <p>Honest answers about labs, results, and what happens next. Have a question we missed? Message a clinician once you're inside.</p>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq" open>
+        <summary>Where do I get my blood drawn?</summary>
+        <div class="faq-body">After you complete your intake, we'll send a clinician-signed lab order to your portal. Walk into any of 2,000+ partner draw sites near you (Quest, Labcorp, and partner networks) — no appointment needed at most locations. Prefer to stay home? Mobile phlebotomy is available in most metros for a small add-on fee.</div>
+      </details>
+      <details class="faq">
+        <summary>How fast do I get results?</summary>
+        <div class="faq-body">Most panels come back from the lab in 3–5 business days. As soon as they're in, a clinician reviews every marker, writes your interpretation, and pushes your personalized plan to your portal — typically within 1–2 business days of results landing.</div>
+      </details>
+      <details class="faq">
+        <summary>Do I need insurance?</summary>
+        <div class="faq-body">No. Blood Labs and the Journeys program are direct-pay, with one transparent price that includes the lab draw, clinician interpretation, your personalized plan, and permanent access to your data. We don't bill insurance for journeys.</div>
+      </details>
+      <details class="faq">
+        <summary>What if my labs show something concerning?</summary>
+        <div class="faq-body">If a marker is significantly out of range — or if a pattern suggests a condition that needs more workup — your clinician will flag it directly in your interpretation, recommend next steps (additional testing, treatment, or in-person referral), and connect you with a physician on our platform if treatment is appropriate.</div>
+      </details>
+      <details class="faq">
+        <summary>Can I retest later to track progress?</summary>
+        <div class="faq-body">Yes — and we recommend it. Most members retest at 90 or 180 days to see how nutrition, supplements, and lifestyle changes have moved the needle. Your portal shows side-by-side comparisons of every biomarker over time, so you can see exactly what's improving.</div>
+      </details>
+      <details class="faq">
+        <summary>Are these supplements pharmaceutical-grade?</summary>
+        <div class="faq-body">Yes. We dispense through Fullscript — the same dispensary used by tens of thousands of clinical practices — which gives you direct access to physician-grade brands at member pricing. Every recommendation is tied to a marker on your lab, not a guess.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA / SUBSCRIBE -->
+<section class="section">
+  <div class="container">
+    <div class="final-cta" id="final-cta">
+      <span class="eyebrow on-dark"><span class="dot"></span> Start your health journey</span>
+      <h2>Modern healthcare.<br/>Directly to you.</h2>
+      <p>Get a clinician-built plan tied to your real biomarkers. Order in minutes — results, interpretation, and protocol delivered to your portal.</p>
+      <a href="#pricing" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Find your panel →</a>
+      <form class="subscribe-row" onsubmit="event.preventDefault(); var b = this.querySelector('button'); b.textContent='Thanks!'; setTimeout(function(){ b.textContent='Subscribe'; }, 2400);">
+        <input type="email" required placeholder="Enter your email address" aria-label="Email address" />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Popular</h5>
+        <a href="/womens-health/">Women's Health</a>
+        <a href="/mens-health/">Men's Health</a>
+        <a href="https://www.directcare.ai/weight-loss-program">Weight Loss</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair Regrowth</a>
+        <a href="https://www.directcare.ai/blog">Blogs</a>
+        <a href="https://www.directcare.ai/chronicconditioncare">Remote Patient Monitoring</a>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <a href="https://www.directcare.ai/medical-consent">Medical Consent</a>
+        <a href="https://www.directcare.ai/bill-of-rights">Bill of Rights</a>
+        <a href="https://www.directcare.ai/contact">Contact</a>
+        <a href="https://www.directcare.ai/faq">FAQs</a>
+        <a href="https://www.directcare.ai/about">Corporate</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="https://www.directcare.ai/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="https://www.directcare.ai/privacy-policy">Privacy Policy</a>
+        <a href="https://www.directcare.ai/safety">Safety</a>
+        <a href="https://www.directcare.ai/ccpa">CCPA</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="/blood-test">Blood Labs</a>
+        <a href="https://www.directcare.ai/supplements">Supplements</a>
+        <a href="https://www.directcare.ai/journeys">Journeys</a>
+        <a href="https://directcareai.portal.tellescope.com/">Patient Portal</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · LegitScript Certified</div>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Disclaimer:</strong> DirectCare AI is a patient management platform designed to support independent physicians and practitioners through the DirectCare AI Patient Engagement Platform. DirectCare AI does not directly provide medical or pharmacy services, and payment does not guarantee the prescribing or dispensing of any medication. All medical services are delivered by independent providers. The information on this website is for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. If you have any questions or concerns about your health, please consult with your doctor. This site serves as an advertisement for services, not for any specific medication.
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile drawer */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    var openIco = t.querySelector('.icon-open');
+    var closeIco = t.querySelector('.icon-close');
+    function setOpen(open) {
+      d.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      d.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (openIco) openIco.style.display = open ? 'none' : '';
+      if (closeIco) closeIco.style.display = open ? '' : 'none';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    t.addEventListener('click', function() { setOpen(!d.classList.contains('open')); });
+    d.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 980 && d.classList.contains('open')) setOpen(false);
+    });
+  })();
+
+  /* Scroll-triggered reveal */
+  (function() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var TARGETS = ['.section .section-head', '.journey-card', '.pe-step', '.price-card', '.biomarker-cat', '.doctor-card', '.faq', '.final-cta'];
+    TARGETS.forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(el) {
+        if (!el.classList.contains('reveal')) el.classList.add('reveal');
+      });
+    });
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  /* Scroll progress bar */
+  (function() {
+    var bar = document.getElementById('scroll-progress-bar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement;
+      var max = (h.scrollHeight - h.clientHeight) || 1;
+      var p = Math.min(100, Math.max(0, (h.scrollTop / max) * 100));
+      bar.style.width = p + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  /* Affiliate click-ID capture + propagation (matches home page) */
+  (function() {
+    var STORAGE_KEY = 'dcai_clickId';
+    var STORAGE_TS = 'dcai_clickId_ts';
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+    var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId', 'cid', 'aff_id', 'flex_id'];
+    var DCAI_HOSTS = [
+      'directcare.ai', 'www.directcare.ai',
+      'women.directcare.ai', 'mens.directcare.ai',
+      'directcare-home.vercel.app',
+      'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app',
+      'sexual-health-mocha.vercel.app', 'surge-max.vercel.app',
+      'business.tellescope.com', 'directcareai.portal.tellescope.com'
+    ];
+    function getURL(href) { try { return new URL(href, window.location.href); } catch (e) { return null; } }
+    function readClickIdFromQuery() {
+      var url = getURL(window.location.href);
+      if (!url) return null;
+      for (var i = 0; i < INCOMING_PARAMS.length; i++) {
+        var v = url.searchParams.get(INCOMING_PARAMS[i]);
+        if (v) return v;
+      }
+      return null;
+    }
+    function persist(id) {
+      try {
+        sessionStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_TS, String(Date.now()));
+      } catch (e) {}
+    }
+    function load() {
+      try {
+        var s = sessionStorage.getItem(STORAGE_KEY);
+        if (s) return s;
+        var l = localStorage.getItem(STORAGE_KEY);
+        var ts = parseInt(localStorage.getItem(STORAGE_TS) || '0', 10);
+        if (l && Date.now() - ts < TTL_MS) {
+          sessionStorage.setItem(STORAGE_KEY, l);
+          return l;
+        }
+        if (l) {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(STORAGE_TS);
+        }
+      } catch (e) {}
+      return null;
+    }
+    var clickId = readClickIdFromQuery();
+    if (clickId) persist(clickId);
+    else clickId = load();
+    if (!clickId) return;
+    function shouldRewrite(href) {
+      if (!href) return false;
+      var first = href.charAt(0);
+      if (first === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return false;
+      var u = getURL(href);
+      return !!(u && DCAI_HOSTS.indexOf(u.hostname) > -1);
+    }
+    function withClickId(href) {
+      var u = getURL(href);
+      if (!u) return href;
+      if (!u.searchParams.has('utm_clickId')) u.searchParams.set('utm_clickId', clickId);
+      return u.toString();
+    }
+    function rewriteAll() {
+      document.querySelectorAll('a[href]').forEach(function(a) {
+        var raw = a.getAttribute('href');
+        if (shouldRewrite(raw)) a.href = withClickId(a.href);
+      });
+    }
+    rewriteAll();
+    if ('MutationObserver' in window) {
+      var mo = new MutationObserver(rewriteAll);
+      mo.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function() { mo.disconnect(); }, 4000);
+    }
+    try { window.__dcaiClickId = clickId; } catch (e) {}
+  })();
+</script>
+
+</body>
+</html>

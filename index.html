@@ -1187,6 +1187,105 @@
     io.observe(c);
   })();
 
+  /* === Affiliate click-ID capture + propagation ===
+     Reads ?clickid=, ?clickId=, ?utm_clickId=, ?aff_id=, ?cid= or ?flex_id=
+     from incoming URL (FlexOffers and compatible networks), persists in
+     sessionStorage + 7-day localStorage, then rewrites every outbound link
+     that points to a DCAI / Tellescope domain to include &utm_clickId=<id>.
+     Tellescope's S2S postback fires with that value, which FlexOffers uses
+     to attribute the conversion back to the affiliate. */
+  (function() {
+    var STORAGE_KEY = 'dcai_clickId';
+    var STORAGE_TS = 'dcai_clickId_ts';
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+    var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId', 'cid', 'aff_id', 'flex_id'];
+    var DCAI_HOSTS = [
+      'directcare.ai', 'www.directcare.ai',
+      'women.directcare.ai', 'mens.directcare.ai',
+      'directcare-home.vercel.app',
+      'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app',
+      'sexual-health-mocha.vercel.app', 'surge-max.vercel.app',
+      'business.tellescope.com', 'directcareai.portal.tellescope.com'
+    ];
+
+    function getURL(href) { try { return new URL(href, window.location.href); } catch (e) { return null; } }
+
+    function readClickIdFromQuery() {
+      var url = getURL(window.location.href);
+      if (!url) return null;
+      for (var i = 0; i < INCOMING_PARAMS.length; i++) {
+        var v = url.searchParams.get(INCOMING_PARAMS[i]);
+        if (v) return v;
+      }
+      return null;
+    }
+
+    function persist(id) {
+      try {
+        sessionStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_TS, String(Date.now()));
+      } catch (e) {}
+    }
+
+    function load() {
+      try {
+        var s = sessionStorage.getItem(STORAGE_KEY);
+        if (s) return s;
+        var l = localStorage.getItem(STORAGE_KEY);
+        var ts = parseInt(localStorage.getItem(STORAGE_TS) || '0', 10);
+        if (l && Date.now() - ts < TTL_MS) {
+          sessionStorage.setItem(STORAGE_KEY, l);
+          return l;
+        }
+        if (l) {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(STORAGE_TS);
+        }
+      } catch (e) {}
+      return null;
+    }
+
+    var clickId = readClickIdFromQuery();
+    if (clickId) persist(clickId);
+    else clickId = load();
+    if (!clickId) return;
+
+    function shouldRewrite(href) {
+      if (!href) return false;
+      var first = href.charAt(0);
+      if (first === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return false;
+      var u = getURL(href);
+      return !!(u && DCAI_HOSTS.indexOf(u.hostname) > -1);
+    }
+
+    function withClickId(href) {
+      var u = getURL(href);
+      if (!u) return href;
+      if (!u.searchParams.has('utm_clickId')) u.searchParams.set('utm_clickId', clickId);
+      return u.toString();
+    }
+
+    function rewriteAll() {
+      document.querySelectorAll('a[href]').forEach(function(a) {
+        var raw = a.getAttribute('href');
+        if (shouldRewrite(raw)) a.href = withClickId(a.href);
+      });
+    }
+
+    rewriteAll();
+
+    // Catch any links injected dynamically (mobile drawer, etc.)
+    if ('MutationObserver' in window) {
+      var mo = new MutationObserver(rewriteAll);
+      mo.observe(document.body, { childList: true, subtree: true });
+      setTimeout(function() { mo.disconnect(); }, 4000);
+    }
+
+    // Expose for debugging
+    try { window.__dcaiClickId = clickId; } catch (e) {}
+  })();
+
   /* === Final CTA sparkles (twinkling stars in aurora) === */
   (function() {
     var cta = document.getElementById('final-cta');

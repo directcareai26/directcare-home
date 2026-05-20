@@ -246,12 +246,16 @@
   @keyframes offer-tag-pulse { 0%,100% { box-shadow: 0 8px 20px -6px rgba(214,31,90,0.55); } 50% { box-shadow: 0 10px 28px -4px rgba(214,31,90,0.85); } }
   .offer-body { padding: 24px 26px 26px; display: flex; flex-direction: column; flex: 1; }
   .offer-body h3 { font-size: 1.3rem; margin-bottom: 8px; }
-  .offer-body p { font-size: 0.94rem; line-height: 1.5; flex: 1; margin-bottom: 16px; }
-  .offer-meta { display: flex; justify-content: space-between; align-items: center; padding-top: 16px; border-top: 1px solid var(--lavender-100); }
-  .offer-price { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: var(--ink); }
-  .offer-price small { font-weight: 600; color: var(--muted); font-size: 0.78rem; }
-  .offer-cta { font-weight: 700; font-size: 0.88rem; color: var(--brand); display: inline-flex; align-items: center; gap: 4px; transition: gap .15s ease; }
-  .offer-card:hover .offer-cta { gap: 8px; color: var(--brand-deep); }
+  .offer-body p { font-size: 0.94rem; line-height: 1.5; flex: 1; margin-bottom: 18px; }
+  .offer-meta { display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid var(--lavender-100); }
+  /* Big standout price — gradient brand text */
+  .offer-price { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.65rem; line-height: 1; letter-spacing: -0.02em; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 60%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-flex; align-items: baseline; gap: 4px; }
+  .offer-price small { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.78rem; color: var(--muted); background: none; -webkit-text-fill-color: var(--muted); letter-spacing: 0; }
+  /* Real CTA pill button — solid brand gradient, full-width */
+  .offer-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 20px; border-radius: 999px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.92rem; letter-spacing: -0.005em; transition: gap .2s ease, transform .2s ease, box-shadow .25s ease; box-shadow: 0 10px 24px -8px rgba(175,75,237,0.45); }
+  .offer-card:hover .offer-cta { gap: 12px; transform: translateY(-1px); box-shadow: 0 16px 32px -6px rgba(118,43,164,0.55); }
+  .offer-cta::after { content: "→"; font-size: 1.05rem; line-height: 1; transition: transform .25s ease; }
+  .offer-card:hover .offer-cta::after { transform: translateX(3px); }
 
   /* ============== HOW IT WORKS ============== */
   .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -794,7 +798,7 @@
           <p>Compounded semaglutide and tirzepatide — oral and injectable options. Sustainable weight loss under clinician supervision.</p>
           <div class="offer-meta">
             <span class="offer-price">From $269<small> /mo</small></span>
-            <span class="offer-cta">See if you qualify →</span>
+            <span class="offer-cta">See if you qualify</span>
           </div>
         </div>
       </a>
@@ -810,7 +814,7 @@
           <p>Bioidentical estradiol, progesterone and testosterone for perimenopause, menopause and postpartum. Lab-driven, physician-titrated.</p>
           <div class="offer-meta">
             <span class="offer-price">From $89<small> /mo</small></span>
-            <span class="offer-cta">Start HRT →</span>
+            <span class="offer-cta">Start HRT</span>
           </div>
         </div>
       </a>
@@ -826,7 +830,7 @@
           <p>Injectable, oral, and natural-pathway protocols (enclomiphene). Restore energy, drive and recovery — labs included.</p>
           <div class="offer-meta">
             <span class="offer-price">$169&ndash;$189<small> /mo</small></span>
-            <span class="offer-cta">Restore your T →</span>
+            <span class="offer-cta">Restore your T</span>
           </div>
         </div>
       </a>
@@ -842,7 +846,7 @@
           <p>On-demand and daily ED protocols — sildenafil, tadalafil, and a 4-in-1 performance formula (SURGE MAX). Discreet packaging.</p>
           <div class="offer-meta">
             <span class="offer-price">From $12<small> /vial</small></span>
-            <span class="offer-cta">Find your protocol →</span>
+            <span class="offer-cta">Find your protocol</span>
           </div>
         </div>
       </a>
@@ -858,7 +862,7 @@
           <p>Personalized topical and oral protocols — Finasteride, Dutasteride, Minoxidil, Tretinoin, Fluocinolone. Stop loss. Regrow.</p>
           <div class="offer-meta">
             <span class="offer-price">From $59<small> /mo</small></span>
-            <span class="offer-cta">See the protocols →</span>
+            <span class="offer-cta">See the protocols</span>
           </div>
         </div>
       </a>
@@ -874,7 +878,7 @@
           <p>Spironolactone, low-dose oral Minoxidil, topical combos and clinical-strength shampoo — built around female pattern thinning.</p>
           <div class="offer-meta">
             <span class="offer-price">From $59<small> /mo</small></span>
-            <span class="offer-cta">Reclaim your hair →</span>
+            <span class="offer-cta">Reclaim your hair</span>
           </div>
         </div>
       </a>
@@ -890,7 +894,7 @@
           <p>A full panel covering hormones, metabolic health, cardiovascular and inflammation markers. Mailed to your door, reviewed by a clinician.</p>
           <div class="offer-meta">
             <span class="offer-price">From $196<small> one-time</small></span>
-            <span class="offer-cta">Check your bloodwork →</span>
+            <span class="offer-cta">Check your bloodwork</span>
           </div>
         </div>
       </a>
@@ -905,7 +909,7 @@
           <h3>Supplements</h3>
           <p>Physician-formulated nutraceuticals — magnesium, creatine, recovery and sleep stacks.</p>
           <div class="offer-meta" style="justify-content:flex-end;">
-            <span class="offer-cta">Shop supplements →</span>
+            <span class="offer-cta">Shop supplements</span>
           </div>
         </div>
       </a>

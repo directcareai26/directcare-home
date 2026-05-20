@@ -280,6 +280,41 @@
   .faq[open] summary::after { content: "−"; }
   .faq .faq-body { padding: 0 26px 22px; color: var(--muted); font-size: 0.96rem; line-height: 1.6; }
 
+  /* ============== RX CARD SECTION ============== */
+  .rxcard-section { position: relative; overflow: hidden; }
+  .rxcard-wrap { position: relative; background: linear-gradient(160deg, #ffffff 0%, var(--soft) 70%, #f4eefb 100%); border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(40px, 6vw, 72px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; box-shadow: var(--shadow-soft); overflow: hidden; }
+  @media (max-width: 900px) { .rxcard-wrap { grid-template-columns: 1fr; gap: 32px; padding: 32px 24px; } }
+  .rxcard-bg-orb { position: absolute; width: 480px; height: 480px; border-radius: 50%; background: radial-gradient(circle, rgba(209,133,255,0.45) 0%, transparent 70%); filter: blur(60px); top: -180px; right: -120px; pointer-events: none; z-index: 0; }
+  .rxcard-bg-orb.b { top: auto; right: auto; bottom: -200px; left: -160px; background: radial-gradient(circle, rgba(175,75,237,0.30) 0%, transparent 70%); }
+  .rxcard-copy { position: relative; z-index: 2; }
+  .rxcard-copy h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin: 18px 0 18px; }
+  .rxcard-copy h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
+  .rxcard-copy p.lead { font-size: 1.05rem; color: var(--muted); margin: 0 0 26px; max-width: 540px; line-height: 1.6; }
+  .rxcard-benefits { list-style: none; padding: 0; margin: 0 0 30px; display: grid; gap: 14px; }
+  .rxcard-benefits li { display: flex; gap: 12px; align-items: flex-start; color: var(--ink); font-size: 0.98rem; line-height: 1.5; }
+  .rxcard-benefits li .check { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; display: grid; place-items: center; box-shadow: 0 6px 14px -4px rgba(175,75,237,0.40); }
+  .rxcard-benefits li strong { color: var(--ink); font-weight: 800; }
+  .rxcard-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+  .rxcard-disclaimer { margin-top: 22px; font-size: 0.76rem; color: var(--muted); line-height: 1.5; max-width: 520px; }
+
+  .rxcard-visual { position: relative; z-index: 2; display: flex; align-items: center; justify-content: center; min-height: 320px; }
+  .rxcard-image-frame { position: relative; transform: rotate(-4deg); transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1); }
+  .rxcard-image-frame:hover { transform: rotate(-1deg) scale(1.03); }
+  .rxcard-image-frame img { width: 100%; max-width: 460px; height: auto; border-radius: 18px; box-shadow: 0 30px 70px -16px rgba(118,43,164,0.40), 0 8px 20px -6px rgba(40,26,49,0.18); }
+  .rxcard-savings-badge { position: absolute; top: -22px; right: -22px; background: white; border-radius: 999px; padding: 14px 22px; box-shadow: 0 18px 40px -10px rgba(40,26,49,0.25); display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; font-family: 'Manrope', sans-serif; border: 2px solid var(--brand); transform: rotate(8deg); animation: badge-bounce 4s ease-in-out infinite; }
+  @keyframes badge-bounce { 0%,100% { transform: rotate(8deg) translateY(0); } 50% { transform: rotate(8deg) translateY(-6px); } }
+  .rxcard-savings-badge .pct { font-size: 1.5rem; font-weight: 900; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .rxcard-savings-badge .lbl { font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 2px; }
+  @media (max-width: 540px) {
+    .rxcard-image-frame img { max-width: 320px; }
+    .rxcard-savings-badge { top: -16px; right: -8px; padding: 10px 16px; }
+    .rxcard-savings-badge .pct { font-size: 1.15rem; }
+  }
+  .rxcard-pharmacies { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--lavender-100); }
+  .rxcard-pharmacies-label { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); margin-bottom: 14px; }
+  .rxcard-pharmacies-list { display: flex; flex-wrap: wrap; gap: 8px 12px; }
+  .rxcard-pharmacy-pill { padding: 6px 14px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; font-size: 0.78rem; font-weight: 600; color: var(--ink); }
+
   /* ============== FINAL CTA ============== */
   .final-cta { position: relative; background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 50%, var(--brand-deep) 100%); color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
   .final-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(255,255,255,0.18), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(255,255,255,0.10), transparent 60%); pointer-events: none; }
@@ -910,6 +945,71 @@
         <summary>Can I message my clinician?</summary>
         <div class="faq-body">Yes — direct, async messaging with your assigned clinician is included in every program. Replies typically arrive the next business day. For TRT and HRT, we re-titrate based on labs at regular intervals once you're started.</div>
       </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RX CARD ============ -->
+<section class="section rxcard-section" id="rxcard">
+  <div class="container">
+    <div class="rxcard-wrap">
+      <span class="rxcard-bg-orb" aria-hidden="true"></span>
+      <span class="rxcard-bg-orb b" aria-hidden="true"></span>
+
+      <div class="rxcard-copy">
+        <span class="eyebrow"><span class="dot"></span> Prescription savings · Bonus</span>
+        <h2>Save up to <span class="accent">80%</span> on every other prescription.</h2>
+        <p class="lead">DirectCare AI partners with The Rx Card so you can save on the prescriptions we <em>don't</em> ship — antibiotics, ADHD meds, family scripts, even pet meds. Show the card at the pharmacy. Pay the discounted price. That's it.</p>
+
+        <ul class="rxcard-benefits">
+          <li>
+            <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span><strong>Up to 80% off</strong> brand-name and generic prescriptions — savings vary by drug and pharmacy.</span>
+          </li>
+          <li>
+            <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>Accepted at <strong>60,000+ pharmacies</strong> nationwide — CVS, Walgreens, Walmart, Kroger, Rite Aid and more.</span>
+          </li>
+          <li>
+            <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span><strong>Free to use</strong> — no signup, no membership fees, no income or insurance check. Pre-activated for everyone.</span>
+          </li>
+          <li>
+            <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <span>Works for the <strong>whole family</strong> — including pets. Use it alongside or instead of insurance, whichever saves you more.</span>
+          </li>
+        </ul>
+
+        <div class="rxcard-cta-row">
+          <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-primary-xl pulse-glow">Get your free Rx card →</a>
+        </div>
+
+        <div class="rxcard-pharmacies">
+          <div class="rxcard-pharmacies-label">Accepted at</div>
+          <div class="rxcard-pharmacies-list">
+            <span class="rxcard-pharmacy-pill">CVS</span>
+            <span class="rxcard-pharmacy-pill">Walgreens</span>
+            <span class="rxcard-pharmacy-pill">Walmart</span>
+            <span class="rxcard-pharmacy-pill">Kroger</span>
+            <span class="rxcard-pharmacy-pill">Rite Aid</span>
+            <span class="rxcard-pharmacy-pill">Costco</span>
+            <span class="rxcard-pharmacy-pill">Publix</span>
+            <span class="rxcard-pharmacy-pill">+ 60,000 more</span>
+          </div>
+        </div>
+
+        <p class="rxcard-disclaimer">Powered by The Rx Card (group ZW6727). The Rx Card is not insurance. Savings are off the cash price you'd pay at the pharmacy and cannot be combined with insurance or government programs. Discounts vary by medication, pharmacy and location.</p>
+      </div>
+
+      <div class="rxcard-visual">
+        <div class="rxcard-image-frame">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/rx%20card.png" alt="DirectCare AI Rx Savings Card — group ZW6727" loading="lazy" />
+          <div class="rxcard-savings-badge" aria-hidden="true">
+            <span class="pct">Up to 80%</span>
+            <span class="lbl">Average savings</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

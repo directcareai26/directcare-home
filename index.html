@@ -178,6 +178,8 @@
   .hero-quick-cat-body { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; padding: 20px; }
   .hero-quick-cat .cat-tag { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.92); color: var(--brand-darker); font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(8px); box-shadow: 0 4px 12px -4px rgba(0,0,0,0.15); }
   .hero-quick-cat .cat-tag.green { color: #0d7a2e; }
+  .hero-quick-cat .cat-tag.hot { background: linear-gradient(135deg, #ff4d2e 0%, #d61f5a 100%); color: white; box-shadow: 0 8px 20px -6px rgba(214,31,90,0.55); animation: hot-pulse 2.2s ease-in-out infinite; }
+  @keyframes hot-pulse { 0%,100% { box-shadow: 0 8px 20px -6px rgba(214,31,90,0.55); } 50% { box-shadow: 0 10px 28px -4px rgba(214,31,90,0.85); } }
   .hero-quick-cat .cat-content { margin-top: auto; }
   .hero-quick-cat .cat-title { font-family: 'Manrope', sans-serif; font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; color: white; margin: 0 0 6px; text-shadow: 0 2px 12px rgba(0,0,0,0.20); }
   .hero-quick-cat .cat-sub { font-size: 0.84rem; line-height: 1.35; color: rgba(255,255,255,0.92); margin: 0 0 14px; text-shadow: 0 1px 8px rgba(0,0,0,0.30); }
@@ -642,7 +644,7 @@
       <a class="hero-quick-cat" href="/surge-max/">
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" alt="Sexual Health — Surge Max" loading="eager" />
         <div class="hero-quick-cat-body">
-          <span class="cat-tag">Men · ED</span>
+          <span class="cat-tag hot">🔥 Hottest</span>
           <div class="cat-content">
             <h3 class="cat-title">Surge Max</h3>
             <p class="cat-sub">4-in-1 ED protocol — sildenafil + tadalafil + more.</p>

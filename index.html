@@ -362,7 +362,8 @@
   /* ============== HOW IT WORKS — SVG CONNECTOR ============== */
   .how-section { position: relative; }
   .how-grid { position: relative; z-index: 2; }
-  .how-connector { position: absolute; top: 60px; left: 0; right: 0; height: 80px; z-index: 1; pointer-events: none; opacity: 0.55; }
+  .how-grid > .how-card { z-index: 2; }
+  .how-connector { position: absolute; top: 16px; left: 4%; right: 4%; height: 100px; z-index: 1; pointer-events: none; opacity: 0.55; overflow: visible; }
   @media (max-width: 900px) { .how-connector { display: none; } }
   .how-connector path { stroke-dasharray: 1400; stroke-dashoffset: 1400; }
   .how-connector.is-visible path { animation: how-draw 2.2s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
@@ -793,18 +794,18 @@
       <h2>Three steps. Zero waiting rooms.</h2>
       <p>From assessment to your doorstep in days — not weeks. A US-licensed clinician reviews every prescription. You only pay if you qualify and decide to start.</p>
     </div>
-    <svg class="how-connector" id="how-connector" viewBox="0 0 1200 80" fill="none" preserveAspectRatio="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="howConnectorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#af4bed" stop-opacity="0"/>
-          <stop offset="20%" stop-color="#af4bed" stop-opacity="0.9"/>
-          <stop offset="80%" stop-color="#762ba4" stop-opacity="0.9"/>
-          <stop offset="100%" stop-color="#762ba4" stop-opacity="0"/>
-        </linearGradient>
-      </defs>
-      <path d="M 100 40 C 300 -20, 500 100, 700 40 S 1000 -20, 1100 40" stroke="url(#howConnectorGrad)" stroke-width="3" stroke-dasharray="4 8" stroke-linecap="round"/>
-    </svg>
     <div class="how-grid">
+      <svg class="how-connector" id="how-connector" viewBox="0 0 1200 100" fill="none" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="howConnectorGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#af4bed" stop-opacity="0"/>
+            <stop offset="20%" stop-color="#af4bed" stop-opacity="0.9"/>
+            <stop offset="80%" stop-color="#762ba4" stop-opacity="0.9"/>
+            <stop offset="100%" stop-color="#762ba4" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path d="M 40 50 C 240 10, 460 90, 600 50 S 960 10, 1160 50" stroke="url(#howConnectorGrad)" stroke-width="3" stroke-linecap="round"/>
+      </svg>
       <div class="how-card">
         <div class="how-num">01</div>
         <h3>Free evaluation</h3>

@@ -131,6 +131,10 @@
   .btn-ghost:hover { background: rgba(40,26,49,0.08); }
   .btn-small { padding: 10px 18px; font-size: 0.86rem; }
 
+  /* ============ SCROLL PROGRESS ============ */
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: transparent; z-index: 100; pointer-events: none; }
+  .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); box-shadow: 0 0 12px rgba(175,75,237,0.6); transition: width 60ms linear; }
+
   /* ============ MARQUEE BAND ============ */
   .marquee-band { background: var(--soft); border-top: 1px solid var(--lavender-100); border-bottom: 1px solid var(--lavender-100); overflow: hidden; padding: 22px 0; position: relative; }
   .marquee-band::before, .marquee-band::after { content: ""; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
@@ -247,6 +251,8 @@
 </style>
 </head>
 <body>
+
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scroll-progress-bar"></div></div>
 
 <!-- ============ NAV ============ -->
 <nav class="nav">
@@ -737,6 +743,24 @@
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  /* === Scroll progress bar === */
+  (function() {
+    var bar = document.getElementById('scroll-progress-bar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement;
+      var max = (h.scrollHeight - h.clientHeight) || 1;
+      var p = Math.min(100, Math.max(0, (h.scrollTop / max) * 100));
+      bar.style.width = p + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
   })();
 </script>
 

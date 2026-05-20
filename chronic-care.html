@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>Chronic Care &amp; Remote Patient Monitoring — DirectCare AI</title>
+<meta name="description" content="Continuous glucose monitoring, blood pressure, and weight tracking paired with a real care team. Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) for diabetes, hypertension, obesity, heart disease, COPD and kidney disease — covered by Medicare and most major insurance." />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="Chronic Care &amp; Remote Patient Monitoring — DirectCare AI" />
+<meta property="og:description" content="Continuous glucose monitoring, blood pressure, and weight tracking paired with a real care team. Covered by Medicare and most major insurance." />
+<meta property="og:url" content="https://www.directcare.ai/chronic-care" />
+<meta property="og:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/FSL3Plus_800.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/FSL3Plus_800.jpg" />
+<meta name="twitter:title" content="Chronic Care &amp; Remote Patient Monitoring — DirectCare AI" />
+<meta name="twitter:description" content="Remote monitoring with real care. RPM + CCM for diabetes, hypertension, obesity, and more." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --soft: #fbf5fe;
+    --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2;
+    --lavender-200: #D185FF;
+    --ink: #281A31;
+    --muted: #5b4d65;
+    --line: rgba(40,26,49,0.08);
+    --brand: #af4bed;
+    --brand-deep: #9043bf;
+    --brand-darker: #762ba4;
+    --brand-text: #44215A;
+    --green: #14983A;
+    --bad: #d04545;
+    --gold: #d99b1f;
+    --dark: #1a0f24;
+
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+    --shadow-soft: 0 18px 50px -16px rgba(118,43,164,0.22);
+    --shadow-lg: 0 30px 70px -20px rgba(118,43,164,0.30);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); }
+  h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+  h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
+  h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
+  p { margin: 0; color: var(--muted); }
+  .h-italic { font-style: italic; font-weight: 700; color: var(--brand-deep); letter-spacing: -0.02em; }
+  h1 .h-italic { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
+  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+  .section.lavender { background: var(--soft); }
+
+  @keyframes rise { 0% { opacity: 0; transform: translateY(16px); } 100% { opacity: 1; transform: translateY(0); } }
+  .rise { animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .rise.d1 { animation-delay: 120ms; }
+  .rise.d2 { animation-delay: 240ms; }
+  .rise.d3 { animation-delay: 360ms; }
+  .rise.d4 { animation-delay: 480ms; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 850ms cubic-bezier(0.22, 1, 0.36, 1), transform 850ms cubic-bezier(0.22, 1, 0.36, 1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+    50% { box-shadow: 0 12px 36px -4px rgba(175,75,237,0.65); }
+  }
+  .pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+  @media (prefers-reduced-motion: reduce) {
+    .rise, .reveal, .pulse-glow { animation: none !important; transition: none !important; opacity: 1 !important; transform: none !important; }
+    .reveal.is-visible { opacity: 1 !important; transform: none !important; }
+  }
+
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .eyebrow.on-dark { background: rgba(255,255,255,0.10); color: #f7e8ff; border-color: rgba(255,255,255,0.20); }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-link.is-active { color: var(--brand-deep); font-weight: 700; }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "▾"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: inline-flex; }
+  }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 1rem; letter-spacing: -0.005em; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; }
+  .btn-primary { background: var(--brand); color: white; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+  .btn-primary:hover { background: var(--brand-deep); transform: translateY(-2px); box-shadow: 0 16px 36px -6px rgba(144,67,191,0.55); }
+  .btn-primary-xl { padding: 20px 38px; font-size: 1.08rem; }
+  .btn-ghost { background: rgba(40,26,49,0.04); color: var(--ink); border: 1px solid var(--line); }
+  .btn-ghost:hover { background: rgba(40,26,49,0.08); }
+  .btn-light-on-dark { background: white; color: var(--brand-darker); }
+  .btn-light-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
+  .btn-ghost-light { background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+
+  /* HERO */
+  .hero { position: relative; overflow: hidden; min-height: 88vh; display: flex; align-items: center; isolation: isolate; padding: 100px 0 80px; background: var(--dark); }
+  .hero-bg-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.55; filter: saturate(1.05) contrast(1.05); pointer-events: none; }
+  @keyframes ken-burns { 0% { transform: scale(1.06) translate(0, 0); } 100% { transform: scale(1.18) translate(-1.5%, -2%); } }
+  .hero-bg-image { animation: ken-burns 22s ease-in-out infinite alternate; transform-origin: center center; }
+  .hero-bg-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
+    linear-gradient(180deg, rgba(26,15,36,0.50) 0%, rgba(26,15,36,0.72) 60%, rgba(26,15,36,0.96) 100%),
+    radial-gradient(ellipse 60% 50% at 70% 10%, rgba(175,75,237,0.32), transparent 60%),
+    radial-gradient(ellipse 55% 55% at 15% 80%, rgba(118,43,164,0.30), transparent 60%); }
+  .hero-bg-fade { position: absolute; left: 0; right: 0; bottom: -1px; height: 120px; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); }
+  .hero-inner { position: relative; z-index: 3; text-align: center; max-width: 920px; margin: 0 auto; color: white; }
+  .hero-inner h1 { color: white; margin-top: 22px; }
+  .hero-inner h1 .accent { background: linear-gradient(135deg, #e6b6ff 0%, #af4bed 50%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 700px; margin: 24px auto 32px; color: rgba(255,255,255,0.86); line-height: 1.55; }
+  .hero-sub strong { color: white; font-weight: 700; }
+  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 36px; font-size: 0.86rem; color: rgba(255,255,255,0.78); }
+  .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
+  .hero-trust-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.20); }
+  .hero-stats { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 40px; }
+  .hero-stat { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 12px 18px; border-radius: 999px; color: white; backdrop-filter: blur(10px); }
+  .hero-stat .stat-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(175,75,237,0.25); color: #f0c0ff; display: grid; place-items: center; flex-shrink: 0; }
+  .hero-stat .stat-text { font-size: 0.86rem; line-height: 1.2; text-align: left; }
+  .hero-stat .stat-text strong { display: block; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: white; }
+  .hero-stat .stat-text span { font-size: 0.74rem; color: rgba(255,255,255,0.70); }
+  @media (max-width: 760px) {
+    .hero { min-height: 80vh; padding: 80px 0 60px; }
+    .hero-inner h1 { margin-top: 18px; }
+    .hero-stats { margin-top: 28px; }
+    .hero-stat { padding: 10px 14px; }
+    .hero-trust { margin-top: 28px; gap: 14px 18px; font-size: 0.78rem; }
+  }
+
+  /* TRUST BAR */
+  .trust-seal-bar { padding: 28px 0; background: white; border-bottom: 1px solid var(--lavender-100); }
+  .trust-seal-inner { display: flex; gap: 14px 40px; flex-wrap: wrap; justify-content: center; align-items: center; }
+  .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
+  .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
+  .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
+  .seal-text strong { font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
+  @media (max-width: 760px) {
+    .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
+    .seal-icon { width: 34px; height: 34px; }
+    .seal-text strong { font-size: 0.78rem; }
+    .seal-text span { font-size: 0.68rem; }
+  }
+
+  /* PROGRAMS — two side-by-side cards (RPM vs CCM) */
+  .programs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 900px) { .programs-grid { grid-template-columns: 1fr; } }
+  .program-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 40px 36px; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); display: flex; flex-direction: column; gap: 14px; }
+  .program-card:hover { transform: translateY(-6px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
+  .program-card.featured { background: linear-gradient(160deg, var(--soft) 0%, white 70%); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
+  .program-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); }
+  .program-tag .dot-mini { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .program-card h3 { font-size: 1.45rem; margin: 8px 0 8px; line-height: 1.15; }
+  .program-card > p { font-size: 1rem; line-height: 1.6; }
+  .program-list { list-style: none; padding: 0; margin: 14px 0 0; display: flex; flex-direction: column; gap: 12px; }
+  .program-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); line-height: 1.5; }
+  .program-list li svg { flex-shrink: 0; color: var(--green); margin-top: 3px; }
+
+  /* JOURNEY (3 numbered cards) */
+  .journey-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+  @media (max-width: 900px) { .journey-grid { grid-template-columns: 1fr; } }
+  .journey-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.08); }
+  .journey-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
+  .journey-card.elev { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-color: rgba(175,75,237,0.30); transform: translateY(-12px); box-shadow: var(--shadow-soft); }
+  @media (max-width: 900px) { .journey-card.elev { transform: none; } }
+  .journey-num { font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
+  .journey-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .journey-card p { font-size: 0.98rem; }
+  .journey-note { max-width: 720px; margin: 36px auto 0; padding: 18px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; text-align: center; color: var(--muted); font-size: 0.96rem; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
+  .journey-note strong { color: var(--ink); }
+
+  /* DEVICE / CGM cards (image + body) */
+  .device-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: stretch; }
+  @media (max-width: 900px) { .device-grid { grid-template-columns: 1fr; } }
+  .device-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 10px 30px -16px rgba(118,43,164,0.16); transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .device-card:hover { transform: translateY(-6px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
+  .device-img { aspect-ratio: 4/3; background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); display: grid; place-items: center; padding: 28px; position: relative; overflow: hidden; }
+  .device-img::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 25% 25%, rgba(255,255,255,0.55), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(175,75,237,0.18), transparent 60%); pointer-events: none; }
+  .device-img img { max-width: 78%; max-height: 100%; width: auto; height: auto; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 24px 40px rgba(40,26,49,0.22)); transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1); }
+  .device-card:hover .device-img img { transform: scale(1.03) translateY(-2px); }
+  .device-body { padding: 28px 30px 32px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .device-eyebrow { font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); }
+  .device-body h3 { font-size: 1.45rem; line-height: 1.15; }
+  .device-list { list-style: none; padding: 0; margin: 4px 0 0; display: flex; flex-direction: column; gap: 12px; }
+  .device-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--ink); line-height: 1.5; }
+  .device-list li svg { flex-shrink: 0; color: var(--brand); margin-top: 3px; }
+
+  /* FORM section */
+  .form-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
+  .form-wrap { display: grid; grid-template-columns: 1fr 1.05fr; gap: clamp(28px, 5vw, 64px); align-items: center; max-width: 1180px; margin: 0 auto; }
+  @media (max-width: 900px) { .form-wrap { grid-template-columns: 1fr; } }
+  .form-copy h2 { font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.1; margin-bottom: 18px; }
+  .form-copy .h-italic { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .form-copy p { font-size: 1.04rem; line-height: 1.6; max-width: 460px; margin-bottom: 20px; }
+  .form-copy .bullets { list-style: none; padding: 0; margin: 18px 0 0; display: flex; flex-direction: column; gap: 10px; }
+  .form-copy .bullets li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); }
+  .form-copy .bullets svg { color: var(--brand); flex-shrink: 0; margin-top: 3px; }
+  .form-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 14px; box-shadow: var(--shadow-soft); overflow: hidden; }
+  .form-card-head { padding: 14px 14px 4px; }
+  .form-card-head h3 { font-size: 1.25rem; margin-bottom: 6px; }
+  .form-card-head p { font-size: 0.92rem; color: var(--muted); margin-bottom: 8px; }
+  .form-card iframe { width: 100%; border: none; border-radius: 14px; min-height: 1100px; display: block; }
+
+  /* QUALIFIER */
+  .qualifier-section { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+  .qualifier { max-width: 820px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 48px); box-shadow: var(--shadow-soft); }
+  .qualifier .progress { width: 100%; height: 6px; background: var(--soft); border-radius: 999px; overflow: hidden; margin-bottom: 28px; }
+  .qualifier .progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); transition: width .35s cubic-bezier(0.22, 1, 0.36, 1); }
+  .qualifier .step-label { font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); }
+  .qualifier .q { font-family: 'Manrope', sans-serif; font-size: clamp(1.4rem, 2.6vw, 1.85rem); font-weight: 800; color: var(--ink); margin: 10px 0 6px; line-height: 1.15; }
+  .qualifier .q-sub { font-size: 0.98rem; color: var(--muted); margin-bottom: 22px; }
+  .qualifier .options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .qualifier .options.single { grid-template-columns: 1fr; }
+  @media (max-width: 600px) { .qualifier .options { grid-template-columns: 1fr; } }
+  .qualifier .opt { display: flex; gap: 12px; align-items: center; padding: 14px 16px; background: white; border: 1.5px solid var(--lavender-100); border-radius: 14px; font-size: 0.96rem; color: var(--ink); font-weight: 500; cursor: pointer; transition: border-color .15s ease, background .15s ease, transform .1s ease; text-align: left; font-family: inherit; }
+  .qualifier .opt:hover { border-color: rgba(175,75,237,0.45); background: var(--soft); }
+  .qualifier .opt.selected { border-color: var(--brand); background: rgba(175,75,237,0.06); color: var(--brand-darker); font-weight: 700; }
+  .qualifier .opt .check { width: 22px; height: 22px; border-radius: 50%; border: 1.5px solid var(--lavender-100); display: grid; place-items: center; flex-shrink: 0; transition: all .15s ease; }
+  .qualifier .opt.selected .check { background: var(--brand); border-color: var(--brand); }
+  .qualifier .opt.selected .check::after { content: ""; width: 8px; height: 8px; border-radius: 50%; background: white; }
+  .qualifier .controls { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-top: 28px; }
+  .qualifier .btn-back { background: transparent; border: none; color: var(--muted); font-size: 0.94rem; font-weight: 600; cursor: pointer; font-family: inherit; padding: 10px 0; }
+  .qualifier .btn-back:hover { color: var(--brand-deep); }
+  .qualifier .btn-next { background: var(--brand); color: white; border: none; padding: 14px 28px; border-radius: 999px; font-size: 0.98rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background .2s ease, transform .15s ease, box-shadow .2s ease; box-shadow: 0 10px 26px -8px rgba(175,75,237,0.45); }
+  .qualifier .btn-next:hover:not(:disabled) { background: var(--brand-deep); transform: translateY(-2px); }
+  .qualifier .btn-next:disabled { background: var(--lavender-100); color: var(--muted); cursor: not-allowed; box-shadow: none; }
+  .qualifier .result { text-align: center; }
+  .qualifier .result .badge { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; background: rgba(20,152,58,0.10); color: var(--green); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.10em; text-transform: uppercase; border-radius: 999px; border: 1px solid rgba(20,152,58,0.22); }
+  .qualifier .result h3 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin: 18px auto 14px; max-width: 560px; line-height: 1.15; }
+  .qualifier .result p { font-size: 1rem; max-width: 560px; margin: 0 auto 22px; }
+  .qualifier .summary { margin: 22px auto 28px; max-width: 520px; background: var(--soft); border: 1px solid var(--lavender-100); border-radius: 16px; padding: 18px 22px; display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  .qualifier .sum-line { display: flex; justify-content: space-between; gap: 18px; font-size: 0.94rem; }
+  .qualifier .sum-line .lbl { color: var(--muted); font-weight: 600; }
+  .qualifier .sum-line .val { color: var(--ink); font-weight: 700; text-align: right; }
+  .qualifier .cta-btn { display: inline-flex; align-items: center; gap: 10px; padding: 16px 28px; border-radius: 999px; background: var(--brand); color: white; font-weight: 700; font-size: 1rem; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+  .qualifier .cta-btn:hover { background: var(--brand-deep); transform: translateY(-2px); }
+
+  /* QUOTE */
+  .quote { max-width: 820px; margin: 0 auto; text-align: center; }
+  .quote .stars { font-size: 1.4rem; color: var(--gold); letter-spacing: 4px; margin-bottom: 18px; }
+  .quote blockquote { font-family: 'Manrope', sans-serif; font-style: italic; font-weight: 700; font-size: clamp(1.4rem, 2.8vw, 2rem); line-height: 1.3; color: var(--ink); margin: 0 0 18px; }
+  .quote cite { font-style: normal; font-size: 0.94rem; color: var(--muted); font-weight: 600; }
+
+  /* FAQ */
+  .faq-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); padding-bottom: clamp(80px, 10vw, 140px); }
+  .faq-layout { display: grid; grid-template-columns: minmax(260px, 320px) 1fr; gap: clamp(36px, 5vw, 80px); align-items: flex-start; }
+  @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; gap: 32px; } }
+  .faq-side { position: sticky; top: 96px; }
+  @media (max-width: 900px) { .faq-side { position: static; } }
+  .faq-side h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin: 16px 0 18px; line-height: 1.05; }
+  .faq-side h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
+  .faq-side p { font-size: 0.96rem; color: var(--muted); line-height: 1.6; }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  @media (max-width: 760px) { .faq-grid { grid-template-columns: 1fr; } }
+  .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; align-self: start; }
+  .faq:hover { border-color: rgba(175,75,237,0.30); box-shadow: 0 12px 28px -12px rgba(118,43,164,0.18); }
+  .faq[open] { border-color: rgba(175,75,237,0.40); box-shadow: 0 14px 32px -14px rgba(118,43,164,0.22); }
+  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Manrope', sans-serif; line-height: 1.3; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
+  .faq[open] summary::after { content: "−"; }
+  .faq .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
+
+  /* FINAL CTA */
+  .final-cta { position: relative; background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; isolation: isolate; }
+  @keyframes aurora-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+  .final-cta::before { content: ""; position: absolute; inset: 0; background:
+      linear-gradient(180deg, rgba(74,16,113,0.55) 0%, rgba(118,43,164,0.45) 50%, rgba(74,16,113,0.65) 100%),
+      radial-gradient(ellipse 50% 50% at 20% 30%, rgba(231,176,255,0.40), transparent 60%),
+      radial-gradient(ellipse 50% 50% at 80% 70%, rgba(208,133,255,0.30), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 50% 100%, rgba(118,43,164,0.50), transparent 60%);
+    pointer-events: none; z-index: 1; }
+  .final-cta > * { position: relative; z-index: 2; }
+  .final-cta h2 { color: white; max-width: 760px; margin: 22px auto 24px; }
+  .final-cta p { color: rgba(255,255,255,0.90); max-width: 620px; margin: 0 auto 36px; font-size: 1.1rem; }
+
+  /* FOOTER */
+  .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+  .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
+  .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; margin-top: 60px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
+  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; transition: color .15s ease; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+
+  .section-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
+  .section-head p { margin-top: 18px; font-size: 1.06rem; }
+  .section-head h2 { margin-top: 22px; }
+
+  @media (max-width: 760px) {
+    .section { padding: 64px 0; }
+    .section-head { margin-bottom: 40px; }
+    footer { padding: 48px 0 24px; }
+    .btn-primary-xl { padding: 18px 30px; font-size: 1rem; }
+  }
+
+  /* SCROLL PROGRESS BAR */
+  .scroll-progress { position: fixed; top: 0; left: 0; right: 0; height: 3px; background: transparent; z-index: 100; pointer-events: none; }
+  .scroll-progress-bar { height: 100%; width: 0%; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); box-shadow: 0 0 12px rgba(175,75,237,0.6); transition: width 60ms linear; }
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar" id="scroll-progress-bar"></div></div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/hormone-replacement-therapy">HRT</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/womens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/mens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <a class="nav-link is-active" href="/chronic-care">Chronic Care</a>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
+        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details open>
+    <summary>Women's Health</summary>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/womens-health/">View All &rarr;</a>
+  </details>
+  <details>
+    <summary>Men's Health</summary>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/mens-health/">View All &rarr;</a>
+  </details>
+  <a href="/chronic-care" style="color: var(--brand-deep); font-weight: 700;">Chronic Care</a>
+  <a href="/supplements/">Supplements</a>
+  <a href="/blood-test/">Blood Labs</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="hero-bg-image" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/FSL3Plus_800.jpg" alt="" aria-hidden="true" />
+  <div class="hero-bg-overlay" aria-hidden="true"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <span class="eyebrow on-dark rise"><span class="dot"></span> Remote Patient Monitoring · Chronic Care Management</span>
+      <h1 class="rise d1">Remote monitoring,<br/><span class="accent h-italic">with real care.</span></h1>
+      <p class="hero-sub rise d2">Continuous glucose monitoring, blood pressure, and weight tracking paired with a <strong>real care team</strong>. We help you and your provider spot patterns, catch changes early, and stay on track between appointments — covered by Medicare and most major insurance.</p>
+      <div class="hero-cta-row rise d3">
+        <a href="#get-call" class="btn btn-primary btn-primary-xl pulse-glow">Get my free Health Coach call →</a>
+        <a href="#qualifier-section" class="btn btn-ghost-light btn-primary-xl">Do I qualify?</a>
+      </div>
+
+      <div class="hero-stats rise d4">
+        <div class="hero-stat">
+          <span class="stat-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </span>
+          <div class="stat-text"><strong>$0 out-of-pocket</strong><span>for most Medicare patients</span></div>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </span>
+          <div class="stat-text"><strong>Dexcom &amp; Libre 3</strong><span>shipped to your door</span></div>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </span>
+          <div class="stat-text"><strong>Real Health Coaches</strong><span>not chatbots</span></div>
+        </div>
+      </div>
+
+      <div class="hero-trust rise d4">
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          Most major insurance &amp; Medicare
+        </span>
+        <span class="hero-trust-divider"></span>
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          HIPAA-compliant
+        </span>
+        <span class="hero-trust-divider"></span>
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          US-licensed clinicians
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-bg-fade" aria-hidden="true"></div>
+</header>
+
+<!-- TRUST BAR -->
+<div class="trust-seal-bar">
+  <div class="container trust-seal-inner">
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+      <span class="seal-text"><strong>Medicare Covered</strong><span>RPM &amp; CCM benefits</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+      <span class="seal-text"><strong>HIPAA Compliant</strong><span>Encrypted &amp; private</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="seal-text"><strong>Real-time alerts</strong><span>readings reviewed daily</span></span>
+    </div>
+    <div class="seal">
+      <span class="seal-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+      <span class="seal-text"><strong>Real coaches</strong><span>monthly 1-on-1 check-ins</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- TWO PROGRAMS -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> What it is</span>
+      <h2>Two programs.<br/><span class="h-italic">One coordinated care team.</span></h2>
+      <p>Most patients qualify for both. Together, they give your provider a continuous picture of your health — and give you a real person to call when something doesn't feel right.</p>
+    </div>
+
+    <div class="programs-grid">
+      <div class="program-card">
+        <span class="program-tag"><span class="dot-mini"></span> Remote Patient Monitoring</span>
+        <h3>RPM — devices that watch the trends</h3>
+        <p>Connected devices ship to your home and send daily readings to your care team automatically. No spreadsheets, no apps to fight with — just numbers flowing in the background so we can spot changes early.</p>
+        <ul class="program-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Glucose, blood pressure, and weight tracked from home</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Care team reviews readings and flags anything off</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Alerts sent to you and your provider in real time</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Covered by Medicare and most major insurance</li>
+        </ul>
+      </div>
+
+      <div class="program-card featured">
+        <span class="program-tag"><span class="dot-mini"></span> Chronic Care Management</span>
+        <h3>CCM — a coach who knows your story</h3>
+        <p>A dedicated health coach checks in monthly to review your readings, your medications, and how you're actually feeling. Between visits with your doctor, they're the person making sure nothing falls through the cracks.</p>
+        <ul class="program-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Monthly 1-on-1 check-ins with a real coach</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Help with medications, refills, and side effects</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Coordination with specialists, labs, and pharmacy</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Message your coach anytime through the app</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="journey-note">
+      Real progress happens <strong>between visits</strong>. Your plan keeps you connected, monitored, and supported every day.
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> How it works</span>
+      <h2>From sign-up to support,<br/><span class="h-italic">in three simple steps.</span></h2>
+      <p>We make it easy to get started — and easy to stay on track. You'll never feel alone in managing your condition.</p>
+    </div>
+    <div class="journey-grid">
+      <div class="journey-card">
+        <div class="journey-num">01</div>
+        <h3>Tell us about you</h3>
+        <p>Complete a short intake so we can personalize your monitoring plan and pair you with the right Health Coach.</p>
+      </div>
+      <div class="journey-card elev">
+        <div class="journey-num">02</div>
+        <h3>Confirmation call</h3>
+        <p>A care coordinator confirms your details, verifies insurance, and walks you through what to expect — <strong>at no cost to qualify</strong>.</p>
+      </div>
+      <div class="journey-card">
+        <div class="journey-num">03</div>
+        <h3>Monitoring begins at home</h3>
+        <p>Your CGM ships to your door. Once it's on, your care team starts watching trends and checking in.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CGM DEVICES -->
+<section class="section lavender">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> For diabetes — Continuous Glucose Monitoring</span>
+      <h2>No more daily <span class="h-italic">fingersticks.</span></h2>
+      <p>We support both major CGMs. Your provider chooses the device that fits you best — we handle the rest.</p>
+    </div>
+
+    <div class="device-grid">
+      <div class="device-card">
+        <div class="device-img">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/FSL3Plus_800.jpg" alt="Freestyle Libre 3 Plus continuous glucose monitor" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div class="device-body">
+          <span class="device-eyebrow">CGM · Sensor-based</span>
+          <h3>Freestyle Libre 3</h3>
+          <ul class="device-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Apply your Libre sensor in seconds and start tracking glucose without daily fingersticks.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Continuous updates throughout the day give a full picture of your glucose patterns.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Timely feedback and personalized recommendations from your care team based on your readings.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="device-card">
+        <div class="device-img">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/dexcomg7_front_boxand_monitor.webp" alt="Dexcom G7 continuous glucose monitor with box and receiver" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div class="device-body">
+          <span class="device-eyebrow">CGM · Sensor-based</span>
+          <h3>Dexcom G7</h3>
+          <ul class="device-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Step-by-step setup guidance — start tracking your glucose without the stress.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sends updates automatically so you and your care team can spot patterns and adjust.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tailored coaching and check-ins based on your trends — you're always supported.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MORE CONDITIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> More than glucose</span>
+      <h2>Full-spectrum monitoring<br/><span class="h-italic">for chronic conditions.</span></h2>
+      <p>Living with more than one condition? Our program supports diabetes, obesity, hypertension, heart disease, COPD, and kidney disease — all from one care team.</p>
+    </div>
+
+    <div class="device-grid">
+      <div class="device-card">
+        <div class="device-img">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_non%20branded%20digital%20weight%20scale%20on%20white%20background%20826724%20%281%29.png" alt="Connected smart scale for weight management and obesity monitoring" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div class="device-body">
+          <span class="device-eyebrow">Connected device · Weight</span>
+          <h3>Smart Scale — for weight &amp; obesity</h3>
+          <ul class="device-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Step on once a day. Your weight syncs to your care team automatically — no logging, no notes.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>We track trends over time, so small changes get noticed before they turn into big ones.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized coaching and meal-plan support — sustainable, not stressful.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Especially helpful for patients on GLP-1 medications, with heart failure, or pre-diabetes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="device-card">
+        <div class="device-img">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_non%20branded%20bp%20cuff%20scale%20on%20white%20background%20826724.png" alt="Connected blood pressure cuff for hypertension monitoring" width="800" height="600" loading="lazy" decoding="async" />
+        </div>
+        <div class="device-body">
+          <span class="device-eyebrow">Connected device · BP</span>
+          <h3>Blood Pressure — for hypertension</h3>
+          <ul class="device-list">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Wrap the cuff, press the button — your reading goes straight to your care team.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>We watch for spikes, dips, and patterns your doctor would only see at your annual visit.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Medication adjustments come faster — your provider sees real-world data, not one in-office reading.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Critical alerts go out the moment a reading crosses a dangerous threshold.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALTH COACH FORM -->
+<section class="section form-section" id="get-call">
+  <div class="container">
+    <div class="form-wrap">
+      <div class="form-copy">
+        <span class="eyebrow"><span class="dot"></span> Free Health Coach call</span>
+        <h2>Get a free call from<br/><span class="h-italic">a Health Coach.</span></h2>
+        <p>Tell us a bit about you and we'll reach out — <strong>no commitment, no cost to qualify</strong>. Our team will verify your benefits before anything ships.</p>
+        <ul class="bullets">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Most Medicare patients pay $0 out-of-pocket.</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Your CGM or BP cuff ships within days of approval.</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>You'll know your coach by name within a week.</li>
+        </ul>
+      </div>
+
+      <div class="form-card">
+        <div class="form-card-head">
+          <h3>Request my free call</h3>
+          <p>A coach will reach out by phone — usually within one business day.</p>
+        </div>
+        <iframe
+          src="https://www.usedirectcare.com/widget/form/OgQOwgN0oUDYykx9xu6c"
+          id="inline-OgQOwgN0oUDYykx9xu6c"
+          data-layout="{'id':'INLINE'}"
+          data-trigger-type="alwaysShow"
+          data-trigger-value=""
+          data-activation-type="alwaysActivated"
+          data-activation-value=""
+          data-deactivation-type="neverDeactivate"
+          data-deactivation-value=""
+          data-form-name="Health Coach Opt-in (Outbound AI Call)(WEBSITE)"
+          data-height="1249"
+          data-layout-iframe-id="inline-OgQOwgN0oUDYykx9xu6c"
+          data-form-id="OgQOwgN0oUDYykx9xu6c"
+          title="Health Coach Opt-in (Outbound AI Call)(WEBSITE)"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFIER -->
+<section class="section qualifier-section" id="qualifier-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Do you qualify?</span>
+      <h2>Take 30 seconds to see<br/><span class="h-italic">if you're a fit.</span></h2>
+      <p>Our program is covered by Medicare and most major insurance. Answer three quick questions to find out if you qualify for $0 out-of-pocket monitoring.</p>
+    </div>
+
+    <div class="qualifier" id="qualifier" role="region" aria-label="Eligibility quiz">
+      <div class="progress" aria-hidden="true"><div class="progress-bar" id="progress-bar"></div></div>
+      <div id="qualifier-step"><!-- Steps render here --></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE -->
+<section class="section">
+  <div class="container">
+    <div class="quote">
+      <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+      <blockquote>"The monitoring gives me peace of mind knowing someone is always checking on my numbers."</blockquote>
+      <cite>— DirectCare AI patient</cite>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="container">
+    <div class="faq-layout">
+      <aside class="faq-side">
+        <span class="eyebrow"><span class="dot"></span> Common questions</span>
+        <h2>Common questions, <span class="accent">clear answers.</span></h2>
+        <p>Honest answers about how the program works, what's covered, and what to expect once you're enrolled. Have a question we missed? Ask your coach on the welcome call.</p>
+      </aside>
+
+      <div class="faq-grid">
+        <details class="faq" open>
+          <summary>What's the difference between RPM and CCM?</summary>
+          <div class="faq-body">Remote Patient Monitoring (RPM) is the device side — connected glucose monitors, blood pressure cuffs, and scales that send daily readings to your care team. Chronic Care Management (CCM) is the human side — monthly 1-on-1 calls with a coach who reviews your numbers, your medications, and your overall plan. Most patients are enrolled in both.</div>
+        </details>
+        <details class="faq">
+          <summary>Is this covered by insurance?</summary>
+          <div class="faq-body">We accept most major insurance plans, including Medicare. After you fill out the form, our team verifies your benefits and walks you through any out-of-pocket costs before anything ships. Most Medicare patients pay $0 out of pocket.</div>
+        </details>
+        <details class="faq">
+          <summary>Which conditions does the program cover?</summary>
+          <div class="faq-body">Diabetes (Type 1 &amp; Type 2), hypertension, obesity, congestive heart failure, COPD, asthma, kidney disease, and more. If you have two or more chronic conditions expected to last at least 12 months, you likely qualify.</div>
+        </details>
+        <details class="faq">
+          <summary>Which CGM will I use — Dexcom or Freestyle Libre 3?</summary>
+          <div class="faq-body">Your provider chooses the device that's the best fit for you. Both pair seamlessly with our care team and give continuous, fingerstick-free monitoring.</div>
+        </details>
+        <details class="faq">
+          <summary>How does the care team actually help?</summary>
+          <div class="faq-body">Health coaches review your trends, send check-ins, and flag anything concerning to your provider. You'll have someone to call when a number looks off — not a chatbot.</div>
+        </details>
+        <details class="faq">
+          <summary>How fast does it ship?</summary>
+          <div class="faq-body">After your confirmation call and benefits check, your CGM is sent to your home. Most patients are monitoring within a week.</div>
+        </details>
+        <details class="faq">
+          <summary>Do I have to download an app?</summary>
+          <div class="faq-body">The CGM uses its own free app for readings, but you don't need any technical skill. We walk you through setup step-by-step on your confirmation call.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="final-cta">
+      <span class="eyebrow on-dark"><span class="dot"></span> Remote monitoring with real care</span>
+      <h2>Ready to take the guesswork<br/><span class="h-italic" style="background: linear-gradient(135deg, #f7e8ff 0%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;">out of your numbers?</span></h2>
+      <p>Get a free call from a Health Coach and find out if continuous monitoring is right for you. No commitment, no cost to qualify.</p>
+      <a href="#get-call" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Request my call →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+        <div class="social-row" aria-label="Follow DirectCare AI">
+          <a href="https://www.facebook.com/61577140438558/about/?_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.98H7.9V12h2.5V9.8c0-2.46 1.46-3.82 3.7-3.82 1.07 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.98A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.instagram.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="https://twitter.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.523 7.452L22.5 22h-6.84l-4.97-6.456L4.9 22H2.14l6.978-7.973L1.5 2h7.005l4.5 5.94L18.244 2zm-1.197 18.18h1.598L7.05 3.74H5.328L17.047 20.18z"/></svg></a>
+          <a href="https://www.tiktok.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1.84-.39z"/></svg></a>
+          <a href="https://www.youtube.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.96-1.97C18.84 4.25 12 4.25 12 4.25s-6.84 0-8.58.45a2.78 2.78 0 0 0-1.96 1.97C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.96 1.97c1.74.45 8.58.45 8.58.45s6.84 0 8.58-.45a2.78 2.78 0 0 0 1.96-1.97C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12l-5.75 3.27z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Popular</h5>
+        <a href="/womens-health/">Women's Health</a>
+        <a href="/mens-health/">Men's Health</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair Regrowth</a>
+        <a href="/blood-test/">Blood Labs</a>
+        <a href="/chronic-care">Chronic Care &amp; RPM</a>
+      </div>
+      <div class="foot-col">
+        <h5>Support</h5>
+        <a href="https://www.directcare.ai/medical-consent">Medical Consent</a>
+        <a href="https://www.directcare.ai/bill-of-rights">Bill of Rights</a>
+        <a href="https://www.directcare.ai/contact">Contact</a>
+        <a href="https://www.directcare.ai/faq">FAQs</a>
+        <a href="https://www.directcare.ai/about">Corporate</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="https://www.directcare.ai/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="https://www.directcare.ai/privacy-policy">Privacy Policy</a>
+        <a href="https://www.directcare.ai/safety">Safety</a>
+        <a href="https://www.directcare.ai/ccpa">CCPA</a>
+      </div>
+    </div>
+    <div class="footer-trust" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 28px; padding: 36px 0 8px;">
+      <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block; opacity: 0.9; transition: opacity .2s ease;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.9'">
+        <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+      </a>
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hipaa-compliance-1.jpg" alt="HIPAA Compliant" style="display: block; height: 56px; width: auto;" />
+      <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer" title="Download DirectCare AI on the App Store" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer" title="Get DirectCare AI on Google Play" style="display: inline-block; transition: opacity .2s ease;" onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 64px; width: auto;" />
+      </a>
+      <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare AI Prescription Savings Card" style="display: inline-block; opacity: 0.95; transition: opacity .2s ease; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.08);" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.95'">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Front.png" alt="DirectCare AI Prescription Savings Card — therxcard.net/ZW6727" style="display: block; height: 72px; width: auto;" />
+      </a>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · LegitScript Certified</div>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Disclaimer:</strong> DirectCare AI is a patient management platform designed to support independent physicians and practitioners through the DirectCare AI Patient Engagement Platform. DirectCare AI does not directly provide medical or pharmacy services, and payment does not guarantee the prescribing or dispensing of any medication. All medical services are delivered by independent providers. The information on this website is for informational purposes only and should not be considered a substitute for professional medical advice, diagnosis, or treatment. If you have any questions or concerns about your health, please consult with your doctor.
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Remote Patient Monitoring &amp; Chronic Care Management disclaimer:</strong> RPM and CCM services are provided by independent US-licensed clinicians through the DirectCare AI platform. Insurance coverage, eligibility, and out-of-pocket costs vary by plan and individual circumstances. A benefits check is performed before any device ships. Devices and services are not a substitute for emergency care — if you experience a medical emergency, call 911 immediately.
+    </div>
+  </div>
+</footer>
+
+<!-- ============= GHL form bootstrap ============= -->
+<script src="https://www.usedirectcare.com/js/form_embed.js"></script>
+
+<script>
+  /* Mobile drawer */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    var openIco = t.querySelector('.icon-open');
+    var closeIco = t.querySelector('.icon-close');
+    function setOpen(open) {
+      d.classList.toggle('open', open);
+      t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      d.setAttribute('aria-hidden', open ? 'false' : 'true');
+      if (openIco) openIco.style.display = open ? 'none' : '';
+      if (closeIco) closeIco.style.display = open ? '' : 'none';
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    t.addEventListener('click', function() { setOpen(!d.classList.contains('open')); });
+    d.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') setOpen(false);
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 980 && d.classList.contains('open')) setOpen(false);
+    });
+  })();
+
+  /* Scroll-triggered reveal */
+  (function() {
+    if (!('IntersectionObserver' in window)) {
+      document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
+      return;
+    }
+    var TARGETS = ['.section .section-head', '.program-card', '.journey-card', '.device-card', '.faq', '.final-cta', '.qualifier', '.quote'];
+    TARGETS.forEach(function(sel) {
+      document.querySelectorAll(sel).forEach(function(el) {
+        if (!el.classList.contains('reveal')) el.classList.add('reveal');
+      });
+    });
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+  })();
+
+  /* Scroll progress bar */
+  (function() {
+    var bar = document.getElementById('scroll-progress-bar');
+    if (!bar) return;
+    var ticking = false;
+    function update() {
+      var h = document.documentElement;
+      var max = (h.scrollHeight - h.clientHeight) || 1;
+      var p = Math.min(100, Math.max(0, (h.scrollTop / max) * 100));
+      bar.style.width = p + '%';
+      ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    update();
+  })();
+
+  /* ============================================================
+     Interactive Qualifier
+     ============================================================ */
+  var QUALIFIER_STEPS = [
+    {
+      id: "conditions",
+      type: "multi",
+      q: "Which chronic conditions are you living with?",
+      sub: "Select all that apply.",
+      options: [
+        { v: "diabetes",     label: "Type 1 or Type 2 Diabetes" },
+        { v: "hypertension", label: "High Blood Pressure" },
+        { v: "obesity",      label: "Obesity / Weight Management" },
+        { v: "heart",        label: "Heart Disease" },
+        { v: "copd",         label: "COPD or Asthma" },
+        { v: "kidney",       label: "Kidney Disease" },
+        { v: "other",        label: "Another chronic condition" },
+        { v: "none",         label: "None of the above" }
+      ]
+    },
+    {
+      id: "insurance",
+      type: "single",
+      q: "What kind of insurance do you have?",
+      sub: "Most plans cover the program at no cost to you.",
+      options: [
+        { v: "medicare", label: "Medicare or Medicare Advantage" },
+        { v: "private",  label: "Private / employer insurance" },
+        { v: "medicaid", label: "Medicaid" },
+        { v: "unsure",   label: "I'm not sure — please check for me" }
+      ]
+    },
+    {
+      id: "support",
+      type: "single",
+      q: "How often do you check in with your doctor about your condition?",
+      sub: "We're trying to understand the support you have today.",
+      options: [
+        { v: "rarely",    label: "Once a year or less" },
+        { v: "quarterly", label: "Every few months" },
+        { v: "monthly",   label: "Monthly or more often" },
+        { v: "sick",      label: "Only when I'm not feeling well" }
+      ]
+    }
+  ];
+
+  var qualifierState = { step: 0, answers: {} };
+
+  function initQualifier() {
+    if (!document.getElementById("qualifier-step")) return;
+    renderStep();
+  }
+
+  function renderStep() {
+    var root = document.getElementById("qualifier-step");
+    var bar  = document.getElementById("progress-bar");
+    var idx  = qualifierState.step;
+    var total = QUALIFIER_STEPS.length;
+
+    if (idx >= total) {
+      bar.style.width = "100%";
+      renderResult();
+      return;
+    }
+
+    var step = QUALIFIER_STEPS[idx];
+    bar.style.width = ((idx) / total * 100) + "%";
+
+    var selected = qualifierState.answers[step.id] || (step.type === "multi" ? [] : null);
+
+    var optsHtml = "";
+    step.options.forEach(function(opt) {
+      var isSelected = step.type === "multi"
+        ? selected.indexOf(opt.v) !== -1
+        : selected === opt.v;
+      optsHtml += '<button type="button" class="opt' + (isSelected ? " selected" : "") + '"'
+        + ' data-value="' + opt.v + '" aria-pressed="' + isSelected + '">'
+        + '<span class="check" aria-hidden="true"></span>'
+        + '<span>' + opt.label + '</span>'
+        + '</button>';
+    });
+
+    root.innerHTML =
+      '<div class="step-label">Step ' + (idx + 1) + ' of ' + total + '</div>'
+      + '<h3 class="q">' + step.q + '</h3>'
+      + '<p class="q-sub">' + step.sub + '</p>'
+      + '<div class="options ' + (step.type === "single" ? "single" : "") + '" id="opts">'
+      + optsHtml
+      + '</div>'
+      + '<div class="controls">'
+      + '<button type="button" class="btn-back" id="btn-back"' + (idx === 0 ? ' hidden' : '') + '>← Back</button>'
+      + '<button type="button" class="btn-next" id="btn-next" disabled>'
+      + (idx === total - 1 ? "See my results →" : "Continue →")
+      + '</button>'
+      + '</div>';
+
+    var opts = root.querySelectorAll(".opt");
+    var next = root.querySelector("#btn-next");
+    var back = root.querySelector("#btn-back");
+
+    function refreshNext() {
+      var cur = qualifierState.answers[step.id];
+      var ok = step.type === "multi" ? (cur && cur.length > 0) : !!cur;
+      next.disabled = !ok;
+    }
+    refreshNext();
+
+    opts.forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        var v = btn.dataset.value;
+        if (step.type === "multi") {
+          var arr = qualifierState.answers[step.id] || [];
+          if (v === "none") {
+            arr = arr.indexOf("none") !== -1 ? [] : ["none"];
+          } else {
+            arr = arr.filter(function(x) { return x !== "none"; });
+            arr = arr.indexOf(v) !== -1 ? arr.filter(function(x) { return x !== v; }) : arr.concat(v);
+          }
+          qualifierState.answers[step.id] = arr;
+          opts.forEach(function(b) {
+            var sel = arr.indexOf(b.dataset.value) !== -1;
+            b.classList.toggle("selected", sel);
+            b.setAttribute("aria-pressed", sel);
+          });
+        } else {
+          qualifierState.answers[step.id] = v;
+          opts.forEach(function(b) {
+            var sel = b.dataset.value === v;
+            b.classList.toggle("selected", sel);
+            b.setAttribute("aria-pressed", sel);
+          });
+        }
+        refreshNext();
+      });
+    });
+
+    next.addEventListener("click", function() {
+      qualifierState.step++;
+      renderStep();
+    });
+    if (back) back.addEventListener("click", function() {
+      qualifierState.step = Math.max(0, qualifierState.step - 1);
+      renderStep();
+    });
+  }
+
+  function renderResult() {
+    var a = qualifierState.answers;
+    var conds = a.conditions || [];
+    var hasConditions = conds.length > 0 && conds.indexOf("none") === -1;
+    var isMedicare = a.insurance === "medicare";
+    var isInsured = ["medicare", "private", "medicaid"].indexOf(a.insurance) !== -1;
+
+    var condLabels = {
+      diabetes: "Diabetes",
+      hypertension: "High Blood Pressure",
+      obesity: "Obesity / Weight Management",
+      heart: "Heart Disease",
+      copd: "COPD / Asthma",
+      kidney: "Kidney Disease",
+      other: "Other chronic condition",
+      none: "None reported"
+    };
+    var insLabels = {
+      medicare: "Medicare or Medicare Advantage",
+      private: "Private / employer insurance",
+      medicaid: "Medicaid",
+      unsure: "Insurance to be verified"
+    };
+
+    var headline, body;
+    if (hasConditions && isMedicare) {
+      headline = "You're a strong fit for our program.";
+      body = "Based on your answers, our care team can almost certainly enroll you at no out-of-pocket cost. Medicare covers both Remote Patient Monitoring and Chronic Care Management for patients with two or more chronic conditions.";
+    } else if (hasConditions && isInsured) {
+      headline = "You likely qualify.";
+      body = "Your conditions and insurance look like a match for our program. A Health Coach will verify your benefits and walk through what's covered before anything ships.";
+    } else if (hasConditions && a.insurance === "unsure") {
+      headline = "Let us check your benefits.";
+      body = "Your conditions match what we treat. Our team will run a free benefits check and tell you exactly what (if anything) is out of pocket — no surprises.";
+    } else if (!hasConditions && isInsured) {
+      headline = "We can still help — let's talk.";
+      body = "You may not have a listed chronic condition, but if you're managing your weight, stress, or pre-diabetes, our coaches can support you. Submit your info and we'll see what fits.";
+    } else {
+      headline = "Let's get you in front of a coach.";
+      body = "Submit your info below and we'll reach out to understand your goals. No commitment, no cost to qualify.";
+    }
+
+    var condStr = conds.length
+      ? conds.map(function(c) { return condLabels[c] || c; }).join(", ")
+      : "None reported";
+    var supportLabels = {
+      rarely: "Once a year or less",
+      quarterly: "Every few months",
+      monthly: "Monthly or more",
+      sick: "Only when not feeling well"
+    };
+    var supportStr = supportLabels[a.support] || "—";
+
+    var root = document.getElementById("qualifier-step");
+    root.innerHTML =
+      '<div class="result">'
+      + '<span class="badge">✓ Step 3 of 3 complete</span>'
+      + '<h3>' + headline + '</h3>'
+      + '<p>' + body + '</p>'
+      + '<div class="summary">'
+      + '<div class="sum-line"><span class="lbl">Conditions</span><span class="val">' + condStr + '</span></div>'
+      + '<div class="sum-line"><span class="lbl">Insurance</span><span class="val">' + (insLabels[a.insurance] || "—") + '</span></div>'
+      + '<div class="sum-line"><span class="lbl">Doctor visits</span><span class="val">' + supportStr + '</span></div>'
+      + '</div>'
+      + '<a href="#get-call" class="cta-btn">Get my free Health Coach call →</a>'
+      + '<div style="margin-top:18px"><button type="button" class="btn-back" id="btn-restart">← Start over</button></div>'
+      + '</div>';
+
+    document.getElementById("btn-restart").addEventListener("click", function() {
+      qualifierState.step = 0;
+      qualifierState.answers = {};
+      renderStep();
+    });
+
+    var cta = root.querySelector(".cta-btn");
+    cta.addEventListener("click", function(e) {
+      e.preventDefault();
+      var target = document.getElementById("get-call");
+      if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  window.addEventListener("load", initQualifier);
+
+  /* Affiliate click-ID capture + propagation (matches site-wide) */
+  (function() {
+    var STORAGE_KEY = 'dcai_clickId';
+    var STORAGE_TS = 'dcai_clickId_ts';
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+    var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId', 'cid', 'aff_id', 'flex_id'];
+    var DCAI_HOSTS = [
+      'directcare.ai', 'www.directcare.ai',
+      'women.directcare.ai', 'mens.directcare.ai',
+      'directcare-home.vercel.app',
+      'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app',
+      'sexual-health-mocha.vercel.app', 'surge-max.vercel.app',
+      'business.tellescope.com', 'directcareai.portal.tellescope.com'
+    ];
+    function getURL(href) { try { return new URL(href, window.location.href); } catch (e) { return null; } }
+    function readClickIdFromQuery() {
+      var url = getURL(window.location.href);
+      if (!url) return null;
+      for (var i = 0; i < INCOMING_PARAMS.length; i++) {
+        var v = url.searchParams.get(INCOMING_PARAMS[i]);
+        if (v) return v;
+      }
+      return null;
+    }
+    function persist(id) {
+      try {
+        sessionStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_KEY, id);
+        localStorage.setItem(STORAGE_TS, String(Date.now()));
+      } catch (e) {}
+    }
+    function load() {
+      try {
+        var s = sessionStorage.getItem(STORAGE_KEY);
+        if (s) return s;
+        var l = localStorage.getItem(STORAGE_KEY);
+        var ts = parseInt(localStorage.getItem(STORAGE_TS) || '0', 10);
+        if (l && Date.now() - ts < TTL_MS) {
+          sessionStorage.setItem(STORAGE_KEY, l);
+          return l;
+        }
+        if (l) {
+          localStorage.removeItem(STORAGE_KEY);
+          localStorage.removeItem(STORAGE_TS);
+        }
+      } catch (e) {}
+      return null;
+    }
+    var clickId = readClickIdFromQuery();
+    if (clickId) persist(clickId);
+    else clickId = load();
+    if (!clickId) return;
+    function shouldRewrite(href) {
+      if (!href) return false;
+      var u = getURL(href);
+      if (!u) return false;
+      return DCAI_HOSTS.indexOf(u.hostname) !== -1;
+    }
+    document.addEventListener('click', function(e) {
+      var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+      if (!a) return;
+      if (!shouldRewrite(a.href)) return;
+      var u = getURL(a.href);
+      if (!u) return;
+      if (!u.searchParams.get('clickId')) {
+        u.searchParams.set('clickId', clickId);
+        a.href = u.toString();
+      }
+    }, true);
+  })();
+</script>
+</body>
+</html>

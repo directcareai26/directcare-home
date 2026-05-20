@@ -138,38 +138,42 @@
   .btn-light-on-dark { background: white; color: var(--brand-darker); }
   .btn-light-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
 
-  /* HERO */
-  .hero { position: relative; overflow: hidden; padding: 72px 0 100px; isolation: isolate; background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
-  .hero-bg-orbs { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-  .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.55; }
-  .orb.a { width: 540px; height: 540px; background: radial-gradient(circle, #d185ff 0%, transparent 70%); top: -200px; right: -120px; }
-  .orb.b { width: 480px; height: 480px; background: radial-gradient(circle, #af4bed 0%, transparent 70%); bottom: -240px; left: -160px; opacity: 0.35; }
-  @keyframes drift-a { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -30px) scale(1.08); } }
-  @keyframes drift-b { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-50px, 40px) scale(1.1); } }
-  .orb.a { animation: drift-a 14s ease-in-out infinite; }
-  .orb.b { animation: drift-b 17s ease-in-out infinite; }
-
-  .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 1fr; gap: 60px; align-items: center; }
-  @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .hero-copy h1 { margin-top: 22px; }
-  .hero-copy h1 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 560px; margin: 24px 0 32px; color: var(--muted); line-height: 1.55; }
-  .hero-sub strong { color: var(--ink); font-weight: 700; }
-  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; margin-top: 32px; font-size: 0.86rem; color: var(--muted); }
+  /* HERO — full-bleed dark, video-style (swap .hero-bg-image for <video> when available) */
+  .hero { position: relative; overflow: hidden; min-height: 88vh; display: flex; align-items: center; isolation: isolate; padding: 100px 0 80px; background: var(--dark); }
+  .hero-bg-image, .hero-bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.55; filter: saturate(1.05) contrast(1.05); pointer-events: none; }
+  @keyframes ken-burns { 0% { transform: scale(1.06) translate(0, 0); } 100% { transform: scale(1.18) translate(-1.5%, -2%); } }
+  .hero-bg-image { animation: ken-burns 22s ease-in-out infinite alternate; transform-origin: center center; }
+  .hero-bg-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
+    linear-gradient(180deg, rgba(26,15,36,0.50) 0%, rgba(26,15,36,0.72) 60%, rgba(26,15,36,0.96) 100%),
+    radial-gradient(ellipse 60% 50% at 70% 10%, rgba(175,75,237,0.32), transparent 60%),
+    radial-gradient(ellipse 55% 55% at 15% 80%, rgba(118,43,164,0.30), transparent 60%); }
+  .hero-bg-fade { position: absolute; left: 0; right: 0; bottom: -1px; height: 120px; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); }
+  .hero-inner { position: relative; z-index: 3; text-align: center; max-width: 920px; margin: 0 auto; color: white; }
+  .hero-inner h1 { color: white; margin-top: 22px; }
+  .hero-inner h1 .accent { background: linear-gradient(135deg, #e6b6ff 0%, #af4bed 50%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.86); line-height: 1.55; }
+  .hero-sub strong { color: white; font-weight: 700; }
+  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 36px; font-size: 0.86rem; color: rgba(255,255,255,0.78); }
   .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
-  .hero-trust-item svg { color: var(--brand); flex-shrink: 0; }
-  .hero-trust-divider { width: 1px; height: 16px; background: var(--line); }
-
-  .hero-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
-  .hero-visual img { width: 100%; height: 100%; object-fit: cover; }
-  .hero-visual-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(40,26,49,0.55) 100%); pointer-events: none; }
-  .hero-card { position: absolute; background: rgba(255,255,255,0.96); backdrop-filter: blur(12px); border-radius: 18px; padding: 14px 18px; box-shadow: 0 20px 40px -16px rgba(40,26,49,0.25); display: flex; align-items: center; gap: 12px; }
-  .hero-card.tl { top: 22px; left: 22px; }
-  .hero-card.br { bottom: 22px; right: 22px; }
-  .hero-card .pill-icon { width: 36px; height: 36px; border-radius: 10px; background: var(--soft); display: grid; place-items: center; color: var(--brand-deep); flex-shrink: 0; }
-  .hero-card .pill-text { font-size: 0.78rem; color: var(--muted); line-height: 1.25; }
-  .hero-card .pill-text strong { display: block; color: var(--ink); font-weight: 800; font-size: 0.9rem; }
+  .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
+  .hero-trust-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.20); }
+  .btn-ghost-light { background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
+  /* Hero stat strip — replaces the side-image floating cards */
+  .hero-stats { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 40px; }
+  .hero-stat { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 12px 18px; border-radius: 999px; color: white; backdrop-filter: blur(10px); }
+  .hero-stat .stat-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(175,75,237,0.25); color: #f0c0ff; display: grid; place-items: center; flex-shrink: 0; }
+  .hero-stat .stat-text { font-size: 0.86rem; line-height: 1.2; text-align: left; }
+  .hero-stat .stat-text strong { display: block; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: white; }
+  .hero-stat .stat-text span { font-size: 0.74rem; color: rgba(255,255,255,0.70); }
+  @media (max-width: 760px) {
+    .hero { min-height: 80vh; padding: 80px 0 60px; }
+    .hero-inner h1 { margin-top: 18px; }
+    .hero-stats { margin-top: 28px; }
+    .hero-stat { padding: 10px 14px; }
+    .hero-trust { margin-top: 28px; gap: 14px 18px; font-size: 0.78rem; }
+  }
 
   /* TRUST BAR */
   .trust-seal-bar { padding: 28px 0; background: white; border-bottom: 1px solid var(--lavender-100); }
@@ -437,57 +441,66 @@
   <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
 </div>
 
-<!-- HERO -->
+<!-- HERO — full-bleed dark, video-style. To swap in a real video later,
+     replace the <img class="hero-bg-image"> with:
+     <video class="hero-bg-video" autoplay muted loop playsinline preload="auto">
+       <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/<your-blood-lab-hero>.mp4" type="video/mp4" />
+     </video> -->
 <header class="hero">
-  <div class="hero-bg-orbs" aria-hidden="true">
-    <span class="orb a"></span>
-    <span class="orb b"></span>
-  </div>
+  <img class="hero-bg-image" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" alt="" aria-hidden="true" />
+  <div class="hero-bg-overlay" aria-hidden="true"></div>
+
   <div class="container">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <span class="eyebrow rise"><span class="dot"></span> Blood Labs · Biomarker Testing</span>
-        <h1 class="rise d1">Move Better.<br/>Feel Stronger.<br/><span class="accent h-italic">Live Fully.</span></h1>
-        <p class="hero-sub rise d2">Your health is personal — and your care should be too. DirectCare AI translates a full panel of <strong>clinician-ordered blood biomarkers</strong> into a plain-English roadmap: what's working, what's not, and the daily steps that actually move the needle.</p>
-        <div class="hero-cta-row rise d3">
-          <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See My Numbers →</a>
-          <a href="#how" class="btn btn-ghost btn-primary-xl">How it works</a>
+    <div class="hero-inner">
+      <span class="eyebrow on-dark rise"><span class="dot"></span> Blood Labs · Biomarker Testing</span>
+      <h1 class="rise d1">Move Better. Feel Stronger.<br/><span class="accent h-italic">Live Fully.</span></h1>
+      <p class="hero-sub rise d2">Up to <strong>80 clinician-ordered biomarkers</strong>, a plain-English interpretation, and a personalized supplement &amp; lifestyle protocol — built around the numbers that drive how you feel, perform, and age.</p>
+      <div class="hero-cta-row rise d3">
+        <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See My Numbers →</a>
+        <a href="#how" class="btn btn-ghost-light btn-primary-xl">How it works</a>
+      </div>
+
+      <div class="hero-stats rise d4">
+        <div class="hero-stat">
+          <span class="stat-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="M5 9a7 7 0 0 0 14 0"/></svg>
+          </span>
+          <div class="stat-text"><strong>Up to 80</strong><span>biomarkers per panel</span></div>
         </div>
-        <div class="hero-trust rise d4">
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            Clinician-reviewed results
-          </span>
-          <span class="hero-trust-divider"></span>
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            HIPAA-compliant
-          </span>
-          <span class="hero-trust-divider"></span>
-          <span class="hero-trust-item">
+        <div class="hero-stat">
+          <span class="stat-icon">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            Results in days, not weeks
           </span>
+          <div class="stat-text"><strong>3–5 days</strong><span>to your full plan</span></div>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div class="stat-text"><strong>2,000+</strong><span>draw sites nationwide</span></div>
         </div>
       </div>
-      <div class="hero-visual rise d2">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" alt="DirectCare AI member reviewing personalized blood lab results" loading="eager" />
-        <div class="hero-visual-overlay"></div>
-        <div class="hero-card tl">
-          <span class="pill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="M5 9a7 7 0 0 0 14 0"/></svg>
-          </span>
-          <div class="pill-text"><strong>Up to 80 biomarkers</strong>Hormones · metabolic · nutrient</div>
-        </div>
-        <div class="hero-card br">
-          <span class="pill-icon">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-          </span>
-          <div class="pill-text"><strong>Plain-English results</strong>No more guesswork</div>
-        </div>
+
+      <div class="hero-trust rise d4">
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          US-licensed clinicians
+        </span>
+        <span class="hero-trust-divider"></span>
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          HIPAA-compliant
+        </span>
+        <span class="hero-trust-divider"></span>
+        <span class="hero-trust-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
+          CLIA-certified labs
+        </span>
       </div>
     </div>
   </div>
+
+  <div class="hero-bg-fade" aria-hidden="true"></div>
 </header>
 
 <!-- TRUST BAR -->

@@ -146,40 +146,45 @@
   .btn-on-image:hover { background: white; transform: translateY(-2px); }
 
   /* ============== HERO ============== */
-  .hero { position: relative; overflow: hidden; padding: 80px 0 100px; isolation: isolate; background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
+  .hero { position: relative; overflow: hidden; padding: clamp(36px, 4vw, 56px) 0 clamp(40px, 5vw, 64px); isolation: isolate; background: linear-gradient(180deg, #ffffff 0%, #fbf5fe 100%); }
   .hero-bg-orbs { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-  .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.55; }
-  .orb.a { width: 540px; height: 540px; background: radial-gradient(circle, #d185ff 0%, transparent 70%); top: -200px; right: -120px; }
-  .orb.b { width: 480px; height: 480px; background: radial-gradient(circle, #af4bed 0%, transparent 70%); bottom: -240px; left: -160px; opacity: 0.35; }
+  .orb { position: absolute; border-radius: 50%; filter: blur(110px); }
+  .orb.a { width: 460px; height: 460px; background: radial-gradient(circle, rgba(209,133,255,0.28) 0%, transparent 70%); top: -200px; right: -120px; }
+  .orb.b { width: 380px; height: 380px; background: radial-gradient(circle, rgba(175,75,237,0.18) 0%, transparent 70%); bottom: -200px; left: -160px; }
   .hero-grid { position: relative; z-index: 2; display: block; }
-  .hero-copy { max-width: 820px; }
-  .hero-copy h1 { margin-top: 22px; }
+  .hero-copy { max-width: 760px; margin: 0 auto; text-align: center; }
+  .hero-copy h1 { margin-top: 18px; font-size: clamp(2.2rem, 4.4vw, 3.6rem); }
   .hero-copy h1 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 560px; margin: 24px 0 32px; color: var(--muted); line-height: 1.55; }
+  .hero-sub { font-size: clamp(0.98rem, 1.2vw, 1.10rem); max-width: 620px; margin: 18px auto 26px; color: var(--muted); line-height: 1.55; }
   .hero-sub strong { color: var(--ink); font-weight: 700; }
-  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
-  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; margin-top: 32px; font-size: 0.86rem; color: var(--muted); }
+  .hero-cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 24px; font-size: 0.82rem; color: var(--muted); }
   .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
   .hero-trust-item svg { color: var(--brand); flex-shrink: 0; }
   .hero-trust-divider { width: 1px; height: 16px; background: var(--line); }
 
   /* Quick-category boxes under the hero text */
-  .hero-quick-cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 56px; position: relative; z-index: 2; }
-  @media (max-width: 900px) { .hero-quick-cats { grid-template-columns: 1fr; gap: 12px; margin-top: 40px; } }
-  .hero-quick-cat { position: relative; display: flex; flex-direction: column; gap: 14px; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); border: 1px solid var(--lavender-100); border-radius: 18px; padding: 22px 22px 20px; text-decoration: none; color: var(--ink); transition: transform .25s cubic-bezier(0.22, 1, 0.36, 1), border-color .2s ease, box-shadow .2s ease, background .2s ease; overflow: hidden; isolation: isolate; }
-  .hero-quick-cat:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.45); box-shadow: 0 22px 50px -18px rgba(118,43,164,0.30); background: rgba(255,255,255,0.95); }
-  .hero-quick-cat::before { content: ""; position: absolute; top: -50%; right: -50%; width: 140%; height: 140%; background: radial-gradient(circle at top right, rgba(175,75,237,0.18) 0%, transparent 60%); opacity: 0; transition: opacity .3s ease; z-index: -1; }
-  .hero-quick-cat:hover::before { opacity: 1; }
-  .hero-quick-cat .cat-img { width: 100%; aspect-ratio: 16/10; border-radius: 12px; overflow: hidden; background: var(--soft); }
-  .hero-quick-cat .cat-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1); }
-  .hero-quick-cat:hover .cat-img img { transform: scale(1.06); }
-  .hero-quick-cat .cat-tag { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brand-deep); margin-bottom: -4px; }
-  .hero-quick-cat .cat-title { font-family: 'Manrope', sans-serif; font-size: 1.08rem; font-weight: 800; color: var(--ink); line-height: 1.15; letter-spacing: -0.015em; }
-  .hero-quick-cat .cat-sub { font-size: 0.84rem; color: var(--muted); line-height: 1.4; margin: 0; }
-  .hero-quick-cat .cat-arrow { display: inline-flex; align-items: center; gap: 6px; font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 700; color: var(--brand-deep); margin-top: 2px; transition: gap .2s ease; }
-  .hero-quick-cat:hover .cat-arrow { gap: 10px; color: var(--brand-darker); }
-  .hero-quick-cat .cat-arrow svg { transition: transform .25s ease; }
-  .hero-quick-cat:hover .cat-arrow svg { transform: translateX(3px); }
+  /* Product-tile quick categories — image fills, white text over gradient */
+  .hero-quick-cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; position: relative; z-index: 2; }
+  @media (max-width: 900px) { .hero-quick-cats { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; } }
+  @media (max-width: 540px) { .hero-quick-cats { grid-template-columns: 1fr; gap: 12px; } }
+  .hero-quick-cat { position: relative; display: block; aspect-ratio: 4/5; border-radius: 20px; overflow: hidden; text-decoration: none; color: white; isolation: isolate; box-shadow: 0 16px 40px -16px rgba(40,26,49,0.30); transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease; }
+  @media (max-width: 900px) { .hero-quick-cat { aspect-ratio: 5/4; } }
+  .hero-quick-cat:hover { transform: translateY(-6px); box-shadow: 0 30px 60px -18px rgba(118,43,164,0.50); }
+  .hero-quick-cat img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(0.22, 1, 0.36, 1); z-index: 0; }
+  .hero-quick-cat:hover img { transform: scale(1.08); }
+  .hero-quick-cat::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0.05) 0%, rgba(40,26,49,0.20) 45%, rgba(118,43,164,0.85) 100%); z-index: 1; transition: opacity .3s ease; }
+  .hero-quick-cat:hover::after { background: linear-gradient(180deg, rgba(40,26,49,0.05) 0%, rgba(118,43,164,0.40) 40%, rgba(118,43,164,0.92) 100%); }
+  .hero-quick-cat-body { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; padding: 20px; }
+  .hero-quick-cat .cat-tag { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.92); color: var(--brand-darker); font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(8px); box-shadow: 0 4px 12px -4px rgba(0,0,0,0.15); }
+  .hero-quick-cat .cat-tag.green { color: #0d7a2e; }
+  .hero-quick-cat .cat-content { margin-top: auto; }
+  .hero-quick-cat .cat-title { font-family: 'Manrope', sans-serif; font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; color: white; margin: 0 0 6px; text-shadow: 0 2px 12px rgba(0,0,0,0.20); }
+  .hero-quick-cat .cat-sub { font-size: 0.84rem; line-height: 1.35; color: rgba(255,255,255,0.92); margin: 0 0 14px; text-shadow: 0 1px 8px rgba(0,0,0,0.30); }
+  .hero-quick-cat .cat-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; background: white; color: var(--brand-darker); border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; transition: gap .2s ease, transform .2s ease, background .2s ease; box-shadow: 0 6px 18px -4px rgba(0,0,0,0.25); }
+  .hero-quick-cat:hover .cat-cta { gap: 12px; background: #fbf5fe; transform: translateY(-1px); }
+  .hero-quick-cat .cat-cta svg { transition: transform .25s ease; }
+  .hero-quick-cat:hover .cat-cta svg { transform: translateX(3px); }
   .hero-card { position: absolute; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-radius: 18px; padding: 16px 20px; box-shadow: 0 20px 40px -16px rgba(40,26,49,0.25); }
   .hero-card-tl { top: 24px; left: 24px; display: flex; align-items: center; gap: 12px; }
   .hero-card-br { bottom: 24px; left: 24px; right: 24px; }
@@ -410,9 +415,9 @@
   .hero-rotator-word { position: absolute; top: 0; left: 0; right: 0; white-space: nowrap; font-size: clamp(2.2rem, 5.8vw, 4.6rem); letter-spacing: -0.03em; background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
 
   /* ============== HERO FLOATING SHAPES ============== */
-  .hero-shapes { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
-  .hero-shape { position: absolute; }
-  .hero-shape svg { display: block; }
+  .hero-shapes { display: none !important; }
+  .hero-shape { display: none !important; }
+  .hero-shape svg { display: none; }
   @keyframes float-rotate { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(8deg); } }
   @keyframes float-rotate-rev { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(12px) rotate(-10deg); } }
   .hero-shape.s1 { top: 18%; left: 6%; animation: float-rotate 7s ease-in-out infinite; opacity: 0.4; }
@@ -613,40 +618,48 @@
     <!-- 4 Quick-category boxes (scroll to offering on click) -->
     <div class="hero-quick-cats rise d4" role="navigation" aria-label="Top categories">
       <a class="hero-quick-cat" href="#offer-weight-loss">
-        <div class="cat-img">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="Weight Loss" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="Weight Loss" loading="eager" />
+        <div class="hero-quick-cat-body">
+          <span class="cat-tag green">★ Most popular</span>
+          <div class="cat-content">
+            <h3 class="cat-title">Weight Loss</h3>
+            <p class="cat-sub">GLP-1 — compounded semaglutide &amp; tirzepatide.</p>
+            <span class="cat-cta">See if you qualify <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </div>
         </div>
-        <span class="cat-tag">Most popular</span>
-        <h3 class="cat-title">Weight Loss</h3>
-        <p class="cat-sub">GLP-1 protocols — compounded semaglutide &amp; tirzepatide.</p>
-        <span class="cat-arrow">See if you qualify <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
       <a class="hero-quick-cat" href="#offer-hrt">
-        <div class="cat-img">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" alt="HRT for women" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" alt="HRT for women" loading="eager" />
+        <div class="hero-quick-cat-body">
+          <span class="cat-tag">Women</span>
+          <div class="cat-content">
+            <h3 class="cat-title">HRT</h3>
+            <p class="cat-sub">Bioidentical estradiol, progesterone &amp; testosterone.</p>
+            <span class="cat-cta">Start HRT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </div>
         </div>
-        <span class="cat-tag">Women</span>
-        <h3 class="cat-title">HRT</h3>
-        <p class="cat-sub">Bioidentical estradiol, progesterone &amp; testosterone.</p>
-        <span class="cat-arrow">Start HRT <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
       <a class="hero-quick-cat" href="#offer-trt">
-        <div class="cat-img">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT for men" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT for men" loading="eager" />
+        <div class="hero-quick-cat-body">
+          <span class="cat-tag">Men</span>
+          <div class="cat-content">
+            <h3 class="cat-title">TRT</h3>
+            <p class="cat-sub">Injectable, oral &amp; enclomiphene — labs included.</p>
+            <span class="cat-cta">Restore your T <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </div>
         </div>
-        <span class="cat-tag">Men</span>
-        <h3 class="cat-title">TRT</h3>
-        <p class="cat-sub">Injectable, oral &amp; enclomiphene — labs included.</p>
-        <span class="cat-arrow">Restore your T <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
       <a class="hero-quick-cat" href="#offer-surge">
-        <div class="cat-img">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" alt="Sexual Health — Surge Max" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" alt="Sexual Health — Surge Max" loading="eager" />
+        <div class="hero-quick-cat-body">
+          <span class="cat-tag">Men · ED</span>
+          <div class="cat-content">
+            <h3 class="cat-title">Surge Max</h3>
+            <p class="cat-sub">4-in-1 ED protocol — sildenafil + tadalafil + more.</p>
+            <span class="cat-cta">Find your protocol <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+          </div>
         </div>
-        <span class="cat-tag">Men · ED</span>
-        <h3 class="cat-title">Surge Max</h3>
-        <p class="cat-sub">4-in-1 ED protocol — sildenafil + tadalafil + more.</p>
-        <span class="cat-arrow">Find your protocol <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </a>
     </div>
   </div>

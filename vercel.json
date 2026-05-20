@@ -33,6 +33,10 @@
 
     { "source": "/weight-loss", "destination": "https://directcare-weight-loss.vercel.app/" },
     { "source": "/weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/" },
-    { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" }
+    { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" },
+
+    { "source": "/chronic-care", "destination": "https://chronic-care-azure.vercel.app/" },
+    { "source": "/chronic-care/", "destination": "https://chronic-care-azure.vercel.app/" },
+    { "source": "/chronic-care/:path*", "destination": "https://chronic-care-azure.vercel.app/:path*" }
   ]
 }

@@ -203,19 +203,25 @@
   .journey-note { max-width: 720px; margin: 36px auto 0; padding: 18px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; text-align: center; color: var(--muted); font-size: 0.96rem; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
   .journey-note strong { color: var(--ink); }
 
-  /* HOW IT WORKS (Patient Experience) — image + steps */
-  .pe-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: center; }
-  @media (max-width: 980px) { .pe-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .pe-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
-  .pe-visual img { width: 100%; height: 100%; object-fit: cover; }
-  .pe-steps { display: flex; flex-direction: column; gap: 16px; }
-  .pe-step { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: flex-start; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 22px 24px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
-  .pe-step:hover { transform: translateX(4px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
-  .pe-step-icon { width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); color: white; display: grid; place-items: center; box-shadow: 0 8px 18px -6px rgba(175,75,237,0.45); }
-  .pe-step-icon svg { width: 22px; height: 22px; }
-  .pe-step-label { font-family: 'Manrope', sans-serif; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); margin-bottom: 4px; }
-  .pe-step h3 { font-size: 1.12rem; margin-bottom: 6px; }
-  .pe-step p { font-size: 0.94rem; }
+  /* HOW IT WORKS — alternating step rows, each paired with a portal screenshot */
+  .pe-steps-v2 { display: flex; flex-direction: column; gap: clamp(48px, 6vw, 96px); }
+  .pe-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  .pe-row:nth-child(even) .pe-row-visual { order: -1; }
+  @media (max-width: 900px) {
+    .pe-row { grid-template-columns: 1fr; gap: 28px; }
+    .pe-row:nth-child(even) .pe-row-visual { order: 0; }
+  }
+  .pe-row-visual { position: relative; aspect-ratio: 4/3; border-radius: var(--radius-xl); padding: clamp(20px, 4vw, 56px); display: flex; align-items: center; justify-content: center; overflow: hidden; background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); box-shadow: var(--shadow-soft); }
+  .pe-row-visual::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 25% 25%, rgba(255,255,255,0.55), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(175,75,237,0.18), transparent 60%); pointer-events: none; z-index: 0; }
+  .pe-row-visual img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: drop-shadow(0 28px 50px rgba(40,26,49,0.25)); position: relative; z-index: 1; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
+  .pe-row:hover .pe-row-visual img { transform: scale(1.025) translateY(-2px); }
+  .pe-row-text { padding: 0; }
+  .pe-step-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; background: rgba(175,75,237,0.10); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; margin-bottom: 18px; }
+  .pe-step-badge .num { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 0.9rem; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .pe-step-badge .lbl { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); }
+  .pe-row-text h3 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); margin-bottom: 14px; line-height: 1.15; }
+  .pe-row-text p { font-size: 1.02rem; line-height: 1.6; max-width: 480px; }
+  .pe-row-text p em { color: var(--brand-deep); font-style: italic; font-weight: 600; }
 
   /* PRICING (3 plans) */
   .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
@@ -302,29 +308,6 @@
     .compare-col-us, .compare-col-them { font-size: 0.86rem; }
     .compare-col-us small, .compare-col-them small { font-size: 0.62rem; letter-spacing: 0.10em; }
     .compare-row .cell-note { font-size: 0.74rem; }
-  }
-
-  /* SUPPLEMENT SHOWCASE (Fullscript bottles) */
-  .bottles-section { position: relative; overflow: hidden; }
-  .bottles-section::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(175,75,237,0.10), transparent 60%); pointer-events: none; z-index: 0; }
-  .bottles-section .container { position: relative; z-index: 1; }
-  .bottles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1080px; margin: 0 auto; }
-  @media (max-width: 900px) { .bottles-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
-  .bottle { position: relative; aspect-ratio: 3/4; background: linear-gradient(180deg, var(--soft) 0%, white 70%); border-radius: var(--radius-lg); padding: 26px 22px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--lavender-100); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; box-shadow: 0 12px 32px -18px rgba(118,43,164,0.18); }
-  .bottle:hover { transform: translateY(-8px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-lg); }
-  .bottle-img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 18px 24px rgba(118,43,164,0.30)); }
-  @keyframes float-bottle-a { 0%, 100% { transform: translateY(0) rotate(-0.5deg); } 50% { transform: translateY(-14px) rotate(0.5deg); } }
-  @keyframes float-bottle-b { 0%, 100% { transform: translateY(0) rotate(0.5deg); } 50% { transform: translateY(-12px) rotate(-0.5deg); } }
-  .bottle:nth-child(1) .bottle-img { animation: float-bottle-a 5.5s ease-in-out infinite; }
-  .bottle:nth-child(2) .bottle-img { animation: float-bottle-b 5.5s ease-in-out infinite; animation-delay: 0.7s; }
-  .bottle:nth-child(3) .bottle-img { animation: float-bottle-a 5.5s ease-in-out infinite; animation-delay: 1.4s; }
-  .bottle:nth-child(4) .bottle-img { animation: float-bottle-b 5.5s ease-in-out infinite; animation-delay: 2.1s; }
-  .bottle-tag { position: absolute; top: 14px; left: 14px; right: 14px; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); }
-  .bottle-tag::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); margin-right: 6px; vertical-align: middle; }
-  .bottles-footer { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; margin-top: 36px; align-items: center; font-size: 0.92rem; color: var(--muted); text-align: center; }
-  .bottles-footer strong { color: var(--ink); font-family: 'Manrope', sans-serif; font-weight: 800; }
-  @media (prefers-reduced-motion: reduce) {
-    .bottle .bottle-img { animation: none !important; }
   }
 
   /* FAQ */
@@ -588,52 +571,52 @@
       <p>Four simple steps. Zero waiting rooms. A complete picture of what's happening inside your body — and exactly what to do about it.</p>
     </div>
 
-    <div class="pe-grid">
-      <div class="pe-visual">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/clinician%20n%20computer.png" alt="DirectCare AI clinician interpreting biomarker results and building a personalized plan" loading="lazy" />
-      </div>
-      <div class="pe-steps">
-        <div class="pe-step">
-          <div class="pe-step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M5 14h14l-1.5 6h-11Z"/><path d="M9 4V2h6v2"/></svg>
-          </div>
-          <div>
-            <div class="pe-step-label">Step 01</div>
-            <h3>Get your lab test</h3>
-            <p>Pick a panel, complete a 3-minute intake, and book a draw at one of 2,000+ partner labs near you — or request mobile phlebotomy at home.</p>
-          </div>
+    <div class="pe-steps-v2">
+
+      <div class="pe-row">
+        <div class="pe-row-text">
+          <span class="pe-step-badge"><span class="num">01</span><span class="lbl">Book your lab</span></span>
+          <h3>Pick a panel and <em>book your draw</em> in minutes.</h3>
+          <p>Complete a 3-minute intake. We send a clinician-signed lab order to your portal and you walk into one of <strong>2,000+ partner draw sites</strong> (Quest, Labcorp) — no appointment needed at most. Prefer to stay home? Mobile phlebotomy available in most metros.</p>
         </div>
-        <div class="pe-step">
-          <div class="pe-step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>
-          </div>
-          <div>
-            <div class="pe-step-label">Step 02</div>
-            <h3>See your results explained clearly</h3>
-            <p>Every marker is translated into plain English with context, reference ranges, and what each number actually means for your health.</p>
-          </div>
-        </div>
-        <div class="pe-step">
-          <div class="pe-step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>
-          </div>
-          <div>
-            <div class="pe-step-label">Step 03</div>
-            <h3>Receive a personalized wellness plan</h3>
-            <p>A clinician builds a targeted protocol — nutrition, movement, supplements, and (if indicated) medication — designed around <em>your</em> numbers.</p>
-          </div>
-        </div>
-        <div class="pe-step">
-          <div class="pe-step-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9 11l4 4 8-8"/><path d="M14 7h7v7"/></svg>
-          </div>
-          <div>
-            <div class="pe-step-label">Step 04</div>
-            <h3>Follow guided next steps, including check-ins and trends</h3>
-            <p>Track progress in the portal, message your clinician, and retest at 90 or 180 days to see exactly how much you've moved the needle.</p>
-          </div>
+        <div class="pe-row-visual">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript2.png" alt="DirectCare AI portal — booking a lab draw and viewing upcoming appointment details" loading="lazy" />
         </div>
       </div>
+
+      <div class="pe-row">
+        <div class="pe-row-text">
+          <span class="pe-step-badge"><span class="num">02</span><span class="lbl">Plain-English results</span></span>
+          <h3>See every biomarker — <em>actually explained.</em></h3>
+          <p>Every marker is translated into plain English with reference ranges, optimal targets, and a clinician note on what each number means for <em>your</em> health. Drill into any biomarker — like Apolipoprotein B — to see context, trend, and the next step.</p>
+        </div>
+        <div class="pe-row-visual">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript3.png" alt="Results dashboard with Lab Results, Wellness Plan, and a biomarker drill-down for Apolipoprotein B" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="pe-row">
+        <div class="pe-row-text">
+          <span class="pe-step-badge"><span class="num">03</span><span class="lbl">Personalized plan</span></span>
+          <h3>A clinician builds a plan <em>around your numbers.</em></h3>
+          <p>A US-licensed clinician reviews every result, flags what matters, and writes you a targeted protocol — nutrition, movement, pharmaceutical-grade supplements via Fullscript, and (if indicated) medication — all designed around <em>your</em> wellness score and out-of-range markers.</p>
+        </div>
+        <div class="pe-row-visual">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript1.webp" alt="Clinician reviewing a patient's wellness score and lab results in the DirectCare AI portal" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="pe-row">
+        <div class="pe-row-text">
+          <span class="pe-step-badge"><span class="num">04</span><span class="lbl">Track &amp; retest</span></span>
+          <h3>Follow the plan. <em>See your numbers move.</em></h3>
+          <p>Daily guidance in the portal, async clinician messaging, and side-by-side retest tracking at 90 or 180 days. Book your follow-up draw in one tap and watch every marker improve over time — visible proof your plan is working.</p>
+        </div>
+        <div class="pe-row-visual">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript4.png" alt="Portal home screen with daily guidance and one-tap follow-up lab booking" loading="lazy" />
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -898,40 +881,6 @@
   </div>
 </section>
 
-<!-- SUPPLEMENT SHOWCASE (Fullscript bottles) -->
-<section class="section bottles-section" id="supplements">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> Pharmaceutical-Grade Protocol</span>
-      <h2>Built around <span class="h-italic">your</span> labs.</h2>
-      <p>Your supplement protocol uses physician-grade formulations through Fullscript — every product tied to a specific marker on your panel, shipped from a US-licensed dispensary at member pricing.</p>
-    </div>
-
-    <div class="bottles-grid">
-      <div class="bottle">
-        <span class="bottle-tag">Foundational</span>
-        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript1.webp" alt="Fullscript physician-grade foundational supplement" loading="lazy" />
-      </div>
-      <div class="bottle">
-        <span class="bottle-tag">Targeted</span>
-        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript2.png" alt="Fullscript physician-grade targeted supplement" loading="lazy" />
-      </div>
-      <div class="bottle">
-        <span class="bottle-tag">Hormone Support</span>
-        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript3.png" alt="Fullscript physician-grade hormone support supplement" loading="lazy" />
-      </div>
-      <div class="bottle">
-        <span class="bottle-tag">Metabolic</span>
-        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript4.png" alt="Fullscript physician-grade metabolic supplement" loading="lazy" />
-      </div>
-    </div>
-
-    <div class="bottles-footer">
-      <span><strong>Fullscript®</strong> dispensary partner · trusted by 100,000+ clinicians · member pricing on every order</span>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="section lavender" id="faq">
   <div class="container">
@@ -1086,7 +1035,7 @@
       document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
       return;
     }
-    var TARGETS = ['.section .section-head', '.journey-card', '.pe-step', '.price-card', '.biomarker-cat', '.compare-wrap', '.doctor-card', '.bottle', '.faq', '.final-cta'];
+    var TARGETS = ['.section .section-head', '.journey-card', '.pe-row', '.price-card', '.biomarker-cat', '.compare-wrap', '.doctor-card', '.faq', '.final-cta'];
     TARGETS.forEach(function(sel) {
       document.querySelectorAll(sel).forEach(function(el) {
         if (!el.classList.contains('reveal')) el.classList.add('reveal');

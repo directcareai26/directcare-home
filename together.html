@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>Together — Whole-Household Care | DirectCare AI</title>
+<meta name="description" content="One platform for both partners. HRT for her, TRT for him — labs included, clinician-prescribed, shipped to your door. Save when you enroll together." />
+
+<!-- Favicons -->
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="Together — Whole-Household Care | DirectCare AI" />
+<meta property="og:description" content="HRT for her. TRT for him. One platform, one bill. Save when you enroll together." />
+<meta property="og:url" content="https://www.directcare.ai/together" />
+<meta property="og:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Dance%3Aembrace.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Dance%3Aembrace.png" />
+<meta name="twitter:title" content="Together — DirectCare AI" />
+<meta name="twitter:description" content="HRT for her. TRT for him. Save when you enroll together." />
+
+<link rel="canonical" href="https://www.directcare.ai/together" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --soft: #fbf5fe;
+    --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2;
+    --lavender-200: #D185FF;
+    --ink: #281A31;
+    --muted: #5b4d65;
+    --line: rgba(40,26,49,0.08);
+    --brand: #af4bed;
+    --brand-deep: #9043bf;
+    --brand-darker: #762ba4;
+    --brand-text: #44215A;
+    --her: #d63384;
+    --her-deep: #a02764;
+    --him: #5b3f8f;
+    --him-deep: #3e2864;
+    --green: #14983A;
+    --dark: #1a0f24;
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+    --shadow-soft: 0 18px 50px -16px rgba(118,43,164,0.22);
+    --shadow-lg: 0 30px 70px -20px rgba(118,43,164,0.30);
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1 { font-size: clamp(2.4rem, 5.8vw, 4.4rem); }
+  h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+  h3 { font-size: clamp(1.15rem, 1.8vw, 1.45rem); }
+  h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
+  p { margin: 0; color: var(--muted); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .section { padding: clamp(60px, 8vw, 110px) 0; position: relative; }
+  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+
+  .h-italic { font-style: italic; font-weight: 700; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .eyebrow.on-dark { background: rgba(255,255,255,0.10); color: #f7e8ff; border-color: rgba(255,255,255,0.20); }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-dropdown { position: relative; }
+  .nav-dropdown > .nav-link { display: inline-flex; align-items: center; gap: 4px; }
+  .nav-dropdown > .nav-link::after { content: "▾"; font-size: 0.7em; opacity: 0.7; }
+  .nav-menu { position: absolute; top: calc(100% + 6px); left: 0; min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 16px; padding: 8px 0; box-shadow: 0 18px 40px -10px rgba(118,43,164,0.20); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: all .18s ease; z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; visibility: visible; transform: translateY(0); }
+  .nav-menu a { display: block; padding: 10px 20px; font-size: 0.88rem; color: rgba(40,26,49,0.80); }
+  .nav-menu a:hover { background: var(--soft); color: var(--brand); }
+  .nav-right { display: flex; align-items: center; gap: 14px; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  @media (max-width: 980px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; }
+  .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; text-decoration: none; font-family: 'Manrope', sans-serif; }
+  .btn-primary { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; box-shadow: 0 12px 32px -6px rgba(175,75,237,0.50); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -6px rgba(144,67,191,0.60); }
+  .btn-primary-xl { padding: 18px 32px; font-size: 1.05rem; }
+  .btn-her { background: linear-gradient(135deg, var(--her) 0%, var(--her-deep) 100%); color: white; box-shadow: 0 10px 28px -6px rgba(214,51,132,0.45); }
+  .btn-her:hover { transform: translateY(-2px); box-shadow: 0 14px 36px -6px rgba(160,39,100,0.55); }
+  .btn-him { background: linear-gradient(135deg, var(--him) 0%, var(--him-deep) 100%); color: white; box-shadow: 0 10px 28px -6px rgba(91,63,143,0.45); }
+  .btn-him:hover { transform: translateY(-2px); box-shadow: 0 14px 36px -6px rgba(62,40,100,0.55); }
+  .btn-ghost { background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.30); backdrop-filter: blur(8px); }
+  .btn-ghost:hover { background: rgba(255,255,255,0.20); }
+  .btn-on-dark { background: white; color: var(--brand-darker); }
+  .btn-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
+
+  /* HERO */
+  .hero { position: relative; min-height: 80vh; display: flex; align-items: center; overflow: hidden; isolation: isolate; padding: 64px 0; background: var(--dark); color: white; }
+  .hero img.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.55; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,15,36,0.50) 0%, rgba(26,15,36,0.65) 60%, rgba(118,43,164,0.85) 100%); z-index: 1; }
+  .hero .container { position: relative; z-index: 2; max-width: 920px; text-align: center; }
+  .hero h1 { color: white; margin-top: 22px; }
+  .hero h1 .accent { background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #ffffff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
+  .hero p.lead { font-size: clamp(1.05rem, 1.45vw, 1.22rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.88); line-height: 1.55; }
+  .hero-cta-row { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .hero-trust { display: flex; gap: 20px 30px; flex-wrap: wrap; justify-content: center; margin-top: 32px; font-size: 0.86rem; color: rgba(255,255,255,0.80); }
+  .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
+
+  /* DUAL CARDS */
+  .pair-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 48px; }
+  @media (max-width: 820px) { .pair-grid { grid-template-columns: 1fr; gap: 20px; } }
+  .pair-card { position: relative; overflow: hidden; border-radius: var(--radius-lg); padding: 36px 32px; box-shadow: var(--shadow-soft); color: white; min-height: 380px; display: flex; flex-direction: column; isolation: isolate; }
+  .pair-card.her { background: linear-gradient(160deg, #f9a8c4 0%, var(--her) 50%, var(--her-deep) 100%); }
+  .pair-card.him { background: linear-gradient(160deg, #9b85d4 0%, var(--him) 50%, var(--him-deep) 100%); }
+  .pair-card .tag { display: inline-block; background: rgba(255,255,255,0.20); border: 1px solid rgba(255,255,255,0.30); padding: 5px 14px; border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; align-self: flex-start; }
+  .pair-card h3 { color: white; font-size: 1.7rem; margin: 16px 0 6px; }
+  .pair-card .pair-sub { color: rgba(255,255,255,0.90); font-size: 0.98rem; margin-bottom: 18px; }
+  .pair-card ul { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; flex: 1; }
+  .pair-card ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.96rem; color: white; line-height: 1.4; }
+  .pair-card ul li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.20); display: grid; place-items: center; font-weight: 800; font-size: 0.8rem; }
+  .pair-card .pair-price { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.4rem; color: white; margin-bottom: 14px; }
+  .pair-card .pair-price small { font-size: 0.82rem; font-weight: 600; opacity: 0.85; }
+  .pair-card .btn { width: 100%; }
+
+  /* SAVINGS BAR */
+  .savings-bar { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 50%, #44215A 100%); color: white; border-radius: var(--radius-lg); padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px); margin-top: 28px; display: grid; grid-template-columns: 1.5fr 1fr; gap: 28px; align-items: center; box-shadow: var(--shadow-lg); }
+  @media (max-width: 820px) { .savings-bar { grid-template-columns: 1fr; text-align: center; } }
+  .savings-bar h3 { color: white; font-size: clamp(1.4rem, 2.2vw, 1.9rem); margin-bottom: 8px; }
+  .savings-bar p { color: rgba(255,255,255,0.92); margin: 0; font-size: 1.0rem; line-height: 1.5; }
+  .savings-bar .deal-stack { background: rgba(255,255,255,0.10); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.20); border-radius: var(--radius); padding: 22px 24px; font-family: 'Manrope', sans-serif; }
+  .savings-bar .deal-row { display: flex; justify-content: space-between; padding: 8px 0; color: rgba(255,255,255,0.88); font-size: 0.94rem; }
+  .savings-bar .deal-row + .deal-row { border-top: 1px solid rgba(255,255,255,0.16); }
+  .savings-bar .deal-row.total { font-size: 1.15rem; font-weight: 900; color: white; padding-top: 12px; }
+  .savings-bar .deal-row.total .strike { text-decoration: line-through; opacity: 0.55; font-weight: 700; margin-right: 8px; }
+  .savings-bar .deal-row .pill { display: inline-flex; align-items: center; gap: 6px; background: rgba(20,152,58,0.30); border: 1px solid rgba(20,152,58,0.60); padding: 2px 10px; border-radius: 999px; font-size: 0.74rem; font-weight: 800; color: #c4f3d2; letter-spacing: 0.06em; }
+
+  /* HOW IT WORKS */
+  .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
+  @media (max-width: 820px) { .how-grid { grid-template-columns: 1fr; } }
+  .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 32px 28px; position: relative; }
+  .how-card .how-num { font-family: 'Manrope', sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
+  .how-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .how-card p { font-size: 0.95rem; line-height: 1.55; }
+
+  /* ADD ONS */
+  .addon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 28px; }
+  .addon-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 24px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
+  .addon-card:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.4); box-shadow: 0 12px 28px -10px rgba(118,43,164,0.20); }
+  .addon-card .addon-tag { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; }
+  .addon-card h4 { font-size: 1.1rem; margin-bottom: 4px; }
+  .addon-card p { font-size: 0.88rem; margin-bottom: 12px; }
+  .addon-card .addon-price { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.0rem; color: var(--brand-darker); }
+  .addon-card .addon-price small { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+
+  /* FAQ */
+  .faq-wrap { max-width: 820px; margin: 36px auto 0; }
+  .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
+  .faq summary { padding: 18px 22px; cursor: pointer; font-weight: 700; font-size: 1.0rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Manrope', sans-serif; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; font-size: 1.4rem; color: var(--brand); flex-shrink: 0; }
+  .faq[open] summary::after { content: "−"; }
+  .faq .faq-body { padding: 0 22px 18px; color: var(--muted); font-size: 0.94rem; line-height: 1.6; }
+
+  /* FINAL CTA */
+  .final-cta { position: relative; background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 50%, var(--brand-deep) 100%); color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 90px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
+  .final-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(255,255,255,0.18), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(255,255,255,0.10), transparent 60%); pointer-events: none; }
+  .final-cta > * { position: relative; z-index: 2; }
+  .final-cta h2 { color: white; max-width: 760px; margin: 22px auto 18px; }
+  .final-cta p { color: rgba(255,255,255,0.88); max-width: 620px; margin: 0 auto 32px; font-size: 1.08rem; }
+  .final-cta-row { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+  /* FOOTER */
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 60px 0 28px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
+  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col a { display: block; font-size: 0.92rem; color: rgba(40,26,49,0.75); padding: 5px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 22px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+  .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+  .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
+  .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/hormone-replacement-therapy">HRT</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/womens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a href="/mens-health/">View All &rarr;</a>
+        </div>
+      </div>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      </a>
+      <button class="mobile-toggle" aria-label="Open menu" id="mobile-toggle">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-drawer" id="mobile-drawer">
+  <details><summary>Women's Health</summary>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+  </details>
+  <details><summary>Men's Health</summary>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+  </details>
+  <a href="/supplements/">Supplements</a>
+  <a href="/blood-test/">Blood Labs</a>
+  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <img class="hero-bg" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Dance%3Aembrace.png" alt="Couple together — DirectCare AI" loading="eager" />
+  <div class="container">
+    <span class="eyebrow on-dark"><span class="dot"></span> One platform · Both partners</span>
+    <h1>Together. <span class="accent">Whole-household care.</span></h1>
+    <p class="lead">HRT for her. TRT for him. One platform, one bill, one clinician team that knows both of you. Labs included. Compounded in the USA. <strong style="color:white;">Save 10% when you both enroll.</strong></p>
+    <div class="hero-cta-row">
+      <a class="btn btn-her btn-primary-xl" href="/hormone-replacement-therapy">Start her intake →</a>
+      <a class="btn btn-him btn-primary-xl" href="/testosterone-replacement-therapy">Start his intake →</a>
+    </div>
+    <div class="hero-trust">
+      <span class="hero-trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        US-licensed clinicians
+      </span>
+      <span class="hero-trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        HIPAA-compliant
+      </span>
+      <span class="hero-trust-item">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+        Compounded in the USA
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- WHY PAIR UP -->
+<section class="section">
+  <div class="container">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto 12px;">
+      <span class="eyebrow"><span class="dot"></span> Why couples enroll together</span>
+      <h2 style="margin-top: 18px;">One care team. <span class="h-italic">Two protocols.</span></h2>
+      <p style="font-size: 1.05rem; max-width: 600px; margin: 18px auto 0;">Most clinics treat you as separate strangers. We treat you as a household — same clinical team, same dashboard, same shipping schedule, one card on file.</p>
+    </div>
+
+    <!-- DUAL CARDS -->
+    <div class="pair-grid">
+      <div class="pair-card her">
+        <span class="tag">For her</span>
+        <h3>Hormone Replacement (HRT)</h3>
+        <p class="pair-sub">Bioidentical estradiol, progesterone &amp; testosterone — lab-driven, physician-titrated.</p>
+        <ul>
+          <li>Full hormone panel + clinician interpretation</li>
+          <li>Bioidentical estradiol + progesterone</li>
+          <li>Low-dose testosterone for libido &amp; energy</li>
+          <li>Pills, patches, gels — your choice</li>
+          <li>Direct clinician messaging anytime</li>
+        </ul>
+        <div class="pair-price">From $89<small> /mo</small></div>
+        <a class="btn btn-on-dark" href="/hormone-replacement-therapy" style="background:white; color:var(--her-deep);">Start her intake →</a>
+      </div>
+
+      <div class="pair-card him">
+        <span class="tag">For him</span>
+        <h3>Testosterone (TRT)</h3>
+        <p class="pair-sub">Injectable, oral, and natural-pathway protocols — labs included, clinician-monitored.</p>
+        <ul>
+          <li>Full hormone panel + clinician interpretation</li>
+          <li>Injectable testosterone cypionate</li>
+          <li>Or enclomiphene (natural-pathway)</li>
+          <li>Re-titration based on follow-up labs</li>
+          <li>Direct clinician messaging anytime</li>
+        </ul>
+        <div class="pair-price">$169&ndash;$189<small> /mo</small></div>
+        <a class="btn btn-on-dark" href="/testosterone-replacement-therapy" style="background:white; color:var(--him-deep);">Start his intake →</a>
+      </div>
+    </div>
+
+    <!-- SAVINGS BAR -->
+    <div class="savings-bar">
+      <div>
+        <h3>Save 10% when you both enroll.</h3>
+        <p>When both partners are active subscribers, we apply a 10% household discount to each bill — automatically, every month, no promo code needed. Cancel either side anytime.</p>
+      </div>
+      <div class="deal-stack">
+        <div class="deal-row">
+          <span>Her HRT</span>
+          <span>$89/mo</span>
+        </div>
+        <div class="deal-row">
+          <span>His TRT</span>
+          <span>$169/mo</span>
+        </div>
+        <div class="deal-row total">
+          <span>Together</span>
+          <span><span class="strike">$258</span>$232/mo &nbsp;<span class="pill">Save $26/mo</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section soft">
+  <div class="container">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow"><span class="dot"></span> How it works</span>
+      <h2 style="margin-top: 18px;">Two intakes. <span class="h-italic">One household.</span></h2>
+      <p style="font-size: 1.05rem; max-width: 600px; margin: 18px auto 0;">You each complete your own private intake — your medical history stays yours. The shared part: billing, shipping, and our care team.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-num">01</div>
+        <h3>Each take your intake</h3>
+        <p>Five-minute private intake per partner. Honest history, current meds, goals. HIPAA-encrypted and reviewed only by your assigned US-licensed clinician.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">02</div>
+        <h3>Two lab panels ordered</h3>
+        <p>A clinician orders the right panel for each of you — hers tuned for estrogen/progesterone/T, his for total + free T, SHBG, estradiol, lipids. Walk into any partner draw site.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-num">03</div>
+        <h3>Two protocols, one household</h3>
+        <p>Your medications arrive in plain packaging on coordinated refill schedules. One dashboard, one card on file, two protocols — both adjusted as your labs evolve.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADD-ONS -->
+<section class="section">
+  <div class="container">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow"><span class="dot"></span> Optional household add-ons</span>
+      <h2 style="margin-top: 18px;">Bring the rest of the family <span class="h-italic">into one platform.</span></h2>
+      <p style="font-size: 1.05rem; max-width: 620px; margin: 18px auto 0;">Stack any of these onto either partner's plan. The 10% household discount applies across the board.</p>
+    </div>
+    <div class="addon-grid">
+      <a class="addon-card" href="/weight-loss/">
+        <span class="addon-tag">Either partner</span>
+        <h4>Weight Loss (GLP-1)</h4>
+        <p>Compounded semaglutide and tirzepatide — weekly injection, clinician-monitored.</p>
+        <span class="addon-price">From $269<small> /mo</small></span>
+      </a>
+      <a class="addon-card" href="/surge-max/">
+        <span class="addon-tag">Him · ED</span>
+        <h4>Surge Max</h4>
+        <p>4-in-1 ED protocol — sildenafil, tadalafil, and more.</p>
+        <span class="addon-price">From $12<small> /vial</small></span>
+      </a>
+      <a class="addon-card" href="/mens-hair-loss/">
+        <span class="addon-tag">Him · Hair</span>
+        <h4>Hair Regrowth (Men)</h4>
+        <p>Finasteride, dutasteride, minoxidil, tretinoin — personalized topicals + oral.</p>
+        <span class="addon-price">From $59<small> /mo</small></span>
+      </a>
+      <a class="addon-card" href="/womans-hair-loss/">
+        <span class="addon-tag">Her · Hair</span>
+        <h4>Hair Regrowth (Women)</h4>
+        <p>Spironolactone, low-dose oral minoxidil, topical combos &amp; clinical shampoo.</p>
+        <span class="addon-price">From $59<small> /mo</small></span>
+      </a>
+      <a class="addon-card" href="/blood-test/">
+        <span class="addon-tag">Either partner</span>
+        <h4>Blood Labs</h4>
+        <p>70&ndash;80 biomarker panel + clinician interpretation + personalized plan.</p>
+        <span class="addon-price">From $196<small> one-time</small></span>
+      </a>
+      <a class="addon-card" href="/supplements/">
+        <span class="addon-tag">Whole family</span>
+        <h4>Supplements</h4>
+        <p>Physician-formulated stacks via Fullscript — pharmaceutical-grade brands.</p>
+        <span class="addon-price">Member pricing</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section soft">
+  <div class="container">
+    <div style="text-align: center; max-width: 720px; margin: 0 auto;">
+      <span class="eyebrow"><span class="dot"></span> Couples questions</span>
+      <h2 style="margin-top: 18px;">Common questions.</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="faq" open>
+        <summary>Do we have to enroll on the same day to get the discount?</summary>
+        <div class="faq-body">No. You can enroll at different times. As soon as both partners are active subscribers, the 10% household discount applies to both monthly bills automatically. If either partner pauses or cancels, the discount comes off the remaining partner's bill at the next renewal.</div>
+      </details>
+      <details class="faq">
+        <summary>Is my medical history private from my partner?</summary>
+        <div class="faq-body">Yes. Each partner has their own intake, their own portal login, and their own clinician thread. We never share medical history between partners. The only thing shared is billing and shipping address.</div>
+      </details>
+      <details class="faq">
+        <summary>Do you need to be married or domestic partners?</summary>
+        <div class="faq-body">No relationship status check. The household discount applies to any two adults sharing a billing address. Roommates, family members, or partners — your call.</div>
+      </details>
+      <details class="faq">
+        <summary>What if only one of us qualifies?</summary>
+        <div class="faq-body">You're only charged if a clinician approves your protocol. If one partner doesn't qualify after intake, the other partner still gets the standard pricing on their own plan and the household discount applies if they later qualify too.</div>
+      </details>
+      <details class="faq">
+        <summary>Can we share refills or medications?</summary>
+        <div class="faq-body">No — each protocol is prescribed individually based on each partner's labs and history. Sharing prescription medications isn't safe or legal. Refill schedules can be coordinated so packages arrive together, though.</div>
+      </details>
+      <details class="faq">
+        <summary>Can we add the kids' supplements or pets too?</summary>
+        <div class="faq-body">Supplements via Fullscript — yes, for the whole family. For prescription needs, each adult needs their own intake. For pet medications, our DirectCare Pharmacy Card works at 60,000+ pharmacies including vet-friendly ones.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="container">
+    <div class="final-cta">
+      <span class="eyebrow on-dark"><span class="dot"></span> Start together · Save together</span>
+      <h2>Two intakes. <br/>One household. <span style="background: linear-gradient(135deg, #f7e8ff 0%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic;">10% off forever.</span></h2>
+      <p>Each partner takes a private 5-minute intake. A US-licensed clinician reviews both files. No charge unless you qualify and decide to start.</p>
+      <div class="final-cta-row">
+        <a class="btn btn-on-dark btn-primary-xl" href="/hormone-replacement-therapy">Start her intake →</a>
+        <a class="btn btn-on-dark btn-primary-xl" href="/testosterone-replacement-therapy">Start his intake →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is an AI-powered direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, and blood labs.</p>
+        <div class="social-row" aria-label="Follow DirectCare AI">
+          <a href="https://www.facebook.com/61577140438558/about/?_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.98H7.9V12h2.5V9.8c0-2.46 1.46-3.82 3.7-3.82 1.07 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.98A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.instagram.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="https://twitter.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.523 7.452L22.5 22h-6.84l-4.97-6.456L4.9 22H2.14l6.978-7.973L1.5 2h7.005l4.5 5.94L18.244 2zm-1.197 18.18h1.598L7.05 3.74H5.328L17.047 20.18z"/></svg></a>
+          <a href="https://www.tiktok.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1.84-.39z"/></svg></a>
+          <a href="https://www.youtube.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.96-1.97C18.84 4.25 12 4.25 12 4.25s-6.84 0-8.58.45a2.78 2.78 0 0 0-1.96 1.97C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.96 1.97c1.74.45 8.58.45 8.58.45s6.84 0 8.58-.45a2.78 2.78 0 0 0 1.96-1.97C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12l-5.75 3.27z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>For her</h5>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/womans-hair-loss/">Hair Regrowth</a>
+        <a href="/blood-test/">Blood Labs</a>
+      </div>
+      <div class="foot-col">
+        <h5>For him</h5>
+        <a href="/testosterone-replacement-therapy">TRT</a>
+        <a href="/surge-max/">Sexual Health</a>
+        <a href="/mens-hair-loss/">Hair Regrowth</a>
+        <a href="/weight-loss/">Weight Loss</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/ccpa">CCPA</a>
+      </div>
+    </div>
+    <div class="footer-trust" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 28px; padding: 36px 0 8px;">
+      <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block;">
+        <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+      </a>
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hipaa-compliance-1.jpg" alt="HIPAA Compliant" style="display: block; height: 56px; width: auto;" />
+      <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 64px; width: auto;" />
+      </a>
+      <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare Pharmacy Card" style="display: inline-block;">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Front.png" alt="DirectCare Pharmacy Card" style="display: block; height: 72px; width: auto;" />
+      </a>
+    </div>
+    <div class="legal">
+      <div>&copy; 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant &middot; US Licensed Clinicians &middot; LegitScript Certified</div>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Disclaimer:</strong> DirectCare AI is a patient management platform supporting independent physicians. Payment does not guarantee prescribing or dispensing of any medication. The 10% household discount applies to monthly subscription pricing for active patients sharing a billing address and is automatically applied at renewal. Cancel either subscription anytime.
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Partner pharmacies &amp; image disclaimer:</strong> DirectCare AI does not manufacture or compound medications. We partner with multiple US-licensed compounding pharmacies; the medication you receive — including its packaging, label, vial shape, and color — may differ from the imagery shown. All product, model, and lifestyle imagery is for illustrative purposes only; models depicted are not actual patients.
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile drawer */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    t.addEventListener('click', function() { d.classList.toggle('open'); });
+    d.addEventListener('click', function(e) { if (e.target.tagName === 'A') d.classList.remove('open'); });
+  })();
+
+  /* Affiliate click-ID capture + propagation */
+  (function() {
+    var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+    var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
+    var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com','chronic-care-azure.vercel.app'];
+    function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
+    function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
+    function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}
+    function load(){try{var s=sessionStorage.getItem(STORAGE_KEY);if(s)return s;var l=localStorage.getItem(STORAGE_KEY);var ts=parseInt(localStorage.getItem(STORAGE_TS)||'0',10);if(l&&Date.now()-ts<TTL_MS){sessionStorage.setItem(STORAGE_KEY,l);return l;}if(l){localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(STORAGE_TS);}}catch(e){}return null;}
+    var cid=fromQuery();if(cid)save(cid);else cid=load();if(!cid)return;
+    function rewriteAll(){document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#'||raw.indexOf('mailto:')===0||raw.indexOf('tel:')===0||raw.indexOf('javascript:')===0)return;var u=U(a.href);if(!u||HOSTS.indexOf(u.hostname)===-1)return;if(!u.searchParams.has('utm_clickId')){u.searchParams.set('utm_clickId',cid);a.href=u.toString();}});}
+    rewriteAll();
+    if('MutationObserver' in window){var mo=new MutationObserver(rewriteAll);mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect();},4000);}
+    try{window.__dcaiClickId=cid;}catch(e){}
+  })();
+</script>
+</body>
+</html>

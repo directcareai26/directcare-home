@@ -150,23 +150,31 @@
   .marquee-band:hover .marquee-track { animation-play-state: paused; }
   @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none !important; } }
 
-  /* ============ HERO — full-bleed dark with background video ============ */
-  .hero { position: relative; overflow: hidden; min-height: 86vh; display: flex; align-items: center; isolation: isolate; padding: 96px 0 80px; background: var(--dark); }
+  /* ============ HERO — full-bleed dark with background video (surge-max pattern) ============ */
+  .hero { position: relative; overflow: hidden; min-height: 88vh; display: flex; align-items: center; isolation: isolate; padding: 100px 0 80px; background: var(--dark); }
   .hero-bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.55; filter: saturate(1.05) contrast(1.05); pointer-events: none; }
   .hero-bg-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
-    linear-gradient(180deg, rgba(26,15,36,0.50) 0%, rgba(26,15,36,0.72) 60%, rgba(26,15,36,0.96) 100%),
-    radial-gradient(ellipse 60% 50% at 70% 10%, rgba(175,75,237,0.32), transparent 60%),
+    linear-gradient(180deg, rgba(26,15,36,0.35) 0%, rgba(26,15,36,0.65) 60%, rgba(26,15,36,0.95) 100%),
+    radial-gradient(ellipse 60% 50% at 70% 10%, rgba(175,75,237,0.30), transparent 60%),
     radial-gradient(ellipse 55% 55% at 15% 80%, rgba(118,43,164,0.30), transparent 60%); }
-  .hero-bg-fade { position: absolute; left: 0; right: 0; bottom: -1px; height: 120px; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(251,245,254,0) 0%, var(--soft) 100%); }
+  .hero-bg-fade { position: absolute; left: 0; right: 0; bottom: -1px; height: 70px; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(251,245,254,0) 0%, var(--soft) 100%); }
+  @media (max-width: 760px) { .hero-bg-fade { height: 56px; } }
   .hero-inner { position: relative; z-index: 3; text-align: center; max-width: 920px; margin: 0 auto; color: white; }
   .hero-inner h1 { color: white; margin: 22px 0 18px; }
   .hero-inner h1 .accent { background: linear-gradient(135deg, #e6b6ff 0%, #af4bed 50%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.86); line-height: 1.55; }
+  .hero-sub { font-size: clamp(1.05rem, 1.5vw, 1.3rem); max-width: 680px; margin: 24px auto 36px; color: rgba(255,255,255,0.82); line-height: 1.5; }
   .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
-  .hero-trust-line { display: flex; align-items: center; gap: 10px; margin-top: 30px; font-size: 0.82rem; color: rgba(255,255,255,0.80); font-weight: 500; flex-wrap: wrap; justify-content: center; }
+  .hero-trust-line { display: flex; align-items: center; gap: 10px; margin-top: 44px; font-size: 0.86rem; color: rgba(255,255,255,0.72); font-weight: 500; flex-wrap: wrap; justify-content: center; }
   .hero-trust-line .dot-sep { width: 4px; height: 4px; border-radius: 50%; background: rgba(255,255,255,0.40); }
   .hero-trust-line .fs-logo { height: 18px; width: auto; display: inline-block; vertical-align: middle; filter: brightness(0) invert(1); opacity: 0.95; }
-  @media (max-width: 760px) { .hero { min-height: 78vh; padding: 72px 0 60px; } .hero-inner h1 { margin-top: 18px; } .hero-trust-line { margin-top: 22px; gap: 8px; font-size: 0.74rem; } }
+  @media (max-width: 760px) {
+    .hero { min-height: 100svh; padding: 60px 0 64px; }
+    .hero-inner h1 { margin-top: 18px; }
+    .hero-sub { font-size: 1rem; margin: 18px auto 28px; }
+    .hero-cta-row { gap: 10px; width: 100%; }
+    .hero-cta-row .btn { width: 100%; max-width: 360px; }
+    .hero-trust-line { margin-top: 28px; gap: 8px; font-size: 0.76rem; }
+  }
 
   /* ============ SECTION HEAD ============ */
   .section-head { text-align: center; max-width: 720px; margin: 0 auto clamp(36px, 5vw, 60px); }
@@ -339,7 +347,6 @@
     <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/middle%20age%20ww.mp4" type="video/mp4" />
   </video>
   <div class="hero-bg-overlay" aria-hidden="true"></div>
-  <div class="hero-bg-fade" aria-hidden="true"></div>
 
   <div class="container">
     <div class="hero-inner">
@@ -359,6 +366,7 @@
       </div>
     </div>
   </div>
+  <div class="hero-bg-fade" aria-hidden="true"></div>
 </header>
 
 <!-- ============ MARQUEE BAND ============ -->

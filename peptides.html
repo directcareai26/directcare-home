@@ -255,9 +255,14 @@
 
   /* WHAT IS DCAI */
   .ent-card { max-width: 880px; margin: 0 auto; text-align: center; padding: clamp(36px, 6vw, 56px); background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-radius: var(--radius-xl); border: 1px solid var(--lavender-100); box-shadow: var(--shadow-soft); }
-  .ent-card h2 { margin: 16px 0; }
-  .ent-card h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; font-weight: 800; }
-  .ent-card p { font-size: 1.06rem; color: var(--muted); line-height: 1.7; max-width: 680px; margin: 0 auto 22px; }
+  .ent-card h2 { margin: 16px 0; font-size: clamp(1.6rem, 3.4vw, 2.6rem); line-height: 1.18; padding: 4px 0 8px; }
+  .ent-card h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; font-weight: 800; display: inline-block; padding-bottom: 0.08em; }
+  .ent-card p { font-size: 1.02rem; color: var(--muted); line-height: 1.65; max-width: 680px; margin: 0 auto 22px; }
+  @media (max-width: 640px) {
+    .ent-card { padding: 32px 22px; }
+    .ent-card h2 { font-size: clamp(1.4rem, 6vw, 1.9rem); line-height: 1.22; }
+    .ent-card p { font-size: 0.95rem; line-height: 1.6; }
+  }
 
   /* FAQ — asymmetric 2-column layout matching home page */
   .faq-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); padding-bottom: clamp(80px, 10vw, 140px); }

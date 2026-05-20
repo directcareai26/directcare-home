@@ -131,6 +131,17 @@
   .btn-ghost:hover { background: rgba(40,26,49,0.08); }
   .btn-small { padding: 10px 18px; font-size: 0.86rem; }
 
+  /* ============ MARQUEE BAND ============ */
+  .marquee-band { background: var(--soft); border-top: 1px solid var(--lavender-100); border-bottom: 1px solid var(--lavender-100); overflow: hidden; padding: 22px 0; position: relative; }
+  .marquee-band::before, .marquee-band::after { content: ""; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
+  .marquee-band::before { left: 0; background: linear-gradient(90deg, var(--soft) 0%, transparent 100%); }
+  .marquee-band::after { right: 0; background: linear-gradient(-90deg, var(--soft) 0%, transparent 100%); }
+  .marquee-track { display: inline-flex; gap: 44px; white-space: nowrap; animation: marquee-scroll 40s linear infinite; font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-darker); align-items: center; }
+  .marquee-track .dot { color: var(--brand); opacity: 0.55; font-size: 1.4rem; }
+  @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .marquee-band:hover .marquee-track { animation-play-state: paused; }
+  @media (prefers-reduced-motion: reduce) { .marquee-track { animation: none !important; } }
+
   /* ============ HERO ============ */
   .hero { position: relative; padding: clamp(40px, 6vw, 72px) 0 clamp(56px, 8vw, 96px); overflow: hidden; isolation: isolate; }
   .hero-card-wrap { position: relative; background: linear-gradient(135deg, #f4eefb 0%, #ead6fb 55%, #e2c5fa 100%); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-soft); }
@@ -335,6 +346,38 @@
     </div>
   </div>
 </header>
+
+<!-- ============ MARQUEE BAND ============ -->
+<div class="marquee-band" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Blood Sugar Support</span><span class="dot">·</span>
+    <span>Men's Vitality</span><span class="dot">·</span>
+    <span>Heart Health</span><span class="dot">·</span>
+    <span>Hair Growth</span><span class="dot">·</span>
+    <span>GLP-1 Support</span><span class="dot">·</span>
+    <span>Menopause Support</span><span class="dot">·</span>
+    <span>Immune Support</span><span class="dot">·</span>
+    <span>Anti-Aging</span><span class="dot">·</span>
+    <span>General Wellness</span><span class="dot">·</span>
+    <span>Energy</span><span class="dot">·</span>
+    <span>Practitioner-Grade</span><span class="dot">·</span>
+    <span>Clinically Trusted</span><span class="dot">·</span>
+    <span>Fullscript Verified</span><span class="dot">·</span>
+    <span>Blood Sugar Support</span><span class="dot">·</span>
+    <span>Men's Vitality</span><span class="dot">·</span>
+    <span>Heart Health</span><span class="dot">·</span>
+    <span>Hair Growth</span><span class="dot">·</span>
+    <span>GLP-1 Support</span><span class="dot">·</span>
+    <span>Menopause Support</span><span class="dot">·</span>
+    <span>Immune Support</span><span class="dot">·</span>
+    <span>Anti-Aging</span><span class="dot">·</span>
+    <span>General Wellness</span><span class="dot">·</span>
+    <span>Energy</span><span class="dot">·</span>
+    <span>Practitioner-Grade</span><span class="dot">·</span>
+    <span>Clinically Trusted</span><span class="dot">·</span>
+    <span>Fullscript Verified</span><span class="dot">·</span>
+  </div>
+</div>
 
 <!-- ============ CURATED WELLNESS PLANS ============ -->
 <section class="section" id="plans">

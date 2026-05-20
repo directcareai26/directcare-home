@@ -284,14 +284,25 @@
   .doctor-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
   .doctor-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(76,34,124,0.45) 100%); pointer-events: none; }
 
-  /* FAQ */
-  .faq-wrap { max-width: 820px; margin: 0 auto; }
-  .faq { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
-  .faq summary { padding: 22px 26px; cursor: pointer; font-weight: 700; font-size: 1.04rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Manrope', sans-serif; }
+  /* FAQ — asymmetric 2-column layout matching home page */
+  .faq-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); padding-bottom: clamp(80px, 10vw, 140px); }
+  .faq-layout { display: grid; grid-template-columns: minmax(260px, 320px) 1fr; gap: clamp(36px, 5vw, 80px); align-items: flex-start; }
+  @media (max-width: 900px) { .faq-layout { grid-template-columns: 1fr; gap: 32px; } }
+  .faq-side { position: sticky; top: 96px; }
+  @media (max-width: 900px) { .faq-side { position: static; } }
+  .faq-side h2 { font-size: clamp(1.9rem, 3.2vw, 2.6rem); margin: 16px 0 18px; line-height: 1.05; }
+  .faq-side h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
+  .faq-side p { font-size: 0.96rem; color: var(--muted); line-height: 1.6; }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  @media (max-width: 760px) { .faq-grid { grid-template-columns: 1fr; } }
+  .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; align-self: start; }
+  .faq:hover { border-color: rgba(175,75,237,0.30); box-shadow: 0 12px 28px -12px rgba(118,43,164,0.18); }
+  .faq[open] { border-color: rgba(175,75,237,0.40); box-shadow: 0 14px 32px -14px rgba(118,43,164,0.22); }
+  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Manrope', sans-serif; line-height: 1.3; }
   .faq summary::-webkit-details-marker { display: none; }
-  .faq summary::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .25s ease; flex-shrink: 0; }
+  .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
-  .faq .faq-body { padding: 0 26px 22px; color: var(--muted); font-size: 0.96rem; line-height: 1.6; }
+  .faq .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
 
   /* FINAL CTA */
   .final-cta { position: relative; background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
@@ -659,14 +670,16 @@
 </section>
 
 <!-- FAQ -->
-<section class="section lavender" id="faq">
+<section class="section faq-section" id="faq">
   <div class="container">
-    <div class="section-head">
+    <div class="faq-layout">
+      <aside class="faq-side">
       <span class="eyebrow"><span class="dot"></span> Frequently Asked</span>
       <h2>Still have <span class="accent">questions?</span></h2>
       <p>Short, direct answers — from intake to side effects. Have one we missed? Message a clinician once you're inside.</p>
-    </div>
-    <div class="faq-wrap">
+      </aside>
+
+      <div class="faq-grid">
       <details class="faq" open>
         <summary>What is TRT?</summary>
         <div class="faq-body">Testosterone replacement therapy supplements low testosterone to restore levels into a clinically healthy range. Prescribed only after evaluation and bloodwork by a licensed clinician.</div>
@@ -711,6 +724,7 @@
         <summary>How much does it cost?</summary>
         <div class="faq-body">TRT starts from $129/month, depending on the protocol your clinician prescribes. The eligibility check and clinician review are free — you only pay if you qualify and decide to start.</div>
       </details>
+      </div>
     </div>
   </div>
 </section>

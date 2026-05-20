@@ -786,7 +786,7 @@
   var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
   var TTL_MS = 7 * 24 * 60 * 60 * 1000;
   var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
-  var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com'];
+  var HOSTS = ['directcare.ai','www.directcare.ai','women.directcare.ai','mens.directcare.ai','directcare-home.vercel.app','mens-hair-loss.vercel.app','womens-hair-loss.vercel.app','sexual-health-mocha.vercel.app','directcare-weight-loss.vercel.app','business.tellescope.com','directcareai.portal.tellescope.com','chronic-care-azure.vercel.app'];
   function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
   function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
   function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}

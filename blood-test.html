@@ -304,6 +304,29 @@
     .compare-row .cell-note { font-size: 0.74rem; }
   }
 
+  /* SUPPLEMENT SHOWCASE (Fullscript bottles) */
+  .bottles-section { position: relative; overflow: hidden; }
+  .bottles-section::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 70% 60% at 50% 60%, rgba(175,75,237,0.10), transparent 60%); pointer-events: none; z-index: 0; }
+  .bottles-section .container { position: relative; z-index: 1; }
+  .bottles-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 1080px; margin: 0 auto; }
+  @media (max-width: 900px) { .bottles-grid { grid-template-columns: repeat(2, 1fr); gap: 18px; } }
+  .bottle { position: relative; aspect-ratio: 3/4; background: linear-gradient(180deg, var(--soft) 0%, white 70%); border-radius: var(--radius-lg); padding: 26px 22px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--lavender-100); overflow: hidden; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; box-shadow: 0 12px 32px -18px rgba(118,43,164,0.18); }
+  .bottle:hover { transform: translateY(-8px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-lg); }
+  .bottle-img { width: 100%; height: 100%; object-fit: contain; filter: drop-shadow(0 18px 24px rgba(118,43,164,0.30)); }
+  @keyframes float-bottle-a { 0%, 100% { transform: translateY(0) rotate(-0.5deg); } 50% { transform: translateY(-14px) rotate(0.5deg); } }
+  @keyframes float-bottle-b { 0%, 100% { transform: translateY(0) rotate(0.5deg); } 50% { transform: translateY(-12px) rotate(-0.5deg); } }
+  .bottle:nth-child(1) .bottle-img { animation: float-bottle-a 5.5s ease-in-out infinite; }
+  .bottle:nth-child(2) .bottle-img { animation: float-bottle-b 5.5s ease-in-out infinite; animation-delay: 0.7s; }
+  .bottle:nth-child(3) .bottle-img { animation: float-bottle-a 5.5s ease-in-out infinite; animation-delay: 1.4s; }
+  .bottle:nth-child(4) .bottle-img { animation: float-bottle-b 5.5s ease-in-out infinite; animation-delay: 2.1s; }
+  .bottle-tag { position: absolute; top: 14px; left: 14px; right: 14px; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); }
+  .bottle-tag::before { content: ""; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--brand); margin-right: 6px; vertical-align: middle; }
+  .bottles-footer { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; margin-top: 36px; align-items: center; font-size: 0.92rem; color: var(--muted); text-align: center; }
+  .bottles-footer strong { color: var(--ink); font-family: 'Manrope', sans-serif; font-weight: 800; }
+  @media (prefers-reduced-motion: reduce) {
+    .bottle .bottle-img { animation: none !important; }
+  }
+
   /* FAQ */
   .faq-wrap { max-width: 820px; margin: 0 auto; }
   .faq { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); margin-bottom: 12px; overflow: hidden; }
@@ -875,6 +898,40 @@
   </div>
 </section>
 
+<!-- SUPPLEMENT SHOWCASE (Fullscript bottles) -->
+<section class="section bottles-section" id="supplements">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Pharmaceutical-Grade Protocol</span>
+      <h2>Built around <span class="h-italic">your</span> labs.</h2>
+      <p>Your supplement protocol uses physician-grade formulations through Fullscript — every product tied to a specific marker on your panel, shipped from a US-licensed dispensary at member pricing.</p>
+    </div>
+
+    <div class="bottles-grid">
+      <div class="bottle">
+        <span class="bottle-tag">Foundational</span>
+        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript1.webp" alt="Fullscript physician-grade foundational supplement" loading="lazy" />
+      </div>
+      <div class="bottle">
+        <span class="bottle-tag">Targeted</span>
+        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript2.png" alt="Fullscript physician-grade targeted supplement" loading="lazy" />
+      </div>
+      <div class="bottle">
+        <span class="bottle-tag">Hormone Support</span>
+        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript3.png" alt="Fullscript physician-grade hormone support supplement" loading="lazy" />
+      </div>
+      <div class="bottle">
+        <span class="bottle-tag">Metabolic</span>
+        <img class="bottle-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript4.png" alt="Fullscript physician-grade metabolic supplement" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="bottles-footer">
+      <span><strong>Fullscript®</strong> dispensary partner · trusted by 100,000+ clinicians · member pricing on every order</span>
+    </div>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section class="section lavender" id="faq">
   <div class="container">
@@ -1029,7 +1086,7 @@
       document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
       return;
     }
-    var TARGETS = ['.section .section-head', '.journey-card', '.pe-step', '.price-card', '.biomarker-cat', '.compare-wrap', '.doctor-card', '.faq', '.final-cta'];
+    var TARGETS = ['.section .section-head', '.journey-card', '.pe-step', '.price-card', '.biomarker-cat', '.compare-wrap', '.doctor-card', '.bottle', '.faq', '.final-cta'];
     TARGETS.forEach(function(sel) {
       document.querySelectorAll(sel).forEach(function(el) {
         if (!el.classList.contains('reveal')) el.classList.add('reveal');

@@ -70,20 +70,20 @@
   /* NAV */
   .topnav {
     position: sticky; top: 0; z-index: 50;
-    display: grid; grid-template-columns: 32px 1fr 32px;
+    display: grid; grid-template-columns: 36px 1fr 36px;
     align-items: center;
-    padding: 14px 18px;
+    padding: 16px 18px;
     background: var(--bg);
     border-bottom: 1px solid var(--line);
   }
   .topnav .hamburger, .topnav .account {
-    width: 32px; height: 32px;
+    width: 36px; height: 36px;
     display: grid; place-items: center;
     color: var(--ink);
   }
   .topnav .logo { text-align: center; }
-  .topnav .logo img { height: 22px; display: inline-block; }
-  .topnav svg { width: 22px; height: 22px; }
+  .topnav .logo img { height: 36px; display: inline-block; }
+  .topnav svg { width: 24px; height: 24px; }
 
   /* HERO TITLE */
   .hero-title {
@@ -101,6 +101,99 @@
     font-style: italic;
     font-weight: 800;
     color: var(--brand-deep);
+  }
+
+  /* FEATURE GRID — 2 hero cards side by side */
+  .feature-grid {
+    padding: 0 14px 18px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .feature-card {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform .15s ease;
+  }
+  .feature-card:active { transform: scale(0.985); }
+  .feature-img {
+    height: 165px;
+    overflow: hidden;
+    background: var(--surface);
+  }
+  .feature-img img { width: 100%; height: 100%; object-fit: cover; }
+  .feature-body {
+    flex: 1;
+    padding: 14px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .feature-tag {
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+  }
+  .feature-name {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.1;
+    margin-bottom: 4px;
+  }
+  .feature-price {
+    font-size: 0.84rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+  }
+  .feature-price strong { font-weight: 700; }
+  .feature-cta {
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .feature-cta::after {
+    content: "→";
+    font-size: 0.85rem;
+    transition: transform .15s ease;
+  }
+  /* HER (HRT) — cream/light */
+  .feature-card.her {
+    background: white;
+    border: 1px solid var(--line);
+  }
+  .feature-card.her .feature-tag { color: var(--brand-deep); }
+  .feature-card.her .feature-cta {
+    background: var(--brand);
+    color: white;
+  }
+  /* HIM (TRT) — dark inverse */
+  .feature-card.him {
+    background: var(--ink);
+    color: white;
+  }
+  .feature-card.him .feature-tag { color: #d185ff; }
+  .feature-card.him .feature-name { color: white; }
+  .feature-card.him .feature-price { color: rgba(255,255,255,0.72); }
+  .feature-card.him .feature-price strong { color: white; }
+  .feature-card.him .feature-cta {
+    background: white;
+    color: var(--ink);
   }
 
   /* CATEGORY LIST (Hims-style rows) */
@@ -421,35 +514,51 @@
   <h1>The care you've <em>always deserved.</em></h1>
 </section>
 
-<!-- CATEGORY LIST -->
+<!-- FEATURE GRID — 2 hero cards (HRT + TRT) -->
+<section class="feature-grid">
+  <a class="feature-card her" href="/hormone-replacement-therapy">
+    <div class="feature-img">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT for women" loading="eager" />
+    </div>
+    <div class="feature-body">
+      <span class="feature-tag">For her</span>
+      <span class="feature-name">Hormone Replacement</span>
+      <span class="feature-price">From <strong>$89</strong> / mo</span>
+      <span class="feature-cta">Start HRT</span>
+    </div>
+  </a>
+  <a class="feature-card him" href="/testosterone-replacement-therapy">
+    <div class="feature-img">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT for men" loading="eager" />
+    </div>
+    <div class="feature-body">
+      <span class="feature-tag">For him</span>
+      <span class="feature-name">Testosterone (TRT)</span>
+      <span class="feature-price"><strong>$169–$189</strong> / mo</span>
+      <span class="feature-cta">Restore T</span>
+    </div>
+  </a>
+</section>
+
+<!-- CATEGORY LIST — remaining 6 offerings -->
 <nav class="cat-list">
-  <a class="cat-row" href="/hormone-replacement-therapy">
-    <span class="cat-thumb">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" loading="eager" />
-    </span>
-    <span class="cat-text">
-      <span class="cat-name">Hormone replacement</span>
-      <span class="cat-sub">For women · from $89/mo</span>
-    </span>
-    <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
-  </a>
-  <a class="cat-row" href="/testosterone-replacement-therapy">
-    <span class="cat-thumb">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
-    </span>
-    <span class="cat-text">
-      <span class="cat-name">Testosterone (TRT)</span>
-      <span class="cat-sub">For men · from $169/mo</span>
-    </span>
-    <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
-  </a>
   <a class="cat-row" href="/surge-max/">
     <span class="cat-thumb">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
     </span>
     <span class="cat-text">
-      <span class="cat-name">Sexual health</span>
+      <span class="cat-name">Sexual Health · Surge Max</span>
       <span class="cat-sub">For men · from $12/vial</span>
+    </span>
+    <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+  <a class="cat-row" href="/weight-loss/">
+    <span class="cat-thumb">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+    </span>
+    <span class="cat-text">
+      <span class="cat-name">Weight Loss · GLP-1</span>
+      <span class="cat-sub">Men &amp; women · from $269/mo</span>
     </span>
     <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
   </a>
@@ -458,8 +567,18 @@
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
     </span>
     <span class="cat-text">
-      <span class="cat-name">Hair regrowth</span>
-      <span class="cat-sub">Men &amp; women · from $59/mo</span>
+      <span class="cat-name">Hair Regrowth (Men)</span>
+      <span class="cat-sub">For men · from $59/mo</span>
+    </span>
+    <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+  <a class="cat-row" href="/womans-hair-loss/">
+    <span class="cat-thumb">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="" loading="lazy" />
+    </span>
+    <span class="cat-text">
+      <span class="cat-name">Hair Regrowth (Women)</span>
+      <span class="cat-sub">For women · from $59/mo</span>
     </span>
     <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
   </a>
@@ -468,53 +587,22 @@
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
     </span>
     <span class="cat-text">
-      <span class="cat-name">Blood labs</span>
-      <span class="cat-sub">At-home · from $196</span>
+      <span class="cat-name">Blood Labs</span>
+      <span class="cat-sub">At-home · from $196 one-time</span>
+    </span>
+    <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
+  </a>
+  <a class="cat-row" href="/supplements/">
+    <span class="cat-thumb">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="" loading="lazy" />
+    </span>
+    <span class="cat-text">
+      <span class="cat-name">Supplements</span>
+      <span class="cat-sub">Physician-formulated · no Rx</span>
     </span>
     <span class="cat-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></span>
   </a>
 </nav>
-
-<!-- DARK HERO PROMO — WEIGHT LOSS -->
-<section class="promo-dark">
-  <div>
-    <div class="promo-eyebrow">Weight loss · GLP-1</div>
-    <h2>Your weight loss <em>breakthrough is here.</em></h2>
-    <p class="promo-stat">Compounded semaglutide and tirzepatide — weekly injection, <strong>full hormone panel included</strong>, prescribed by a US-licensed clinician and shipped to your door.</p>
-  </div>
-  <div class="promo-bottom">
-    <a class="btn btn-light" href="/weight-loss/">Find out if you qualify</a>
-    <span style="font-size:0.78rem; color:rgba(255,255,255,0.65);">From <strong style="color:white;">$269/mo</strong> · cancel anytime</span>
-  </div>
-</section>
-
-<!-- PILL CARD — TRT FEATURED -->
-<section class="pill-card dark">
-  <div class="pill-card-eyebrow">Testosterone · For men</div>
-  <h3>Get your edge back. Lab-driven TRT.</h3>
-  <p>Injectable, oral, and natural-pathway protocols (enclomiphene). Labs included, dosing titrated to your real numbers. Energy, drive, and recovery — restored.</p>
-  <div class="pill-card-img">
-    <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="Testosterone therapy" loading="lazy" />
-  </div>
-  <div class="pill-card-row">
-    <span class="pill-price">$169–$189 <small>/ mo</small></span>
-    <a class="btn btn-brand" href="/testosterone-replacement-therapy">Restore your T</a>
-  </div>
-</section>
-
-<!-- PILL CARD — HRT FEATURED -->
-<section class="pill-card">
-  <div class="pill-card-eyebrow">Hormone replacement · For women</div>
-  <h3>Feel like yourself again.</h3>
-  <p>Bioidentical estradiol, progesterone, and low-dose testosterone — titrated to your bloodwork. For perimenopause, menopause, and every stage in between.</p>
-  <div class="pill-card-img">
-    <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT for women" loading="lazy" />
-  </div>
-  <div class="pill-card-row">
-    <span class="pill-price">From $89 <small>/ mo</small></span>
-    <a class="btn btn-primary" href="/hormone-replacement-therapy">Start HRT</a>
-  </div>
-</section>
 
 <!-- LABS BLOCK -->
 <section class="labs">

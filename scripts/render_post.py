@@ -217,9 +217,8 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
 
 def write_post(payload: dict[str, Any]) -> Path:
     html, entry = render_post(payload)
-    post_dir = BLOG_DIR / entry["slug"]
-    post_dir.mkdir(parents=True, exist_ok=True)
-    post_path = post_dir / "index.html"
+    # Flat files (e.g. blog/foo.html) so Vercel's cleanUrls serves them at /blog/foo
+    post_path = BLOG_DIR / f"{entry['slug']}.html"
     post_path.write_text(html, encoding="utf-8")
     update_manifest(entry)
     return post_path

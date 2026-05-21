@@ -326,7 +326,7 @@
     function renderFeatured(post) {
       if (!post) { featuredSlot.innerHTML = ''; return; }
       featuredSlot.innerHTML = ''
-        + '<a class="featured-post" href="/blog/' + escapeHtml(post.slug) + '/" style="text-decoration: none;">'
+        + '<a class="featured-post" href="/blog/' + escapeHtml(post.slug) + '" style="text-decoration: none;">'
         +   '<div>'
         +     '<div class="meta"><span>' + escapeHtml(post.category) + '</span><span class="dot"></span><span class="date">' + escapeHtml(post.dateLabel || post.date || '') + '</span></div>'
         +     '<h2>' + escapeHtml(post.title) + '</h2>'
@@ -344,7 +344,7 @@
       }
       grid.innerHTML = posts.map(function(p){
         return ''
-          + '<a class="post-card" href="/blog/' + escapeHtml(p.slug) + '/">'
+          + '<a class="post-card" href="/blog/' + escapeHtml(p.slug) + '">'
           +   '<div class="post-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
           +   '<div class="post-card-body">'
           +     '<div class="post-card-meta"><span>' + escapeHtml(p.category) + '</span><span class="dot"></span><span class="date">' + escapeHtml(p.dateLabel || p.date || '') + '</span></div>'

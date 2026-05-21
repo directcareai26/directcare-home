@@ -7,10 +7,10 @@
 <title>{{TITLE}} — DirectCare AI Journal</title>
 <meta name="description" content="{{META_DESCRIPTION}}" />
 <meta name="keywords" content="{{KEYWORDS}}" />
-<link rel="canonical" href="https://www.directcare.ai/blog/{{SLUG}}/" />
+<link rel="canonical" href="https://www.directcare.ai/blog/{{SLUG}}" />
 
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.directcare.ai/blog/{{SLUG}}/" />
+<meta property="og:url" content="https://www.directcare.ai/blog/{{SLUG}}" />
 <meta property="og:title" content="{{TITLE}}" />
 <meta property="og:description" content="{{META_DESCRIPTION}}" />
 <meta property="og:image" content="{{IMAGE}}" />
@@ -50,7 +50,7 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.directcare.ai/blog/{{SLUG}}/"
+    "@id": "https://www.directcare.ai/blog/{{SLUG}}"
   }
 }
 </script>
@@ -267,7 +267,7 @@
         if (posts.length === 0) { grid.parentElement.style.display = 'none'; return; }
         grid.innerHTML = posts.map(function(p){
           return ''
-            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '/">'
+            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '">'
             +   '<div class="related-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
             +   '<div class="related-card-body">'
             +     '<div class="related-card-meta">' + escapeHtml(p.category) + '</div>'

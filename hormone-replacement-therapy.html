@@ -355,6 +355,24 @@
     .hero-bg-video { display: none; }
     .hero { background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%); }
   }
+
+  /* Mobile login pill — match home page nav treatment */
+  .portal-btn { gap: 8px; }
+  .portal-btn .login-label { display: none; font-size: 0.86rem; font-weight: 600; line-height: 1; }
+  @media (max-width: 980px) {
+    .portal-btn {
+      width: auto !important;
+      padding: 8px 14px !important;
+      border-radius: 999px !important;
+      background: linear-gradient(135deg, #af4bed 0%, #762ba4 100%) !important;
+      color: white !important;
+      border-color: transparent !important;
+      box-shadow: 0 6px 14px -4px rgba(118,43,164,0.40);
+    }
+    .portal-btn:hover { background: linear-gradient(135deg, #af4bed 0%, #762ba4 100%) !important; color: white !important; }
+    .portal-btn .login-label { display: inline; }
+    .mobile-toggle { margin-left: -10px; }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -405,9 +423,9 @@
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
     <div class="nav-right">
-      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
+      <a class="portal-btn"aria-label="Patient portal · Log in" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-      </a>
+      <span class="login-label">Log in</span></a>
       <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
         <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>

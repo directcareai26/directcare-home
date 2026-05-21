@@ -328,11 +328,40 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
+  /* Gradient shimmer on the purple emphasis text — continuous wash, accelerates on hover */
   .twin-card h2 em {
-    font-style: italic; color: var(--brand-deep); font-weight: 500;
-    transition: color .3s ease;
+    font-style: italic;
+    font-weight: 500;
+    background: linear-gradient(
+      110deg,
+      #762ba4 0%,
+      #af4bed 25%,
+      #f2c2ff 45%,
+      #ffffff 50%,
+      #f2c2ff 55%,
+      #af4bed 75%,
+      #762ba4 100%
+    );
+    background-size: 250% 100%;
+    background-position: 100% 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: twin-shimmer 5s linear infinite;
   }
-  .twin-card:hover h2 em { color: var(--brand-darker); }
+  @keyframes twin-shimmer {
+    to { background-position: -150% 0; }
+  }
+  .twin-card:hover h2 em { animation-duration: 2.2s; }
+  @media (prefers-reduced-motion: reduce) {
+    .twin-card h2 em {
+      animation: none;
+      background: none;
+      color: var(--brand-deep);
+      -webkit-text-fill-color: currentColor;
+    }
+  }
   .twin-card .btn {
     align-self: flex-start;
     padding: 10px 20px;

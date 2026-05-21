@@ -114,6 +114,13 @@
   }
   .nav-link:hover { color: var(--brand-deep); }
   .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
+  /* Nav dropdown menus */
+  .nav-dropdown { position: relative; }
+  .nav-menu { position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 230px; background: white; border: 1px solid var(--line); border-radius: 14px; padding: 10px 0; opacity: 0; pointer-events: none; transition: opacity .18s ease, transform .18s ease; box-shadow: 0 22px 60px -14px rgba(36,20,50,0.20); z-index: 60; }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+  .nav-menu a { display: block; padding: 9px 20px; font-size: 0.9rem; color: var(--ink); font-weight: 500; }
+  .nav-menu a:hover { background: var(--bg-2); color: var(--brand-deep); }
+  .nav-menu a.view-all { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 12px; color: var(--brand-deep); font-weight: 700; }
   .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
   /* Mobile hamburger */
   .mobile-toggle {
@@ -176,6 +183,14 @@
     padding: 0;
   }
   .mobile-drawer .drawer-close::after { content: ""; }
+  /* Mobile drawer dropdown groups */
+  .mobile-drawer details { border-bottom: 1px solid var(--line); }
+  .mobile-drawer details summary { padding: 18px 6px; font-size: 1.05rem; font-weight: 700; color: var(--ink); letter-spacing: -0.01em; list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+  .mobile-drawer details summary::-webkit-details-marker { display: none; }
+  .mobile-drawer details summary::after { content: "▾"; opacity: 0.6; font-size: 0.85rem; transition: transform .2s ease; }
+  .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
+  .mobile-drawer details a { padding: 12px 6px 12px 22px; font-size: 0.96rem; font-weight: 500; color: var(--muted); border-bottom: none; }
+  .mobile-drawer details a::after { content: ""; }
 
   /* HERO */
   .hero {
@@ -195,6 +210,12 @@
     font-style: italic;
     font-weight: 500;
     color: var(--brand-deep);
+  }
+  /* Hero rotating headline accent */
+  .hero-rotator { display: block; position: relative; min-height: 1.05em; font-style: italic; font-weight: 500; }
+  .hero-rotator-word { position: absolute; top: 0; left: 0; right: 0; white-space: nowrap; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-deep) 70%, var(--brand-darker) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-rotator-word { position: static; }
   }
 
   /* HERO TWIN CARDS */
@@ -1114,9 +1135,29 @@
       <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
     </a>
     <div class="nav-links">
-      <a class="nav-link" href="/hormone-replacement-therapy">HRT</a>
-      <a class="nav-link" href="/testosterone-replacement-therapy">TRT</a>
-      <a class="nav-link" href="/weight-loss/">Weight Loss</a>
+      <div class="nav-dropdown">
+        <a class="nav-link has-arrow" href="/womens-health/">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/hormone-replacement-therapy">HRT</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/womans-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a class="view-all" href="/womens-health/">View all →</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link has-arrow" href="/mens-health/">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/surge-max/">Sexual Health</a>
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/mens-hair-loss/">Hair Regrowth</a>
+          <a href="/supplements/">Supplements</a>
+          <a href="/blood-test/">Blood Labs</a>
+          <a class="view-all" href="/mens-health/">View all →</a>
+        </div>
+      </div>
       <a class="nav-link" href="/supplements/">Supplements</a>
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
@@ -1132,14 +1173,25 @@
   <button class="drawer-close" id="drawer-close" aria-label="Close menu">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
   </button>
-  <a href="/hormone-replacement-therapy">HRT</a>
-  <a href="/testosterone-replacement-therapy">TRT</a>
-  <a href="/surge-max/">Sexual Health</a>
-  <a href="/weight-loss/">Weight Loss</a>
-  <a href="/mens-hair-loss/">Hair Regrowth (Men)</a>
-  <a href="/womans-hair-loss/">Hair Regrowth (Women)</a>
-  <a href="/blood-test/">Blood Labs</a>
+  <details open><summary>Women's Health</summary>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/womans-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/womens-health/">View all →</a>
+  </details>
+  <details><summary>Men's Health</summary>
+    <a href="/surge-max/">Sexual Health</a>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/mens-hair-loss/">Hair Regrowth</a>
+    <a href="/supplements/">Supplements</a>
+    <a href="/blood-test/">Blood Labs</a>
+    <a href="/mens-health/">View all →</a>
+  </details>
   <a href="/supplements/">Supplements</a>
+  <a href="/blood-test/">Blood Labs</a>
   <a class="drawer-portal" href="https://directcareai.portal.tellescope.com/">Log in / Patient portal</a>
 </div>
 
@@ -1147,29 +1199,29 @@
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Modern healthcare,<br/><em>on your terms.</em></h1>
+    <h1>Modern healthcare,<br/><span class="hero-rotator" id="hero-rotator" data-words="on your terms.|made personal.|directly to you.|truly yours."><span class="hero-rotator-word">on your terms.</span></span></h1>
   </section>
 
   <!-- HERO TWIN CARDS -->
   <section class="twin-cards">
-    <a class="twin-card lavender" href="/hormone-replacement-therapy">
+    <a class="twin-card lavender" href="/womens-health/">
       <div class="twin-card-body">
         <span class="twin-card-eyebrow">For women</span>
-        <h2>Hormone therapy, <em>built around your bloodwork.</em></h2>
-        <span class="btn">Start HRT →</span>
+        <h2>Whole-woman care, <em>built around your bloodwork.</em></h2>
+        <span class="btn">Explore women's health →</span>
       </div>
       <div class="twin-card-img">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="Women's health" loading="eager" />
       </div>
     </a>
-    <a class="twin-card cream" href="/testosterone-replacement-therapy">
+    <a class="twin-card cream" href="/mens-health/">
       <div class="twin-card-body">
         <span class="twin-card-eyebrow">For men</span>
-        <h2>Testosterone therapy, <em>tuned to your levels.</em></h2>
-        <span class="btn">Restore your T →</span>
+        <h2>Total care, <em>tuned to your levels.</em></h2>
+        <span class="btn">Explore men's health →</span>
       </div>
       <div class="twin-card-img">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT" loading="eager" />
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="Men's health" loading="eager" />
       </div>
     </a>
   </section>
@@ -1556,6 +1608,49 @@
   !function(){var e=window.AdvertiserMaxTrack=window.AdvertiserMaxTrack||[];if(e.invoked)window.console&&console.error&&console.error("FlexOffers library was included more than once.");else{e.invoked=!0,e.methods=["init","getClick","track"],e.factory=function(r){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(r),e.push(t),e}};for(var r=0;r<e.methods.length;r++){var t=e.methods[r];e[t]=e.factory(t)}e.init=function(r){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://advertisermax.flexoffers.com/vendors/advertisermax/advertisermax.tracking.lib.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),e.advertiserId=r}}}();
   AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
   AdvertiserMaxTrack.getClick();
+</script>
+
+<!-- Hero word rotator -->
+<script>
+  (function() {
+    var el = document.getElementById('hero-rotator');
+    if (!el) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var words = (el.dataset.words || '').split('|').filter(Boolean);
+    if (words.length < 2) return;
+    var TRANS = 'opacity 520ms cubic-bezier(0.22, 1, 0.36, 1), transform 520ms cubic-bezier(0.22, 1, 0.36, 1)';
+    var current = el.querySelector('.hero-rotator-word');
+    if (current) {
+      current.style.opacity = '1';
+      current.style.transform = 'translateY(0)';
+      current.style.transition = TRANS;
+      current.style.display = 'inline-block';
+    }
+    var i = 0;
+    function rotate() {
+      i = (i + 1) % words.length;
+      var next = document.createElement('span');
+      next.className = 'hero-rotator-word';
+      next.textContent = words[i];
+      next.style.opacity = '0';
+      next.style.transform = 'translateY(20px)';
+      next.style.transition = TRANS;
+      next.style.display = 'inline-block';
+      el.appendChild(next);
+      setTimeout(function() {
+        next.style.opacity = '1';
+        next.style.transform = 'translateY(0)';
+      }, 30);
+      if (current) {
+        current.style.opacity = '0';
+        current.style.transform = 'translateY(-20px)';
+      }
+      var stale = current;
+      setTimeout(function() { if (stale && stale.parentNode) stale.parentNode.removeChild(stale); }, 620);
+      current = next;
+    }
+    setInterval(rotate, 2800);
+  })();
 </script>
 
 </body>

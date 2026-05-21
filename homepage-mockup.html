@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#241432" />
+<title>Homepage Mockup · DirectCare AI</title>
+<meta name="robots" content="noindex,nofollow" />
+<link rel="icon" type="image/png" href="/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<style>
+  :root {
+    --bg: #faf6f0;
+    --bg-2: #f4eee5;
+    --bg-cream: #f0e8d8;
+    --bg-peach: #f5dccc;
+    --bg-soft-lavender: #f0e8f6;
+    --surface: #ffffff;
+    --ink: #241432;
+    --ink-soft: #4a3760;
+    --muted: #6b5c7a;
+    --line: rgba(36,20,50,0.10);
+    --line-strong: rgba(36,20,50,0.18);
+    --brand: #af4bed;
+    --brand-deep: #762ba4;
+    --brand-darker: #44215A;
+    --dark: #241432;
+    --dark-2: #3a2354;
+    --gold: #d99b1f;
+    --gold-soft: #f5e6c2;
+    --radius: 14px;
+    --radius-lg: 22px;
+    --radius-xl: 32px;
+  }
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    overflow-x: hidden;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.05; font-weight: 500; color: var(--ink); }
+  p { margin: 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+
+  /* MOCKUP BANNER */
+  .mockup-banner {
+    background: linear-gradient(135deg, #af4bed, #762ba4);
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .mockup-banner a { color: rgba(255,255,255,0.85); text-decoration: underline; margin-left: 10px; }
+
+  /* TOP PROMO STRIP (Hims-style yellow strip) */
+  .top-strip {
+    background: var(--gold-soft);
+    color: var(--ink);
+    padding: 9px 16px;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+  .top-strip a { font-weight: 600; text-decoration: underline; margin-left: 4px; }
+
+  /* NAV */
+  .nav {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    max-width: 1320px; margin: 0 auto;
+    padding: 14px clamp(20px, 4vw, 48px);
+    gap: 16px;
+  }
+  .nav-logo img { height: 30px; width: auto; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-link {
+    font-size: 0.88rem; font-weight: 500;
+    color: var(--ink); letter-spacing: -0.005em;
+    padding: 6px 0; transition: color .15s ease;
+  }
+  .nav-link:hover { color: var(--brand-deep); }
+  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  @media (max-width: 820px) {
+    .nav-links { display: none; }
+  }
+
+  /* HERO */
+  .hero {
+    padding: clamp(36px, 5vw, 60px) 0 clamp(24px, 4vw, 40px);
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4rem);
+    font-weight: 500;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .hero h1 em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--brand-deep);
+  }
+
+  /* HERO TWIN CARDS */
+  .twin-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding: 24px 0 32px;
+  }
+  @media (max-width: 720px) { .twin-cards { grid-template-columns: 1fr; } }
+  .twin-card {
+    position: relative;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    padding: 28px 28px 28px;
+    min-height: 240px;
+    background: var(--bg-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .2s ease;
+  }
+  .twin-card:hover { transform: translateY(-2px); }
+  .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
+  .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
+  .twin-card-body { position: relative; z-index: 2; max-width: 60%; }
+  .twin-card-eyebrow {
+    display: inline-block;
+    font-size: 0.74rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.10em;
+    color: var(--brand-deep);
+    margin-bottom: 10px;
+  }
+  .twin-card h2 {
+    font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    line-height: 1.05;
+  }
+  .twin-card h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .twin-card .btn {
+    align-self: flex-start;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--bg);
+    font-size: 0.86rem; font-weight: 600;
+    display: inline-flex; align-items: center; gap: 6px;
+    transition: background .15s ease, transform .12s ease;
+  }
+  .twin-card .btn:hover { background: var(--brand-darker); transform: translateX(2px); }
+  .twin-card-img {
+    position: absolute;
+    right: -10px; bottom: -10px;
+    width: 45%; max-width: 220px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    z-index: 1;
+    box-shadow: 0 12px 28px -10px rgba(36,20,50,0.20);
+  }
+  .twin-card-img img { width: 100%; height: 100%; object-fit: cover; }
+  .twin-card-placeholder {
+    position: absolute; right: 24px; bottom: 24px;
+    width: 38%; aspect-ratio: 1/1;
+    background: rgba(36,20,50,0.08);
+    border: 2px dashed rgba(36,20,50,0.20);
+    border-radius: var(--radius-lg);
+    display: grid; place-items: center;
+    color: var(--muted);
+    font-size: 0.72rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    text-align: center; padding: 12px;
+  }
+
+  /* 4-ICON QUICK-LINK ROW */
+  .quick-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 16px 0 56px;
+  }
+  @media (max-width: 720px) { .quick-icons { grid-template-columns: repeat(2, 1fr); } }
+  .quick-icon {
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: transform .15s ease, border-color .2s ease;
+  }
+  .quick-icon:hover {
+    transform: translateY(-2px);
+    border-color: rgba(175,75,237,0.30);
+  }
+  .quick-icon-thumb {
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    background: var(--bg-2);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: grid; place-items: center;
+  }
+  .quick-icon-thumb img { width: 100%; height: 100%; object-fit: cover; }
+  .quick-icon-thumb svg { width: 22px; height: 22px; color: var(--brand-deep); }
+  .quick-icon-text { font-size: 0.94rem; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); }
+
+  /* DARK HERO PROMO */
+  .dark-promo {
+    background: var(--dark);
+    color: white;
+    border-radius: var(--radius-xl);
+    margin: 0 0 24px;
+    padding: clamp(40px, 6vw, 80px) clamp(28px, 5vw, 60px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  .dark-promo::before {
+    content: ""; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(175,75,237,0.35), transparent 60%),
+      radial-gradient(ellipse 50% 50% at 20% 80%, rgba(209,133,255,0.20), transparent 60%);
+    z-index: 0;
+  }
+  .dark-promo > * { position: relative; z-index: 2; }
+  .dark-promo h2 {
+    color: white;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1.0;
+    margin-bottom: 18px;
+  }
+  .dark-promo h2 em {
+    font-style: italic; font-weight: 500;
+    background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #af4bed 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .dark-promo p {
+    color: rgba(255,255,255,0.82);
+    font-size: clamp(1.0rem, 1.4vw, 1.18rem);
+    max-width: 540px;
+    margin: 0 auto 32px;
+    line-height: 1.5;
+  }
+  .dark-promo .btn-light {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: white; color: var(--ink);
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 0.95rem; font-weight: 600;
+    transition: transform .15s ease;
+  }
+  .dark-promo .btn-light:hover { transform: translateY(-2px); }
+
+  /* PRODUCT TILE GRID (4 medications) */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    padding: 0 0 24px;
+  }
+  @media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .product-grid { grid-template-columns: 1fr 1fr; } }
+  .product-tile {
+    background: var(--bg-2);
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: transform .15s ease;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: flex-end;
+  }
+  .product-tile:hover { transform: translateY(-3px); }
+  .product-tile.cream { background: linear-gradient(160deg, #f0e6d2 0%, #e0d2b8 100%); }
+  .product-tile.lavender { background: linear-gradient(160deg, #efe0fa 0%, #d8c0ed 100%); }
+  .product-tile.peach { background: linear-gradient(160deg, #f5dccc 0%, #ecc2a8 100%); }
+  .product-tile.mint { background: linear-gradient(160deg, #d8ebd8 0%, #b8d8b8 100%); }
+  .product-tile-info { position: relative; z-index: 2; }
+  .product-tile-name {
+    font-family: 'Geist', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 2px;
+  }
+  .product-tile-sub {
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .product-tile-img {
+    position: absolute;
+    top: 18px; right: 18px;
+    width: 50%; aspect-ratio: 1/1;
+    background: rgba(255,255,255,0.50);
+    border-radius: var(--radius);
+    display: grid; place-items: center;
+    color: var(--muted);
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 8px;
+    border: 1px dashed rgba(36,20,50,0.20);
+  }
+
+  /* FEATURED PRODUCT (TRT-style cream block) */
+  .featured-block {
+    background: var(--bg-cream);
+    border-radius: var(--radius-xl);
+    padding: clamp(40px, 6vw, 72px) clamp(28px, 5vw, 60px);
+    margin: 56px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .featured-block-eyebrow {
+    font-size: 0.74rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.10em;
+    color: var(--brand-deep);
+    margin-bottom: 12px;
+  }
+  .featured-block h2 {
+    font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.05;
+  }
+  .featured-block h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .featured-block-sub {
+    color: var(--muted);
+    font-size: 1.0rem;
+    max-width: 500px;
+    margin: 18px auto 28px;
+    line-height: 1.5;
+  }
+  .featured-cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--ink);
+    color: var(--bg);
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 0.94rem; font-weight: 600;
+  }
+  .featured-cta:hover { background: var(--brand-darker); }
+
+  /* SUB-CARDS PAIR (Enclomiphene + At-home labs style) */
+  .sub-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 36px;
+  }
+  @media (max-width: 720px) { .sub-pair { grid-template-columns: 1fr; } }
+  .sub-card {
+    background: white;
+    border-radius: var(--radius-xl);
+    padding: 28px 28px 28px;
+    text-align: left;
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .sub-card-tag {
+    display: inline-block;
+    font-size: 0.66rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.10em;
+    color: var(--brand-deep);
+    margin-bottom: 8px;
+  }
+  .sub-card h3 {
+    font-size: clamp(1.1rem, 1.6vw, 1.4rem);
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .sub-card p {
+    font-size: 0.92rem;
+    color: var(--muted);
+    line-height: 1.45;
+    margin-bottom: 18px;
+  }
+  .sub-card .btn-sm {
+    align-self: flex-start;
+    padding: 9px 18px;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--bg);
+    font-size: 0.82rem; font-weight: 600;
+  }
+
+  /* PEACH/CREAM SECTION (Health check style) */
+  .alt-block {
+    background: var(--bg-peach);
+    border-radius: var(--radius-xl);
+    padding: clamp(40px, 6vw, 72px) clamp(28px, 5vw, 60px);
+    margin: 0 0 56px;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  @media (max-width: 820px) { .alt-block { grid-template-columns: 1fr; } }
+  .alt-block-text h2 {
+    font-size: clamp(2rem, 3.6vw, 2.8rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    margin-bottom: 14px;
+  }
+  .alt-block-text h2 em { font-style: italic; color: var(--brand-darker); font-weight: 500; }
+  .alt-block-text p {
+    color: var(--ink-soft);
+    font-size: 1.0rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 420px;
+  }
+  .alt-block-features {
+    display: flex; gap: 18px; flex-wrap: wrap;
+    margin-bottom: 26px;
+  }
+  .alt-feature {
+    background: rgba(255,255,255,0.65);
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .alt-block-visual {
+    aspect-ratio: 4/5;
+    background: rgba(36,20,50,0.06);
+    border: 2px dashed rgba(36,20,50,0.18);
+    border-radius: var(--radius-lg);
+    display: grid; place-items: center;
+    color: var(--muted);
+    font-size: 0.80rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    text-align: center; padding: 16px;
+  }
+
+  /* DOCTORS SECTION */
+  .doctors-section {
+    text-align: center;
+    padding: 72px 0 56px;
+  }
+  .doctors-section h2 {
+    font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    max-width: 560px;
+    margin: 0 auto 14px;
+    line-height: 1.05;
+  }
+  .doctors-section h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .doctors-section > p {
+    color: var(--muted);
+    font-size: 0.98rem;
+    max-width: 460px;
+    margin: 0 auto 36px;
+    line-height: 1.5;
+  }
+  .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 820px) { .doctors-grid { grid-template-columns: repeat(2, 1fr); } }
+  .doctor-card {
+    text-align: left;
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 22px 22px 22px;
+    border: 1px solid var(--line);
+  }
+  .doctor-photo {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius);
+    background: var(--bg-2);
+    margin-bottom: 14px;
+    overflow: hidden;
+    display: grid; place-items: center;
+    color: var(--muted);
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    text-align: center;
+    padding: 12px;
+    border: 2px dashed rgba(36,20,50,0.18);
+  }
+  .doctor-name {
+    font-size: 0.96rem; font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+  .doctor-role {
+    font-size: 0.74rem; font-weight: 500;
+    color: var(--brand-deep);
+    text-transform: uppercase; letter-spacing: 0.06em;
+  }
+
+  /* DARK BOTTOM CTA */
+  .bottom-cta {
+    background: var(--dark);
+    color: white;
+    border-radius: var(--radius-xl);
+    padding: clamp(40px, 6vw, 64px) clamp(28px, 5vw, 60px);
+    margin: 0 0 80px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+  }
+  @media (max-width: 820px) { .bottom-cta { grid-template-columns: 1fr; } }
+  .bottom-cta::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 50% 50% at 80% 50%, rgba(175,75,237,0.30), transparent 60%);
+    z-index: 0;
+  }
+  .bottom-cta > * { position: relative; z-index: 2; }
+  .bottom-cta h2 {
+    color: white;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+  .bottom-cta h2 em {
+    font-style: italic; font-weight: 500;
+    background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .bottom-cta p {
+    color: rgba(255,255,255,0.78);
+    font-size: 0.96rem;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    max-width: 380px;
+  }
+  .bottom-cta form { display: flex; gap: 8px; flex-wrap: wrap; }
+  .bottom-cta input {
+    flex: 1; min-width: 200px;
+    padding: 13px 18px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.10);
+    border: 1px solid rgba(255,255,255,0.20);
+    color: white;
+    font-size: 0.94rem; font-family: inherit;
+  }
+  .bottom-cta input::placeholder { color: rgba(255,255,255,0.55); }
+  .bottom-cta button {
+    padding: 13px 26px;
+    border-radius: 999px;
+    background: white;
+    color: var(--ink);
+    font-size: 0.92rem; font-weight: 600;
+    border: none; cursor: pointer; font-family: inherit;
+  }
+  .bottom-cta-visual {
+    aspect-ratio: 4/5; max-width: 320px; margin: 0 auto;
+    background: rgba(255,255,255,0.06);
+    border: 2px dashed rgba(255,255,255,0.20);
+    border-radius: var(--radius-lg);
+    display: grid; place-items: center;
+    color: rgba(255,255,255,0.55);
+    font-size: 0.78rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    text-align: center; padding: 16px;
+  }
+
+  /* GRAPHIC NEEDS APPENDIX */
+  .graphic-needs {
+    background: white;
+    border-top: 4px solid var(--brand);
+    padding: 56px 0;
+    margin-top: 24px;
+  }
+  .graphic-needs h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+    margin-bottom: 8px;
+  }
+  .graphic-needs > .container > p {
+    color: var(--muted);
+    margin-bottom: 32px;
+    max-width: 600px;
+  }
+  .graphic-needs ol {
+    list-style: none; padding: 0; margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    counter-reset: graphic;
+  }
+  @media (max-width: 720px) { .graphic-needs ol { grid-template-columns: 1fr; } }
+  .graphic-needs li {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 18px 16px 50px;
+    position: relative;
+    counter-increment: graphic;
+  }
+  .graphic-needs li::before {
+    content: counter(graphic);
+    position: absolute; left: 14px; top: 18px;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--brand);
+    color: white;
+    font-size: 0.74rem; font-weight: 700;
+    display: grid; place-items: center;
+  }
+  .graphic-needs li strong {
+    display: block;
+    font-size: 0.96rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 2px;
+    letter-spacing: -0.01em;
+  }
+  .graphic-needs li span {
+    font-size: 0.84rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+
+<!-- MOCKUP BANNER -->
+<div class="mockup-banner">
+  HOMEPAGE MOCKUP · Hims-style structure · DirectCare AI content
+  <a href="/">← Back to live site</a>
+  <a href="/mobile-test">Mobile test →</a>
+</div>
+
+<!-- TOP STRIP -->
+<div class="top-strip">
+  Save up to 80% with our DirectCare Pharmacy Card. <a href="/#rxcard">Get yours free →</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <a class="nav-link" href="/hormone-replacement-therapy">HRT</a>
+      <a class="nav-link" href="/testosterone-replacement-therapy">TRT</a>
+      <a class="nav-link" href="/surge-max/">Sexual Health</a>
+      <a class="nav-link" href="/weight-loss/">Weight Loss</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>The care you've <em>always deserved.</em></h1>
+  </section>
+
+  <!-- HERO TWIN CARDS -->
+  <section class="twin-cards">
+    <a class="twin-card lavender" href="/hormone-replacement-therapy">
+      <div class="twin-card-body">
+        <span class="twin-card-eyebrow">For women</span>
+        <h2>Start your <em>HRT</em> today</h2>
+        <span class="btn">Find your match →</span>
+      </div>
+      <div class="twin-card-img">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT" loading="eager" />
+      </div>
+    </a>
+    <a class="twin-card cream" href="/testosterone-replacement-therapy">
+      <div class="twin-card-body">
+        <span class="twin-card-eyebrow">For men</span>
+        <h2>See how your <em>numbers</em> compare</h2>
+        <span class="btn">Get your bloodwork →</span>
+      </div>
+      <div class="twin-card-img">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT" loading="eager" />
+      </div>
+    </a>
+  </section>
+
+  <!-- 4 QUICK ICONS ROW -->
+  <section class="quick-icons">
+    <a class="quick-icon" href="/surge-max/">
+      <span class="quick-icon-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></span>
+      <span class="quick-icon-text">Better sex</span>
+    </a>
+    <a class="quick-icon" href="/mens-hair-loss/">
+      <span class="quick-icon-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 8a4 4 0 0 0-4 4v4a4 4 0 0 0 8 0v-4a4 4 0 0 0-4-4z"/><path d="M5 12c0-4 3-7 7-7s7 3 7 7"/></svg></span>
+      <span class="quick-icon-text">Regrow hair</span>
+    </a>
+    <a class="quick-icon" href="/testosterone-replacement-therapy">
+      <span class="quick-icon-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></span>
+      <span class="quick-icon-text">Boost testosterone</span>
+    </a>
+    <a class="quick-icon" href="/blood-test/">
+      <span class="quick-icon-thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>
+      <span class="quick-icon-text">Get a health check</span>
+    </a>
+  </section>
+
+  <!-- DARK HERO PROMO -->
+  <section class="dark-promo">
+    <h2>Your weight loss<br/><em>breakthrough is here.</em></h2>
+    <p>Compounded semaglutide and tirzepatide — weekly injection, prescribed by a US-licensed clinician with a full hormone panel included.</p>
+    <a class="btn-light" href="/weight-loss/">See if you qualify →</a>
+  </section>
+
+  <!-- PRODUCT TILE GRID -->
+  <section class="product-grid">
+    <a class="product-tile lavender" href="/weight-loss/">
+      <div class="product-tile-img">Tirzepatide pen<br/>visual needed</div>
+      <div class="product-tile-info">
+        <div class="product-tile-name">Tirzepatide</div>
+        <div class="product-tile-sub">Weekly injection</div>
+      </div>
+    </a>
+    <a class="product-tile cream" href="/weight-loss/">
+      <div class="product-tile-img">Semaglutide vial<br/>visual needed</div>
+      <div class="product-tile-info">
+        <div class="product-tile-name">Semaglutide</div>
+        <div class="product-tile-sub">Weekly injection</div>
+      </div>
+    </a>
+    <a class="product-tile peach" href="/testosterone-replacement-therapy">
+      <div class="product-tile-img">Enclomiphene tablet<br/>visual needed</div>
+      <div class="product-tile-info">
+        <div class="product-tile-name">Enclomiphene</div>
+        <div class="product-tile-sub">Natural pathway TRT</div>
+      </div>
+    </a>
+    <a class="product-tile mint" href="/surge-max/">
+      <div class="product-tile-img">Surge Max bottle<br/>visual needed</div>
+      <div class="product-tile-info">
+        <div class="product-tile-name">Surge Max</div>
+        <div class="product-tile-sub">4-in-1 ED</div>
+      </div>
+    </a>
+  </section>
+
+  <!-- FEATURED BLOCK (Hims-style cream TRT promo) -->
+  <section class="featured-block">
+    <div class="featured-block-eyebrow">Testosterone Therapy</div>
+    <h2>Get your edge back with <em>Testosterone by DirectCare AI</em></h2>
+    <p class="featured-block-sub">Injectable, oral, and natural-pathway protocols (enclomiphene). Labs included, dosing titrated to your real numbers.</p>
+    <a class="featured-cta" href="/testosterone-replacement-therapy">Get started →</a>
+
+    <div class="sub-pair">
+      <div class="sub-card">
+        <span class="sub-card-tag">Natural Pathway</span>
+        <h3>Enclomiphene — elevate your T without injections</h3>
+        <p>An oral tablet that helps your body produce more of its own testosterone. Tested first, dosed precisely.</p>
+        <a class="btn-sm" href="/testosterone-replacement-therapy#enclomiphene">Learn more</a>
+      </div>
+      <div class="sub-card">
+        <span class="sub-card-tag">At-Home Labs</span>
+        <h3>Check your T levels — without leaving your couch</h3>
+        <p>Walk into 2,000+ partner draw sites near you, or use mobile phlebotomy. Results in 3–5 days.</p>
+        <a class="btn-sm" href="/blood-test/">Start labs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALT BLOCK (Health Check) -->
+  <section class="alt-block">
+    <div class="alt-block-text">
+      <h2>Get your labs.<br/><em>Go for your optimal.</em></h2>
+      <p>A clinician-ordered, 80+ biomarker panel. Results in 3–5 days, with a personalized plan from a US-licensed clinician.</p>
+      <div class="alt-block-features">
+        <span class="alt-feature">80+ biomarkers</span>
+        <span class="alt-feature">Hormones included</span>
+        <span class="alt-feature">From $196</span>
+      </div>
+      <a class="featured-cta" href="/blood-test/">See my numbers →</a>
+    </div>
+    <div class="alt-block-visual">Phone mockup<br/>showing patient dashboard<br/>with biomarker chart</div>
+  </section>
+
+  <!-- DOCTORS -->
+  <section class="doctors-section">
+    <h2>The best care, <em>by the best in medicine.</em></h2>
+    <p>Real US-licensed clinicians review every prescription, monitor your bloodwork, and message you back — not a chatbot, not a quiz.</p>
+    <div class="doctors-grid">
+      <div class="doctor-card">
+        <div class="doctor-photo">Headshot 1<br/>Head of Weight Loss</div>
+        <div class="doctor-name">Dr. Craig Primack, MD</div>
+        <div class="doctor-role">Head of Weight Loss</div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-photo">Headshot 2<br/>Director, Women's Health</div>
+        <div class="doctor-name">Dr. Sara Mitchell, MD</div>
+        <div class="doctor-role">Director, Women's Health</div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-photo">Headshot 3<br/>Director, Men's Health</div>
+        <div class="doctor-name">Dr. Peter Han, MD</div>
+        <div class="doctor-role">Director, Men's Health</div>
+      </div>
+      <div class="doctor-card">
+        <div class="doctor-photo">Headshot 4<br/>Functional Medicine</div>
+        <div class="doctor-name">Dr. Lina Park, ND</div>
+        <div class="doctor-role">Functional Medicine</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOTTOM DARK CTA -->
+  <section class="bottom-cta">
+    <div>
+      <h2>Unlock the free<br/><em>Guide to Hormone Health</em></h2>
+      <p>Read your hormone panel like a clinician. Drop your email — we'll send you a plain-English breakdown of every marker.</p>
+      <form onsubmit="event.preventDefault(); var b = this.querySelector('button'); b.textContent='Sent ✓'; setTimeout(function(){ b.textContent='Get the guide'; }, 2400);">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Get the guide</button>
+      </form>
+    </div>
+    <div class="bottom-cta-visual">Lifestyle photo<br/>(real human, sunlit,<br/>warm color grade)</div>
+  </section>
+</div>
+
+<!-- GRAPHIC NEEDS APPENDIX -->
+<div class="graphic-needs">
+  <div class="container">
+    <h2>Graphics you'd need to commission</h2>
+    <p>Everything tagged with a dashed border above is a placeholder. To take this mockup production-ready, here's the asset list — most can come from Firefly prompts, the rest need real photography or a designer.</p>
+    <ol>
+      <li>
+        <strong>2 hero twin-card product images</strong>
+        <span>Cropped close-ups: (a) HRT — gel pump or estradiol patch on cream linen, soft morning light · (b) TRT — testosterone vial + syringe on a lavender-tinted backdrop. Square 1:1. <em>Firefly: product photography on cream/lavender backdrop, soft natural light, square aspect ratio.</em></span>
+      </li>
+      <li>
+        <strong>4 medication product tiles</strong>
+        <span>Stylized product shots on solid pastel backgrounds, isolated: Tirzepatide pen, Semaglutide vial, Enclomiphene tablet, Surge Max bottle. 1:1 aspect ratio, each tile a different brand-friendly pastel.</span>
+      </li>
+      <li>
+        <strong>Patient-dashboard phone mockup</strong>
+        <span>iPhone screen mocking up the DirectCare AI portal — biomarker chart, clinician message thread, prescription tracker. Used in the "Get your labs" section. Can be designed in Figma + exported as a transparent PNG.</span>
+      </li>
+      <li>
+        <strong>4 clinician headshots</strong>
+        <span>Real photography of your actual clinicians or vetted stock equivalents. 1:1 crop, neutral background, professional but warm. If you don't have real headshots yet, commission a single shoot day with all 4 clinicians.</span>
+      </li>
+      <li>
+        <strong>Bottom-CTA lifestyle photo</strong>
+        <span>Single human portrait, sunlit, warm color grade, looking off-camera with a soft smile. Used inside the dark-eggplant guide-download block. <em>Firefly: editorial portrait of [age/identity] in warm afternoon light, soft confident expression, 4:5 portrait.</em></span>
+      </li>
+      <li>
+        <strong>4 quick-link category icons OR thumbnails</strong>
+        <span>Currently rendered as line-SVG icons. If you'd rather have small photo thumbnails (Hims uses pill/syringe/dropper imagery), commission 40×40 icon photography for: Better sex · Regrow hair · Boost testosterone · Get a health check.</span>
+      </li>
+      <li>
+        <strong>Dark-hero promo product/scene visual</strong>
+        <span>Optional. The current dark promo uses a gradient background only. If you want to add product imagery (the Hims version shows GLP-1 pens floating in the dark), you'll need a transparent-background PNG of a pen + vial cluster styled for the dark space.</span>
+      </li>
+      <li>
+        <strong>Cream-block TRT featured visual (optional)</strong>
+        <span>A close-up of an enclomiphene tablet + lab tube + phone showing T levels — composed flat-lay on a cream linen background. Adds a real-product anchor to the otherwise text-only TRT featured block.</span>
+      </li>
+      <li>
+        <strong>Top-strip seasonal promo banner</strong>
+        <span>The yellow strip across the top is text-only right now. Could be lavender-gradient with a small icon. Decide later — easy CSS swap.</span>
+      </li>
+      <li>
+        <strong>Updated favicon set (optional)</strong>
+        <span>If you're shifting palette to warm cream + deep eggplant, refresh the favicon/apple-touch-icon to match the new ink color so it doesn't look out of place in browser tabs.</span>
+      </li>
+    </ol>
+  </div>
+</div>
+
+<!-- FlexOffers AdvertiserMax click tracking -->
+<script>
+  !function(){var e=window.AdvertiserMaxTrack=window.AdvertiserMaxTrack||[];if(e.invoked)window.console&&console.error&&console.error("FlexOffers library was included more than once.");else{e.invoked=!0,e.methods=["init","getClick","track"],e.factory=function(r){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(r),e.push(t),e}};for(var r=0;r<e.methods.length;r++){var t=e.methods[r];e[t]=e.factory(t)}e.init=function(r){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://advertisermax.flexoffers.com/vendors/advertisermax/advertisermax.tracking.lib.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),e.advertiserId=r}}}();
+  AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
+  AdvertiserMaxTrack.getClick();
+</script>
+
+</body>
+</html>

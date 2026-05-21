@@ -98,9 +98,67 @@
   .nav-link:hover { color: var(--brand-deep); }
   .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
   .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  /* Mobile hamburger */
+  .mobile-toggle {
+    display: none;
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--bg-2);
+    border: 1px solid var(--line);
+    cursor: pointer;
+    align-items: center; justify-content: center;
+    color: var(--ink);
+    flex-shrink: 0;
+  }
+  .mobile-toggle svg { width: 20px; height: 20px; }
   @media (max-width: 820px) {
     .nav-links { display: none; }
+    .mobile-toggle { display: inline-flex; }
+    .nav-login { display: none; }
   }
+  .mobile-drawer {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+    background: var(--bg);
+    z-index: 99;
+    padding: 80px 28px 28px;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+    overflow-y: auto;
+  }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 6px;
+    border-bottom: 1px solid var(--line);
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .mobile-drawer a::after { content: "→"; opacity: 0.5; font-size: 0.9rem; }
+  .mobile-drawer .drawer-portal {
+    margin-top: 24px;
+    background: var(--ink);
+    color: var(--bg) !important;
+    padding: 16px 22px !important;
+    border-radius: 999px !important;
+    border-bottom: none !important;
+    justify-content: center;
+    font-weight: 600;
+  }
+  .mobile-drawer .drawer-portal::after { content: ""; }
+  .mobile-drawer .drawer-close {
+    position: absolute; top: 18px; right: 18px;
+    width: 38px; height: 38px;
+    background: var(--bg-2); border: 1px solid var(--line); border-radius: 50%;
+    display: grid; place-items: center;
+    cursor: pointer; color: var(--ink);
+    padding: 0;
+  }
+  .mobile-drawer .drawer-close::after { content: ""; }
 
   /* HERO */
   .hero {
@@ -162,6 +220,36 @@
   .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
   .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
   .twin-card-body { position: relative; z-index: 2; max-width: 58%; }
+  @media (max-width: 540px) {
+    .twin-card { padding: 22px; min-height: 200px; }
+    .twin-card-body { max-width: 60%; }
+    .twin-card-img { width: 38%; max-width: 150px; right: 14px; bottom: 14px; }
+    .twin-card h2 { font-size: 1.25rem; margin-bottom: 12px; }
+    .twin-card .btn { padding: 9px 16px; font-size: 0.82rem; }
+  }
+  @media (max-width: 540px) {
+    .hero { padding-top: 28px; padding-bottom: 16px; }
+    .hero h1 { font-size: 2.2rem; }
+    .twin-cards { padding: 16px 0 24px; }
+    .quick-icons { padding: 12px 0 40px; gap: 10px; }
+    .quick-icon { padding: 12px 14px; }
+    .quick-icon-text { font-size: 0.86rem; }
+    .quick-icon-thumb { width: 38px; height: 38px; }
+    .dark-promo, .featured-block, .alt-block, .rxcard-section, .bottom-cta {
+      padding-left: 24px; padding-right: 24px;
+      border-radius: 22px;
+    }
+    .product-grid { gap: 10px; }
+    .product-tile-name { font-size: 1.0rem; }
+    .product-tile-sub { font-size: 0.68rem; }
+    .top-strip { font-size: 0.74rem; padding: 8px 14px; }
+    .featured-block { margin: 32px 0; }
+    .alt-block-features { gap: 8px; }
+    .alt-feature { font-size: 0.78rem; padding: 7px 13px; }
+    .featured-cta, .rxcard-cta { padding: 12px 24px; font-size: 0.88rem; }
+    .bottom-cta button { width: 100%; }
+    .bottom-cta input { flex-basis: 100%; }
+  }
   .twin-card-eyebrow {
     display: inline-block;
     font-size: 0.72rem; font-weight: 600;
@@ -717,8 +805,29 @@
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
     <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+    <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
   </div>
 </nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <a href="/womens-health/">Women's Health</a>
+  <a href="/mens-health/">Men's Health</a>
+  <a href="/hormone-replacement-therapy">HRT</a>
+  <a href="/testosterone-replacement-therapy">TRT</a>
+  <a href="/surge-max/">Sexual Health</a>
+  <a href="/weight-loss/">Weight Loss</a>
+  <a href="/mens-hair-loss/">Hair Regrowth (Men)</a>
+  <a href="/womans-hair-loss/">Hair Regrowth (Women)</a>
+  <a href="/blood-test/">Blood Labs</a>
+  <a href="/supplements/">Supplements</a>
+  <a class="drawer-portal" href="https://directcareai.portal.tellescope.com/">Log in / Patient portal</a>
+</div>
 
 <div class="container">
 
@@ -941,6 +1050,26 @@
     </div>
   </div>
 </footer>
+
+<!-- Mobile drawer toggle -->
+<script>
+  (function() {
+    var toggle = document.getElementById('mobile-toggle');
+    var drawer = document.getElementById('mobile-drawer');
+    var close = document.getElementById('drawer-close');
+    if (!toggle || !drawer) return;
+    function open() { drawer.classList.add('open'); document.body.style.overflow = 'hidden'; }
+    function dismiss() { drawer.classList.remove('open'); document.body.style.overflow = ''; }
+    toggle.addEventListener('click', open);
+    if (close) close.addEventListener('click', dismiss);
+    drawer.addEventListener('click', function(e) {
+      if (e.target.tagName === 'A') dismiss();
+    });
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 820) dismiss();
+    });
+  })();
+</script>
 
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

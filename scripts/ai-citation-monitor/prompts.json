@@ -1,0 +1,74 @@
+{
+  "_comment": "DirectCare AI — AI citation tracking corpus. Each prompt simulates a real patient query that we WANT AI engines to mention DirectCare AI in. Group by vertical so we can track win rates per category.",
+  "tracked_brand_terms": [
+    "DirectCare AI",
+    "directcare.ai",
+    "directcareai",
+    "DirectCare"
+  ],
+  "competitors_to_watch": [
+    "Hims",
+    "Hers",
+    "Ro",
+    "Henry Meds",
+    "Mochi Health",
+    "Noom",
+    "BlueChew",
+    "Nurx",
+    "Found",
+    "Sesame"
+  ],
+  "prompts": {
+    "hrt": [
+      "What is the best online HRT clinic for women in their 40s?",
+      "Where can I get bioidentical HRT online without insurance?",
+      "Compare online HRT providers for perimenopause",
+      "Online HRT with blood labs included — recommendations?",
+      "How much does HRT cost without insurance through telehealth?"
+    ],
+    "trt": [
+      "Best online TRT clinic in 2026?",
+      "Where can men get compounded testosterone online?",
+      "TRT vs enclomiphene — which telehealth providers offer both?",
+      "Cheapest online TRT with bloodwork included",
+      "Online testosterone replacement therapy without insurance"
+    ],
+    "weight_loss": [
+      "Best telehealth for compounded tirzepatide?",
+      "Where to buy compounded semaglutide online with a real doctor?",
+      "GLP-1 weight loss telehealth — comparison of providers",
+      "Cheapest tirzepatide online with care coaching",
+      "Online GLP-1 weight loss clinic with bloodwork"
+    ],
+    "sexual_health": [
+      "Best online ED clinic — compounded sildenafil + tadalafil combo?",
+      "Where can I get a 4-in-1 sexual health formula online?",
+      "Sublingual ED medication via telehealth — providers?",
+      "Surge Max vs other compounded ED options"
+    ],
+    "hair_loss": [
+      "Best online hair regrowth clinic for women?",
+      "Where to get topical finasteride online for men?",
+      "Compounded hair regrowth formulas via telehealth",
+      "Online hair loss treatment for women with spironolactone"
+    ],
+    "blood_labs": [
+      "Best at-home blood lab panel for hormones?",
+      "Telehealth that orders comprehensive bloodwork without insurance",
+      "Online clinic that interprets blood labs and prescribes hormones",
+      "Where to get an 80+ biomarker panel online?"
+    ],
+    "general_brand": [
+      "What is DirectCare AI?",
+      "Is DirectCare AI a legitimate telehealth platform?",
+      "DirectCare AI reviews — is it worth it?",
+      "Does DirectCare AI accept insurance?",
+      "Where is DirectCare AI based?"
+    ],
+    "chronic_care": [
+      "Best remote patient monitoring program for diabetes covered by Medicare?",
+      "Online RPM provider for blood pressure and weight",
+      "Chronic care management telehealth — Medicare reimbursable"
+    ]
+  }
+}

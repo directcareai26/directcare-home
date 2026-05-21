@@ -25,7 +25,10 @@
 
     { "source": "/chronicconditioncare", "destination": "/chronic-care/", "permanent": true },
     { "source": "/chronicconditioncare/", "destination": "/chronic-care/", "permanent": true },
-    { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true }
+    { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true },
+
+    { "source": "/homepage-mockup", "destination": "/", "permanent": true },
+    { "source": "/homepage-mockup/", "destination": "/", "permanent": true }
   ],
   "rewrites": [
     { "source": "/start-hrt", "destination": "/hormone-replacement-therapy" },

@@ -272,19 +272,19 @@
   .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
   .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
   /* Body always sits to the LEFT of the picture, text left-aligned at every width */
-  .twin-card-body { position: relative; z-index: 2; max-width: 58%; text-align: left; align-items: flex-start; }
+  .twin-card-body { position: relative; z-index: 2; max-width: 54%; padding-right: 12px; text-align: left; align-items: flex-start; }
   .twin-card .btn { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; align-self: flex-start; }
   @media (max-width: 720px) {
     .twin-card { padding: 20px; min-height: 200px; }
-    .twin-card-body { max-width: 58%; }
-    .twin-card-img { width: 36%; max-width: 140px; right: 14px; bottom: 14px; }
+    .twin-card-body { max-width: 54%; padding-right: 10px; }
+    .twin-card-img { width: 34%; max-width: 130px; right: 14px; bottom: 14px; }
     .twin-card h2 { font-size: 1.2rem; margin-bottom: 12px; }
     .twin-card .btn { padding: 9px 14px; font-size: 0.8rem; }
   }
   @media (max-width: 420px) {
     .twin-card { padding: 18px; min-height: 180px; }
-    .twin-card-body { max-width: 56%; }
-    .twin-card-img { width: 38%; max-width: 120px; right: 12px; bottom: 12px; }
+    .twin-card-body { max-width: 54%; padding-right: 8px; }
+    .twin-card-img { width: 36%; max-width: 110px; right: 12px; bottom: 12px; }
     .twin-card h2 { font-size: 1.05rem; margin-bottom: 10px; line-height: 1.15; }
     .twin-card .btn { padding: 7px 12px; font-size: 0.74rem; }
     .twin-card-eyebrow { font-size: 0.66rem; margin-bottom: 8px; }
@@ -328,32 +328,35 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
-  /* Gradient shimmer on the purple emphasis text — continuous wash, accelerates on hover */
+  /* Gradient shimmer on the purple emphasis text — slow, soft wash; no pure-white peak so letters stay readable on the light card backgrounds */
   .twin-card h2 em {
     font-style: italic;
     font-weight: 500;
     background: linear-gradient(
       110deg,
       #762ba4 0%,
-      #af4bed 25%,
-      #f2c2ff 45%,
-      #ffffff 50%,
-      #f2c2ff 55%,
-      #af4bed 75%,
+      #9043bf 30%,
+      #c97cf2 48%,
+      #d9a5f7 50%,
+      #c97cf2 52%,
+      #9043bf 70%,
       #762ba4 100%
     );
-    background-size: 250% 100%;
+    background-size: 220% 100%;
     background-position: 100% 0;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    animation: twin-shimmer 5s linear infinite;
+    animation: twin-shimmer 9s linear infinite;
+    /* Small right-padding inside the gradient text so italic letter slope can't visually run into the image */
+    padding-right: 6px;
+    margin-right: -6px;
   }
   @keyframes twin-shimmer {
-    to { background-position: -150% 0; }
+    to { background-position: -120% 0; }
   }
-  .twin-card:hover h2 em { animation-duration: 2.2s; }
+  .twin-card:hover h2 em { animation-duration: 4.5s; }
   @media (prefers-reduced-motion: reduce) {
     .twin-card h2 em {
       animation: none;

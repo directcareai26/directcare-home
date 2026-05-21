@@ -1,6 +1,26 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "directcare.ai" }],
+      "destination": "https://www.directcare.ai/:path*",
+      "permanent": true
+    },
+
+    { "source": "/faq", "destination": "/", "permanent": true },
+    { "source": "/faq/", "destination": "/", "permanent": true },
+    { "source": "/faq/:path*", "destination": "/", "permanent": true },
+
+    { "source": "/remote-patient-monitoring", "destination": "/chronic-care/", "permanent": true },
+    { "source": "/remote-patient-monitoring/", "destination": "/chronic-care/", "permanent": true },
+    { "source": "/remote-patient-monitoring/:path*", "destination": "/chronic-care/", "permanent": true },
+
+    { "source": "/chronicconditioncare", "destination": "/chronic-care/", "permanent": true },
+    { "source": "/chronicconditioncare/", "destination": "/chronic-care/", "permanent": true },
+    { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/start-hrt", "destination": "/hormone-replacement-therapy" },
     { "source": "/start-hrt/", "destination": "/hormone-replacement-therapy" },

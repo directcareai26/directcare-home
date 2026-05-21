@@ -184,7 +184,7 @@ def pick_topic(today: dt.date) -> dict[str, str]:
     return ordered[0]
 
 
-PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-powered direct-to-patient telehealth platform. You write the brand's Journal — long-form, SEO-friendly, clinician-tone articles that help patients understand the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements.
+PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-powered direct-to-patient telehealth platform. You write the brand's Blog — long-form, SEO-friendly, clinician-tone articles that help patients understand the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements.
 
 ## Brand voice
 - Plain English, clinician's-eye view, never breathless.

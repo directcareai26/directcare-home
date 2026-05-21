@@ -15,10 +15,10 @@ DirectCare AI partners with US-licensed compounding pharmacies and clinical labs
 - [Blood Labs](https://www.directcare.ai/blood-test/): Clinician-ordered 80+ biomarker panel with a plain-English roadmap, $196.
 - [Supplements](https://www.directcare.ai/supplements/): Physician-formulated supplement protocols matched to bloodwork.
 
-## The Journal (editorial)
+## The Blog (editorial)
 
-- [The DirectCare AI Journal](https://www.directcare.ai/blog/): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.
-- [Posts manifest (JSON)](https://www.directcare.ai/blog/posts.json): Machine-readable list of all journal posts with slug, title, excerpt, category, date, image, and keywords.
+- [The DirectCare AI Blog](https://www.directcare.ai/blog/): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.
+- [Posts manifest (JSON)](https://www.directcare.ai/blog/posts.json): Machine-readable list of all blog posts with slug, title, excerpt, category, date, image, and keywords.
 
 ## Compliance & trust
 

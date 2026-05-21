@@ -32,7 +32,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
   :root {
@@ -63,10 +63,10 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; background: var(--soft); }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
   h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); }
   h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
   h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
@@ -181,14 +181,14 @@
   .hero-quick-cat::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0.05) 0%, rgba(40,26,49,0.20) 45%, rgba(118,43,164,0.85) 100%); z-index: 1; transition: opacity .3s ease; }
   .hero-quick-cat:hover::after { background: linear-gradient(180deg, rgba(40,26,49,0.05) 0%, rgba(118,43,164,0.40) 40%, rgba(118,43,164,0.92) 100%); }
   .hero-quick-cat-body { position: relative; z-index: 2; display: flex; flex-direction: column; height: 100%; padding: 20px; }
-  .hero-quick-cat .cat-tag { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.92); color: var(--brand-darker); font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(8px); box-shadow: 0 4px 12px -4px rgba(0,0,0,0.15); }
+  .hero-quick-cat .cat-tag { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.92); color: var(--brand-darker); font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(8px); box-shadow: 0 4px 12px -4px rgba(0,0,0,0.15); }
   .hero-quick-cat .cat-tag.green { color: #0d7a2e; }
   .hero-quick-cat .cat-tag.hot { background: linear-gradient(135deg, #ff4d2e 0%, #d61f5a 100%); color: white; box-shadow: 0 8px 20px -6px rgba(214,31,90,0.55); animation: hot-pulse 2.2s ease-in-out infinite; }
   @keyframes hot-pulse { 0%,100% { box-shadow: 0 8px 20px -6px rgba(214,31,90,0.55); } 50% { box-shadow: 0 10px 28px -4px rgba(214,31,90,0.85); } }
   .hero-quick-cat .cat-content { margin-top: auto; }
-  .hero-quick-cat .cat-title { font-family: 'Manrope', sans-serif; font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; color: white; margin: 0 0 6px; text-shadow: 0 2px 12px rgba(0,0,0,0.20); }
+  .hero-quick-cat .cat-title { font-family: 'Geist', 'Manrope', sans-serif; font-size: clamp(1.25rem, 2vw, 1.7rem); font-weight: 900; line-height: 1.05; letter-spacing: -0.02em; color: white; margin: 0 0 6px; text-shadow: 0 2px 12px rgba(0,0,0,0.20); }
   .hero-quick-cat .cat-sub { font-size: 0.84rem; line-height: 1.35; color: rgba(255,255,255,0.92); margin: 0 0 14px; text-shadow: 0 1px 8px rgba(0,0,0,0.30); }
-  .hero-quick-cat .cat-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; background: white; color: var(--brand-darker); border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; transition: gap .2s ease, transform .2s ease, background .2s ease; box-shadow: 0 6px 18px -4px rgba(0,0,0,0.25); }
+  .hero-quick-cat .cat-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 11px 18px; background: white; color: var(--brand-darker); border-radius: 999px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; transition: gap .2s ease, transform .2s ease, background .2s ease; box-shadow: 0 6px 18px -4px rgba(0,0,0,0.25); }
   .hero-quick-cat:hover .cat-cta { gap: 12px; background: #fbf5fe; transform: translateY(-1px); }
   .hero-quick-cat .cat-cta svg { transition: transform .25s ease; }
   .hero-quick-cat:hover .cat-cta svg { transform: translateX(3px); }
@@ -198,7 +198,7 @@
   .hero-card-tl .star { color: var(--gold); font-size: 1rem; line-height: 1; }
   .hero-card-tl .meta { font-size: 0.78rem; color: var(--muted); }
   .hero-card-tl .meta strong { color: var(--ink); font-weight: 800; display: block; font-size: 0.92rem; }
-  .hero-card-br h4 { font-family: 'Manrope', sans-serif; font-size: 1rem; margin-bottom: 6px; }
+  .hero-card-br h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1rem; margin-bottom: 6px; }
   .hero-card-br p { font-size: 0.84rem; color: var(--muted); line-height: 1.4; }
 
   /* ============== TRUST SEAL BAR ============== */
@@ -207,7 +207,7 @@
   .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
   .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
   .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
-  .seal-text strong { font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .seal-text strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
   .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
   @media (max-width: 760px) {
     .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
@@ -263,10 +263,10 @@
   .offer-body p { font-size: 0.94rem; line-height: 1.5; flex: 1; margin-bottom: 18px; }
   .offer-meta { display: flex; flex-direction: column; gap: 14px; padding-top: 18px; border-top: 1px solid var(--lavender-100); }
   /* Big standout price — gradient brand text */
-  .offer-price { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.65rem; line-height: 1; letter-spacing: -0.02em; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 60%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-flex; align-items: baseline; gap: 4px; }
-  .offer-price small { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.78rem; color: var(--muted); background: none; -webkit-text-fill-color: var(--muted); letter-spacing: 0; }
+  .offer-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.65rem; line-height: 1; letter-spacing: -0.02em; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 60%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-flex; align-items: baseline; gap: 4px; }
+  .offer-price small { font-family: 'Geist', 'Inter', sans-serif; font-weight: 600; font-size: 0.78rem; color: var(--muted); background: none; -webkit-text-fill-color: var(--muted); letter-spacing: 0; }
   /* Real CTA pill button — solid brand gradient, full-width */
-  .offer-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 20px; border-radius: 999px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.92rem; letter-spacing: -0.005em; transition: gap .2s ease, transform .2s ease, box-shadow .25s ease; box-shadow: 0 10px 24px -8px rgba(175,75,237,0.45); }
+  .offer-cta { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 20px; border-radius: 999px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 0.92rem; letter-spacing: -0.005em; transition: gap .2s ease, transform .2s ease, box-shadow .25s ease; box-shadow: 0 10px 24px -8px rgba(175,75,237,0.45); }
   .offer-card:hover .offer-cta { gap: 12px; transform: translateY(-1px); box-shadow: 0 16px 32px -6px rgba(118,43,164,0.55); }
   .offer-cta::after { content: "→"; font-size: 1.05rem; line-height: 1; transition: transform .25s ease; }
   .offer-card:hover .offer-cta::after { transform: translateX(3px); }
@@ -276,7 +276,7 @@
   @media (max-width: 900px) { .how-grid { grid-template-columns: 1fr; } }
   .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: transform .2s ease; }
   .how-card:hover { transform: translateY(-4px); }
-  .how-num { font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
+  .how-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
   .how-card h3 { font-size: 1.4rem; margin-bottom: 12px; }
   .how-card p { font-size: 0.98rem; }
   .how-card .icon-row { margin-top: 24px; display: flex; align-items: center; gap: 10px; padding-top: 18px; border-top: 1px solid var(--lavender-100); color: var(--brand-deep); font-size: 0.84rem; font-weight: 700; }
@@ -285,7 +285,7 @@
   .stats-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
   @media (max-width: 900px) { .stats-row { grid-template-columns: repeat(2, 1fr); } }
   .stat { text-align: center; padding: 28px 20px; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); }
-  .stat-num { font-family: 'Manrope', sans-serif; font-size: clamp(2.4rem, 4vw, 3.4rem); font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .stat-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: clamp(2.4rem, 4vw, 3.4rem); font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .stat-label { margin-top: 10px; font-size: 0.9rem; color: var(--muted); font-weight: 500; }
 
   /* ============== WHY DIRECTCARE (Comparison) ============== */
@@ -319,7 +319,7 @@
   @media (max-width: 900px) { .testi-grid { grid-template-columns: 1fr; } }
   .testi { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 32px 28px; box-shadow: 0 8px 24px -10px rgba(118,43,164,0.10); }
   .testi .stars { color: var(--gold); font-size: 1rem; line-height: 1; margin-bottom: 16px; letter-spacing: 2px; }
-  .testi blockquote { font-family: 'Manrope', sans-serif; font-size: 1.05rem; font-weight: 600; line-height: 1.45; color: var(--ink); margin: 0 0 22px; }
+  .testi blockquote { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.05rem; font-weight: 600; line-height: 1.45; color: var(--ink); margin: 0 0 22px; }
   .testi .who { display: flex; align-items: center; gap: 12px; padding-top: 18px; border-top: 1px solid var(--lavender-100); }
   .testi .who img { width: 42px; height: 42px; border-radius: 50%; object-fit: cover; }
   .testi .who-name { font-weight: 700; color: var(--ink); font-size: 0.92rem; line-height: 1.2; }
@@ -335,7 +335,7 @@
   .faq-side h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; }
   .faq-side p { font-size: 0.96rem; color: var(--muted); line-height: 1.6; margin-bottom: 28px; }
   .faq-contact-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px; box-shadow: var(--shadow-soft); }
-  .faq-contact-card h4 { font-family: 'Manrope', sans-serif; font-size: 1.0rem; font-weight: 800; margin: 0 0 6px; color: var(--ink); }
+  .faq-contact-card h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.0rem; font-weight: 800; margin: 0 0 6px; color: var(--ink); }
   .faq-contact-card p { font-size: 0.88rem; color: var(--muted); margin: 0 0 16px; line-height: 1.5; }
   .faq-contact-card .btn { padding: 12px 22px; font-size: 0.92rem; }
   .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
@@ -343,7 +343,7 @@
   .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; align-self: start; }
   .faq:hover { border-color: rgba(175,75,237,0.30); box-shadow: 0 12px 28px -12px rgba(118,43,164,0.18); }
   .faq[open] { border-color: rgba(175,75,237,0.40); box-shadow: 0 14px 32px -14px rgba(118,43,164,0.22); }
-  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Manrope', sans-serif; line-height: 1.3; }
+  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Geist', 'Manrope', sans-serif; line-height: 1.3; }
   .faq summary::-webkit-details-marker { display: none; }
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
@@ -360,7 +360,7 @@
 
   /* TAB pills */
   .rxcard-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; padding: 0; list-style: none; }
-  .rxcard-tab { background: rgba(255,255,255,0.65); border: 1px solid var(--lavender-100); border-radius: 999px; padding: 9px 16px; font-family: 'Manrope', sans-serif; font-size: 0.84rem; font-weight: 700; color: var(--ink); cursor: pointer; transition: all .2s ease; display: inline-flex; align-items: center; gap: 8px; backdrop-filter: blur(8px); }
+  .rxcard-tab { background: rgba(255,255,255,0.65); border: 1px solid var(--lavender-100); border-radius: 999px; padding: 9px 16px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.84rem; font-weight: 700; color: var(--ink); cursor: pointer; transition: all .2s ease; display: inline-flex; align-items: center; gap: 8px; backdrop-filter: blur(8px); }
   .rxcard-tab:hover { border-color: rgba(175,75,237,0.35); transform: translateY(-1px); }
   .rxcard-tab[aria-selected="true"] { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); border-color: transparent; color: white; box-shadow: 0 10px 24px -8px rgba(175,75,237,0.45); }
   .rxcard-tab .tab-icon { width: 18px; height: 18px; display: grid; place-items: center; }
@@ -370,7 +370,7 @@
   .rxcard-panel-content { display: none; opacity: 0; animation: rxcard-fade .45s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
   .rxcard-panel-content.is-active { display: block; }
   @keyframes rxcard-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-  .rxcard-panel h3 { font-family: 'Manrope', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--ink); margin: 0 0 8px; letter-spacing: -0.01em; }
+  .rxcard-panel h3 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.15rem; font-weight: 800; color: var(--ink); margin: 0 0 8px; letter-spacing: -0.01em; }
   .rxcard-panel p { font-size: 0.94rem; color: var(--muted); line-height: 1.55; margin: 0; }
   .rxcard-panel p strong { color: var(--ink); font-weight: 700; }
 
@@ -382,7 +382,7 @@
   .rxcard-image-frame { position: relative; transform: rotate(-4deg); transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
   .rxcard-image-frame:hover { transform: rotate(-1deg) scale(1.04); }
   .rxcard-image-frame img { width: 100%; max-width: 460px; height: auto; border-radius: 18px; filter: drop-shadow(0 30px 50px rgba(118,43,164,0.30)) drop-shadow(0 8px 16px rgba(40,26,49,0.15)); }
-  .rxcard-savings-badge { position: absolute; top: -18px; right: -14px; background: white; border-radius: 999px; padding: 12px 20px; box-shadow: 0 18px 40px -10px rgba(40,26,49,0.25); display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; font-family: 'Manrope', sans-serif; border: 2px solid var(--brand); transform: rotate(8deg); animation: badge-bounce 4s ease-in-out infinite; }
+  .rxcard-savings-badge { position: absolute; top: -18px; right: -14px; background: white; border-radius: 999px; padding: 12px 20px; box-shadow: 0 18px 40px -10px rgba(40,26,49,0.25); display: flex; flex-direction: column; align-items: center; text-align: center; line-height: 1; font-family: 'Geist', 'Manrope', sans-serif; border: 2px solid var(--brand); transform: rotate(8deg); animation: badge-bounce 4s ease-in-out infinite; }
   @keyframes badge-bounce { 0%,100% { transform: rotate(8deg) translateY(0); } 50% { transform: rotate(8deg) translateY(-6px); } }
   .rxcard-savings-badge .pct { font-size: 1.35rem; font-weight: 900; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .rxcard-savings-badge .lbl { font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-top: 2px; }
@@ -409,7 +409,7 @@
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 30px; margin-bottom: 18px; }
   .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
-  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col h5 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
   .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; transition: color .15s ease; }
   .foot-col a:hover { color: var(--brand); }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
@@ -460,7 +460,7 @@
   .marquee-band::before, .marquee-band::after { content: ""; position: absolute; top: 0; bottom: 0; width: 80px; z-index: 2; pointer-events: none; }
   .marquee-band::before { left: 0; background: linear-gradient(90deg, var(--soft) 0%, transparent 100%); }
   .marquee-band::after { right: 0; background: linear-gradient(-90deg, var(--soft) 0%, transparent 100%); }
-  .marquee-track { display: inline-flex; gap: 44px; white-space: nowrap; animation: marquee-scroll 38s linear infinite; font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-darker); align-items: center; }
+  .marquee-track { display: inline-flex; gap: 44px; white-space: nowrap; animation: marquee-scroll 38s linear infinite; font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-darker); align-items: center; }
   .marquee-track .dot { color: var(--brand); opacity: 0.55; font-size: 1.4rem; }
   .marquee-track .star { color: var(--brand); font-size: 0.85rem; }
   @keyframes marquee-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }

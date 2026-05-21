@@ -23,7 +23,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
   :root {
@@ -36,11 +36,11 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.7; -webkit-font-smoothing: antialiased; }
   a { color: var(--brand-deep); text-decoration: underline; text-decoration-color: rgba(175,75,237,0.3); text-underline-offset: 2px; }
   a:hover { text-decoration-color: var(--brand); }
   img { max-width: 100%; display: block; }
-  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.2; color: var(--ink); }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.2; color: var(--ink); }
   h1 { font-size: clamp(2.4rem, 5vw, 3.4rem); margin-bottom: 16px; letter-spacing: -0.03em; }
   h2 { font-size: clamp(1.4rem, 2.2vw, 1.7rem); margin: 56px 0 14px; }
   h3 { font-size: 1.15rem; margin: 28px 0 10px; font-weight: 700; }
@@ -88,7 +88,7 @@
   /* ============ DOC CONTENT ============ */
   .doc { padding: 48px 0 80px; }
   .doc-toc { background: var(--soft); border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 28px; margin: 0 0 40px; }
-  .doc-toc h3 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-deep); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 12px; }
+  .doc-toc h3 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-deep); text-transform: uppercase; letter-spacing: 0.14em; margin: 0 0 12px; }
   .doc-toc ol { column-count: 2; column-gap: 32px; margin: 0; padding-left: 0; list-style: none; }
   .doc-toc ol li { break-inside: avoid; margin-bottom: 6px; font-size: 0.9rem; }
   .doc-toc a { color: var(--ink); text-decoration: none; }
@@ -118,7 +118,7 @@
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 30px; margin-bottom: 18px; }
   .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; color: var(--muted); margin-bottom: 16px; }
-  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 18px; }
+  .foot-col h5 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 18px; }
   .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; text-decoration: none; transition: color .15s ease; }
   .foot-col a:hover { color: var(--brand); }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }

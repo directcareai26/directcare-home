@@ -28,7 +28,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <!-- Schema -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are peptides?","acceptedAnswer":{"@type":"Answer","text":"Peptides are short chains of amino acids that signal the body to perform specific functions — like releasing growth hormone, accelerating tissue repair, or modulating libido. Peptide therapy uses targeted, clinician-prescribed peptides to support recovery, performance, and longevity goals."}},{"@type":"Question","name":"Are compounded peptides FDA-approved?","acceptedAnswer":{"@type":"Answer","text":"Compounded peptide preparations are not FDA-approved as finished products and have not been evaluated by the FDA for safety or effectiveness as a final compound. Some active ingredients (e.g., semaglutide, tirzepatide, sermorelin, PT-141) are individually FDA-approved. Your clinician will discuss what is appropriate for your goals."}},{"@type":"Question","name":"Are peptides safe?","acceptedAnswer":{"@type":"Answer","text":"When prescribed by a licensed clinician based on your medical history and goals, peptides have a favorable safety profile in most healthy adults. As with any prescription therapy, side effects are possible and clinical monitoring is built into every program."}}]}</script>
@@ -61,10 +61,10 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
   h1 { font-size: clamp(2.4rem, 6.4vw, 4.8rem); }
   h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
   h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
@@ -141,7 +141,7 @@
   .btn-soon.btn-light-on-dark { background: rgba(255,255,255,0.92); color: var(--brand-darker); }
   .btn-soon::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.6; animation: soon-pulse 1.8s ease-in-out infinite; margin-right: 2px; }
   @keyframes soon-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-  .soon-banner { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; background: linear-gradient(135deg, rgba(175,75,237,0.10), rgba(232,111,196,0.10)); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-darker); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
+  .soon-banner { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; background: linear-gradient(135deg, rgba(175,75,237,0.10), rgba(232,111,196,0.10)); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-darker); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
   .soon-banner .dot-live { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); animation: soon-pulse 1.6s ease-in-out infinite; }
 
   /* BUTTONS */
@@ -197,7 +197,7 @@
   .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
   .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
   .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
-  .seal-text strong { font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .seal-text strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
   .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
   @media (max-width: 760px) {
     .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
@@ -225,7 +225,7 @@
   @media (max-width: 540px) { .how-grid { grid-template-columns: 1fr; } }
   .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 26px 22px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
   .how-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
-  .how-num { font-family: 'Manrope', sans-serif; font-size: 2.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
+  .how-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 2.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
   .how-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
   .how-card p { font-size: 0.88rem; line-height: 1.55; }
 
@@ -236,7 +236,7 @@
   .who-visual img { width: 100%; height: 100%; object-fit: cover; }
   .who-visual-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(40,26,49,0.55) 100%); pointer-events: none; }
   .who-visual-card { position: absolute; left: 22px; right: 22px; bottom: 22px; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-radius: 18px; padding: 16px 20px; box-shadow: 0 20px 40px -16px rgba(40,26,49,0.25); }
-  .who-visual-card h4 { font-family: 'Manrope', sans-serif; font-size: 0.98rem; margin: 0 0 4px; color: var(--ink); }
+  .who-visual-card h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.98rem; margin: 0 0 4px; color: var(--ink); }
   .who-visual-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.45; margin: 0; }
   .who-list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 16px; }
   .who-list li { display: flex; gap: 14px; align-items: flex-start; font-size: 1rem; color: var(--ink); line-height: 1.55; }
@@ -252,7 +252,7 @@
   @media (max-width: 900px) { .safety-grid { grid-template-columns: 1fr; gap: 36px; } }
   .safety h2 { color: white; margin-top: 14px; }
   .safety-block { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.7; margin: 0 0 22px; }
-  .safety-block strong { color: white; font-weight: 800; display: block; margin-bottom: 4px; font-family: 'Manrope', sans-serif; font-size: 1.04rem; }
+  .safety-block strong { color: white; font-weight: 800; display: block; margin-bottom: 4px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.04rem; }
   .safety-note { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: var(--radius); padding: 18px 22px; color: rgba(255,255,255,0.78); font-size: 0.92rem; line-height: 1.7; }
 
   /* WHAT IS DCAI */
@@ -280,7 +280,7 @@
   .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; align-self: start; }
   .faq:hover { border-color: rgba(175,75,237,0.30); box-shadow: 0 12px 28px -12px rgba(118,43,164,0.18); }
   .faq[open] { border-color: rgba(175,75,237,0.40); box-shadow: 0 14px 32px -14px rgba(118,43,164,0.22); }
-  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Manrope', sans-serif; line-height: 1.3; }
+  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Geist', 'Manrope', sans-serif; line-height: 1.3; }
   .faq summary::-webkit-details-marker { display: none; }
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
@@ -305,7 +305,7 @@
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 30px; margin-bottom: 18px; }
   .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
-  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col h5 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
   .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; transition: color .15s ease; }
   .foot-col a:hover { color: var(--brand); }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }

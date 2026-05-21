@@ -28,7 +28,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
   :root {
@@ -57,10 +57,10 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
   h1 { font-size: clamp(2.6rem, 7vw, 5.4rem); }
   h2 { font-size: clamp(2rem, 4.2vw, 3.4rem); }
   h3 { font-size: clamp(1.2rem, 2vw, 1.55rem); }
@@ -170,7 +170,7 @@
   .hero-stat { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 12px 18px; border-radius: 999px; color: white; backdrop-filter: blur(10px); }
   .hero-stat .stat-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(175,75,237,0.25); color: #f0c0ff; display: grid; place-items: center; flex-shrink: 0; }
   .hero-stat .stat-text { font-size: 0.86rem; line-height: 1.2; text-align: left; }
-  .hero-stat .stat-text strong { display: block; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: white; }
+  .hero-stat .stat-text strong { display: block; font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: white; }
   .hero-stat .stat-text span { font-size: 0.74rem; color: rgba(255,255,255,0.70); }
   @media (max-width: 760px) {
     .hero { min-height: 80vh; padding: 80px 0 60px; }
@@ -186,7 +186,7 @@
   .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
   .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
   .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
-  .seal-text strong { font-family: 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .seal-text strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
   .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
   @media (max-width: 760px) {
     .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
@@ -202,7 +202,7 @@
   .journey-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
   .journey-card.elev { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-color: rgba(175,75,237,0.30); transform: translateY(-12px); box-shadow: var(--shadow-soft); }
   @media (max-width: 900px) { .journey-card.elev { transform: none; } }
-  .journey-num { font-family: 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
+  .journey-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
   .journey-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
   .journey-card p { font-size: 0.98rem; }
   .journey-note { max-width: 720px; margin: 36px auto 0; padding: 18px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; text-align: center; color: var(--muted); font-size: 0.96rem; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
@@ -227,7 +227,7 @@
   }
   .pe-row-text { padding: 0; }
   .pe-step-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; background: rgba(175,75,237,0.10); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; margin-bottom: 18px; }
-  .pe-step-badge .num { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 0.9rem; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .pe-step-badge .num { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 0.9rem; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .pe-step-badge .lbl { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); }
   .pe-row-text h3 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); margin-bottom: 14px; line-height: 1.15; }
   .pe-row-text p { font-size: 1.02rem; line-height: 1.6; max-width: 480px; }
@@ -244,14 +244,14 @@
   .price-tag .dot-mini { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
   .price-card h3 { font-size: 1.55rem; margin: 14px 0 18px; }
   .price-amt { display: flex; align-items: baseline; gap: 6px; margin-bottom: 6px; }
-  .price-amt .num { font-family: 'Manrope', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.03em; }
+  .price-amt .num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.03em; }
   .price-amt .per { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
   .price-amt .num small { font-size: 1.4rem; font-weight: 800; color: var(--muted); }
   .price-foot { font-size: 0.84rem; color: var(--muted); margin-bottom: 18px; }
   .price-reframe { margin: 0 0 22px; padding: 12px 14px; background: rgba(20,152,58,0.08); border: 1px solid rgba(20,152,58,0.22); border-radius: 12px; display: flex; flex-direction: column; gap: 2px; }
   .reframe-was { font-size: 0.80rem; color: var(--muted); line-height: 1.35; }
   .reframe-was s { color: rgba(91,77,101,0.75); }
-  .reframe-save { font-size: 0.92rem; font-weight: 800; color: var(--green); font-family: 'Manrope', sans-serif; letter-spacing: -0.01em; }
+  .reframe-save { font-size: 0.92rem; font-weight: 800; color: var(--green); font-family: 'Geist', 'Manrope', sans-serif; letter-spacing: -0.01em; }
   .price-list { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
   .price-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); line-height: 1.5; }
   .price-list li svg { flex-shrink: 0; color: var(--green); margin-top: 3px; }
@@ -282,13 +282,13 @@
   .biomarker-cat { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 22px 20px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
   .biomarker-cat:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.35); box-shadow: 0 18px 36px -18px rgba(118,43,164,0.20); }
   .biomarker-cat .ico { width: 38px; height: 38px; border-radius: 10px; background: var(--soft); color: var(--brand-deep); display: grid; place-items: center; margin-bottom: 14px; }
-  .biomarker-cat h4 { font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; color: var(--ink); margin: 0 0 6px; }
+  .biomarker-cat h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; color: var(--ink); margin: 0 0 6px; }
   .biomarker-cat p { font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
 
   /* COMPARISON TABLE */
   .compare-wrap { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.16); }
   .compare-head { display: grid; grid-template-columns: 1.45fr 1fr 1fr; background: linear-gradient(180deg, var(--soft) 0%, white 100%); border-bottom: 1px solid var(--lavender-100); }
-  .compare-head > div { padding: 22px 24px; font-family: 'Manrope', sans-serif; font-weight: 800; }
+  .compare-head > div { padding: 22px 24px; font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; }
   .compare-head .row-label { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; align-self: center; }
   .compare-col-us { text-align: center; color: var(--brand-darker); font-size: 1.05rem; line-height: 1.15; position: relative; }
   .compare-col-us::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 4px; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); }
@@ -334,7 +334,7 @@
   .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; overflow: hidden; transition: border-color .2s ease, box-shadow .2s ease; align-self: start; }
   .faq:hover { border-color: rgba(175,75,237,0.30); box-shadow: 0 12px 28px -12px rgba(118,43,164,0.18); }
   .faq[open] { border-color: rgba(175,75,237,0.40); box-shadow: 0 14px 32px -14px rgba(118,43,164,0.22); }
-  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Manrope', sans-serif; line-height: 1.3; }
+  .faq summary { padding: 16px 20px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: flex-start; gap: 14px; font-family: 'Geist', 'Manrope', sans-serif; line-height: 1.3; }
   .faq summary::-webkit-details-marker { display: none; }
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
@@ -375,7 +375,7 @@
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 30px; margin-bottom: 18px; }
   .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
-  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col h5 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
   .foot-col a { display: block; padding: 6px 0; color: var(--muted); font-size: 0.92rem; transition: color .15s ease; }
   .foot-col a:hover { color: var(--brand); }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }

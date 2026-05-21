@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@500;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
 <style>
   :root {
@@ -60,10 +60,10 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; display: block; }
-  h1, h2, h3, h4, h5 { font-family: 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', 'Manrope', 'Inter', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
   h1 { font-size: clamp(2.4rem, 5.8vw, 4.4rem); }
   h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
   h3 { font-size: clamp(1.15rem, 1.8vw, 1.45rem); }
@@ -107,7 +107,7 @@
   .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
 
   /* BUTTONS */
-  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; text-decoration: none; font-family: 'Manrope', sans-serif; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; text-decoration: none; font-family: 'Geist', 'Manrope', sans-serif; }
   .btn-primary { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; box-shadow: 0 12px 32px -6px rgba(175,75,237,0.50); }
   .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -6px rgba(144,67,191,0.60); }
   .btn-primary-xl { padding: 18px 32px; font-size: 1.05rem; }
@@ -139,13 +139,13 @@
   .pair-card { position: relative; overflow: hidden; border-radius: var(--radius-lg); padding: 36px 32px; box-shadow: var(--shadow-soft); color: white; min-height: 380px; display: flex; flex-direction: column; isolation: isolate; }
   .pair-card.her { background: linear-gradient(160deg, #f9a8c4 0%, var(--her) 50%, var(--her-deep) 100%); }
   .pair-card.him { background: linear-gradient(160deg, #9b85d4 0%, var(--him) 50%, var(--him-deep) 100%); }
-  .pair-card .tag { display: inline-block; background: rgba(255,255,255,0.20); border: 1px solid rgba(255,255,255,0.30); padding: 5px 14px; border-radius: 999px; font-family: 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; align-self: flex-start; }
+  .pair-card .tag { display: inline-block; background: rgba(255,255,255,0.20); border: 1px solid rgba(255,255,255,0.30); padding: 5px 14px; border-radius: 999px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; align-self: flex-start; }
   .pair-card h3 { color: white; font-size: 1.7rem; margin: 16px 0 6px; }
   .pair-card .pair-sub { color: rgba(255,255,255,0.90); font-size: 0.98rem; margin-bottom: 18px; }
   .pair-card ul { list-style: none; padding: 0; margin: 0 0 24px; display: grid; gap: 10px; flex: 1; }
   .pair-card ul li { display: flex; gap: 10px; align-items: flex-start; font-size: 0.96rem; color: white; line-height: 1.4; }
   .pair-card ul li::before { content: "✓"; flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: rgba(255,255,255,0.20); display: grid; place-items: center; font-weight: 800; font-size: 0.8rem; }
-  .pair-card .pair-price { font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.4rem; color: white; margin-bottom: 14px; }
+  .pair-card .pair-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.4rem; color: white; margin-bottom: 14px; }
   .pair-card .pair-price small { font-size: 0.82rem; font-weight: 600; opacity: 0.85; }
   .pair-card .btn { width: 100%; }
 
@@ -154,7 +154,7 @@
   @media (max-width: 820px) { .savings-bar { grid-template-columns: 1fr; text-align: center; } }
   .savings-bar h3 { color: white; font-size: clamp(1.4rem, 2.2vw, 1.9rem); margin-bottom: 8px; }
   .savings-bar p { color: rgba(255,255,255,0.92); margin: 0; font-size: 1.0rem; line-height: 1.5; }
-  .savings-bar .deal-stack { background: rgba(255,255,255,0.10); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.20); border-radius: var(--radius); padding: 22px 24px; font-family: 'Manrope', sans-serif; }
+  .savings-bar .deal-stack { background: rgba(255,255,255,0.10); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.20); border-radius: var(--radius); padding: 22px 24px; font-family: 'Geist', 'Manrope', sans-serif; }
   .savings-bar .deal-row { display: flex; justify-content: space-between; padding: 8px 0; color: rgba(255,255,255,0.88); font-size: 0.94rem; }
   .savings-bar .deal-row + .deal-row { border-top: 1px solid rgba(255,255,255,0.16); }
   .savings-bar .deal-row.total { font-size: 1.15rem; font-weight: 900; color: white; padding-top: 12px; }
@@ -165,7 +165,7 @@
   .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
   @media (max-width: 820px) { .how-grid { grid-template-columns: 1fr; } }
   .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 32px 28px; position: relative; }
-  .how-card .how-num { font-family: 'Manrope', sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
+  .how-card .how-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
   .how-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
   .how-card p { font-size: 0.95rem; line-height: 1.55; }
 
@@ -173,16 +173,16 @@
   .addon-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; margin-top: 28px; }
   .addon-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 24px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
   .addon-card:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.4); box-shadow: 0 12px 28px -10px rgba(118,43,164,0.20); }
-  .addon-card .addon-tag { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; }
+  .addon-card .addon-tag { display: inline-block; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; }
   .addon-card h4 { font-size: 1.1rem; margin-bottom: 4px; }
   .addon-card p { font-size: 0.88rem; margin-bottom: 12px; }
-  .addon-card .addon-price { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.0rem; color: var(--brand-darker); }
+  .addon-card .addon-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 1.0rem; color: var(--brand-darker); }
   .addon-card .addon-price small { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
 
   /* FAQ */
   .faq-wrap { max-width: 820px; margin: 36px auto 0; }
   .faq { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; margin-bottom: 12px; overflow: hidden; }
-  .faq summary { padding: 18px 22px; cursor: pointer; font-weight: 700; font-size: 1.0rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Manrope', sans-serif; }
+  .faq summary { padding: 18px 22px; cursor: pointer; font-weight: 700; font-size: 1.0rem; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-family: 'Geist', 'Manrope', sans-serif; }
   .faq summary::-webkit-details-marker { display: none; }
   .faq summary::after { content: "+"; font-size: 1.4rem; color: var(--brand); flex-shrink: 0; }
   .faq[open] summary::after { content: "−"; }
@@ -203,7 +203,7 @@
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
   .foot-brand img { height: 30px; margin-bottom: 18px; }
   .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
-  .foot-col h5 { font-family: 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col h5 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
   .foot-col a { display: block; font-size: 0.92rem; color: rgba(40,26,49,0.75); padding: 5px 0; }
   .foot-col a:hover { color: var(--brand); }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }

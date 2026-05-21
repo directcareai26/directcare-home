@@ -271,21 +271,23 @@
   .twin-card:hover::before { transform: translateX(100%); }
   .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
   .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
-  .twin-card-body { position: relative; z-index: 2; max-width: 58%; }
-  .twin-card .btn { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+  /* Body always sits to the LEFT of the picture, text left-aligned at every width */
+  .twin-card-body { position: relative; z-index: 2; max-width: 58%; text-align: left; align-items: flex-start; }
+  .twin-card .btn { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; align-self: flex-start; }
   @media (max-width: 720px) {
-    .twin-card { padding: 22px; min-height: 220px; }
-    .twin-card-body { max-width: 62%; }
-    .twin-card-img { width: 34%; max-width: 130px; right: 14px; bottom: 14px; }
+    .twin-card { padding: 20px; min-height: 200px; }
+    .twin-card-body { max-width: 58%; }
+    .twin-card-img { width: 36%; max-width: 140px; right: 14px; bottom: 14px; }
     .twin-card h2 { font-size: 1.2rem; margin-bottom: 12px; }
     .twin-card .btn { padding: 9px 14px; font-size: 0.8rem; }
   }
   @media (max-width: 420px) {
-    .twin-card { padding: 20px; min-height: 200px; }
-    .twin-card-body { max-width: 100%; padding-bottom: 110px; }
-    .twin-card-img { width: 90px; max-width: 90px; aspect-ratio: 1/1.2; right: 18px; bottom: 18px; }
-    .twin-card h2 { font-size: 1.15rem; }
-    .twin-card .btn { padding: 8px 14px; font-size: 0.78rem; }
+    .twin-card { padding: 18px; min-height: 180px; }
+    .twin-card-body { max-width: 56%; }
+    .twin-card-img { width: 38%; max-width: 120px; right: 12px; bottom: 12px; }
+    .twin-card h2 { font-size: 1.05rem; margin-bottom: 10px; line-height: 1.15; }
+    .twin-card .btn { padding: 7px 12px; font-size: 0.74rem; }
+    .twin-card-eyebrow { font-size: 0.66rem; margin-bottom: 8px; }
   }
   @media (max-width: 540px) {
     .hero { padding-top: 28px; padding-bottom: 16px; }

@@ -38,8 +38,6 @@ SITEMAP_STATIC_PAGES: list[tuple[str, str, str]] = [
     ("0.9", "monthly", "/womans-hair-loss/"),
     ("0.9", "monthly", "/blood-test/"),
     ("0.8", "monthly", "/supplements/"),
-    ("0.8", "monthly", "/mens-health/"),
-    ("0.8", "monthly", "/womens-health/"),
     ("0.8", "monthly", "/chronic-care/"),
     ("0.7", "monthly", "/peptides"),
     ("0.7", "monthly", "/together"),

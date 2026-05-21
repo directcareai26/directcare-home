@@ -25,7 +25,15 @@
 
     { "source": "/chronicconditioncare", "destination": "/chronic-care/", "permanent": true },
     { "source": "/chronicconditioncare/", "destination": "/chronic-care/", "permanent": true },
-    { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true }
+    { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true },
+
+    { "source": "/womens-health", "destination": "/hormone-replacement-therapy", "permanent": true },
+    { "source": "/womens-health/", "destination": "/hormone-replacement-therapy", "permanent": true },
+    { "source": "/womens-health/:path*", "destination": "/hormone-replacement-therapy", "permanent": true },
+
+    { "source": "/mens-health", "destination": "/testosterone-replacement-therapy", "permanent": true },
+    { "source": "/mens-health/", "destination": "/testosterone-replacement-therapy", "permanent": true },
+    { "source": "/mens-health/:path*", "destination": "/testosterone-replacement-therapy", "permanent": true }
   ],
   "rewrites": [
     { "source": "/start-hrt", "destination": "/hormone-replacement-therapy" },
@@ -36,14 +44,6 @@
 
     { "source": "/blood-labs", "destination": "/blood-test" },
     { "source": "/blood-labs/", "destination": "/blood-test" },
-
-    { "source": "/womens-health", "destination": "https://women.directcare.ai/womens-health/" },
-    { "source": "/womens-health/", "destination": "https://women.directcare.ai/womens-health/" },
-    { "source": "/womens-health/:path*", "destination": "https://women.directcare.ai/womens-health/:path*" },
-
-    { "source": "/mens-health", "destination": "https://mens.directcare.ai/mens-health/" },
-    { "source": "/mens-health/", "destination": "https://mens.directcare.ai/mens-health/" },
-    { "source": "/mens-health/:path*", "destination": "https://mens.directcare.ai/mens-health/:path*" },
 
     { "source": "/mens-hair-loss", "destination": "https://mens-hair-loss.vercel.app/" },
     { "source": "/mens-hair-loss/", "destination": "https://mens-hair-loss.vercel.app/" },

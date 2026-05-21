@@ -140,9 +140,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform .2s ease;
+    transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease;
+    isolation: isolate;
   }
-  .twin-card:hover { transform: translateY(-2px); }
+  .twin-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -22px rgba(118,43,164,0.30);
+  }
+  /* Glow shimmer that sweeps across the card on hover */
+  .twin-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.45) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform .9s cubic-bezier(0.22, 1, 0.36, 1);
+    z-index: 1;
+    pointer-events: none;
+  }
+  .twin-card:hover::before { transform: translateX(100%); }
   .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
   .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
   .twin-card-body { position: relative; z-index: 2; max-width: 58%; }
@@ -152,7 +168,9 @@
     text-transform: uppercase; letter-spacing: 0.10em;
     color: var(--brand-deep);
     margin-bottom: 10px;
+    transition: letter-spacing .3s ease;
   }
+  .twin-card:hover .twin-card-eyebrow { letter-spacing: 0.14em; }
   .twin-card h2 {
     font-size: clamp(1.35rem, 2vw, 1.7rem);
     font-weight: 500;
@@ -160,7 +178,11 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
-  .twin-card h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .twin-card h2 em {
+    font-style: italic; color: var(--brand-deep); font-weight: 500;
+    transition: color .3s ease;
+  }
+  .twin-card:hover h2 em { color: var(--brand-darker); }
   .twin-card .btn {
     align-self: flex-start;
     padding: 10px 20px;
@@ -169,9 +191,12 @@
     color: var(--bg);
     font-size: 0.86rem; font-weight: 600;
     display: inline-flex; align-items: center; gap: 6px;
-    transition: background .15s ease, transform .12s ease;
+    transition: background .25s ease, padding-right .25s ease;
   }
-  .twin-card .btn:hover { background: var(--brand-darker); transform: translateX(2px); }
+  .twin-card:hover .btn {
+    background: var(--brand-darker);
+    padding-right: 24px;
+  }
   .twin-card-img {
     position: absolute;
     right: 16px; bottom: 16px;
@@ -181,8 +206,18 @@
     aspect-ratio: 4/5;
     z-index: 1;
     box-shadow: 0 12px 28px -10px rgba(36,20,50,0.20);
+    transition: transform .5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease;
   }
-  .twin-card-img img { width: 100%; height: 100%; object-fit: cover; }
+  .twin-card:hover .twin-card-img {
+    transform: translateY(-2px) rotate(-1.5deg);
+    box-shadow: 0 20px 40px -12px rgba(36,20,50,0.32);
+  }
+  .twin-card-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .twin-card:hover .twin-card-img img { transform: scale(1.08); }
 
   /* 4-ICON QUICK-LINK ROW */
   .quick-icons {
@@ -200,21 +235,27 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    transition: transform .15s ease, border-color .2s ease;
+    transition: transform .2s ease, background .25s ease, border-color .25s ease, box-shadow .25s ease;
   }
   .quick-icon:hover {
-    transform: translateY(-2px);
-    border-color: rgba(175,75,237,0.30);
+    transform: translateY(-3px);
+    background: var(--brand-darker);
+    border-color: var(--brand-darker);
+    box-shadow: 0 14px 28px -10px rgba(118,43,164,0.45);
   }
+  .quick-icon:hover .quick-icon-text { color: white; }
+  .quick-icon:hover .quick-icon-thumb { box-shadow: 0 0 0 2px rgba(255,255,255,0.30); }
   .quick-icon-thumb {
     width: 42px; height: 42px;
     border-radius: 10px;
     background: var(--bg-2);
     overflow: hidden;
     flex-shrink: 0;
+    transition: box-shadow .25s ease, transform .35s cubic-bezier(0.22, 1, 0.36, 1);
   }
+  .quick-icon:hover .quick-icon-thumb { transform: scale(1.04); }
   .quick-icon-thumb img { width: 100%; height: 100%; object-fit: cover; }
-  .quick-icon-text { font-size: 0.92rem; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); line-height: 1.2; }
+  .quick-icon-text { font-size: 0.92rem; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); line-height: 1.2; transition: color .25s ease; }
 
   /* DARK HERO PROMO */
   .dark-promo {
@@ -324,7 +365,7 @@
     letter-spacing: 0.08em;
   }
 
-  /* FEATURED BLOCK (cream TRT promo) */
+  /* FEATURED BLOCK (cream TRT promo) — with faded atmospheric image */
   .featured-block {
     background: var(--bg-cream);
     border-radius: var(--radius-xl);
@@ -333,7 +374,29 @@
     text-align: center;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
   }
+  .featured-block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png');
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.18;
+    z-index: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+  .featured-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 60% at 50% 40%, rgba(240,232,216,0.85) 0%, rgba(240,232,216,0.55) 60%, transparent 100%);
+    z-index: 0;
+    pointer-events: none;
+  }
+  .featured-block > * { position: relative; z-index: 2; }
   .featured-block-eyebrow {
     font-size: 0.72rem; font-weight: 600;
     text-transform: uppercase; letter-spacing: 0.10em;

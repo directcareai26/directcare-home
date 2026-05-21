@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "slug": "semaglutide-tirzepatide-difference",
+      "title": "Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs",
+      "excerpt": "Same weekly injection, different mechanism. Why your hormone panel — not just BMI — should drive the choice between semaglutide and tirzepatide.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-05-21",
+      "dateLabel": "May 21, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "semaglutide",
+        "tirzepatide",
+        "GLP-1",
+        "weight loss",
+        "compounded GLP-1",
+        "Wegovy alternative",
+        "Zepbound alternative",
+        "GIP/GLP-1 agonist"
+      ]
+    },
+    {
+      "slug": "hrt-after-40-what-actually-changes",
+      "title": "HRT after 40: what actually changes when estradiol and progesterone come back online",
+      "excerpt": "The bloodwork shifts, the symptoms shift, and so does your protocol. A clinician's plain-English breakdown of what to expect month by month.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-05-20",
+      "dateLabel": "May 20, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png",
+      "keywords": [
+        "HRT",
+        "menopause",
+        "estradiol",
+        "progesterone",
+        "perimenopause",
+        "hormone replacement therapy",
+        "hot flashes",
+        "bioidentical hormones"
+      ]
+    },
+    {
+      "slug": "trt-vs-enclomiphene-which-protocol",
+      "title": "TRT vs. enclomiphene: which testosterone protocol is right for you?",
+      "excerpt": "Injectable testosterone, oral pills, and natural-pathway therapy each move your numbers differently. Here's how a clinician decides which one fits your bloodwork and your life.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-05-19",
+      "dateLabel": "May 19, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "TRT",
+        "enclomiphene",
+        "testosterone therapy",
+        "low T",
+        "clomid alternative"
+      ]
+    }
+  ]
+}

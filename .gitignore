@@ -1,6 +1,5 @@
+__pycache__/
+*.pyc
 .DS_Store
-.vercel
-node_modules
-package.json
-package-lock.json
-upload-*.mjs
+.env
+.env.local

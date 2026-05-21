@@ -39,7 +39,6 @@
     { "source": "/chronic-care/", "destination": "https://chronic-care-azure.vercel.app/" },
     { "source": "/chronic-care/:path*", "destination": "https://chronic-care-azure.vercel.app/:path*" },
 
-    { "source": "/blog/:slug", "destination": "/blog/:slug.html" },
-    { "source": "/blog/:slug/", "destination": "/blog/:slug.html" }
+    { "source": "/blog/:slug([a-z0-9][a-z0-9-]+)", "destination": "/blog/:slug.html" }
   ]
 }

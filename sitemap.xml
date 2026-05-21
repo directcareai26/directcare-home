@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.directcare.ai/</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -46,21 +47,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.directcare.ai/peptides</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/together</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/chronic-care/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.directcare.ai/mens-health/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -71,24 +57,25 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/chronic-care/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/peptides</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/together</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/blog/</loc>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/safety/</loc>
@@ -114,5 +101,23 @@
     <loc>https://www.directcare.ai/ccpa/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</loc>
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>

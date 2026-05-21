@@ -24,6 +24,32 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 BLOG_DIR = REPO_ROOT / "blog"
 TEMPLATE_PATH = BLOG_DIR / "_post-template.html"
 MANIFEST_PATH = BLOG_DIR / "posts.json"
+SITEMAP_PATH = REPO_ROOT / "sitemap.xml"
+
+# Pages that should appear in sitemap.xml in addition to the blog posts.
+# (priority, changefreq, path)
+SITEMAP_STATIC_PAGES: list[tuple[str, str, str]] = [
+    ("1.0", "weekly", "/"),
+    ("0.9", "monthly", "/hormone-replacement-therapy"),
+    ("0.9", "monthly", "/testosterone-replacement-therapy"),
+    ("0.9", "monthly", "/weight-loss/"),
+    ("0.9", "monthly", "/surge-max/"),
+    ("0.9", "monthly", "/mens-hair-loss/"),
+    ("0.9", "monthly", "/womans-hair-loss/"),
+    ("0.9", "monthly", "/blood-test/"),
+    ("0.8", "monthly", "/supplements/"),
+    ("0.8", "monthly", "/mens-health/"),
+    ("0.8", "monthly", "/womens-health/"),
+    ("0.8", "monthly", "/chronic-care/"),
+    ("0.7", "monthly", "/peptides"),
+    ("0.7", "monthly", "/together"),
+    ("0.6", "daily",   "/blog/"),
+    ("0.4", "yearly",  "/safety/"),
+    ("0.3", "yearly",  "/privacy-policy/"),
+    ("0.3", "yearly",  "/terms-and-conditions/"),
+    ("0.3", "yearly",  "/medical-consent/"),
+    ("0.3", "yearly",  "/ccpa/"),
+]
 
 
 # ---- markdown-lite -> HTML ---------------------------------------------------
@@ -221,7 +247,48 @@ def write_post(payload: dict[str, Any]) -> Path:
     post_path = BLOG_DIR / f"{entry['slug']}.html"
     post_path.write_text(html, encoding="utf-8")
     update_manifest(entry)
+    update_sitemap()
     return post_path
+
+
+def update_sitemap() -> None:
+    """Regenerate sitemap.xml from SITEMAP_STATIC_PAGES + the current blog manifest."""
+    posts: list[dict[str, Any]] = []
+    if MANIFEST_PATH.exists():
+        try:
+            posts = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")).get("posts", [])
+        except json.JSONDecodeError:
+            posts = []
+
+    today_iso = dt.date.today().isoformat()
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+
+    for priority, freq, path in SITEMAP_STATIC_PAGES:
+        lastmod = today_iso if path in ("/", "/blog/") else None
+        lines.append("  <url>")
+        lines.append(f"    <loc>https://www.directcare.ai{path}</loc>")
+        if lastmod:
+            lines.append(f"    <lastmod>{lastmod}</lastmod>")
+        lines.append(f"    <changefreq>{freq}</changefreq>")
+        lines.append(f"    <priority>{priority}</priority>")
+        lines.append("  </url>")
+
+    for p in posts:
+        slug = p.get("slug")
+        date = p.get("date", today_iso)
+        if not slug:
+            continue
+        lines.append("  <url>")
+        lines.append(f"    <loc>https://www.directcare.ai/blog/{slug}</loc>")
+        lines.append(f"    <lastmod>{date}</lastmod>")
+        lines.append("    <changefreq>monthly</changefreq>")
+        lines.append("    <priority>0.5</priority>")
+        lines.append("  </url>")
+
+    lines.append("</urlset>")
+    lines.append("")
+    SITEMAP_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
 def update_manifest(entry: dict[str, Any]) -> None:

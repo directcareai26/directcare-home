@@ -103,7 +103,7 @@
     color: var(--brand-deep);
   }
 
-  /* FEATURE GRID — 2 hero cards side by side */
+  /* FEATURE GRID — 2 full-image hero cards side by side */
   .feature-grid {
     padding: 0 14px 18px;
     display: grid;
@@ -114,54 +114,87 @@
     position: relative;
     border-radius: 18px;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 280px;
+    aspect-ratio: 3/4.2;
     text-decoration: none;
-    color: var(--ink);
+    color: white;
+    isolation: isolate;
     transition: transform .15s ease;
+    display: block;
   }
   .feature-card:active { transform: scale(0.985); }
-  .feature-img {
-    height: 165px;
-    overflow: hidden;
-    background: var(--surface);
+  .feature-card img.feature-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .feature-img img { width: 100%; height: 100%; object-fit: cover; }
+  .feature-card:hover img.feature-img { transform: scale(1.04); }
+  /* Gradient overlay — top transparent, bottom dark for legibility */
+  .feature-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg,
+      rgba(15,14,16,0.20) 0%,
+      rgba(15,14,16,0.05) 30%,
+      rgba(15,14,16,0.55) 70%,
+      rgba(15,14,16,0.92) 100%);
+    z-index: 1;
+  }
   .feature-body {
-    flex: 1;
-    padding: 14px 14px 16px;
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 16px;
+    z-index: 2;
+    color: white;
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 12px;
   }
   .feature-tag {
-    font-size: 0.66rem;
+    align-self: flex-start;
+    background: rgba(255,255,255,0.20);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.30);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 0.62rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 2px;
+    letter-spacing: 0.10em;
+    color: white;
   }
   .feature-name {
-    font-size: 1.05rem;
-    font-weight: 700;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-    margin-bottom: 4px;
+    font-family: 'Geist', sans-serif;
+    font-size: 1.42rem;
+    font-weight: 800;
+    line-height: 1.0;
+    letter-spacing: -0.035em;
+    color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.30);
   }
-  .feature-price {
-    font-size: 0.84rem;
-    font-weight: 500;
-    margin-bottom: 12px;
+  .feature-name .accent {
+    display: block;
+    font-style: italic;
+    font-weight: 800;
+    background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #af4bed 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  .feature-price strong { font-weight: 700; }
   .feature-cta {
-    margin-top: auto;
     align-self: flex-start;
     padding: 9px 16px;
     border-radius: 999px;
-    font-size: 0.82rem;
-    font-weight: 600;
+    background: white;
+    color: var(--ink);
+    font-family: 'Geist', sans-serif;
+    font-size: 0.80rem;
+    font-weight: 700;
     letter-spacing: -0.005em;
     display: inline-flex;
     align-items: center;
@@ -172,29 +205,7 @@
     font-size: 0.85rem;
     transition: transform .15s ease;
   }
-  /* HER (HRT) — cream/light */
-  .feature-card.her {
-    background: white;
-    border: 1px solid var(--line);
-  }
-  .feature-card.her .feature-tag { color: var(--brand-deep); }
-  .feature-card.her .feature-cta {
-    background: var(--brand);
-    color: white;
-  }
-  /* HIM (TRT) — dark inverse */
-  .feature-card.him {
-    background: var(--ink);
-    color: white;
-  }
-  .feature-card.him .feature-tag { color: #d185ff; }
-  .feature-card.him .feature-name { color: white; }
-  .feature-card.him .feature-price { color: rgba(255,255,255,0.72); }
-  .feature-card.him .feature-price strong { color: white; }
-  .feature-card.him .feature-cta {
-    background: white;
-    color: var(--ink);
-  }
+  .feature-card:active .feature-cta::after { transform: translateX(2px); }
 
   /* CATEGORY LIST (Hims-style rows) */
   .cat-list {
@@ -514,27 +525,21 @@
   <h1>The care you've <em>always deserved.</em></h1>
 </section>
 
-<!-- FEATURE GRID — 2 hero cards (HRT + TRT) -->
+<!-- FEATURE GRID — 2 full-image hero cards (HRT + TRT) -->
 <section class="feature-grid">
-  <a class="feature-card her" href="/hormone-replacement-therapy">
-    <div class="feature-img">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT for women" loading="eager" />
-    </div>
+  <a class="feature-card" href="/hormone-replacement-therapy">
+    <img class="feature-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT for women" loading="eager" />
     <div class="feature-body">
       <span class="feature-tag">For her</span>
-      <span class="feature-name">Hormone Replacement</span>
-      <span class="feature-price">From <strong>$89</strong> / mo</span>
+      <h3 class="feature-name">Get your<span class="accent">balance back.</span></h3>
       <span class="feature-cta">Start HRT</span>
     </div>
   </a>
-  <a class="feature-card him" href="/testosterone-replacement-therapy">
-    <div class="feature-img">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT for men" loading="eager" />
-    </div>
+  <a class="feature-card" href="/testosterone-replacement-therapy">
+    <img class="feature-img" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT for men" loading="eager" />
     <div class="feature-body">
       <span class="feature-tag">For him</span>
-      <span class="feature-name">Testosterone (TRT)</span>
-      <span class="feature-price"><strong>$169–$189</strong> / mo</span>
+      <h3 class="feature-name">Get your<span class="accent">edge back.</span></h3>
       <span class="feature-cta">Restore T</span>
     </div>
   </a>

@@ -170,7 +170,8 @@
 
   /* Quick-category boxes under the hero text */
   /* Product-tile quick categories — image fills, white text over gradient */
-  .hero-quick-cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; position: relative; z-index: 2; }
+  .hero-quick-cats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 28px; position: relative; z-index: 2; }
+  .hero-bottom { margin-top: 40px; text-align: center; position: relative; z-index: 2; }
   @media (max-width: 900px) { .hero-quick-cats { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; } }
   @media (max-width: 540px) { .hero-quick-cats { grid-template-columns: 1fr; gap: 12px; } }
   .hero-quick-cat { position: relative; display: block; aspect-ratio: 4/5; border-radius: 20px; overflow: hidden; text-decoration: none; color: white; isolation: isolate; box-shadow: 0 16px 40px -16px rgba(40,26,49,0.30); transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease; }
@@ -624,34 +625,12 @@
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="eyebrow rise"><span class="dot"></span> Physician Care · Direct-To-You</span>
         <h1 class="rise d1">Modern healthcare,<br/><span class="accent hero-rotator" id="hero-rotator" data-words="on your terms.|made personal.|directly to you.|truly yours."><span class="hero-rotator-word is-visible">on your terms.</span></span></h1>
-        <p class="hero-sub rise d2">One platform for <strong>weight loss, hormones, sexual health, hair regrowth, supplements, blood labs and chronic care</strong> — every protocol clinician-prescribed, compounded in the USA, and shipped directly to your door. No insurance, no waiting rooms, no guesswork.</p>
-        <div class="hero-cta-row rise d3">
-          <a href="#offerings" class="btn btn-primary btn-primary-xl pulse-glow magnetic">Find your treatment →</a>
-          <a href="#how" class="btn btn-ghost btn-primary-xl magnetic">How it works</a>
-        </div>
-        <div class="hero-trust rise d4">
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-            US-licensed clinicians
-          </span>
-          <span class="hero-trust-divider"></span>
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            HIPAA-compliant
-          </span>
-          <span class="hero-trust-divider"></span>
-          <span class="hero-trust-item">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/></svg>
-            Compounded in the USA
-          </span>
-        </div>
       </div>
     </div>
 
-    <!-- 4 Quick-category boxes (scroll to offering on click) -->
-    <div class="hero-quick-cats rise d4" role="navigation" aria-label="Top categories">
+    <!-- 4 Quick-category boxes (now directly under the headline) -->
+    <div class="hero-quick-cats rise d2" role="navigation" aria-label="Top categories">
       <a class="hero-quick-cat" href="/hormone-replacement-therapy">
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="HRT for women" loading="eager" />
         <div class="hero-quick-cat-body">
@@ -696,6 +675,15 @@
           </div>
         </div>
       </a>
+    </div>
+
+    <!-- Subtitle + CTAs — positioned above the LegitScript trust bar -->
+    <div class="hero-bottom rise d3">
+      <p class="hero-sub">One platform for <strong>weight loss, hormones, sexual health, hair regrowth, supplements, blood labs and chronic care</strong> — every protocol clinician-prescribed, compounded in the USA, and shipped directly to your door. No insurance, no waiting rooms, no guesswork.</p>
+      <div class="hero-cta-row">
+        <a href="#offerings" class="btn btn-primary btn-primary-xl pulse-glow magnetic">Find your treatment →</a>
+        <a href="#how" class="btn btn-ghost btn-primary-xl magnetic">How it works</a>
+      </div>
     </div>
   </div>
 </header>

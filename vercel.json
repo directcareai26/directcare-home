@@ -39,6 +39,7 @@
     { "source": "/chronic-care/", "destination": "https://chronic-care-azure.vercel.app/" },
     { "source": "/chronic-care/:path*", "destination": "https://chronic-care-azure.vercel.app/:path*" },
 
+    { "source": "/blog-test-rewrite", "destination": "/blog/posts.json" },
     { "source": "/blog/trt-vs-enclomiphene-which-protocol", "destination": "/blog/trt-vs-enclomiphene-which-protocol.html" },
     { "source": "/blog/hrt-after-40-what-actually-changes", "destination": "/blog/hrt-after-40-what-actually-changes.html" },
     { "source": "/blog/semaglutide-tirzepatide-difference", "destination": "/blog/semaglutide-tirzepatide-difference.html" },

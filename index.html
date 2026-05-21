@@ -121,7 +121,14 @@
   .nav-menu a { display: block; padding: 9px 20px; font-size: 0.9rem; color: var(--ink); font-weight: 500; }
   .nav-menu a:hover { background: var(--bg-2); color: var(--brand-deep); }
   .nav-menu a.view-all { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 12px; color: var(--brand-deep); font-weight: 700; }
-  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  .nav-login {
+    font-size: 0.88rem; font-weight: 600; color: var(--ink);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 999px;
+    transition: background .2s ease, color .2s ease;
+  }
+  .nav-login:hover { background: var(--bg-2); color: var(--brand-deep); }
+  .nav-login svg { width: 14px; height: 14px; flex-shrink: 0; }
   /* Mobile hamburger */
   .mobile-toggle {
     display: none;
@@ -138,7 +145,14 @@
   @media (max-width: 820px) {
     .nav-links { display: none; }
     .mobile-toggle { display: inline-flex; }
-    .nav-login { display: none; }
+    .nav-login {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%);
+      color: white;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      box-shadow: 0 6px 14px -4px rgba(118,43,164,0.40);
+    }
+    .nav-login:hover { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; }
   }
   .mobile-drawer {
     position: fixed; top: 0; left: 0; right: 0; bottom: 0;
@@ -258,12 +272,20 @@
   .twin-card.lavender { background: linear-gradient(135deg, #efe0fa 0%, #e1c8f5 100%); }
   .twin-card.cream { background: linear-gradient(135deg, #f0e6d2 0%, #e8d6b0 100%); }
   .twin-card-body { position: relative; z-index: 2; max-width: 58%; }
-  @media (max-width: 540px) {
-    .twin-card { padding: 22px; min-height: 200px; }
-    .twin-card-body { max-width: 60%; }
-    .twin-card-img { width: 38%; max-width: 150px; right: 14px; bottom: 14px; }
-    .twin-card h2 { font-size: 1.25rem; margin-bottom: 12px; }
-    .twin-card .btn { padding: 9px 16px; font-size: 0.82rem; }
+  .twin-card .btn { white-space: nowrap; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+  @media (max-width: 720px) {
+    .twin-card { padding: 22px; min-height: 220px; }
+    .twin-card-body { max-width: 62%; }
+    .twin-card-img { width: 34%; max-width: 130px; right: 14px; bottom: 14px; }
+    .twin-card h2 { font-size: 1.2rem; margin-bottom: 12px; }
+    .twin-card .btn { padding: 9px 14px; font-size: 0.8rem; }
+  }
+  @media (max-width: 420px) {
+    .twin-card { padding: 20px; min-height: 200px; }
+    .twin-card-body { max-width: 100%; padding-bottom: 110px; }
+    .twin-card-img { width: 90px; max-width: 90px; aspect-ratio: 1/1.2; right: 18px; bottom: 18px; }
+    .twin-card h2 { font-size: 1.15rem; }
+    .twin-card .btn { padding: 8px 14px; font-size: 0.78rem; }
   }
   @media (max-width: 540px) {
     .hero { padding-top: 28px; padding-bottom: 16px; }
@@ -1161,7 +1183,10 @@
       <a class="nav-link" href="/supplements/">Supplements</a>
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
-    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal · Log in">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      Log in
+    </a>
     <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
     </button>
@@ -1208,7 +1233,7 @@
       <div class="twin-card-body">
         <span class="twin-card-eyebrow">For women</span>
         <h2>Whole-woman care, <em>built around your bloodwork.</em></h2>
-        <span class="btn">Explore women's health →</span>
+        <span class="btn">Women's health →</span>
       </div>
       <div class="twin-card-img">
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="Women's health" loading="eager" />
@@ -1218,7 +1243,7 @@
       <div class="twin-card-body">
         <span class="twin-card-eyebrow">For men</span>
         <h2>Total care, <em>tuned to your levels.</em></h2>
-        <span class="btn">Explore men's health →</span>
+        <span class="btn">Men's health →</span>
       </div>
       <div class="twin-card-img">
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="Men's health" loading="eager" />

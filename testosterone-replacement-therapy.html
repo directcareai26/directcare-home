@@ -383,6 +383,19 @@
     .portal-btn .login-label { display: inline; }
     .mobile-toggle { margin-left: -10px; }
   }
+
+  /* Dropdown hover-bridge fix — keep .nav-dropdown:hover true when the cursor crosses the gap to .nav-menu */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -8px; right: -8px;
+    height: 18px;
+    pointer-events: auto;
+  }
+  .nav-dropdown:not(:hover):not(:focus-within)::after { pointer-events: none; }
+  .nav-menu { top: calc(100% + 12px) !important; }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

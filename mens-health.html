@@ -199,6 +199,19 @@
   .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
   .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
   .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
+
+  /* Dropdown hover-bridge fix — keep .nav-dropdown:hover true when the cursor crosses the gap to .nav-menu */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -8px; right: -8px;
+    height: 18px;
+    pointer-events: auto;
+  }
+  .nav-dropdown:not(:hover):not(:focus-within)::after { pointer-events: none; }
+  .nav-menu { top: calc(100% + 12px) !important; }
 </style>
 
 <!-- FlexOffers AdvertiserMax click tracking -->

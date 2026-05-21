@@ -17,19 +17,19 @@
 
 <style>
   :root {
-    --bg: #faf6f0;            /* warm cream — like Hims */
+    --bg: #faf6f0;            /* warm cream */
     --surface: #ffffff;
-    --ink: #0f0e10;           /* near-black */
-    --ink-soft: #3d3a3f;
-    --muted: #6b6770;
-    --line: rgba(15,14,16,0.10);
-    --line-strong: rgba(15,14,16,0.18);
+    --ink: #241432;           /* deep eggplant — replaces harsh black */
+    --ink-soft: #4a3760;
+    --muted: #6b5c7a;
+    --line: rgba(36,20,50,0.10);
+    --line-strong: rgba(36,20,50,0.18);
     --brand: #af4bed;
     --brand-deep: #762ba4;
     --brand-darker: #44215A;
-    --accent: #d99b1f;        /* warm Hims-orange-adjacent for highlights */
-    --dark-section: #1f1d1f;
-    --dark-section-2: #2a262d;
+    --accent: #d99b1f;
+    --dark-section: #3a2354;  /* mid eggplant */
+    --dark-section-2: #4a2c6b;
     --radius: 14px;
     --radius-lg: 22px;
     --shadow-sm: 0 1px 2px rgba(15,14,16,0.05);
@@ -48,7 +48,7 @@
   }
   a { color: inherit; text-decoration: none; }
   img { display: block; max-width: 100%; }
-  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.05; font-weight: 700; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.05; font-weight: 500; }
   p { margin: 0; }
 
   /* TEST BANNER */
@@ -92,14 +92,14 @@
   }
   .hero-title h1 {
     font-size: 2.4rem;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.0;
     color: var(--ink);
     letter-spacing: -0.035em;
   }
   .hero-title h1 em {
     font-style: italic;
-    font-weight: 800;
+    font-weight: 500;
     color: var(--brand-deep);
   }
 
@@ -171,7 +171,7 @@
   .feature-name {
     font-family: 'Geist', sans-serif;
     font-size: 1.42rem;
-    font-weight: 800;
+    font-weight: 500;
     line-height: 1.0;
     letter-spacing: -0.035em;
     color: white;
@@ -180,7 +180,7 @@
   .feature-name .accent {
     display: block;
     font-style: italic;
-    font-weight: 800;
+    font-weight: 500;
     background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #af4bed 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -232,7 +232,7 @@
   }
   .cat-thumb img { width: 100%; height: 100%; object-fit: cover; }
   .cat-text { display: flex; flex-direction: column; gap: 2px; }
-  .cat-name { font-size: 1.06rem; font-weight: 600; color: var(--ink); letter-spacing: -0.015em; }
+  .cat-name { font-size: 1.06rem; font-weight: 500; color: var(--ink); letter-spacing: -0.015em; }
   .cat-sub { font-size: 0.85rem; color: var(--muted); }
   .cat-arrow { color: var(--ink-soft); display: grid; place-items: center; }
   .cat-arrow svg { width: 16px; height: 16px; }
@@ -270,12 +270,12 @@
     margin-bottom: 14px;
   }
   .promo-dark h2 {
-    font-size: 2.2rem; font-weight: 800;
+    font-size: 2.2rem; font-weight: 500;
     line-height: 1.02; letter-spacing: -0.035em;
     color: white;
   }
   .promo-dark h2 em {
-    font-style: italic; font-weight: 800;
+    font-style: italic; font-weight: 500;
     background: linear-gradient(135deg, #d185ff 0%, #f7c2ff 100%);
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
@@ -325,7 +325,7 @@
     margin-bottom: 8px;
   }
   .pill-card h3 {
-    font-size: 1.45rem; font-weight: 700; line-height: 1.05; letter-spacing: -0.025em;
+    font-size: 1.45rem; font-weight: 500; line-height: 1.05; letter-spacing: -0.025em;
     color: var(--ink); margin-bottom: 14px;
   }
   .pill-card p {
@@ -371,13 +371,13 @@
     margin-bottom: 10px;
   }
   .labs h2 {
-    font-size: 2rem; font-weight: 800;
+    font-size: 2rem; font-weight: 500;
     line-height: 1.02; letter-spacing: -0.03em;
     color: white;
     margin-bottom: 8px;
   }
   .labs h2 em {
-    font-style: italic; font-weight: 800;
+    font-style: italic; font-weight: 500;
     background: linear-gradient(135deg, #d185ff 0%, #f7c2ff 100%);
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   }
@@ -407,12 +407,12 @@
     padding: 36px 22px 18px;
   }
   .section-title h2 {
-    font-size: 1.85rem; font-weight: 800;
+    font-size: 1.85rem; font-weight: 500;
     line-height: 1.05; letter-spacing: -0.03em;
     color: var(--ink);
   }
   .section-title h2 em {
-    font-style: italic; font-weight: 800;
+    font-style: italic; font-weight: 500;
     color: var(--brand-deep);
   }
   .section-title p {
@@ -462,7 +462,7 @@
     text-align: left;
   }
   .final-cta h2 {
-    font-size: 1.55rem; font-weight: 700; letter-spacing: -0.025em;
+    font-size: 1.55rem; font-weight: 500; letter-spacing: -0.025em;
     color: var(--ink);
     margin-bottom: 8px;
     line-height: 1.05;

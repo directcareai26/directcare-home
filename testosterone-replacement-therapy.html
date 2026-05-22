@@ -876,6 +876,114 @@
       box-shadow: none !important;
     }
   }
+
+  /* ============================================================
+     VARIANT B — DEEPER PURPLE TREATMENT (men's pages)
+     Appended last so cascade wins. Drops the warm lavender start
+     of CTAs/accents for deep purple → aubergine. Cool grey-lavender
+     section bg replaces the warm one. Same brand family.
+     ============================================================ */
+
+  /* Hero band deepens — near-aubergine with deeper overlay */
+  .hero { background: #1d0f2c !important; }
+  .hero-overlay {
+    background:
+      linear-gradient(180deg, rgba(20,8,30,0.65) 0%, rgba(20,8,30,0.85) 100%),
+      radial-gradient(900px 500px at 12% 30%, rgba(118,43,164,0.5), transparent 60%),
+      radial-gradient(700px 400px at 92% 80%, rgba(175,75,237,0.18), transparent 60%) !important;
+  }
+  .hero-answer {
+    background: rgba(255,255,255,0.08) !important;
+    border-color: rgba(255,255,255,0.16) !important;
+  }
+
+  /* Section backgrounds — cool grey-lavender instead of warm lavender */
+  .section.soft { background: #ece4f0 !important; }
+  .section.lavender { background: #ddd0e3 !important; }
+
+  /* Accent gradient text deepens (drop the light lavender start) */
+  .hero-copy h1 .accent,
+  .section-head h2 .accent,
+  .h-italic {
+    background: linear-gradient(135deg, #b97df0 0%, #762ba4 60%, #44215A 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  /* Primary CTA — deeper gradient + aubergine shadow */
+  .btn-primary {
+    background: linear-gradient(135deg, #762ba4 0%, #44215A 100%) !important;
+    box-shadow: 0 10px 28px -6px rgba(68,33,90,0.55) !important;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #5f2089 0%, #2d1538 100%) !important;
+    box-shadow: 0 16px 36px -6px rgba(44,20,72,0.65) !important;
+  }
+
+  /* TNPN big CTA — same deeper treatment */
+  .tnpn-cta {
+    background: linear-gradient(135deg, #762ba4 0%, #44215A 100%) !important;
+    box-shadow: 0 14px 30px -10px rgba(68,33,90,0.55) !important;
+  }
+  .tnpn-cta:hover { box-shadow: 0 18px 36px -10px rgba(44,20,72,0.70) !important; }
+
+  /* Eyebrow pill — deeper, cooler */
+  .eyebrow {
+    background: rgba(118,43,164,0.10) !important;
+    color: #5e1f88 !important;
+    border-color: rgba(118,43,164,0.22) !important;
+  }
+  .eyebrow .dot { background: #762ba4 !important; }
+
+  /* Pulse glow on hero CTA shifts to deeper aubergine */
+  @keyframes pulseGlowDeep {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(68,33,90,0.55); }
+    50% { box-shadow: 0 12px 36px -4px rgba(44,20,72,0.75); }
+  }
+  .pulse-glow { animation: pulseGlowDeep 2.6s ease-in-out infinite !important; }
+
+  /* Quiz card accents — selected state + progress bar deepen */
+  .quiz-progress-bar { background: linear-gradient(90deg, #762ba4, #44215A) !important; }
+  .quiz-option.is-sel { border-color: #762ba4 !important; box-shadow: 0 0 0 3px rgba(118,43,164,0.16) !important; }
+  .quiz-field input:focus { border-color: #762ba4 !important; box-shadow: 0 0 0 3px rgba(118,43,164,0.16) !important; }
+  .quiz-check { background: linear-gradient(180deg, #762ba4, #44215A) !important; box-shadow: 0 10px 22px rgba(68,33,90,0.45) !important; }
+
+  /* Pricing — featured card uses cooler tint + deeper border */
+  .price-card.featured {
+    background: linear-gradient(160deg, #efe4f2 0%, #ffffff 70%) !important;
+    border-color: rgba(68,33,90,0.45) !important;
+  }
+  .price-card.featured::before {
+    background: #5f2089 !important;
+    box-shadow: 0 6px 14px -4px rgba(68,33,90,0.55) !important;
+  }
+  .price-card:hover { border-color: rgba(118,43,164,0.40) !important; }
+  /* Primary price line — deeper aubergine number */
+  .price-line.is-primary .line-amt { color: #44215A !important; }
+  .price-card .tag { color: #5e1f88 !important; }
+
+  /* Compare table — deeper aubergine us-column */
+  .compare-row .cell-us {
+    color: #44215A !important;
+    background: rgba(118,43,164,0.05) !important;
+  }
+  .compare-col-us { color: #44215A !important; }
+  .compare-col-us small { color: #762ba4 !important; }
+  .compare-col-us::before {
+    background: linear-gradient(90deg, #762ba4 0%, #44215A 100%) !important;
+  }
+
+  /* HRT-style vs-comparison "Better choice" pill (if present) */
+  .vs-card.vs-dcai::before { background: #5f2089 !important; box-shadow: 0 6px 16px -4px rgba(68,33,90,0.55) !important; }
+
+  /* Mens-HL specific surfaces — pp-section gradient and qualify col */
+  .pp-section { background: linear-gradient(180deg, #ffffff 0%, #ece4f0 100%) !important; }
+  .qual-col.qual-yes { background: linear-gradient(180deg, #efe4f2 0%, #ffffff 60%) !important; border-color: rgba(68,33,90,0.45) !important; }
+  .compare-card.good { border-color: rgba(68,33,90,0.50) !important; background: linear-gradient(165deg, #ddd0e3 0%, #efe4f2 35%, #ffffff 100%) !important; }
+  .compare-card.good::after { background: linear-gradient(90deg, #44215A 0%, #762ba4 50%, #b97df0 100%) !important; }
+  .compare-card.good::before { background: linear-gradient(135deg, #44215A, #762ba4 60%, #b97df0) !important; box-shadow: 0 10px 24px -4px rgba(68,33,90,0.55) !important; }
+
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

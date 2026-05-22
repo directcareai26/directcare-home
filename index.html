@@ -730,24 +730,25 @@
     position: relative;
   }
   .testimonials-header {
-    display: flex; align-items: flex-end; justify-content: space-between;
-    gap: 20px; flex-wrap: wrap;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 10px;
     margin-bottom: 24px;
     padding: 0 4px;
+    text-align: center;
   }
   .testimonials-header h2 {
     font-size: clamp(1.6rem, 2.8vw, 2.2rem);
     font-weight: 500;
     letter-spacing: -0.03em;
     line-height: 1.05;
-    max-width: 520px;
+    max-width: 620px;
   }
   .testimonials-header h2 em {
     font-style: italic; font-weight: 500; color: var(--brand-deep);
   }
   .testimonials-header p {
     font-size: 0.92rem; color: var(--muted);
-    max-width: 320px; line-height: 1.5;
+    max-width: 520px; line-height: 1.5;
   }
   .testimonials-scroller {
     display: flex; gap: 16px;
@@ -1267,13 +1268,18 @@
     font-size: 1.0rem;
     line-height: 1.55;
   }
+  .blog-tease-foot {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
   .blog-tease-cta {
     display: inline-flex; align-items: center; gap: 8px;
-    padding: 12px 22px;
+    padding: 14px 28px;
     border-radius: 999px;
     background: var(--ink);
     color: var(--bg);
-    font-size: 0.88rem; font-weight: 600;
+    font-size: 0.95rem; font-weight: 600;
     white-space: nowrap;
     transition: background .25s ease, transform .15s ease;
   }
@@ -1726,7 +1732,6 @@
         <div class="blog-tease-eyebrow">Our blog</div>
         <h2>The science, <em>in plain English.</em></h2>
       </div>
-      <a class="blog-tease-cta" href="/blog/">Read all posts →</a>
     </div>
     <div class="blog-tease-grid" id="blog-tease-grid">
       <!-- Posts injected from /blog/posts.json at load. Static fallback shown if JS fails. -->
@@ -1757,6 +1762,9 @@
           <h3>TRT vs. enclomiphene: which testosterone protocol is right for you?</h3>
         </div>
       </a>
+    </div>
+    <div class="blog-tease-foot">
+      <a class="blog-tease-cta" href="/blog/">Read all posts →</a>
     </div>
   </section>
 

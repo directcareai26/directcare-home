@@ -393,15 +393,14 @@
   .trust-section .section-head p { display: none; }
 
   /* PARTNER BAR, desktop card / mobile compact */
-  .partner-ratings { max-width: 1040px; margin: 18px auto 0; display: flex; align-items: center; justify-content: center; gap: 16px 22px; flex-wrap: wrap; }
-  .partner-ratings .label { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-  .partner-ratings img { display: block; height: 48px; width: auto; max-width: 240px; }
-  @media (max-width: 540px) { .partner-ratings { gap: 12px; } .partner-ratings img { height: 38px; } .partner-ratings .label { width: 100%; text-align: center; font-size: 0.66rem; } }
+  .partner-ratings { max-width: 1040px; margin: 14px auto 0; display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+  .partner-ratings img { display: block; height: 40px; width: auto; max-width: 200px; }
+  @media (max-width: 540px) { .partner-ratings { gap: 10px; } .partner-ratings img { height: 32px; } }
   .partner-bar { max-width: 1040px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: 28px 36px; display: grid; grid-template-columns: auto 1fr; gap: 36px; align-items: center; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.20); position: relative; overflow: hidden; }
   .partner-bar::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 50%, var(--brand) 100%); }
-  .partner-bar .partner-id { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex-shrink: 0; padding-right: 32px; border-right: 1px solid var(--lavender-100); }
-  .partner-bar .partner-id .label-mini { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-deep); }
-  .partner-bar .openloop-logo { display: block; max-width: 180px; max-height: 48px; height: auto; width: auto; }
+  .partner-bar .partner-id { display: flex; align-items: center; flex-shrink: 0; padding-right: 28px; border-right: 1px solid var(--lavender-100); }
+  .partner-bar .partner-id .label-mini { display: none; }
+  .partner-bar .openloop-logo { display: block; max-width: 120px; max-height: 36px; height: auto; width: auto; }
   .partner-bar .partner-stats { display: grid; grid-template-columns: repeat(3, 1fr); align-items: center; gap: 0; }
   .partner-bar .partner-stats > div { display: flex; flex-direction: column; padding: 0 24px; line-height: 1.1; text-align: left; }
   .partner-bar .partner-stats > div + div { border-left: 1px solid var(--lavender-100); }
@@ -416,7 +415,7 @@
   @media (max-width: 760px) {
     .partner-bar { padding: 22px 18px; border-radius: var(--radius-lg); gap: 18px; }
     .partner-bar .partner-id { padding-bottom: 18px; }
-    .partner-bar .openloop-logo { max-width: 150px; max-height: 40px; }
+    .partner-bar .openloop-logo { max-width: 110px; max-height: 32px; }
     .partner-bar .partner-stats > div { padding: 0 8px; }
     .partner-bar .partner-stats .num { font-size: 1.2rem; }
     .partner-bar .partner-stats .lab { font-size: 0.7rem; }
@@ -686,7 +685,6 @@
 
     <!-- OpenLoop patient ratings (Google + Trustpilot) -->
     <div class="partner-ratings" style="margin-bottom: 24px;">
-      <span class="label">OpenLoop patient ratings</span>
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20google.webp" alt="OpenLoop Google reviews rating" loading="lazy" />
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20trustpilot.webp" alt="OpenLoop Trustpilot rating" loading="lazy" />
     </div>

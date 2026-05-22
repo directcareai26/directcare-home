@@ -269,8 +269,11 @@
   }
   /* Zero out adjacent sections' inner padding so no cream stripe shows
      above or below the band — band sits flush against its neighbors */
-  section.section:has(+ .d-section) { padding-bottom: 0 !important; }
+  section.section.flush-bottom { padding-bottom: 0 !important; }
+  section.section.flush-top    { padding-top:    0 !important; }
+  /* Belt + suspenders: also try the sibling selector for any future placement */
   .d-section + section.section { padding-top: 0 !important; }
+  section.section:has(+ .d-section) { padding-bottom: 0 !important; }
   .d-stage {
     position: relative;
     overflow: visible;
@@ -464,7 +467,7 @@
 </header>
 
 <!-- SYMPTOMS — "Sound familiar?" emotional hook (Hers / Evernow / Alloy pattern) -->
-<section class="section soft">
+<section class="section soft flush-bottom">
   <div class="container">
     <div class="intro-band" style="text-align:center; margin-bottom:32px;">
       <h2 style="margin-top: 0;">Sound <span class="h-italic">familiar?</span></h2>
@@ -547,10 +550,10 @@
 </section>
 
 <!-- INTRO -->
-<section class="section soft">
+<section class="section soft flush-top">
   <div class="container">
     <div class="intro-band">
-      <h2 style="margin-top: 18px;">One platform. <span class="h-italic">Every protocol you need.</span></h2>
+      <h2 style="margin-top: 0;">One platform. <span class="h-italic">Every protocol you need.</span></h2>
       <p>From hormone balance to weight loss to hair regrowth, every plan starts with your real numbers — labs, history, goals — and is built by a clinician who actually reads them. No quizzes that route you to a generic protocol. No insurance hoops.</p>
     </div>
   </div>

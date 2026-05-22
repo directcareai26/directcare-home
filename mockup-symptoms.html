@@ -365,6 +365,155 @@
     50%  { background-position: -50% 0; }
     100% { background-position: -50% 0; }
   }
+
+  /* ======================================================
+     MOCKUP D — 3D POP-OUT (band shorter than figures)
+     Same content as C but the colored band is intentionally
+     shorter than the figure height, so heads + shoulders rise
+     above the band's top edge. Rotating words + sparkles stay
+     clipped inside the band only.
+     ====================================================== */
+  .d-stage {
+    position: relative;
+    overflow: visible;                /* let figures protrude */
+    min-height: 760px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 140px;               /* room for heads above band */
+  }
+  @media (max-width: 720px) {
+    .d-stage { min-height: 700px; padding-top: 100px; }
+  }
+  .d-band {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: calc(100% - 140px);       /* band sits BELOW the head-pop zone */
+    border-radius: 28px;
+    overflow: hidden;                 /* clip rotating words + headline to band */
+    background: linear-gradient(140deg, #f5e9ff 0%, #efe2d1 100%);
+    isolation: isolate;
+    z-index: 1;
+  }
+  @media (max-width: 720px) {
+    .d-band { height: calc(100% - 100px); }
+  }
+  /* Rotating words inside band — same engine as C */
+  .d-rotator-stack {
+    position: absolute; inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .d-rotator-word {
+    position: absolute;
+    font-family: 'Geist', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--brand);
+    text-transform: lowercase;
+    white-space: nowrap;
+    will-change: transform, opacity;
+  }
+  .d-rotator-word.w1  { font-size: clamp(3.4rem, 10vw, 7.2rem); --word-peak: 0.24; color: var(--brand);        top:  4%; animation: cFlowL 34s linear infinite; }
+  .d-rotator-word.w2  { font-size: clamp(2.4rem, 7vw,  5rem);   --word-peak: 0.18; color: var(--brand-deep);   top: 12%; animation: cFlowR 42s linear infinite -6s; }
+  .d-rotator-word.w3  { font-size: clamp(2.8rem, 8vw,  5.6rem); --word-peak: 0.20; color: var(--brand);        top: 20%; animation: cFlowL 28s linear infinite -3s; }
+  .d-rotator-word.w4  { font-size: clamp(1.8rem, 5.5vw, 3.8rem); --word-peak: 0.16; color: var(--brand-deep);  top: 26%; animation: cFlowR 36s linear infinite -10s; }
+  .d-rotator-word.w5  { font-size: clamp(3rem, 9vw,   6rem);    --word-peak: 0.22; color: var(--brand-darker); top: 32%; animation: cFlowL 38s linear infinite -14s; }
+  .d-rotator-word.w6  { font-size: clamp(2rem, 6vw,   4.2rem);  --word-peak: 0.15; color: var(--brand);        top: 38%; animation: cFlowR 30s linear infinite -8s; }
+  .d-rotator-word.w7  { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand-deep);  top: 44%; animation: cFlowL 32s linear infinite -18s; }
+  .d-rotator-word.w8  { font-size: clamp(1.6rem, 5vw,  3.4rem); --word-peak: 0.14; color: var(--brand);        top: 50%; animation: cFlowR 44s linear infinite -22s; }
+  .d-rotator-word.w9  { font-size: clamp(3.2rem, 9.5vw, 6.6rem); --word-peak: 0.23; color: var(--brand-darker); top: 56%; animation: cFlowL 30s linear infinite -5s; }
+  .d-rotator-word.w10 { font-size: clamp(2.2rem, 6.5vw, 4.6rem); --word-peak: 0.17; color: var(--brand);       top: 62%; animation: cFlowR 38s linear infinite -28s; }
+  .d-rotator-word.w11 { font-size: clamp(2.8rem, 8vw,  5.4rem); --word-peak: 0.19; color: var(--brand-deep);   top: 68%; animation: cFlowL 26s linear infinite -12s; }
+  .d-rotator-word.w12 { font-size: clamp(1.8rem, 5.2vw, 3.6rem); --word-peak: 0.14; color: var(--brand);       top: 74%; animation: cFlowR 40s linear infinite -16s; }
+  .d-rotator-word.w13 { font-size: clamp(3rem, 8.5vw, 6.2rem);  --word-peak: 0.22; color: var(--brand-darker); top: 80%; animation: cFlowL 34s linear infinite -20s; }
+  .d-rotator-word.w14 { font-size: clamp(2rem, 6vw,   4.2rem);  --word-peak: 0.15; color: var(--brand-deep);   top: 86%; animation: cFlowR 36s linear infinite -24s; }
+  .d-rotator-word.w15 { font-size: clamp(2.4rem, 7vw, 5rem);    --word-peak: 0.18; color: var(--brand);        top: 92%; animation: cFlowL 32s linear infinite -2s; }
+  .d-rotator-word.w16 { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand-deep);  top: 16%; animation: cFlowR 28s linear infinite -7s; }
+  .d-rotator-word.w17 { font-size: clamp(1.8rem, 5.5vw, 3.8rem); --word-peak: 0.16; color: var(--brand);       top: 42%; animation: cFlowL 40s linear infinite -25s; }
+  .d-rotator-word.w18 { font-size: clamp(3.2rem, 9.5vw, 6.6rem); --word-peak: 0.23; color: var(--brand-darker); top: 70%; animation: cFlowR 34s linear infinite -32s; }
+  .d-rotator-word.w19 { font-size: clamp(2rem, 6vw,   4rem);    --word-peak: 0.14; color: var(--brand-deep);   top: 24%; animation: cFlowL 46s linear infinite -19s; }
+  .d-rotator-word.w20 { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand);       top: 54%; animation: cFlowR 32s linear infinite -11s; }
+  .d-rotator-word.w21 { font-size: clamp(1.6rem, 5vw, 3.2rem);  --word-peak: 0.13; color: var(--brand-darker); top: 78%; animation: cFlowL 38s linear infinite -30s; }
+  .d-rotator-word.w22 { font-size: clamp(2.2rem, 6.5vw, 4.6rem); --word-peak: 0.17; color: var(--brand-deep);  top: 36%; animation: cFlowR 30s linear infinite -1s; }
+
+  /* Figure container — sits ABOVE the band, anchored to stage bottom */
+  .d-figure-wrap {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    width: min(820px, 80%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    /* Same scroll-in animation as C */
+    transform: translateY(80px) scale(0.94);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .d-stage.is-in-view .d-figure-wrap {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  @supports (animation-timeline: view()) {
+    .d-figure-wrap {
+      transition: none;
+      animation: cFigureRise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
+    }
+  }
+  .d-figure-wrap img {
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    object-fit: contain;
+    object-position: bottom center;
+    display: block;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.18));
+  }
+  /* Sparkles — overlaid on the figure (above band, can extend above too) */
+  .d-sparkle-layer {
+    position: absolute; inset: 0;
+    pointer-events: none;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.8s ease 0.4s;
+  }
+  .d-stage.is-in-view .d-sparkle-layer { opacity: 1; }
+  .d-sparkle-layer .c-sparkle { /* reuse C sparkle styles */ }
+
+  /* Headline pill — sits at bottom of band */
+  .d-headline {
+    position: absolute; left: 50%; bottom: 8%;
+    transform: translateX(-50%) translateY(20px);
+    z-index: 3;
+    text-align: center;
+    color: var(--ink);
+    background: rgba(255,255,255,0.65);
+    padding: 16px 32px;
+    border-radius: 999px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(36,20,50,0.06);
+    opacity: 0;
+    transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s;
+  }
+  .d-stage.is-in-view .d-headline {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .d-headline h2 { font-size: clamp(1.2rem, 2.4vw, 1.8rem); font-weight: 500; margin: 0; }
+  .d-headline em {
+    font-style: italic;
+    background: linear-gradient(135deg, var(--brand), var(--brand-darker));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .d-figure-wrap, .d-sparkle-layer, .d-headline { transition: none !important; animation: none !important; transform: none !important; opacity: 1 !important; }
+    .d-headline { transform: translateX(-50%) !important; }
+  }
   .c-figure-wrap {
     position: relative;
     z-index: 2;
@@ -602,6 +751,67 @@
   </div>
 </div>
 
+<!-- ============== MOCKUP D — SAME AS C BUT BAND IS SHORTER THAN FIGURES ============== -->
+<div class="mockup-section">
+  <span class="mockup-label">Mockup D — 3D pop-out (heads above the band)</span>
+  <p class="mockup-note">
+    Exactly Mockup C's rotating words + sparkles + shine + scroll-into-frame animation —
+    BUT the colored gradient band is intentionally shorter than the figures, so the women's
+    heads and upper shoulders stand <strong>above</strong> the band's top edge. Creates a
+    3D pop-out effect: as you scroll, the figures rise into frame and visibly extend out
+    of the colored container. The rotating words and sparkles stay clipped inside the band
+    only — they never appear above the heads.
+  </p>
+  <div class="d-stage">
+    <div class="d-band" id="dBand">
+      <div class="d-rotator-stack" aria-hidden="true">
+        <span class="d-rotator-word w1">hot flashes</span>
+        <span class="d-rotator-word w2">night sweats</span>
+        <span class="d-rotator-word w3">brain fog</span>
+        <span class="d-rotator-word w4">fatigue</span>
+        <span class="d-rotator-word w5">low libido</span>
+        <span class="d-rotator-word w6">sleep loss</span>
+        <span class="d-rotator-word w7">weight gain</span>
+        <span class="d-rotator-word w8">cravings</span>
+        <span class="d-rotator-word w9">thinning hair</span>
+        <span class="d-rotator-word w10">dry skin</span>
+        <span class="d-rotator-word w11">anxiety</span>
+        <span class="d-rotator-word w12">irritability</span>
+        <span class="d-rotator-word w13">joint aches</span>
+        <span class="d-rotator-word w14">mood swings</span>
+        <span class="d-rotator-word w15">bloating</span>
+        <span class="d-rotator-word w16">vaginal dryness</span>
+        <span class="d-rotator-word w17">palpitations</span>
+        <span class="d-rotator-word w18">perimenopause</span>
+        <span class="d-rotator-word w19">menopause</span>
+        <span class="d-rotator-word w20">hormonal</span>
+        <span class="d-rotator-word w21">restored</span>
+        <span class="d-rotator-word w22">balanced</span>
+      </div>
+      <div class="d-headline">
+        <h2>It's <em>not</em> in your head.</h2>
+      </div>
+    </div>
+    <div class="d-figure-wrap">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="" />
+      <div class="d-sparkle-layer" aria-hidden="true">
+        <span class="c-sparkle s1"></span>
+        <span class="c-sparkle s2"></span>
+        <span class="c-sparkle s3"></span>
+        <span class="c-sparkle s4"></span>
+        <span class="c-sparkle s5"></span>
+        <span class="c-sparkle s6"></span>
+        <span class="c-sparkle s7"></span>
+        <span class="c-sparkle s8"></span>
+        <span class="c-sparkle s9"></span>
+        <span class="c-sparkle s10"></span>
+        <span class="c-sparkle s11"></span>
+        <span class="c-sparkle s12"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 /* MOCKUP A rotation logic */
 (function() {
@@ -662,10 +872,9 @@
    Fallback for browsers without animation-timeline: view() — still gives a clean
    transition-based reveal even on Safari < 17.4 / Firefox / older Chrome. */
 (function() {
-  var bands = document.querySelectorAll('.c-hero');
+  var bands = document.querySelectorAll('.c-hero, .d-stage');
   if (!bands.length) return;
   if (typeof IntersectionObserver === 'undefined') {
-    // No-IO fallback: just show
     bands.forEach(function(b) { b.classList.add('is-in-view'); });
     return;
   }

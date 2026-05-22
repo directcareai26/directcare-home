@@ -349,7 +349,29 @@
   .section-head h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
   /* PROVIDER TRUST SECTION (parallel to HRT) */
-  .trust-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
+  .trust-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); padding: clamp(32px, 5vw, 52px) 0; }
+  .trust-section .section-head { margin-bottom: 22px; }
+  .trust-section .section-head h2,
+  .trust-section .section-head p { display: none; }
+
+  /* COMPACT PARTNER BAR */
+  .partner-bar { max-width: 1000px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 16px 24px; display: flex; align-items: center; gap: 24px; box-shadow: 0 6px 22px -14px rgba(118,43,164,0.18); }
+  .partner-bar .partner-id { display: flex; align-items: center; flex-shrink: 0; }
+  .partner-bar .openloop-logo { display: block; max-width: 160px; max-height: 40px; height: auto; width: auto; }
+  .partner-bar .partner-stats { display: flex; align-items: center; flex: 1; justify-content: flex-end; gap: 0; }
+  .partner-bar .partner-stats > div { display: flex; flex-direction: column; padding: 0 18px; line-height: 1.1; }
+  .partner-bar .partner-stats > div + div { border-left: 1px solid var(--lavender-100); }
+  .partner-bar .partner-stats .num { font-family: 'Manrope', sans-serif; font-size: 1.16rem; font-weight: 900; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.02em; }
+  .partner-bar .partner-stats .lab { font-size: 0.72rem; color: var(--muted); margin-top: 4px; font-weight: 600; letter-spacing: 0.02em; }
+  @media (max-width: 760px) {
+    .partner-bar { flex-direction: column; gap: 14px; padding: 16px 14px; border-radius: var(--radius); }
+    .partner-bar .partner-id { padding: 4px 0 6px; border-bottom: 1px solid var(--lavender-100); width: 100%; justify-content: center; }
+    .partner-bar .partner-stats { width: 100%; justify-content: space-between; }
+    .partner-bar .partner-stats > div { flex: 1 1 0; padding: 0; text-align: center; align-items: center; }
+    .partner-bar .partner-stats > div + div { border-left: 1px solid var(--lavender-100); }
+    .partner-bar .partner-stats .num { font-size: 1.05rem; }
+    .partner-bar .partner-stats .lab { font-size: 0.68rem; }
+  }
   .trust-card { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(32px, 5vw, 48px); box-shadow: var(--shadow-soft); }
   .trust-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(28px, 4vw, 48px); align-items: center; }
   @media (max-width: 760px) { .trust-grid { grid-template-columns: 1fr; gap: 28px; } }
@@ -613,40 +635,20 @@
   </div>
 </section>
 
-<!-- PROVIDER PARTNER NETWORK -->
+<!-- PROVIDER PARTNER NETWORK — compact bar -->
 <section class="section trust-section">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Our Physician Partner Network</span>
-      <h2>Backed by a network that<br/><span class="accent">serves millions of patients.</span></h2>
-      <p>Medical care is delivered through our physician partner network, helping ensure men receive timely access to licensed clinicians across all 50 states.</p>
     </div>
-    <div class="trust-card">
-      <div class="trust-grid">
-        <div class="trust-partner">
-          <span class="trust-partner-label">Our Physician Partner</span>
-          <div class="trust-partner-logo">
-            <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" class="openloop-logo" />
-          </div>
-          <p>OpenLoop is a nationwide provider network that supports DirectCare AI's clinical programs and helps patients access licensed clinicians from the comfort of home.</p>
-        </div>
-        <div class="trust-stats">
-          <div class="trust-stat">
-            <div class="num">20,000+</div>
-            <div class="label">Clinicians</div>
-            <div class="sub">Nationwide provider network</div>
-          </div>
-          <div class="trust-stat">
-            <div class="num">250,000+</div>
-            <div class="label">Patient visits / month</div>
-            <div class="sub">Supporting 3M+ visits annually</div>
-          </div>
-          <div class="trust-stat">
-            <div class="num">50 States</div>
-            <div class="label">Nationwide coverage</div>
-            <div class="sub">Licensed clinicians in every state</div>
-          </div>
-        </div>
+    <div class="partner-bar">
+      <div class="partner-id">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" class="openloop-logo" />
+      </div>
+      <div class="partner-stats">
+        <div><span class="num">20,000+</span><span class="lab">Clinicians</span></div>
+        <div><span class="num">250K+</span><span class="lab">Visits / month</span></div>
+        <div><span class="num">50 States</span><span class="lab">Nationwide</span></div>
       </div>
     </div>
   </div>

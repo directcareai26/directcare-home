@@ -310,6 +310,37 @@
     .bottom-cta button { width: 100%; }
     .bottom-cta input { flex-basis: 100%; }
   }
+
+  /* MOBILE: tighten ALL vertical spacing between sections — Hims/Hers-style
+     crisp scroll feel. Cuts section margins from 56px → 18-24px and trims
+     section internal padding so the page reads as one continuous flow. */
+  @media (max-width: 720px) {
+    .hero { padding-top: 20px; padding-bottom: 10px; }
+    .twin-cards { padding: 8px 0 16px; gap: 12px; }
+    .quick-icons { padding: 6px 0 20px; gap: 10px; }
+    .product-grid { padding: 4px 0 18px; gap: 10px; }
+    .dark-promo,
+    .featured-block,
+    .alt-block,
+    .rxcard-section,
+    .clinical-advisor {
+      margin: 0 0 18px;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      border-radius: 22px;
+    }
+    .testimonials { margin: 12px 0 18px; padding-top: 4px; }
+    .testimonials-header { margin-bottom: 18px; }
+    .blog-tease { margin: 0 0 28px; padding-top: 24px; }
+    .blog-tease-head { margin-bottom: 18px; }
+    .featured-block h2,
+    .alt-block h2,
+    .rxcard-section h2,
+    .dark-promo h2 { margin-bottom: 12px; }
+    .featured-block-sub,
+    .alt-block-text p,
+    .rxcard-section p { margin-bottom: 18px; }
+  }
   .twin-card-eyebrow {
     display: inline-block;
     font-size: 0.72rem; font-weight: 600;

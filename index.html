@@ -752,8 +752,8 @@
     gap: 14px;
     padding: 0 0 24px;
   }
-  @media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 620px) { .product-grid { grid-template-columns: 1fr; gap: 14px; } }
+  @media (max-width: 900px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
+  /* Stay 2-col on phones too — full-width 4/5 cards would be too tall */
   .product-tile {
     position: relative;
     border-radius: var(--radius-lg);
@@ -761,44 +761,106 @@
     aspect-ratio: 4/5;
     color: white;
     isolation: isolate;
-    transition: transform .15s ease;
+    transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .35s ease;
     display: block;
+    box-shadow: 0 8px 22px -10px rgba(36,20,50,0.30);
   }
-  .product-tile:hover { transform: translateY(-3px); }
+  .product-tile:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 52px -16px rgba(118,43,164,0.42);
+  }
   .product-tile img {
     position: absolute;
     inset: 0;
     width: 100%; height: 100%;
     object-fit: cover;
     z-index: 0;
-    transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1);
+    transition: transform .8s cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .product-tile:hover img { transform: scale(1.05); }
+  .product-tile:hover img { transform: scale(1.08); }
+  /* Stronger gradient overlay — purple wash + deep bottom for legibility */
   .product-tile::after {
     content: "";
     position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(36,20,50,0.10) 0%, rgba(36,20,50,0.20) 40%, rgba(36,20,50,0.78) 100%);
+    background: linear-gradient(
+      175deg,
+      rgba(36,20,50,0.20) 0%,
+      rgba(36,20,50,0.28) 45%,
+      rgba(118,43,164,0.52) 78%,
+      rgba(36,20,50,0.94) 100%
+    );
     z-index: 1;
+    transition: opacity .35s ease;
   }
+  .product-tile:hover::after { opacity: 0.96; }
+  /* Eyebrow pill — top-left */
+  .product-tile-eyebrow {
+    position: absolute;
+    top: 14px; left: 14px;
+    z-index: 2;
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: white;
+    background: rgba(255,255,255,0.16);
+    border: 1px solid rgba(255,255,255,0.28);
+    padding: 5px 11px;
+    border-radius: 999px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  /* Arrow chip — top-right, animates on hover */
+  .product-tile-arrow {
+    position: absolute;
+    top: 14px; right: 14px;
+    z-index: 2;
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.18);
+    border: 1px solid rgba(255,255,255,0.30);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    display: grid;
+    place-items: center;
+    color: white;
+    transition: background .3s ease, color .3s ease, transform .3s ease;
+  }
+  .product-tile:hover .product-tile-arrow {
+    background: white;
+    color: var(--brand-darker);
+    transform: translateX(3px) translateY(-3px);
+  }
+  /* Bottom info block */
   .product-tile-info {
     position: absolute;
-    bottom: 16px; left: 16px; right: 16px;
+    bottom: 18px; left: 18px; right: 18px;
     z-index: 2;
+    transition: transform .35s cubic-bezier(0.22, 1, 0.36, 1);
   }
+  .product-tile:hover .product-tile-info { transform: translateY(-3px); }
   .product-tile-name {
     font-family: 'Geist', sans-serif;
-    font-size: 1.10rem;
-    font-weight: 500;
-    letter-spacing: -0.02em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
     color: white;
-    margin-bottom: 2px;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+    line-height: 1.05;
+    margin-bottom: 6px;
+    text-shadow: 0 2px 14px rgba(0,0,0,0.40);
   }
   .product-tile-sub {
-    font-size: 0.74rem;
-    color: rgba(255,255,255,0.85);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    font-size: 0.86rem;
+    color: rgba(255,255,255,0.90);
+    letter-spacing: -0.005em;
+    line-height: 1.35;
+    text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+  }
+  @media (max-width: 620px) {
+    .product-tile-name { font-size: 1.25rem; }
+    .product-tile-sub { font-size: 0.78rem; }
+    .product-tile-eyebrow { font-size: 0.6rem; padding: 4px 10px; }
+    .product-tile-arrow { width: 30px; height: 30px; }
   }
 
   /* FEATURED BLOCK (cream TRT promo) — with faded atmospheric image */
@@ -1395,30 +1457,38 @@
   <section class="product-grid">
     <a class="product-tile" href="/surge-max/">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" alt="Surge Max" loading="lazy" />
+      <span class="product-tile-eyebrow">Sexual Health</span>
+      <span class="product-tile-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
       <div class="product-tile-info">
         <div class="product-tile-name">Surge Max</div>
-        <div class="product-tile-sub">Sexual health · Men</div>
+        <div class="product-tile-sub">4-in-1 sublingual · On cue, on demand</div>
       </div>
     </a>
     <a class="product-tile" href="/mens-hair-loss/">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" alt="Hair Regrowth Men" loading="lazy" />
+      <span class="product-tile-eyebrow">For Men</span>
+      <span class="product-tile-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
       <div class="product-tile-info">
         <div class="product-tile-name">Hair Regrowth</div>
-        <div class="product-tile-sub">For men</div>
+        <div class="product-tile-sub">Finasteride · Dutasteride · Minoxidil</div>
       </div>
     </a>
     <a class="product-tile" href="/womans-hair-loss/">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="Hair Regrowth Women" loading="lazy" />
+      <span class="product-tile-eyebrow">For Women</span>
+      <span class="product-tile-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
       <div class="product-tile-info">
         <div class="product-tile-name">Hair Regrowth</div>
-        <div class="product-tile-sub">For women</div>
+        <div class="product-tile-sub">Minoxidil · Spironolactone · Topicals</div>
       </div>
     </a>
     <a class="product-tile" href="/supplements/">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="Supplements" loading="lazy" />
+      <span class="product-tile-eyebrow">Wellness</span>
+      <span class="product-tile-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></span>
       <div class="product-tile-info">
         <div class="product-tile-name">Supplements</div>
-        <div class="product-tile-sub">Physician-formulated</div>
+        <div class="product-tile-sub">Physician-formulated stacks via Fullscript</div>
       </div>
     </a>
   </section>

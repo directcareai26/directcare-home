@@ -420,7 +420,11 @@
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 22px; font-size: 0.96rem; }
     .hero-cta-row .btn-primary-xl { width: 100%; padding: 18px 18px; font-size: 0.94rem; letter-spacing: -0.01em; }
-    .hero-cta-row { width: 100%; }
+    .hero-cta-row { width: 100%; justify-content: center; }
+    /* Center hero copy on mobile to match the rest of the page rhythm */
+    .hero-copy { text-align: center; display: flex; flex-direction: column; align-items: center; }
+    .hero-copy .hero-sub { margin-left: auto; margin-right: auto; }
+    .hero-meta { text-align: center; }
     /* Trust seals → consistent 2x2 grid across all mobile widths */
     .trust-seal-inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 12px; padding: 0 8px; }
     .seal { justify-content: flex-start; min-width: 0; }
@@ -898,8 +902,6 @@
       <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
     </div>
     <div class="legal-disclaimer">
-      <strong>Image disclaimer:</strong> All photographs, illustrations, and model imagery on this site are for representation and illustrative purposes only. They do not depict actual DirectCare AI patients and are not a guarantee of any specific outcome. Individual results vary.
-      <br/><br/>
       DirectCare AI offers compounded medications prescribed by a US-licensed clinician based on individual medical evaluation. Compounded medications are not FDA-approved as finished products, although the active ingredients (e.g., testosterone cypionate, enclomiphene, anastrozole, HCG, estradiol, progesterone, Finasteride, Minoxidil, semaglutide, tirzepatide) are individually FDA-approved. Not all patients will qualify. Treatment is only available where state law permits. This site is for informational purposes and does not constitute medical advice. The statements herein have not been evaluated by the FDA. Consult your clinician before starting any new medication. Stop use and seek medical advice if you experience persistent side effects.
     </div>
       <div class="legal-disclaimer">

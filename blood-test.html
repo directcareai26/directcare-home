@@ -296,9 +296,13 @@
   .compare-row:nth-child(odd) { background: rgba(251,245,254,0.45); }
   .compare-row > div { padding: 16px 24px; font-size: 0.94rem; display: flex; align-items: center; line-height: 1.4; min-width: 0; }
   .compare-row .cell-label { color: var(--ink); font-weight: 600; }
-  .compare-row .cell-us, .compare-row .cell-them { justify-content: center; text-align: center; gap: 8px; }
+  /* Icon pinned to the left edge of every us/them cell so all marks form a clean
+     vertical column down each data column. Text continues to center in the
+     remaining space via justify-content: center + padding-left to clear the icon. */
+  .compare-row .cell-us, .compare-row .cell-them { position: relative; justify-content: center; text-align: center; gap: 0; padding-left: 52px; padding-right: 24px; }
   .compare-row .cell-us { color: var(--brand-darker); font-weight: 700; background: rgba(175,75,237,0.04); }
   .compare-row .cell-them { color: var(--muted); }
+  .compare-row .cell-us > .mark, .compare-row .cell-them > .mark { position: absolute; left: 18px; top: 50%; transform: translateY(-50%); }
   .compare-row .mark { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; flex-shrink: 0; }
   .compare-row .mark.yes { background: rgba(20,152,58,0.14); color: var(--green); }
   .compare-row .mark.no { background: rgba(208,69,69,0.12); color: var(--bad); }
@@ -323,7 +327,8 @@
     .compare-col-us small, .compare-col-them small { font-size: 0.54rem; letter-spacing: 0.08em; margin-bottom: 2px; }
     .compare-row > div { font-size: 0.78rem; line-height: 1.3; gap: 6px; }
     .compare-row .cell-label { font-size: 0.76rem; line-height: 1.3; word-break: normal; overflow-wrap: break-word; hyphens: auto; }
-    .compare-row .cell-us, .compare-row .cell-them { flex-direction: column; gap: 4px; text-align: center; }
+    .compare-row .cell-us, .compare-row .cell-them { flex-direction: column; gap: 4px; text-align: center; padding-left: 8px; padding-right: 8px; }
+    .compare-row .cell-us > .mark, .compare-row .cell-them > .mark { position: static; transform: none; }
     .compare-row .mark { width: 22px; height: 22px; font-size: 0.78rem; font-weight: 800; }
     .compare-row .cell-note { font-size: 0.66rem; line-height: 1.2; font-weight: 600; }
     .compare-foot { padding: 14px 12px; gap: 10px 14px; font-size: 0.74rem; }

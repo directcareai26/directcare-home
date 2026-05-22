@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#af4bed" />
 <title>Testosterone Replacement Therapy (TRT) for Men — DirectCare AI</title>
-<meta name="description" content="TRT online with US-licensed clinicians. Personalized testosterone protocols — injectable, oral, and natural-pathway (enclomiphene) — labs ordered, prescription shipped to your door. Check your eligibility in 2 minutes." />
+<meta name="description" content="TRT online with US-licensed clinicians. Personalized testosterone protocols — injectable, oral, and natural-pathway (enclomiphene) — labs ordered, prescription shipped to your door. See if TRT is right for you in 2 minutes." />
 
 <!-- Favicons -->
 <link rel="icon" type="image/png" href="/icon.png" />
@@ -348,6 +348,38 @@
   .section-head h2 { margin-top: 22px; }
   .section-head h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
+  /* PROVIDER TRUST SECTION (parallel to HRT) */
+  .trust-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
+  .trust-card { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(32px, 5vw, 48px); box-shadow: var(--shadow-soft); }
+  .trust-grid { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(28px, 4vw, 48px); align-items: center; }
+  @media (max-width: 760px) { .trust-grid { grid-template-columns: 1fr; gap: 28px; } }
+  .trust-partner { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 28px 26px; }
+  .trust-partner-label { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-deep); margin-bottom: 14px; }
+  .trust-partner-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  .trust-partner-logo .logo-mark { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); display: grid; place-items: center; color: white; font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -0.02em; }
+  .trust-partner-logo .name { font-family: 'Manrope', sans-serif; font-size: 1.32rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .trust-partner p { font-size: 0.94rem; line-height: 1.65; color: var(--muted); }
+  .trust-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 22px; }
+  @media (max-width: 540px) { .trust-stats { grid-template-columns: 1fr; gap: 14px; } }
+  .trust-stat { background: var(--soft); border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 16px 18px; transition: border-color .2s ease, transform .2s ease; }
+  .trust-stat:hover { border-color: rgba(175,75,237,0.35); transform: translateY(-2px); }
+  .trust-stat .num { font-family: 'Manrope', sans-serif; font-size: 1.6rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; letter-spacing: -0.02em; }
+  .trust-stat .label { margin-top: 6px; font-size: 0.82rem; color: var(--ink); font-weight: 600; line-height: 1.35; }
+  .trust-stat .sub { font-size: 0.74rem; color: var(--muted); margin-top: 2px; }
+  .trust-oversight { max-width: 880px; margin: 28px auto 0; padding: 22px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); display: flex; gap: 18px; align-items: flex-start; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
+  @media (max-width: 560px) { .trust-oversight { flex-direction: column; gap: 14px; } }
+  .trust-oversight .ico { flex: 0 0 44px; width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); display: grid; place-items: center; color: white; }
+  .trust-oversight h4 { font-family: 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; margin: 0 0 4px; color: var(--ink); }
+  .trust-oversight .role { font-size: 0.86rem; color: var(--brand-deep); font-weight: 700; margin-bottom: 8px; }
+  .trust-oversight p { font-size: 0.92rem; line-height: 1.6; color: var(--muted); margin: 0; }
+
+  /* WHY MEN CHOOSE — checklist card */
+  .why-card { max-width: 880px; margin: 0 auto; background: linear-gradient(160deg, var(--soft) 0%, white 100%); border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(32px, 5vw, 44px); box-shadow: var(--shadow-soft); }
+  .why-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; }
+  @media (max-width: 720px) { .why-list { grid-template-columns: 1fr; } }
+  .why-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 1rem; color: var(--ink); line-height: 1.55; font-weight: 500; }
+  .why-list .v { flex: 0 0 24px; height: 24px; border-radius: 50%; background: rgba(20,152,58,0.12); color: var(--green); display: grid; place-items: center; margin-top: 1px; }
+
   @media (max-width: 760px) {
     .section { padding: 64px 0; }
     .section-head { margin-bottom: 40px; }
@@ -494,7 +526,7 @@
         <h1 class="rise d1">Get your edge back.<br/><span class="accent">Delivered to you.</span></h1>
         <p class="hero-sub rise d2">Talk to a licensed clinician online. Skip the waiting room. <strong>Bloodwork, prescription, and ongoing monitoring</strong> — all from home. Injectable, oral, and natural-pathway (enclomiphene) options.</p>
         <div class="hero-cta-row rise d3" style="margin-top:24px;">
-          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl pulse-glow">Check your eligibility →</a>
+          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl pulse-glow">Start your testosterone evaluation →</a>
           <span class="hero-meta">~ 2 min · Free · No obligation</span>
         </div>
       </div>
@@ -513,7 +545,7 @@
           </div>
           <h3>You look like a fit for a clinical review.</h3>
           <p>A licensed clinician will review your intake and let you know if TRT is appropriate — typically within 24 hours.</p>
-          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Start my intake →</a>
+          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Start your testosterone evaluation →</a>
           <p class="quiz-disclaimer">Eligibility is not a guarantee of prescription. Only a licensed clinician can determine if treatment is appropriate.</p>
         </div>
         <div class="quiz-result warn" id="quiz-ineligible">
@@ -550,6 +582,64 @@
     </div>
   </div>
 </div>
+
+<!-- PROVIDER TRUST + STATS -->
+<section class="section trust-section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Care You Can Trust</span>
+      <h2>Trusted testosterone care,<br/><span class="accent">delivered nationwide.</span></h2>
+      <p>Personalized testosterone care with licensed clinician review, clinical oversight, and access to a nationwide provider network serving patients across all 50 states.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-grid">
+        <div class="trust-partner">
+          <span class="trust-partner-label">Our Physician Partner</span>
+          <div class="trust-partner-logo">
+            <span class="logo-mark">OL</span>
+            <span class="name">OpenLoop</span>
+          </div>
+          <p>Medical care is provided through our physician partner network, helping ensure men receive timely access to licensed clinicians and appropriate clinical review.</p>
+        </div>
+        <div class="trust-stats">
+          <div class="trust-stat">
+            <div class="num">20,000+</div>
+            <div class="label">Clinicians</div>
+            <div class="sub">Nationwide provider network</div>
+          </div>
+          <div class="trust-stat">
+            <div class="num">250,000+</div>
+            <div class="label">Patient visits / month</div>
+            <div class="sub">Supporting 3M+ visits annually</div>
+          </div>
+          <div class="trust-stat">
+            <div class="num">600+</div>
+            <div class="label">Insurance plans</div>
+            <div class="sub">Including Medicare &amp; Medicaid</div>
+          </div>
+          <div class="trust-stat">
+            <div class="num">50 States</div>
+            <div class="label">Nationwide coverage</div>
+            <div class="sub">Licensed clinicians in every state</div>
+          </div>
+          <div class="trust-stat" style="grid-column: 1 / -1;">
+            <div class="num">24/7</div>
+            <div class="label">Patient support</div>
+            <div class="sub">Help when men need it</div>
+          </div>
+        </div>
+      </div>
+      <div class="trust-oversight">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <div>
+          <h4>Clinical Oversight</h4>
+          <div class="role">Dr. Tim Pepin · Director of Clinical Nutrition &amp; Integrative Health</div>
+          <p>DirectCare AI's men's health programs are developed with clinical oversight and evidence-informed care pathways designed to support safe, appropriate, and personalized treatment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- HOW IT WORKS -->
 <section class="section soft" id="how">
@@ -626,9 +716,31 @@
           </li>
         </ul>
         <div style="margin-top:30px;">
-          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl">See if I qualify →</a>
+          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl">See if TRT is right for you →</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY MEN CHOOSE DIRECTCARE AI -->
+<section class="section soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Why men choose DirectCare AI</span>
+      <h2>Private. Clinical. <span class="accent">From your phone.</span></h2>
+      <p>What's included in every men's program — licensed clinical review, lab-based evaluation when required, and ongoing support after treatment starts.</p>
+    </div>
+    <div class="why-card">
+      <ul class="why-list">
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Licensed clinician review</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Private online consultation</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Personalized treatment plan if appropriate</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Lab-based evaluation when required</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Medication delivered to your door if prescribed</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ongoing support throughout treatment</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Confidential care from home</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -769,7 +881,7 @@
       <span class="eyebrow on-dark"><span class="dot"></span> Ready?</span>
       <h2>See if you're a fit in<br/>about two minutes.</h2>
       <p>No credit card. No commitment. If you're eligible, you'll be routed straight to your intake — and a licensed clinician will review your file shortly.</p>
-      <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Check your eligibility →</a>
+      <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">See if TRT is right for you →</a>
       <div class="meta">Your info is private and HIPAA-protected.</div>
     </div>
   </div>

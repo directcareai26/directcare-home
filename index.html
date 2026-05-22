@@ -294,10 +294,7 @@
     .hero { padding-top: 28px; padding-bottom: 16px; }
     .hero h1 { font-size: 2.2rem; }
     .twin-cards { padding: 16px 0 24px; }
-    .quick-icons { padding: 12px 0 40px; gap: 10px; }
-    .quick-icon { padding: 12px 14px; }
-    .quick-icon-text { font-size: 0.86rem; }
-    .quick-icon-thumb { width: 38px; height: 38px; }
+    .quick-icons { padding: 12px 0 40px; gap: 12px; }
     .dark-promo, .featured-block, .alt-block, .rxcard-section, .bottom-cta {
       padding-left: 24px; padding-right: 24px;
       border-radius: 22px;
@@ -358,12 +355,17 @@
     to { background-position: -120% 0; }
   }
   .twin-card:hover h2 em { animation-duration: 4.5s; }
-  @media (prefers-reduced-motion: reduce) {
+  /* On mobile + reduced-motion: kill the shimmer (the bright peak makes
+     italic letters disappear against the light card backgrounds — the
+     "cut off near the photo" complaint). Solid brand purple instead. */
+  @media (max-width: 720px), (prefers-reduced-motion: reduce) {
     .twin-card h2 em {
       animation: none;
       background: none;
       color: var(--brand-deep);
       -webkit-text-fill-color: currentColor;
+      padding-right: 0;
+      margin-right: 0;
     }
   }
   .twin-card .btn {
@@ -440,6 +442,70 @@
   .quick-icon:hover .quick-icon-thumb { transform: scale(1.04); }
   .quick-icon-thumb img { width: 100%; height: 100%; object-fit: cover; }
   .quick-icon-text { font-size: 0.92rem; font-weight: 500; letter-spacing: -0.01em; color: var(--ink); line-height: 1.2; transition: color .25s ease; }
+
+  /* MOBILE QUICK-ICONS — large photo on left (1/3 width, touches edge), bold headline right */
+  @media (max-width: 720px) {
+    .quick-icon {
+      padding: 0;
+      gap: 0;
+      min-height: 100px;
+      overflow: hidden;
+      align-items: stretch;
+    }
+    .quick-icon:hover {
+      transform: translateY(-2px);
+      background: white;
+      border-color: rgba(175,75,237,0.30);
+      box-shadow: 0 14px 32px -14px rgba(118,43,164,0.28);
+    }
+    .quick-icon:hover .quick-icon-text { color: var(--ink); }
+    .quick-icon:hover .quick-icon-thumb { box-shadow: none; }
+    .quick-icon-thumb {
+      width: 33%;
+      height: auto;
+      border-radius: 0;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .quick-icon-thumb::after {
+      content: "";
+      position: absolute;
+      top: 0; right: 0; bottom: 0;
+      width: 24px;
+      background: linear-gradient(90deg, transparent, white);
+      pointer-events: none;
+    }
+    .quick-icon:hover .quick-icon-thumb { transform: none; }
+    .quick-icon-thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .quick-icon-text {
+      font-size: 1.45rem;
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      line-height: 1.1;
+      padding: 0 22px;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      position: relative;
+    }
+    .quick-icon-text::after {
+      content: "→";
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.1rem;
+      color: var(--brand-deep);
+      opacity: 0.45;
+      transition: transform .25s ease, opacity .25s ease;
+    }
+    .quick-icon:hover .quick-icon-text::after,
+    .quick-icon:active .quick-icon-text::after {
+      opacity: 1;
+      transform: translateY(-50%) translateX(3px);
+    }
+  }
 
   /* DARK HERO PROMO */
   .dark-promo {

@@ -197,7 +197,8 @@ PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-po
 - Never claim cure, miracle, or guaranteed results.
 - Never name specific competitor compounded pharmacies.
 - Never give a specific dose recommendation outside of standard published titration ranges.
-- Always frame medication decisions as requiring a US-licensed clinician's review of bloodwork.
+- **Never claim DirectCare AI requires bloodwork before prescribing.** DirectCare AI offers blood labs as a product, and many patients choose them — but writing "Before any prescription at DirectCare AI, a clinician reviews [labs]" or "every patient does a baseline panel" is FALSE and creates compliance risk. Acceptable framings: "a thorough workup would typically include...", "if you choose to do bloodwork through us, the markers we look at first are...", "the labs worth having before a serious protocol are..." — keep the educational content, drop the procedural promise.
+- Frame medication decisions as benefiting from clinician review of relevant context (symptoms, history, and labs when run), not as gated on labs.
 - Note that compounded medications are not FDA-approved as finished products (the article disclaimer handles this; you can reference it casually).
 - No before/after weight-loss specifics that imply average results.
 - For GLP-1s, weight-loss percentages must be cited from named trials (SURMOUNT-5, STEP, etc.) — never just "studies show."

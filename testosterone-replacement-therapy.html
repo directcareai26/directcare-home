@@ -1084,7 +1084,7 @@
       <div class="quiz-card rise d2" aria-live="polite">
         <div class="quiz-head">
           <span class="quiz-label">Eligibility Check</span>
-          <span class="quiz-counter"><span id="quiz-step-num">1</span> of 6</span>
+          <span class="quiz-counter"><span id="quiz-step-num">1</span> of 3</span>
         </div>
         <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
         <div id="quiz-steps"></div>
@@ -1092,9 +1092,9 @@
           <div class="quiz-check">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
           </div>
-          <h3>You look like a fit for a clinical review.</h3>
-          <p>A licensed clinician will review your intake and let you know if TRT is appropriate, typically within 24 hours.</p>
-          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Start your testosterone evaluation →</a>
+          <h3>You seem like a strong candidate.</h3>
+          <p>Complete the full intake to find out for sure — a US-licensed clinician will review your file, typically within 24 hours.</p>
+          <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Complete the full intake →</a>
           <p class="quiz-disclaimer">Eligibility is not a guarantee of prescription. Only a licensed clinician can determine if treatment is appropriate.</p>
         </div>
         <div class="quiz-result warn" id="quiz-ineligible">
@@ -1682,13 +1682,6 @@
     if (!stepsEl) return;
     var INTAKE_URL = 'https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6';
     var steps = [
-      {q:"What's your top reason for exploring TRT?", help:"Pick the one that fits best.", type:"choice", options:[
-        {v:"energy", label:"Get my energy and drive back"},
-        {v:"strength", label:"Build strength & muscle again"},
-        {v:"sex", label:"Improve sex drive and performance"},
-        {v:"mood", label:"Sharper focus, better mood"},
-        {v:"all", label:"All of the above, feel like myself again"}
-      ]},
       {q:"Which describes you most days?", help:"Honest answers help your clinician.", type:"choice", options:[
         {v:"tired", label:"I'm tired even after a full night's sleep"},
         {v:"belly", label:"Belly fat that won't go away"},
@@ -1702,19 +1695,12 @@
         {v:"old", label:"Over a year ago"},
         {v:"never", label:"Never tested"}
       ]},
-      {q:"Are you ready to do bloodwork to start safely?", help:"Bloodwork is required before starting TRT.", type:"choice", options:[
-        {v:"home", label:"Yes, at-home draw works"},
-        {v:"local", label:"Yes, I'll go to a local lab"},
-        {v:"existing", label:"I have recent labs I can share"},
-        {v:"talk", label:"I'd like to talk to a clinician first"}
-      ]},
       {q:"Quick check, are you 25+ and a U.S. resident?", help:"Required for U.S.-licensed clinicians to prescribe.", type:"choice", options:[
         {v:"yes", label:"Yes"},
         {v:"no", label:"No"}
-      ]},
-      {q:"Last step, where should we send your results?", help:"We'll email a link to your intake. No spam.", type:"email"}
+      ]}
     ];
-    var ineligibleCheck = function(answers) { return answers[4] !== 'yes'; };
+    var ineligibleCheck = function(answers) { return answers[2] !== 'yes'; };
     var answers = new Array(steps.length).fill(null);
     var idx = 0;
     var progressEl = document.getElementById('quiz-progress-bar');

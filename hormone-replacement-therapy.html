@@ -1051,7 +1051,7 @@
       <div class="quiz-card rise d2" aria-live="polite">
         <div class="quiz-head">
           <span class="quiz-label">Eligibility Check</span>
-          <span class="quiz-counter"><span id="quiz-step-num">1</span> of 6</span>
+          <span class="quiz-counter"><span id="quiz-step-num">1</span> of 3</span>
         </div>
         <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
         <div id="quiz-steps"></div>
@@ -1059,9 +1059,9 @@
           <div class="quiz-check">
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
           </div>
-          <h3>You look like a fit for a clinical review.</h3>
-          <p>A licensed clinician will review your intake and let you know if HRT is appropriate, typically within 24 hours.</p>
-          <a href="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Start my intake →</a>
+          <h3>You seem like a strong candidate.</h3>
+          <p>Complete the full intake to find out for sure — a US-licensed clinician will review your file, typically within 24 hours.</p>
+          <a href="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl" style="width:100%">Complete the full intake →</a>
           <p class="quiz-disclaimer">Eligibility is not a guarantee of prescription. Only a licensed clinician can determine if treatment is appropriate.</p>
         </div>
         <div class="quiz-result warn" id="quiz-ineligible">
@@ -1659,13 +1659,6 @@
     if (!stepsEl) return;
     var INTAKE_URL = 'https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6';
     var steps = [
-      {q:"What's your top reason for exploring HRT?", help:"Pick the one that resonates most.", type:"choice", options:[
-        {v:"sleep", label:"I want to sleep through the night again"},
-        {v:"mood", label:"I want my mood and patience back"},
-        {v:"hot", label:"I'm done with hot flashes & night sweats"},
-        {v:"libido", label:"Reignite libido and intimacy"},
-        {v:"all", label:"All of the above, feel like myself again"}
-      ]},
       {q:"Which symptom has been the worst lately?", help:"Be honest, this is private.", type:"choice", options:[
         {v:"hotflash", label:"Hot flashes or night sweats"},
         {v:"sleep", label:"Trouble sleeping or waking at 3am"},
@@ -1680,19 +1673,12 @@
         {v:"post", label:"It's been 12+ months since my last period"},
         {v:"surgical", label:"Surgical menopause (hysterectomy)"}
       ]},
-      {q:"Have you talked to a doctor about HRT before?", help:"No wrong answer, this helps your clinician tailor your plan.", type:"choice", options:[
-        {v:"yes-on", label:"Yes, I'm on HRT now"},
-        {v:"yes-past", label:"Yes, I tried it before"},
-        {v:"yes-told-no", label:"Yes, was told it wasn't for me"},
-        {v:"no", label:"No, this is new for me"}
-      ]},
       {q:"Quick check, are you 35+ and a U.S. resident?", help:"Required for U.S.-licensed clinicians to prescribe.", type:"choice", options:[
         {v:"yes", label:"Yes"},
         {v:"no", label:"No"}
-      ]},
-      {q:"Last step, where should we send your results?", help:"We'll email a link to your intake. No spam.", type:"email"}
+      ]}
     ];
-    var ineligibleCheck = function(answers) { return answers[4] !== 'yes'; };
+    var ineligibleCheck = function(answers) { return answers[2] !== 'yes'; };
     var answers = new Array(steps.length).fill(null);
     var idx = 0;
     var progressEl = document.getElementById('quiz-progress-bar');

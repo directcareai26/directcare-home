@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex,nofollow" />
+<title>Symptom Section — Design Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #faf6f0;
+    --ink: #241432;
+    --ink-soft: #4a3760;
+    --muted: #6b5c7a;
+    --brand: #af4bed;
+    --brand-deep: #762ba4;
+    --brand-darker: #44215A;
+    --line: rgba(36,20,50,0.10);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', sans-serif; }
+  body { padding: 24px clamp(16px, 4vw, 48px) 80px; line-height: 1.5; letter-spacing: -0.01em; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { font-family: 'Geist', sans-serif; font-weight: 500; letter-spacing: -0.03em; color: var(--ink); margin: 0; line-height: 1.05; }
+
+  .mockup-banner { background: linear-gradient(135deg, #af4bed, #44215A); color: white; padding: 14px 24px; border-radius: 14px; margin-bottom: 40px; font-weight: 600; }
+  .mockup-section { max-width: 1280px; margin: 0 auto 80px; }
+  .mockup-label { display: inline-block; background: var(--ink); color: var(--bg); padding: 6px 14px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 20px; }
+  .mockup-note { color: var(--muted); margin: 8px 0 28px; max-width: 720px; font-size: 0.95rem; }
+
+  /* ======================================================
+     MOCKUP A — HERS-STYLE HERO CAROUSEL
+     One big card. Auto-rotates through 8 symptoms.
+     Cutout figure right, big headline left with rotating word,
+     pastel bg per symptom.
+     ====================================================== */
+  .a-hero {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    min-height: 480px;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    isolation: isolate;
+    transition: background 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  @media (max-width: 720px) {
+    .a-hero { grid-template-columns: 1fr; aspect-ratio: auto; min-height: 0; }
+  }
+  .a-hero-body { padding: clamp(28px, 5vw, 72px); position: relative; z-index: 2; }
+  .a-hero-eyebrow {
+    display: inline-block;
+    font-size: 0.74rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: var(--brand-darker);
+    background: rgba(255,255,255,0.5);
+    border: 1px solid rgba(36,20,50,0.10);
+    padding: 6px 14px; border-radius: 999px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 18px;
+  }
+  .a-hero h1 {
+    font-size: clamp(2.2rem, 5.4vw, 4.2rem);
+    line-height: 1.0;
+    color: var(--ink);
+    margin-bottom: 14px;
+  }
+  .a-hero h1 em {
+    font-style: italic; font-weight: 500;
+    background: linear-gradient(135deg, var(--brand), var(--brand-darker));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-right: 0.22em;
+    margin-right: -0.06em;
+    /* Rotate-in animation when text content changes */
+    animation: aRotateIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  @keyframes aRotateIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .a-hero p {
+    color: var(--ink-soft); font-size: 1.1rem;
+    max-width: 480px; margin: 0 0 30px; line-height: 1.55;
+  }
+  .a-hero .a-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--ink); color: var(--bg);
+    padding: 16px 32px; border-radius: 999px;
+    font-weight: 600; font-size: 1rem;
+    transition: transform 0.2s ease;
+  }
+  .a-hero .a-cta:hover { transform: translateY(-2px); }
+  .a-hero-image-wrap {
+    position: relative; height: 100%;
+    display: flex; align-items: flex-end; justify-content: center;
+    padding-right: clamp(20px, 4vw, 60px);
+  }
+  .a-hero-image {
+    max-height: 88%; max-width: 100%; object-fit: contain;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.12));
+    animation: aFadeIn 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  @keyframes aFadeIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  /* Decorative bg shape */
+  .a-hero::before {
+    content: ""; position: absolute;
+    top: -10%; right: -5%; width: 60%; height: 120%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.35), transparent 60%);
+    z-index: 1; pointer-events: none;
+  }
+  /* Rotation indicator dots */
+  .a-hero-dots {
+    position: absolute; bottom: 24px; left: clamp(28px, 5vw, 72px);
+    display: flex; gap: 6px; z-index: 3;
+  }
+  .a-hero-dot { width: 24px; height: 4px; border-radius: 2px; background: rgba(36,20,50,0.20); transition: background 0.3s ease; }
+  .a-hero-dot.is-active { background: var(--ink); }
+
+  /* ======================================================
+     MOCKUP B — COLORFUL TILE GRID
+     8 cards, each a unique pastel bg with cutout figure.
+     Static, no rotation, but each card has hover lift.
+     ====================================================== */
+  .b-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 980px) { .b-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .b-grid { grid-template-columns: 1fr; } }
+  .b-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 22px;
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+    isolation: isolate;
+  }
+  .b-card:hover { transform: translateY(-6px); box-shadow: 0 24px 40px -16px rgba(36,20,50,0.20); }
+  .b-card-text {
+    position: relative; z-index: 2;
+  }
+  .b-card-tag {
+    display: inline-block;
+    font-size: 0.65rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.14em;
+    color: rgba(36,20,50,0.75);
+    background: rgba(255,255,255,0.45);
+    padding: 4px 10px; border-radius: 999px;
+    backdrop-filter: blur(8px);
+    margin-bottom: 10px;
+  }
+  .b-card-title {
+    font-family: 'Geist', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.05;
+    letter-spacing: -0.025em;
+    color: var(--ink);
+    max-width: 80%;
+  }
+  .b-card-figure {
+    position: absolute;
+    bottom: 0; right: -10%;
+    width: 70%; height: 70%;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .b-card:hover .b-card-figure { transform: scale(1.06) translateY(-4px); }
+  .b-card-figure img {
+    width: 100%; height: 100%; object-fit: contain; object-position: bottom right;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.10));
+  }
+
+  /* ======================================================
+     MOCKUP C — ROTATING WORDS BEHIND CENTRAL FIGURE
+     One main figure stays. Symptom words cycle in/out behind her.
+     ====================================================== */
+  .c-hero {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    background: linear-gradient(140deg, #f5e9ff 0%, #efe2d1 100%);
+    aspect-ratio: 16 / 10;
+    min-height: 520px;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+  }
+  @media (max-width: 720px) {
+    .c-hero { aspect-ratio: auto; min-height: 520px; }
+  }
+  .c-rotator-stack {
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  .c-rotator-word {
+    position: absolute;
+    font-family: 'Geist', sans-serif;
+    font-size: clamp(3.2rem, 11vw, 8rem);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    color: var(--brand);
+    opacity: 0.18;
+    text-transform: lowercase;
+    white-space: nowrap;
+    animation: cFlow 32s linear infinite;
+  }
+  .c-rotator-word:nth-child(1) { animation-delay: 0s; top: 18%; }
+  .c-rotator-word:nth-child(2) { animation-delay: -4s; top: 38%; }
+  .c-rotator-word:nth-child(3) { animation-delay: -8s; top: 58%; }
+  .c-rotator-word:nth-child(4) { animation-delay: -12s; top: 78%; }
+  .c-rotator-word:nth-child(5) { animation-delay: -16s; top: 8%; }
+  .c-rotator-word:nth-child(6) { animation-delay: -20s; top: 28%; }
+  .c-rotator-word:nth-child(7) { animation-delay: -24s; top: 48%; }
+  .c-rotator-word:nth-child(8) { animation-delay: -28s; top: 68%; }
+  @keyframes cFlow {
+    0%   { transform: translateX(100vw); opacity: 0; }
+    8%   { opacity: 0.20; }
+    50%  { opacity: 0.10; }
+    92%  { opacity: 0; }
+    100% { transform: translateX(-100vw); opacity: 0; }
+  }
+  .c-figure-wrap {
+    position: relative; z-index: 2;
+    max-width: min(540px, 70%);
+  }
+  .c-figure-wrap img {
+    width: 100%; height: auto;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.15));
+  }
+  .c-headline {
+    position: absolute; left: 50%; bottom: 8%;
+    transform: translateX(-50%);
+    z-index: 3;
+    text-align: center;
+    color: var(--ink);
+    background: rgba(255,255,255,0.65);
+    padding: 16px 32px;
+    border-radius: 999px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(36,20,50,0.06);
+  }
+  .c-headline h2 { font-size: clamp(1.2rem, 2.4vw, 1.8rem); font-weight: 500; }
+  .c-headline em {
+    font-style: italic;
+    background: linear-gradient(135deg, var(--brand), var(--brand-darker));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+</head>
+<body>
+
+<div class="mockup-banner">
+  Symptom illustration mockups — 3 design directions for the upcoming 8 Firefly cutout figures.
+  This is a noindex preview at <code>/mockup-symptoms</code>. Not linked from anywhere.
+</div>
+
+<!-- ============== MOCKUP A — HERS-STYLE HERO CAROUSEL ============== -->
+<div class="mockup-section">
+  <span class="mockup-label">Mockup A — Hers-style hero carousel</span>
+  <p class="mockup-note">
+    One big card. Auto-rotates through all 8 symptoms every 5 seconds. Pastel background color
+    shifts per symptom (lavender, peach, mint, coral, sky, gold, rose, sage). The cutout figure
+    fades in/scales from 0.96, headline rotates up with the gradient italic. Best for the
+    <strong>top of the page</strong> — replaces the static "Sound familiar?" headline with a
+    living, breathing entry point. Mobile: stacks figure under text, same rotation.
+  </p>
+  <div class="a-hero" id="aHero" style="background: #f3e8ff;">
+    <div class="a-hero-body">
+      <span class="a-hero-eyebrow">Sound familiar?</span>
+      <h1 id="aHeadline">She has <em>hot flashes</em></h1>
+      <p id="aSub">Estradiol decline triggers thermoregulation chaos. We've helped 1000s of women turn it down.</p>
+      <a href="/hormone-replacement-therapy" class="a-cta">Start free intake →</a>
+    </div>
+    <div class="a-hero-image-wrap">
+      <img class="a-hero-image" id="aFigure" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" />
+    </div>
+    <div class="a-hero-dots" id="aDots"></div>
+  </div>
+</div>
+
+<!-- ============== MOCKUP B — COLORFUL TILE GRID ============== -->
+<div class="mockup-section">
+  <span class="mockup-label">Mockup B — Colorful tile grid (static)</span>
+  <p class="mockup-note">
+    Replaces the existing symptom grid one-for-one but each card gets a unique pastel background
+    color and a half-card cutout figure bleeding out the bottom-right. Big, scannable, no
+    animation — every symptom is visible at a glance. Best for the
+    <strong>existing symptom grid slot</strong>. Hover lifts the card 6px and the figure scales
+    1.06×. This is the closest match to how Hers handles their product cards on /weight-loss/.
+  </p>
+  <div class="b-grid">
+    <div class="b-card" style="background: #f3e8ff;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Hot flashes</span>
+        <div class="b-card-title">Turn the temperature down.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #fef0e6;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Sleep</span>
+        <div class="b-card-title">Sleep all the way through again.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #e6f5ee;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Brain fog</span>
+        <div class="b-card-title">Find the word you just had.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #fde7ec;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Libido</span>
+        <div class="b-card-title">Reignite intimacy.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #fff4d2;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Weight</span>
+        <div class="b-card-title">Same body, different system.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #e6e9f7;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Hair</span>
+        <div class="b-card-title">Hair regrowth starts at the root.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #fce4e8;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Anxiety</span>
+        <div class="b-card-title">A nervous system that resets.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" alt="" /></div>
+    </div>
+    <div class="b-card" style="background: #e8ede4;">
+      <div class="b-card-text">
+        <span class="b-card-tag">Joints</span>
+        <div class="b-card-title">Move like you mean it.</div>
+      </div>
+      <div class="b-card-figure"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" /></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============== MOCKUP C — ROTATING WORDS BEHIND CENTRAL FIGURE ============== -->
+<div class="mockup-section">
+  <span class="mockup-label">Mockup C — Rotating words behind central figure</span>
+  <p class="mockup-note">
+    One central figure stays in place. The 8 symptom words drift across the background in slow
+    horizontal motion, each at a different vertical position, creating a kinetic-typography
+    "she's living through all of these" effect. Below her, a floating glass pill shows the
+    current symptom + a clinician-friendly framing. Best as a <strong>standalone hero piece</strong>
+    or campaign landing. More distinctive than Mockups A or B — but only works if your figure
+    has strong centered framing.
+  </p>
+  <div class="c-hero">
+    <div class="c-rotator-stack" aria-hidden="true">
+      <span class="c-rotator-word">hot flashes</span>
+      <span class="c-rotator-word">brain fog</span>
+      <span class="c-rotator-word">low libido</span>
+      <span class="c-rotator-word">sleep loss</span>
+      <span class="c-rotator-word">weight gain</span>
+      <span class="c-rotator-word">thinning hair</span>
+      <span class="c-rotator-word">anxiety</span>
+      <span class="c-rotator-word">joint aches</span>
+    </div>
+    <div class="c-figure-wrap">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" alt="" />
+    </div>
+    <div class="c-headline">
+      <h2>It's <em>not</em> in your head.</h2>
+    </div>
+  </div>
+</div>
+
+<script>
+/* MOCKUP A rotation logic */
+(function() {
+  var symptoms = [
+    { tag: "Sound familiar?", headlinePre: "She has",  headlineEm: "hot flashes",  sub: "Estradiol decline triggers thermoregulation chaos.",                  bg: "#f3e8ff", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" },
+    { tag: "Sound familiar?", headlinePre: "She can't", headlineEm: "stay asleep",  sub: "Progesterone drops are why you wake up at 3am.",                       bg: "#fef0e6", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" },
+    { tag: "Sound familiar?", headlinePre: "She has",  headlineEm: "brain fog",    sub: "Estrogen is your brain's anti-inflammatory. It works.",                bg: "#e6f5ee", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" },
+    { tag: "Sound familiar?", headlinePre: "She wants", headlineEm: "her drive back", sub: "Testosterone matters for women, too. We treat both.",              bg: "#fde7ec", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" },
+    { tag: "Sound familiar?", headlinePre: "She's",    headlineEm: "stuck at +15",  sub: "Same food. Same workouts. Different body. We get it.",                bg: "#fff4d2", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" },
+    { tag: "Sound familiar?", headlinePre: "She's losing", headlineEm: "her hair",  sub: "Hormonal shifts show up at the scalp first.",                          bg: "#e6e9f7", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" },
+    { tag: "Sound familiar?", headlinePre: "She's been", headlineEm: "on edge",     sub: "A nervous system without progesterone support.",                       bg: "#fce4e8", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" },
+    { tag: "Sound familiar?", headlinePre: "She wakes up", headlineEm: "stiff",     sub: "Estrogen helps your joints stay hydrated.",                            bg: "#e8ede4", img: "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" }
+  ];
+
+  var hero = document.getElementById('aHero');
+  var headline = document.getElementById('aHeadline');
+  var sub = document.getElementById('aSub');
+  var figure = document.getElementById('aFigure');
+  var dotsWrap = document.getElementById('aDots');
+  var idx = 0;
+
+  symptoms.forEach(function(_, i) {
+    var d = document.createElement('span');
+    d.className = 'a-hero-dot' + (i === 0 ? ' is-active' : '');
+    dotsWrap.appendChild(d);
+  });
+
+  function render(i) {
+    var s = symptoms[i];
+    hero.style.background = s.bg;
+    headline.innerHTML = s.headlinePre + ' <em>' + s.headlineEm + '</em>';
+    sub.textContent = s.sub;
+    figure.src = s.img;
+    // re-trigger animation on em
+    var em = headline.querySelector('em');
+    if (em) {
+      em.style.animation = 'none';
+      em.offsetHeight;
+      em.style.animation = '';
+    }
+    // re-trigger animation on figure
+    figure.style.animation = 'none';
+    figure.offsetHeight;
+    figure.style.animation = '';
+    // dots
+    [].forEach.call(dotsWrap.children, function(d, di) {
+      d.classList.toggle('is-active', di === i);
+    });
+  }
+
+  setInterval(function() {
+    idx = (idx + 1) % symptoms.length;
+    render(idx);
+  }, 5000);
+})();
+</script>
+
+</body>
+</html>

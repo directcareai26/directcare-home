@@ -569,10 +569,30 @@
     max-width: 540px; margin: 0 auto; font-weight: 500;
   }
   .tnpn-card-divider { height: 1px; background: #e4ddec; margin: 22px 0 18px; }
-  .tnpn-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: center; }
-  .tnpn-ratings > div { display: flex; align-items: center; justify-content: center; padding: 6px 16px; }
-  .tnpn-ratings > div + div { border-left: 1px solid #e4ddec; }
-  .tnpn-ratings img { display: block; max-height: 42px; width: auto; max-width: 100%; }
+  .tnpn-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; }
+  .tnpn-ratings > .rating { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 6px 16px; text-align: center; }
+  .tnpn-ratings > .rating + .rating { border-left: 1px solid #e4ddec; }
+  .rating-brand { font-family: 'Geist', 'Manrope', system-ui, sans-serif; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+  .rating-brand .g-letter { font-size: 1.4rem; }
+  .rating .tp-star { color: #00B67A; font-size: 1.4rem; margin-right: 5px; vertical-align: -1px; }
+  .rating .tp-name { color: #00B67A; font-size: 1.1rem; font-weight: 800; letter-spacing: -0.01em; }
+  .rating-meta { display: inline-flex; align-items: center; gap: 8px; }
+  .rating-score { font-family: 'Geist', 'Manrope', system-ui, sans-serif; font-weight: 800; font-size: 1.05rem; color: #281A31; line-height: 1; }
+  .rating-stars { font-size: 1rem; line-height: 1; display: inline-flex; gap: 1px; letter-spacing: 0.04em; }
+  .rating-stars-gold { color: #FBBC05; }
+  .rating-stars-tp { color: #00B67A; }
+  .rating-stars .half { background: linear-gradient(90deg, currentColor 50%, rgba(0,0,0,0.18) 50%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .rating-count { font-size: 0.78rem; color: #5b4d65; }
+  /* Mobile: collapse each rating into a single horizontal row (no count, smaller text) */
+  @media (max-width: 720px) {
+    .tnpn-ratings > .rating { flex-direction: row; flex-wrap: nowrap; justify-content: center; gap: 6px; padding: 4px 6px; }
+    .rating-brand .g-letter { font-size: 0.92rem; }
+    .rating .tp-star { font-size: 0.96rem; margin-right: 3px; }
+    .rating .tp-name { font-size: 0.84rem; }
+    .rating-score { font-size: 0.84rem; }
+    .rating-stars { font-size: 0.78rem; }
+    .rating-count { display: none; }
+  }
 
   .tnpn-stats-card { padding-top: clamp(28px, 4vw, 40px); padding-bottom: clamp(28px, 4vw, 40px); display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
   .tnpn-stat { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 4px 8px; }
@@ -1009,8 +1029,22 @@
         <p class="tnpn-desc">Licensed clinicians review every treatment request to determine whether treatment is right for you.</p>
         <div class="tnpn-card-divider"></div>
         <div class="tnpn-ratings">
-          <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20google.webp" alt="Google reviews rating" loading="lazy" /></div>
-          <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20trustpilot.webp" alt="Trustpilot rating" loading="lazy" /></div>
+          <div class="rating rating-google">
+            <span class="rating-brand" aria-hidden="true"><span class="g-letter" style="color:#4285F4">G</span><span class="g-letter" style="color:#EA4335">o</span><span class="g-letter" style="color:#FBBC05">o</span><span class="g-letter" style="color:#4285F4">g</span><span class="g-letter" style="color:#34A853">l</span><span class="g-letter" style="color:#EA4335">e</span></span>
+            <span class="rating-meta">
+              <span class="rating-score">4.6</span>
+              <span class="rating-stars rating-stars-gold" aria-label="4.6 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span class="half">★</span></span>
+            </span>
+            <span class="rating-count">4.6k reviews</span>
+          </div>
+          <div class="rating rating-tp">
+            <span class="rating-brand" aria-hidden="true"><span class="tp-star">★</span><span class="tp-name">Trustpilot</span></span>
+            <span class="rating-meta">
+              <span class="rating-score">4.9</span>
+              <span class="rating-stars rating-stars-tp" aria-label="4.9 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></span>
+            </span>
+            <span class="rating-count">8.1k reviews</span>
+          </div>
         </div>
       </div>
 

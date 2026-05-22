@@ -40,7 +40,7 @@
 
 <style>
   :root {
-    --bg: #ffffff;
+    --bg: #faf6f0;
     --soft: #fbf5fe;
     --soft-2: #f4eefb;
     --lavender-100: #E9D9F2;
@@ -75,9 +75,12 @@
   h5 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--brand-deep); }
   p { margin: 0; color: var(--muted); }
   .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
-  .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
-  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
-  .section.lavender { background: var(--soft); }
+  .section { padding: clamp(48px, 7vw, 88px) 0; position: relative; }
+  .section.soft { background: var(--soft); }
+  .section.lavender { background: var(--soft-2, #f4eefb); }
+  /* Hide section-head eyebrow chips (per design polish — too noisy, duplicates h2) */
+  .section-head > .eyebrow { display: none; }
+  .faq-side > .eyebrow { display: none; }
 
   @keyframes rise { 0% { opacity: 0; transform: translateY(16px); } 100% { opacity: 1; transform: translateY(0); } }
   .rise { animation: rise 900ms cubic-bezier(0.22, 1, 0.36, 1) both; }
@@ -378,13 +381,13 @@
   .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
   .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
 
-  .section-head { text-align: center; max-width: 760px; margin: 0 auto 56px; }
-  .section-head p { margin-top: 18px; font-size: 1.06rem; }
-  .section-head h2 { margin-top: 22px; }
+  .section-head { text-align: center; max-width: 820px; margin: 0 auto 40px; }
+  .section-head p { margin-top: 16px; font-size: 1.04rem; line-height: 1.55; }
+  .section-head h2 { margin-top: 0; font-size: clamp(2.1rem, 4.6vw, 3.6rem); line-height: 1.08; letter-spacing: -0.025em; }
   .section-head h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
   /* PROVIDER TRUST SECTION (parallel to HRT) */
-  .trust-section { background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); padding: clamp(32px, 5vw, 52px) 0; }
+  .trust-section { background: white; padding: clamp(32px, 5vw, 52px) 0; }
   .trust-section .section-head { margin-bottom: 22px; }
   .trust-section .section-head h2,
   .trust-section .section-head p { display: none; }
@@ -446,7 +449,7 @@
   @media (max-width: 760px) {
     .section { padding: 64px 0; }
     .section-head { margin-bottom: 40px; }
-    .section-head h2 { font-size: clamp(1.35rem, 6vw, 2.1rem); line-height: 1.2; text-wrap: balance; }
+    .section-head h2 { font-size: clamp(1.75rem, 7.4vw, 2.6rem); line-height: 1.12; text-wrap: balance; }
     .hero { padding: 40px 0 64px; }
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 22px; font-size: 0.96rem; }
@@ -659,7 +662,7 @@
 </div>
 
 <!-- WHY MEN TRUST DIRECTCARE AI -->
-<section class="section">
+<section class="section soft">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Why men trust DirectCare AI</span>

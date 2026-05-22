@@ -260,7 +260,13 @@
     footer .container, footer .container-px { padding-left: 14px !important; padding-right: 14px !important; }
   }
 
-  /* ============== POP-OUT GROUP BAND (Mockup D) ============== */
+  /* ============== POP-OUT GROUP BAND (Mockup D) — full-bleed ============== */
+  .d-section {
+    width: 100%;
+    padding: 0;
+    margin: clamp(20px, 3vw, 40px) 0;
+    background: transparent;
+  }
   .d-stage {
     position: relative;
     overflow: visible;
@@ -269,23 +275,23 @@
     align-items: flex-end;
     justify-content: center;
     padding-top: 140px;
-    margin: clamp(20px, 3vw, 40px) 0;
+    width: 100%;
   }
   @media (max-width: 720px) {
-    .d-stage { min-height: 660px; padding-top: 90px; }
+    .d-stage { min-height: 640px; padding-top: 90px; }
   }
   .d-band {
     position: absolute;
     left: 0; right: 0; bottom: 0;
     height: calc(100% - 140px);
-    border-radius: 28px;
+    border-radius: 0;                /* edge-to-edge, no rounded corners */
     overflow: hidden;
     background: linear-gradient(140deg, #f5e9ff 0%, #efe2d1 100%);
     isolation: isolate;
     z-index: 1;
   }
   @media (max-width: 720px) {
-    .d-band { height: calc(100% - 90px); border-radius: 22px; }
+    .d-band { height: calc(100% - 90px); }
   }
   .d-rotator-stack { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
   .d-rotator-word { position: absolute; font-family: 'Geist', sans-serif; font-weight: 700; letter-spacing: -0.04em; color: var(--brand); text-transform: lowercase; white-space: nowrap; will-change: transform, opacity; }
@@ -497,42 +503,40 @@
   </div>
 </section>
 
-<!-- POP-OUT GROUP BAND — between symptoms grid and product tiles (Mockup D) -->
-<section class="section">
-  <div class="container">
-    <div class="d-stage">
-      <div class="d-band">
-        <div class="d-rotator-stack" aria-hidden="true">
-          <span class="d-rotator-word w1">hot flashes</span>
-          <span class="d-rotator-word w2">night sweats</span>
-          <span class="d-rotator-word w3">brain fog</span>
-          <span class="d-rotator-word w4">fatigue</span>
-          <span class="d-rotator-word w5">low libido</span>
-          <span class="d-rotator-word w6">sleep loss</span>
-          <span class="d-rotator-word w7">weight gain</span>
-          <span class="d-rotator-word w8">cravings</span>
-          <span class="d-rotator-word w9">thinning hair</span>
-          <span class="d-rotator-word w10">dry skin</span>
-          <span class="d-rotator-word w11">anxiety</span>
-          <span class="d-rotator-word w12">irritability</span>
-          <span class="d-rotator-word w13">joint aches</span>
-          <span class="d-rotator-word w14">mood swings</span>
-          <span class="d-rotator-word w15">bloating</span>
-          <span class="d-rotator-word w16">vaginal dryness</span>
-          <span class="d-rotator-word w17">palpitations</span>
-          <span class="d-rotator-word w18">perimenopause</span>
-          <span class="d-rotator-word w19">menopause</span>
-          <span class="d-rotator-word w20">hormonal</span>
-          <span class="d-rotator-word w21">restored</span>
-          <span class="d-rotator-word w22">balanced</span>
-        </div>
-        <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
+<!-- POP-OUT GROUP BAND — full-bleed edge-to-edge between symptoms grid and product tiles (Mockup D) -->
+<section class="d-section">
+  <div class="d-stage">
+    <div class="d-band">
+      <div class="d-rotator-stack" aria-hidden="true">
+        <span class="d-rotator-word w1">hot flashes</span>
+        <span class="d-rotator-word w2">night sweats</span>
+        <span class="d-rotator-word w3">brain fog</span>
+        <span class="d-rotator-word w4">fatigue</span>
+        <span class="d-rotator-word w5">low libido</span>
+        <span class="d-rotator-word w6">sleep loss</span>
+        <span class="d-rotator-word w7">weight gain</span>
+        <span class="d-rotator-word w8">cravings</span>
+        <span class="d-rotator-word w9">thinning hair</span>
+        <span class="d-rotator-word w10">dry skin</span>
+        <span class="d-rotator-word w11">anxiety</span>
+        <span class="d-rotator-word w12">irritability</span>
+        <span class="d-rotator-word w13">joint aches</span>
+        <span class="d-rotator-word w14">mood swings</span>
+        <span class="d-rotator-word w15">bloating</span>
+        <span class="d-rotator-word w16">vaginal dryness</span>
+        <span class="d-rotator-word w17">palpitations</span>
+        <span class="d-rotator-word w18">perimenopause</span>
+        <span class="d-rotator-word w19">menopause</span>
+        <span class="d-rotator-word w20">hormonal</span>
+        <span class="d-rotator-word w21">restored</span>
+        <span class="d-rotator-word w22">balanced</span>
       </div>
-      <div class="d-figure-wrap">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="Three women representing different ages and backgrounds" loading="lazy" />
-        <div class="d-sparkle-layer" aria-hidden="true">
-          <span class="d-sparkle s1"></span><span class="d-sparkle s2"></span><span class="d-sparkle s3"></span><span class="d-sparkle s4"></span><span class="d-sparkle s5"></span><span class="d-sparkle s6"></span><span class="d-sparkle s7"></span><span class="d-sparkle s8"></span><span class="d-sparkle s9"></span><span class="d-sparkle s10"></span><span class="d-sparkle s11"></span><span class="d-sparkle s12"></span>
-        </div>
+      <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
+    </div>
+    <div class="d-figure-wrap">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="Three women representing different ages and backgrounds" loading="lazy" />
+      <div class="d-sparkle-layer" aria-hidden="true">
+        <span class="d-sparkle s1"></span><span class="d-sparkle s2"></span><span class="d-sparkle s3"></span><span class="d-sparkle s4"></span><span class="d-sparkle s5"></span><span class="d-sparkle s6"></span><span class="d-sparkle s7"></span><span class="d-sparkle s8"></span><span class="d-sparkle s9"></span><span class="d-sparkle s10"></span><span class="d-sparkle s11"></span><span class="d-sparkle s12"></span>
       </div>
     </div>
   </div>

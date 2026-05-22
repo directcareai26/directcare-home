@@ -650,6 +650,82 @@
   }
 
   /* ============================================================
+     PRICING SECTION (TRT) — 5-card tier grid mirroring HRT
+     ============================================================ */
+  .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 1100px; margin: 0 auto; }
+  @media (max-width: 980px) { .pricing-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .pricing-grid { grid-template-columns: 1fr; } }
+  .price-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 22px 22px; position: relative; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; display: flex; flex-direction: column; }
+  .price-card:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.35); }
+  .price-card.featured { background: linear-gradient(160deg, var(--soft) 0%, white 70%); border-color: rgba(175,75,237,0.4); }
+  .price-card.featured::before { content: "Most chosen"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--brand); color: white; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; box-shadow: 0 6px 14px -4px rgba(175,75,237,0.55); white-space: nowrap; }
+  .price-card .tag { display: inline-block; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); margin-bottom: 8px; }
+  .price-card h3 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.08rem; font-weight: 800; margin: 0 0 18px; color: var(--ink); line-height: 1.3; flex: 1; }
+  .price-amt { display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; padding-top: 14px; border-top: 1px solid var(--lavender-100); }
+  .price-amt .num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.9rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
+  .price-amt .per { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
+  .price-foot { max-width: 760px; margin: 28px auto 0; text-align: center; font-size: 0.86rem; color: var(--muted); line-height: 1.55; }
+  .price-foot strong { color: var(--ink); font-weight: 700; }
+  /* Center the row-2 orphans (cards 4 & 5) on desktop using a 6-col grid */
+  @media (min-width: 981px) {
+    #pricing .pricing-grid { grid-template-columns: repeat(6, 1fr); }
+    #pricing .price-card { grid-column: span 2; }
+    #pricing .price-card:nth-child(4) { grid-column: 2 / span 2; }
+    #pricing .price-card:nth-child(5) { grid-column: 4 / span 2; }
+  }
+
+  /* ============================================================
+     COMPARE TABLE (TRT) — 3-column blood-labs style
+     ============================================================ */
+  .compare-wrap { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.16); }
+  .compare-head { display: grid; grid-template-columns: 1.45fr 1fr 1fr; background: linear-gradient(180deg, var(--soft) 0%, white 100%); border-bottom: 1px solid var(--lavender-100); }
+  .compare-head > div { padding: 22px 24px; font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; min-width: 0; }
+  .compare-head .row-label { color: var(--muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.14em; align-self: center; }
+  .compare-col-us { text-align: center; color: var(--brand-darker); font-size: 1.05rem; line-height: 1.15; position: relative; }
+  .compare-col-us::before { content: ""; position: absolute; left: 0; right: 0; top: -1px; height: 4px; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 100%); }
+  .compare-col-us small { display: block; font-size: 0.72rem; font-weight: 700; color: var(--brand); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+  .compare-col-them { text-align: center; color: var(--ink); font-size: 1.05rem; line-height: 1.15; }
+  .compare-col-them small { display: block; font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+  .compare-row { display: grid; grid-template-columns: 1.45fr 1fr 1fr; border-top: 1px solid var(--lavender-100); }
+  .compare-row:nth-child(odd) { background: rgba(251,245,254,0.45); }
+  .compare-row > div { padding: 16px 24px; font-size: 0.94rem; display: flex; align-items: center; line-height: 1.4; min-width: 0; }
+  .compare-row .cell-label { color: var(--ink); font-weight: 600; }
+  .compare-row .cell-us, .compare-row .cell-them { justify-content: center; text-align: center; gap: 8px; }
+  .compare-row .cell-us { color: var(--brand-darker); font-weight: 700; background: rgba(175,75,237,0.04); }
+  .compare-row .cell-them { color: var(--muted); }
+  /* Fixed-width inner block so checkmarks line up vertically across rows */
+  .compare-row .cell-us { justify-content: center; }
+  .compare-row .cu-inner { display: inline-grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: center; width: 180px; text-align: left; }
+  .compare-row .cu-inner .mark { justify-self: start; }
+  .compare-row .mark { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; flex-shrink: 0; font-size: 0.82rem; font-weight: 800; }
+  .compare-row .mark.yes { background: rgba(20,152,58,0.14); color: var(--green); }
+  .compare-row .mark.no { background: rgba(208,69,69,0.12); color: var(--bad); }
+  .compare-row .mark.partial { background: rgba(217,155,31,0.16); color: var(--gold); }
+  .compare-row .cell-note { font-size: 0.84rem; font-weight: 500; }
+  .compare-foot { padding: 20px 24px; background: var(--soft); border-top: 1px solid var(--lavender-100); display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; align-items: center; font-size: 0.84rem; color: var(--muted); }
+  .compare-foot .key { display: inline-flex; align-items: center; gap: 6px; }
+  .compare-foot .key .mark { width: 18px; height: 18px; font-size: 0.72rem; }
+  @media (max-width: 760px) {
+    .compare-head, .compare-row { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.2fr) minmax(0, 0.55fr); }
+    .compare-head > div, .compare-row > div { padding: 12px 6px; }
+    .compare-head > div:first-child { padding-left: 12px; }
+    .compare-head > div:last-child { padding-right: 12px; }
+    .compare-row > div:first-child { padding-left: 12px; }
+    .compare-row > div:last-child { padding-right: 12px; }
+    .compare-head .row-label { font-size: 0.62rem; letter-spacing: 0.10em; line-height: 1.25; }
+    .compare-col-us, .compare-col-them { font-size: 0.78rem; line-height: 1.15; }
+    .compare-col-us small, .compare-col-them small { font-size: 0.54rem; letter-spacing: 0.08em; margin-bottom: 2px; }
+    .compare-row > div { font-size: 0.78rem; line-height: 1.3; gap: 6px; }
+    .compare-row .cell-label { font-size: 0.76rem; line-height: 1.3; word-break: normal; overflow-wrap: break-word; hyphens: auto; }
+    .compare-row .cell-them { flex-direction: column; gap: 4px; text-align: center; }
+    .compare-row .cu-inner { width: 110px; grid-template-columns: 18px 1fr; gap: 6px; }
+    .compare-row .mark { width: 22px; height: 22px; font-size: 0.78rem; font-weight: 800; }
+    .compare-row .cu-inner .mark { width: 18px; height: 18px; font-size: 0.64rem; }
+    .compare-row .cell-note { font-size: 0.66rem; line-height: 1.2; font-weight: 600; }
+    .compare-foot { padding: 14px 12px; gap: 10px 14px; font-size: 0.74rem; }
+  }
+
+  /* ============================================================
      CRISP PASS — flatten chrome, edge-to-edge bands (Hims/Hers/Ro feel)
      Appended last so it wins via cascade. Removes the "rounded box
      inside a band" double-containment look in favor of flat content
@@ -1051,34 +1127,127 @@
   </div>
 </section>
 
-<!-- PROTOCOLS -->
-<section class="section lavender">
+<!-- PRICING -->
+<section class="section soft" id="pricing">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> Treatment Options</span>
-      <h2>One protocol, <span class="accent">picked for you.</span></h2>
-      <p>Your clinician will choose the right route based on your labs, symptoms, fertility goals, and lifestyle. All medications compounded by a US-licensed pharmacy.</p>
+      <span class="eyebrow"><span class="dot"></span> Transparent pricing</span>
+      <h2>Five protocols, <span class="accent">priced upfront.</span></h2>
+      <p>Built around the symptoms men actually feel — flat energy, lost morning erections, gym plateaus, mental fog. Your clinician picks the right route from your bloodwork and symptoms. No insurance billing, no surprise charges. You pay only if you qualify and decide to start.</p>
     </div>
-    <div class="prot-grid">
-      <div class="prot-card">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4l6 6"/><path d="M3 21l2-2"/><path d="m18 14-8 8-4-4 8-8"/><path d="m13 9 6 6"/></svg></div>
-        <h4>Injectable testosterone</h4>
-        <p>Weekly intramuscular or subcutaneous testosterone cypionate, most common and dose-flexible.</p>
+    <div class="pricing-grid">
+
+      <!-- 1. Enclomiphene (natural pathway, fertility-preserving) -->
+      <div class="price-card">
+        <span class="tag">Oral · Natural pathway</span>
+        <h3>Enclomiphene</h3>
+        <div class="price-amt"><span class="num">$59</span><span class="per">/ mo</span></div>
       </div>
-      <div class="prot-card">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg></div>
-        <h4>Oral testosterone</h4>
-        <p>Daily oral protocol, no needles, no patches. Bloodwork-driven dose adjustments.</p>
+
+      <!-- 2. Oral testosterone (daily) -->
+      <div class="price-card">
+        <span class="tag">Oral · Entry</span>
+        <h3>Oral testosterone (daily)</h3>
+        <div class="price-amt"><span class="num">$89</span><span class="per">/ mo</span></div>
       </div>
-      <div class="prot-card">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M4.93 10.93 9.17 15.17"/><path d="M2 18h6"/><path d="M22 18h-6"/><path d="m19.07 10.93-4.24 4.24"/><path d="M12 22v-6"/></svg></div>
-        <h4>Enclomiphene</h4>
-        <p>Restart your body's own testosterone production, fertility-preserving alternative for men who want kids.</p>
+
+      <!-- 3. Injectable cypionate (FEATURED · most chosen) -->
+      <div class="price-card featured">
+        <span class="tag">Injectable · Most chosen</span>
+        <h3>Testosterone cypionate (injection)</h3>
+        <div class="price-amt"><span class="num">$99</span><span class="per">/ mo</span></div>
       </div>
-      <div class="prot-card">
-        <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v8"/><path d="M5 14h14l-1.5 6h-11Z"/></svg></div>
-        <h4>Adjunct support</h4>
-        <p>Where indicated: HCG to preserve testicular function, anastrozole for estrogen management.</p>
+
+      <!-- 4. Injectable + HCG (fertility-preserving) -->
+      <div class="price-card">
+        <span class="tag">Dual route</span>
+        <h3>Cypionate + HCG (fertility-preserving)</h3>
+        <div class="price-amt"><span class="num">$159</span><span class="per">/ mo</span></div>
+      </div>
+
+      <!-- 5. Full protocol (cypionate + HCG + anastrozole) -->
+      <div class="price-card">
+        <span class="tag">Full protocol</span>
+        <h3>Cypionate + HCG + anastrozole</h3>
+        <div class="price-amt"><span class="num">$189</span><span class="per">/ mo</span></div>
+      </div>
+
+    </div>
+    <p class="price-foot"><strong>Free evaluation.</strong> No charge if you don't qualify. Cancel anytime. Pricing covers the medication, clinician oversight, secure messaging, and shipping, billed every 12 weeks at the monthly rate shown. Bloodwork, when indicated, is billed separately at member rates.</p>
+  </div>
+</section>
+
+<!-- BUILT DIFFERENT — 3-COL COMPARISON TAILORED TO MEN'S LOW-T SYMPTOMS -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Why DirectCare AI</span>
+      <h2>Built different,<br/><span class="accent">built around how you feel.</span></h2>
+      <p>The same prescription pathway, without the waiting rooms, "you're getting older" brush-offs, or pharmacy runs.</p>
+    </div>
+
+    <div class="compare-wrap">
+      <div class="compare-head">
+        <div class="row-label">Feature</div>
+        <div class="compare-col-us"><small>DirectCare AI</small>The DirectCare way</div>
+        <div class="compare-col-them"><small>Traditional clinic</small>The old way</div>
+      </div>
+
+      <div class="compare-row">
+        <div class="cell-label">Low T symptoms taken seriously (energy, libido, mood)</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Root-cause workup</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Bloodwork before starting + ongoing</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Required</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Dose titration based on YOUR labs</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Every refill</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Injectable, oral, and natural-pathway options</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Three routes</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Fertility-preserving enclomiphene available</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Offered</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">HCG &amp; anastrozole adjuncts when indicated</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">In-protocol</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Async messaging with your clinician</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Unlimited</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Discreet shipping &amp; auto-refills</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Plain packaging</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Transparent flat-rate pricing</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">From $59/mo</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+      <div class="compare-row">
+        <div class="cell-label">Free evaluation if you don't qualify</div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">No charge</span></span></div>
+        <div class="cell-them"><span class="mark no">✗</span></div>
+      </div>
+
+      <div class="compare-foot">
+        <span class="key"><span class="mark yes">✓</span> Included</span>
+        <span class="key"><span class="mark partial">△</span> Sometimes</span>
+        <span class="key"><span class="mark no">✗</span> Not offered</span>
       </div>
     </div>
   </div>

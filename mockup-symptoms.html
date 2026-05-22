@@ -368,11 +368,41 @@
   .c-figure-wrap {
     position: relative;
     z-index: 2;
-    height: 98%;                    /* nearly fill the band height */
-    width: min(820px, 80%);         /* widen since this is a group, not a single figure */
+    height: 98%;
+    width: min(820px, 80%);
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    /* Initial state — figure starts below + invisible, animates in on scroll */
+    transform: translateY(80px) scale(0.94);
+    opacity: 0;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1),
+                opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .c-hero.is-in-view .c-figure-wrap {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  /* MODERN BROWSERS: true scroll-linked animation (Chrome 115+ / Safari 17.4+)
+     Figure rises smoothly tied to scroll position — 0% rise when band is just
+     entering viewport, 100% rise when band is 60% covering the viewport.
+     Older browsers fall back to the IntersectionObserver class-toggle above. */
+  @supports (animation-timeline: view()) {
+    .c-figure-wrap {
+      transition: none;             /* let scroll-timeline drive it instead */
+      transform: translateY(80px) scale(0.94);
+      opacity: 0;
+      animation: cFigureRise linear both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
+    }
+    .c-hero.is-in-view .c-figure-wrap {
+      /* no-op — let the scroll timeline drive */
+    }
+  }
+  @keyframes cFigureRise {
+    0%   { transform: translateY(80px) scale(0.94); opacity: 0; }
+    100% { transform: translateY(0)     scale(1);    opacity: 1; }
   }
   .c-figure-wrap img {
     height: 100%;
@@ -382,6 +412,14 @@
     object-position: bottom center;
     display: block;
     filter: drop-shadow(0 30px 50px rgba(0,0,0,0.15));
+  }
+  /* Staged reveal: sparkles + headline fade in slightly AFTER the figure lands */
+  .c-sparkle-layer { opacity: 0; transition: opacity 0.8s ease 0.4s; }
+  .c-headline { opacity: 0; transform: translate(-50%, 20px); transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s; }
+  .c-hero.is-in-view .c-sparkle-layer { opacity: 1; }
+  .c-hero.is-in-view .c-headline { opacity: 1; transform: translate(-50%, 0); }
+  @media (prefers-reduced-motion: reduce) {
+    .c-figure-wrap, .c-sparkle-layer, .c-headline { transition: none !important; animation: none !important; transform: none !important; opacity: 1 !important; }
   }
   .c-headline {
     position: absolute; left: 50%; bottom: 8%;
@@ -618,6 +656,28 @@
     idx = (idx + 1) % symptoms.length;
     render(idx);
   }, 5000);
+})();
+
+/* MOCKUP C — Reveal-on-scroll: add .is-in-view to the band once it enters the viewport.
+   Fallback for browsers without animation-timeline: view() — still gives a clean
+   transition-based reveal even on Safari < 17.4 / Firefox / older Chrome. */
+(function() {
+  var bands = document.querySelectorAll('.c-hero');
+  if (!bands.length) return;
+  if (typeof IntersectionObserver === 'undefined') {
+    // No-IO fallback: just show
+    bands.forEach(function(b) { b.classList.add('is-in-view'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('is-in-view');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  bands.forEach(function(b) { io.observe(b); });
 })();
 </script>
 

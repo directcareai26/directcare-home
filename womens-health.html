@@ -285,7 +285,11 @@
     width: 100%;
   }
   @media (max-width: 720px) {
-    .d-stage { min-height: 640px; padding-top: 90px; }
+    .d-stage { min-height: 520px; padding-top: 70px; }
+    .d-figure-wrap { width: 100%; }
+  }
+  @media (max-width: 540px) {
+    .d-stage { min-height: 440px; padding-top: 56px; }
   }
   .d-band {
     position: absolute;
@@ -298,7 +302,10 @@
     z-index: 1;
   }
   @media (max-width: 720px) {
-    .d-band { height: calc(100% - 90px); }
+    .d-band { height: calc(100% - 70px); }
+  }
+  @media (max-width: 540px) {
+    .d-band { height: calc(100% - 56px); }
   }
   .d-rotator-stack { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
   .d-rotator-word { position: absolute; font-family: 'Geist', sans-serif; font-weight: 700; letter-spacing: -0.04em; color: var(--brand); text-transform: lowercase; white-space: nowrap; will-change: transform, opacity; }

@@ -588,7 +588,7 @@
     .tnpn-ratings > .rating { flex-direction: row; flex-wrap: nowrap; justify-content: center; gap: 6px; padding: 4px 6px; }
     .rating-brand .g-letter { font-size: 0.92rem; }
     .rating .tp-star { font-size: 0.96rem; margin-right: 3px; }
-    .rating .tp-name { font-size: 0.84rem; }
+    .rating .tp-name { display: none; }
     .rating-score { font-size: 0.84rem; }
     .rating-stars { font-size: 0.78rem; }
     .rating-count { display: none; }
@@ -651,9 +651,11 @@
     .tnpn-card { padding: 24px 18px; border-radius: 18px; }
     .tnpn-openloop .tnpn-logo img { max-height: 34px; }
     .tnpn-desc { font-size: 0.96rem; }
-    .tnpn-stat-ico { width: 60px; height: 60px; margin-bottom: 8px; }
-    .tnpn-stat-num { font-size: 1.35rem; }
-    .tnpn-stat-lab { font-size: 0.76rem; }
+    .tnpn-stat { padding: 4px 4px; }
+    .tnpn-stat-ico { width: 44px; height: 44px; margin-bottom: 6px; }
+    .tnpn-stat-num { font-size: 1rem; }
+    .tnpn-stat-lab { font-size: 0.62rem; line-height: 1.2; }
+    .tnpn-stats-card { padding-left: 12px; padding-right: 12px; }
     .tnpn-trust-card { padding-top: 22px; padding-bottom: 22px; }
     .tnpn-trust-item { padding: 4px 6px; gap: 10px; }
     .tnpn-trust-ico { flex: 0 0 44px; width: 44px; height: 44px; }
@@ -665,8 +667,8 @@
     .tnpn-cta-foot { font-size: 0.84rem; }
   }
   @media (max-width: 460px) {
-    .tnpn-stats-card { grid-template-columns: repeat(2, 1fr); gap: 22px 0; padding-left: 14px; padding-right: 14px; }
-    .tnpn-stat:nth-child(odd) { border-right: 1px solid #e4ddec; }
+    .tnpn-stats-card { padding-left: 10px; padding-right: 10px; }
+    .tnpn-stat { padding: 4px 2px; }
   }
 
   /* ============================================================
@@ -1026,7 +1028,7 @@
         <div class="tnpn-logo">
           <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" loading="lazy" />
         </div>
-        <p class="tnpn-desc">Licensed clinicians review every treatment request to determine whether treatment is right for you.</p>
+        <p class="tnpn-desc">Licensed clinicians review every request to determine whether treatment is right for you.</p>
         <div class="tnpn-card-divider"></div>
         <div class="tnpn-ratings">
           <div class="rating rating-google">

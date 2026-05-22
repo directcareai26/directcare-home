@@ -675,6 +675,39 @@
   }
 
   /* ============================================================
+     TIMELINE SECTION (TRT) — vertical "what to expect" steps
+     ============================================================ */
+  .tl-wrap { position: relative; max-width: 920px; margin: 0 auto; }
+  .tl-wrap::before { content: ""; position: absolute; left: 22px; top: 14px; bottom: 14px; width: 2px; background: linear-gradient(180deg, var(--brand) 0%, rgba(175,75,237,0.15) 100%); border-radius: 2px; }
+  @media (max-width: 600px) { .tl-wrap::before { left: 16px; } }
+  details.tl-item { position: relative; padding: 0 0 22px 64px; }
+  @media (max-width: 600px) { details.tl-item { padding-left: 46px; } }
+  details.tl-item:last-child { padding-bottom: 0; }
+  details.tl-item > summary { list-style: none; cursor: default; outline: none; display: block; }
+  details.tl-item > summary::-webkit-details-marker { display: none; }
+  .tl-dot { position: absolute; left: 8px; top: 8px; width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); display: grid; place-items: center; color: white; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.78rem; font-weight: 900; box-shadow: 0 6px 18px -4px rgba(175,75,237,0.5); border: 4px solid #ffffff; }
+  @media (max-width: 600px) { .tl-dot { left: 2px; } }
+  .tl-when { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 800; color: var(--brand-deep); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 4px; }
+  details.tl-item h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 800; margin: 0 0 6px; color: var(--ink); }
+  details.tl-item p { font-size: 0.94rem; line-height: 1.6; color: var(--muted); margin: 0; }
+  details.tl-item .tl-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  details.tl-item .tag { font-size: 0.74rem; padding: 4px 10px; border-radius: 999px; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); font-weight: 600; }
+  details.tl-item .tl-body { padding-top: 8px; }
+  details.tl-item .tl-chevron { display: none; }
+  /* Desktop: summary is non-interactive (items stay open) */
+  @media (min-width: 761px) {
+    details.tl-item > summary { pointer-events: none; cursor: default; }
+  }
+  /* Mobile: native details collapse + visible chevron */
+  @media (max-width: 760px) {
+    details.tl-item > summary { cursor: pointer; padding-right: 32px; -webkit-tap-highlight-color: rgba(175,75,237,0.08); }
+    details.tl-item .tl-chevron { display: block; position: absolute; right: 4px; top: 12px; width: 10px; height: 10px; border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(45deg); transition: transform .2s ease, top .2s ease; }
+    details.tl-item[open] .tl-chevron { transform: rotate(-135deg); top: 16px; }
+    details.tl-item:not([open]) { padding-bottom: 14px; }
+    details.tl-item .tl-body { padding-top: 10px; }
+  }
+
+  /* ============================================================
      COMPARE TABLE (TRT) — 3-column blood-labs style
      ============================================================ */
   .compare-wrap { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.16); }
@@ -1174,6 +1207,72 @@
 
     </div>
     <p class="price-foot"><strong>Free evaluation.</strong> No charge if you don't qualify. Cancel anytime. Pricing covers the medication, clinician oversight, secure messaging, and shipping, billed every 12 weeks at the monthly rate shown. Bloodwork, when indicated, is billed separately at member rates.</p>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT, TIMELINE — tailored for men's TRT response curve -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> What to expect</span>
+      <h2>Real gains,<br/><span class="accent">on a real timeline.</span></h2>
+      <p>Every man responds at his own pace. Here's what most patients notice and when, based on published testosterone-therapy guidelines and our clinical experience.</p>
+    </div>
+    <div class="tl-wrap">
+
+      <details class="tl-item" open>
+        <summary>
+          <span class="tl-dot">1</span>
+          <div class="tl-when">Weeks 2 to 4 · Early signals</div>
+          <h4>Energy, sleep, and morning drive</h4>
+          <span class="tl-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="tl-body">
+          <p>Morning energy lifts. Sleep deepens. The "fog" starts clearing — easier wake-ups, sharper focus before noon. Many men describe the first sign as "I actually want to do things again."</p>
+          <div class="tl-tags">
+            <span class="tag">Steadier energy</span>
+            <span class="tag">Better sleep</span>
+            <span class="tag">Sharper focus</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="tl-item" open>
+        <summary>
+          <span class="tl-dot">2</span>
+          <div class="tl-when">Weeks 6 to 12 · Optimization</div>
+          <h4>Libido, mood, performance, body comp</h4>
+          <span class="tl-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="tl-body">
+          <p>Libido and morning erections return. Mood stabilizes. Gym sessions translate into visible muscle and strength gains, and fat loss accelerates. Your clinician fine-tunes the dose at the 12-week bloodwork check-in to land you in your optimal range.</p>
+          <div class="tl-tags">
+            <span class="tag">Restored libido</span>
+            <span class="tag">Steadier mood</span>
+            <span class="tag">Stronger lifts</span>
+            <span class="tag">Less brain fog</span>
+          </div>
+        </div>
+      </details>
+
+      <details class="tl-item" open>
+        <summary>
+          <span class="tl-dot">3</span>
+          <div class="tl-when">Month 3+ · Maintenance</div>
+          <h4>Long-term performance</h4>
+          <span class="tl-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="tl-body">
+          <p>You settle into your titrated dose. Total &amp; free T stay in range. Body composition keeps trending the right direction. Refills auto-arrive. Message your clinician anytime, and re-titrate as life shifts — sleep, stress, weight, training load.</p>
+          <div class="tl-tags">
+            <span class="tag">Stable dosing</span>
+            <span class="tag">Body comp gains</span>
+            <span class="tag">Auto-refills</span>
+          </div>
+        </div>
+      </details>
+
+    </div>
   </div>
 </section>
 

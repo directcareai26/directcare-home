@@ -162,25 +162,19 @@
   .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.86); line-height: 1.55; }
   .hero-sub strong { color: white; font-weight: 700; }
   .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
-  .hero-trust { display: flex; gap: 22px; flex-wrap: wrap; align-items: center; justify-content: center; margin-top: 36px; font-size: 0.86rem; color: rgba(255,255,255,0.78); }
-  .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
-  .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
-  .hero-trust-divider { width: 1px; height: 16px; background: rgba(255,255,255,0.20); }
+  /* Lock both hero CTAs to identical width so the pair looks balanced regardless of label length */
+  .hero-cta-row .btn { min-width: 240px; justify-content: center; }
   .btn-ghost-light { background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
   .btn-ghost-light:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
-  /* Hero stat strip — replaces the side-image floating cards */
-  .hero-stats { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; margin-top: 40px; }
-  .hero-stat { display: inline-flex; align-items: center; gap: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.18); padding: 12px 18px; border-radius: 999px; color: white; backdrop-filter: blur(10px); }
-  .hero-stat .stat-icon { width: 30px; height: 30px; border-radius: 8px; background: rgba(175,75,237,0.25); color: #f0c0ff; display: grid; place-items: center; flex-shrink: 0; }
-  .hero-stat .stat-text { font-size: 0.86rem; line-height: 1.2; text-align: left; }
-  .hero-stat .stat-text strong { display: block; font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 0.95rem; color: white; }
-  .hero-stat .stat-text span { font-size: 0.74rem; color: rgba(255,255,255,0.70); }
   @media (max-width: 760px) {
     .hero { min-height: 80vh; padding: 80px 0 60px; }
     .hero-inner h1 { margin-top: 18px; }
-    .hero-stats { margin-top: 28px; }
-    .hero-stat { padding: 10px 14px; }
-    .hero-trust { margin-top: 28px; gap: 14px 18px; font-size: 0.78rem; }
+    .hero-cta-row .btn { min-width: 220px; }
+  }
+  @media (max-width: 420px) {
+    /* On narrow phones the buttons stack and stretch full width for a cleaner read */
+    .hero-cta-row { flex-direction: column; align-items: stretch; gap: 12px; }
+    .hero-cta-row .btn { min-width: 0; width: 100%; }
   }
 
   /* TRUST BAR */
@@ -617,28 +611,6 @@
         <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See My Numbers →</a>
         <a href="#how" class="btn btn-ghost-light btn-primary-xl">How it works</a>
       </div>
-
-      <div class="hero-stats rise d4">
-        <div class="hero-stat">
-          <span class="stat-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="M5 9a7 7 0 0 0 14 0"/></svg>
-          </span>
-          <div class="stat-text"><strong>Up to 80</strong><span>biomarkers per panel</span></div>
-        </div>
-        <div class="hero-stat">
-          <span class="stat-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          </span>
-          <div class="stat-text"><strong>3–5 days</strong><span>to your full plan</span></div>
-        </div>
-        <div class="hero-stat">
-          <span class="stat-icon">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </span>
-          <div class="stat-text"><strong>2,000+</strong><span>draw sites nationwide</span></div>
-        </div>
-      </div>
-
     </div>
   </div>
 

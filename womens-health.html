@@ -173,7 +173,16 @@
   /* SYMPTOMS GRID */
   .symptoms-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
   @media (max-width: 980px) { .symptoms-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .symptoms-grid { grid-template-columns: 1fr; } }
+  /* Mobile: keep 2-col (was collapsing to 1-col) so the 8 cards read
+     as a tight 2×4 grid instead of an 8-row tall single column */
+  @media (max-width: 560px) {
+    .symptoms-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .symptom-card { flex-direction: column; align-items: flex-start; gap: 10px; padding: 14px 14px; }
+    .symptom-icon { width: 36px; height: 36px; }
+    .symptom-icon svg { width: 18px; height: 18px; }
+    .symptom-title { font-size: 0.9rem; line-height: 1.2; }
+    .symptom-sub { font-size: 0.74rem; line-height: 1.35; }
+  }
   /* Symptoms CTA — closes the loop after the symptom cards: 'start with bloodwork' */
   .symptoms-cta { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; margin: clamp(32px, 5vw, 56px) auto 0; max-width: 640px; }
   .symptoms-cta-line { margin: 0; font-family: 'Geist', sans-serif; font-size: clamp(1.1rem, 1.8vw, 1.4rem); font-weight: 500; letter-spacing: -0.02em; color: var(--ink); line-height: 1.3; }

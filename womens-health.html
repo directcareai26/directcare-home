@@ -166,6 +166,40 @@
   @media (max-width: 720px) { .clinical-advisor-credentials { justify-content: center; } }
   .clinical-advisor-credentials span { font-size: 0.72rem; font-weight: 600; color: var(--brand-deep); background: rgba(175,75,237,0.08); border: 1px solid rgba(175,75,237,0.18); padding: 5px 11px; border-radius: 999px; letter-spacing: 0.02em; }
 
+  /* SYMPTOMS GRID */
+  .symptoms-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media (max-width: 980px) { .symptoms-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .symptoms-grid { grid-template-columns: 1fr; } }
+  .symptom-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 20px 22px; display: flex; gap: 14px; align-items: flex-start; transition: transform .25s cubic-bezier(0.22, 1, 0.36, 1), border-color .25s ease, box-shadow .25s ease; }
+  .symptom-card:hover { transform: translateY(-2px); border-color: rgba(175,75,237,0.32); box-shadow: 0 14px 28px -14px rgba(118,43,164,0.22); }
+  .symptom-icon { font-size: 1.7rem; line-height: 1; flex-shrink: 0; }
+  .symptom-text { display: flex; flex-direction: column; gap: 4px; }
+  .symptom-title { font-family: 'Geist', sans-serif; font-size: 1rem; font-weight: 600; color: var(--ink); letter-spacing: -0.01em; line-height: 1.25; }
+  .symptom-sub { font-size: 0.86rem; color: var(--muted); line-height: 1.45; }
+
+  /* TESTIMONIALS (scroll-snap carousel — matches home page style) */
+  .testimonials-scroller { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 24px; margin: 0 -4px; scrollbar-width: thin; }
+  .testimonials-scroller::-webkit-scrollbar { height: 6px; }
+  .testimonials-scroller::-webkit-scrollbar-thumb { background: rgba(118,43,164,0.20); border-radius: 999px; }
+  .testimonial-card { flex: 0 0 clamp(280px, 30vw, 340px); scroll-snap-align: start; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 22px; display: flex; flex-direction: column; gap: 14px; }
+  .testimonial-stars { color: #d99b1f; letter-spacing: 2px; font-size: 0.9rem; }
+  .testimonial-quote { font-family: 'Source Serif 4', Georgia, serif; font-size: 1rem; line-height: 1.5; color: var(--ink); font-style: italic; margin: 0; }
+  .testimonial-meta { display: flex; gap: 10px; align-items: center; margin-top: auto; }
+  .testimonial-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); color: white; display: grid; place-items: center; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; }
+  .testimonial-name { font-size: 0.92rem; font-weight: 600; color: var(--ink); }
+  .testimonial-tag { font-size: 0.72rem; color: var(--brand-deep); letter-spacing: 0.04em; font-weight: 500; }
+
+  /* FAQ */
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
+  @media (max-width: 820px) { .faq-grid { grid-template-columns: 1fr; } }
+  .faq-item { background: white; border: 1px solid var(--lavender-100); border-radius: 14px; padding: 0; transition: border-color .25s ease; }
+  .faq-item[open] { border-color: rgba(175,75,237,0.32); }
+  .faq-item summary { padding: 18px 20px; cursor: pointer; font-family: 'Geist', sans-serif; font-size: 1.02rem; font-weight: 600; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: "+"; color: var(--brand-deep); font-size: 1.4rem; font-weight: 400; transition: transform .2s ease; line-height: 1; }
+  .faq-item[open] summary::after { content: "−"; transform: rotate(0deg); }
+  .faq-item p { padding: 0 20px 20px; color: var(--muted); font-size: 0.94rem; line-height: 1.6; margin: 0; }
+
   /* HOW IT WORKS */
   .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
   @media (max-width: 820px) { .how-grid { grid-template-columns: 1fr; } }
@@ -233,6 +267,7 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.directcare.ai/"},{"@type":"ListItem","position":2,"name":"Women's Health"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Physician","@id":"https://www.directcare.ai/#dr-tim-pepin","name":"Dr. Tim Pepin","honorificPrefix":"Dr.","honorificSuffix":"D.C.","jobTitle":"Clinical Advisor & Director of Integrative Health","worksFor":{"@id":"https://www.directcare.ai/#org"},"medicalSpecialty":["IntegrativeMedicine","PreventiveMedicine"],"image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/Dr.%20Pepin.png","description":"Clinical Advisor providing guidance on wellness programs, preventive health initiatives, and evidence-based care protocols at DirectCare AI."}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Am I a candidate for HRT?","acceptedAnswer":{"@type":"Answer","text":"Most women in perimenopause (typically late 30s through mid 50s) or post-menopause are candidates. We screen against contraindications like active breast cancer, untreated DVT/PE, or unexplained vaginal bleeding during your intake. A US-licensed clinician reviews every file before any prescription is written."}},{"@type":"Question","name":"What is in a typical HRT protocol?","acceptedAnswer":{"@type":"Answer","text":"Most protocols include estradiol (patch, gel, or oral), progesterone (oral micronized or topical, prescribed if you still have a uterus), and — when labs and symptoms support it — low-dose testosterone. Vaginal estrogen may be added for localized symptoms. Every dose is titrated to your bloodwork."}},{"@type":"Question","name":"How fast do symptoms improve on HRT?","acceptedAnswer":{"@type":"Answer","text":"Hot flashes and night sweats often ease within 2-4 weeks. Sleep, mood, and brain fog typically improve within 4-8 weeks. Libido, body composition, and skin/hair changes are slower — usually 3-6 months. We re-check labs and titrate at the 8-week mark."}},{"@type":"Question","name":"Is HRT safe?","acceptedAnswer":{"@type":"Answer","text":"For most healthy women under 60 (or within 10 years of menopause), modern bioidentical HRT has a favorable risk profile per the latest NAMS and ACOG guidance. We screen for personal and family risk factors during intake, and your clinician monitors you through ongoing labs."}},{"@type":"Question","name":"Do you accept insurance?","acceptedAnswer":{"@type":"Answer","text":"We are cash-pay (no insurance hoops or prior auths), but we can provide an itemized receipt for FSA/HSA reimbursement. Most patients find total monthly cost lower than the copays and lab fees they would see going through insurance."}},{"@type":"Question","name":"What happens after I sign up?","acceptedAnswer":{"@type":"Answer","text":"You take a 5-minute intake, optionally add bloodwork ($196 for a comprehensive 80+ biomarker panel). A US-licensed clinician reviews everything within 24-48 hours, builds your protocol, and the medication ships from a US-licensed compounding pharmacy."}},{"@type":"Question","name":"Can I message my clinician between visits?","acceptedAnswer":{"@type":"Answer","text":"Yes — your DirectCare AI portal includes asynchronous messaging with your care team. Side-effect questions, dose-adjustment requests, and routine refills all happen through the portal, no extra fees."}},{"@type":"Question","name":"What if HRT is not right for me?","acceptedAnswer":{"@type":"Answer","text":"If labs or history rule out HRT, we offer non-hormonal symptom support, GLP-1 weight management, supplements, and lifestyle protocols. The intake is free; you do not pay until you start a protocol."}}]}</script>
 </head>
 <body>
 
@@ -318,6 +353,26 @@
     </div>
   </div>
 </header>
+
+<!-- SYMPTOMS — "Sound familiar?" emotional hook (Hers / Evernow / Alloy pattern) -->
+<section class="section soft">
+  <div class="container">
+    <div class="intro-band" style="text-align:center; margin-bottom:32px;">
+      <h2 style="margin-top: 0;">Sound <span class="h-italic">familiar?</span></h2>
+      <p style="max-width:640px;margin:14px auto 0;">If your body started keeping its own schedule somewhere in your late 30s, you're not crazy and you're not alone — these are the symptoms a real hormone panel can actually explain.</p>
+    </div>
+    <div class="symptoms-grid">
+      <div class="symptom-card"><span class="symptom-icon">🔥</span><div class="symptom-text"><div class="symptom-title">Hot flashes &amp; night sweats</div><div class="symptom-sub">Estradiol decline triggers thermoregulation chaos.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">🌙</span><div class="symptom-text"><div class="symptom-title">Sleep that doesn't restore</div><div class="symptom-sub">Progesterone drops are why you can't stay under.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">🧠</span><div class="symptom-text"><div class="symptom-title">Brain fog &amp; word-finding</div><div class="symptom-sub">Estrogen is your brain's anti-inflammatory.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">❤️</span><div class="symptom-text"><div class="symptom-title">Low libido &amp; mood dips</div><div class="symptom-sub">Testosterone matters for women, too.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">⚖️</span><div class="symptom-text"><div class="symptom-title">Stubborn weight gain</div><div class="symptom-sub">Same food, same workouts — different body.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">💇</span><div class="symptom-text"><div class="symptom-title">Thinning hair &amp; dry skin</div><div class="symptom-sub">Hormonal shifts show up at the surface first.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">😬</span><div class="symptom-text"><div class="symptom-title">Anxiety &amp; irritability</div><div class="symptom-sub">A nervous system without progesterone support.</div></div></div>
+      <div class="symptom-card"><span class="symptom-icon">🦴</span><div class="symptom-text"><div class="symptom-title">Joint aches &amp; stiffness</div><div class="symptom-sub">Estrogen helps your joints stay hydrated.</div></div></div>
+    </div>
+  </div>
+</section>
 
 <!-- INTRO -->
 <section class="section soft">
@@ -421,6 +476,48 @@
   </div>
 </section>
 
+<!-- TESTIMONIALS — women's voices, symptom-journey framing -->
+<section class="section soft">
+  <div class="container">
+    <div class="intro-band" style="text-align:center; margin-bottom:24px;">
+      <h2 style="margin-top: 0;">Members in their <span class="h-italic">own words.</span></h2>
+      <p style="max-width:620px;margin:14px auto 0;">Lifestyle outcomes from active DirectCare AI patients — your results may vary.</p>
+    </div>
+    <div class="testimonials-scroller" role="list">
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"I have my mornings back. The first hour after I wake up used to be a fog — now I'm actually present with my kids."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">SK</div><div><div class="testimonial-name">Sarah K.</div><div class="testimonial-tag">HRT · 6 months</div></div></div>
+      </article>
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"Sleeping through the night for the first time in three years. That alone has changed everything else."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">LM</div><div><div class="testimonial-name">Lauren M.</div><div class="testimonial-tag">HRT · 4 months</div></div></div>
+      </article>
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"My labs finally tell a story I'm proud of. The plan was simple — I just needed someone to actually read the numbers."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">JP</div><div><div class="testimonial-name">Jessica P.</div><div class="testimonial-tag">Blood Labs + HRT</div></div></div>
+      </article>
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"Down a notch on my belt every month — without the bullying calorie-counting apps. Steady, livable, real."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">AG</div><div><div class="testimonial-name">Andrea G.</div><div class="testimonial-tag">Weight Loss · 7 months</div></div></div>
+      </article>
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"The hot flashes stopped within a few weeks. My OBGYN spent ten minutes with me — DirectCare actually read my whole panel."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">RW</div><div><div class="testimonial-name">Rachel W.</div><div class="testimonial-tag">HRT · 3 months</div></div></div>
+      </article>
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <p class="testimonial-quote">"Hair started growing back in spots I'd given up on. I almost cried in the bathroom mirror at month four."</p>
+        <div class="testimonial-meta"><div class="testimonial-avatar">DK</div><div><div class="testimonial-name">Diana K.</div><div class="testimonial-tag">Hair Regrowth · 5 months</div></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- CLINICAL ADVISOR -->
 <section class="section">
   <div class="container">
@@ -442,6 +539,49 @@
   </div>
 </section>
 
+<!-- FAQ — addresses safety + candidacy + side effects (HRT objections) -->
+<section class="section soft">
+  <div class="container">
+    <div class="intro-band" style="text-align:center; margin-bottom:24px;">
+      <h2 style="margin-top: 0;">Common <span class="h-italic">questions.</span></h2>
+      <p style="max-width:620px;margin:14px auto 0;">Straight answers from the same clinicians who write your protocol.</p>
+    </div>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>Am I a candidate for HRT?</summary>
+        <p>Most women in perimenopause (typically late 30s through mid 50s) or post-menopause are candidates. We screen against contraindications like active breast cancer, untreated DVT/PE, or unexplained vaginal bleeding during your intake. A US-licensed clinician reviews every file before any prescription is written.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What's in a typical HRT protocol?</summary>
+        <p>Most protocols include estradiol (patch, gel, or oral), progesterone (oral micronized or topical, prescribed if you still have a uterus), and — when labs and symptoms support it — low-dose testosterone. Vaginal estrogen may be added for localized symptoms. Every dose is titrated to your bloodwork.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How fast do symptoms improve?</summary>
+        <p>Hot flashes and night sweats often ease within 2–4 weeks. Sleep, mood, and brain fog typically improve within 4–8 weeks. Libido, body composition, and skin/hair changes are slower — usually 3–6 months. We re-check labs and titrate at the 8-week mark.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is HRT safe?</summary>
+        <p>For most healthy women under 60 (or within 10 years of menopause), modern bioidentical HRT has a favorable risk profile per the latest NAMS and ACOG guidance. We screen for personal and family risk factors during intake, and your clinician monitors you through ongoing labs.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you accept insurance?</summary>
+        <p>We're cash-pay (no insurance hoops or prior auths), but we can provide an itemized receipt for FSA/HSA reimbursement. Most patients find total monthly cost lower than the copays + lab fees they'd see going through insurance.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What happens after I sign up?</summary>
+        <p>You take a 5-minute intake, optionally add bloodwork ($196 for a comprehensive 80+ biomarker panel). A US-licensed clinician reviews everything within 24–48 hours, builds your protocol, and the medication ships from a US-licensed compounding pharmacy.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I message my clinician between visits?</summary>
+        <p>Yes — your DirectCare AI portal includes asynchronous messaging with your care team. Side-effect questions, dose-adjustment requests, and routine refills all happen through the portal, no extra fees.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if HRT isn't right for me?</summary>
+        <p>If labs or history rule out HRT, we offer non-hormonal symptom support, GLP-1 weight management, supplements, and lifestyle protocols. The intake is free; you don't pay until you start a protocol.</p>
+      </details>
+    </div>
+  </div>
+</section>
 
 <!-- FOOTER -->
 <footer>

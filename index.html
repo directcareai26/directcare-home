@@ -326,48 +326,16 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
-  /* Gradient shimmer on the purple emphasis text — slow, soft wash; no pure-white peak so letters stay readable on the light card backgrounds */
+  /* Solid brand-deep purple italic — readable on every card background.
+     The shimmer animation was washing out letters wherever the bright
+     peak passed (mobile + desktop). Cleaner to keep it static. */
   .twin-card h2 em {
     font-style: italic;
     font-weight: 500;
-    background: linear-gradient(
-      110deg,
-      #762ba4 0%,
-      #9043bf 30%,
-      #c97cf2 48%,
-      #d9a5f7 50%,
-      #c97cf2 52%,
-      #9043bf 70%,
-      #762ba4 100%
-    );
-    background-size: 220% 100%;
-    background-position: 100% 0;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    animation: twin-shimmer 9s linear infinite;
-    /* Small right-padding inside the gradient text so italic letter slope can't visually run into the image */
-    padding-right: 6px;
-    margin-right: -6px;
+    color: var(--brand-deep);
+    transition: color .25s ease;
   }
-  @keyframes twin-shimmer {
-    to { background-position: -120% 0; }
-  }
-  .twin-card:hover h2 em { animation-duration: 4.5s; }
-  /* On mobile + reduced-motion: kill the shimmer (the bright peak makes
-     italic letters disappear against the light card backgrounds — the
-     "cut off near the photo" complaint). Solid brand purple instead. */
-  @media (max-width: 720px), (prefers-reduced-motion: reduce) {
-    .twin-card h2 em {
-      animation: none;
-      background: none;
-      color: var(--brand-deep);
-      -webkit-text-fill-color: currentColor;
-      padding-right: 0;
-      margin-right: 0;
-    }
-  }
+  .twin-card:hover h2 em { color: var(--brand-darker); }
   .twin-card .btn {
     align-self: flex-start;
     padding: 10px 20px;

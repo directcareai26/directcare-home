@@ -384,7 +384,7 @@
   .d-headline { position: absolute; left: 50%; bottom: clamp(28px, 4vw, 56px); transform: translateX(-50%) translateY(20px); z-index: 10; text-align: center; color: var(--ink); background: rgba(255,255,255,0.85); padding: 16px 32px; border-radius: 999px; backdrop-filter: blur(12px); border: 1px solid rgba(36,20,50,0.08); box-shadow: 0 14px 32px -10px rgba(36,20,50,0.18); opacity: 0; transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s; }
   .d-stage.is-in-view .d-headline { opacity: 1; transform: translateX(-50%) translateY(0); }
   .d-headline h2 { font-size: clamp(1.2rem, 2.4vw, 1.8rem); font-weight: 500; margin: 0; line-height: 1.1; }
-  .d-headline em { font-style: italic; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .d-headline em { font-style: italic; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; padding-right: 0.22em; margin-right: -0.06em; }
   @media (prefers-reduced-motion: reduce) {
     .d-figure-wrap, .d-sparkle-layer, .d-headline { transition: none !important; animation: none !important; transform: none !important; opacity: 1 !important; }
     .d-headline { transform: translateX(-50%) !important; }

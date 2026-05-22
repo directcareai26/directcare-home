@@ -1067,13 +1067,14 @@
     margin: 0 0 56px;
     position: relative;
     overflow: hidden;
-    display: block;          /* single column, centered (was 2-col grid) */
-    text-align: center;
+    /* Desktop: 2-col with image LEFT, text RIGHT, text left-aligned */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 64px);
+    align-items: center;
+    text-align: left;
   }
-  .alt-block-text {
-    max-width: 760px;
-    margin: 0 auto;
-  }
+  .alt-block-text { max-width: none; margin: 0; }
   .alt-block-text h2 {
     font-size: clamp(2.2rem, 4.4vw, 3.4rem);
     font-weight: 500;
@@ -1086,17 +1087,14 @@
     color: var(--ink-soft);
     font-size: 1.18rem;
     line-height: 1.55;
-    margin: 0 auto 26px;
-    max-width: 620px;
+    margin: 0 0 26px;
+    max-width: 520px;
   }
   .alt-block-features {
     display: flex; gap: 10px;
-    flex-wrap: nowrap;          /* one row — was wrap */
-    justify-content: center;
-    margin: 0 auto 30px;
-  }
-  @media (max-width: 540px) {
-    .alt-block-features { flex-wrap: wrap; }   /* wrap allowed on narrow phones */
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 0 0 30px;
   }
   .alt-feature {
     background: rgba(255,255,255,0.65);
@@ -1115,8 +1113,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 720px;
-    margin: 36px auto 0;
+    max-width: none;
+    margin: 0;
   }
   .alt-block-visual img {
     width: 100%;
@@ -1124,6 +1122,20 @@
     max-height: 460px;
     object-fit: contain;
     display: block;
+  }
+  /* Mobile: collapse to single column, centered (everything in one centered stack) */
+  @media (max-width: 820px) {
+    .alt-block {
+      display: block;
+      text-align: center;
+    }
+    .alt-block-text { max-width: 760px; margin: 0 auto; }
+    .alt-block-text p { margin: 0 auto 26px; max-width: 620px; }
+    .alt-block-features { justify-content: center; margin: 0 auto 30px; }
+    .alt-block-visual { max-width: 720px; margin: 36px auto 0; }
+  }
+  @media (max-width: 540px) {
+    .alt-block-features { flex-wrap: wrap; }
   }
 
   /* RX CARD SECTION */
@@ -1597,6 +1609,9 @@
 
   <!-- ALT BLOCK (Blood Labs — Fullscript dashboard visual) -->
   <section class="alt-block">
+    <div class="alt-block-visual">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript2.png" alt="DirectCare AI patient dashboard — biomarkers and supplement protocol" loading="lazy" />
+    </div>
     <div class="alt-block-text">
       <h2>Real labs.<br/><em>Plain-English plan.</em></h2>
       <p>A clinician-ordered, 80+ biomarker panel. Results in 3–5 days, with a personalized roadmap from a US-licensed clinician — not a chart you have to decode yourself.</p>
@@ -1606,9 +1621,6 @@
         <span class="alt-feature">From $196</span>
       </div>
       <a class="featured-cta" href="/blood-test/">See my numbers →</a>
-    </div>
-    <div class="alt-block-visual">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/fullscript2.png" alt="DirectCare AI patient dashboard — biomarkers and supplement protocol" loading="lazy" />
     </div>
   </section>
 

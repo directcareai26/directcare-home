@@ -264,9 +264,13 @@
   .d-section {
     width: 100%;
     padding: 0;
-    margin: clamp(20px, 3vw, 40px) 0;
+    margin: 0;
     background: transparent;
   }
+  /* Zero out adjacent sections' inner padding so no cream stripe shows
+     above or below the band — band sits flush against its neighbors */
+  section.section:has(+ .d-section) { padding-bottom: 0 !important; }
+  .d-section + section.section { padding-top: 0 !important; }
   .d-stage {
     position: relative;
     overflow: visible;

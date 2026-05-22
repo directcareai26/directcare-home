@@ -224,15 +224,15 @@
     border-radius: 28px;
     overflow: hidden;
     background: linear-gradient(140deg, #f5e9ff 0%, #efe2d1 100%);
-    aspect-ratio: 16 / 11;
-    min-height: 640px;
+    aspect-ratio: 16 / 9;
+    min-height: 680px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     isolation: isolate;
   }
   @media (max-width: 720px) {
-    .c-hero { aspect-ratio: auto; min-height: 580px; }
+    .c-hero { aspect-ratio: auto; min-height: 600px; }
   }
   .c-rotator-stack {
     position: absolute; inset: 0;
@@ -270,14 +270,15 @@
   .c-figure-wrap {
     position: relative;
     z-index: 2;
-    height: 96%;                    /* nearly fill the band height */
+    height: 98%;                    /* nearly fill the band height */
+    width: min(820px, 80%);         /* widen since this is a group, not a single figure */
     display: flex;
     align-items: flex-end;
     justify-content: center;
   }
   .c-figure-wrap img {
     height: 100%;
-    width: auto;
+    width: 100%;
     max-width: none;
     object-fit: contain;
     object-position: bottom center;
@@ -429,7 +430,7 @@
       <span class="c-rotator-word">joint aches</span>
     </div>
     <div class="c-figure-wrap">
-      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/1.svg" alt="" />
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="" />
     </div>
     <div class="c-headline">
       <h2>It's <em>not</em> in your head.</h2>

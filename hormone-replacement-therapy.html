@@ -385,6 +385,10 @@
   .trust-section .section-head p { display: none; }
 
   /* PARTNER BAR, desktop card / mobile compact */
+  .partner-ratings { max-width: 1040px; margin: 18px auto 0; display: flex; align-items: center; justify-content: center; gap: 16px 22px; flex-wrap: wrap; }
+  .partner-ratings .label { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  .partner-ratings img { display: block; height: 48px; width: auto; max-width: 240px; }
+  @media (max-width: 540px) { .partner-ratings { gap: 12px; } .partner-ratings img { height: 38px; } .partner-ratings .label { width: 100%; text-align: center; font-size: 0.66rem; } }
   .partner-bar { max-width: 1040px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: 28px 36px; display: grid; grid-template-columns: auto 1fr; gap: 36px; align-items: center; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.20); position: relative; overflow: hidden; }
   .partner-bar::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--brand) 0%, var(--brand-darker) 50%, var(--brand) 100%); }
   .partner-bar .partner-id { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; flex-shrink: 0; padding-right: 32px; border-right: 1px solid var(--lavender-100); }
@@ -731,7 +735,7 @@
     </div>
 
     <!-- OpenLoop partner bar -->
-    <div class="partner-bar" style="margin-bottom: 24px;">
+    <div class="partner-bar">
       <div class="partner-id">
         <span class="label-mini">Our Physician Partner</span>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" class="openloop-logo" />
@@ -741,6 +745,13 @@
         <div><span class="num">250K+</span><span class="lab">Visits / month</span></div>
         <div><span class="num">50 States</span><span class="lab">Nationwide</span></div>
       </div>
+    </div>
+
+    <!-- OpenLoop patient ratings (Google + Trustpilot) -->
+    <div class="partner-ratings" style="margin-bottom: 24px;">
+      <span class="label">OpenLoop patient ratings</span>
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20google.webp" alt="OpenLoop Google reviews rating" loading="lazy" />
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20trustpilot.webp" alt="OpenLoop Trustpilot rating" loading="lazy" />
     </div>
 
     <!-- 6-checkmark benefits -->

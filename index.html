@@ -311,35 +311,42 @@
     .bottom-cta input { flex-basis: 100%; }
   }
 
-  /* MOBILE: tighten ALL vertical spacing between sections — Hims/Hers-style
-     crisp scroll feel. Cuts section margins from 56px → 18-24px and trims
-     section internal padding so the page reads as one continuous flow. */
+  /* MOBILE: aggressively tight vertical spacing — Hims/Hers crisp scroll.
+     Every gap between sections cut to ≤22px, internal padding capped at
+     22px so the page scrolls as one continuous strip. */
   @media (max-width: 720px) {
-    .hero { padding-top: 20px; padding-bottom: 10px; }
-    .twin-cards { padding: 8px 0 16px; gap: 12px; }
-    .quick-icons { padding: 6px 0 20px; gap: 10px; }
-    .product-grid { padding: 4px 0 18px; gap: 10px; }
+    .hero { padding-top: 12px !important; padding-bottom: 4px !important; }
+    .twin-cards { padding: 4px 0 8px !important; gap: 10px !important; }
+    .quick-icons { padding: 0 0 8px !important; gap: 8px !important; }
+    .product-grid { padding: 0 0 10px !important; gap: 10px !important; }
     .dark-promo,
     .featured-block,
     .alt-block,
     .rxcard-section,
     .clinical-advisor {
-      margin: 0 0 18px;
-      padding-top: 32px;
-      padding-bottom: 32px;
-      border-radius: 22px;
+      margin: 0 0 10px !important;
+      padding-top: 22px !important;
+      padding-bottom: 22px !important;
+      border-radius: 20px;
     }
-    .testimonials { margin: 12px 0 18px; padding-top: 4px; }
-    .testimonials-header { margin-bottom: 18px; }
-    .blog-tease { margin: 0 0 28px; padding-top: 24px; }
-    .blog-tease-head { margin-bottom: 18px; }
+    .testimonials { margin: 4px 0 10px !important; padding-top: 0 !important; }
+    .testimonials-header { margin-bottom: 12px !important; }
+    .blog-tease { margin: 0 0 14px !important; padding-top: 14px !important; }
+    .blog-tease-head { margin-bottom: 14px !important; }
+    /* Tighten internal section rhythm */
+    .featured-block-eyebrow,
+    .rxcard-eyebrow,
+    .clinical-advisor-eyebrow { margin-bottom: 6px !important; }
     .featured-block h2,
     .alt-block h2,
     .rxcard-section h2,
-    .dark-promo h2 { margin-bottom: 12px; }
+    .dark-promo h2,
+    .clinical-advisor-name { margin-bottom: 8px !important; }
     .featured-block-sub,
     .alt-block-text p,
-    .rxcard-section p { margin-bottom: 18px; }
+    .rxcard-section p,
+    .clinical-advisor-bio { margin-bottom: 12px !important; }
+    .clinical-advisor-credentials { margin-top: 10px !important; }
   }
   .twin-card-eyebrow {
     display: inline-block;

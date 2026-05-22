@@ -355,6 +355,14 @@
   .clinical-advisor-credentials { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
   @media (max-width: 720px) { .clinical-advisor-credentials { justify-content: center; } }
   .clinical-advisor-credentials span { font-size: 0.72rem; font-weight: 600; color: var(--brand-deep); background: rgba(175,75,237,0.08); border: 1px solid rgba(175,75,237,0.18); padding: 5px 11px; border-radius: 999px; letter-spacing: 0.02em; }
+
+  /* SITE-WIDE MOBILE PARITY (matches home page) — tight gutters everywhere */
+  @media (max-width: 720px) {
+    .container, .container-px { padding-left: 12px !important; padding-right: 12px !important; }
+    .top-strip { padding-left: 12px !important; padding-right: 12px !important; font-size: 0.76rem !important; }
+    .nav-inner { padding-left: 12px !important; padding-right: 12px !important; }
+    footer .container, footer .container-px { padding-left: 14px !important; padding-right: 14px !important; }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

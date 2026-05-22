@@ -221,12 +221,22 @@
   /* HOW IT WORKS — 5 numbered cards */
   .how-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
   @media (max-width: 1100px) { .how-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 540px) { .how-grid { grid-template-columns: 1fr; } }
   .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 26px 22px; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
   .how-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
   .how-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 2.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
   .how-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
   .how-card p { font-size: 0.88rem; line-height: 1.55; }
+  /* Mobile: convert grid to a compact connected timeline */
+  @media (max-width: 760px) {
+    .how-grid { display: block; position: relative; padding-left: 0; gap: 0; }
+    .how-grid::before { content: ""; position: absolute; left: 21px; top: 14px; bottom: 14px; width: 2px; background: linear-gradient(180deg, var(--brand) 0%, rgba(175,75,237,0.18) 100%); border-radius: 2px; z-index: 0; }
+    .how-card { background: transparent; border: 0; box-shadow: none; padding: 8px 0 18px 60px; display: block; position: relative; transform: none !important; }
+    .how-card:hover { transform: none; box-shadow: none; border: 0; }
+    .how-card:last-child { padding-bottom: 0; }
+    .how-num { position: absolute; left: 6px; top: 8px; width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); color: white; -webkit-text-fill-color: white; display: grid; place-items: center; font-size: 0.82rem; font-weight: 800; margin: 0; box-shadow: 0 6px 16px -4px rgba(175,75,237,0.45); border: 3px solid #ffffff; line-height: 1; z-index: 1; }
+    .how-card h3 { font-size: 1rem; margin: 2px 0 4px; line-height: 1.25; }
+    .how-card p { font-size: 0.88rem; line-height: 1.5; }
+  }
 
   /* WHO QUALIFIES */
   /* WHO QUALIFIES — horizontal scroll carousel on mobile, 4-up grid on desktop */

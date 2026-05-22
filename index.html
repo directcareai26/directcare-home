@@ -348,6 +348,39 @@
     .clinical-advisor-bio { margin-bottom: 12px !important; }
     .clinical-advisor-credentials { margin-top: 10px !important; }
   }
+
+  /* ============== DESKTOP FULL-BLEED BANDS ==============
+     Hims-style: select big content sections extend to the viewport edges
+     while their inner content stays centered at the ~1280px container.
+     Mobile is untouched (stays as tight cards inside .container-px). */
+  @media (min-width: 721px) {
+    .dark-promo,
+    .featured-block,
+    .alt-block,
+    .rxcard-section,
+    .clinical-advisor {
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      border-radius: 0 !important;
+    }
+  }
+  /* When the viewport is wider than the 1280px container, add horizontal
+     padding equal to the half-overflow so content keeps anchoring to the
+     same center column as everything else on the page. */
+  @media (min-width: 1280px) {
+    .dark-promo,
+    .featured-block,
+    .alt-block,
+    .rxcard-section,
+    .clinical-advisor {
+      padding-left: calc((100vw - 1280px) / 2 + clamp(28px, 5vw, 60px)) !important;
+      padding-right: calc((100vw - 1280px) / 2 + clamp(28px, 5vw, 60px)) !important;
+    }
+  }
+
   .twin-card-eyebrow {
     display: inline-block;
     font-size: 0.72rem; font-weight: 600;

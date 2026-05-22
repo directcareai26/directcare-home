@@ -263,15 +263,15 @@
   /* ============== POP-OUT GROUP BAND (Mockup D) — full-bleed ============== */
   .d-section {
     width: 100%;
-    padding: 0;
+    padding: 0 0 clamp(48px, 5vw, 80px) 0;   /* breathing room BELOW the band before next section */
     margin: 0;
-    background: transparent;
+    background: #ffffff;                       /* white above & below the band — kills the cream show-through */
   }
-  /* Zero out adjacent sections' inner padding so no cream stripe shows
-     above or below the band — band sits flush against its neighbors */
-  section.section.flush-bottom { padding-bottom: 0 !important; }
-  section.section.flush-top    { padding-top:    0 !important; }
-  /* Belt + suspenders: also try the sibling selector for any future placement */
+  /* Zero out adjacent sections' inner padding AND override their soft
+     gradients with white so no cream stripe shows above or below the band */
+  section.section.flush-bottom { padding-bottom: 0 !important; background: #ffffff !important; }
+  section.section.flush-top    { padding-top:    0 !important; background: #ffffff !important; }
+  /* Belt + suspenders: sibling selector for any future placement */
   .d-section + section.section { padding-top: 0 !important; }
   section.section:has(+ .d-section) { padding-bottom: 0 !important; }
   .d-stage {

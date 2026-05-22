@@ -56,6 +56,178 @@
         "low T",
         "clomid alternative"
       ]
+    },
+    {
+      "slug": "morning-testosterone-test-timing",
+      "title": "Why morning testosterone tests matter (and what time of day ruins yours)",
+      "excerpt": "Testosterone is one of the most variable hormones in your body across a single day. If you draw labs at the wrong hour, you'll diagnose yourself with a problem you don't have — or miss one you do.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-05-17",
+      "dateLabel": "May 17, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "testosterone test timing",
+        "morning testosterone",
+        "TRT bloodwork",
+        "low T diagnosis",
+        "circadian testosterone"
+      ]
+    },
+    {
+      "slug": "progesterone-at-night-timing-vs-dose",
+      "title": "Progesterone at night: why timing matters more than dose for menopause sleep",
+      "excerpt": "Oral micronized progesterone is one of the most sedating hormones we prescribe — but only when you take it the right way, at the right hour. Here's what that means in practice.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-05-14",
+      "dateLabel": "May 14, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png",
+      "keywords": [
+        "progesterone for sleep",
+        "menopause sleep",
+        "oral micronized progesterone",
+        "HRT timing",
+        "perimenopause insomnia"
+      ]
+    },
+    {
+      "slug": "sildenafil-vs-tadalafil-pde5-comparison",
+      "title": "Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently",
+      "excerpt": "Same drug class, very different drugs. Onset, duration, food interaction, and side-effect profile all matter — and the right one for you depends less on marketing and more on your lifestyle.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-05-10",
+      "dateLabel": "May 10, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "sildenafil",
+        "tadalafil",
+        "PDE5 inhibitor",
+        "ED treatment",
+        "Viagra vs Cialis",
+        "Surge Max",
+        "compounded ED meds"
+      ]
+    },
+    {
+      "slug": "female-libido-testosterone-clinician-conversation",
+      "title": "Female libido and testosterone: the conversation most clinicians skip",
+      "excerpt": "Women's testosterone crashes in the 40s — and almost no primary-care visit picks up on it. A clinician's guide to what to test, what to expect, and what a low-dose testosterone cream actually does.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-05-06",
+      "dateLabel": "May 6, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png",
+      "keywords": [
+        "women testosterone",
+        "female libido",
+        "low libido HRT",
+        "perimenopause testosterone",
+        "compounded testosterone cream"
+      ]
+    },
+    {
+      "slug": "topical-vs-oral-finasteride-men-hair",
+      "title": "Topical finasteride vs. oral: how to get scalp results with fewer side effects",
+      "excerpt": "Oral finasteride works — and produces side effects in a small but real percentage of men. Topical finasteride changes that math by concentrating the drug where you want it and minimizing systemic exposure.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-05-02",
+      "dateLabel": "May 2, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "topical finasteride",
+        "oral finasteride",
+        "men hair loss",
+        "finasteride side effects",
+        "compounded finasteride minoxidil"
+      ]
+    },
+    {
+      "slug": "womens-hair-loss-hormonal-panel",
+      "title": "Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters",
+      "excerpt": "Female-pattern hair loss has more drivers than male-pattern: ferritin, thyroid, androgens, and the perimenopausal estradiol drop all play in. The protocol that works starts with the panel that catches them.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-04-27",
+      "dateLabel": "April 27, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png",
+      "keywords": [
+        "women hair loss",
+        "female-pattern hair loss",
+        "ferritin hair loss",
+        "thyroid hair loss",
+        "compounded minoxidil women"
+      ]
+    },
+    {
+      "slug": "glp1-month-one-side-effects-food-noise",
+      "title": "What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp",
+      "excerpt": "The first 4 weeks of semaglutide or tirzepatide are not the same as the next 12. A clinician's week-by-week guide to what's normal, what's not, and how to make the early ramp survivable.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-04-21",
+      "dateLabel": "April 21, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "GLP-1 side effects",
+        "semaglutide first month",
+        "tirzepatide nausea",
+        "food noise GLP-1",
+        "starting weight loss injection"
+      ]
+    },
+    {
+      "slug": "body-recomp-glp1-protect-muscle",
+      "title": "Body recomp on GLP-1s: how to lose fat without losing muscle",
+      "excerpt": "GLP-1s can pull weight off fast — and 25 percent or more of that loss can be muscle if you don't actively protect it. Here's what the literature actually says about protein, training, and pacing.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-04-14",
+      "dateLabel": "April 14, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png",
+      "keywords": [
+        "GLP-1 muscle loss",
+        "body recomp semaglutide",
+        "tirzepatide muscle preservation",
+        "protein on GLP-1",
+        "lean mass weight loss"
+      ]
+    },
+    {
+      "slug": "12-markers-hormone-panel-priority",
+      "title": "The 12 markers we actually look at first on a DirectCare AI hormone panel",
+      "excerpt": "An 80+ biomarker panel sounds great until you're staring at 80 numbers. A clinician's-eye view of which 12 we actually open first — and what each one is telling us.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-04-07",
+      "dateLabel": "April 7, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "hormone panel markers",
+        "comprehensive bloodwork",
+        "biomarkers HRT",
+        "blood labs interpretation",
+        "telehealth bloodwork"
+      ]
+    },
+    {
+      "slug": "magnesium-vitamin-d-supplement-gaps",
+      "title": "Magnesium, vitamin D, and the four supplement gaps almost every patient has",
+      "excerpt": "Most patients don't need 30 supplements. They need four — picked up from real bloodwork — at clinically meaningful doses. Here's what those four are and why almost everyone is under-dosed.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-03-31",
+      "dateLabel": "March 31, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "magnesium supplement",
+        "vitamin D dose",
+        "omega-3 dose",
+        "B-complex deficiency",
+        "physician-formulated supplements"
+      ]
     }
   ]
 }

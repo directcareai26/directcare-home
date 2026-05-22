@@ -383,11 +383,17 @@
   @media (max-width: 760px) {
     .section { padding: 64px 0; }
     .section-head { margin-bottom: 40px; }
+    .section-head h2 { font-size: clamp(1.35rem, 6vw, 2.1rem); line-height: 1.2; text-wrap: balance; }
     .hero { padding: 40px 0 64px; }
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 22px; font-size: 0.96rem; }
     .hero-cta-row .btn-primary-xl { width: 100%; padding: 18px 18px; font-size: 0.94rem; letter-spacing: -0.01em; }
     .hero-cta-row { width: 100%; }
+    /* Trust seals → consistent 2x2 grid across all mobile widths */
+    .trust-seal-inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 12px; padding: 0 8px; }
+    .seal { justify-content: flex-start; min-width: 0; }
+    .seal-text { min-width: 0; }
+    .seal-text strong, .seal-text span { overflow-wrap: break-word; }
   }
 
   /* SCROLL PROGRESS */

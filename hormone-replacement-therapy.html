@@ -429,11 +429,17 @@
   @media (max-width: 760px) {
     .section { padding: 64px 0; }
     .section-head { margin-bottom: 40px; }
+    .section-head h2 { font-size: clamp(1.35rem, 6vw, 2.1rem); line-height: 1.2; text-wrap: balance; }
     .hero { padding: 40px 0 64px; }
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 22px; font-size: 0.96rem; }
     .hero-cta-row .btn-primary-xl { width: 100%; padding: 18px 18px; font-size: 0.94rem; letter-spacing: -0.01em; }
     .hero-cta-row { width: 100%; }
+    /* Trust seals → consistent 2x2 grid across all mobile widths */
+    .trust-seal-inner { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 12px; padding: 0 8px; }
+    .seal { justify-content: flex-start; min-width: 0; }
+    .seal-text { min-width: 0; }
+    .seal-text strong, .seal-text span { overflow-wrap: break-word; }
   }
 
   /* SCROLL PROGRESS */
@@ -794,7 +800,6 @@
         <span class="tag">Oral · Entry</span>
         <h3>Estradiol pill + progesterone</h3>
         <div class="price-amt"><span class="num">$66</span><span class="per">/ mo</span></div>
-        <div class="price-total">Billed $199 every 12 weeks</div>
       </div>
 
       <!-- 2. Patch/cream/gel/insert + progesterone (featured) -->
@@ -802,7 +807,6 @@
         <span class="tag">Transdermal · Most chosen</span>
         <h3>Patch, cream, gel or insert + progesterone</h3>
         <div class="price-amt"><span class="num">$89</span><span class="per">/ mo</span></div>
-        <div class="price-total">Billed $269 every 12 weeks</div>
       </div>
 
       <!-- 3. Dual-medication -->
@@ -810,7 +814,6 @@
         <span class="tag">Dual route</span>
         <h3>Dual-medication option</h3>
         <div class="price-amt"><span class="num">$116</span><span class="per">/ mo</span></div>
-        <div class="price-total">Billed $348 every 12 weeks</div>
       </div>
 
       <!-- 4. Non-hormonal -->
@@ -818,7 +821,6 @@
         <span class="tag">Non-hormonal</span>
         <h3>Non-hormonal alternative</h3>
         <div class="price-amt"><span class="num">$59</span><span class="per">/ mo</span></div>
-        <div class="price-total">Billed $178 every 12 weeks</div>
       </div>
 
       <!-- 5. Testosterone (women) -->
@@ -826,11 +828,10 @@
         <span class="tag">Add-on · Women's T</span>
         <h3>Testosterone for women</h3>
         <div class="price-amt"><span class="num">$169</span><span class="per">/ mo</span></div>
-        <div class="price-total">$199 / 4 weeks · billed $507 every 12 weeks</div>
       </div>
 
     </div>
-    <p class="price-foot"><strong>Free evaluation.</strong> No charge if you don't qualify. Cancel anytime. Pricing covers the medication, clinician oversight, secure messaging, and shipping. Lab work, when indicated, is billed separately at member rates.</p>
+    <p class="price-foot"><strong>Free evaluation.</strong> No charge if you don't qualify. Cancel anytime. Pricing covers the medication, clinician oversight, secure messaging, and shipping — billed every 12 weeks at the monthly rate shown. Lab work, when indicated, is billed separately at member rates.</p>
   </div>
 </section>
 

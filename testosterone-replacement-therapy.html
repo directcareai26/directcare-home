@@ -536,6 +536,119 @@
   }
 
   /* ============================================================
+     TRUSTED NATIONWIDE PROVIDER NETWORK — new 3-card layout per
+     mockup. Plain title, 3 stacked light-cream cards, big CTA.
+     ============================================================ */
+  .tnpn-section { background: #ffffff; padding: clamp(48px, 5.4vw, 80px) 0; }
+  .tnpn-head { max-width: 880px; margin: 0 auto 32px; text-align: center; }
+  .tnpn-head h2 {
+    margin: 0;
+    font-family: 'Geist', 'Manrope', sans-serif;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    letter-spacing: -0.025em;
+    line-height: 1.05;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .tnpn-head h2 br { display: inline; }
+
+  .tnpn-stack { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+
+  .tnpn-card {
+    background: #f6f3f9;
+    border: 1px solid #ece5f2;
+    border-radius: 20px;
+    padding: clamp(26px, 4vw, 38px) clamp(22px, 4vw, 36px);
+  }
+
+  .tnpn-openloop .tnpn-logo { display: flex; justify-content: center; margin-bottom: 16px; }
+  .tnpn-openloop .tnpn-logo img { display: block; max-height: 38px; width: auto; }
+  .tnpn-desc {
+    text-align: center; color: var(--ink); font-size: 1rem; line-height: 1.55;
+    max-width: 540px; margin: 0 auto; font-weight: 500;
+  }
+  .tnpn-card-divider { height: 1px; background: #e4ddec; margin: 22px 0 18px; }
+  .tnpn-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: center; }
+  .tnpn-ratings > div { display: flex; align-items: center; justify-content: center; padding: 6px 16px; }
+  .tnpn-ratings > div + div { border-left: 1px solid #e4ddec; }
+  .tnpn-ratings img { display: block; max-height: 42px; width: auto; max-width: 100%; }
+
+  .tnpn-stats-card { padding-top: clamp(28px, 4vw, 40px); padding-bottom: clamp(28px, 4vw, 40px); display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .tnpn-stat { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 4px 8px; }
+  .tnpn-stat-ico { width: 72px; height: 72px; display: grid; place-items: center; margin-bottom: 12px; }
+  .tnpn-stat-ico svg { width: 100%; height: 100%; }
+  .tnpn-stat-num {
+    font-family: 'Geist', 'Manrope', sans-serif;
+    font-size: 1.6rem; font-weight: 900; color: var(--ink);
+    line-height: 1; letter-spacing: -0.02em; margin-bottom: 6px;
+  }
+  .tnpn-stat-lab { font-size: 0.84rem; color: var(--ink); font-weight: 500; line-height: 1.3; }
+
+  .tnpn-trust-card { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 0; padding-top: clamp(22px, 3vw, 28px); padding-bottom: clamp(22px, 3vw, 28px); }
+  .tnpn-trust-item { display: flex; gap: 14px; align-items: center; padding: 4px 14px; }
+  .tnpn-trust-item + .tnpn-trust-item { border-left: 1px solid #e4ddec; }
+  .tnpn-trust-ico {
+    flex: 0 0 52px; width: 52px; height: 52px; border-radius: 50%;
+    background: rgba(175,75,237,0.10); display: grid; place-items: center;
+    color: var(--brand-darker);
+  }
+  .tnpn-trust-ico svg { width: 24px; height: 24px; }
+  .tnpn-trust-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .tnpn-trust-text strong {
+    font-family: 'Geist', 'Manrope', sans-serif;
+    font-size: 1rem; font-weight: 800; color: var(--ink);
+    letter-spacing: -0.01em; line-height: 1.2;
+  }
+  .tnpn-trust-text span { font-size: 0.86rem; color: var(--muted); line-height: 1.3; }
+
+  .tnpn-cta {
+    display: flex; align-items: center; justify-content: center; gap: 14px;
+    width: 100%; margin-top: 10px;
+    padding: 22px 28px; border-radius: 14px;
+    background: #1f1148; color: white;
+    font-family: 'Geist', 'Manrope', sans-serif;
+    font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em;
+    text-decoration: none;
+    transition: background .18s ease, transform .15s ease, box-shadow .2s ease;
+    box-shadow: 0 14px 30px -10px rgba(31,17,72,0.40);
+  }
+  .tnpn-cta:hover { background: #110830; transform: translateY(-2px); box-shadow: 0 18px 36px -10px rgba(31,17,72,0.55); }
+  .tnpn-cta:focus-visible { outline: 3px solid rgba(175,75,237,0.5); outline-offset: 3px; }
+
+  .tnpn-cta-foot {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin: 12px 0 0; font-size: 0.92rem; color: var(--ink); font-weight: 500;
+  }
+  .tnpn-cta-foot svg { flex: 0 0 14px; color: var(--ink); }
+
+  @media (max-width: 720px) {
+    .tnpn-section { padding: 36px 0 !important; }
+    .tnpn-head { margin-bottom: 24px; }
+    .tnpn-head h2 { font-size: clamp(2rem, 8vw, 2.8rem); }
+    .tnpn-stack { gap: 12px; }
+    .tnpn-card { padding: 24px 18px; border-radius: 18px; }
+    .tnpn-openloop .tnpn-logo img { max-height: 34px; }
+    .tnpn-desc { font-size: 0.96rem; }
+    .tnpn-stat-ico { width: 60px; height: 60px; margin-bottom: 8px; }
+    .tnpn-stat-num { font-size: 1.35rem; }
+    .tnpn-stat-lab { font-size: 0.76rem; }
+    .tnpn-trust-card { padding-top: 22px; padding-bottom: 22px; }
+    .tnpn-trust-item { padding: 4px 6px; gap: 10px; }
+    .tnpn-trust-ico { flex: 0 0 44px; width: 44px; height: 44px; }
+    .tnpn-trust-ico svg { width: 20px; height: 20px; }
+    .tnpn-trust-text strong { font-size: 0.88rem; }
+    .tnpn-trust-text span { font-size: 0.76rem; }
+    .tnpn-cta { padding: 18px 22px; font-size: 1rem; border-radius: 12px; gap: 10px; }
+    .tnpn-cta svg { width: 18px; height: 18px; }
+    .tnpn-cta-foot { font-size: 0.84rem; }
+  }
+  @media (max-width: 460px) {
+    .tnpn-stats-card { grid-template-columns: repeat(2, 1fr); gap: 22px 0; padding-left: 14px; padding-right: 14px; }
+    .tnpn-stat:nth-child(odd) { border-right: 1px solid #e4ddec; }
+  }
+
+  /* ============================================================
      CRISP PASS — flatten chrome, edge-to-edge bands (Hims/Hers/Ro feel)
      Appended last so it wins via cascade. Removes the "rounded box
      inside a band" double-containment look in favor of flat content
@@ -765,77 +878,93 @@
   </div>
 </header>
 
-<!-- MEDICAL CARE YOU CAN TRUST — icon badges + OpenLoop partner card -->
-<section class="section soft">
+<!-- TRUSTED NATIONWIDE PROVIDER NETWORK — 3 cards + CTA -->
+<section class="section tnpn-section">
   <div class="container">
-    <div class="section-head">
-      <h2>Trusted Nationwide <span class="accent">Provider Network.</span></h2>
+    <div class="section-head tnpn-head">
+      <h2>Trusted Nationwide<br/>Provider Network</h2>
     </div>
 
-    <!-- 4 trust icon badges row -->
-    <div class="trust-icons">
-      <div class="trust-icons-item">
-        <span class="ico-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
-        <span class="ti-title">Licensed Clinicians</span>
-        <span class="ti-sub">Licensed in the U.S.</span>
-      </div>
-      <div class="trust-icons-item">
-        <span class="ico-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
-        <span class="ti-title">Private &amp; Secure</span>
-        <span class="ti-sub">HIPAA compliant</span>
-      </div>
-      <div class="trust-icons-item">
-        <span class="ico-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-        <span class="ti-title">Available Nationwide</span>
-        <span class="ti-sub">Care in all 50 states</span>
-      </div>
-      <div class="trust-icons-item">
-        <span class="ico-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></span>
-        <span class="ti-title">Delivered to Your Door</span>
-        <span class="ti-sub">Discreet shipping</span>
-      </div>
-    </div>
+    <div class="tnpn-stack">
+      <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+        <linearGradient id="tnpnGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#c896f0"/>
+          <stop offset="100%" stop-color="#7a3bb5"/>
+        </linearGradient>
+      </defs></svg>
 
-    <!-- OpenLoop partner card -->
-    <div class="partner-card">
-      <div class="pc-logo">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" loading="lazy" />
-      </div>
-      <p class="pc-desc">Access experienced licensed clinicians across all 50 states. Every treatment request is reviewed by a licensed clinician to determine whether care is right for you.</p>
-
-      <div class="pc-divider"></div>
-
-      <!-- Ratings -->
-      <div class="pc-ratings">
-        <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20google.webp" alt="OpenLoop Google reviews rating" loading="lazy" /></div>
-        <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20trustpilot.webp" alt="OpenLoop Trustpilot rating" loading="lazy" /></div>
-      </div>
-
-      <div class="pc-divider"></div>
-
-      <!-- Stats -->
-      <div class="pc-stats">
-        <div>
-          <span class="stat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
-          <span class="num">20,000+</span>
-          <span class="lab">Licensed Clinicians</span>
+      <div class="tnpn-card tnpn-openloop">
+        <div class="tnpn-logo">
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" loading="lazy" />
         </div>
-        <div>
-          <span class="stat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
-          <span class="num">250K+</span>
-          <span class="lab">Patient Visits Monthly</span>
-        </div>
-        <div>
-          <span class="stat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-          <span class="num">50</span>
-          <span class="lab">States Nationwide</span>
-        </div>
-        <div>
-          <span class="stat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1v-7h3v5z"/><path d="M3 19a2 2 0 0 0 2 2h1v-7H3v5z"/></svg></span>
-          <span class="num">24/7</span>
-          <span class="lab">Patient Support</span>
+        <p class="tnpn-desc">Licensed clinicians review every treatment request to determine whether treatment is right for you.</p>
+        <div class="tnpn-card-divider"></div>
+        <div class="tnpn-ratings">
+          <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20google.webp" alt="Google reviews rating" loading="lazy" /></div>
+          <div><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/openloop%20rating%20trustpilot.webp" alt="Trustpilot rating" loading="lazy" /></div>
         </div>
       </div>
+
+      <div class="tnpn-card tnpn-stats-card">
+        <div class="tnpn-stat">
+          <div class="tnpn-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="url(#tnpnGrad)"><circle cx="32" cy="20" r="9"/><circle cx="14" cy="24" r="7" opacity="0.82"/><circle cx="50" cy="24" r="7" opacity="0.82"/><path d="M16 42c0-6 7-10 16-10s16 4 16 10v6H16z"/><path d="M4 46c0-5 4-8 10-8 2 0 4 0 6 1-2 2-3 5-3 8v3H4z" opacity="0.82"/><path d="M60 46c0-5-4-8-10-8-2 0-4 0-6 1 2 2 3 5 3 8v3h13z" opacity="0.82"/></svg>
+          </div>
+          <div class="tnpn-stat-num">20,000+</div>
+          <div class="tnpn-stat-lab">Licensed<br/>Clinicians</div>
+        </div>
+        <div class="tnpn-stat">
+          <div class="tnpn-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="url(#tnpnGrad)"><rect x="10" y="38" width="10" height="16" rx="2"/><rect x="27" y="26" width="10" height="28" rx="2"/><rect x="44" y="14" width="10" height="40" rx="2"/></svg>
+          </div>
+          <div class="tnpn-stat-num">250K+</div>
+          <div class="tnpn-stat-lab">Patient Visits<br/>Monthly</div>
+        </div>
+        <div class="tnpn-stat">
+          <div class="tnpn-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="url(#tnpnGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M8 22 L14 18 L20 22 L26 18 L32 22 L38 18 L44 22 L50 18 L56 22 L54 32 L52 42 L48 48 L42 50 L36 48 L30 50 L24 48 L18 50 L14 46 L10 38 Z"/></svg>
+          </div>
+          <div class="tnpn-stat-num">50</div>
+          <div class="tnpn-stat-lab">States<br/>Nationwide</div>
+        </div>
+        <div class="tnpn-stat">
+          <div class="tnpn-stat-ico" aria-hidden="true">
+            <svg viewBox="0 0 64 64" fill="none" stroke="url(#tnpnGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 36v-4a20 20 0 0 1 40 0v4"/><rect x="8" y="36" width="10" height="16" rx="3" fill="url(#tnpnGrad)" stroke="none"/><rect x="46" y="36" width="10" height="16" rx="3" fill="url(#tnpnGrad)" stroke="none"/><path d="M46 50c0 4-4 6-10 6"/></svg>
+          </div>
+          <div class="tnpn-stat-num">24/7</div>
+          <div class="tnpn-stat-lab">Patient<br/>Support</div>
+        </div>
+      </div>
+
+      <div class="tnpn-card tnpn-trust-card">
+        <div class="tnpn-trust-item">
+          <div class="tnpn-trust-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+          </div>
+          <div class="tnpn-trust-text">
+            <strong>Private &amp; secure</strong>
+            <span>HIPAA compliant</span>
+          </div>
+        </div>
+        <div class="tnpn-trust-item">
+          <div class="tnpn-trust-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 8 8-4 8 4v8l-8 4-8-4z"/><path d="m4 8 8 4 8-4"/><path d="M12 12v8"/></svg>
+          </div>
+          <div class="tnpn-trust-text">
+            <strong>Delivered to your door</strong>
+            <span>Discreet shipping</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="tnpn-cta" href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&amp;businessId=67fe9d4248c4ab911e8bdcd6">
+        <span>See if treatment is right for you</span>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+      <p class="tnpn-cta-foot">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+        <span>Private. Secure. 2-minute assessment.</span>
+      </p>
     </div>
   </div>
 </section>

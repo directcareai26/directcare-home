@@ -348,6 +348,13 @@
   .trust-partner-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
   .trust-partner-logo .openloop-logo { display: block; max-width: 220px; height: auto; max-height: 56px; width: auto; }
   @media (max-width: 540px) { .trust-partner-logo .openloop-logo { max-width: 180px; max-height: 48px; } }
+
+  /* WHY WOMEN/MEN TRUST — bullet card */
+  .why-card { max-width: 880px; margin: 0 auto; background: linear-gradient(160deg, var(--soft) 0%, white 100%); border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(28px, 4.5vw, 40px); box-shadow: var(--shadow-soft); }
+  .why-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; }
+  @media (max-width: 720px) { .why-list { grid-template-columns: 1fr; } }
+  .why-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 1rem; color: var(--ink); line-height: 1.55; font-weight: 500; }
+  .why-list .v { flex: 0 0 24px; height: 24px; border-radius: 50%; background: rgba(20,152,58,0.12); color: var(--green); display: grid; place-items: center; margin-top: 1px; }
   .trust-partner p { font-size: 0.94rem; line-height: 1.65; color: var(--muted); }
   .trust-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 22px; }
   @media (max-width: 540px) { .trust-stats { grid-template-columns: 1fr; gap: 14px; } }
@@ -372,8 +379,7 @@
   .price-card.featured { background: linear-gradient(160deg, var(--soft) 0%, white 70%); border-color: rgba(175,75,237,0.4); }
   .price-card.featured::before { content: "Most popular"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--brand); color: white; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; box-shadow: 0 6px 14px -4px rgba(175,75,237,0.55); white-space: nowrap; }
   .price-card .tag { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.66rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); margin-bottom: 8px; }
-  .price-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.05rem; font-weight: 800; margin: 0 0 6px; color: var(--ink); line-height: 1.25; }
-  .price-card .meds { font-size: 0.84rem; color: var(--muted); line-height: 1.5; margin-bottom: 16px; flex: 1; }
+  .price-card h3 { font-family: 'Manrope', sans-serif; font-size: 1.08rem; font-weight: 800; margin: 0 0 18px; color: var(--ink); line-height: 1.3; flex: 1; }
   .price-amt { display: flex; align-items: baseline; gap: 6px; margin-bottom: 4px; padding-top: 14px; border-top: 1px solid var(--lavender-100); }
   .price-amt .num { font-family: 'Manrope', sans-serif; font-size: 1.9rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.02em; }
   .price-amt .per { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
@@ -625,13 +631,34 @@
   </div>
 </div>
 
-<!-- PROVIDER TRUST + STATS -->
+<!-- WHY WOMEN TRUST DIRECTCARE AI -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Why women trust DirectCare AI</span>
+      <h2>Real clinicians. <span class="accent">Real care. Real results.</span></h2>
+      <p>What's included in every program — licensed clinical review, ongoing support, and discreet delivery to your door if treatment is appropriate.</p>
+    </div>
+    <div class="why-card">
+      <ul class="why-list">
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Licensed clinicians</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Personalized treatment plans</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Delivered to your door</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Available nationwide</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Ongoing support throughout treatment</li>
+        <li><span class="v"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>24/7 patient support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROVIDER PARTNER NETWORK -->
 <section class="section trust-section">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> Care You Can Trust</span>
-      <h2>Trusted clinical care,<br/><span class="accent">delivered nationwide.</span></h2>
-      <p>Personalized hormone therapy with clinical oversight and a nationwide provider network serving millions of patients each year.</p>
+      <span class="eyebrow"><span class="dot"></span> Our Physician Partner Network</span>
+      <h2>Backed by a network that<br/><span class="accent">serves millions of patients.</span></h2>
+      <p>Medical care is delivered through our physician partner network, helping ensure patients receive timely access to licensed clinicians across all 50 states.</p>
     </div>
     <div class="trust-card">
       <div class="trust-grid">
@@ -640,7 +667,7 @@
           <div class="trust-partner-logo">
             <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" class="openloop-logo" />
           </div>
-          <p>Medical care is provided through our physician partner network, helping ensure patients receive timely access to licensed clinicians across all 50 states.</p>
+          <p>OpenLoop is a nationwide provider network that supports DirectCare AI's clinical programs and helps patients access licensed clinicians from the comfort of home.</p>
         </div>
         <div class="trust-stats">
           <div class="trust-stat">
@@ -766,7 +793,6 @@
       <div class="price-card">
         <span class="tag">Oral · Entry</span>
         <h3>Estradiol pill + progesterone</h3>
-        <p class="meds">Oral estradiol + micronized progesterone if a uterus is present. The most common starting protocol.</p>
         <div class="price-amt"><span class="num">$66</span><span class="per">/ mo</span></div>
         <div class="price-total">Billed $199 every 12 weeks</div>
       </div>
@@ -775,7 +801,6 @@
       <div class="price-card featured">
         <span class="tag">Transdermal · Most chosen</span>
         <h3>Patch, cream, gel or insert + progesterone</h3>
-        <p class="meds">Estradiol patch or cream, or vaginal gel 1g/day / insert 10mcg + progesterone if needed. Often preferred for hot flashes + vaginal symptoms.</p>
         <div class="price-amt"><span class="num">$89</span><span class="per">/ mo</span></div>
         <div class="price-total">Billed $269 every 12 weeks</div>
       </div>
@@ -784,7 +809,6 @@
       <div class="price-card">
         <span class="tag">Dual route</span>
         <h3>Dual-medication option</h3>
-        <p class="meds">Both systemic and local — pill/patch + vaginal estradiol + progesterone if needed. For mixed symptom profiles.</p>
         <div class="price-amt"><span class="num">$116</span><span class="per">/ mo</span></div>
         <div class="price-total">Billed $348 every 12 weeks</div>
       </div>
@@ -793,7 +817,6 @@
       <div class="price-card">
         <span class="tag">Non-hormonal</span>
         <h3>Non-hormonal alternative</h3>
-        <p class="meds">Paroxetine 10mg or desvenlafaxine 50/100mg — for patients who can't or don't want to take estrogen.</p>
         <div class="price-amt"><span class="num">$59</span><span class="per">/ mo</span></div>
         <div class="price-total">Billed $178 every 12 weeks</div>
       </div>
@@ -802,7 +825,6 @@
       <div class="price-card">
         <span class="tag">Add-on · Women's T</span>
         <h3>Testosterone for women</h3>
-        <p class="meds">Testosterone cypionate injection, gel, or oral — added for libido, energy, and mood when clinically indicated.</p>
         <div class="price-amt"><span class="num">$169</span><span class="per">/ mo</span></div>
         <div class="price-total">$199 / 4 weeks · billed $507 every 12 weeks</div>
       </div>

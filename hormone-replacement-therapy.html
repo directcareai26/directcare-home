@@ -753,6 +753,21 @@
   .compare-row .cell-us, .compare-row .cell-them { justify-content: center; text-align: center; gap: 8px; }
   .compare-row .cell-us { color: var(--brand-darker); font-weight: 700; background: rgba(175,75,237,0.04); }
   .compare-row .cell-them { color: var(--muted); }
+  /* Desktop: wrap each cell-us content in a fixed-width inline-grid so
+     the checkmarks line up vertically across rows while the icon+text
+     pair stays centered inside the cell. */
+  @media (min-width: 761px) {
+    .compare-row .cell-us { justify-content: center; }
+    .compare-row .cu-inner {
+      display: inline-grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      align-items: center;
+      width: 180px;
+      text-align: left;
+    }
+    .compare-row .cu-inner .mark { justify-self: start; }
+  }
   .compare-row .mark { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; flex-shrink: 0; font-size: 0.82rem; font-weight: 800; }
   .compare-row .mark.yes { background: rgba(20,152,58,0.14); color: var(--green); }
   .compare-row .mark.no { background: rgba(208,69,69,0.12); color: var(--bad); }
@@ -1344,57 +1359,57 @@
 
       <div class="compare-row">
         <div class="cell-label">Online clinician appointments</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">From anywhere</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">From anywhere</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Time to start care</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Reviewed in 24 hrs</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Reviewed in 24 hrs</span></span></div>
         <div class="cell-them"><span class="mark partial">△</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Async messaging with your clinician</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Unlimited</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Unlimited</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">FDA-approved bioidentical hormones</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Standard</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Standard</span></span></div>
         <div class="cell-them"><span class="mark partial">△</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Compounded routes (patch, cream, gel, insert)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Five protocols</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Five protocols</span></span></div>
         <div class="cell-them"><span class="mark partial">△</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Testosterone for women (low libido, energy)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Offered</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Offered</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Discreet shipping to your door</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Plain packaging</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Plain packaging</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Auto-refills, no pharmacy calls</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Automatic</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">Automatic</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Transparent flat-rate pricing</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">From $59/mo</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">From $59/mo</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Cancel anytime</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">No commitment</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">No commitment</span></span></div>
         <div class="cell-them"><span class="mark partial">△</span></div>
       </div>
       <div class="compare-row">
         <div class="cell-label">Free evaluation if you don't qualify</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">No charge</span></div>
+        <div class="cell-us"><span class="cu-inner"><span class="mark yes">✓</span><span class="cell-note">No charge</span></span></div>
         <div class="cell-them"><span class="mark no">✗</span></div>
       </div>
 

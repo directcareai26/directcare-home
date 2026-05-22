@@ -356,8 +356,8 @@
   .trust-partner { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 28px 26px; }
   .trust-partner-label { display: inline-block; font-family: 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand-deep); margin-bottom: 14px; }
   .trust-partner-logo { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
-  .trust-partner-logo .logo-mark { width: 56px; height: 56px; border-radius: 14px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); display: grid; place-items: center; color: white; font-family: 'Manrope', sans-serif; font-weight: 900; font-size: 1.4rem; letter-spacing: -0.02em; }
-  .trust-partner-logo .name { font-family: 'Manrope', sans-serif; font-size: 1.32rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
+  .trust-partner-logo .openloop-logo { display: block; max-width: 220px; height: auto; max-height: 56px; width: auto; }
+  @media (max-width: 540px) { .trust-partner-logo .openloop-logo { max-width: 180px; max-height: 48px; } }
   .trust-partner p { font-size: 0.94rem; line-height: 1.65; color: var(--muted); }
   .trust-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 22px; }
   @media (max-width: 540px) { .trust-stats { grid-template-columns: 1fr; gap: 14px; } }
@@ -598,8 +598,7 @@
         <div class="trust-partner">
           <span class="trust-partner-label">Our Physician Partner</span>
           <div class="trust-partner-logo">
-            <span class="logo-mark">OL</span>
-            <span class="name">OpenLoop</span>
+            <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/646595de48d566b49cabd774_OpenLoop-Logo-002.png" alt="OpenLoop" class="openloop-logo" />
           </div>
           <p>Medical care is provided through our physician partner network, helping ensure men receive timely access to licensed clinicians and appropriate clinical review.</p>
         </div>
@@ -773,28 +772,6 @@
 </section>
 
 
-<!-- SAFETY DARK -->
-<section class="section safety">
-  <div class="container">
-    <div class="safety-grid">
-      <div>
-        <span class="eyebrow on-dark"><span class="dot"></span> Safety &amp; Transparency</span>
-        <h2>Straight answers on the questions that matter.</h2>
-      </div>
-      <div>
-        <div class="safety-block">
-          <strong>Are compounded testosterone medications FDA-approved?</strong>
-          The active ingredient (testosterone cypionate) is individually FDA-approved, and branded testosterone products are FDA-approved when prescribed for hypogonadism. Compounded testosterone preparations are <em>not</em> FDA-approved as finished products and have not been evaluated by the FDA for safety or effectiveness as a final compound. Your clinician will discuss the right option for you.
-        </div>
-        <div class="safety-block">
-          <strong>Is TRT safe?</strong>
-          When prescribed and monitored by a licensed clinician, TRT is generally well-tolerated. Lab work, periodic prostate screening where indicated, and dose follow-ups are built into safe care — and your clinician will screen for cardiac, prostate, and fertility considerations before prescribing.
-        </div>
-        <div class="safety-note">This page is for educational purposes and does not constitute medical advice. Only a licensed clinician can determine whether any treatment is appropriate for you.</div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- WHAT IS DCAI -->
 <section class="section">
@@ -864,19 +841,6 @@
         <div class="faq-body">TRT starts from $129/month, depending on the protocol your clinician prescribes. The eligibility check and clinician review are free — you only pay if you qualify and decide to start.</div>
       </details>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- FINAL CTA -->
-<section class="section">
-  <div class="container">
-    <div class="final-cta">
-      <span class="eyebrow on-dark"><span class="dot"></span> Ready?</span>
-      <h2>See if you're a fit in<br/>about two minutes.</h2>
-      <p>No credit card. No commitment. If you're eligible, you'll be routed straight to your intake — and a licensed clinician will review your file shortly.</p>
-      <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-light-on-dark btn-primary-xl pulse-glow" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">See if TRT is right for you →</a>
-      <div class="meta">Your info is private and HIPAA-protected.</div>
     </div>
   </div>
 </section>

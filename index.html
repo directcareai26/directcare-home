@@ -326,16 +326,30 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
-  /* Solid brand-deep purple italic — readable on every card background.
-     The shimmer animation was washing out letters wherever the bright
-     peak passed (mobile + desktop). Cleaner to keep it static. */
+  /* Static diagonal gradient — adds depth without an animated peak that
+     can wash out letters. All three stops are dark enough to contrast
+     against both the lavender and cream card backgrounds. */
   .twin-card h2 em {
     font-style: italic;
     font-weight: 500;
-    color: var(--brand-deep);
-    transition: color .25s ease;
+    background: linear-gradient(
+      135deg,
+      #af4bed 0%,     /* brand magenta-purple */
+      #762ba4 55%,    /* brand-deep */
+      #44215A 100%    /* brand-darker — deep eggplant */
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    /* Soft purple halo behind the gradient text for extra pop without
+       a stark text-shadow (drop-shadow plays nicely with background-clip: text) */
+    filter: drop-shadow(0 2px 10px rgba(175, 75, 237, 0.22));
+    transition: filter .3s ease;
   }
-  .twin-card:hover h2 em { color: var(--brand-darker); }
+  .twin-card:hover h2 em {
+    filter: drop-shadow(0 3px 14px rgba(175, 75, 237, 0.38));
+  }
   .twin-card .btn {
     align-self: flex-start;
     padding: 10px 20px;

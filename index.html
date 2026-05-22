@@ -326,29 +326,27 @@
     margin-bottom: 16px;
     line-height: 1.1;
   }
-  /* Static diagonal gradient — adds depth without an animated peak that
-     can wash out letters. All three stops are dark enough to contrast
-     against both the lavender and cream card backgrounds. */
+  /* Solid brand-deep purple — gradient clipping kept cropping italic
+     letter slopes ("tuned to your levels." had letters cut). Pop comes
+     from a layered text-shadow that creates a soft purple halo around
+     each glyph, plus a subtle bottom shadow for depth. No clipping,
+     no animation, every letter at full contrast. */
   .twin-card h2 em {
     font-style: italic;
     font-weight: 500;
-    background: linear-gradient(
-      135deg,
-      #af4bed 0%,     /* brand magenta-purple */
-      #762ba4 55%,    /* brand-deep */
-      #44215A 100%    /* brand-darker — deep eggplant */
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    /* Soft purple halo behind the gradient text for extra pop without
-       a stark text-shadow (drop-shadow plays nicely with background-clip: text) */
-    filter: drop-shadow(0 2px 10px rgba(175, 75, 237, 0.22));
-    transition: filter .3s ease;
+    color: var(--brand-deep);
+    text-shadow:
+      0 0 18px rgba(175, 75, 237, 0.30),   /* outer purple halo */
+      0 0 6px  rgba(175, 75, 237, 0.20),   /* tight inner glow */
+      0 2px 0  rgba(68, 33, 90, 0.10);     /* subtle bottom etch */
+    transition: text-shadow .3s ease, color .3s ease;
   }
   .twin-card:hover h2 em {
-    filter: drop-shadow(0 3px 14px rgba(175, 75, 237, 0.38));
+    color: var(--brand-darker);
+    text-shadow:
+      0 0 24px rgba(175, 75, 237, 0.45),
+      0 0 8px  rgba(175, 75, 237, 0.28),
+      0 2px 0  rgba(68, 33, 90, 0.14);
   }
   .twin-card .btn {
     align-self: flex-start;

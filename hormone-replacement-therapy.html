@@ -229,19 +229,31 @@
   .how-card p { font-size: 0.88rem; line-height: 1.55; }
 
   /* WHO QUALIFIES — image card + checklist */
-  .who-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 56px; align-items: center; }
-  @media (max-width: 980px) { .who-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .who-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
-  .who-visual img { width: 100%; height: 100%; object-fit: cover; }
-  .who-visual-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 50%, rgba(40,26,49,0.55) 100%); pointer-events: none; }
-  .who-visual-card { position: absolute; left: 22px; right: 22px; bottom: 22px; background: rgba(255,255,255,0.95); backdrop-filter: blur(12px); border-radius: 18px; padding: 16px 20px; box-shadow: 0 20px 40px -16px rgba(40,26,49,0.25); }
-  .who-visual-card h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.98rem; margin: 0 0 4px; color: var(--ink); }
-  .who-visual-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.45; margin: 0; }
-  .who-list { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 16px; }
-  .who-list li { display: flex; gap: 14px; align-items: flex-start; font-size: 1rem; color: var(--ink); line-height: 1.55; }
-  .who-list .yes { flex: 0 0 26px; height: 26px; border-radius: 50%; background: rgba(20,152,58,0.12); color: var(--green); display: grid; place-items: center; }
-  .who-list strong { font-weight: 700; color: var(--ink); display: block; }
-  .who-list small { color: var(--muted); font-size: 0.88rem; }
+  /* WHO QUALIFIES — horizontal scroll carousel on mobile, 4-up grid on desktop */
+  .who-carousel { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 20px; padding: 6px 20px 24px; margin: 0 calc(-1 * clamp(20px, 5vw, 64px)); scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .who-carousel::-webkit-scrollbar { display: none; }
+  .who-card { flex: 0 0 78%; max-width: 320px; min-width: 250px; scroll-snap-align: start; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 22px; box-shadow: 0 8px 22px -14px rgba(118,43,164,0.14); display: flex; flex-direction: column; gap: 12px; transition: border-color .2s ease, transform .2s ease; }
+  .who-card:hover { border-color: rgba(175,75,237,0.35); transform: translateY(-3px); }
+  .who-card .yes { width: 32px; height: 32px; border-radius: 50%; background: rgba(20,152,58,0.12); color: var(--green); display: grid; place-items: center; flex-shrink: 0; }
+  .who-card strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 700; color: var(--ink); line-height: 1.3; display: block; }
+  .who-card small { color: var(--muted); font-size: 0.9rem; line-height: 1.5; }
+  .who-cta-row { display: flex; justify-content: center; margin-top: 24px; }
+  .who-cta-row .btn { min-width: 280px; }
+  @media (min-width: 760px) {
+    .who-carousel { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; overflow: visible; padding: 4px 0; margin: 0; }
+    .who-card { flex: 0 1 auto; max-width: none; min-width: 0; }
+  }
+  @media (max-width: 760px) {
+    .who-cta-row { margin-top: 8px; }
+    .who-cta-row .btn { width: calc(100% - 16px); min-width: 0; padding: 18px 18px; font-size: 1rem; }
+  }
+  /* Carousel scroll hint indicator on mobile */
+  .who-hint { display: none; }
+  @media (max-width: 760px) {
+    .who-hint { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: -8px; margin-bottom: 8px; font-size: 0.78rem; color: var(--muted); font-weight: 500; }
+    .who-hint svg { animation: who-swipe 1.6s ease-in-out infinite; }
+    @keyframes who-swipe { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(6px); } }
+  }
 
   /* SAFETY DARK */
   .safety { background: var(--dark); color: white; position: relative; overflow: hidden; }
@@ -743,38 +755,31 @@
       <h2>HRT may be appropriate<br/><span class="accent">if you're…</span></h2>
       <p>Adult women experiencing perimenopausal or menopausal symptoms who meet clinical criteria determined by a licensed provider.</p>
     </div>
-    <div class="who-grid">
-      <div class="who-visual">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Quietly%20radiant.png" alt="A woman in her 50s, calm and self-possessed — DirectCare AI HRT" loading="lazy" />
-        <div class="who-visual-overlay"></div>
-        <div class="who-visual-card">
-          <h4>A care model built around you</h4>
-          <p>Lab-driven dosing, direct clinician messaging, and refills shipped on your schedule.</p>
-        </div>
+    <div class="who-hint" aria-hidden="true">Swipe to see all <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
+    <div class="who-carousel">
+      <div class="who-card">
+        <span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <strong>Noticing perimenopause or menopause symptoms</strong>
+        <small>Hot flashes, sleep changes, mood shifts, low libido, vaginal dryness.</small>
       </div>
-      <div>
-        <ul class="who-list">
-          <li>
-            <span class="yes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-            <div><strong>Noticing perimenopause or menopause symptoms</strong><small>Hot flashes, sleep, mood, libido, vaginal changes</small></div>
-          </li>
-          <li>
-            <span class="yes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-            <div><strong>Looking for medically guided support</strong><small>Beyond lifestyle changes alone</small></div>
-          </li>
-          <li>
-            <span class="yes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-            <div><strong>Without conditions that contraindicate HRT</strong><small>Clinician will screen for hormone-sensitive cancer history, clotting risk, etc.</small></div>
-          </li>
-          <li>
-            <span class="yes"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
-            <div><strong>Adult woman, U.S. resident</strong><small>35+ and able to consent</small></div>
-          </li>
-        </ul>
-        <div style="margin-top:30px;">
-          <a href="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl">See if I qualify →</a>
-        </div>
+      <div class="who-card">
+        <span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <strong>Looking for medically guided support</strong>
+        <small>Beyond lifestyle changes alone — with clinician oversight and lab-driven dosing.</small>
       </div>
+      <div class="who-card">
+        <span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <strong>Without conditions that contraindicate HRT</strong>
+        <small>Your clinician will screen for hormone-sensitive cancer history, clotting risk, and more.</small>
+      </div>
+      <div class="who-card">
+        <span class="yes"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+        <strong>Adult woman, U.S. resident</strong>
+        <small>35+ and able to consent to treatment.</small>
+      </div>
+    </div>
+    <div class="who-cta-row">
+      <a href="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl">See if I qualify →</a>
     </div>
   </div>
 </section>

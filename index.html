@@ -352,24 +352,27 @@
   /* ============== DESKTOP FULL-BLEED BANDS ==============
      Hims-style: select big content sections extend to the viewport edges
      while their inner content stays centered at the ~1280px container.
-     Mobile is untouched (stays as tight cards inside .container-px). */
+     !important throughout because the individual section rules
+     (.dark-promo, .clinical-advisor, etc.) live LATER in the stylesheet
+     and use the `margin: 0 0 56px` shorthand which would otherwise reset
+     margin-left/right back to 0 and break the escape from the container. */
   @media (min-width: 721px) {
     .dark-promo,
     .featured-block,
     .alt-block,
     .rxcard-section,
     .clinical-advisor {
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
+      width: 100vw !important;
+      margin-left: calc(50% - 50vw) !important;
+      margin-right: calc(50% - 50vw) !important;
       margin-top: 0 !important;
       margin-bottom: 0 !important;
       border-radius: 0 !important;
+      max-width: 100vw !important;
     }
   }
-  /* When the viewport is wider than the 1280px container, add horizontal
-     padding equal to the half-overflow so content keeps anchoring to the
-     same center column as everything else on the page. */
+  /* Wide screens: re-add horizontal padding equal to the half-overflow so
+     content stays anchored to the same center column as everything else. */
   @media (min-width: 1280px) {
     .dark-promo,
     .featured-block,

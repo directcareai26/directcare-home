@@ -371,6 +371,12 @@
       max-width: 100vw !important;
     }
   }
+  /* Gap between the dark "Sustainable weight loss" band and the 4-tile
+     product grid directly below it (other transitions are intentional
+     band-to-band flush; only this band → cards adjacency needs air). */
+  @media (min-width: 721px) {
+    .dark-promo + .product-grid { margin-top: clamp(28px, 3vw, 44px); }
+  }
   /* Wide screens: re-add horizontal padding equal to the half-overflow so
      content stays anchored to the same center column as everything else. */
   @media (min-width: 1280px) {
@@ -608,18 +614,20 @@
   }
   .dark-promo .btn-light:hover { transform: translateY(-2px); }
 
-  /* TESTIMONIALS CAROUSEL */
-  /* CLINICAL ADVISOR CARD — single MD, social-proof credibility band */
+  /* CLINICAL ADVISOR — single MD, vertically-stacked + fully centered.
+     Photo on top, name/role/bio/credentials all centered below.
+     Works the same on every viewport — no different mobile layout needed. */
   .clinical-advisor {
     background: white;
     border: 1px solid var(--line);
     border-radius: var(--radius-xl);
-    padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px);
+    padding: clamp(36px, 5vw, 56px) clamp(28px, 5vw, 56px);
     margin: 0 0 56px;
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: clamp(28px, 4vw, 48px);
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
+    gap: clamp(20px, 2.5vw, 28px);
     position: relative;
     overflow: hidden;
     isolation: isolate;
@@ -627,48 +635,44 @@
   .clinical-advisor::before {
     content: "";
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(175,75,237,0.06), transparent 60%);
+    background: radial-gradient(ellipse 50% 60% at 50% 0%, rgba(175,75,237,0.06), transparent 65%);
     z-index: 0;
     pointer-events: none;
   }
   .clinical-advisor > * { position: relative; z-index: 1; }
-  @media (max-width: 720px) {
-    .clinical-advisor { grid-template-columns: 1fr; text-align: center; }
-  }
   .clinical-advisor-photo {
-    width: 100%;
+    width: clamp(180px, 22vw, 240px);
     aspect-ratio: 1 / 1;
-    max-width: 200px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%);
     color: white;
     display: grid;
     place-items: center;
     font-family: var(--font-display);
-    font-size: 4.2rem;
+    font-size: 4.6rem;
     font-weight: 600;
     letter-spacing: -0.02em;
     box-shadow: 0 16px 40px rgba(118, 43, 164, 0.22), 0 0 0 6px white, 0 0 0 7px var(--line);
     overflow: hidden;
-    justify-self: center;
   }
   .clinical-advisor-photo img {
     width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
   }
   .clinical-advisor-eyebrow {
-    font-size: 0.72rem;
-    font-weight: 600;
+    font-size: 0.78rem;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.10em;
+    letter-spacing: 0.14em;
     color: var(--brand-deep);
-    margin-bottom: 10px;
+    margin-bottom: 6px;
   }
   .clinical-advisor-name {
     font-family: var(--font-display);
-    font-size: clamp(1.6rem, 2.6vw, 2.1rem);
+    font-size: clamp(2rem, 3.4vw, 2.75rem);
     line-height: 1.1;
     color: var(--ink);
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    letter-spacing: -0.02em;
   }
   .clinical-advisor-name em {
     font-style: italic;
@@ -676,27 +680,27 @@
     font-weight: 400;
   }
   .clinical-advisor-role {
-    font-size: 0.92rem;
+    font-size: 1.05rem;
     font-weight: 500;
     color: var(--ink);
     opacity: 0.7;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
   .clinical-advisor-bio {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.12rem;
+    line-height: 1.65;
     color: var(--ink);
-    opacity: 0.85;
-    max-width: 56ch;
+    opacity: 0.88;
+    max-width: 62ch;
+    margin-left: auto;
+    margin-right: auto;
   }
   .clinical-advisor-credentials {
-    margin-top: 18px;
+    margin-top: 22px;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-  }
-  @media (max-width: 720px) {
-    .clinical-advisor-credentials { justify-content: center; }
+    gap: 10px;
+    justify-content: center;
   }
   .clinical-advisor-credentials span {
     font-size: 0.72rem;

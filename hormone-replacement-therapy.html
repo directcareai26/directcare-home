@@ -258,6 +258,10 @@
     .who-cta-row .btn { width: calc(100% - 16px); min-width: 0; padding: 18px 18px; font-size: 1rem; }
   }
   /* Carousel scroll hint indicator on mobile */
+  .who-banner { max-width: 1100px; margin: 0 auto 28px; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 16 / 6; box-shadow: var(--shadow-soft); position: relative; }
+  @media (max-width: 760px) { .who-banner { aspect-ratio: 4 / 3; border-radius: var(--radius-lg); margin-bottom: 20px; } }
+  .who-banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .who-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0) 55%, rgba(40,26,49,0.18) 100%); pointer-events: none; }
   .who-hint { display: none; }
   @media (max-width: 760px) {
     .who-hint { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: -8px; margin-bottom: 8px; font-size: 0.78rem; color: var(--muted); font-weight: 500; }
@@ -767,7 +771,9 @@
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> Who qualifies?</span>
       <h2>HRT may be appropriate<br/><span class="accent">if you're…</span></h2>
-      <p>Adult women experiencing perimenopausal or menopausal symptoms who meet clinical criteria determined by a licensed provider.</p>
+    </div>
+    <div class="who-banner">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Quietly%20radiant.png" alt="A woman in her 50s, calm and self-possessed — DirectCare AI HRT" loading="lazy" />
     </div>
     <div class="who-hint" aria-hidden="true">Swipe to see all <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>
     <div class="who-carousel">

@@ -1302,11 +1302,10 @@
   }
   .blog-card:hover .blog-card-image img { transform: scale(1.05); }
   .blog-card-body {
-    padding: 22px 24px 24px;
+    padding: 18px 22px 22px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    flex: 1;
+    gap: 8px;
   }
   .blog-card-meta {
     display: flex; align-items: center; gap: 10px;
@@ -1722,15 +1721,13 @@
     </div>
     <div class="blog-tease-grid" id="blog-tease-grid">
       <!-- Posts injected from /blog/posts.json at load. Static fallback shown if JS fails. -->
-      <a class="blog-card" href="/blog/trt-vs-enclomiphene-which-protocol">
+      <a class="blog-card" href="/blog/semaglutide-tirzepatide-difference">
         <div class="blog-card-image">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-meta"><span>Men's Health</span><span class="dot"></span><span class="date">Recent</span></div>
-          <h3>TRT vs. enclomiphene: which testosterone protocol is right for you?</h3>
-          <p>Injectable testosterone, oral pills, and natural-pathway therapy each move your numbers differently. Here's how to choose.</p>
-          <span class="blog-card-readmore">Read the post →</span>
+          <div class="blog-card-meta"><span>Weight Loss</span><span class="dot"></span><span class="date">May 21, 2026</span></div>
+          <h3>Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs</h3>
         </div>
       </a>
       <a class="blog-card" href="/blog/hrt-after-40-what-actually-changes">
@@ -1738,21 +1735,17 @@
           <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" loading="lazy" />
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-meta"><span>Women's Health</span><span class="dot"></span><span class="date">Recent</span></div>
+          <div class="blog-card-meta"><span>HRT</span><span class="dot"></span><span class="date">May 20, 2026</span></div>
           <h3>HRT after 40: what actually changes when estradiol and progesterone come back online</h3>
-          <p>The bloodwork shifts, the symptoms shift, and so does your protocol. A clinician's plain-English breakdown.</p>
-          <span class="blog-card-readmore">Read the post →</span>
         </div>
       </a>
-      <a class="blog-card" href="/blog/semaglutide-tirzepatide-difference">
+      <a class="blog-card" href="/blog/trt-vs-enclomiphene-which-protocol">
         <div class="blog-card-image">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" />
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-meta"><span>Weight Loss</span><span class="dot"></span><span class="date">Recent</span></div>
-          <h3>Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs</h3>
-          <p>Same weekly injection, different mechanism. Why your hormone panel — not just BMI — should drive the choice.</p>
-          <span class="blog-card-readmore">Read the post →</span>
+          <div class="blog-card-meta"><span>TRT</span><span class="dot"></span><span class="date">May 19, 2026</span></div>
+          <h3>TRT vs. enclomiphene: which testosterone protocol is right for you?</h3>
         </div>
       </a>
     </div>
@@ -1776,8 +1769,6 @@
               +   '<div class="blog-card-body">'
               +     '<div class="blog-card-meta"><span>' + escapeHtml(p.category) + '</span><span class="dot"></span><span class="date">' + escapeHtml(p.dateLabel || p.date || '') + '</span></div>'
               +     '<h3>' + escapeHtml(p.title) + '</h3>'
-              +     '<p>' + escapeHtml(p.excerpt) + '</p>'
-              +     '<span class="blog-card-readmore">Read the post →</span>'
               +   '</div>'
               + '</a>';
           }).join('');

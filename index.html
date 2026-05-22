@@ -142,6 +142,7 @@
     flex-shrink: 0;
   }
   .mobile-toggle svg { width: 20px; height: 20px; }
+  .nav-right { display: flex; align-items: center; gap: 12px; }
   @media (max-width: 820px) {
     .nav-links { display: none; }
     .mobile-toggle { display: inline-flex; margin-left: -10px; }
@@ -1230,13 +1231,15 @@
       <a class="nav-link" href="/supplements/">Supplements</a>
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
-    <a class="nav-login" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal · Log in">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-      Log in
-    </a>
-    <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-    </button>
+    <div class="nav-right">
+      <a class="nav-login" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal · Log in">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Log in
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
   </div>
 </nav>
 

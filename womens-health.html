@@ -211,7 +211,15 @@
 
   /* HOW IT WORKS */
   .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
-  @media (max-width: 820px) { .how-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 820px) {
+    .how-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 24px; }
+    /* Compact horizontal layout — number-left, text-right — long & narrow cards */
+    .how-card { display: flex; align-items: center; gap: 16px; padding: 14px 18px; }
+    .how-card .how-num { font-size: 2.2rem; margin-bottom: 0; flex-shrink: 0; line-height: 1; min-width: 32px; text-align: left; }
+    .how-card-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .how-card h3 { font-size: 1rem; margin-bottom: 0; line-height: 1.2; }
+    .how-card p { font-size: 0.82rem; line-height: 1.4; }
+  }
   .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 32px 28px; }
   .how-card .how-num { font-family: 'Geist', sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
   .how-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
@@ -647,18 +655,24 @@
     <div class="how-grid">
       <div class="how-card">
         <div class="how-num">1</div>
-        <h3>5-minute intake</h3>
-        <p>Tell us about your symptoms, history, and goals. Free to start — you only pay if you qualify and decide to begin.</p>
+        <div class="how-card-text">
+          <h3>5-minute intake</h3>
+          <p>Tell us about your symptoms, history, and goals. Free to start — you only pay if you qualify.</p>
+        </div>
       </div>
       <div class="how-card">
         <div class="how-num">2</div>
-        <h3>Clinician review</h3>
-        <p>A US-licensed clinician reviews your intake and (optionally) your labs, then builds a protocol tuned to your numbers.</p>
+        <div class="how-card-text">
+          <h3>Clinician review</h3>
+          <p>A US-licensed clinician reviews your intake and labs, then builds a protocol tuned to your numbers.</p>
+        </div>
       </div>
       <div class="how-card">
         <div class="how-num">3</div>
-        <h3>Shipped to your door</h3>
-        <p>Medications are compounded in the USA at licensed pharmacies and shipped discreetly. Adjust your dose anytime via the patient portal.</p>
+        <div class="how-card-text">
+          <h3>Shipped to your door</h3>
+          <p>Compounded in the USA at licensed pharmacies, shipped discreetly. Adjust your dose anytime via the portal.</p>
+        </div>
       </div>
     </div>
   </div>

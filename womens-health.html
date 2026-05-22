@@ -367,7 +367,7 @@
   .d-sparkle.s12 { top: 50%; left: 35%; animation-delay: 2.6s; width: 15px; height: 15px; }
   .d-figure-wrap::after { content: ""; position: absolute; inset: 0; background: linear-gradient(115deg, transparent 0%, transparent 30%, rgba(255,255,255,0.0) 45%, rgba(255,255,255,0.35) 50%, rgba(255,255,255,0.0) 55%, transparent 70%, transparent 100%); background-size: 250% 250%; background-position: 200% 0; mix-blend-mode: overlay; pointer-events: none; animation: dShine 7s ease-in-out infinite; z-index: 2; }
   @keyframes dShine { 0%{background-position:200% 0;} 50%{background-position:-50% 0;} 100%{background-position:-50% 0;} }
-  .d-headline { position: absolute; left: 50%; bottom: 8%; transform: translateX(-50%) translateY(20px); z-index: 3; text-align: center; color: var(--ink); background: rgba(255,255,255,0.65); padding: 16px 32px; border-radius: 999px; backdrop-filter: blur(12px); border: 1px solid rgba(36,20,50,0.06); opacity: 0; transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s; }
+  .d-headline { position: absolute; left: 50%; bottom: clamp(28px, 4vw, 56px); transform: translateX(-50%) translateY(20px); z-index: 10; text-align: center; color: var(--ink); background: rgba(255,255,255,0.85); padding: 16px 32px; border-radius: 999px; backdrop-filter: blur(12px); border: 1px solid rgba(36,20,50,0.08); box-shadow: 0 14px 32px -10px rgba(36,20,50,0.18); opacity: 0; transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s; }
   .d-stage.is-in-view .d-headline { opacity: 1; transform: translateX(-50%) translateY(0); }
   .d-headline h2 { font-size: clamp(1.2rem, 2.4vw, 1.8rem); font-weight: 500; margin: 0; line-height: 1.1; }
   .d-headline em { font-style: italic; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
@@ -545,7 +545,6 @@
         <span class="d-rotator-word w21">restored</span>
         <span class="d-rotator-word w22">balanced</span>
       </div>
-      <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
     </div>
     <div class="d-figure-wrap">
       <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="Three women representing different ages and backgrounds" loading="lazy" />
@@ -553,6 +552,7 @@
         <span class="d-sparkle s1"></span><span class="d-sparkle s2"></span><span class="d-sparkle s3"></span><span class="d-sparkle s4"></span><span class="d-sparkle s5"></span><span class="d-sparkle s6"></span><span class="d-sparkle s7"></span><span class="d-sparkle s8"></span><span class="d-sparkle s9"></span><span class="d-sparkle s10"></span><span class="d-sparkle s11"></span><span class="d-sparkle s12"></span>
       </div>
     </div>
+    <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
   </div>
 </section>
 

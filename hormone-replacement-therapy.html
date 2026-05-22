@@ -402,28 +402,27 @@
   .tl-item .tag { font-size: 0.74rem; padding: 4px 10px; border-radius: 999px; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); font-weight: 600; }
 
   /* COMPARISON TABLE */
-  .compare-wrap { max-width: 960px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-soft); }
-  .compare-row { display: grid; grid-template-columns: 1.1fr 1fr 1fr; align-items: stretch; border-bottom: 1px solid var(--lavender-100); }
-  .compare-row:last-child { border-bottom: 0; }
-  .compare-row .cell { padding: 18px 22px; font-size: 0.95rem; line-height: 1.45; }
-  .compare-row .label { color: var(--ink); font-weight: 700; font-family: 'Manrope', sans-serif; background: var(--soft); }
-  .compare-row.head .label { background: white; }
-  .compare-row .traditional { color: var(--muted); }
-  .compare-row .dcai { color: var(--ink); background: linear-gradient(160deg, rgba(175,75,237,0.05), rgba(255,255,255,0)); font-weight: 600; }
-  .compare-row.head .cell { font-family: 'Manrope', sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.78rem; padding: 18px 22px; }
-  .compare-row.head .traditional { color: var(--muted); }
-  .compare-row.head .dcai { color: var(--brand-darker); background: linear-gradient(160deg, rgba(175,75,237,0.10), rgba(255,255,255,0)); }
-  .compare-row .cell svg { flex-shrink: 0; vertical-align: -3px; margin-right: 6px; }
-  .compare-row .cell .x { color: #d04545; }
-  .compare-row .cell .v { color: var(--green); }
-  @media (max-width: 700px) {
-    .compare-wrap { border-radius: var(--radius-lg); }
-    .compare-row { grid-template-columns: 1fr; }
-    .compare-row .cell { padding: 12px 18px; }
-    .compare-row .label { background: var(--soft); font-size: 0.86rem; letter-spacing: 0.05em; text-transform: uppercase; }
-    .compare-row.head .cell { font-size: 0.7rem; }
-    .compare-row .cell + .cell { border-top: 1px dashed var(--lavender-100); }
-  }
+  /* SIDE-BY-SIDE VS COMPARISON */
+  .vs-wrap { max-width: 1000px; margin: 0 auto; position: relative; }
+  .vs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 760px) { .vs-grid { grid-template-columns: 1fr; gap: 14px; } }
+  .vs-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(28px, 4vw, 40px) clamp(24px, 3.5vw, 36px); box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); display: flex; flex-direction: column; }
+  .vs-card.vs-trad { background: linear-gradient(160deg, #fafafc 0%, #ffffff 100%); }
+  .vs-card.vs-dcai { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); position: relative; }
+  .vs-card.vs-dcai::before { content: "Better choice"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--brand); color: white; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; box-shadow: 0 6px 16px -4px rgba(175,75,237,0.55); white-space: nowrap; }
+  .vs-tag { display: inline-flex; align-items: center; gap: 8px; font-family: 'Manrope', sans-serif; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; margin-bottom: 6px; }
+  .vs-card.vs-trad .vs-tag { color: var(--muted); }
+  .vs-card.vs-dcai .vs-tag { color: var(--brand-deep); }
+  .vs-card h3 { font-family: 'Manrope', sans-serif; font-size: clamp(1.3rem, 2.2vw, 1.6rem); font-weight: 800; margin: 0 0 18px; color: var(--ink); letter-spacing: -0.01em; }
+  .vs-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .vs-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; line-height: 1.5; }
+  .vs-list .ico { flex: 0 0 22px; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; margin-top: 1px; }
+  .vs-card.vs-trad .vs-list .ico { background: rgba(208,69,69,0.10); color: #d04545; }
+  .vs-card.vs-dcai .vs-list .ico { background: rgba(20,152,58,0.12); color: var(--green); }
+  .vs-card.vs-trad .vs-list li { color: var(--muted); }
+  .vs-card.vs-dcai .vs-list li { color: var(--ink); font-weight: 500; }
+  .vs-vs { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; width: 56px; height: 56px; border-radius: 50%; background: white; border: 2px solid var(--brand); color: var(--brand-darker); display: grid; place-items: center; font-family: 'Manrope', sans-serif; font-size: 0.88rem; font-weight: 900; letter-spacing: 0.05em; box-shadow: 0 10px 24px -6px rgba(118,43,164,0.25); }
+  @media (max-width: 760px) { .vs-vs { display: none; } }
 
   @media (max-width: 760px) {
     .section { padding: 64px 0; }
@@ -888,42 +887,37 @@
       <h2>Built different,<br/><span class="accent">built around you.</span></h2>
       <p>The same prescription pathway — without the waiting rooms, fragmented care, or pharmacy runs.</p>
     </div>
-    <div class="compare-wrap">
-      <div class="compare-row head">
-        <div class="cell label">&nbsp;</div>
-        <div class="cell traditional">Traditional Clinic</div>
-        <div class="cell dcai">DirectCare AI</div>
+    <div class="vs-wrap">
+      <div class="vs-grid">
+
+        <div class="vs-card vs-trad">
+          <span class="vs-tag">Traditional Clinic</span>
+          <h3>The old way</h3>
+          <ul class="vs-list">
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>In-office appointments</li>
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Limited business hours</li>
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Multiple appointments to get started</li>
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Pharmacy trips and refill calls</li>
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Insurance copays &amp; surprise bills</li>
+            <li><span class="ico"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>Branded pharmacy labels</li>
+          </ul>
+        </div>
+
+        <div class="vs-card vs-dcai">
+          <span class="vs-tag">DirectCare AI</span>
+          <h3>The DirectCare way</h3>
+          <ul class="vs-list">
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Fully online, from anywhere</li>
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Async messaging · 24/7 patient support</li>
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>One intake, one clinician review</li>
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Discreet shipping &amp; auto-refills</li>
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>From $59/mo, flat — no surprises</li>
+            <li><span class="ico"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>Plain, unmarked packaging</li>
+          </ul>
+        </div>
+
       </div>
-      <div class="compare-row">
-        <div class="cell label">Visits</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>In-office appointments</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>Fully online, from anywhere</div>
-      </div>
-      <div class="compare-row">
-        <div class="cell label">Scheduling</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Limited business hours</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>Async — message anytime, 24/7 support</div>
-      </div>
-      <div class="compare-row">
-        <div class="cell label">Process</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Multiple appointments to start</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>One intake, one clinician review</div>
-      </div>
-      <div class="compare-row">
-        <div class="cell label">Medication</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Pharmacy trips, refill calls</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>Discreet shipping, auto-refills</div>
-      </div>
-      <div class="compare-row">
-        <div class="cell label">Cost transparency</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Insurance copays + surprise bills</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>From $59/mo, flat — no surprises</div>
-      </div>
-      <div class="compare-row">
-        <div class="cell label">Privacy</div>
-        <div class="cell traditional"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>Branded pharmacy labels</div>
-        <div class="cell dcai"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" class="v"><path d="M20 6 9 17l-5-5"/></svg>Plain, unmarked packaging</div>
-      </div>
+      <span class="vs-vs" aria-hidden="true">VS</span>
     </div>
   </div>
 </section>

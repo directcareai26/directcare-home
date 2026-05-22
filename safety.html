@@ -56,7 +56,7 @@
   /* NAV */
   .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
   .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
-  .nav-logo img { height: 30px; width: auto; }
+  .nav-logo img { height: 40px; width: auto; }
   .nav-links { display: flex; gap: 28px; align-items: center; }
   .nav-link { font-size: 0.92rem; color: rgba(40,26,49,0.85); font-weight: 500; padding: 6px 0; transition: color .15s ease; cursor: pointer; text-decoration: none; }
   .nav-link:hover { color: var(--brand); }
@@ -74,13 +74,13 @@
   @media (max-width: 980px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } }
   .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
   .mobile-drawer.open { display: flex; }
-  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.05rem; color: var(--ink); font-weight: 600; text-decoration: none; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.2rem; color: var(--ink); font-weight: 600; text-decoration: none; }
   .mobile-drawer details { border-bottom: 1px solid var(--lavender-100); }
-  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.05rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.3rem; font-weight: 700; color: var(--ink); list-style: none; }
   .mobile-drawer details summary::-webkit-details-marker { display: none; }
   .mobile-drawer details summary::after { content: "\25BE"; float: right; opacity: 0.6; }
   .mobile-drawer details[open] summary::after { transform: rotate(180deg); }
-  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 0.95rem; color: var(--muted); }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 500; font-size: 1.1rem; color: var(--muted); }
 
   /* DOC */
   .doc-hero { padding: 56px 0 32px; background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); border-bottom: 1px solid var(--lavender-100); }

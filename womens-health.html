@@ -122,6 +122,9 @@
   .hero h1 .accent { background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #ffffff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; display: inline-block; padding: 0 0.22em 0.12em 0; margin-right: -0.08em; }
   .hero p.lead { font-size: clamp(1.05rem, 1.4vw, 1.22rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.88); }
   .hero-cta-row { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  /* Equal-size hero CTAs — both buttons same width regardless of text length */
+  .hero-cta-btn { min-width: 240px; box-sizing: border-box; border: 1px solid transparent; display: inline-flex; align-items: center; justify-content: center; gap: 8px; }
+  @media (max-width: 540px) { .hero-cta-btn { min-width: 0; width: 100%; } }
   .hero-trust { display: flex; gap: 20px 30px; flex-wrap: wrap; justify-content: center; margin-top: 32px; font-size: 0.86rem; color: rgba(255,255,255,0.80); }
   .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
   .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
@@ -476,8 +479,8 @@
     <h1>Whole-woman care, <span class="accent">built around your bloodwork.</span></h1>
     <p class="lead">HRT, GLP-1 weight loss, hair regrowth, blood labs, and physician-formulated supplements — prescribed by US-licensed clinicians and shipped to your door. No insurance required.</p>
     <div class="hero-cta-row">
-      <a class="btn btn-on-dark btn-primary-xl" href="/weight-loss/">Start weight loss →</a>
-      <a class="btn btn-on-dark btn-primary-xl" style="background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.30); backdrop-filter: blur(8px);" href="/hormone-replacement-therapy">Start HRT intake</a>
+      <a class="btn btn-on-dark btn-primary-xl hero-cta-btn" href="/weight-loss/">Start weight loss →</a>
+      <a class="btn btn-on-dark btn-primary-xl hero-cta-btn" style="background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.30); backdrop-filter: blur(8px);" href="/hormone-replacement-therapy">Start HRT intake →</a>
     </div>
     <div class="hero-trust">
       <div class="hero-trust-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> US-licensed clinicians</div>

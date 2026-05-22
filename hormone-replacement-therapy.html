@@ -598,6 +598,113 @@
     .nav-inner { padding-left: 12px !important; padding-right: 12px !important; }
     footer .container, footer .container-px { padding-left: 14px !important; padding-right: 14px !important; }
   }
+
+  /* ============================================================
+     CRISP PASS — flatten chrome, edge-to-edge bands (Hims/Hers/Ro feel)
+     Appended last so it wins via cascade. Removes the "rounded box
+     inside a band" double-containment look in favor of flat content
+     that sits directly on the colored band.
+     ============================================================ */
+
+  /* OpenLoop partner card → flat, no border, no shadow, no radius.
+     Just centered content on the soft band. */
+  .partner-card {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    max-width: 1040px !important;
+  }
+
+  /* HOW-IT-WORKS cards → flat numbered steps. Desktop: no box chrome,
+     just typography. (Mobile already uses the timeline rail layout
+     so we keep its padding-left intact via its own media query.) */
+  @media (min-width: 721px) {
+    .how-card {
+      background: transparent !important;
+      border: 0 !important;
+      box-shadow: none !important;
+      padding: 8px 0 14px 0 !important;
+      transform: none !important;
+    }
+    .how-card:hover { transform: none !important; }
+  }
+
+  /* WHO-QUALIFIES horizontal cards → keep faint hairline, kill shadow */
+  .who-card { box-shadow: none !important; }
+
+  /* WHY-WOMEN-TRUST bullet card → flat list directly on the band */
+  .why-card {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+  /* OLDER trust grid blocks (kept defensive in case any remain) */
+  .trust-card,
+  .trust-partner,
+  .trust-oversight {
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  /* COMPARISON cards → drop shadow, keep tinted backgrounds for contrast */
+  .vs-card { box-shadow: none !important; }
+  .vs-card.vs-trad { box-shadow: none !important; }
+
+  /* PRICING tiles → keep border for selectability but drop shadow */
+  .price-card { box-shadow: none !important; }
+  .price-card:hover { box-shadow: 0 8px 20px -12px rgba(118,43,164,0.22) !important; }
+
+  /* FAQ rows → flat (no card chrome around each Q) */
+  details.faq { box-shadow: none !important; }
+
+  /* Tighten desktop band-to-band rhythm */
+  @media (min-width: 721px) {
+    .section { padding: clamp(40px, 4.2vw, 60px) 0; }
+  }
+
+  /* ===== MOBILE CRISP ===== */
+  @media (max-width: 720px) {
+    .section { padding: 28px 0 !important; }
+    .section-head { margin-bottom: 24px !important; }
+
+    /* Kill rounded box chrome on all major contained elements */
+    .partner-card,
+    .why-card,
+    .trust-card,
+    .vs-card,
+    .price-card,
+    .how-card,
+    .who-card,
+    .quiz-card { border-radius: 0 !important; }
+
+    /* Edge-to-edge: cancel inner padding on the partner-card so its
+       trust-icons + ratings + stats run to the section gutters */
+    .partner-card { padding-left: 0 !important; padding-right: 0 !important; }
+
+    /* Price cards: side borders removed so stacked tiles feel like
+       crisp rows, not stacked boxes */
+    .price-card {
+      border-left: 0 !important;
+      border-right: 0 !important;
+      padding-left: 14px !important;
+      padding-right: 14px !important;
+      box-shadow: none !important;
+    }
+    .price-card.featured::before { display: none; }
+    .price-card.featured { border-top: 2px solid var(--brand); }
+
+    /* VS cards: collapse to flat alternating bands on mobile */
+    .vs-card {
+      border-left: 0 !important;
+      border-right: 0 !important;
+      box-shadow: none !important;
+    }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

@@ -606,14 +606,15 @@
     display: flex; align-items: center; justify-content: center; gap: 14px;
     width: 100%; margin-top: 10px;
     padding: 22px 28px; border-radius: 14px;
-    background: #1f1148; color: white;
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%);
+    color: white;
     font-family: 'Geist', 'Manrope', sans-serif;
     font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em;
     text-decoration: none;
-    transition: background .18s ease, transform .15s ease, box-shadow .2s ease;
-    box-shadow: 0 14px 30px -10px rgba(31,17,72,0.40);
+    transition: filter .18s ease, transform .15s ease, box-shadow .2s ease;
+    box-shadow: 0 14px 30px -10px rgba(175,75,237,0.45);
   }
-  .tnpn-cta:hover { background: #110830; transform: translateY(-2px); box-shadow: 0 18px 36px -10px rgba(31,17,72,0.55); }
+  .tnpn-cta:hover { filter: brightness(1.06); transform: translateY(-2px); box-shadow: 0 18px 36px -10px rgba(118,43,164,0.55); }
   .tnpn-cta:focus-visible { outline: 3px solid rgba(175,75,237,0.5); outline-offset: 3px; }
 
   .tnpn-cta-foot {

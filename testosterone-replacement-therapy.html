@@ -713,20 +713,13 @@
   details.tl-item p { font-size: 0.94rem; line-height: 1.6; color: var(--muted); margin: 0; }
   details.tl-item .tl-tags { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
   details.tl-item .tag { font-size: 0.74rem; padding: 4px 10px; border-radius: 999px; background: var(--soft); color: var(--brand-deep); border: 1px solid var(--lavender-100); font-weight: 600; }
-  details.tl-item .tl-body { padding-top: 8px; }
-  details.tl-item .tl-chevron { display: none; }
-  /* Desktop: summary is non-interactive (items stay open) */
-  @media (min-width: 761px) {
-    details.tl-item > summary { pointer-events: none; cursor: default; }
-  }
-  /* Mobile: native details collapse + visible chevron */
-  @media (max-width: 760px) {
-    details.tl-item > summary { cursor: pointer; padding-right: 32px; -webkit-tap-highlight-color: rgba(175,75,237,0.08); }
-    details.tl-item .tl-chevron { display: block; position: absolute; right: 4px; top: 12px; width: 10px; height: 10px; border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(45deg); transition: transform .2s ease, top .2s ease; }
-    details.tl-item[open] .tl-chevron { transform: rotate(-135deg); top: 16px; }
-    details.tl-item:not([open]) { padding-bottom: 14px; }
-    details.tl-item .tl-body { padding-top: 10px; }
-  }
+  details.tl-item .tl-body { padding-top: 10px; }
+  /* Click-to-expand at all widths — items start closed, user opens what they want */
+  details.tl-item > summary { cursor: pointer; padding-right: 32px; -webkit-tap-highlight-color: rgba(175,75,237,0.08); }
+  details.tl-item > summary:hover { opacity: 0.92; }
+  details.tl-item .tl-chevron { display: block; position: absolute; right: 4px; top: 14px; width: 10px; height: 10px; border-right: 2px solid var(--brand); border-bottom: 2px solid var(--brand); transform: rotate(45deg); transition: transform .2s ease, top .2s ease; }
+  details.tl-item[open] .tl-chevron { transform: rotate(-135deg); top: 18px; }
+  details.tl-item:not([open]) { padding-bottom: 14px; }
 
   /* ============================================================
      COMPARE TABLE (TRT) — 3-column blood-labs style
@@ -1351,7 +1344,7 @@
     </div>
     <div class="tl-wrap">
 
-      <details class="tl-item" open>
+      <details class="tl-item">
         <summary>
           <span class="tl-dot">1</span>
           <div class="tl-when">Weeks 2 to 4 · Early signals</div>
@@ -1368,7 +1361,7 @@
         </div>
       </details>
 
-      <details class="tl-item" open>
+      <details class="tl-item">
         <summary>
           <span class="tl-dot">2</span>
           <div class="tl-when">Weeks 6 to 12 · Optimization</div>
@@ -1386,7 +1379,7 @@
         </div>
       </details>
 
-      <details class="tl-item" open>
+      <details class="tl-item">
         <summary>
           <span class="tl-dot">3</span>
           <div class="tl-when">Month 3+ · Maintenance</div>

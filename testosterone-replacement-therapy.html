@@ -1769,7 +1769,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       });
     }
 
-    function next() { if (idx < steps.length - 1) { idx++; render(); } }
+    function next() { if (idx < steps.length - 1) { idx++; render(); } else { finish(); } }
     function prev() { if (idx > 0) { idx--; render(); } }
     function finish() {
       stepsEl.style.display = 'none';

@@ -386,21 +386,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .section-head h2 { margin-top: 0; font-size: clamp(2.1rem, 4.6vw, 3.6rem); line-height: 1.08; letter-spacing: -0.025em; }
   .section-head h2 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
-  /* TESTIMONIALS — horizontal scroll, scroll-snap, 3 cards */
-  .testimonials-scroller { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 4px 24px; margin: 0 -4px; scrollbar-width: thin; }
-  .testimonials-scroller::-webkit-scrollbar { height: 6px; }
-  .testimonials-scroller::-webkit-scrollbar-thumb { background: rgba(118,43,164,0.20); border-radius: 999px; }
-  .testimonial-card { flex: 0 0 clamp(280px, 30vw, 360px); scroll-snap-align: start; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 22px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
-  .testimonial-stars { color: #d99b1f; letter-spacing: 2px; font-size: 0.9rem; }
-  .testimonial-quote { font-family: 'Source Serif 4', Georgia, serif; font-size: 1rem; line-height: 1.5; color: var(--ink); font-style: italic; margin: 0; }
-  .testimonial-meta { display: flex; gap: 10px; align-items: center; margin-top: auto; }
-  .testimonial-avatar { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); color: white; display: grid; place-items: center; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; flex-shrink: 0; }
-  .testimonial-name { font-size: 0.92rem; font-weight: 600; color: var(--ink); }
-  .testimonial-tag { font-size: 0.72rem; color: var(--brand-deep); letter-spacing: 0.04em; font-weight: 500; }
-  /* Desktop (≥761px): all 3 cards fit in the row without horizontal scroll */
-  @media (min-width: 761px) {
-    .testimonials-scroller { overflow-x: visible; padding-bottom: 4px; justify-content: center; }
-    .testimonial-card { flex: 1 1 0; max-width: 360px; }
+  /* "IT'S NOT IN YOUR HEAD" empathy banner + scrolling symptom marquee */
+  .ihy-section { padding: clamp(48px, 5.4vw, 84px) 0; }
+  .ihy-band { text-align: center; max-width: 780px; margin: 0 auto; }
+  .ihy-h2 { margin-top: 14px; font-size: clamp(2.4rem, 5.4vw, 4rem); font-weight: 900; line-height: 1.04; letter-spacing: -0.025em; text-wrap: balance; }
+  .ihy-sub { margin-top: 18px; font-size: 1.05rem; line-height: 1.6; color: var(--muted); max-width: 680px; margin-left: auto; margin-right: auto; }
+  .ihy-marquee {
+    margin-top: clamp(28px, 4vw, 44px);
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+            mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  }
+  .ihy-marquee-track {
+    display: inline-flex; gap: 22px; align-items: center; white-space: nowrap;
+    animation: ihyScroll 42s linear infinite;
+    will-change: transform;
+  }
+  .ihy-word {
+    font-family: 'Geist', 'Manrope', sans-serif;
+    font-size: clamp(1.5rem, 3.4vw, 2.4rem);
+    font-weight: 900;
+    color: var(--brand-deep);
+    letter-spacing: -0.015em;
+    line-height: 1;
+  }
+  .ihy-dot { color: rgba(118,43,164,0.35); font-size: clamp(1.2rem, 2.6vw, 1.8rem); }
+  @keyframes ihyScroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ihy-marquee-track { animation: none; transform: translateX(-12%); }
   }
 
   /* PROVIDER TRUST SECTION */
@@ -1207,38 +1226,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- MEMBERS IN THEIR OWN WORDS — 3 HRT testimonials, horizontal scroll on mobile -->
-<section class="section lavender">
+<!-- "IT'S NOT IN YOUR HEAD" empathy banner — scrolling symptom marquee -->
+<section class="section lavender ihy-section">
   <div class="container">
-    <div class="section-head" style="margin-bottom: 22px;">
-      <h2 style="margin-top: 0;">Members in their <span class="accent">own words.</span></h2>
-      <p style="max-width: 620px; margin: 14px auto 0;">Lifestyle outcomes from active DirectCare AI patients — your results may vary.</p>
+    <div class="ihy-band">
+      <span class="eyebrow"><span class="dot"></span> You're not imagining it</span>
+      <h2 class="ihy-h2">It's not in your head.<br/><span class="accent">It's hormonal.</span></h2>
+      <p class="ihy-sub">Hot flashes, sleep loss, brain fog, mood swings, low libido — these aren't character flaws or stress. They're predictable shifts in estradiol, progesterone, and testosterone. There's real science behind why you feel this way, and a real protocol for what to do about it.</p>
     </div>
-    <div class="testimonials-scroller" role="list">
-      <article class="testimonial-card" role="listitem">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-quote">"I have my mornings back. The first hour after I wake up used to be a fog — now I'm actually present with my kids."</p>
-        <div class="testimonial-meta">
-          <div class="testimonial-avatar">SK</div>
-          <div><div class="testimonial-name">Sarah K.</div><div class="testimonial-tag">HRT · 6 months</div></div>
-        </div>
-      </article>
-      <article class="testimonial-card" role="listitem">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-quote">"Sleeping through the night for the first time in three years. That alone has changed everything else."</p>
-        <div class="testimonial-meta">
-          <div class="testimonial-avatar">LM</div>
-          <div><div class="testimonial-name">Lauren M.</div><div class="testimonial-tag">HRT · 4 months</div></div>
-        </div>
-      </article>
-      <article class="testimonial-card" role="listitem">
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-quote">"The hot flashes stopped within a few weeks. My OBGYN spent ten minutes with me — DirectCare actually read my whole panel."</p>
-        <div class="testimonial-meta">
-          <div class="testimonial-avatar">RW</div>
-          <div><div class="testimonial-name">Rachel W.</div><div class="testimonial-tag">HRT · 3 months</div></div>
-        </div>
-      </article>
+    <div class="ihy-marquee" aria-hidden="true">
+      <div class="ihy-marquee-track">
+        <span class="ihy-word">Hot flashes</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Night sweats</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Brain fog</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Mood swings</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Sleep loss</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Low libido</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Joint aches</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Weight gain</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Anxiety</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Fatigue</span><span class="ihy-dot">•</span>
+        <!-- Duplicate set so the loop is seamless -->
+        <span class="ihy-word">Hot flashes</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Night sweats</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Brain fog</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Mood swings</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Sleep loss</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Low libido</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Joint aches</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Weight gain</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Anxiety</span><span class="ihy-dot">•</span>
+        <span class="ihy-word">Fatigue</span><span class="ihy-dot">•</span>
+      </div>
     </div>
   </div>
 </section>

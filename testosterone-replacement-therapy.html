@@ -1206,24 +1206,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   body.sticky-active footer { padding-bottom: 100px; }
 
-  /* Hero CTA — green (matches sexual health / surge-max emerald) */
+  /* ============================================================
+     ALL CTAs → emerald green (matches sexual health / surge-max)
+     Deep-purple page palette + green action color = clean signal
+     ============================================================ */
+  .btn-primary,
+  .btn-primary-xl,
   .hero .btn-primary,
   .hero .btn-primary-xl {
     background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
     color: white !important;
     box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45) !important;
+    border: none !important;
   }
+  .btn-primary:hover,
+  .btn-primary-xl:hover,
   .hero .btn-primary:hover,
   .hero .btn-primary-xl:hover {
     background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
     box-shadow: 0 16px 36px -6px rgba(5,150,105,0.55) !important;
     transform: translateY(-2px) !important;
   }
+  /* TNPN big bottom CTA */
+  .tnpn-cta {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    box-shadow: 0 14px 30px -10px rgba(16,185,129,0.45) !important;
+  }
+  .tnpn-cta:hover {
+    box-shadow: 0 18px 36px -10px rgba(5,150,105,0.55) !important;
+    filter: brightness(1.06);
+  }
+  .sticky-cta .btn-primary { box-shadow: 0 8px 22px -6px rgba(16,185,129,0.50) !important; }
+  /* Pulse glow → emerald */
   @keyframes pulseGlowGreen {
     0%, 100% { box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45); }
     50% { box-shadow: 0 14px 36px -4px rgba(16,185,129,0.65); }
   }
-  .hero .pulse-glow { animation: pulseGlowGreen 2.6s ease-in-out infinite !important; }
+  .pulse-glow { animation: pulseGlowGreen 2.6s ease-in-out infinite !important; }
+  /* Quiz progress bar + check icon → emerald (continuity with CTAs) */
+  .quiz-progress-bar { background: linear-gradient(90deg, #10b981, #059669) !important; }
+  .quiz-check { background: linear-gradient(180deg, #10b981, #059669) !important; box-shadow: 0 10px 22px rgba(16,185,129,0.32) !important; }
 
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->

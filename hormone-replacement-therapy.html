@@ -272,6 +272,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .who-banner { max-width: 1100px; margin: 0 auto 28px; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow-soft); position: relative; }
   .who-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
   .who-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0) 55%, rgba(40,26,49,0.18) 100%); pointer-events: none; }
+  /* SVG-illustration variant: drop the rectangular card chrome and let the
+     vector pop out with multi-layered drop-shadow (3D float, no overlay). */
+  .who-banner-svg {
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    aspect-ratio: auto;
+  }
+  .who-banner-svg img {
+    object-fit: contain !important;
+    width: 100%;
+    height: auto;
+    filter:
+      drop-shadow(0 28px 50px rgba(118,43,164,0.28))
+      drop-shadow(0 10px 18px rgba(118,43,164,0.18))
+      drop-shadow(0 2px 4px rgba(40,26,49,0.10));
+    transition: transform .35s ease, filter .35s ease;
+  }
+  .who-banner-svg:hover img {
+    transform: translateY(-4px) scale(1.01);
+    filter:
+      drop-shadow(0 36px 60px rgba(118,43,164,0.36))
+      drop-shadow(0 14px 22px rgba(118,43,164,0.22))
+      drop-shadow(0 2px 4px rgba(40,26,49,0.12));
+  }
+  .who-banner-svg::after { display: none !important; }
   /* Desktop: 2-column, image left, carousel + CTA right */
   @media (min-width: 980px) {
     .who-split { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; max-width: 1200px; margin: 0 auto; }
@@ -1319,8 +1346,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2>HRT may be appropriate<br/><span class="accent">if you're…</span></h2>
     </div>
     <div class="who-split">
-      <div class="who-banner">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Quietly%20radiant.png" alt="A woman in her 50s, calm and self-possessed, DirectCare AI HRT" loading="lazy" />
+      <div class="who-banner who-banner-svg">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hrt%20page%20woman%20graphic.svg" alt="A woman calm and self-possessed — DirectCare AI HRT" loading="lazy" />
       </div>
       <div class="who-right">
         <div class="who-hint" aria-hidden="true">Swipe to see all <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg></div>

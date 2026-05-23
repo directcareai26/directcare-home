@@ -705,6 +705,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .price-note { font-size: 0.74rem; color: var(--muted); margin: 10px 0 0; line-height: 1.4; font-style: italic; }
   .price-foot { max-width: 760px; margin: 28px auto 0; text-align: center; font-size: 0.86rem; color: var(--muted); line-height: 1.55; }
   .price-foot strong { color: var(--ink); font-weight: 700; }
+  /* Pricing CTA — sits between the price grid and the disclaimer */
+  .price-cta-row { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 36px; }
+  .price-cta-btn { display: inline-flex; align-items: center; gap: 12px; min-width: 320px; max-width: 100%; padding: 18px 32px !important; font-size: 1.04rem !important; letter-spacing: -0.01em; justify-content: center; }
+  .price-cta-meta { font-size: 0.86rem; color: var(--muted); letter-spacing: -0.005em; text-align: center; }
+  @media (max-width: 600px) {
+    .price-cta-btn { width: 100%; min-width: 0; padding: 16px 24px !important; font-size: 0.98rem !important; }
+    .price-cta-meta { font-size: 0.78rem; }
+  }
 
   /* ============================================================
      TIMELINE SECTION (TRT) — vertical "what to expect" steps
@@ -1118,6 +1126,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .section.soft .price-card .price-note { color: rgba(255,255,255,0.55) !important; }
   .section.soft .price-foot { color: rgba(255,255,255,0.62) !important; }
   .section.soft .price-foot strong { color: white !important; }
+  .section.soft .price-cta-meta { color: rgba(255,255,255,0.72) !important; }
 
   /* Mobile: keep top-border for stacked price-card.featured visible on dark */
   @media (max-width: 720px) {
@@ -1521,6 +1530,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
     </div>
+
+    <!-- Pricing CTA — drives readers from $-shown to intake start -->
+    <div class="price-cta-row">
+      <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&amp;businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl pulse-glow price-cta-btn">
+        <span>Start your testosterone evaluation</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+      <span class="price-cta-meta">~ 2 min · Free · Reviewed within 24 hrs · No obligation</span>
+    </div>
+
     <p class="price-foot"><strong>Free evaluation.</strong> No charge if you don't qualify. Cancel anytime. Pricing covers the medication, clinician oversight, secure messaging, and shipping. In-person bloodwork is included with every TRT and enclomiphene subscription.</p>
   </div>
 </section>

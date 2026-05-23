@@ -27,6 +27,11 @@
     { "source": "/chronicconditioncare/", "destination": "/chronic-care/", "permanent": true },
     { "source": "/chronicconditioncare/:path*", "destination": "/chronic-care/", "permanent": true },
 
+    { "source": "/weight-loss/men", "destination": "/mens-weight-loss", "permanent": true },
+    { "source": "/weight-loss/men/", "destination": "/mens-weight-loss", "permanent": true },
+    { "source": "/weight-loss/women", "destination": "/womens-weight-loss", "permanent": true },
+    { "source": "/weight-loss/women/", "destination": "/womens-weight-loss", "permanent": true },
+
     { "source": "/homepage-mockup", "destination": "/", "permanent": true },
     { "source": "/homepage-mockup/", "destination": "/", "permanent": true }
   ],
@@ -54,11 +59,12 @@
 
     { "source": "/weight-loss", "destination": "https://directcare-weight-loss.vercel.app/" },
     { "source": "/weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/" },
-    { "source": "/weight-loss/men", "destination": "https://directcare-weight-loss.vercel.app/men/" },
-    { "source": "/weight-loss/men/", "destination": "https://directcare-weight-loss.vercel.app/men/" },
-    { "source": "/weight-loss/women", "destination": "https://directcare-weight-loss.vercel.app/women/" },
-    { "source": "/weight-loss/women/", "destination": "https://directcare-weight-loss.vercel.app/women/" },
     { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" },
+
+    { "source": "/mens-weight-loss", "destination": "https://directcare-weight-loss.vercel.app/men/" },
+    { "source": "/mens-weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/men/" },
+    { "source": "/womens-weight-loss", "destination": "https://directcare-weight-loss.vercel.app/women/" },
+    { "source": "/womens-weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/women/" },
 
     { "source": "/chronic-care", "destination": "https://chronic-care-azure.vercel.app/" },
     { "source": "/chronic-care/", "destination": "https://chronic-care-azure.vercel.app/" },

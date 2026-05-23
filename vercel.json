@@ -54,6 +54,10 @@
 
     { "source": "/weight-loss", "destination": "https://directcare-weight-loss.vercel.app/" },
     { "source": "/weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/" },
+    { "source": "/weight-loss/men", "destination": "https://directcare-weight-loss.vercel.app/men/" },
+    { "source": "/weight-loss/men/", "destination": "https://directcare-weight-loss.vercel.app/men/" },
+    { "source": "/weight-loss/women", "destination": "https://directcare-weight-loss.vercel.app/women/" },
+    { "source": "/weight-loss/women/", "destination": "https://directcare-weight-loss.vercel.app/women/" },
     { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" },
 
     { "source": "/chronic-care", "destination": "https://chronic-care-azure.vercel.app/" },

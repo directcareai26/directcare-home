@@ -988,6 +988,95 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .compare-card.good::after { background: linear-gradient(90deg, #44215A 0%, #762ba4 50%, #b97df0 100%) !important; }
   .compare-card.good::before { background: linear-gradient(135deg, #44215A, #762ba4 60%, #b97df0) !important; box-shadow: 0 10px 24px -4px rgba(68,33,90,0.55) !important; }
 
+  /* ============================================================
+     DARK-PURPLE GLASS TREATMENT — applied only to .section.soft
+     (How it works + Pricing). White .section bands stay light.
+     Mirrors the Surge Max sexual-health page styling.
+     ============================================================ */
+  .section.soft {
+    background: linear-gradient(180deg, #221a32 0%, #1b1428 100%) !important;
+    color: white !important;
+  }
+  /* Section header text on dark */
+  .section.soft .section-head h2,
+  .section.soft .section-head h3,
+  .section.soft .section-head h4 { color: white !important; }
+  .section.soft .section-head p { color: rgba(255,255,255,0.78) !important; }
+  /* Accent text inside dark sections needs a lighter range so it doesn't disappear into the bg */
+  .section.soft .section-head h2 .accent {
+    background: linear-gradient(135deg, #e6c8ff 0%, #d8b4fe 60%, #af4bed 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  /* Eyebrow on dark */
+  .section.soft .eyebrow {
+    background: rgba(255,255,255,0.10) !important;
+    color: #f7e8ff !important;
+    border-color: rgba(255,255,255,0.20) !important;
+  }
+  .section.soft .eyebrow .dot { background: #d8b4fe !important; }
+
+  /* ===== HOW-IT-WORKS cards in dark section ===== */
+  .section.soft .how-card h3,
+  .section.soft .how-card h4 { color: white !important; }
+  .section.soft .how-card p { color: rgba(255,255,255,0.78) !important; }
+  /* Mobile timeline rail in how-grid */
+  .section.soft .how-grid::before { background: linear-gradient(180deg, #d8b4fe 0%, rgba(216,180,254,0.15) 100%) !important; }
+  .section.soft .how-num {
+    background: linear-gradient(135deg, #d8b4fe, #af4bed) !important;
+    -webkit-text-fill-color: white !important;
+    color: white !important;
+    border-color: #1b1428 !important;
+  }
+
+  /* ===== PRICING cards — glass treatment on dark ===== */
+  .section.soft .price-card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%) !important;
+    border-color: rgba(255,255,255,0.10) !important;
+    color: white !important;
+    box-shadow: 0 24px 60px -22px rgba(0,0,0,0.55), inset 0 1px 0 rgba(255,255,255,0.05) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  .section.soft .price-card:hover {
+    border-color: rgba(216,180,254,0.45) !important;
+    background: linear-gradient(180deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.03) 100%) !important;
+  }
+  .section.soft .price-card.featured {
+    background: linear-gradient(180deg, rgba(216,180,254,0.14) 0%, rgba(216,180,254,0.04) 100%) !important;
+    border-color: rgba(216,180,254,0.55) !important;
+    box-shadow: 0 28px 64px -22px rgba(0,0,0,0.65), 0 0 0 1px rgba(216,180,254,0.20), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  }
+  .section.soft .price-card.featured::before {
+    background: linear-gradient(135deg, #d8b4fe 0%, #af4bed 100%) !important;
+    color: #1b1428 !important;
+    box-shadow: 0 8px 18px -4px rgba(216,180,254,0.55) !important;
+  }
+  .section.soft .price-card .tag { color: #d8b4fe !important; }
+  .section.soft .price-card h3 { color: white !important; }
+  .section.soft .price-card .price-sub { color: rgba(255,255,255,0.75) !important; }
+  .section.soft .price-card .price-line { border-top-color: rgba(255,255,255,0.12) !important; }
+  .section.soft .price-card .price-line .line-label { color: rgba(255,255,255,0.62) !important; }
+  .section.soft .price-card .price-line .line-amt { color: white !important; }
+  .section.soft .price-card .price-line.is-primary .line-label { color: white !important; }
+  .section.soft .price-card .price-line.is-primary .line-amt {
+    color: transparent !important;
+    background: linear-gradient(135deg, #f0d9ff 0%, #d8b4fe 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  .section.soft .price-card .price-note { color: rgba(255,255,255,0.55) !important; }
+  .section.soft .price-foot { color: rgba(255,255,255,0.62) !important; }
+  .section.soft .price-foot strong { color: white !important; }
+
+  /* Mobile: keep top-border for stacked price-card.featured visible on dark */
+  @media (max-width: 720px) {
+    .section.soft .price-card.featured { border-top-color: #d8b4fe !important; }
+  }
+
+  /* ===== HERO bg already dark per Variant B — leave alone ===== */
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

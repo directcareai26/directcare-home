@@ -304,7 +304,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .who-banner-svg::after { display: none !important; }
   /* Mobile: image escapes the container and goes edge-to-edge so the figure
-     feels life-size on phones (proper 3D float). */
+     feels life-size on phones (proper 3D float). No lavender glow on mobile —
+     clean transparent bg, figure only. */
   @media (max-width: 760px) {
     .who-banner-svg {
       width: 100vw !important;
@@ -317,7 +318,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .who-banner-svg img {
       -webkit-mask-image: radial-gradient(ellipse 80% 92% at 50% 58%, #000 62%, transparent 100%);
               mask-image: radial-gradient(ellipse 80% 92% at 50% 58%, #000 62%, transparent 100%);
+      filter: none !important;
     }
+    .who-banner-svg:hover img { filter: none !important; }
   }
   /* Desktop: 2-column, image left, carousel + CTA right */
   @media (min-width: 980px) {

@@ -1172,6 +1172,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background: rgba(255,255,255,0.10) !important;
   }
 
+
+  /* ============================================================
+     STICKY BOTTOM CTA BAR — appears past hero, hides near footer
+     ============================================================ */
+  .sticky-cta {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 45;
+    background: rgba(26,15,36,0.94);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 12px clamp(16px, 4vw, 32px);
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    transform: translateY(110%); transition: transform .25s ease;
+    box-shadow: 0 -10px 30px -10px rgba(0,0,0,0.4);
+  }
+  .sticky-cta.visible { transform: translateY(0); }
+  .sticky-cta-left { display: flex; flex-direction: column; line-height: 1.2; color: white; min-width: 0; }
+  .sticky-cta-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 1.12rem; color: white; }
+  .sticky-cta-price .accent {
+    color: #e6b6ff !important;
+    -webkit-text-fill-color: #e6b6ff !important;
+    background: none !important;
+    -webkit-background-clip: border-box !important;
+            background-clip: border-box !important;
+  }
+  .sticky-cta-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); }
+  .sticky-cta .btn { padding: 14px 24px; font-size: 0.92rem; white-space: nowrap; box-shadow: 0 8px 22px -6px rgba(175,75,237,0.5); }
+  @media (max-width: 600px) {
+    .sticky-cta { padding: 10px 14px; gap: 10px; }
+    .sticky-cta-price { font-size: 0.96rem; }
+    .sticky-cta-sub { font-size: 0.72rem; }
+    .sticky-cta .btn { padding: 12px 16px; font-size: 0.84rem; }
+  }
+  body.sticky-active footer { padding-bottom: 100px; }
+
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -2060,6 +2094,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       setTimeout(function() { mo.disconnect(); }, 4000);
     }
     try { window.__dcaiClickId = clickId; } catch (e) {}
+  })();
+</script>
+
+
+<!-- ============ STICKY CTA BAR ============ -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <div class="sticky-cta-left">
+    <span class="sticky-cta-price">Care from <span class="accent">$169</span>/4 wks · Labs included</span>
+    <span class="sticky-cta-sub">Free evaluation · No commitment</span>
+  </div>
+  <a class="btn btn-primary" href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&amp;businessId=67fe9d4248c4ab911e8bdcd6">Start TRT evaluation →</a>
+</div>
+
+<script>
+  (function() {
+    var bar = document.getElementById('sticky-cta');
+    if (!bar) return;
+    var hero = document.querySelector('.hero');
+    var footer = document.querySelector('footer');
+    function onScroll() {
+      var heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 600;
+      var footerTop = footer ? footer.getBoundingClientRect().top + window.scrollY : Infinity;
+      var y = window.scrollY;
+      var visible = y > heroBottom - 80 && y + window.innerHeight < footerTop + 100;
+      bar.classList.toggle('visible', visible);
+      document.body.classList.toggle('sticky-active', visible);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
   })();
 </script>
 

@@ -993,15 +993,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .d-section {
     width: 100%;
     max-width: 100vw;
-    padding: 0;
+    padding: 0 0 clamp(28px, 4vw, 56px) 0;   /* breathing room BELOW band before next section */
     margin: 0;
     background: #ffffff;
-    overflow: hidden;                   /* hard-clip any horizontal overflow from the rotating words / figure */
+    overflow: hidden;                          /* hard-clip horizontal overflow from rotating words / figure */
   }
-  /* Sit flush with adjacent sections — no gap above (hero) or below (How it works) */
-  .hero:has(+ .d-section) { padding-bottom: 0 !important; }
-  .d-section + .section,
-  .d-section + section { padding-top: 0 !important; }
+  /* Explicit flush classes — same pattern as /womens-health/ */
+  .hero.flush-bottom { padding-bottom: 0 !important; }
+  section.section.flush-top { padding-top: 0 !important; background: #ffffff !important; }
   /* Belt-and-suspenders horizontal-scroll prevention on the whole page */
   html, body { overflow-x: hidden !important; }
   .d-stage {
@@ -1191,7 +1190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 <!-- HERO -->
-<header class="hero" id="eligibility">
+<header class="hero flush-bottom" id="eligibility">
   <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
     <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/middle%20age%20ww.mp4" type="video/mp4" />
   </video>
@@ -1278,7 +1277,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section soft" id="how">
+<section class="section soft flush-top" id="how">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> How it works</span>

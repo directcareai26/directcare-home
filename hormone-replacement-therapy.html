@@ -272,33 +272,53 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .who-banner { max-width: 1100px; margin: 0 auto 28px; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow-soft); position: relative; }
   .who-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
   .who-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0) 55%, rgba(40,26,49,0.18) 100%); pointer-events: none; }
-  /* SVG-illustration variant: drop the rectangular card chrome and let the
-     vector pop out with multi-layered drop-shadow (3D float, no overlay). */
+  /* SVG-illustration variant: drop card chrome, mask out the SVG's built-in
+     rounded-rectangle background so only the figure floats. */
   .who-banner-svg {
     background: transparent !important;
     border-radius: 0 !important;
     box-shadow: none !important;
     overflow: visible !important;
-    aspect-ratio: auto;
+    aspect-ratio: auto !important;
   }
   .who-banner-svg img {
     object-fit: contain !important;
     width: 100%;
     height: auto;
+    /* Radial mask fades the SVG's embedded rectangle bg to transparent at
+       the edges — figure floats, no visible "box" behind. */
+    -webkit-mask-image: radial-gradient(ellipse 72% 88% at 50% 56%, #000 56%, transparent 100%);
+            mask-image: radial-gradient(ellipse 72% 88% at 50% 56%, #000 56%, transparent 100%);
     filter:
-      drop-shadow(0 28px 50px rgba(118,43,164,0.28))
-      drop-shadow(0 10px 18px rgba(118,43,164,0.18))
+      drop-shadow(0 28px 50px rgba(118,43,164,0.30))
+      drop-shadow(0 10px 18px rgba(118,43,164,0.20))
       drop-shadow(0 2px 4px rgba(40,26,49,0.10));
     transition: transform .35s ease, filter .35s ease;
   }
   .who-banner-svg:hover img {
     transform: translateY(-4px) scale(1.01);
     filter:
-      drop-shadow(0 36px 60px rgba(118,43,164,0.36))
-      drop-shadow(0 14px 22px rgba(118,43,164,0.22))
+      drop-shadow(0 36px 60px rgba(118,43,164,0.38))
+      drop-shadow(0 14px 22px rgba(118,43,164,0.24))
       drop-shadow(0 2px 4px rgba(40,26,49,0.12));
   }
   .who-banner-svg::after { display: none !important; }
+  /* Mobile: image escapes the container and goes edge-to-edge so the figure
+     feels life-size on phones (proper 3D float). */
+  @media (max-width: 760px) {
+    .who-banner-svg {
+      width: 100vw !important;
+      max-width: 100vw !important;
+      margin-left: calc(50% - 50vw) !important;
+      margin-right: calc(50% - 50vw) !important;
+      margin-bottom: 8px !important;
+      padding: 0 !important;
+    }
+    .who-banner-svg img {
+      -webkit-mask-image: radial-gradient(ellipse 80% 92% at 50% 58%, #000 62%, transparent 100%);
+              mask-image: radial-gradient(ellipse 80% 92% at 50% 58%, #000 62%, transparent 100%);
+    }
+  }
   /* Desktop: 2-column, image left, carousel + CTA right */
   @media (min-width: 980px) {
     .who-split { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; max-width: 1200px; margin: 0 auto; }

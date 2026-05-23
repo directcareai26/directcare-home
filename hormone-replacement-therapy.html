@@ -272,6 +272,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .who-banner { max-width: 1100px; margin: 0 auto 28px; border-radius: var(--radius-xl); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow-soft); position: relative; }
   .who-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
   .who-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0) 55%, rgba(40,26,49,0.18) 100%); pointer-events: none; }
+  /* Hero CTA — green (matches sexual health / surge-max emerald) */
+  .hero .btn-primary,
+  .hero .btn-primary-xl {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+    color: white !important;
+    box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45) !important;
+  }
+  .hero .btn-primary:hover,
+  .hero .btn-primary-xl:hover {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+    box-shadow: 0 16px 36px -6px rgba(5,150,105,0.55) !important;
+    transform: translateY(-2px) !important;
+  }
+  /* Pulse glow in the hero takes the green hue too */
+  @keyframes pulseGlowGreen {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45); }
+    50% { box-shadow: 0 14px 36px -4px rgba(16,185,129,0.65); }
+  }
+  .hero .pulse-glow { animation: pulseGlowGreen 2.6s ease-in-out infinite !important; }
+
+  /* Tighter spacing: "HRT may be appropriate if you're…" → woman SVG */
+  .who-split { margin-top: -4px; }
+  .who-banner-svg { margin-top: -18px; }
+  @media (max-width: 760px) {
+    .who-banner-svg { margin-top: -36px !important; }
+  }
+
   /* SVG-illustration variant: drop card chrome, mask out the SVG's built-in
      rounded-rectangle background so only the figure floats. */
   .who-banner-svg {

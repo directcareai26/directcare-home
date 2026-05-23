@@ -1,6 +1,42 @@
 {
   "posts": [
     {
+      "slug": "glp1-mediterranean-salmon-bowl-recipe",
+      "title": "The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark",
+      "excerpt": "A 30-minute sheet-pan dinner that hits 38g protein, 10g fiber, and the omega-3 target in one bowl. Built for the appetite a GLP-1 actually leaves you.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-05-23",
+      "dateLabel": "May 23, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "GLP-1 recipe",
+        "high protein dinner",
+        "Mediterranean salmon bowl",
+        "semaglutide meals",
+        "tirzepatide nutrition",
+        "GLP-1 friendly recipe"
+      ]
+    },
+    {
+      "slug": "glp1-nutrition-four-rule-framework",
+      "title": "The 4-rule food framework for staying full and fueled on a GLP-1",
+      "excerpt": "When appetite is dialed down, every bite has to pull its weight. A clinician's four rules for what to eat on semaglutide or tirzepatide, drawn from the published literature.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-05-22",
+      "dateLabel": "May 22, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "GLP-1 nutrition",
+        "semaglutide diet",
+        "tirzepatide diet",
+        "high protein weight loss",
+        "GLP-1 food rules",
+        "what to eat on GLP-1"
+      ]
+    },
+    {
       "slug": "semaglutide-tirzepatide-difference",
       "title": "Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs",
       "excerpt": "Same weekly injection, different mechanism. Why your hormone panel — not just BMI — should drive the choice between semaglutide and tirzepatide.",

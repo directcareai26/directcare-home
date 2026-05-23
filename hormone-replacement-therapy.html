@@ -273,46 +273,47 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .who-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
   .who-banner::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(40,26,49,0) 55%, rgba(40,26,49,0.18) 100%); pointer-events: none; }
   /* ============================================================
-     ALL CTAs → softer mint green (lighter shade for women's page)
-     Lavender brand bg + mint CTA = same action signal as TRT,
-     dialed gentler for HRT
+     ALL CTAs → forest emerald (deeper, grounded green for women's page)
+     Cool deep green pairs cleanly with the lavender brand bg —
+     reads as "considered, clinical" rather than the bright mint
+     SaaS pop. Same coverage as TRT.
      ============================================================ */
   .btn-primary,
   .btn-primary-xl,
   .hero .btn-primary,
   .hero .btn-primary-xl {
-    background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+    background: linear-gradient(135deg, #0d7456 0%, #084f3a 100%) !important;
     color: white !important;
-    box-shadow: 0 10px 28px -6px rgba(52,211,153,0.45) !important;
+    box-shadow: 0 10px 28px -6px rgba(13,116,86,0.50) !important;
     border: none !important;
   }
   .btn-primary:hover,
   .btn-primary-xl:hover,
   .hero .btn-primary:hover,
   .hero .btn-primary-xl:hover {
-    background: linear-gradient(135deg, #6ee7b7 0%, #34d399 100%) !important;
-    box-shadow: 0 16px 36px -6px rgba(16,185,129,0.55) !important;
+    background: linear-gradient(135deg, #118a68 0%, #0d7456 100%) !important;
+    box-shadow: 0 16px 36px -6px rgba(8,79,58,0.60) !important;
     transform: translateY(-2px) !important;
   }
   /* TNPN big bottom CTA */
   .tnpn-cta {
-    background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
-    box-shadow: 0 14px 30px -10px rgba(52,211,153,0.45) !important;
+    background: linear-gradient(135deg, #0d7456 0%, #084f3a 100%) !important;
+    box-shadow: 0 14px 30px -10px rgba(13,116,86,0.50) !important;
   }
   .tnpn-cta:hover {
-    box-shadow: 0 18px 36px -10px rgba(16,185,129,0.55) !important;
-    filter: brightness(1.06);
+    box-shadow: 0 18px 36px -10px rgba(8,79,58,0.60) !important;
+    filter: brightness(1.08);
   }
-  .sticky-cta .btn-primary { box-shadow: 0 8px 22px -6px rgba(52,211,153,0.50) !important; }
-  /* Pulse glow → mint */
-  @keyframes pulseGlowMint {
-    0%, 100% { box-shadow: 0 10px 28px -6px rgba(52,211,153,0.45); }
-    50% { box-shadow: 0 14px 36px -4px rgba(52,211,153,0.70); }
+  .sticky-cta .btn-primary { box-shadow: 0 8px 22px -6px rgba(13,116,86,0.55) !important; }
+  /* Pulse glow → forest emerald */
+  @keyframes pulseGlowForest {
+    0%, 100% { box-shadow: 0 10px 28px -6px rgba(13,116,86,0.50); }
+    50% { box-shadow: 0 14px 36px -4px rgba(13,116,86,0.70); }
   }
-  .pulse-glow { animation: pulseGlowMint 2.6s ease-in-out infinite !important; }
-  /* Quiz progress bar + check icon → mint */
-  .quiz-progress-bar { background: linear-gradient(90deg, #34d399, #10b981) !important; }
-  .quiz-check { background: linear-gradient(180deg, #34d399, #10b981) !important; box-shadow: 0 10px 22px rgba(52,211,153,0.32) !important; }
+  .pulse-glow { animation: pulseGlowForest 2.6s ease-in-out infinite !important; }
+  /* Quiz progress bar + check icon → forest emerald */
+  .quiz-progress-bar { background: linear-gradient(90deg, #0d7456, #084f3a) !important; }
+  .quiz-check { background: linear-gradient(180deg, #0d7456, #084f3a) !important; box-shadow: 0 10px 22px rgba(13,116,86,0.32) !important; }
 
   /* Tighter spacing: "HRT may be appropriate if you're…" → woman SVG */
   .who-split { margin-top: -4px; }

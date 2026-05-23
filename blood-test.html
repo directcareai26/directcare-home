@@ -563,6 +563,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-links { display: none !important; }
     .mobile-toggle { display: inline-flex !important; }
   }
+
+  /* Mobile hamburger icon — force size + color so it's visible
+     (was rendering at SVG default 300x150 + clipping to nothing) */
+  .mobile-toggle {
+    color: var(--ink, #241432) !important;
+    background: var(--bg-2, #f4eee5) !important;
+    border: 1px solid var(--line, rgba(36,20,50,0.10)) !important;
+  }
+  .mobile-toggle svg {
+    width: 22px !important;
+    height: 22px !important;
+    stroke: currentColor !important;
+    display: block !important;
+  }
+  /* Mobile drawer — fit content, not full screen */
+  .mobile-drawer {
+    bottom: auto !important;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    padding-bottom: 32px !important;
+    box-shadow: 0 24px 60px -16px rgba(36,20,50,0.30);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

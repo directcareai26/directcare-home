@@ -4,8 +4,8 @@
       "slug": "glp1-mediterranean-salmon-bowl-recipe",
       "title": "The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark",
       "excerpt": "A 30-minute sheet-pan dinner that hits 38g protein, 10g fiber, and the omega-3 target in one bowl. Built for the appetite a GLP-1 actually leaves you.",
-      "category": "Weight Loss",
-      "categorySlug": "weight-loss",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
       "date": "2026-05-23",
       "dateLabel": "May 23, 2026",
       "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
@@ -22,8 +22,8 @@
       "slug": "glp1-nutrition-four-rule-framework",
       "title": "The 4-rule food framework for staying full and fueled on a GLP-1",
       "excerpt": "When appetite is dialed down, every bite has to pull its weight. A clinician's four rules for what to eat on semaglutide or tirzepatide, drawn from the published literature.",
-      "category": "Weight Loss",
-      "categorySlug": "weight-loss",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
       "date": "2026-05-22",
       "dateLabel": "May 22, 2026",
       "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
@@ -198,6 +198,23 @@
       ]
     },
     {
+      "slug": "sheet-pan-miso-salmon-bok-choy-recipe",
+      "title": "Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner",
+      "excerpt": "Sweet, salty, umami-glazed salmon with charred bok choy and brown rice. The 25-minute dinner that tastes like the restaurant version.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-04-27",
+      "dateLabel": "April 27, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "miso salmon recipe",
+        "sheet pan salmon",
+        "bok choy recipe",
+        "high protein dinner",
+        "omega 3 weeknight meal"
+      ]
+    },
+    {
       "slug": "glp1-month-one-side-effects-food-noise",
       "title": "What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp",
       "excerpt": "The first 4 weeks of semaglutide or tirzepatide are not the same as the next 12. A clinician's week-by-week guide to what's normal, what's not, and how to make the early ramp survivable.",
@@ -215,6 +232,23 @@
       ]
     },
     {
+      "slug": "eggs-vs-egg-whites-which-fits-protocol",
+      "title": "Eggs vs. egg whites: which one actually fits your protocol",
+      "excerpt": "Decades of cholesterol panic vs. recent rehabilitation. A clinician's take on when whole eggs win, when whites earn their spot, and the math behind both.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-04-17",
+      "dateLabel": "April 17, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "eggs vs egg whites",
+        "egg cholesterol",
+        "high protein breakfast",
+        "are eggs healthy",
+        "egg whites protein"
+      ]
+    },
+    {
       "slug": "body-recomp-glp1-protect-muscle",
       "title": "Body recomp on GLP-1s: how to lose fat without losing muscle",
       "excerpt": "GLP-1s can pull weight off fast — and 25 percent or more of that loss can be muscle if you don't actively protect it. Here's what the literature actually says about protein, training, and pacing.",
@@ -229,6 +263,23 @@
         "tirzepatide muscle preservation",
         "protein on GLP-1",
         "lean mass weight loss"
+      ]
+    },
+    {
+      "slug": "overnight-oats-iron-protein-fiber",
+      "title": "The 5-minute overnight oats that hit your iron, protein, and fiber targets",
+      "excerpt": "Three jars Sunday night. Five minutes each. 28g protein, 10g fiber, plus 4mg iron per serving — the breakfast that actually moves bloodwork.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-04-08",
+      "dateLabel": "April 8, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "overnight oats recipe",
+        "high protein overnight oats",
+        "iron rich breakfast",
+        "meal prep breakfast",
+        "fiber breakfast"
       ]
     },
     {
@@ -263,6 +314,159 @@
         "omega-3 dose",
         "B-complex deficiency",
         "physician-formulated supplements"
+      ]
+    },
+    {
+      "slug": "greek-chicken-souvlaki-bowl-meal-prep",
+      "title": "Greek chicken souvlaki bowl: the meal-prep base that holds a whole week",
+      "excerpt": "Marinate, grill (or sear), portion. One Sunday afternoon gives you five workday lunches at 38g protein each. The most repeatable Mediterranean meal-prep.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-03-28",
+      "dateLabel": "March 28, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "chicken souvlaki bowl",
+        "meal prep recipe",
+        "Greek chicken meal prep",
+        "high protein lunch",
+        "Mediterranean meal prep"
+      ]
+    },
+    {
+      "slug": "protein-timing-post-workout-window",
+      "title": "Protein timing: does the 30-minute post-workout window actually matter?",
+      "excerpt": "The shaker bottle got popular for a reason — and stays popular because the biology is more nuanced than \"the 30-minute window.\" What the data actually says.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-03-18",
+      "dateLabel": "March 18, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png",
+      "keywords": [
+        "protein timing",
+        "anabolic window",
+        "post workout protein",
+        "muscle protein synthesis",
+        "protein for muscle growth"
+      ]
+    },
+    {
+      "slug": "salmon-tacos-cabbage-slaw-recipe",
+      "title": "Salmon tacos with cabbage slaw: a 30-minute omega-3 dinner",
+      "excerpt": "Pan-seared salmon, a sharp slaw, two warm tortillas. 32g protein, 1,500mg omega-3, on a weeknight that didn't need to be complicated.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-03-07",
+      "dateLabel": "March 7, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "salmon tacos recipe",
+        "omega 3 dinner",
+        "high protein tacos",
+        "fish tacos",
+        "weeknight salmon"
+      ]
+    },
+    {
+      "slug": "perimenopause-nutrition-foods-that-help",
+      "title": "What to eat during perimenopause: the 5 food categories that move symptoms",
+      "excerpt": "Hot flashes, sleep disruption, and the recomp that won't recomp aren't separate problems. The 5 food categories with published support for perimenopause.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-02-24",
+      "dateLabel": "February 24, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png",
+      "keywords": [
+        "perimenopause diet",
+        "menopause nutrition",
+        "foods for hot flashes",
+        "phytoestrogens",
+        "menopause weight gain"
+      ]
+    },
+    {
+      "slug": "cottage-cheese-bowl-protein-snack",
+      "title": "Cottage cheese bowls: the 30g-protein snack everyone forgot about",
+      "excerpt": "Cottage cheese stalled out as a 1970s diet food. The protein math says it should be back on every shelf — and four bowls show why.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-02-13",
+      "dateLabel": "February 13, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "cottage cheese recipes",
+        "high protein snacks",
+        "cottage cheese bowl",
+        "casein protein",
+        "weight loss snacks"
+      ]
+    },
+    {
+      "slug": "mediterranean-lentil-soup-recipe",
+      "title": "Mediterranean lentil soup: 22g protein, 18g fiber per bowl, freezer-friendly",
+      "excerpt": "One pot, 45 minutes, six servings. The vegetarian dinner that out-fibers most omnivore meals and freezes for six weeks.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-02-04",
+      "dateLabel": "February 4, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "lentil soup recipe",
+        "high fiber dinner",
+        "vegetarian high protein",
+        "Mediterranean soup",
+        "freezer friendly meals"
+      ]
+    },
+    {
+      "slug": "fiber-target-most-patients-underdose",
+      "title": "Fiber: the nutrient most weight-loss patients underdose (and the fix)",
+      "excerpt": "The published target is 25-35g/day. The American average is under 15g. On a GLP-1 or HRT protocol, that gap drives constipation, satiety failure, and inflammation.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-01-25",
+      "dateLabel": "January 25, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "fiber intake",
+        "fiber for weight loss",
+        "high fiber foods",
+        "GLP-1 constipation",
+        "fiber and satiety"
+      ]
+    },
+    {
+      "slug": "sheet-pan-chicken-thighs-roasted-vegetables",
+      "title": "Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner",
+      "excerpt": "One pan, 30 minutes, four servings with leftovers built in. The high-protein weeknight pattern when you don't have the energy for anything more complicated.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-01-15",
+      "dateLabel": "January 15, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "sheet pan chicken",
+        "high protein dinner",
+        "weeknight chicken thighs",
+        "GLP-1 dinner",
+        "roasted root vegetables"
+      ]
+    },
+    {
+      "slug": "greek-yogurt-breakfast-bowl-40g-protein",
+      "title": "The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch",
+      "excerpt": "Three ingredients you already have, two minutes of assembly, 40 grams of protein before you've finished your coffee.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-01-05",
+      "dateLabel": "January 5, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "high protein breakfast",
+        "greek yogurt bowl",
+        "40g protein breakfast",
+        "GLP-1 breakfast",
+        "weight loss breakfast recipe"
       ]
     }
   ]

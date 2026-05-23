@@ -65,13 +65,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     --radius-xl: 32px;
   }
   * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100vw; }
   body {
     margin: 0; padding: 0;
     background: var(--bg); color: var(--ink);
     font-family: 'Geist', 'Inter', system-ui, -apple-system, sans-serif;
     font-size: 16px; line-height: 1.55; letter-spacing: -0.01em;
-    overflow-x: hidden;
+    overflow-x: hidden; max-width: 100vw;
+    position: relative;
   }
   a { color: inherit; text-decoration: none; }
   img { display: block; max-width: 100%; }
@@ -376,15 +377,77 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* MOBILE GLOBAL */
   @media (max-width: 720px) {
-    .container, .nav-inner { padding-left: 14px !important; padding-right: 14px !important; }
+    .container, .nav-inner { padding-left: 16px !important; padding-right: 16px !important; }
     .top-strip { padding-left: 12px !important; padding-right: 12px !important; font-size: 0.76rem !important; }
-    footer .container { padding-left: 14px !important; padding-right: 14px !important; }
-    .hero { padding-top: 24px; padding-bottom: 16px; }
-    .hero h1 { font-size: 2.2rem; }
-    .band { padding: 48px 0; }
-    .pillars, .help, .cta { padding: 48px 0; }
-    .cta { padding-left: 22px; padding-right: 22px; padding-top: 56px; padding-bottom: 56px; }
-    .advisor-card { padding: 28px 22px; }
+    footer .container { padding-left: 16px !important; padding-right: 16px !important; }
+
+    /* Hero — kill the floating blur blobs that leak past viewport, drop the photo rotation */
+    .hero { padding: 22px 0 8px; }
+    .hero-grid { gap: 24px; }
+    .hero h1 { font-size: 2.05rem; line-height: 1.05; margin-bottom: 16px; }
+    .hero-sub { font-size: 0.98rem; margin-bottom: 18px; }
+    .hero-meta { font-size: 0.78rem; padding: 7px 14px; gap: 8px; }
+    .hero-figure { transform: none; aspect-ratio: 4/5; border-radius: 22px; }
+    .hero-blob { display: none !important; }
+
+    /* Hero badge — compact, single-line layout, tighter type */
+    .hero-badge { left: 12px; right: 12px; bottom: 12px; padding: 10px 12px; gap: 10px; border-radius: 12px; }
+    .hero-badge-icon { width: 30px; height: 30px; border-radius: 8px; }
+    .hero-badge-icon svg { width: 14px; height: 14px; }
+    .hero-badge-text strong { font-size: 0.82rem; }
+    .hero-badge-text span { font-size: 0.7rem; }
+
+    /* Bands — tighter vertical padding */
+    .band { padding: 44px 0; }
+    .pillars, .help { padding: 44px 0; }
+
+    /* Our why */
+    .why-grid { gap: 22px; }
+    .why-copy h2 { font-size: 1.8rem; margin-bottom: 14px; }
+    .why-copy p { font-size: 0.98rem; }
+    .why-figure { border-radius: 22px; }
+    .why-quote { left: 12px; right: 12px; bottom: 12px; max-width: none; padding: 12px 14px; font-size: 0.84rem; border-radius: 12px; }
+    .why-quote::before { left: 18px; height: 22px; top: -6px; }
+
+    /* Pillars */
+    .pillars-head { margin-bottom: 28px; }
+    .pillars-head h2 { font-size: 1.7rem; }
+    .pillars-head p { font-size: 0.96rem; }
+    .pillar { padding: 22px 20px; border-radius: 22px; }
+    .pillar-num { margin-bottom: 12px; font-size: 0.74rem; }
+    .pillar h3 { font-size: 1.15rem; }
+    .pillar p { font-size: 0.92rem; }
+
+    /* One-stop mosaic — tighter labels */
+    .onestop-grid { gap: 22px; }
+    .onestop-copy h2 { font-size: 1.75rem; margin-bottom: 14px; }
+    .onestop-copy p { font-size: 0.98rem; }
+    .mosaic { gap: 8px; }
+    .mtile { border-radius: 14px; }
+    .mtile-label { left: 10px; right: 10px; bottom: 8px; font-size: 0.78rem; }
+
+    /* Help cards */
+    .help-head { margin-bottom: 28px; }
+    .help-head h2 { font-size: 1.7rem; }
+    .help-head p { font-size: 0.96rem; }
+    .help-card { border-radius: 22px; }
+    .help-card-body { padding: 20px 20px 22px; }
+    .help-card-body h3 { font-size: 1.05rem; }
+    .help-card-body p { font-size: 0.9rem; }
+
+    /* Full-bleed CTA */
+    .cta { padding: 56px 22px; }
+    .cta h2 { font-size: 1.85rem; }
+    .cta p { font-size: 0.98rem; margin-bottom: 22px; }
+    .btn { padding: 13px 22px; font-size: 0.92rem; }
+  }
+
+  /* Tiny phones */
+  @media (max-width: 380px) {
+    .container, .nav-inner, footer .container { padding-left: 14px !important; padding-right: 14px !important; }
+    .hero h1 { font-size: 1.9rem; }
+    .why-copy h2, .onestop-copy h2, .pillars-head h2, .help-head h2 { font-size: 1.55rem; }
+    .cta h2 { font-size: 1.65rem; }
   }
 </style>
 
@@ -576,7 +639,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="mtile-label">Weight Loss <span class="ar">&rarr;</span></span>
         </a>
         <a href="/hormone-replacement-therapy" class="mtile">
-          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Editorial%20portrait%20of%20a%2038-year-old%20multi-ethnic%20woman%20with%20shoulder-length%20wavy%20hair%20730331.png" alt="Hormone replacement therapy for women" />
+          <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="Hormone replacement therapy for women" />
           <span class="mtile-label">HRT <span class="ar">&rarr;</span></span>
         </a>
         <a href="/testosterone-replacement-therapy" class="mtile">

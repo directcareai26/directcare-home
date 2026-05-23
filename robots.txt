@@ -1,6 +1,18 @@
 User-agent: *
 Allow: /
 
+# Internal mockup/test paths — disallow indexing (files removed from repo
+# but listed here as belt-and-suspenders in case anything got crawled before)
+Disallow: /mockup-symptoms
+Disallow: /mockup-mobile-1
+Disallow: /mockup-mobile-2
+Disallow: /homepage-mockup
+Disallow: /mobile-test
+Disallow: /hero-typography
+Disallow: /hero-collage
+Disallow: /trt-preview
+Disallow: /index-legacy-2026-05-21
+
 # Major AI crawlers — explicitly allowed
 User-agent: GPTBot
 Allow: /

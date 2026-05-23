@@ -988,6 +988,109 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       box-shadow: none !important;
     }
   }
+
+  /* ============== POP-OUT GROUP BAND (Mockup D) — full-bleed ============== */
+  .d-section {
+    width: 100%;
+    padding: 0 0 clamp(48px, 5vw, 80px) 0;
+    margin: 0;
+    background: #ffffff;
+  }
+  .d-stage {
+    position: relative;
+    overflow: visible;
+    min-height: 760px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 140px;
+    width: 100%;
+  }
+  @media (max-width: 720px) {
+    .d-stage { min-height: 520px; padding-top: 70px; }
+    .d-figure-wrap { width: 100% !important; }
+  }
+  @media (max-width: 540px) {
+    .d-stage { min-height: 440px; padding-top: 56px; }
+  }
+  .d-band {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: calc(100% - 140px);
+    border-radius: 0;
+    overflow: hidden;
+    background: linear-gradient(140deg, #f5e9ff 0%, #efe2d1 100%);
+    isolation: isolate;
+    z-index: 1;
+  }
+  @media (max-width: 720px) { .d-band { height: calc(100% - 70px); } }
+  @media (max-width: 540px) { .d-band { height: calc(100% - 56px); } }
+  .d-rotator-stack { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+  .d-rotator-word { position: absolute; font-family: 'Geist', sans-serif; font-weight: 700; letter-spacing: -0.04em; color: var(--brand); text-transform: lowercase; white-space: nowrap; will-change: transform, opacity; }
+  @keyframes dFlowL { 0%{transform:translateX(110vw);opacity:0;} 8%{opacity:var(--word-peak,0.22);} 50%{opacity:calc(var(--word-peak,0.22)*0.55);} 92%{opacity:0;} 100%{transform:translateX(-110vw);opacity:0;} }
+  @keyframes dFlowR { 0%{transform:translateX(-110vw);opacity:0;} 8%{opacity:var(--word-peak,0.22);} 50%{opacity:calc(var(--word-peak,0.22)*0.55);} 92%{opacity:0;} 100%{transform:translateX(110vw);opacity:0;} }
+  .d-rotator-word.w1  { font-size: clamp(3.4rem, 10vw, 7.2rem); --word-peak: 0.24; color: var(--brand);        top:  4%; animation: dFlowL 34s linear infinite; }
+  .d-rotator-word.w2  { font-size: clamp(2.4rem, 7vw,  5rem);   --word-peak: 0.18; color: var(--brand-deep);   top: 12%; animation: dFlowR 42s linear infinite -6s; }
+  .d-rotator-word.w3  { font-size: clamp(2.8rem, 8vw,  5.6rem); --word-peak: 0.20; color: var(--brand);        top: 20%; animation: dFlowL 28s linear infinite -3s; }
+  .d-rotator-word.w4  { font-size: clamp(1.8rem, 5.5vw, 3.8rem); --word-peak: 0.16; color: var(--brand-deep);  top: 26%; animation: dFlowR 36s linear infinite -10s; }
+  .d-rotator-word.w5  { font-size: clamp(3rem, 9vw,   6rem);    --word-peak: 0.22; color: var(--brand-darker); top: 32%; animation: dFlowL 38s linear infinite -14s; }
+  .d-rotator-word.w6  { font-size: clamp(2rem, 6vw,   4.2rem);  --word-peak: 0.15; color: var(--brand);        top: 38%; animation: dFlowR 30s linear infinite -8s; }
+  .d-rotator-word.w7  { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand-deep);  top: 44%; animation: dFlowL 32s linear infinite -18s; }
+  .d-rotator-word.w8  { font-size: clamp(1.6rem, 5vw,  3.4rem); --word-peak: 0.14; color: var(--brand);        top: 50%; animation: dFlowR 44s linear infinite -22s; }
+  .d-rotator-word.w9  { font-size: clamp(3.2rem, 9.5vw, 6.6rem); --word-peak: 0.23; color: var(--brand-darker); top: 56%; animation: dFlowL 30s linear infinite -5s; }
+  .d-rotator-word.w10 { font-size: clamp(2.2rem, 6.5vw, 4.6rem); --word-peak: 0.17; color: var(--brand);       top: 62%; animation: dFlowR 38s linear infinite -28s; }
+  .d-rotator-word.w11 { font-size: clamp(2.8rem, 8vw,  5.4rem); --word-peak: 0.19; color: var(--brand-deep);   top: 68%; animation: dFlowL 26s linear infinite -12s; }
+  .d-rotator-word.w12 { font-size: clamp(1.8rem, 5.2vw, 3.6rem); --word-peak: 0.14; color: var(--brand);       top: 74%; animation: dFlowR 40s linear infinite -16s; }
+  .d-rotator-word.w13 { font-size: clamp(3rem, 8.5vw, 6.2rem);  --word-peak: 0.22; color: var(--brand-darker); top: 80%; animation: dFlowL 34s linear infinite -20s; }
+  .d-rotator-word.w14 { font-size: clamp(2rem, 6vw,   4.2rem);  --word-peak: 0.15; color: var(--brand-deep);   top: 86%; animation: dFlowR 36s linear infinite -24s; }
+  .d-rotator-word.w15 { font-size: clamp(2.4rem, 7vw, 5rem);    --word-peak: 0.18; color: var(--brand);        top: 92%; animation: dFlowL 32s linear infinite -2s; }
+  .d-rotator-word.w16 { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand-deep);  top: 16%; animation: dFlowR 28s linear infinite -7s; }
+  .d-rotator-word.w17 { font-size: clamp(1.8rem, 5.5vw, 3.8rem); --word-peak: 0.16; color: var(--brand);       top: 42%; animation: dFlowL 40s linear infinite -25s; }
+  .d-rotator-word.w18 { font-size: clamp(3.2rem, 9.5vw, 6.6rem); --word-peak: 0.23; color: var(--brand-darker); top: 70%; animation: dFlowR 34s linear infinite -32s; }
+  .d-rotator-word.w19 { font-size: clamp(2rem, 6vw,   4rem);    --word-peak: 0.14; color: var(--brand-deep);   top: 24%; animation: dFlowL 46s linear infinite -19s; }
+  .d-rotator-word.w20 { font-size: clamp(2.6rem, 7.5vw, 5.2rem); --word-peak: 0.20; color: var(--brand);       top: 54%; animation: dFlowR 32s linear infinite -11s; }
+  .d-rotator-word.w21 { font-size: clamp(1.6rem, 5vw, 3.2rem);  --word-peak: 0.13; color: var(--brand-darker); top: 78%; animation: dFlowL 38s linear infinite -30s; }
+  .d-rotator-word.w22 { font-size: clamp(2.2rem, 6.5vw, 4.6rem); --word-peak: 0.17; color: var(--brand-deep);  top: 36%; animation: dFlowR 30s linear infinite -1s; }
+  .d-figure-wrap {
+    position: relative; z-index: 2;
+    height: 100%; width: min(820px, 80%);
+    display: flex; align-items: flex-end; justify-content: center;
+    transform: translateY(80px) scale(0.94); opacity: 0;
+    transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .d-stage.is-in-view .d-figure-wrap { transform: translateY(0) scale(1); opacity: 1; }
+  @keyframes dFigureRise { 0%{transform:translateY(80px) scale(0.94);opacity:0;} 100%{transform:translateY(0) scale(1);opacity:1;} }
+  @supports (animation-timeline: view()) {
+    .d-figure-wrap { transition: none; animation: dFigureRise linear both; animation-timeline: view(); animation-range: entry 0% cover 50%; }
+  }
+  .d-figure-wrap img { height: 100%; width: 100%; max-width: none; object-fit: contain; object-position: bottom center; display: block; filter: drop-shadow(0 30px 50px rgba(0,0,0,0.18)); }
+  .d-sparkle-layer { position: absolute; inset: 0; pointer-events: none; z-index: 3; opacity: 0; transition: opacity 0.8s ease 0.4s; }
+  .d-stage.is-in-view .d-sparkle-layer { opacity: 1; }
+  .d-sparkle { position: absolute; width: 16px; height: 16px; background: radial-gradient(circle at center, #fff 0%, #fff 25%, rgba(255,255,255,0) 70%); border-radius: 50%; filter: drop-shadow(0 0 6px rgba(255,255,255,0.9)) drop-shadow(0 0 14px rgba(247,194,255,0.6)); opacity: 0; animation: dTwinkle 4s ease-in-out infinite; }
+  .d-sparkle::before, .d-sparkle::after { content: ""; position: absolute; inset: 0; background: inherit; }
+  .d-sparkle::before { width: 200%; height: 2px; top: 50%; left: -50%; transform: translateY(-50%); background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.9) 50%, transparent 100%); border-radius: 0; }
+  .d-sparkle::after  { width: 2px; height: 200%; left: 50%; top: -50%; transform: translateX(-50%); background: linear-gradient(180deg, transparent 0%, rgba(255,255,255,0.9) 50%, transparent 100%); border-radius: 0; }
+  @keyframes dTwinkle { 0%,100% { opacity: 0; transform: scale(0.5) rotate(0deg); } 50% { opacity: 1; transform: scale(1) rotate(180deg); } }
+  .d-sparkle.s1  { top: 15%; left: 32%; animation-delay: 0s;   width: 18px; height: 18px; }
+  .d-sparkle.s2  { top: 22%; left: 62%; animation-delay: 1.2s; width: 12px; height: 12px; }
+  .d-sparkle.s3  { top: 40%; left: 28%; animation-delay: 2.4s; width: 14px; height: 14px; }
+  .d-sparkle.s4  { top: 45%; left: 68%; animation-delay: 0.8s; width: 16px; height: 16px; }
+  .d-sparkle.s5  { top: 30%; left: 50%; animation-delay: 1.8s; width: 22px; height: 22px; }
+  .d-sparkle.s6  { top: 60%; left: 25%; animation-delay: 3.0s; width: 10px; height: 10px; }
+  .d-sparkle.s7  { top: 65%; left: 72%; animation-delay: 2.0s; width: 13px; height: 13px; }
+  .d-sparkle.s8  { top: 12%; left: 48%; animation-delay: 2.8s; width: 14px; height: 14px; }
+  .d-sparkle.s9  { top: 38%; left: 45%; animation-delay: 0.4s; width: 11px; height: 11px; }
+  .d-sparkle.s10 { top: 55%; left: 55%; animation-delay: 3.4s; width: 17px; height: 17px; }
+  .d-sparkle.s11 { top: 18%; left: 78%; animation-delay: 1.6s; width: 12px; height: 12px; }
+  .d-sparkle.s12 { top: 50%; left: 35%; animation-delay: 2.6s; width: 15px; height: 15px; }
+  .d-headline { position: absolute; left: 50%; bottom: clamp(28px, 4vw, 56px); transform: translateX(-50%) translateY(20px); z-index: 10; text-align: center; color: var(--ink); background: rgba(255,255,255,0.85); padding: 16px 32px; border-radius: 999px; backdrop-filter: blur(12px); border: 1px solid rgba(36,20,50,0.08); box-shadow: 0 14px 32px -10px rgba(36,20,50,0.18); opacity: 0; transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.5s, opacity 0.7s ease 0.5s; }
+  .d-stage.is-in-view .d-headline { opacity: 1; transform: translateX(-50%) translateY(0); }
+  .d-headline h2 { font-size: clamp(1.2rem, 2.4vw, 1.8rem); font-weight: 500; margin: 0; line-height: 1.1; }
+  .d-headline em { font-style: italic; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; padding-right: 0.22em; margin-right: -0.06em; }
+  @media (prefers-reduced-motion: reduce) {
+    .d-figure-wrap, .d-sparkle-layer, .d-headline { transition: none !important; animation: none !important; transform: none !important; opacity: 1 !important; }
+    .d-headline { transform: translateX(-50%) !important; }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -1127,39 +1230,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
 
-<!-- "IT'S NOT IN YOUR HEAD" empathy banner — scrolling symptom marquee -->
-<section class="section lavender ihy-section">
-  <div class="container">
-    <div class="ihy-band">
-      <span class="eyebrow"><span class="dot"></span> You're not imagining it</span>
-      <h2 class="ihy-h2">It's not in your head.<br/><span class="accent">It's hormonal.</span></h2>
-      <p class="ihy-sub">Hot flashes, sleep loss, brain fog, mood swings, low libido — these aren't character flaws or stress. They're predictable shifts in estradiol, progesterone, and testosterone. There's real science behind why you feel this way, and a real protocol for what to do about it.</p>
-    </div>
-    <div class="ihy-marquee" aria-hidden="true">
-      <div class="ihy-marquee-track">
-        <span class="ihy-word">Hot flashes</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Night sweats</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Brain fog</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Mood swings</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Sleep loss</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Low libido</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Joint aches</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Weight gain</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Anxiety</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Fatigue</span><span class="ihy-dot">•</span>
-        <!-- Duplicate set so the loop is seamless -->
-        <span class="ihy-word">Hot flashes</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Night sweats</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Brain fog</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Mood swings</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Sleep loss</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Low libido</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Joint aches</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Weight gain</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Anxiety</span><span class="ihy-dot">•</span>
-        <span class="ihy-word">Fatigue</span><span class="ihy-dot">•</span>
+<!-- POP-OUT GROUP BAND — 3 women, rotating words, sparkles, scroll-into-frame (Mockup D) -->
+<section class="d-section">
+  <div class="d-stage">
+    <div class="d-band">
+      <div class="d-rotator-stack" aria-hidden="true">
+        <span class="d-rotator-word w1">hot flashes</span>
+        <span class="d-rotator-word w2">night sweats</span>
+        <span class="d-rotator-word w3">brain fog</span>
+        <span class="d-rotator-word w4">fatigue</span>
+        <span class="d-rotator-word w5">low libido</span>
+        <span class="d-rotator-word w6">sleep loss</span>
+        <span class="d-rotator-word w7">weight gain</span>
+        <span class="d-rotator-word w8">cravings</span>
+        <span class="d-rotator-word w9">thinning hair</span>
+        <span class="d-rotator-word w10">dry skin</span>
+        <span class="d-rotator-word w11">anxiety</span>
+        <span class="d-rotator-word w12">irritability</span>
+        <span class="d-rotator-word w13">joint aches</span>
+        <span class="d-rotator-word w14">mood swings</span>
+        <span class="d-rotator-word w15">bloating</span>
+        <span class="d-rotator-word w16">vaginal dryness</span>
+        <span class="d-rotator-word w17">palpitations</span>
+        <span class="d-rotator-word w18">perimenopause</span>
+        <span class="d-rotator-word w19">menopause</span>
+        <span class="d-rotator-word w20">hormonal</span>
+        <span class="d-rotator-word w21">restored</span>
+        <span class="d-rotator-word w22">balanced</span>
       </div>
     </div>
+    <div class="d-figure-wrap">
+      <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/group%20of%20women%202.svg" alt="Three women representing different ages and backgrounds" loading="lazy" />
+      <div class="d-sparkle-layer" aria-hidden="true">
+        <span class="d-sparkle s1"></span><span class="d-sparkle s2"></span><span class="d-sparkle s3"></span><span class="d-sparkle s4"></span><span class="d-sparkle s5"></span><span class="d-sparkle s6"></span><span class="d-sparkle s7"></span><span class="d-sparkle s8"></span><span class="d-sparkle s9"></span><span class="d-sparkle s10"></span><span class="d-sparkle s11"></span><span class="d-sparkle s12"></span>
+      </div>
+    </div>
+    <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
   </div>
 </section>
 
@@ -1915,6 +2021,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
     try { window.__dcaiClickId = clickId; } catch (e) {}
   })();
+</script>
+
+<script>
+/* Pop-out group band: reveal-on-scroll (fallback for browsers without animation-timeline) */
+(function(){
+  var stages = document.querySelectorAll('.d-stage');
+  if (!stages.length) return;
+  if (typeof IntersectionObserver === 'undefined') { stages.forEach(function(s){ s.classList.add('is-in-view'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('is-in-view'); io.unobserve(e.target); } });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  stages.forEach(function(s){ io.observe(s); });
+})();
 </script>
 
 </body>

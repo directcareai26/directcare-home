@@ -178,71 +178,72 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- NAV -->
 <nav class="nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="/" aria-label="DirectCare AI Home">
+    <a class="nav-logo" href="/">
       <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
     </a>
     <div class="nav-links">
       <div class="nav-dropdown">
-        <a class="nav-link" href="/womens-health/">Women's Health</a>
+        <a class="nav-link has-arrow" href="/womens-health/">Women's Health</a>
         <div class="nav-menu">
           <a href="/hormone-replacement-therapy">HRT</a>
-          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/womens-weight-loss">Weight Loss (GLP-1)</a>
           <a href="/womans-hair-loss/">Hair Regrowth</a>
           <a href="/supplements/">Supplements</a>
           <a href="/blood-test/">Blood Labs</a>
-          <a href="/womens-health/">View All &rarr;</a>
+          <a class="view-all" href="/womens-health/">View all →</a>
         </div>
       </div>
       <div class="nav-dropdown">
-        <a class="nav-link" href="/mens-health/">Men's Health</a>
+        <a class="nav-link has-arrow" href="/mens-health/">Men's Health</a>
         <div class="nav-menu">
           <a href="/surge-max/">Sexual Health</a>
           <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
-          <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+          <a href="/mens-weight-loss">Weight Loss (GLP-1)</a>
           <a href="/mens-hair-loss/">Hair Regrowth</a>
           <a href="/supplements/">Supplements</a>
           <a href="/blood-test/">Blood Labs</a>
-          <a href="/mens-health/">View All &rarr;</a>
+          <a class="view-all" href="/mens-health/">View all →</a>
         </div>
       </div>
       <a class="nav-link" href="/supplements/">Supplements</a>
       <a class="nav-link" href="/blood-test/">Blood Labs</a>
     </div>
     <div class="nav-right">
-      <a class="portal-btn" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+      <a class="nav-login" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal · Log in">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Log in
       </a>
-      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false" id="mobile-toggle">
-        <svg class="icon-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        <svg class="icon-close" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
       </button>
     </div>
   </div>
 </nav>
 
 <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
-  <details open>
-    <summary>Women's Health</summary>
+  <button class="drawer-close" id="drawer-close" aria-label="Close menu">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <details open><summary>Women's Health</summary>
     <a href="/hormone-replacement-therapy">HRT</a>
-    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/womens-weight-loss">Weight Loss (GLP-1)</a>
     <a href="/womans-hair-loss/">Hair Regrowth</a>
     <a href="/supplements/">Supplements</a>
     <a href="/blood-test/">Blood Labs</a>
-    <a href="/womens-health/">View All &rarr;</a>
+    <a href="/womens-health/">View all →</a>
   </details>
-  <details>
-    <summary>Men's Health</summary>
+  <details><summary>Men's Health</summary>
     <a href="/surge-max/">Sexual Health</a>
     <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
-    <a href="/weight-loss/">Weight Loss (GLP-1)</a>
+    <a href="/mens-weight-loss">Weight Loss (GLP-1)</a>
     <a href="/mens-hair-loss/">Hair Regrowth</a>
     <a href="/supplements/">Supplements</a>
     <a href="/blood-test/">Blood Labs</a>
-    <a href="/mens-health/">View All &rarr;</a>
+    <a href="/mens-health/">View all →</a>
   </details>
   <a href="/supplements/">Supplements</a>
   <a href="/blood-test/">Blood Labs</a>
-  <a href="https://directcareai.portal.tellescope.com/" style="color: var(--brand-deep); font-weight: 700;">Patient portal &rarr;</a>
+  <a class="drawer-portal" href="https://directcareai.portal.tellescope.com/">Log in / Patient portal</a>
 </div>
 
 <!-- DOC HERO -->

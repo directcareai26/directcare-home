@@ -999,7 +999,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     overflow: hidden;                          /* hard-clip horizontal overflow from rotating words / figure */
   }
   /* Explicit flush classes — same pattern as /womens-health/ */
-  .hero.flush-bottom { padding-bottom: 0 !important; }
+  .hero.flush-bottom { padding-bottom: clamp(32px, 5vw, 56px) !important; }
   section.section.flush-top { padding-top: 0 !important; background: #ffffff !important; }
   /* Belt-and-suspenders horizontal-scroll prevention on the whole page */
   html, body { overflow-x: hidden !important; }

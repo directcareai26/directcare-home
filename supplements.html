@@ -392,6 +392,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-login:hover { background: linear-gradient(135deg, var(--brand, #af4bed) 0%, var(--brand-darker, #44215A) 100%); color: white; }
     .mobile-toggle { margin-left: -10px; }
   }
+
+  /* Canonical nav breakpoint — matches home page (820px). Subpages
+     previously hid nav-links at 980px which made tablets show the
+     hamburger while the home was still showing desktop nav. */
+  @media (min-width: 821px) and (max-width: 980px) {
+    .nav-links { display: flex !important; }
+    .mobile-toggle { display: none !important; }
+  }
+  @media (max-width: 820px) {
+    .nav-links { display: none !important; }
+    .mobile-toggle { display: inline-flex !important; }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>

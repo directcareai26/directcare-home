@@ -1017,17 +1017,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   .section.soft .eyebrow .dot { background: #d8b4fe !important; }
 
-  /* ===== HOW-IT-WORKS cards in dark section ===== */
+  /* ===== HOW-IT-WORKS cards — see-through 3D glass on dark (surge-max style) ===== */
   .section.soft .how-card h3,
   .section.soft .how-card h4 { color: white !important; }
   .section.soft .how-card p { color: rgba(255,255,255,0.78) !important; }
-  /* Mobile timeline rail in how-grid */
+  @media (min-width: 721px) {
+    .section.soft .how-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%) !important;
+      border: 1px solid rgba(255,255,255,0.10) !important;
+      border-radius: var(--radius-lg) !important;
+      padding: 28px 24px !important;
+      box-shadow: 0 24px 60px -22px rgba(0,0,0,0.60), 0 6px 14px -6px rgba(0,0,0,0.40), inset 0 1px 0 rgba(255,255,255,0.06), inset 0 0 0 1px rgba(255,255,255,0.02) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      transform: none !important;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease !important;
+    }
+    .section.soft .how-card:hover {
+      background: linear-gradient(180deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 100%) !important;
+      border-color: rgba(216,180,254,0.45) !important;
+      transform: translateY(-3px) !important;
+      box-shadow: 0 30px 72px -22px rgba(0,0,0,0.70), 0 10px 24px -8px rgba(216,180,254,0.22), inset 0 1px 0 rgba(255,255,255,0.10) !important;
+    }
+    .section.soft .how-num {
+      font-size: 2.8rem !important;
+      font-weight: 900 !important;
+      background: linear-gradient(135deg, #ffffff 0%, #f0d9ff 30%, #d8b4fe 70%, #af4bed 100%) !important;
+      -webkit-background-clip: text !important;
+      background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      filter: drop-shadow(0 6px 14px rgba(216,180,254,0.35));
+      margin-bottom: 16px !important;
+    }
+  }
+  /* Mobile timeline rail */
   .section.soft .how-grid::before { background: linear-gradient(180deg, #d8b4fe 0%, rgba(216,180,254,0.15) 100%) !important; }
-  .section.soft .how-num {
-    background: linear-gradient(135deg, #d8b4fe, #af4bed) !important;
-    -webkit-text-fill-color: white !important;
-    color: white !important;
-    border-color: #1b1428 !important;
+  @media (max-width: 720px) {
+    .section.soft .how-num {
+      background: linear-gradient(135deg, #d8b4fe, #af4bed) !important;
+      -webkit-text-fill-color: white !important;
+      color: white !important;
+      border-color: #1b1428 !important;
+      box-shadow: 0 6px 16px -4px rgba(216,180,254,0.45) !important;
+    }
   }
 
   /* ===== PRICING cards — glass treatment on dark ===== */

@@ -323,6 +323,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
   }
+
+  /* ==========================================================
+     DEEP PURPLE THEME — replace lavender .section.soft + footer
+     with the same dark-purple wash used on the men's weight
+     loss / TRT / Surge Max pages.
+     ========================================================== */
+  .section.soft {
+    background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%) !important;
+    color: #f7e8ff;
+  }
+  .section.soft h2,
+  .section.soft h3,
+  .section.soft .intro-band h2,
+  .section.soft .grid-head h2 { color: #ffffff; }
+  .section.soft p { color: rgba(247,232,255,0.82); }
+  .section.soft .h-italic {
+    background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 60%, #c88bff 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  /* HOW IT WORKS cards on dark — glass treatment */
+  .section.soft .how-card {
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.14) !important;
+    backdrop-filter: blur(10px);
+  }
+  .section.soft .how-card h3 { color: #ffffff; }
+  .section.soft .how-card p { color: rgba(247,232,255,0.80); }
+  .section.soft .how-card .how-num {
+    background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  /* FOOTER — deep purple */
+  footer {
+    background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%) !important;
+    border-top: 1px solid rgba(255,255,255,0.10) !important;
+    color: rgba(247,232,255,0.82);
+  }
+  footer .foot-brand p { color: rgba(247,232,255,0.78); }
+  footer .foot-col h5 { color: #ffffff !important; }
+  footer .foot-col a { color: rgba(247,232,255,0.78) !important; }
+  footer .foot-col a:hover { color: #d8a8ff !important; }
+  footer .foot-col-legal a { color: rgba(247,232,255,0.60) !important; }
+  footer .foot-col-legal a:hover { color: #d8a8ff !important; }
+  footer .legal {
+    border-top: 1px solid rgba(255,255,255,0.10) !important;
+    color: rgba(247,232,255,0.70);
+  }
+  footer .legal-disclaimer { color: rgba(247,232,255,0.62); }
+  footer .legal-disclaimer strong { color: rgba(255,255,255,0.86); }
+  footer .social-row a {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.16) !important;
+    color: #d8a8ff !important;
+  }
+  footer .social-row a:hover {
+    background: #af4bed !important;
+    color: #ffffff !important;
+  }
 </style>
 
 <!-- FlexOffers AdvertiserMax click tracking -->
@@ -416,7 +479,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <h1>Total care, <span class="accent">tuned to your numbers.</span></h1>
     <p class="lead">TRT, sexual health, GLP-1 weight loss, hair regrowth, blood labs, and physician-formulated supplements — prescribed by US-licensed clinicians and shipped to your door. No insurance required.</p>
     <div class="hero-cta-row">
-      <a class="btn btn-on-dark btn-primary-xl" href="/testosterone-replacement-therapy">Start TRT intake →</a>
+      <a class="btn btn-on-dark btn-primary-xl" style="background: linear-gradient(135deg, #5cf3c1 0%, #10b981 48%, #059669 100%); color: #fff; border: 1px solid transparent; box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45);" href="/testosterone-replacement-therapy">Start TRT intake →</a>
       <a class="btn btn-on-dark btn-primary-xl" style="background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.30); backdrop-filter: blur(8px);" href="/blood-test/">Order blood labs</a>
     </div>
     <div class="hero-trust">

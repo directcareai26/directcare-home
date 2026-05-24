@@ -1,6 +1,23 @@
 {
   "posts": [
     {
+      "slug": "40g-protein-smoothie-three-minute-breakfast",
+      "title": "The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein",
+      "excerpt": "One blender, six ingredients, three minutes, 40 grams of protein. The Sunday-night freezer prep that fixes Monday-through-Friday breakfast.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-05-24",
+      "dateLabel": "May 24, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+      "keywords": [
+        "high protein smoothie",
+        "40g protein breakfast smoothie",
+        "GLP-1 smoothie",
+        "whey protein smoothie",
+        "meal replacement smoothie"
+      ]
+    },
+    {
       "slug": "glp1-mediterranean-salmon-bowl-recipe",
       "title": "The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark",
       "excerpt": "A 30-minute sheet-pan dinner that hits 38g protein, 10g fiber, and the omega-3 target in one bowl. Built for the appetite a GLP-1 actually leaves you.",

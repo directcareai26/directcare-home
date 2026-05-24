@@ -345,10 +345,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     object-fit: contain !important;
     width: 100%;
     height: auto;
-    /* Radial mask fades the SVG's embedded rectangle bg to transparent at
-       the edges — figure floats, no visible "box" behind. */
-    -webkit-mask-image: radial-gradient(ellipse 72% 88% at 50% 56%, #000 56%, transparent 100%);
-            mask-image: radial-gradient(ellipse 72% 88% at 50% 56%, #000 56%, transparent 100%);
+    /* Tighter radial mask on desktop — narrow + tall ellipse with a hard
+       fade so the SVG's built-in rounded-rectangle background is fully
+       obscured and only the figure silhouette reads. */
+    -webkit-mask-image: radial-gradient(ellipse 54% 82% at 50% 55%, #000 40%, transparent 88%);
+            mask-image: radial-gradient(ellipse 54% 82% at 50% 55%, #000 40%, transparent 88%);
     filter:
       drop-shadow(0 28px 50px rgba(118,43,164,0.30))
       drop-shadow(0 10px 18px rgba(118,43,164,0.20))

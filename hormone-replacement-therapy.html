@@ -1345,6 +1345,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
   }
+
+  /* ============================================================
+     CLINICAL ADVISOR — Dr. Tim Pepin section
+     ============================================================ */
+  .clinical-advisor {
+    background: white;
+    border: 1px solid var(--lavender-100);
+    border-radius: var(--radius-xl);
+    padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: clamp(28px, 4vw, 48px);
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    box-shadow: 0 18px 50px -16px rgba(118,43,164,0.16);
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .clinical-advisor::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(175,75,237,0.06), transparent 60%); z-index: 0; pointer-events: none; }
+  .clinical-advisor > * { position: relative; z-index: 1; }
+  @media (max-width: 720px) { .clinical-advisor { grid-template-columns: 1fr; text-align: center; padding: 28px 22px; } }
+  .clinical-advisor-photo { width: 100%; aspect-ratio: 1 / 1; max-width: 200px; border-radius: 50%; overflow: hidden; box-shadow: 0 16px 40px rgba(118, 43, 164, 0.22), 0 0 0 6px white, 0 0 0 7px var(--lavender-100); justify-self: center; }
+  .clinical-advisor-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+  .clinical-advisor-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 10px; }
+  .clinical-advisor-name { font-family: 'Geist', 'Manrope', sans-serif; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.1; color: var(--ink); margin-bottom: 4px; }
+  .clinical-advisor-name em { font-style: italic; color: var(--brand-deep); font-weight: 400; }
+  .clinical-advisor-role { font-size: 0.92rem; font-weight: 500; color: var(--ink); opacity: 0.7; margin-bottom: 16px; }
+  .clinical-advisor-bio { font-size: 1rem; line-height: 1.6; color: var(--ink); opacity: 0.85; max-width: 56ch; }
+  @media (max-width: 720px) { .clinical-advisor-bio { margin-left: auto; margin-right: auto; } }
+  .clinical-advisor-credentials { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 720px) { .clinical-advisor-credentials { justify-content: center; } }
+  .clinical-advisor-credentials span { font-size: 0.72rem; font-weight: 600; color: var(--brand-deep); background: rgba(175,75,237,0.08); border: 1px solid rgba(175,75,237,0.18); padding: 5px 11px; border-radius: 999px; letter-spacing: 0.02em; }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -1784,6 +1818,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="key"><span class="mark yes">✓</span> Included</span>
         <span class="key"><span class="mark partial">△</span> Sometimes</span>
         <span class="key"><span class="mark no">✗</span> Not offered</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CLINICAL ADVISOR — Dr. Tim Pepin -->
+<section class="section">
+  <div class="container">
+    <div class="clinical-advisor" aria-labelledby="clinical-advisor-name">
+      <div class="clinical-advisor-photo">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Dr.%20Pepin.png" alt="Dr. Tim Pepin, D.C. Clinical Advisor" loading="lazy" />
+      </div>
+      <div>
+        <div class="clinical-advisor-eyebrow">Clinical leadership</div>
+        <h2 id="clinical-advisor-name" class="clinical-advisor-name">Dr. Tim Pepin, <em>D.C.</em></h2>
+        <div class="clinical-advisor-role">Clinical Advisor &amp; Director of Integrative Health</div>
+        <p class="clinical-advisor-bio">DirectCare AI is supported by experienced healthcare professionals dedicated to delivering safe, patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols, helping ensure our services reflect current evidence-based best practices.</p>
+        <div class="clinical-advisor-credentials" aria-label="Credentials">
+          <span>Integrative Health</span>
+          <span>Preventive Care</span>
+        </div>
       </div>
     </div>
   </div>

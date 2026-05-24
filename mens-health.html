@@ -142,7 +142,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .grid-head h2 { margin-bottom: 14px; }
   .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
   @media (max-width: 980px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 620px) { .product-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 620px) {
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .product-tile-name { font-size: 1.05rem !important; line-height: 1.15 !important; font-weight: 700 !important; }
+  }
   .product-tile { position: relative; display: block; overflow: hidden; border-radius: var(--radius-lg); aspect-ratio: 4 / 5; box-shadow: 0 12px 28px -10px rgba(118,43,164,0.18); transition: transform .25s ease, box-shadow .25s ease; isolation: isolate; }
   .product-tile:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -14px rgba(118,43,164,0.30); }
   .product-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
@@ -512,8 +515,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="TRT. Testosterone Replacement Therapy" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">Hormone therapy</span>
-          <div class="product-tile-name">TRT</div>
+          <div class="product-tile-name">Testosterone Replacement</div>
           <div class="product-tile-sub">Injectable, oral, and enclomiphene. Dosed to your real bloodwork.</div>
         </div>
       </a>
@@ -521,7 +523,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" alt="Surge Max. Sexual Health" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">Sexual health</span>
           <div class="product-tile-name">Surge Max</div>
           <div class="product-tile-sub">The 4-in-1 sublingual: sildenafil + tadalafil + vardenafil + apomorphine.</div>
         </div>
@@ -530,7 +531,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png" alt="GLP-1 Weight Loss" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">GLP-1</span>
           <div class="product-tile-name">Weight Loss</div>
           <div class="product-tile-sub">Compounded semaglutide &amp; tirzepatide with a Care Coach from day one.</div>
         </div>
@@ -539,7 +539,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" alt="Hair Regrowth for Men" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">Trichology</span>
           <div class="product-tile-name">Hair Regrowth</div>
           <div class="product-tile-sub">Topical and oral protocols. Finasteride, dutasteride, minoxidil and more.</div>
         </div>
@@ -548,7 +547,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" alt="Blood Labs" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">Bloodwork</span>
           <div class="product-tile-name">Blood Labs</div>
           <div class="product-tile-sub">80+ biomarker panel with a clinician-written, plain-English plan.</div>
         </div>
@@ -557,7 +555,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="Supplements" loading="lazy" />
         <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
         <div class="product-tile-info">
-          <span class="product-tile-tag">Supplements</span>
           <div class="product-tile-name">Supplements</div>
           <div class="product-tile-sub">Physician-formulated stacks via Fullscript. Recommended by your clinician.</div>
         </div>

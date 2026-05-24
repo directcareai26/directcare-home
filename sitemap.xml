@@ -93,6 +93,11 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/bill-of-rights/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast</loc>
     <lastmod>2026-05-24</lastmod>
     <changefreq>monthly</changefreq>

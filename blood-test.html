@@ -194,10 +194,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .seal-text strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
   .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
   @media (max-width: 760px) {
-    .trust-seal-inner { gap: 18px 24px; justify-content: space-around; }
-    .seal-icon { width: 34px; height: 34px; }
-    .seal-text strong { font-size: 0.78rem; }
-    .seal-text span { font-size: 0.68rem; }
+    /* Lock to a 2x2 grid on every phone width so seals never wrap unevenly */
+    .trust-seal-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 14px; justify-content: stretch; align-items: center; }
+    .seal { display: flex; align-items: center; gap: 10px; min-width: 0; width: 100%; }
+    .seal-icon { width: 34px; height: 34px; flex-shrink: 0; }
+    .seal-text { min-width: 0; flex: 1; }
+    .seal-text strong { font-size: 0.78rem; line-height: 1.15; overflow-wrap: break-word; }
+    .seal-text span { font-size: 0.68rem; line-height: 1.2; overflow-wrap: break-word; }
+  }
+  /* Tighter pass for iPhone SE / Mini-class screens (<= 380px) */
+  @media (max-width: 380px) {
+    .trust-seal-bar { padding: 20px 0; }
+    .trust-seal-inner { gap: 14px 10px; }
+    .seal { gap: 8px; }
+    .seal-icon { width: 30px; height: 30px; }
+    .seal-icon svg { width: 16px; height: 16px; }
+    .seal-text strong { font-size: 0.72rem; }
+    .seal-text span { font-size: 0.62rem; }
   }
 
   /* JOURNEY (3 numbered cards) */

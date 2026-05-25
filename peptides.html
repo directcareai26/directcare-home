@@ -8,7 +8,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
 <!-- End Google Tag Manager -->
-<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 2.5s, whichever first) -->
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
 <script>
 (function(){
   // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   events.forEach(function(evt) {
     window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
   });
-  setTimeout(loadFbEvents, 2500);
+  setTimeout(loadFbEvents, 10000);
 })();
 </script>
 <noscript><img height="1" width="1" style="display:none"

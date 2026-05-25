@@ -8,6 +8,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
 <!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1567193354573862');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -423,5 +441,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <script type="application/json" id="posts-data">{"posts":[{"slug":"semaglutide-tirzepatide-difference","title":"Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs","excerpt":"Same weekly injection, different mechanism. Why your hormone panel \u2014 not just BMI \u2014 should drive the choice between semaglutide and tirzepatide.","category":"Weight Loss","categorySlug":"weight-loss","date":"2026-05-21","dateLabel":"May 21, 2026","image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png","keywords":["semaglutide","tirzepatide","GLP-1","weight loss","compounded GLP-1","Wegovy alternative","Zepbound alternative","GIP/GLP-1 agonist"]},{"slug":"hrt-after-40-what-actually-changes","title":"HRT after 40: what actually changes when estradiol and progesterone come back online","excerpt":"The bloodwork shifts, the symptoms shift, and so does your protocol. A clinician's plain-English breakdown of what to expect month by month.","category":"HRT","categorySlug":"hrt","date":"2026-05-20","dateLabel":"May 20, 2026","image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png","keywords":["HRT","menopause","estradiol","progesterone","perimenopause","hormone replacement therapy","hot flashes","bioidentical hormones"]},{"slug":"trt-vs-enclomiphene-which-protocol","title":"TRT vs. enclomiphene: which testosterone protocol is right for you?","excerpt":"Injectable testosterone, oral pills, and natural-pathway therapy each move your numbers differently. Here's how a clinician decides which one fits your bloodwork and your life.","category":"TRT","categorySlug":"trt","date":"2026-05-19","dateLabel":"May 19, 2026","image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png","keywords":["TRT","enclomiphene","testosterone therapy","low T","clomid alternative"]}]}</script>
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="tellescope.com"]');
+    if (a) {
+      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
 </body>
 </html>

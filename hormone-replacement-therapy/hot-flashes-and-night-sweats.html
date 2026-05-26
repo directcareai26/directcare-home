@@ -156,6 +156,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .nav-login:hover { background: var(--brand); color: white; }
   .nav-login:hover svg { color: white; }
   .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  /* Without an explicit size the inline SVG renders at the spec default 300x150 and clips to nothing inside the 40px button */
+  .mobile-toggle svg { width: 22px; height: 22px; stroke: currentColor; display: block; }
   @media (max-width: 980px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } }
   .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
   .mobile-drawer.open { display: flex; }

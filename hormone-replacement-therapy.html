@@ -1385,6 +1385,23 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
   }
+
+  /* SYMPTOM CARD GRID — links to per-symptom deep-dive pages */
+  .sym-section { padding: clamp(48px, 5.4vw, 84px) 0; }
+  .sym-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+  @media (max-width: 1100px) { .sym-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .sym-grid { grid-template-columns: 1fr; } }
+  .sym-card { position: relative; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 26px 22px 22px; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; display: flex; flex-direction: column; gap: 10px; min-height: 220px; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
+  .sym-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
+  .sym-card .sym-ico { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--soft) 0%, var(--lavender-100) 100%); display: grid; place-items: center; color: var(--brand-deep); margin-bottom: 4px; }
+  .sym-card h3 { font-size: 1.08rem; line-height: 1.22; font-family: 'Geist','Manrope',sans-serif; font-weight: 800; color: var(--ink); margin: 0; }
+  .sym-card p { font-size: 0.88rem; line-height: 1.5; color: var(--muted); margin: 0; }
+  .sym-card .sym-arrow { margin-top: auto; padding-top: 12px; font-size: 0.86rem; color: var(--brand-deep); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; transition: gap .15s ease; }
+  .sym-card:hover .sym-arrow { gap: 10px; }
+  .sym-card.coming { pointer-events: none; opacity: 0.78; }
+  .sym-card.coming .sym-arrow { color: var(--muted); }
+  .sym-card .sym-pill { position: absolute; top: 14px; right: 14px; background: rgba(13,116,86,0.10); color: var(--emerald, #0d7456); font-size: 0.66rem; padding: 4px 10px; border-radius: 999px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+  .sym-card.coming .sym-pill { background: var(--soft); color: var(--muted); }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -1559,6 +1576,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="d-headline"><h2>It's <em>not</em> in your head.</h2></div>
+  </div>
+</section>
+
+<!-- SYMPTOM DEEP-DIVES — links to per-symptom pages -->
+<section class="section sym-section" id="symptoms">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow"><span class="dot"></span> Symptoms we treat</span>
+      <h2>The symptoms behind it.<br/><span class="accent">Each one, treatable.</span></h2>
+      <p>Pick the symptom hitting you hardest — we'll walk you through what's happening, why, and what actually works.</p>
+    </div>
+    <div class="sym-grid">
+
+      <a class="sym-card" href="/hormone-replacement-therapy/hot-flashes-and-night-sweats">
+        <span class="sym-pill">Live</span>
+        <div class="sym-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+        </div>
+        <h3>Hot flashes &amp; night sweats</h3>
+        <p>Sudden waves of heat, 3 a.m. wake-ups, broken sleep. The fix is upstream.</p>
+        <span class="sym-arrow">Read more →</span>
+      </a>
+
+      <a class="sym-card coming" href="#" aria-disabled="true">
+        <span class="sym-pill">Coming soon</span>
+        <div class="sym-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Trouble sleeping</h3>
+        <p>Waking at 3 a.m. and not falling back asleep — even without obvious sweats.</p>
+        <span class="sym-arrow">Read more →</span>
+      </a>
+
+      <a class="sym-card coming" href="#" aria-disabled="true">
+        <span class="sym-pill">Coming soon</span>
+        <div class="sym-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+        </div>
+        <h3>Mood, anxiety, brain fog</h3>
+        <p>Why estrogen affects serotonin and cognition — and how treatment lifts the fog.</p>
+        <span class="sym-arrow">Read more →</span>
+      </a>
+
+      <a class="sym-card coming" href="#" aria-disabled="true">
+        <span class="sym-pill">Coming soon</span>
+        <div class="sym-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <h3>Low libido &amp; vaginal dryness</h3>
+        <p>The estrogen + testosterone combination most women aren't told about.</p>
+        <span class="sym-arrow">Read more →</span>
+      </a>
+
+      <a class="sym-card coming" href="#" aria-disabled="true">
+        <span class="sym-pill">Coming soon</span>
+        <div class="sym-ico">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Weight gain &amp; energy crashes</h3>
+        <p>The metabolic story of perimenopause — and what protocols actually move the needle.</p>
+        <span class="sym-arrow">Read more →</span>
+      </a>
+
+    </div>
   </div>
 </section>
 

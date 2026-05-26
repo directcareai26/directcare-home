@@ -1387,17 +1387,25 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   }
 
   /* SYMPTOM CARD GRID — links to per-symptom deep-dive pages */
-  .sym-section { padding: clamp(56px, 6vw, 96px) 0 clamp(64px, 7vw, 110px); }
+  .sym-section { padding: clamp(48px, 5.4vw, 84px) 0 clamp(72px, 7.5vw, 120px); }
   .sym-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-  @media (max-width: 1100px) { .sym-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 540px) { .sym-grid { grid-template-columns: 1fr; } }
-  .sym-card { position: relative; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 26px 22px 24px; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; display: flex; flex-direction: column; gap: 10px; min-height: 240px; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
+  @media (max-width: 1100px) { .sym-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
+  @media (max-width: 540px) { .sym-grid { grid-template-columns: 1fr; gap: 12px; } }
+  .sym-card { position: relative; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 20px 22px; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; display: flex; flex-direction: column; gap: 10px; min-height: 240px; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
   .sym-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
-  .sym-card .sym-ico { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--soft) 0%, var(--lavender-100) 100%); display: grid; place-items: center; color: var(--brand-deep); margin-bottom: 4px; }
-  .sym-card h3 { font-size: 1.08rem; line-height: 1.22; font-family: 'Geist','Manrope',sans-serif; font-weight: 800; color: var(--ink); margin: 0; }
+  .sym-card .sym-ico { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--soft) 0%, var(--lavender-100) 100%); display: grid; place-items: center; color: var(--brand-deep); margin-bottom: 4px; flex-shrink: 0; }
+  .sym-card h3 { font-size: 1.05rem; line-height: 1.22; font-family: 'Geist','Manrope',sans-serif; font-weight: 800; color: var(--ink); margin: 0; text-wrap: balance; }
   .sym-card p { font-size: 0.88rem; line-height: 1.5; color: var(--muted); margin: 0; }
   .sym-card .sym-cta { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; background: var(--soft); color: var(--brand-deep); font-size: 0.82rem; font-weight: 700; border: 1px solid var(--lavender-100); transition: background .15s ease, color .15s ease, transform .15s ease, gap .15s ease; }
   .sym-card:hover .sym-cta { background: var(--brand); color: white; border-color: var(--brand); gap: 9px; }
+  /* Mobile: comfortable touch targets, slightly tighter cards, full-width CTA chip */
+  @media (max-width: 540px) {
+    .sym-card { min-height: 0; padding: 22px 20px 22px; gap: 8px; }
+    .sym-card h3 { font-size: 1.08rem; }
+    .sym-card p { font-size: 0.92rem; }
+    .sym-card .sym-cta { padding: 10px 18px; font-size: 0.86rem; margin-top: 10px; }
+    .sym-section .section-head h2 br { display: none; }
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -1635,7 +1643,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section soft flush-top" id="how">
+<section class="section soft" id="how">
   <div class="container">
     <div class="section-head">
       <span class="eyebrow"><span class="dot"></span> How it works</span>

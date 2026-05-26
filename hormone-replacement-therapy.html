@@ -1389,8 +1389,16 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   /* SYMPTOM CARD GRID — links to per-symptom deep-dive pages */
   .sym-section { padding: clamp(48px, 5.4vw, 84px) 0 clamp(72px, 7.5vw, 120px); }
   .sym-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
-  @media (max-width: 1100px) { .sym-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; } }
-  @media (max-width: 540px) { .sym-grid { grid-template-columns: 1fr; gap: 12px; } }
+  /* Tablet + mobile: 2-up grid; last (5th) card spans the full row and centers
+     to half-width so we keep a clean 2×2 + 1 layout (no awkward orphan column) */
+  @media (max-width: 1100px) {
+    .sym-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .sym-grid > .sym-card:nth-child(5) {
+      grid-column: 1 / -1;
+      max-width: calc(50% - 7px);
+      margin-inline: auto;
+    }
+  }
   .sym-card { position: relative; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 24px 20px 22px; transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease; display: flex; flex-direction: column; gap: 10px; min-height: 240px; box-shadow: 0 8px 24px -14px rgba(118,43,164,0.10); }
   .sym-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
   .sym-card .sym-ico { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, var(--soft) 0%, var(--lavender-100) 100%); display: grid; place-items: center; color: var(--brand-deep); margin-bottom: 4px; flex-shrink: 0; }
@@ -1398,13 +1406,15 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   .sym-card p { font-size: 0.88rem; line-height: 1.5; color: var(--muted); margin: 0; }
   .sym-card .sym-cta { margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; padding: 9px 16px; border-radius: 999px; background: var(--soft); color: var(--brand-deep); font-size: 0.82rem; font-weight: 700; border: 1px solid var(--lavender-100); transition: background .15s ease, color .15s ease, transform .15s ease, gap .15s ease; }
   .sym-card:hover .sym-cta { background: var(--brand); color: white; border-color: var(--brand); gap: 9px; }
-  /* Mobile: comfortable touch targets, slightly tighter cards, full-width CTA chip */
+  /* Mobile: stay 2-up, tighter cards + readable text */
   @media (max-width: 540px) {
-    .sym-card { min-height: 0; padding: 22px 20px 22px; gap: 8px; }
-    .sym-card h3 { font-size: 1.08rem; }
-    .sym-card p { font-size: 0.92rem; }
-    .sym-card .sym-cta { padding: 10px 18px; font-size: 0.86rem; margin-top: 10px; }
-    .sym-section .section-head h2 br { display: none; }
+    .sym-grid { gap: 10px; }
+    .sym-grid > .sym-card:nth-child(5) { max-width: calc(50% - 5px); }
+    .sym-card { min-height: 0; padding: 18px 14px 16px; gap: 8px; }
+    .sym-card .sym-ico { width: 38px; height: 38px; }
+    .sym-card h3 { font-size: 0.98rem; line-height: 1.2; }
+    .sym-card p { font-size: 0.82rem; line-height: 1.45; }
+    .sym-card .sym-cta { padding: 8px 14px; font-size: 0.78rem; margin-top: 6px; }
   }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->

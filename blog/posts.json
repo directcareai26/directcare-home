@@ -1,14 +1,32 @@
 {
   "posts": [
     {
+      "slug": "3x-week-resistance-workout-glp1-muscle-preservation",
+      "title": "The 3x-per-week resistance workout that preserves muscle on a GLP-1",
+      "excerpt": "If you're losing weight on a GLP-1, the wrong workout will leave you smaller and weaker. The right one — three sessions a week, six lifts — turns the same weight loss into a body composition you'd actually want.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-05-26",
+      "dateLabel": "May 26, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Lifestyle%20%26%20Exercise.png",
+      "keywords": [
+        "GLP-1 workout",
+        "preserve muscle weight loss",
+        "resistance training semaglutide",
+        "tirzepatide muscle loss",
+        "full body workout weight loss",
+        "3 day workout split"
+      ]
+    },
+    {
       "slug": "30-minute-beginner-home-workout-no-equipment",
       "title": "The 30-minute beginner home workout: a full-body routine that needs zero equipment",
       "excerpt": "A clinician-built 30-minute beginner workout you can do at home with no equipment. Three rounds, eight bodyweight moves, full-body, RPE-paced.",
-      "category": "Weight Loss",
-      "categorySlug": "weight-loss",
+      "category": "Fitness",
+      "categorySlug": "fitness",
       "date": "2026-05-26",
       "dateLabel": "May 26, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Active%20outdoor%20variant.png",
       "keywords": [
         "30 minute beginner workout",
         "at home workout for beginners",

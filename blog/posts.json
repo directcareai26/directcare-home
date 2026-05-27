@@ -3,7 +3,7 @@
     {
       "slug": "10-biomarkers-that-predict-longevity",
       "title": "10 Biomarkers That Actually Predict Longevity",
-      "excerpt": "Your annual physical probably checks LDL and glucose. It probably doesn't check ApoB, Lp(a), or hs-CRP — the biomarkers with the strongest links to how long you'll actually live.",
+      "excerpt": "Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan \u2014 and why your annual physical probably checks none of them.",
       "category": "Blood Labs",
       "categorySlug": "blood-labs",
       "date": "2026-05-27",
@@ -25,7 +25,7 @@
     {
       "slug": "morning-erections-testosterone-what-they-tell-clinician",
       "title": "Morning erections and testosterone: what nocturnal tumescence actually tells your clinician",
-      "excerpt": "Morning wood isn't a bro joke — it's a free clinical signal that catches low testosterone, vascular issues, and sleep problems before bloodwork even runs. Here's what a clinician actually reads from it.",
+      "excerpt": "Explains why morning erections are a free clinical signal for low testosterone, vascular health, and sleep quality \u2014 and what a clinician reads from their frequency.",
       "category": "TRT",
       "categorySlug": "trt",
       "date": "2026-05-26",
@@ -43,7 +43,7 @@
     {
       "slug": "3x-week-resistance-workout-glp1-muscle-preservation",
       "title": "The 3x-per-week resistance workout that preserves muscle on a GLP-1",
-      "excerpt": "If you're losing weight on a GLP-1, the wrong workout will leave you smaller and weaker. The right one — three sessions a week, six lifts — turns the same weight loss into a body composition you'd actually want.",
+      "excerpt": "Outlines the three-day-per-week resistance training protocol that preserves muscle during GLP-1 weight loss: six compound lifts, 6-12 reps, two work sets each.",
       "category": "Fitness",
       "categorySlug": "fitness",
       "date": "2026-05-26",
@@ -61,7 +61,7 @@
     {
       "slug": "30-minute-beginner-home-workout-no-equipment",
       "title": "The 30-minute beginner home workout: a full-body routine that needs zero equipment",
-      "excerpt": "A clinician-built 30-minute beginner workout you can do at home with no equipment. Three rounds, eight bodyweight moves, full-body, RPE-paced.",
+      "excerpt": "Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE \u2014 no equipment.",
       "category": "Fitness",
       "categorySlug": "fitness",
       "date": "2026-05-26",
@@ -81,7 +81,7 @@
     {
       "slug": "walking-7000-steps-cardio-prescription",
       "title": "The 7,000-step rule: why walking is the underrated cardio prescription",
-      "excerpt": "More research, less branded equipment. A clinician's case for why a 7,000-step daily target outperforms most of the cardio prescriptions Americans actually try to follow.",
+      "excerpt": "Explains why 7,000 daily steps is the most evidence-backed cardio target for adults \u2014 and why higher counts show diminishing returns in the published literature.",
       "category": "Fitness",
       "categorySlug": "fitness",
       "date": "2026-05-25",
@@ -100,7 +100,7 @@
     {
       "slug": "5-minute-chickpea-tuna-lunch-bowl",
       "title": "The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required",
-      "excerpt": "A no-stove, no-microwave, pantry-pull lunch that lands at 35 grams of protein, 14 grams of fiber, and a clean Mediterranean profile. Built for the workdays you don't want to think about lunch.",
+      "excerpt": "Recipe for a 5-minute pantry lunch bowl: canned chickpeas + tuna + olive oil + lemon. Hits 35g protein and 14g fiber with no stove or microwave.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-05-24",
@@ -118,7 +118,7 @@
     {
       "slug": "40g-protein-smoothie-three-minute-breakfast",
       "title": "The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein",
-      "excerpt": "One blender, six ingredients, three minutes, 40 grams of protein. The Sunday-night freezer prep that fixes Monday-through-Friday breakfast.",
+      "excerpt": "Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk. Blends in 3 minutes from a Sunday-night freezer prep.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-05-24",
@@ -135,7 +135,7 @@
     {
       "slug": "glp1-mediterranean-salmon-bowl-recipe",
       "title": "The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark",
-      "excerpt": "A 30-minute sheet-pan dinner that hits 38g protein, 10g fiber, and the omega-3 target in one bowl. Built for the appetite a GLP-1 actually leaves you.",
+      "excerpt": "Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s \u2014 built for the smaller appetite a GLP-1 leaves you with.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-05-23",
@@ -153,7 +153,7 @@
     {
       "slug": "glp1-nutrition-four-rule-framework",
       "title": "The 4-rule food framework for staying full and fueled on a GLP-1",
-      "excerpt": "When appetite is dialed down, every bite has to pull its weight. A clinician's four rules for what to eat on semaglutide or tirzepatide, drawn from the published literature.",
+      "excerpt": "Outlines the 4-rule eating framework for GLP-1 patients: 1g protein per pound goal weight, fiber > 25g/day, hydration > 80oz, no liquid calories.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-05-22",
@@ -171,7 +171,7 @@
     {
       "slug": "semaglutide-tirzepatide-difference",
       "title": "Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs",
-      "excerpt": "Same weekly injection, different mechanism. Why your hormone panel — not just BMI — should drive the choice between semaglutide and tirzepatide.",
+      "excerpt": "Compares semaglutide vs. tirzepatide for weight loss: tirzepatide hits two receptors (GIP + GLP-1) and drops 15-22% body weight vs 12-15% for semaglutide.",
       "category": "Weight Loss",
       "categorySlug": "weight-loss",
       "date": "2026-05-21",
@@ -191,7 +191,7 @@
     {
       "slug": "hrt-after-40-what-actually-changes",
       "title": "HRT after 40: what actually changes when estradiol and progesterone come back online",
-      "excerpt": "The bloodwork shifts, the symptoms shift, and so does your protocol. A clinician's plain-English breakdown of what to expect month by month.",
+      "excerpt": "Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks, body composition and libido shift at 3-6 months.",
       "category": "HRT",
       "categorySlug": "hrt",
       "date": "2026-05-20",
@@ -211,7 +211,7 @@
     {
       "slug": "trt-vs-enclomiphene-which-protocol",
       "title": "TRT vs. enclomiphene: which testosterone protocol is right for you?",
-      "excerpt": "Injectable testosterone, oral pills, and natural-pathway therapy each move your numbers differently. Here's how a clinician decides which one fits your bloodwork and your life.",
+      "excerpt": "Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene \u2014 and which bloodwork pattern fits each.",
       "category": "TRT",
       "categorySlug": "trt",
       "date": "2026-05-19",
@@ -228,7 +228,7 @@
     {
       "slug": "morning-testosterone-test-timing",
       "title": "Why morning testosterone tests matter (and what time of day ruins yours)",
-      "excerpt": "Testosterone is one of the most variable hormones in your body across a single day. If you draw labs at the wrong hour, you'll diagnose yourself with a problem you don't have — or miss one you do.",
+      "excerpt": "Explains why testosterone must be tested before 10am: levels can drop 25-30% from 7am to noon, enough to flip a normal reading into a low-T diagnosis or vice versa.",
       "category": "TRT",
       "categorySlug": "trt",
       "date": "2026-05-17",
@@ -245,7 +245,7 @@
     {
       "slug": "progesterone-at-night-timing-vs-dose",
       "title": "Progesterone at night: why timing matters more than dose for menopause sleep",
-      "excerpt": "Oral micronized progesterone is one of the most sedating hormones we prescribe — but only when you take it the right way, at the right hour. Here's what that means in practice.",
+      "excerpt": "Explains why oral micronized progesterone for menopause must be taken at bedtime: timing drives the sedating effect more than dose, and morning dosing wastes the benefit.",
       "category": "HRT",
       "categorySlug": "hrt",
       "date": "2026-05-14",
@@ -262,7 +262,7 @@
     {
       "slug": "sildenafil-vs-tadalafil-pde5-comparison",
       "title": "Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently",
-      "excerpt": "Same drug class, very different drugs. Onset, duration, food interaction, and side-effect profile all matter — and the right one for you depends less on marketing and more on your lifestyle.",
+      "excerpt": "Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours \u2014 daily dosing changes the math.",
       "category": "Sexual Health",
       "categorySlug": "sexual-health",
       "date": "2026-05-10",
@@ -281,7 +281,7 @@
     {
       "slug": "female-libido-testosterone-clinician-conversation",
       "title": "Female libido and testosterone: the conversation most clinicians skip",
-      "excerpt": "Women's testosterone crashes in the 40s — and almost no primary-care visit picks up on it. A clinician's guide to what to test, what to expect, and what a low-dose testosterone cream actually does.",
+      "excerpt": "Explains why women's testosterone crashes in the 40s and what to test: total testosterone, free testosterone, SHBG \u2014 and what a 0.5-1mg/day topical testosterone protocol does.",
       "category": "Sexual Health",
       "categorySlug": "sexual-health",
       "date": "2026-05-06",
@@ -298,7 +298,7 @@
     {
       "slug": "topical-vs-oral-finasteride-men-hair",
       "title": "Topical finasteride vs. oral: how to get scalp results with fewer side effects",
-      "excerpt": "Oral finasteride works — and produces side effects in a small but real percentage of men. Topical finasteride changes that math by concentrating the drug where you want it and minimizing systemic exposure.",
+      "excerpt": "Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure \u2014 and the side effects (libido, mood) it reduces.",
       "category": "Hair Regrowth",
       "categorySlug": "hair-regrowth",
       "date": "2026-05-02",
@@ -315,7 +315,7 @@
     {
       "slug": "womens-hair-loss-hormonal-panel",
       "title": "Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters",
-      "excerpt": "Female-pattern hair loss has more drivers than male-pattern: ferritin, thyroid, androgens, and the perimenopausal estradiol drop all play in. The protocol that works starts with the panel that catches them.",
+      "excerpt": "Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin \u2014 and what each finding means.",
       "category": "Hair Regrowth",
       "categorySlug": "hair-regrowth",
       "date": "2026-04-27",
@@ -332,7 +332,7 @@
     {
       "slug": "sheet-pan-miso-salmon-bok-choy-recipe",
       "title": "Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner",
-      "excerpt": "Sweet, salty, umami-glazed salmon with charred bok choy and brown rice. The 25-minute dinner that tastes like the restaurant version.",
+      "excerpt": "Recipe for sheet-pan miso-glazed salmon with charred bok choy and brown rice: 25 minutes, 35g protein, omega-3 target hit in one pan.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-04-27",
@@ -349,7 +349,7 @@
     {
       "slug": "glp1-month-one-side-effects-food-noise",
       "title": "What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp",
-      "excerpt": "The first 4 weeks of semaglutide or tirzepatide are not the same as the next 12. A clinician's week-by-week guide to what's normal, what's not, and how to make the early ramp survivable.",
+      "excerpt": "Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3, energy returns by week 4.",
       "category": "Weight Loss",
       "categorySlug": "weight-loss",
       "date": "2026-04-21",
@@ -366,7 +366,7 @@
     {
       "slug": "eggs-vs-egg-whites-which-fits-protocol",
       "title": "Eggs vs. egg whites: which one actually fits your protocol",
-      "excerpt": "Decades of cholesterol panic vs. recent rehabilitation. A clinician's take on when whole eggs win, when whites earn their spot, and the math behind both.",
+      "excerpt": "Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you're hitting 1g/lb protein on a calorie ceiling.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-04-17",
@@ -383,7 +383,7 @@
     {
       "slug": "body-recomp-glp1-protect-muscle",
       "title": "Body recomp on GLP-1s: how to lose fat without losing muscle",
-      "excerpt": "GLP-1s can pull weight off fast — and 25 percent or more of that loss can be muscle if you don't actively protect it. Here's what the literature actually says about protein, training, and pacing.",
+      "excerpt": "Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week, and a 10-15% calorie deficit (not 30%).",
       "category": "Weight Loss",
       "categorySlug": "weight-loss",
       "date": "2026-04-14",
@@ -400,7 +400,7 @@
     {
       "slug": "overnight-oats-iron-protein-fiber",
       "title": "The 5-minute overnight oats that hit your iron, protein, and fiber targets",
-      "excerpt": "Three jars Sunday night. Five minutes each. 28g protein, 10g fiber, plus 4mg iron per serving — the breakfast that actually moves bloodwork.",
+      "excerpt": "Recipe for 5-minute overnight oats with 28g protein, 10g fiber, and 4mg iron per jar: rolled oats, Greek yogurt, chia, pumpkin seeds, milk, fortified cereal.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-04-08",
@@ -417,7 +417,7 @@
     {
       "slug": "12-markers-hormone-panel-priority",
       "title": "The 12 markers we actually look at first on a DirectCare AI hormone panel",
-      "excerpt": "An 80+ biomarker panel sounds great until you're staring at 80 numbers. A clinician's-eye view of which 12 we actually open first — and what each one is telling us.",
+      "excerpt": "Lists the 12 biomarkers a clinician opens first on a hormone panel: total/free testosterone, SHBG, estradiol, DHEA-S, LH, FSH, TSH, free T3/T4, fasting insulin, ApoB, hs-CRP.",
       "category": "Blood Labs",
       "categorySlug": "blood-labs",
       "date": "2026-04-07",
@@ -434,7 +434,7 @@
     {
       "slug": "magnesium-vitamin-d-supplement-gaps",
       "title": "Magnesium, vitamin D, and the four supplement gaps almost every patient has",
-      "excerpt": "Most patients don't need 30 supplements. They need four — picked up from real bloodwork — at clinically meaningful doses. Here's what those four are and why almost everyone is under-dosed.",
+      "excerpt": "Explains the two most commonly under-dosed supplements: magnesium glycinate (300-400mg/day for sleep + recovery) and vitamin D3 (2,000-5,000 IU/day to hit 40-60 ng/mL).",
       "category": "Supplements",
       "categorySlug": "supplements",
       "date": "2026-03-31",
@@ -451,7 +451,7 @@
     {
       "slug": "greek-chicken-souvlaki-bowl-meal-prep",
       "title": "Greek chicken souvlaki bowl: the meal-prep base that holds a whole week",
-      "excerpt": "Marinate, grill (or sear), portion. One Sunday afternoon gives you five workday lunches at 38g protein each. The most repeatable Mediterranean meal-prep.",
+      "excerpt": "Recipe for meal-prep Greek chicken souvlaki bowls: 4 servings, 35g protein each, marinated chicken thighs, lemon-oregano dressing, tzatziki, cucumber-tomato salad.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-03-28",
@@ -468,7 +468,7 @@
     {
       "slug": "protein-timing-post-workout-window",
       "title": "Protein timing: does the 30-minute post-workout window actually matter?",
-      "excerpt": "The shaker bottle got popular for a reason — and stays popular because the biology is more nuanced than \"the 30-minute window.\" What the data actually says.",
+      "excerpt": "Explains why the 'anabolic window' is mostly a myth: total daily protein matters far more than post-workout timing as long as you hit 1g/lb goal weight across 4 meals.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-03-18",
@@ -485,7 +485,7 @@
     {
       "slug": "salmon-tacos-cabbage-slaw-recipe",
       "title": "Salmon tacos with cabbage slaw: a 30-minute omega-3 dinner",
-      "excerpt": "Pan-seared salmon, a sharp slaw, two warm tortillas. 32g protein, 1,500mg omega-3, on a weeknight that didn't need to be complicated.",
+      "excerpt": "Recipe for 20-minute salmon tacos with cabbage slaw: 32g protein per serving, omega-3 target, the lime-yogurt sauce that makes salmon work in a taco.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-03-07",
@@ -502,7 +502,7 @@
     {
       "slug": "perimenopause-nutrition-foods-that-help",
       "title": "What to eat during perimenopause: the 5 food categories that move symptoms",
-      "excerpt": "Hot flashes, sleep disruption, and the recomp that won't recomp aren't separate problems. The 5 food categories with published support for perimenopause.",
+      "excerpt": "Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3), cruciferous vegetables (DIM).",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-02-24",
@@ -519,7 +519,7 @@
     {
       "slug": "cottage-cheese-bowl-protein-snack",
       "title": "Cottage cheese bowls: the 30g-protein snack everyone forgot about",
-      "excerpt": "Cottage cheese stalled out as a 1970s diet food. The protein math says it should be back on every shelf — and four bowls show why.",
+      "excerpt": "Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds \u2014 the snack that beats a protein bar nutritionally.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-02-13",
@@ -536,7 +536,7 @@
     {
       "slug": "mediterranean-lentil-soup-recipe",
       "title": "Mediterranean lentil soup: 22g protein, 18g fiber per bowl, freezer-friendly",
-      "excerpt": "One pot, 45 minutes, six servings. The vegetarian dinner that out-fibers most omnivore meals and freezes for six weeks.",
+      "excerpt": "Recipe for a 30-minute Mediterranean lentil soup: 22g protein, 16g fiber per bowl, six pantry ingredients, the kind of weeknight dinner that hits 1,000+ recipes on Pinterest.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-02-04",
@@ -553,7 +553,7 @@
     {
       "slug": "fiber-target-most-patients-underdose",
       "title": "Fiber: the nutrient most weight-loss patients underdose (and the fix)",
-      "excerpt": "The published target is 25-35g/day. The American average is under 15g. On a GLP-1 or HRT protocol, that gap drives constipation, satiety failure, and inflammation.",
+      "excerpt": "Explains why most adults eat 12-15g fiber when the target is 30-40g \u2014 and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-01-25",
@@ -570,7 +570,7 @@
     {
       "slug": "sheet-pan-chicken-thighs-roasted-vegetables",
       "title": "Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner",
-      "excerpt": "One pan, 30 minutes, four servings with leftovers built in. The high-protein weeknight pattern when you don't have the energy for anything more complicated.",
+      "excerpt": "Recipe for sheet-pan chicken thighs with roasted vegetables: 30 minutes, 38g protein per serving, four-component meal prep with one tray.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-01-15",
@@ -587,7 +587,7 @@
     {
       "slug": "greek-yogurt-breakfast-bowl-40g-protein",
       "title": "The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch",
-      "excerpt": "Three ingredients you already have, two minutes of assembly, 40 grams of protein before you've finished your coffee.",
+      "excerpt": "Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey \u2014 the bowl that replaces a smoothie.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-01-05",

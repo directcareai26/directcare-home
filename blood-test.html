@@ -640,6 +640,31 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
   }
+
+  /* AEO answer block — citable sentence right after the first H1 so
+     ChatGPT/Perplexity/Gemini can lift a complete answer from above-fold */
+  .aeo-answer {
+    display: block;
+    max-width: 760px;
+    margin: 14px auto 0;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.92);
+    text-align: left;
+  }
+  /* When hero has a light bg (no overlay), switch to dark text variant */
+  .hero:not([class*="dark"]):not([class*="video"]) .aeo-answer,
+  body:not(:has(.hero-bg-video)) .aeo-answer {
+    background: rgba(36,20,50,0.04);
+    border-color: rgba(36,20,50,0.10);
+    color: var(--ink, #281A31);
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -741,6 +766,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="hero-inner">
       <h1 class="rise d1">Move Better. Feel Stronger.<br/><span class="accent h-italic">Live Fully.</span></h1>
+    <p class="aeo-answer">DirectCare AI offers a clinician-ordered 80+ biomarker blood panel for $196: hormones (testosterone, estradiol, thyroid, cortisol, DHEA-S), metabolic markers (HbA1c, fasting insulin, ApoB, hs-CRP), CBC, CMP, vitamin D, ferritin, B12 — results in 3-5 days.</p>
       <p class="hero-sub rise d2">Up to <strong>80 clinician-ordered biomarkers</strong>, a plain-English interpretation, and a personalized supplement &amp; lifestyle protocol. Built around the numbers that drive how you feel, perform, and age.</p>
       <div class="hero-cta-row rise d3">
         <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See My Numbers →</a>

@@ -1457,6 +1457,31 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   }
   .nav-dropdown:not(:hover):not(:focus-within)::after { pointer-events: none; }
   .nav-menu { top: calc(100% + 12px) !important; }
+
+  /* AEO answer block — citable sentence right after the first H1 so
+     ChatGPT/Perplexity/Gemini can lift a complete answer from above-fold */
+  .aeo-answer {
+    display: block;
+    max-width: 760px;
+    margin: 14px auto 0;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.92);
+    text-align: left;
+  }
+  /* When hero has a light bg (no overlay), switch to dark text variant */
+  .hero:not([class*="dark"]):not([class*="video"]) .aeo-answer,
+  body:not(:has(.hero-bg-video)) .aeo-answer {
+    background: rgba(36,20,50,0.04);
+    border-color: rgba(36,20,50,0.10);
+    color: var(--ink, #281A31);
+  }
 </style>
 <link rel="preload" as="image" href="/optimized/warm-confident-800.webp" imagesrcset="/optimized/warm-confident-400.webp 400w, /optimized/warm-confident-800.webp 800w, /optimized/warm-confident-1200.webp 1200w, /optimized/warm-confident-1600.webp 1600w" imagesizes="(max-width: 720px) 100vw, 50vw" fetchpriority="high">
 </head>
@@ -1546,6 +1571,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- HERO -->
   <section class="hero">
     <h1>Modern healthcare,<br/><span class="hero-rotator" id="hero-rotator" data-words="on your terms.|made personal.|directly to you.|truly yours."><span class="hero-rotator-word">on your terms.</span></span></h1>
+    <p class="aeo-answer">DirectCare AI is a direct-to-patient telehealth platform offering HRT, TRT, GLP-1 weight loss, sexual health, hair regrowth, blood labs, and supplements — prescribed by US-licensed clinicians and dose-titrated to your bloodwork. No insurance required.</p>
   </section>
 
   <!-- HERO TWIN CARDS -->

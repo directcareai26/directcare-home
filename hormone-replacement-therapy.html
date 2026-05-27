@@ -1416,6 +1416,31 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     .sym-card p { font-size: 0.82rem; line-height: 1.45; }
     .sym-card .sym-cta { padding: 8px 14px; font-size: 0.78rem; margin-top: 6px; }
   }
+
+  /* AEO answer block — citable sentence right after the first H1 so
+     ChatGPT/Perplexity/Gemini can lift a complete answer from above-fold */
+  .aeo-answer {
+    display: block;
+    max-width: 760px;
+    margin: 14px auto 0;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: rgba(255,255,255,0.92);
+    text-align: left;
+  }
+  /* When hero has a light bg (no overlay), switch to dark text variant */
+  .hero:not([class*="dark"]):not([class*="video"]) .aeo-answer,
+  body:not(:has(.hero-bg-video)) .aeo-answer {
+    background: rgba(36,20,50,0.04);
+    border-color: rgba(36,20,50,0.10);
+    color: var(--ink, #281A31);
+  }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -1516,6 +1541,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="hero-grid">
       <div class="hero-copy">
         <h1 class="rise d1">Menopause &amp; Perimenopause <span class="accent">Care Online.</span></h1>
+    <p class="aeo-answer">DirectCare AI offers online hormone replacement therapy (HRT) for women with bioidentical estradiol (patch, gel, or oral), progesterone, and low-dose testosterone — dose-titrated to your bloodwork, prescribed by US-licensed clinicians, no insurance required.</p>
         <p class="hero-sub rise d2">Get personalized care for <strong>hot flashes, poor sleep, low energy, brain fog, mood changes, and low libido</strong>. Meet with a licensed clinician online and receive treatment delivered to your door if appropriate.</p>
         <div class="hero-cta-row rise d3" style="margin-top:24px;">
           <a href="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl pulse-glow">See if treatment is right for you →</a>

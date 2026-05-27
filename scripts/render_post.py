@@ -25,6 +25,14 @@ BLOG_DIR = REPO_ROOT / "blog"
 TEMPLATE_PATH = BLOG_DIR / "_post-template.html"
 MANIFEST_PATH = BLOG_DIR / "posts.json"
 SITEMAP_PATH = REPO_ROOT / "sitemap.xml"
+RSS_PATH = BLOG_DIR / "rss.xml"
+SITE_BASE = "https://www.directcare.ai"
+RSS_TITLE = "DirectCare AI Blog"
+RSS_DESCRIPTION = (
+    "Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, "
+    "sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. "
+    "Written by US-licensed clinicians at DirectCare AI."
+)
 
 # Pages that should appear in sitemap.xml in addition to the blog posts.
 # (priority, changefreq, path)
@@ -246,7 +254,115 @@ def write_post(payload: dict[str, Any]) -> Path:
     post_path.write_text(html, encoding="utf-8")
     update_manifest(entry)
     update_sitemap()
+    update_rss()
     return post_path
+
+
+def _rfc822(date_iso: str) -> str:
+    """RSS 2.0 dates must be RFC 822 format, e.g. 'Tue, 27 May 2026 08:00:00 -0500'."""
+    try:
+        d = dt.date.fromisoformat(date_iso)
+    except (ValueError, TypeError):
+        d = dt.date.today()
+    # 08:00 local Eastern publication time, expressed as a fixed offset (-0400 EDT).
+    # Buffer/Zapier/LinkedIn don't care about exact tz precision — they just need RFC 822.
+    return dt.datetime(d.year, d.month, d.day, 8, 0, 0).strftime("%a, %d %b %Y %H:%M:%S -0400")
+
+
+def _xml_escape(text: str) -> str:
+    """Escape XML-special characters for safe embedding in element text."""
+    return (
+        (text or "")
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def _cdata(text: str) -> str:
+    """Wrap text in CDATA so RSS readers don't have to decode HTML entities."""
+    safe = (text or "").replace("]]>", "]]]]><![CDATA[>")
+    return f"<![CDATA[{safe}]]>"
+
+
+def update_rss(limit: int = 30) -> None:
+    """Regenerate /blog/rss.xml from the current manifest. Newest 30 posts.
+
+    RSS 2.0 + Atom self-link. Includes:
+      - <title>, <link>, <guid> per post
+      - <pubDate> in RFC 822 format
+      - <description> as CDATA-wrapped excerpt
+      - <category> for filtering by Buffer/Zapier
+      - <media:content> + <enclosure> so LinkedIn renders the image preview
+    """
+    posts: list[dict[str, Any]] = []
+    if MANIFEST_PATH.exists():
+        try:
+            posts = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")).get("posts", [])
+        except json.JSONDecodeError:
+            posts = []
+
+    # Manifest is newest-first; cap the feed.
+    posts = posts[:limit]
+
+    today = dt.datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    last_build = today
+    if posts:
+        last_build = _rfc822(posts[0].get("date", ""))
+
+    out: list[str] = []
+    out.append('<?xml version="1.0" encoding="UTF-8"?>')
+    out.append('<rss version="2.0"')
+    out.append('  xmlns:atom="http://www.w3.org/2005/Atom"')
+    out.append('  xmlns:content="http://purl.org/rss/1.0/modules/content/"')
+    out.append('  xmlns:media="http://search.yahoo.com/mrss/"')
+    out.append('  xmlns:dc="http://purl.org/dc/elements/1.1/">')
+    out.append("  <channel>")
+    out.append(f"    <title>{_xml_escape(RSS_TITLE)}</title>")
+    out.append(f"    <link>{SITE_BASE}/blog/</link>")
+    out.append(f'    <atom:link href="{SITE_BASE}/blog/rss.xml" rel="self" type="application/rss+xml" />')
+    out.append(f"    <description>{_xml_escape(RSS_DESCRIPTION)}</description>")
+    out.append("    <language>en-us</language>")
+    out.append(f"    <lastBuildDate>{last_build}</lastBuildDate>")
+    out.append("    <generator>DirectCare AI blog pipeline</generator>")
+    out.append(f"    <image>")
+    out.append(f"      <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>")
+    out.append(f"      <title>{_xml_escape(RSS_TITLE)}</title>")
+    out.append(f"      <link>{SITE_BASE}/blog/</link>")
+    out.append(f"    </image>")
+
+    for p in posts:
+        slug = p.get("slug")
+        if not slug:
+            continue
+        url = f"{SITE_BASE}/blog/{slug}"
+        title = p.get("title", "")
+        excerpt = p.get("excerpt", "")
+        category = p.get("category", "")
+        date = _rfc822(p.get("date", ""))
+        image = p.get("image", "")
+
+        out.append("    <item>")
+        out.append(f"      <title>{_xml_escape(title)}</title>")
+        out.append(f"      <link>{url}</link>")
+        out.append(f'      <guid isPermaLink="true">{url}</guid>')
+        out.append(f"      <pubDate>{date}</pubDate>")
+        out.append(f"      <dc:creator>DirectCare AI Clinical Team</dc:creator>")
+        if category:
+            out.append(f"      <category>{_xml_escape(category)}</category>")
+        out.append(f"      <description>{_cdata(excerpt)}</description>")
+        if image:
+            # <enclosure> is the RSS 2.0 standard image hint; <media:content> is what
+            # LinkedIn and modern feed readers actually look for.
+            out.append(f'      <enclosure url="{_xml_escape(image)}" type="image/png" length="0" />')
+            out.append(f'      <media:content url="{_xml_escape(image)}" medium="image" />')
+            out.append(f'      <media:thumbnail url="{_xml_escape(image)}" />')
+        out.append("    </item>")
+
+    out.append("  </channel>")
+    out.append("</rss>")
+    out.append("")
+    RSS_PATH.write_text("\n".join(out), encoding="utf-8")
 
 
 def update_sitemap() -> None:

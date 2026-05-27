@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>DirectCare AI Blog</title>
+    <link>https://www.directcare.ai/blog/</link>
+    <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 May 2026 08:00:00 -0400</lastBuildDate>
+    <generator>DirectCare AI blog pipeline</generator>
+    <image>
+      <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
+      <title>DirectCare AI Blog</title>
+      <link>https://www.directcare.ai/blog/</link>
+    </image>
+    <item>
+      <title>10 Biomarkers That Actually Predict Longevity</title>
+      <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</guid>
+      <pubDate>Wed, 27 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Your annual physical probably checks LDL and glucose. It probably doesn't check ApoB, Lp(a), or hs-CRP — the biomarkers with the strongest links to how long you'll actually live.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
+    </item>
+    <item>
+      <title>Morning erections and testosterone: what nocturnal tumescence actually tells your clinician</title>
+      <link>https://www.directcare.ai/blog/morning-erections-testosterone-what-they-tell-clinician</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/morning-erections-testosterone-what-they-tell-clinician</guid>
+      <pubDate>Tue, 26 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Morning wood isn't a bro joke — it's a free clinical signal that catches low testosterone, vascular issues, and sleep problems before bloodwork even runs. Here's what a clinician actually reads from it.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" />
+    </item>
+    <item>
+      <title>The 3x-per-week resistance workout that preserves muscle on a GLP-1</title>
+      <link>https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation</guid>
+      <pubDate>Tue, 26 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[If you're losing weight on a GLP-1, the wrong workout will leave you smaller and weaker. The right one — three sessions a week, six lifts — turns the same weight loss into a body composition you'd actually want.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" />
+    </item>
+    <item>
+      <title>The 30-minute beginner home workout: a full-body routine that needs zero equipment</title>
+      <link>https://www.directcare.ai/blog/30-minute-beginner-home-workout-no-equipment</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/30-minute-beginner-home-workout-no-equipment</guid>
+      <pubDate>Tue, 26 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[A clinician-built 30-minute beginner workout you can do at home with no equipment. Three rounds, eight bodyweight moves, full-body, RPE-paced.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" />
+    </item>
+    <item>
+      <title>The 7,000-step rule: why walking is the underrated cardio prescription</title>
+      <link>https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription</guid>
+      <pubDate>Mon, 25 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[More research, less branded equipment. A clinician's case for why a 7,000-step daily target outperforms most of the cardio prescriptions Americans actually try to follow.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
+    </item>
+    <item>
+      <title>The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required</title>
+      <link>https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl</guid>
+      <pubDate>Sun, 24 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[A no-stove, no-microwave, pantry-pull lunch that lands at 35 grams of protein, 14 grams of fiber, and a clean Mediterranean profile. Built for the workdays you don't want to think about lunch.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
+    <item>
+      <title>The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein</title>
+      <link>https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast</guid>
+      <pubDate>Sun, 24 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[One blender, six ingredients, three minutes, 40 grams of protein. The Sunday-night freezer prep that fixes Monday-through-Friday breakfast.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+    </item>
+    <item>
+      <title>The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark</title>
+      <link>https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe</guid>
+      <pubDate>Sat, 23 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[A 30-minute sheet-pan dinner that hits 38g protein, 10g fiber, and the omega-3 target in one bowl. Built for the appetite a GLP-1 actually leaves you.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
+    </item>
+    <item>
+      <title>The 4-rule food framework for staying full and fueled on a GLP-1</title>
+      <link>https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework</guid>
+      <pubDate>Fri, 22 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[When appetite is dialed down, every bite has to pull its weight. A clinician's four rules for what to eat on semaglutide or tirzepatide, drawn from the published literature.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
+    </item>
+    <item>
+      <title>Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs</title>
+      <link>https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</guid>
+      <pubDate>Thu, 21 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[Same weekly injection, different mechanism. Why your hormone panel — not just BMI — should drive the choice between semaglutide and tirzepatide.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
+    <item>
+      <title>HRT after 40: what actually changes when estradiol and progesterone come back online</title>
+      <link>https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</guid>
+      <pubDate>Wed, 20 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[The bloodwork shifts, the symptoms shift, and so does your protocol. A clinician's plain-English breakdown of what to expect month by month.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
+    </item>
+    <item>
+      <title>TRT vs. enclomiphene: which testosterone protocol is right for you?</title>
+      <link>https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol</guid>
+      <pubDate>Tue, 19 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Injectable testosterone, oral pills, and natural-pathway therapy each move your numbers differently. Here's how a clinician decides which one fits your bloodwork and your life.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" />
+    </item>
+    <item>
+      <title>Why morning testosterone tests matter (and what time of day ruins yours)</title>
+      <link>https://www.directcare.ai/blog/morning-testosterone-test-timing</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/morning-testosterone-test-timing</guid>
+      <pubDate>Sun, 17 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Testosterone is one of the most variable hormones in your body across a single day. If you draw labs at the wrong hour, you'll diagnose yourself with a problem you don't have — or miss one you do.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
+    </item>
+    <item>
+      <title>Progesterone at night: why timing matters more than dose for menopause sleep</title>
+      <link>https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose</guid>
+      <pubDate>Thu, 14 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Oral micronized progesterone is one of the most sedating hormones we prescribe — but only when you take it the right way, at the right hour. Here's what that means in practice.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
+    </item>
+    <item>
+      <title>Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently</title>
+      <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison</guid>
+      <pubDate>Sun, 10 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[Same drug class, very different drugs. Onset, duration, food interaction, and side-effect profile all matter — and the right one for you depends less on marketing and more on your lifestyle.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
+    </item>
+    <item>
+      <title>Female libido and testosterone: the conversation most clinicians skip</title>
+      <link>https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation</guid>
+      <pubDate>Wed, 06 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[Women's testosterone crashes in the 40s — and almost no primary-care visit picks up on it. A clinician's guide to what to test, what to expect, and what a low-dose testosterone cream actually does.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" />
+    </item>
+    <item>
+      <title>Topical finasteride vs. oral: how to get scalp results with fewer side effects</title>
+      <link>https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair</guid>
+      <pubDate>Sat, 02 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Oral finasteride works — and produces side effects in a small but real percentage of men. Topical finasteride changes that math by concentrating the drug where you want it and minimizing systemic exposure.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
+    </item>
+    <item>
+      <title>Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters</title>
+      <link>https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel</guid>
+      <pubDate>Mon, 27 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Female-pattern hair loss has more drivers than male-pattern: ferritin, thyroid, androgens, and the perimenopausal estradiol drop all play in. The protocol that works starts with the panel that catches them.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" />
+    </item>
+    <item>
+      <title>Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner</title>
+      <link>https://www.directcare.ai/blog/sheet-pan-miso-salmon-bok-choy-recipe</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/sheet-pan-miso-salmon-bok-choy-recipe</guid>
+      <pubDate>Mon, 27 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Sweet, salty, umami-glazed salmon with charred bok choy and brown rice. The 25-minute dinner that tastes like the restaurant version.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
+    <item>
+      <title>What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp</title>
+      <link>https://www.directcare.ai/blog/glp1-month-one-side-effects-food-noise</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-month-one-side-effects-food-noise</guid>
+      <pubDate>Tue, 21 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[The first 4 weeks of semaglutide or tirzepatide are not the same as the next 12. A clinician's week-by-week guide to what's normal, what's not, and how to make the early ramp survivable.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
+    </item>
+    <item>
+      <title>Eggs vs. egg whites: which one actually fits your protocol</title>
+      <link>https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol</guid>
+      <pubDate>Fri, 17 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Decades of cholesterol panic vs. recent rehabilitation. A clinician's take on when whole eggs win, when whites earn their spot, and the math behind both.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
+    </item>
+    <item>
+      <title>Body recomp on GLP-1s: how to lose fat without losing muscle</title>
+      <link>https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle</guid>
+      <pubDate>Tue, 14 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[GLP-1s can pull weight off fast — and 25 percent or more of that loss can be muscle if you don't actively protect it. Here's what the literature actually says about protein, training, and pacing.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
+    <item>
+      <title>The 5-minute overnight oats that hit your iron, protein, and fiber targets</title>
+      <link>https://www.directcare.ai/blog/overnight-oats-iron-protein-fiber</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/overnight-oats-iron-protein-fiber</guid>
+      <pubDate>Wed, 08 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Three jars Sunday night. Five minutes each. 28g protein, 10g fiber, plus 4mg iron per serving — the breakfast that actually moves bloodwork.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
+    <item>
+      <title>The 12 markers we actually look at first on a DirectCare AI hormone panel</title>
+      <link>https://www.directcare.ai/blog/12-markers-hormone-panel-priority</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/12-markers-hormone-panel-priority</guid>
+      <pubDate>Tue, 07 Apr 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[An 80+ biomarker panel sounds great until you're staring at 80 numbers. A clinician's-eye view of which 12 we actually open first — and what each one is telling us.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
+    </item>
+    <item>
+      <title>Magnesium, vitamin D, and the four supplement gaps almost every patient has</title>
+      <link>https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps</guid>
+      <pubDate>Tue, 31 Mar 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Supplements</category>
+      <description><![CDATA[Most patients don't need 30 supplements. They need four — picked up from real bloodwork — at clinically meaningful doses. Here's what those four are and why almost everyone is under-dosed.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
+    </item>
+    <item>
+      <title>Greek chicken souvlaki bowl: the meal-prep base that holds a whole week</title>
+      <link>https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep</guid>
+      <pubDate>Sat, 28 Mar 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Marinate, grill (or sear), portion. One Sunday afternoon gives you five workday lunches at 38g protein each. The most repeatable Mediterranean meal-prep.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
+    </item>
+    <item>
+      <title>Protein timing: does the 30-minute post-workout window actually matter?</title>
+      <link>https://www.directcare.ai/blog/protein-timing-post-workout-window</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/protein-timing-post-workout-window</guid>
+      <pubDate>Wed, 18 Mar 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[The shaker bottle got popular for a reason — and stays popular because the biology is more nuanced than "the 30-minute window." What the data actually says.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
+    </item>
+    <item>
+      <title>Salmon tacos with cabbage slaw: a 30-minute omega-3 dinner</title>
+      <link>https://www.directcare.ai/blog/salmon-tacos-cabbage-slaw-recipe</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/salmon-tacos-cabbage-slaw-recipe</guid>
+      <pubDate>Sat, 07 Mar 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Pan-seared salmon, a sharp slaw, two warm tortillas. 32g protein, 1,500mg omega-3, on a weeknight that didn't need to be complicated.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
+    <item>
+      <title>What to eat during perimenopause: the 5 food categories that move symptoms</title>
+      <link>https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help</guid>
+      <pubDate>Tue, 24 Feb 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Hot flashes, sleep disruption, and the recomp that won't recomp aren't separate problems. The 5 food categories with published support for perimenopause.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" />
+    </item>
+    <item>
+      <title>Cottage cheese bowls: the 30g-protein snack everyone forgot about</title>
+      <link>https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack</guid>
+      <pubDate>Fri, 13 Feb 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Cottage cheese stalled out as a 1970s diet food. The protein math says it should be back on every shelf — and four bowls show why.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
+    </item>
+  </channel>
+</rss>

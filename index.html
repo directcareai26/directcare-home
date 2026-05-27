@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- Google Tag Manager (lazy-loaded — fires on first interaction or 2.5s) -->
+<script>
+(function(){
+  window.dataLayer = window.dataLayer || [];
+  // Queue gtm.start now so timing/PageView events are accurate when GTM loads
+  window.dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+
+  var loaded = false;
+  function loadGTM() {
+    if (loaded) return;
+    loaded = true;
+    var d = document, s = d.getElementsByTagName('script')[0];
+    var j = d.createElement('script');
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-N7ZG3PT8';
+    s.parentNode.insertBefore(j, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadGTM, { once: true, passive: true });
+  });
+  setTimeout(loadGTM, 2500);
+})();
+</script>
 <!-- End Google Tag Manager -->
 <!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
 <script>
@@ -51,8 +69,8 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="theme-color" content="#241432" />
-<title>DirectCare AI | Online GLP-1, HRT, TRT &amp; Hair Loss | Real Doctors, Delivered</title>
-<meta name="description" content="DirectCare AI. Personalized telehealth for men &amp; women. GLP-1 weight loss, HRT, TRT, sexual health, hair regrowth, blood labs and supplements. US-licensed clinicians, compounded in the USA, shipped to your door. No insurance required." />
+<title>DirectCare AI | GLP-1, HRT, TRT &amp; Hair Loss — US Doctors Online</title>
+<meta name="description" content="Personalized telehealth for men &amp; women. GLP-1, HRT, TRT, hair regrowth, sexual health &amp; supplements. US-licensed doctors. No insurance needed." />
 
 <link rel="canonical" href="https://www.directcare.ai/" />
 <link rel="alternate" type="application/rss+xml" title="DirectCare AI Blog" href="https://www.directcare.ai/blog/rss.xml" />
@@ -86,8 +104,8 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap"></noscript>
 
 <style>
   :root {

@@ -1,6 +1,28 @@
 {
   "posts": [
     {
+      "slug": "10-biomarkers-that-predict-longevity",
+      "title": "10 Biomarkers That Actually Predict Longevity",
+      "excerpt": "Your annual physical probably checks LDL and glucose. It probably doesn't check ApoB, Lp(a), or hs-CRP — the biomarkers with the strongest links to how long you'll actually live.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-05-27",
+      "dateLabel": "May 27, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "longevity biomarkers",
+        "blood labs for longevity",
+        "ApoB test",
+        "Lp(a) test",
+        "hs-CRP",
+        "HbA1c",
+        "GGT liver marker",
+        "advanced lipid panel",
+        "annual physical bloodwork",
+        "biomarkers that predict mortality"
+      ]
+    },
+    {
       "slug": "morning-erections-testosterone-what-they-tell-clinician",
       "title": "Morning erections and testosterone: what nocturnal tumescence actually tells your clinician",
       "excerpt": "Morning wood isn't a bro joke — it's a free clinical signal that catches low testosterone, vascular issues, and sleep problems before bloodwork even runs. Here's what a clinician actually reads from it.",

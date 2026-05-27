@@ -34,24 +34,80 @@ from render_post import write_post  # noqa: E402
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
 MAX_TOKENS = 8000
 
+BLOB = "https://crsurakhmbalgxim.public.blob.vercel-storage.com"
+
+# Image pools per category — generator picks one deterministically per post.
+# Mix of original lifestyle images + new Firefly photography set.
+IMAGE_POOLS = {
+    "TRT": [
+        f"{BLOB}/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png",
+        f"{BLOB}/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png",
+        f"{BLOB}/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
+        f"{BLOB}/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png",
+        f"{BLOB}/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
+    ],
+    "HRT": [
+        f"{BLOB}/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png",
+        f"{BLOB}/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png",
+        f"{BLOB}/Warm%20%26%20confident.png",
+        f"{BLOB}/perimenopausal%20woman.png",
+    ],
+    "Weight Loss": [
+        f"{BLOB}/GLP-1%20Nutrition.png",
+        f"{BLOB}/Emotional%20Eating.png",
+        f"{BLOB}/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
+        f"{BLOB}/the%20strength%20couple.png",
+    ],
+    "Sexual Health": [
+        f"{BLOB}/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
+        f"{BLOB}/Morning%20bed%2C%20foreheads%20touching.png",
+        f"{BLOB}/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png",
+    ],
+    "Hair Regrowth": [
+        f"{BLOB}/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
+        f"{BLOB}/woman%20tying%20hair%20up%20confidently.png",
+    ],
+    "Blood Labs": [
+        f"{BLOB}/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png",
+        f"{BLOB}/Health%20Check%20%E2%80%94%20lifestyleImage.png",
+        f"{BLOB}/Progress%20%26%20Biomarkers.png",
+    ],
+    "Supplements": [
+        f"{BLOB}/flatlay%20of%20women%27s%20protocol%20bottles.png",
+        f"{BLOB}/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png",
+    ],
+    "Nutrition": [
+        f"{BLOB}/GLP-1%20Nutrition.png",
+        f"{BLOB}/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+        f"{BLOB}/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png",
+        f"{BLOB}/Emotional%20Eating.png",
+        f"{BLOB}/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+    ],
+    "Fitness": [
+        f"{BLOB}/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png",
+        f"{BLOB}/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png",
+        f"{BLOB}/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
+        f"{BLOB}/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png",
+        f"{BLOB}/Lifestyle%20%26%20Exercise.png",
+    ],
+}
+
 PRODUCTS = {
     "TRT": {
         "categorySlug": "trt",
         "product_link": "/testosterone-replacement-therapy",
         "product_eyebrow": "Ready to find your protocol?",
         "product_headline": "Testosterone therapy, tuned to your levels.",
-        "product_blurb": "Injectable, oral, or enclomiphene — DirectCare AI's clinical team reviews your full hormone panel and recommends the protocol that fits your numbers and your life. Labs included.",
+        "product_blurb": "Injectable, oral, or enclomiphene — DirectCare AI's clinical team reviews your full hormone panel and recommends the protocol that fits your numbers and your life.",
         "product_cta_label": "Start your TRT consult",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
     },
     "HRT": {
         "categorySlug": "hrt",
         "product_link": "/hormone-replacement-therapy",
         "product_eyebrow": "Ready to feel like yourself again?",
         "product_headline": "Hormone therapy, built around your bloodwork.",
-        "product_blurb": "Bioidentical estradiol and progesterone protocols, prescribed by a US-licensed clinician based on a real hormone panel — not a 5-question quiz. Labs and follow-up included.",
+        "product_blurb": "Bioidentical estradiol and progesterone protocols, prescribed by a US-licensed clinician based on a real hormone panel — not a 5-question quiz.",
         "product_cta_label": "Start your HRT consult",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png",
     },
     "Weight Loss": {
         "categorySlug": "weight-loss",
@@ -60,7 +116,6 @@ PRODUCTS = {
         "product_headline": "Sustainable weight loss, built around your labs.",
         "product_blurb": "Compounded semaglutide and tirzepatide. Weekly injection, US-licensed clinician oversight, dose titration based on your real bloodwork — not a one-size-fits-all script.",
         "product_cta_label": "See if you qualify",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Weight%20Loss%20%E2%80%94%20lifestyleImage.png",
     },
     "Sexual Health": {
         "categorySlug": "sexual-health",
@@ -69,7 +124,6 @@ PRODUCTS = {
         "product_headline": "Sexual health, prescribed and discreet.",
         "product_blurb": "Compounded sildenafil, tadalafil, and combination protocols. US-licensed clinician oversight. Shipped discreetly.",
         "product_cta_label": "See your options",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
     },
     "Hair Regrowth": {
         "categorySlug": "hair-regrowth",
@@ -78,7 +132,6 @@ PRODUCTS = {
         "product_headline": "Hair regrowth protocols, by your clinician.",
         "product_blurb": "Topical and oral finasteride, dutasteride, and minoxidil — prescribed and titrated based on what your scalp actually needs.",
         "product_cta_label": "Start regrowth",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
     },
     "Blood Labs": {
         "categorySlug": "blood-labs",
@@ -87,7 +140,6 @@ PRODUCTS = {
         "product_headline": "Real labs. Plain-English plan.",
         "product_blurb": "A clinician-ordered, 80+ biomarker panel. Results in 3–5 days, with a personalized roadmap from a US-licensed clinician — not a chart you have to decode yourself.",
         "product_cta_label": "See my numbers",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png",
     },
     "Supplements": {
         "categorySlug": "supplements",
@@ -96,9 +148,35 @@ PRODUCTS = {
         "product_headline": "Physician-formulated supplement protocols.",
         "product_blurb": "DirectCare AI clinicians curate supplement protocols matched to your actual bloodwork — not a generic multivitamin.",
         "product_cta_label": "Browse supplements",
-        "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+    },
+    "Nutrition": {
+        "categorySlug": "nutrition",
+        "product_link": "/weight-loss/",
+        "product_eyebrow": "Make weight loss easier",
+        "product_headline": "Compounded GLP-1, with clinician oversight.",
+        "product_blurb": "DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition guidance to make a suppressed appetite still hit protein and fiber.",
+        "product_cta_label": "See if you qualify",
+    },
+    "Fitness": {
+        "categorySlug": "fitness",
+        "product_link": "/weight-loss/",
+        "product_eyebrow": "Stack the right protocol on the right habits",
+        "product_headline": "Real protocols, built around your bloodwork.",
+        "product_blurb": "DirectCare AI prescribes hormone, weight-loss, and longevity protocols designed to layer on top of the training and nutrition habits that actually move outcomes.",
+        "product_cta_label": "Start an intake",
     },
 }
+
+
+def pick_image(category: str, date_iso: str, slug: str) -> str:
+    """Deterministically rotate through the category's image pool so two
+    posts in the same category don't get the same photo back-to-back."""
+    pool = IMAGE_POOLS.get(category) or [
+        f"{BLOB}/Warm%20%26%20confident.png"
+    ]
+    seed = f"{date_iso}::{category}::{slug}"
+    idx = int(hashlib.sha256(seed.encode()).hexdigest(), 16) % len(pool)
+    return pool[idx]
 
 
 DEFAULT_TOPIC_BANK = [
@@ -132,6 +210,28 @@ DEFAULT_TOPIC_BANK = [
     {"category": "Supplements", "angle": "Vitamin D3 + K2: dosing, blood-level targets, and why most patients are still deficient"},
     {"category": "Supplements", "angle": "Creatine monohydrate isn't just for the gym — the cognition and bone data women should know"},
     {"category": "Supplements", "angle": "Omega-3 EPA/DHA: the dose that actually moves your inflammation markers"},
+    # ---- Nutrition (mix of science + recipe angles) ----
+    {"category": "Nutrition", "angle": "The 30-gram protein lunch rule: why a real lunch beats a snack-as-meal"},
+    {"category": "Nutrition", "angle": "A clinician-built sheet-pan chicken thigh recipe for high-protein meal prep"},
+    {"category": "Nutrition", "angle": "What 'eat the rainbow' actually means clinically — phytonutrient targets by color"},
+    {"category": "Nutrition", "angle": "Plant protein for women in perimenopause: the lentil, tofu, and tempeh rotation"},
+    {"category": "Nutrition", "angle": "Fiber on a GLP-1: why 25-35g daily makes the appetite suppression sustainable"},
+    {"category": "Nutrition", "angle": "An easy 20-minute salmon and asparagus dinner with omega-3 targets that matter"},
+    {"category": "Nutrition", "angle": "The protein-and-fiber breakfast template — three rotations for busy mornings"},
+    {"category": "Nutrition", "angle": "Greek yogurt parfait recipe: 30g protein, 8g fiber, 5 minutes, three variations"},
+    {"category": "Nutrition", "angle": "Why fasted coffee may sabotage your cortisol curve — and what to drink first instead"},
+    {"category": "Nutrition", "angle": "A Mediterranean grain bowl recipe that holds in the fridge for 3 days"},
+    {"category": "Nutrition", "angle": "Magnesium-rich foods vs. magnesium supplements — when food is actually enough"},
+    {"category": "Nutrition", "angle": "Slow-cooker bean chili: 25g plant protein, 12g fiber, weeknight-easy"},
+    # ---- Fitness ----
+    {"category": "Fitness", "angle": "Zone 2 cardio for adults over 40: what it is, why it matters, and how to measure it"},
+    {"category": "Fitness", "angle": "The two-lift-per-day minimum: a busy-week strength template that still preserves muscle"},
+    {"category": "Fitness", "angle": "Why grip strength predicts longevity — and the 3 exercises that build it"},
+    {"category": "Fitness", "angle": "Mobility before workouts: 5 minutes that meaningfully reduces injury risk"},
+    {"category": "Fitness", "angle": "Walking versus running for cardiovascular risk reduction — what the data actually says"},
+    {"category": "Fitness", "angle": "Lifting through perimenopause: the rep ranges and recovery rules that hold up"},
+    {"category": "Fitness", "angle": "Rucking: the under-rated cardio that builds strength at the same time"},
+    {"category": "Fitness", "angle": "Heart rate variability (HRV) — what the number means and when to act on it"},
 ]
 
 
@@ -184,7 +284,12 @@ def pick_topic(today: dt.date) -> dict[str, str]:
     return ordered[0]
 
 
-PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-powered direct-to-patient telehealth platform. You write the brand's Blog — long-form, SEO-friendly, clinician-tone articles that help patients understand the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements.
+PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-powered direct-to-patient telehealth platform. You write the brand's Blog — long-form, SEO-friendly, clinician-tone articles that help patients understand the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, supplements, nutrition (including recipes), and fitness/training.
+
+## Category nuances
+- **Recipe posts (Nutrition):** include real ingredient lists, real method steps numbered 1-5, an approximate nutrition block (protein/fiber/carbs/fat/calories), and 2-4 variations. Tone is still clinician-built, not food-blogger breathless.
+- **Workout posts (Fitness):** include real exercise names, sets/reps/rest, progression rules, and warm-up notes. Cite ACSM or similar.
+- **Science posts (TRT/HRT/Weight Loss/Sexual Health/Hair Regrowth/Blood Labs/Supplements):** lead with the clinical signal or trade-off, cite literature inline.
 
 ## Brand voice
 - Plain English, clinician's-eye view, never breathless.
@@ -268,7 +373,10 @@ def merge_product_metadata(payload: dict, category: str) -> dict:
     product = PRODUCTS.get(category, {})
     payload.setdefault("category", category)
     payload.setdefault("categorySlug", product.get("categorySlug", slugify(category)))
-    payload.setdefault("image", product.get("image"))
+    # Image: rotate through category's pool deterministically (date + slug seed)
+    if not payload.get("image"):
+        date_iso = payload.get("date") or dt.date.today().isoformat()
+        payload["image"] = pick_image(category, date_iso, payload.get("slug", ""))
     for k in ("product_link", "product_eyebrow", "product_headline", "product_blurb", "product_cta_label"):
         if k in product:
             payload.setdefault(k, product[k])

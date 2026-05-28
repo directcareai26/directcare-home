@@ -419,14 +419,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 
 <script>
-/* Affiliate click-ID capture + propagation to Tellescope intake URLs */
+/* Affiliate click-ID capture + propagation to Tellescope intake URLs.
+   Handles FlexOffers, generic affiliate networks, and UTM-style params. */
 (function() {
   var STORAGE_KEY = 'dcai_clickId';
   var STORAGE_TS = 'dcai_clickId_ts';
-  var TTL_MS = 30 * 24 * 60 * 60 * 1000;  // 30-day attribution window
+  var TTL_MS = 30 * 24 * 60 * 60 * 1000;
   var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId',
                          'click_id', 'cid', 'aff_id', 'affid', 'flex_id',
-                         'fo_clickid', 'subid', 'sub_id', 'oc', 'fa'];
+                         'fo_clickid', 'flexoffers', 'refid', 'subid',
+                         'sub_id', 'oc', 'fa', '{enduser.utm_clickId}'];
+  var FO_CLICKID_RE = /^\d+\.\d+\.\d+(?:FOF\d+)?$/;
   var HOSTS = [
     'directcare.ai', 'www.directcare.ai',
     'women.directcare.ai', 'mens.directcare.ai',
@@ -444,6 +447,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     for (var i = 0; i < INCOMING_PARAMS.length; i++) {
       var v = url.searchParams.get(INCOMING_PARAMS[i]);
       if (v) return v;
+    }
+    var entries = Array.from(url.searchParams.entries());
+    for (var j = 0; j < entries.length; j++) {
+      var val = entries[j][1];
+      if (val && FO_CLICKID_RE.test(val)) return val;
     }
     return null;
   }
@@ -485,7 +493,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   function withClickId(href) {
     var u = getURL(href);
     if (!u) return href;
-    // Append BOTH utm_clickId and clickId for maximum Tellescope/FlexOffers compatibility
     if (!u.searchParams.has('utm_clickId')) u.searchParams.set('utm_clickId', clickId);
     if (!u.searchParams.has('clickId')) u.searchParams.set('clickId', clickId);
     return u.toString();

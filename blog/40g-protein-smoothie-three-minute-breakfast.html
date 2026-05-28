@@ -413,5 +413,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }, { passive: true });
 })();
 </script>
+
+<script>
+/* Affiliate click-ID capture + propagation to Tellescope intake URLs */
+(function() {
+  var STORAGE_KEY = 'dcai_clickId';
+  var STORAGE_TS = 'dcai_clickId_ts';
+  var TTL_MS = 30 * 24 * 60 * 60 * 1000;  // 30-day attribution window
+  var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId',
+                         'click_id', 'cid', 'aff_id', 'affid', 'flex_id',
+                         'fo_clickid', 'subid', 'sub_id', 'oc', 'fa'];
+  var HOSTS = [
+    'directcare.ai', 'www.directcare.ai',
+    'women.directcare.ai', 'mens.directcare.ai',
+    'directcare-home.vercel.app',
+    'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app',
+    'sexual-health-mocha.vercel.app', 'surge-max.vercel.app',
+    'directcare-weight-loss.vercel.app', 'chronic-care-azure.vercel.app',
+    'business.tellescope.com', 'directcareai.portal.tellescope.com',
+    'tellescope.com'
+  ];
+  function getURL(href) { try { return new URL(href, window.location.href); } catch (e) { return null; } }
+  function readClickIdFromQuery() {
+    var url = getURL(window.location.href);
+    if (!url) return null;
+    for (var i = 0; i < INCOMING_PARAMS.length; i++) {
+      var v = url.searchParams.get(INCOMING_PARAMS[i]);
+      if (v) return v;
+    }
+    return null;
+  }
+  function persist(id) {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, id);
+      localStorage.setItem(STORAGE_KEY, id);
+      localStorage.setItem(STORAGE_TS, String(Date.now()));
+    } catch (e) {}
+  }
+  function load() {
+    try {
+      var s = sessionStorage.getItem(STORAGE_KEY);
+      if (s) return s;
+      var l = localStorage.getItem(STORAGE_KEY);
+      var ts = parseInt(localStorage.getItem(STORAGE_TS) || '0', 10);
+      if (l && Date.now() - ts < TTL_MS) {
+        sessionStorage.setItem(STORAGE_KEY, l);
+        return l;
+      }
+      if (l) {
+        localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(STORAGE_TS);
+      }
+    } catch (e) {}
+    return null;
+  }
+  var clickId = readClickIdFromQuery();
+  if (clickId) persist(clickId);
+  else clickId = load();
+  if (!clickId) return;
+  function shouldRewrite(href) {
+    if (!href) return false;
+    var first = href.charAt(0);
+    if (first === '#' || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('javascript:') === 0) return false;
+    var u = getURL(href);
+    return !!(u && HOSTS.indexOf(u.hostname) > -1);
+  }
+  function withClickId(href) {
+    var u = getURL(href);
+    if (!u) return href;
+    // Append BOTH utm_clickId and clickId for maximum Tellescope/FlexOffers compatibility
+    if (!u.searchParams.has('utm_clickId')) u.searchParams.set('utm_clickId', clickId);
+    if (!u.searchParams.has('clickId')) u.searchParams.set('clickId', clickId);
+    return u.toString();
+  }
+  function rewriteAll() {
+    document.querySelectorAll('a[href]').forEach(function(a) {
+      var raw = a.getAttribute('href');
+      if (shouldRewrite(raw)) a.href = withClickId(a.href);
+    });
+  }
+  rewriteAll();
+  if ('MutationObserver' in window) {
+    var mo = new MutationObserver(rewriteAll);
+    mo.observe(document.body, { childList: true, subtree: true });
+    setTimeout(function() { mo.disconnect(); }, 4000);
+  }
+})();
+</script>
 </body>
 </html>

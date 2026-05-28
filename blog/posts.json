@@ -1,9 +1,48 @@
 {
   "posts": [
     {
+      "slug": "sildenafil-vs-tadalafil-daily-vs-on-demand",
+      "title": "Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms",
+      "excerpt": "On-demand sildenafil works. So does 50-100 mg tadalafil as needed. But 2.5-5 mg of daily tadalafil is a different mode of therapy — and for a meaningful slice of patients, it's the right one.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-05-28",
+      "dateLabel": "May 28, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
+      "keywords": [
+        "daily tadalafil",
+        "low dose tadalafil",
+        "tadalafil 2.5 mg",
+        "tadalafil 5 mg",
+        "tadalafil for BPH",
+        "PDE5 daily vs on-demand",
+        "tadalafil endothelial function"
+      ]
+    },
+    {
+      "slug": "magnesium-glycinate-vs-citrate-which-form",
+      "title": "Magnesium glycinate vs. citrate: how to pick the right magnesium form",
+      "excerpt": "Both forms deliver real magnesium with very different downstream behavior. How a clinician decides between glycinate and citrate based on your labs.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-05-28",
+      "dateLabel": "May 28, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "magnesium glycinate",
+        "magnesium citrate",
+        "magnesium form",
+        "magnesium supplement",
+        "magnesium for sleep",
+        "RBC magnesium",
+        "magnesium deficiency",
+        "supplements"
+      ]
+    },
+    {
       "slug": "10-biomarkers-that-predict-longevity",
       "title": "10 Biomarkers That Actually Predict Longevity",
-      "excerpt": "Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan \u2014 and why your annual physical probably checks none of them.",
+      "excerpt": "Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan — and why your annual physical probably checks none of them.",
       "category": "Blood Labs",
       "categorySlug": "blood-labs",
       "date": "2026-05-27",
@@ -25,7 +64,7 @@
     {
       "slug": "morning-erections-testosterone-what-they-tell-clinician",
       "title": "Morning erections and testosterone: what nocturnal tumescence actually tells your clinician",
-      "excerpt": "Explains why morning erections are a free clinical signal for low testosterone, vascular health, and sleep quality \u2014 and what a clinician reads from their frequency.",
+      "excerpt": "Explains why morning erections are a free clinical signal for low testosterone, vascular health, and sleep quality — and what a clinician reads from their frequency.",
       "category": "TRT",
       "categorySlug": "trt",
       "date": "2026-05-26",
@@ -61,7 +100,7 @@
     {
       "slug": "30-minute-beginner-home-workout-no-equipment",
       "title": "The 30-minute beginner home workout: a full-body routine that needs zero equipment",
-      "excerpt": "Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE \u2014 no equipment.",
+      "excerpt": "Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE — no equipment.",
       "category": "Fitness",
       "categorySlug": "fitness",
       "date": "2026-05-26",
@@ -81,7 +120,7 @@
     {
       "slug": "walking-7000-steps-cardio-prescription",
       "title": "The 7,000-step rule: why walking is the underrated cardio prescription",
-      "excerpt": "Explains why 7,000 daily steps is the most evidence-backed cardio target for adults \u2014 and why higher counts show diminishing returns in the published literature.",
+      "excerpt": "Explains why 7,000 daily steps is the most evidence-backed cardio target for adults — and why higher counts show diminishing returns in the published literature.",
       "category": "Fitness",
       "categorySlug": "fitness",
       "date": "2026-05-25",
@@ -135,7 +174,7 @@
     {
       "slug": "glp1-mediterranean-salmon-bowl-recipe",
       "title": "The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark",
-      "excerpt": "Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s \u2014 built for the smaller appetite a GLP-1 leaves you with.",
+      "excerpt": "Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s — built for the smaller appetite a GLP-1 leaves you with.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-05-23",
@@ -211,7 +250,7 @@
     {
       "slug": "trt-vs-enclomiphene-which-protocol",
       "title": "TRT vs. enclomiphene: which testosterone protocol is right for you?",
-      "excerpt": "Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene \u2014 and which bloodwork pattern fits each.",
+      "excerpt": "Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene — and which bloodwork pattern fits each.",
       "category": "TRT",
       "categorySlug": "trt",
       "date": "2026-05-19",
@@ -262,7 +301,7 @@
     {
       "slug": "sildenafil-vs-tadalafil-pde5-comparison",
       "title": "Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently",
-      "excerpt": "Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours \u2014 daily dosing changes the math.",
+      "excerpt": "Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours — daily dosing changes the math.",
       "category": "Sexual Health",
       "categorySlug": "sexual-health",
       "date": "2026-05-10",
@@ -281,7 +320,7 @@
     {
       "slug": "female-libido-testosterone-clinician-conversation",
       "title": "Female libido and testosterone: the conversation most clinicians skip",
-      "excerpt": "Explains why women's testosterone crashes in the 40s and what to test: total testosterone, free testosterone, SHBG \u2014 and what a 0.5-1mg/day topical testosterone protocol does.",
+      "excerpt": "Explains why women's testosterone crashes in the 40s and what to test: total testosterone, free testosterone, SHBG — and what a 0.5-1mg/day topical testosterone protocol does.",
       "category": "Sexual Health",
       "categorySlug": "sexual-health",
       "date": "2026-05-06",
@@ -298,7 +337,7 @@
     {
       "slug": "topical-vs-oral-finasteride-men-hair",
       "title": "Topical finasteride vs. oral: how to get scalp results with fewer side effects",
-      "excerpt": "Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure \u2014 and the side effects (libido, mood) it reduces.",
+      "excerpt": "Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure — and the side effects (libido, mood) it reduces.",
       "category": "Hair Regrowth",
       "categorySlug": "hair-regrowth",
       "date": "2026-05-02",
@@ -315,7 +354,7 @@
     {
       "slug": "womens-hair-loss-hormonal-panel",
       "title": "Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters",
-      "excerpt": "Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin \u2014 and what each finding means.",
+      "excerpt": "Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin — and what each finding means.",
       "category": "Hair Regrowth",
       "categorySlug": "hair-regrowth",
       "date": "2026-04-27",
@@ -519,7 +558,7 @@
     {
       "slug": "cottage-cheese-bowl-protein-snack",
       "title": "Cottage cheese bowls: the 30g-protein snack everyone forgot about",
-      "excerpt": "Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds \u2014 the snack that beats a protein bar nutritionally.",
+      "excerpt": "Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds — the snack that beats a protein bar nutritionally.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-02-13",
@@ -553,7 +592,7 @@
     {
       "slug": "fiber-target-most-patients-underdose",
       "title": "Fiber: the nutrient most weight-loss patients underdose (and the fix)",
-      "excerpt": "Explains why most adults eat 12-15g fiber when the target is 30-40g \u2014 and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.",
+      "excerpt": "Explains why most adults eat 12-15g fiber when the target is 30-40g — and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-01-25",
@@ -587,7 +626,7 @@
     {
       "slug": "greek-yogurt-breakfast-bowl-40g-protein",
       "title": "The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch",
-      "excerpt": "Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey \u2014 the bowl that replaces a smoothie.",
+      "excerpt": "Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey — the bowl that replaces a smoothie.",
       "category": "Nutrition",
       "categorySlug": "nutrition",
       "date": "2026-01-05",

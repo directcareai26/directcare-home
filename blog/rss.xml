@@ -10,13 +10,61 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Estradiol on TRT: when men need an aromatase inhibitor and most don't</title>
+      <link>https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed</guid>
+      <pubDate>Mon, 01 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Most men on testosterone therapy don't need anastrozole — and over-suppression of estradiol causes more symptoms than the high estradiol clinics were trying to fix. The clinical case for restraint.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
+    </item>
+    <item>
+      <title>GLP-1 maintenance after weight loss: how to stay off without rebounding</title>
+      <link>https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss</guid>
+      <pubDate>Sun, 31 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[The STEP-4 trial showed roughly two-thirds of weight lost on a GLP-1 comes back within a year of stopping. The maintenance protocol that prevents it isn't quitting cold turkey — and isn't staying on full dose either.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+    </item>
+    <item>
+      <title>The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy</title>
+      <link>https://www.directcare.ai/blog/25-minute-ginger-chicken-stir-fry-recipe</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/25-minute-ginger-chicken-stir-fry-recipe</guid>
+      <pubDate>Sat, 30 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[One pan, 25 minutes, 38 grams of protein per plate. A clinician-built weeknight dinner that scales for one or feeds a family of four — no specialty ingredients required.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
+    </item>
+    <item>
+      <title>Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working</title>
+      <link>https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working</guid>
+      <pubDate>Fri, 29 May 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Around week 2 to 6 of starting minoxidil, a meaningful percentage of patients shed more hair than they've ever lost — and most of them quit. Here's the biology of why that shed is the protocol working, not failing.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Vaginal estradiol for GSM: the most under-prescribed protocol in women's health</title>
       <link>https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt</link>
@@ -328,54 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
-    </item>
-    <item>
-      <title>The 12 markers we actually look at first on a DirectCare AI hormone panel</title>
-      <link>https://www.directcare.ai/blog/12-markers-hormone-panel-priority</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/12-markers-hormone-panel-priority</guid>
-      <pubDate>Tue, 07 Apr 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[Lists the 12 biomarkers a clinician opens first on a hormone panel: total/free testosterone, SHBG, estradiol, DHEA-S, LH, FSH, TSH, free T3/T4, fasting insulin, ApoB, hs-CRP.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
-    </item>
-    <item>
-      <title>Magnesium, vitamin D, and the four supplement gaps almost every patient has</title>
-      <link>https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps</guid>
-      <pubDate>Tue, 31 Mar 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Supplements</category>
-      <description><![CDATA[Explains the two most commonly under-dosed supplements: magnesium glycinate (300-400mg/day for sleep + recovery) and vitamin D3 (2,000-5,000 IU/day to hit 40-60 ng/mL).]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
-    </item>
-    <item>
-      <title>Greek chicken souvlaki bowl: the meal-prep base that holds a whole week</title>
-      <link>https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep</guid>
-      <pubDate>Sat, 28 Mar 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Recipe for meal-prep Greek chicken souvlaki bowls: 4 servings, 35g protein each, marinated chicken thighs, lemon-oregano dressing, tzatziki, cucumber-tomato salad.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
-    </item>
-    <item>
-      <title>Protein timing: does the 30-minute post-workout window actually matter?</title>
-      <link>https://www.directcare.ai/blog/protein-timing-post-workout-window</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/protein-timing-post-workout-window</guid>
-      <pubDate>Wed, 18 Mar 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Explains why the 'anabolic window' is mostly a myth: total daily protein matters far more than post-workout timing as long as you hit 1g/lb goal weight across 4 meals.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
     </item>
   </channel>
 </rss>

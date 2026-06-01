@@ -1,6 +1,78 @@
 {
   "posts": [
     {
+      "slug": "estradiol-on-trt-aromatase-inhibitor-when-needed",
+      "title": "Estradiol on TRT: when men need an aromatase inhibitor and most don't",
+      "excerpt": "Most men on testosterone therapy don't need anastrozole — and over-suppression of estradiol causes more symptoms than the high estradiol clinics were trying to fix. The clinical case for restraint.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-06-01",
+      "dateLabel": "June 1, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png",
+      "keywords": [
+        "anastrozole TRT",
+        "aromatase inhibitor TRT",
+        "estradiol on testosterone",
+        "high estradiol men",
+        "TRT side effects",
+        "men estradiol range"
+      ]
+    },
+    {
+      "slug": "glp1-maintenance-protocol-after-weight-loss",
+      "title": "GLP-1 maintenance after weight loss: how to stay off without rebounding",
+      "excerpt": "The STEP-4 trial showed roughly two-thirds of weight lost on a GLP-1 comes back within a year of stopping. The maintenance protocol that prevents it isn't quitting cold turkey — and isn't staying on full dose either.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-05-31",
+      "dateLabel": "May 31, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+      "keywords": [
+        "GLP-1 maintenance",
+        "stopping semaglutide",
+        "tirzepatide maintenance dose",
+        "weight loss rebound",
+        "STEP-4 trial",
+        "GLP-1 discontinuation"
+      ]
+    },
+    {
+      "slug": "25-minute-ginger-chicken-stir-fry-recipe",
+      "title": "The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy",
+      "excerpt": "One pan, 25 minutes, 38 grams of protein per plate. A clinician-built weeknight dinner that scales for one or feeds a family of four — no specialty ingredients required.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-05-30",
+      "dateLabel": "May 30, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+      "keywords": [
+        "ginger chicken stir fry",
+        "high protein weeknight dinner",
+        "one pan stir fry",
+        "healthy chicken stir fry recipe",
+        "25 minute dinner",
+        "Asian chicken recipe high protein"
+      ]
+    },
+    {
+      "slug": "minoxidil-shedding-why-month-one-hair-loss-means-its-working",
+      "title": "Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working",
+      "excerpt": "Around week 2 to 6 of starting minoxidil, a meaningful percentage of patients shed more hair than they've ever lost — and most of them quit. Here's the biology of why that shed is the protocol working, not failing.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-05-29",
+      "dateLabel": "May 29, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "minoxidil shedding",
+        "dread shed minoxidil",
+        "minoxidil month one",
+        "telogen effluvium minoxidil",
+        "rogaine shedding",
+        "hair regrowth timeline"
+      ]
+    },
+    {
       "slug": "vaginal-estradiol-gsm-most-underprescribed-hrt",
       "title": "Vaginal estradiol for GSM: the most under-prescribed protocol in women's health",
       "excerpt": "Half of postmenopausal women have symptoms of genitourinary syndrome of menopause. Only ~7% are on the local protocol that resolves it. The math behind that gap — and the science that closes it.",

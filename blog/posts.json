@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "hrv-heart-rate-variability-recovery-tracking",
+      "title": "Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it",
+      "excerpt": "Resting heart rate is the simple metric. HRV is the smarter one. Why this overnight number is the cleanest measure of your nervous system's recovery state — and the four levers that move it most.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-06-01",
+      "dateLabel": "June 1, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Lifestyle%20%26%20Exercise.png",
+      "keywords": [
+        "heart rate variability",
+        "HRV explained",
+        "what is HRV",
+        "HRV training",
+        "HRV recovery",
+        "Whoop HRV",
+        "Oura HRV",
+        "improve HRV"
+      ]
+    },
+    {
       "slug": "estradiol-on-trt-aromatase-inhibitor-when-needed",
       "title": "Estradiol on TRT: when men need an aromatase inhibitor and most don't",
       "excerpt": "Most men on testosterone therapy don't need anastrozole — and over-suppression of estradiol causes more symptoms than the high estradiol clinics were trying to fix. The clinical case for restraint.",

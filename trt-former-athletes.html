@@ -1600,8 +1600,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     .fa-points svg { flex-shrink: 0; margin-top: 3px; color: #af4bed; }
     .fa-points strong { display: block; }
     .fa-points small { color: var(--muted, #6b6577); }
-    .fa-photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
-    .fa-photos img { width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius, 16px); aspect-ratio: 3/4; box-shadow: 0 18px 40px rgba(26,15,36,0.16); }
+    .fa-photos { position: relative; width: 100%; max-width: 440px; margin: 0 auto; aspect-ratio: 1 / 1; }
+    .fa-photos img { position: absolute; object-fit: cover; border-radius: var(--radius, 16px); }
+    .fa-photo-back { top: 0; left: 0; width: 64%; height: 80%; box-shadow: 0 18px 40px rgba(26,15,36,0.18); }
+    .fa-photo-front { bottom: 0; right: 0; width: 56%; height: 72%; border: 6px solid #fff; box-shadow: 0 26px 54px rgba(26,15,36,0.30); }
+    @media (max-width: 480px) { .fa-photos { max-width: 300px; } .fa-photo-front { border-width: 4px; } }
   </style>
   <div class="container">
     <div class="fa-grid">
@@ -1617,10 +1620,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://business.tellescope.com/e/public/form?f=683872d1d3039feba26af038&businessId=67fe9d4248c4ab911e8bdcd6" class="btn btn-primary btn-primary-xl">See if TRT is right for you →</a>
       </div>
       <div class="fa-photos">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/white%20male%2040s.png" alt="Fit man in his 40s after restoring testosterone" width="600" height="800" decoding="async" loading="lazy">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/black%20male%20squat%20rack.png" alt="Former athlete training at the squat rack" width="600" height="800" decoding="async" loading="lazy">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/hispanic%20male%20treadmill.png" alt="Former athlete training on a treadmill" width="600" height="800" decoding="async" loading="lazy">
-        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/asian%20male%2040s.png" alt="Lean confident man in his 40s" width="600" height="800" decoding="async" loading="lazy">
+        <img class="fa-photo-back" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/white%20male%2040s.png" alt="Fit man in his 40s after restoring testosterone" width="600" height="800" decoding="async" loading="lazy">
+        <img class="fa-photo-front" src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/black%20male%20squat%20rack.png" alt="Former athlete training at the squat rack" width="600" height="800" decoding="async" loading="lazy">
       </div>
     </div>
   </div>

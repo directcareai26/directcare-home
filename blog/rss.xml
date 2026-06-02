@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)</title>
+      <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevity</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevity</guid>
+      <pubDate>Tue, 02 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Supplements</category>
+      <description><![CDATA[The cleanest, cheapest, best-studied supplement on the market is also the one most women have written off as a bodybuilding drug. The published evidence in cognition, bone density, and healthy aging says they shouldn't.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
+    </item>
     <item>
       <title>Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it</title>
       <link>https://www.directcare.ai/blog/hrv-heart-rate-variability-recovery-tracking</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
-    </item>
-    <item>
-      <title>Body recomp on GLP-1s: how to lose fat without losing muscle</title>
-      <link>https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle</guid>
-      <pubDate>Tue, 14 Apr 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week, and a 10-15% calorie deficit (not 30%).]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
     </item>
   </channel>
 </rss>

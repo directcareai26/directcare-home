@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include",
+      "title": "ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)",
+      "excerpt": "Modern cardiology has shifted from LDL cholesterol to apolipoprotein B (ApoB) as the cleaner measure of cardiovascular risk. Most annual physicals still order the wrong test — and read it wrong when they do.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-06-03",
+      "dateLabel": "June 3, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "ApoB test",
+        "apolipoprotein B",
+        "ApoB vs LDL",
+        "ApoB target",
+        "advanced lipid panel",
+        "ApoB cholesterol",
+        "modern cholesterol testing",
+        "Lp(a) and ApoB"
+      ]
+    },
+    {
       "slug": "creatine-for-women-cognition-bone-longevity",
       "title": "Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)",
       "excerpt": "The cleanest, cheapest, best-studied supplement on the market is also the one most women have written off as a bodybuilding drug. The published evidence in cognition, bone density, and healthy aging says they shouldn't.",

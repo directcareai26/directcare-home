@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)</title>
+      <link>https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include</guid>
+      <pubDate>Wed, 03 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Modern cardiology has shifted from LDL cholesterol to apolipoprotein B (ApoB) as the cleaner measure of cardiovascular risk. Most annual physicals still order the wrong test — and read it wrong when they do.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)</title>
       <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevity</link>
@@ -361,18 +373,6 @@
       <dc:creator>DirectCare AI Clinical Team</dc:creator>
       <category>Weight Loss</category>
       <description><![CDATA[Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3, energy returns by week 4.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
-    </item>
-    <item>
-      <title>Eggs vs. egg whites: which one actually fits your protocol</title>
-      <link>https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol</guid>
-      <pubDate>Fri, 17 Apr 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you're hitting 1g/lb protein on a calorie ceiling.]]></description>
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />

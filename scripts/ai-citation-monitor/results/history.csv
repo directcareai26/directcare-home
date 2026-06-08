@@ -279,3 +279,143 @@ date,engine,vertical,prompt,brand_hits,position,cited_in_sources,top_competitor,
 2026-06-01,anthropic,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,ANTHROPIC_API_KEY not set
 2026-06-01,openai,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,OPENAI_API_KEY not set
 2026-06-01,gemini,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hrt,Compare online HRT providers for perimenopause,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hrt,Compare online HRT providers for perimenopause,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hrt,Compare online HRT providers for perimenopause,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hrt,Compare online HRT providers for perimenopause,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hrt,Online HRT with blood labs included — recommendations?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hrt,Online HRT with blood labs included — recommendations?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hrt,Online HRT with blood labs included — recommendations?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hrt,Online HRT with blood labs included — recommendations?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,trt,Best online TRT clinic in 2026?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,trt,Best online TRT clinic in 2026?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,trt,Best online TRT clinic in 2026?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,trt,Best online TRT clinic in 2026?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,trt,Where can men get compounded testosterone online?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,trt,Where can men get compounded testosterone online?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,trt,Where can men get compounded testosterone online?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,trt,Where can men get compounded testosterone online?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,trt,Cheapest online TRT with bloodwork included,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,trt,Cheapest online TRT with bloodwork included,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,trt,Cheapest online TRT with bloodwork included,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,trt,Cheapest online TRT with bloodwork included,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,trt,Online testosterone replacement therapy without insurance,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,trt,Online testosterone replacement therapy without insurance,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,trt,Online testosterone replacement therapy without insurance,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,trt,Online testosterone replacement therapy without insurance,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,sexual_health,Surge Max vs other compounded ED options,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,sexual_health,Surge Max vs other compounded ED options,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,sexual_health,Surge Max vs other compounded ED options,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,sexual_health,Surge Max vs other compounded ED options,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hair_loss,Best online hair regrowth clinic for women?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hair_loss,Best online hair regrowth clinic for women?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hair_loss,Best online hair regrowth clinic for women?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hair_loss,Best online hair regrowth clinic for women?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hair_loss,Where to get topical finasteride online for men?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hair_loss,Where to get topical finasteride online for men?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hair_loss,Where to get topical finasteride online for men?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hair_loss,Where to get topical finasteride online for men?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,general_brand,What is DirectCare AI?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,general_brand,What is DirectCare AI?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,general_brand,What is DirectCare AI?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,general_brand,What is DirectCare AI?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,general_brand,Does DirectCare AI accept insurance?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,general_brand,Does DirectCare AI accept insurance?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,general_brand,Does DirectCare AI accept insurance?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,general_brand,Does DirectCare AI accept insurance?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,general_brand,Where is DirectCare AI based?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,general_brand,Where is DirectCare AI based?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,general_brand,Where is DirectCare AI based?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,general_brand,Where is DirectCare AI based?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,GEMINI_API_KEY not set
+2026-06-08,perplexity,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,PERPLEXITY_API_KEY not set
+2026-06-08,anthropic,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,ANTHROPIC_API_KEY not set
+2026-06-08,openai,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,OPENAI_API_KEY not set
+2026-06-08,gemini,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,GEMINI_API_KEY not set

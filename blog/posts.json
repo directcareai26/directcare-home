@@ -1,6 +1,117 @@
 {
   "posts": [
     {
+      "slug": "trt-and-sleep-apnea-the-bidirectional-relationship",
+      "title": "TRT and sleep apnea: the bidirectional relationship most clinics miss",
+      "excerpt": "Low testosterone makes sleep apnea worse. Untreated sleep apnea drives testosterone down. Patients can spend years on testosterone protocols that aren't working — because the actual root cause is upstream in the airway.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-06-09",
+      "dateLabel": "June 9, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png",
+      "keywords": [
+        "TRT sleep apnea",
+        "testosterone sleep apnea",
+        "low T sleep apnea",
+        "OSA testosterone",
+        "CPAP testosterone",
+        "STOP-BANG TRT"
+      ]
+    },
+    {
+      "slug": "compounded-vs-branded-glp1-actual-difference",
+      "title": "Compounded vs. branded GLP-1: the actual difference, and when one beats the other",
+      "excerpt": "Same active ingredient. Same mechanism. Often a fraction of the cost. The real differences between compounded semaglutide/tirzepatide and the branded Wegovy/Zepbound versions are mostly about supply, dose flexibility, and oversight — not wh",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-06-08",
+      "dateLabel": "June 8, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "compounded semaglutide",
+        "compounded tirzepatide",
+        "Wegovy alternative",
+        "Zepbound alternative",
+        "compounded GLP-1 cost",
+        "compounded vs branded GLP-1"
+      ]
+    },
+    {
+      "slug": "pt-141-bremelanotide-libido-melanocortin-pathway",
+      "title": "PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow",
+      "excerpt": "PDE5 inhibitors fix the plumbing. PT-141 fixes the signal. A melanocortin agonist that drives desire — not just mechanical response — and pairs differently with the protocols clinics already prescribe.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-06-07",
+      "dateLabel": "June 7, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png",
+      "keywords": [
+        "PT-141",
+        "bremelanotide",
+        "Vyleesi",
+        "melanocortin agonist libido",
+        "PT-141 men",
+        "PT-141 women",
+        "libido peptide",
+        "PDE5 vs PT-141"
+      ]
+    },
+    {
+      "slug": "harissa-salmon-sheet-pan-recipe-36g-protein",
+      "title": "Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan",
+      "excerpt": "Salmon, cauliflower, chickpeas, harissa. One pan. 35 minutes. 36 grams of protein. The Saturday-night dinner that feels like more effort than it actually was.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-06-06",
+      "dateLabel": "June 6, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+      "keywords": [
+        "harissa salmon recipe",
+        "sheet pan salmon",
+        "high protein salmon dinner",
+        "Mediterranean salmon recipe",
+        "chickpea salmon",
+        "weekend dinner recipe"
+      ]
+    },
+    {
+      "slug": "dutasteride-vs-finasteride-when-to-step-up",
+      "title": "Dutasteride vs. finasteride: when men should consider the more aggressive 5-alpha reductase blocker",
+      "excerpt": "Finasteride is the gold-standard hair-loss drug. Dutasteride is the more aggressive cousin — same mechanism, more enzyme suppression, better regrowth results in the patients who don't respond fully to finasteride. The clinical case for step",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-06-05",
+      "dateLabel": "June 5, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png",
+      "keywords": [
+        "dutasteride vs finasteride",
+        "dutasteride hair loss",
+        "topical dutasteride",
+        "5-alpha reductase inhibitor",
+        "Avodart hair",
+        "finasteride non-responder"
+      ]
+    },
+    {
+      "slug": "dhea-in-womens-hrt-the-third-sex-hormone",
+      "title": "DHEA in women's HRT: the often-skipped third sex hormone",
+      "excerpt": "Estradiol gets the headlines. Progesterone gets the prescription. DHEA — the adrenal precursor that drives roughly half of a woman's sex hormone production by her 50s — almost never gets mentioned. Here's why it should.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-06-04",
+      "dateLabel": "June 4, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png",
+      "keywords": [
+        "DHEA women",
+        "DHEA HRT",
+        "DHEA-S levels",
+        "DHEA perimenopause",
+        "DHEA dose women",
+        "DHEA vaginal",
+        "intrarosa DHEA"
+      ]
+    },
+    {
       "slug": "apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include",
       "title": "ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)",
       "excerpt": "Modern cardiology has shifted from LDL cholesterol to apolipoprotein B (ApoB) as the cleaner measure of cardiovascular risk. Most annual physicals still order the wrong test — and read it wrong when they do.",

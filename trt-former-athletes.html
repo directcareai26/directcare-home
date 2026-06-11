@@ -1587,6 +1587,27 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 }
 </style>
 
+<style id="dcai-scrollanim">
+.js-anim .reveal-up{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);}
+.js-anim .reveal-up.in{opacity:1;transform:none;}
+.js-anim .stagger>*{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s ease;}
+.js-anim .stagger.in>*{opacity:1;transform:none;}
+.js-anim .stagger.in>*:nth-child(1){transition-delay:.04s}.js-anim .stagger.in>*:nth-child(2){transition-delay:.1s}.js-anim .stagger.in>*:nth-child(3){transition-delay:.16s}.js-anim .stagger.in>*:nth-child(4){transition-delay:.22s}.js-anim .stagger.in>*:nth-child(5){transition-delay:.28s}.js-anim .stagger.in>*:nth-child(6){transition-delay:.34s}.js-anim .stagger.in>*:nth-child(7){transition-delay:.4s}.js-anim .stagger.in>*:nth-child(8){transition-delay:.46s}
+.js-anim .rd-chart .chart-line{stroke-dasharray:900;stroke-dashoffset:900;}
+.js-anim .rd-chart.in .chart-line{transition:stroke-dashoffset 1.7s ease .2s;stroke-dashoffset:0;}
+.js-anim .rd-chart .chart-area,.js-anim .rd-chart .chart-callout,.js-anim .rd-chart .chart-dot{opacity:0;}
+.js-anim .rd-chart.in .chart-area{transition:opacity 1s ease .7s;opacity:1;}
+.js-anim .rd-chart.in .chart-callout{transition:opacity .6s ease 1.5s;opacity:1;}
+.js-anim .rd-chart.in .chart-dot{transition:opacity .4s ease 1.4s;opacity:1;}
+@media(prefers-reduced-motion:reduce){.js-anim .reveal-up,.js-anim .stagger>*{opacity:1!important;transform:none!important;}}
+</style>
+<style id="dcai-motes">
+.motes{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden;}
+.motes i{position:absolute;bottom:-12px;border-radius:50%;background:radial-gradient(circle,rgba(255,228,160,.9) 0%,rgba(255,200,90,0) 70%);opacity:0;animation-name:moteFloat;animation-timing-function:linear;animation-iteration-count:infinite;box-shadow:0 0 6px 1px rgba(255,210,120,.4);}
+@keyframes moteFloat{0%{opacity:0;transform:translateY(0) translateX(0) scale(.6);}12%{opacity:.7;}80%{opacity:.45;}100%{opacity:0;transform:translateY(-340px) translateX(var(--dx,10px)) scale(1.1);}}
+.rd-why .container{position:relative;z-index:3;}
+@media(prefers-reduced-motion:reduce){.motes{display:none;}}
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1671,6 +1692,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- HERO -->
 <header class="hero rd-hero" id="eligibility">
+<div class="motes" aria-hidden="true"><i style="left:0%;width:4px;height:4px;--dx:-15px;animation-duration:6.0s;animation-delay:0.0s;"></i><i style="left:67%;width:6px;height:6px;--dx:-8px;animation-duration:7.1s;animation-delay:0.7s;"></i><i style="left:34%;width:8px;height:8px;--dx:-1px;animation-duration:8.2s;animation-delay:1.4s;"></i><i style="left:1%;width:4px;height:4px;--dx:6px;animation-duration:9.3s;animation-delay:2.1s;"></i><i style="left:68%;width:6px;height:6px;--dx:13px;animation-duration:10.4s;animation-delay:2.8s;"></i><i style="left:35%;width:8px;height:8px;--dx:-10px;animation-duration:6.0s;animation-delay:3.5s;"></i><i style="left:2%;width:4px;height:4px;--dx:-3px;animation-duration:7.1s;animation-delay:4.2s;"></i><i style="left:69%;width:6px;height:6px;--dx:4px;animation-duration:8.2s;animation-delay:4.9s;"></i><i style="left:36%;width:8px;height:8px;--dx:11px;animation-duration:9.3s;animation-delay:5.6s;"></i><i style="left:3%;width:4px;height:4px;--dx:-12px;animation-duration:10.4s;animation-delay:0.3s;"></i><i style="left:70%;width:6px;height:6px;--dx:-5px;animation-duration:6.0s;animation-delay:1.0s;"></i><i style="left:37%;width:8px;height:8px;--dx:2px;animation-duration:7.1s;animation-delay:1.7s;"></i><i style="left:4%;width:4px;height:4px;--dx:9px;animation-duration:8.2s;animation-delay:2.4s;"></i><i style="left:71%;width:6px;height:6px;--dx:-14px;animation-duration:9.3s;animation-delay:3.1s;"></i><i style="left:38%;width:8px;height:8px;--dx:-7px;animation-duration:10.4s;animation-delay:3.8s;"></i></div>
   <div class="rd-hero-media">
     <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/white%20male%2040s.png" alt="Former athlete reflecting after restoring his testosterone with DirectCare AI" width="900" height="1100" fetchpriority="high" decoding="async">
   </div>
@@ -1726,6 +1748,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- WHY IT HAPPENS -->
 <section class="section rd-why">
+<div class="motes" aria-hidden="true"><i style="left:0%;width:4px;height:4px;--dx:-15px;animation-duration:6.0s;animation-delay:0.0s;"></i><i style="left:67%;width:6px;height:6px;--dx:-8px;animation-duration:7.1s;animation-delay:0.7s;"></i><i style="left:34%;width:8px;height:8px;--dx:-1px;animation-duration:8.2s;animation-delay:1.4s;"></i><i style="left:1%;width:4px;height:4px;--dx:6px;animation-duration:9.3s;animation-delay:2.1s;"></i><i style="left:68%;width:6px;height:6px;--dx:13px;animation-duration:10.4s;animation-delay:2.8s;"></i><i style="left:35%;width:8px;height:8px;--dx:-10px;animation-duration:6.0s;animation-delay:3.5s;"></i><i style="left:2%;width:4px;height:4px;--dx:-3px;animation-duration:7.1s;animation-delay:4.2s;"></i><i style="left:69%;width:6px;height:6px;--dx:4px;animation-duration:8.2s;animation-delay:4.9s;"></i><i style="left:36%;width:8px;height:8px;--dx:11px;animation-duration:9.3s;animation-delay:5.6s;"></i><i style="left:3%;width:4px;height:4px;--dx:-12px;animation-duration:10.4s;animation-delay:0.3s;"></i><i style="left:70%;width:6px;height:6px;--dx:-5px;animation-duration:6.0s;animation-delay:1.0s;"></i><i style="left:37%;width:8px;height:8px;--dx:2px;animation-duration:7.1s;animation-delay:1.7s;"></i></div>
   <div class="container">
     <div class="rd-why-grid">
       <div class="rd-why-copy">
@@ -1763,10 +1786,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <text x="60" y="318">20</text><text x="160" y="318">30</text><text x="260" y="318">40</text><text x="360" y="318">50</text><text x="460" y="318">60</text><text x="560" y="318">70</text>
             <text x="310" y="338" fill="rgba(255,255,255,0.5)">Age</text>
           </g>
-          <path d="M60,82 L160,90 L260,108 L360,140 L460,188 L560,242 L560,300 L60,300 Z" fill="url(#rdArea)"/>
-          <polyline points="60,82 160,90 260,108 360,140 460,188 560,242" fill="none" stroke="#d185ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <g fill="#fff"><circle cx="60" cy="82" r="3.5"/><circle cx="160" cy="90" r="3.5"/><circle cx="260" cy="108" r="3.5"/><circle cx="360" cy="140" r="3.5"/><circle cx="460" cy="188" r="3.5"/><circle cx="560" cy="242" r="3.5"/></g>
-          <g>
+          <path class="chart-area" d="M60,82 L160,90 L260,108 L360,140 L460,188 L560,242 L560,300 L60,300 Z" fill="url(#rdArea)"/>
+          <polyline class="chart-line" points="60,82 160,90 260,108 360,140 460,188 560,242" fill="none" stroke="#d185ff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <g class="chart-dot" fill="#fff"><circle cx="60" cy="82" r="3.5"/><circle cx="160" cy="90" r="3.5"/><circle cx="260" cy="108" r="3.5"/><circle cx="360" cy="140" r="3.5"/><circle cx="460" cy="188" r="3.5"/><circle cx="560" cy="242" r="3.5"/></g>
+          <g class="chart-callout">
             <rect x="366" y="58" width="184" height="56" rx="11" fill="#af4bed"/>
             <text x="458" y="81" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Geist,system-ui,sans-serif">Testosterone can drop</text>
             <text x="458" y="99" fill="#fff" font-size="12.5" font-weight="600" text-anchor="middle" font-family="Geist,system-ui,sans-serif">up to 30% by age 50</text>
@@ -2430,6 +2453,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
     }
   }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+ var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ if(reduce)return;
+ var up=['.rd-head','.m-head','.rd-split','.rd-why-copy','.ff-why-copy','.m-why-col','.rd-why-media','.ff-why-media','.m-why-media','.rd-cand','.m-cand','.rd-pill','.m-pill','.price-cta-row','.price-foot'];
+ var stag=['.rd-symptoms','.m-symgrid','.ff-symgrid','.rd-steps','.m-steps','.pricing-grid'];
+ up.forEach(function(s){[].forEach.call(document.querySelectorAll(s),function(e){e.classList.add('reveal-up');});});
+ stag.forEach(function(s){[].forEach.call(document.querySelectorAll(s),function(e){e.classList.add('stagger');});});
+ document.documentElement.classList.add('js-anim');
+ var els=[].slice.call(document.querySelectorAll('.reveal-up,.stagger,.rd-chart'));
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in');});return;}
+ var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+ els.forEach(function(e){io.observe(e);});
 })();
 </script>
 </body>

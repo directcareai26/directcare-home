@@ -1575,9 +1575,20 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 @media(max-width:768px){
   .rd-hero-inner,.ff-why-copy,.rd-cand-copy,.rd-cand-quote{text-align:center;}
   .rd-hero-inner p,.ff-why-copy p{margin-left:auto;margin-right:auto;}
-  .ff-why-list,.rd-cand-list{width:max-content;max-width:100%;margin-left:auto;margin-right:auto;}
+  .ff-why-list li,.rd-cand-list li{justify-content:center;}
   .rd-trust .ti{justify-content:center;}
   .ff-why-copy h2::after,.rd-cand h2::after{margin-left:auto;margin-right:auto;}
+}
+</style>
+
+
+<style>
+/* Mobile fix: keep Google/Trustpilot rating widget inside the viewport */
+@media (max-width:720px){
+  .tnpn-ratings > .rating{min-width:0;flex-wrap:wrap;gap:4px 6px;}
+  .rating-meta{flex-wrap:wrap;justify-content:center;}
+  .rating-stars{font-size:0.72rem;}
+  .rating-brand .g-letter{font-size:0.82rem;}
 }
 </style>
 

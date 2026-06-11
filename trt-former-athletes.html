@@ -1562,7 +1562,7 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   .rd-hero-inner,.rd-split,.rd-split-copy,.rd-why-copy,.rd-cand-copy,
   .m-hero-inner,.m-quote,.m-why-col,.m-cand-copy,.m-cand-quote{text-align:center;}
   .rd-hero-inner p,.rd-split p,.rd-why p,.m-hero-inner p,.m-why p{margin-left:auto;margin-right:auto;}
-  .rd-symptoms,.rd-cand-list,.m-cand-list,.m-why-list{width:max-content;max-width:100%;margin-left:auto;margin-right:auto;}
+  .rd-symptoms,.rd-cand-list,.m-cand-list,.m-why-list{margin-left:auto;margin-right:auto;}.rd-symptoms li,.rd-cand-list li,.m-cand-list li,.m-why-list li{justify-content:center;}
   .rd-trust .ti,.m-trust .ti{justify-content:center;}
   .rd-iconrow{justify-content:center;}
   .m-cand-photo{margin-left:auto;margin-right:auto;}
@@ -1573,6 +1573,17 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 @media(max-width:600px){
   .rd-iconrow{gap:20px 6px;}
   .rd-iconrow .ic{width:30%;}
+}
+</style>
+
+
+<style>
+/* Mobile fix: keep Google/Trustpilot rating widget inside the viewport */
+@media (max-width:720px){
+  .tnpn-ratings > .rating{min-width:0;flex-wrap:wrap;gap:4px 6px;}
+  .rating-meta{flex-wrap:wrap;justify-content:center;}
+  .rating-stars{font-size:0.72rem;}
+  .rating-brand .g-letter{font-size:0.82rem;}
 }
 </style>
 

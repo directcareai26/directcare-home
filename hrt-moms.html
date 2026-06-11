@@ -1539,6 +1539,34 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 @media(max-width:680px){.m-trust .container{grid-template-columns:1fr 1fr;gap:22px;}}
 </style>
 
+
+<style>
+/* ===== MOBILE CENTERING + TITLE POP + ICON ROW (persona redesign) ===== */
+/* Section titles pop more */
+.rd-split h2,.rd-why h2,.rd-cand h2,.section-head:not(.tnpn-head) h2,.m-head h2,.m-why h2,.m-cand h2{font-weight:800;letter-spacing:-.022em;}
+.rd-split h2::after,.rd-why h2::after,.rd-cand h2::after,.section-head:not(.tnpn-head) h2::after,.m-head h2::after,.m-why h2::after,.m-cand h2::after{content:"";display:block;width:62px;height:4px;border-radius:2px;margin:16px 0 0;background:linear-gradient(90deg,var(--brand),var(--brand-darker));}
+.section-head:not(.tnpn-head) h2::after,.m-head h2::after{margin-left:auto;margin-right:auto;}
+.rd-why h2::after{background:linear-gradient(90deg,#d185ff,#af4bed);}
+
+/* Center everything on mobile */
+@media(max-width:768px){
+  .rd-hero-inner,.rd-split,.rd-split-copy,.rd-why-copy,.rd-cand-copy,
+  .m-hero-inner,.m-quote,.m-why-col,.m-cand-copy,.m-cand-quote{text-align:center;}
+  .rd-hero-inner p,.rd-split p,.rd-why p,.m-hero-inner p,.m-why p{margin-left:auto;margin-right:auto;}
+  .rd-symptoms,.rd-cand-list,.m-cand-list,.m-why-list{width:max-content;max-width:100%;margin-left:auto;margin-right:auto;}
+  .rd-trust .ti,.m-trust .ti{justify-content:center;}
+  .rd-iconrow{justify-content:center;}
+  .m-cand-photo{margin-left:auto;margin-right:auto;}
+  .rd-split h2::after,.rd-why h2::after,.rd-cand h2::after,.m-why h2::after,.m-cand h2::after{margin-left:auto;margin-right:auto;}
+}
+
+/* Icon row: 3 on top, 2 on bottom (phones) */
+@media(max-width:600px){
+  .rd-iconrow{gap:20px 6px;}
+  .rd-iconrow .ic{width:30%;}
+}
+</style>
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

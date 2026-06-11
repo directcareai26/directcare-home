@@ -10,13 +10,37 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Continuous glucose monitors (CGM) for non-diabetics: what the data actually shows in 2026</title>
+      <link>https://www.directcare.ai/blog/continuous-glucose-monitor-cgm-for-non-diabetics</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/continuous-glucose-monitor-cgm-for-non-diabetics</guid>
+      <pubDate>Thu, 11 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Over-the-counter CGM access changed the metabolic conversation. The question shifted from 'should I get one' to 'is the data actually useful, or is it making me anxious about meals that were fine?' Here's the clinician's view.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
+    </item>
+    <item>
+      <title>Grip strength predicts how long you'll live — and the 3 exercises that actually build it</title>
+      <link>https://www.directcare.ai/blog/grip-strength-longevity-predictor-three-exercises</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/grip-strength-longevity-predictor-three-exercises</guid>
+      <pubDate>Wed, 10 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Grip strength is one of the cleanest biomarkers of all-cause mortality in adults. The Lancet's PURE study, with 140,000 participants across 17 countries, found it outperforms blood pressure as a predictor. The good news: it's also one of th]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
     <item>
       <title>TRT and sleep apnea: the bidirectional relationship most clinics miss</title>
       <link>https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship</link>
@@ -352,30 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" />
-    </item>
-    <item>
-      <title>Why morning testosterone tests matter (and what time of day ruins yours)</title>
-      <link>https://www.directcare.ai/blog/morning-testosterone-test-timing</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/morning-testosterone-test-timing</guid>
-      <pubDate>Sun, 17 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Explains why testosterone must be tested before 10am: levels can drop 25-30% from 7am to noon, enough to flip a normal reading into a low-T diagnosis or vice versa.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
-    </item>
-    <item>
-      <title>Progesterone at night: why timing matters more than dose for menopause sleep</title>
-      <link>https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose</guid>
-      <pubDate>Thu, 14 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>HRT</category>
-      <description><![CDATA[Explains why oral micronized progesterone for menopause must be taken at bedtime: timing drives the sedating effect more than dose, and morning dosing wastes the benefit.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
     </item>
   </channel>
 </rss>

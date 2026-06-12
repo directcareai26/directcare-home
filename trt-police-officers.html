@@ -94,7 +94,7 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     --lavender-100: #E9D9F2;
     --lavender-200: #D185FF;
     --ink: #281A31;
-    --muted: #5b4d65;
+    --muted: #3d3247;
     --line: rgba(40,26,49,0.08);
     --brand: #af4bed;
     --brand-deep: #9043bf;
@@ -1450,6 +1450,12 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     background: rgba(36,20,50,0.04);
     border-color: rgba(36,20,50,0.10);
     color: var(--ink, #281A31);
+  }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->

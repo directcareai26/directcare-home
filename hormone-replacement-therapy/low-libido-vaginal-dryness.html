@@ -80,7 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     --lavender-100: #E9D9F2;
     --lavender-200: #D185FF;
     --ink: #281A31;
-    --muted: #5b4d65;
+    --muted: #3d3247;
     --line: rgba(40,26,49,0.08);
     --brand: #af4bed;
     --brand-deep: #9043bf;
@@ -360,6 +360,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
   .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
   .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
 </style>
 
 <link rel="preload" as="image" href="/optimized/warm-confident-800.webp" imagesrcset="/optimized/warm-confident-400.webp 480w, /optimized/warm-confident-800.webp 720w, /optimized/warm-confident-1200.webp 1080w" imagesizes="(max-width: 900px) 100vw, 45vw" fetchpriority="high">

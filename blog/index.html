@@ -93,8 +93,8 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     --bg-soft-lavender: #f0e8f6;
     --surface: #ffffff;
     --ink: #241432;
-    --ink-soft: #4a3760;
-    --muted: #6b5c7a;
+    --ink-soft: #332543;
+    --muted: #3d3247;
     --line: rgba(36,20,50,0.10);
     --line-strong: rgba(36,20,50,0.18);
     --brand: #af4bed;
@@ -221,6 +221,12 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
   .foot-col-legal a:hover { opacity: 1; color: var(--brand) !important; }
   .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 32px; margin-top: 48px; border-top: 1px solid var(--line); font-size: 0.82rem; color: var(--muted); }
   .legal-disclaimer { margin-top: 24px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
 </style>
 
 <!-- FlexOffers AdvertiserMax click tracking -->

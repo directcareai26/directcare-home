@@ -90,8 +90,8 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     --soft: #fbf5fe;
     --surface: #ffffff;
     --ink: #241432;
-    --ink-soft: #4a3760;
-    --muted: #6b5c7a;
+    --ink-soft: #332543;
+    --muted: #3d3247;
     --line: rgba(36,20,50,0.10);
     --lavender-100: #E9D9F2;
     --brand: #af4bed;
@@ -530,6 +530,12 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     .hero h1 { font-size: 1.9rem; }
     .why-copy h2, .onestop-copy h2, .pillars-head h2, .help-head h2 { font-size: 1.55rem; }
     .cta h2 { font-size: 1.65rem; }
+  }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
 </style>
 

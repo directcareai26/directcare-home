@@ -105,7 +105,7 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 <style>
   :root {
     --bg: #faf6f0; --bg-2: #f4eee5; --bg-cream: #f0e8d8; --surface: #ffffff;
-    --ink: #241432; --ink-soft: #4a3760; --muted: #6b5c7a;
+    --ink: #241432; --ink-soft: #332543; --muted: #3d3247;
     --line: rgba(36,20,50,0.10); --line-strong: rgba(36,20,50,0.18);
     --brand: #af4bed; --brand-deep: #762ba4; --brand-darker: #44215A; --dark: #241432;
     --gold-soft: #f5e6c2;
@@ -203,6 +203,12 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 
   .answer-block { background: linear-gradient(180deg, #f7eaff 0%, #efe2d1 100%); border-left: 4px solid var(--brand); border-radius: 12px; padding: 18px 22px; margin: 0 0 32px; font-size: 1.05rem; line-height: 1.55; color: var(--ink); max-width: 760px; }
   .answer-block::before { content: "Quick answer"; display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: var(--brand-deep); margin-bottom: 8px; }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
 </style>
 
 <!-- FlexOffers AdvertiserMax click tracking -->

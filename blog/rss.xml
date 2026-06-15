@@ -10,13 +10,49 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better</title>
+      <link>https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol</guid>
+      <pubDate>Mon, 15 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[A $25 dermaroller, used correctly, roughly doubles the regrowth produced by topical minoxidil alone. The mechanism is real, the published evidence is solid, and most patients are doing it wrong.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
+    </item>
+    <item>
+      <title>Estradiol delivery: patch, gel, pellet, or pill? How a clinician actually decides</title>
+      <link>https://www.directcare.ai/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill</guid>
+      <pubDate>Sun, 14 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Same molecule, four delivery systems, four very different real-world experiences. Cardiovascular risk, dose stability, convenience, and cost vary substantially between them. The clinician's-eye view on which fits which patient.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
+    </item>
+    <item>
+      <title>Greek lemon chicken with herbed quinoa: 38g protein, 30 minutes, one skillet</title>
+      <link>https://www.directcare.ai/blog/greek-lemon-chicken-herbed-quinoa-recipe</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/greek-lemon-chicken-herbed-quinoa-recipe</guid>
+      <pubDate>Sat, 13 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Chicken thighs, lemon, garlic, oregano. Herbed quinoa cooked in the same pan. 38 grams of protein, 9 grams of fiber, 30 minutes start to plate. The Saturday-night dinner you'll actually want to repeat on Tuesday.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
+    </item>
     <item>
       <title>Berberine isn't 'nature's Ozempic' — but it isn't nothing, either. A clinician's honest view</title>
       <link>https://www.directcare.ai/blog/berberine-natures-ozempic-clinician-honest-view</link>
@@ -340,42 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
-    </item>
-    <item>
-      <title>The 4-rule food framework for staying full and fueled on a GLP-1</title>
-      <link>https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework</guid>
-      <pubDate>Fri, 22 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Outlines the 4-rule eating framework for GLP-1 patients: 1g protein per pound goal weight, fiber > 25g/day, hydration > 80oz, no liquid calories.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
-    </item>
-    <item>
-      <title>Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs</title>
-      <link>https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/semaglutide-tirzepatide-difference</guid>
-      <pubDate>Thu, 21 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[Compares semaglutide vs. tirzepatide for weight loss: tirzepatide hits two receptors (GIP + GLP-1) and drops 15-22% body weight vs 12-15% for semaglutide.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
-    </item>
-    <item>
-      <title>HRT after 40: what actually changes when estradiol and progesterone come back online</title>
-      <link>https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/hrt-after-40-what-actually-changes</guid>
-      <pubDate>Wed, 20 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>HRT</category>
-      <description><![CDATA[Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks, body composition and libido shift at 3-6 months.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
     </item>
   </channel>
 </rss>

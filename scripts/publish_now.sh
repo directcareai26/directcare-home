@@ -60,8 +60,16 @@ echo "==> Title: $TITLE"
 
 echo ""
 echo "==> Commit + push..."
-git add blog/posts.json "$HTML_PATH" sitemap.xml 2>/dev/null || true
+git add blog/posts.json "$HTML_PATH" sitemap.xml blog/rss.xml 2>/dev/null || true
 git commit -m "blog: ${TITLE}" -m "Auto-published from publish_now.sh"
+
+# Auto-rebase against the remote before pushing. The LaunchAgent runs
+# concurrently with on-demand publishes — without this, parallel work on
+# main (manual edits, other commits) causes the push to fail "rejected -
+# non-fast-forward". --autostash handles any in-flight working-tree changes.
+git fetch origin main
+git pull --rebase --autostash origin main 2>&1 | tail -2
+
 git push origin main
 
 echo ""

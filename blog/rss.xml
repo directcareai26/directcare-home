@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Low Libido in Men: Testosterone, Stress, or Neither?</title>
+      <link>https://www.directcare.ai/blog/low-libido-men-testosterone-stress-or-neither</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/low-libido-men-testosterone-stress-or-neither</guid>
+      <pubDate>Fri, 19 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[Low libido in men gets blamed on testosterone, but stress, sleep, SSRIs, and metabolic disease drive just as many cases. Here's how to tell them apart.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better</title>
       <link>https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
-    </item>
-    <item>
-      <title>The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark</title>
-      <link>https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe</guid>
-      <pubDate>Sat, 23 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s — built for the smaller appetite a GLP-1 leaves you with.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
     </item>
   </channel>
 </rss>

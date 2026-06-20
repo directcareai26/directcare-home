@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Weight setpoint theory and GLP-1s: can these drugs actually move it downward?</title>
+      <link>https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it</guid>
+      <pubDate>Sat, 20 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[Every diet that's ever failed has a name in metabolism research: rebound to setpoint. GLP-1s are the first class of drugs with serious published evidence they may actually reset that setpoint — and the implication for long-term treatment is]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+    </item>
     <item>
       <title>Low Libido in Men: Testosterone, Stress, or Neither?</title>
       <link>https://www.directcare.ai/blog/low-libido-men-testosterone-stress-or-neither</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
-    </item>
-    <item>
-      <title>The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein</title>
-      <link>https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast</guid>
-      <pubDate>Sun, 24 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk. Blends in 3 minutes from a Sunday-night freezer prep.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
     </item>
   </channel>
 </rss>

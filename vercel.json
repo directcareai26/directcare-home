@@ -16,9 +16,6 @@
       "permanent": true
     },
 
-    { "source": "/faq", "destination": "/", "permanent": true },
-    { "source": "/faq/", "destination": "/", "permanent": true },
-    { "source": "/faq/:path*", "destination": "/", "permanent": true },
 
     { "source": "/remote-patient-monitoring", "destination": "/chronic-care/", "permanent": true },
     { "source": "/remote-patient-monitoring/", "destination": "/chronic-care/", "permanent": true },

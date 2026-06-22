@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Grip Strength and Longevity: 3 Exercises That Build It</title>
+      <link>https://www.directcare.ai/blog/grip-strength-longevity-3-exercises</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/grip-strength-longevity-3-exercises</guid>
+      <pubDate>Mon, 22 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Grip strength tracks all-cause mortality better than systolic blood pressure in some cohorts. Here's the science — and three exercises that build it.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
     <item>
       <title>Weight setpoint theory and GLP-1s: can these drugs actually move it downward?</title>
       <link>https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
-    </item>
-    <item>
-      <title>The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required</title>
-      <link>https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl</guid>
-      <pubDate>Sun, 24 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Recipe for a 5-minute pantry lunch bowl: canned chickpeas + tuna + olive oil + lemon. Hits 35g protein and 14g fiber with no stove or microwave.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
     </item>
   </channel>
 </rss>

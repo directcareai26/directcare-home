@@ -1,0 +1,90 @@
+name: Daily Blog Post
+
+# Publishes one SEO blog post per day, fully in GitHub's cloud — no dependency
+# on any local machine being awake. Vercel auto-deploys the push to production
+# (main is the production branch).
+#
+# Requires ONE repository secret: ANTHROPIC_API_KEY
+#   Settings -> Secrets and variables -> Actions -> New repository secret
+
+on:
+  schedule:
+    # 12:00 UTC = 8:00 AM EDT (summer) / 7:00 AM EST (winter). GitHub cron is
+    # UTC-only and can be delayed a few minutes under load — fine for a daily post.
+    - cron: "0 12 * * *"
+  workflow_dispatch: {}   # lets you (or Claude) fire it manually from the Actions tab
+
+# Prevent two runs colliding if a manual trigger overlaps the scheduled one
+concurrency:
+  group: daily-blog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write     # allow the workflow to commit + push the new post
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # full history so the push is a clean fast-forward
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install --quiet "anthropic>=0.40"
+
+      - name: Skip if a post already exists for today
+        id: guard
+        run: |
+          TODAY=$(TZ="America/New_York" date +%Y-%m-%d)
+          echo "today=$TODAY" >> "$GITHUB_OUTPUT"
+          if python3 -c "
+          import json, sys
+          posts = json.load(open('blog/posts.json'))['posts']
+          sys.exit(0 if any(p.get('date') == '$TODAY' for p in posts) else 1)
+          "; then
+            echo "already_posted=true" >> "$GITHUB_OUTPUT"
+            echo "A post already exists for $TODAY — skipping generation."
+          else
+            echo "already_posted=false" >> "$GITHUB_OUTPUT"
+            echo "No post yet for $TODAY — will generate."
+          fi
+
+      - name: Generate today's post
+        if: steps.guard.outputs.already_posted == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}"
+
+      - name: Commit and push
+        if: steps.guard.outputs.already_posted == 'false'
+        run: |
+          git config user.name  "DirectCare Blog Bot"
+          git config user.email "directcareai@gmail.com"
+          git add blog/ sitemap.xml scripts/used_topics.json
+          # Pull in any work pushed since checkout, then push our new post.
+          git pull --rebase --autostash origin main || true
+          NEW_SLUG=$(python3 -c "import json; print(json.load(open('blog/posts.json'))['posts'][0]['slug'])")
+          NEW_TITLE=$(python3 -c "import json; print(json.load(open('blog/posts.json'))['posts'][0]['title'])")
+          git commit -m "blog: ${NEW_TITLE}" -m "Auto-published by the daily-blog GitHub Action." || {
+            echo "Nothing to commit — exiting cleanly."; exit 0;
+          }
+          git push origin main
+          echo "Published: $NEW_SLUG"
+
+      - name: Summary
+        if: always()
+        run: |
+          if [ "${{ steps.guard.outputs.already_posted }}" = "true" ]; then
+            echo "### ⏭️ Skipped — post already existed for ${{ steps.guard.outputs.today }}" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "### ✅ Generated and pushed today's post (${{ steps.guard.outputs.today }})" >> "$GITHUB_STEP_SUMMARY"
+            echo "Vercel will auto-deploy the push to production." >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -12,7 +12,12 @@ on:
     # 12:00 UTC = 8:00 AM EDT (summer) / 7:00 AM EST (winter). GitHub cron is
     # UTC-only and can be delayed a few minutes under load — fine for a daily post.
     - cron: "0 12 * * *"
-  workflow_dispatch: {}   # lets you (or Claude) fire it manually from the Actions tab
+  workflow_dispatch:      # lets you (or Claude) fire it manually from the Actions tab
+    inputs:
+      target_date:
+        description: "Override post date (YYYY-MM-DD). Leave blank for today."
+        required: false
+        default: ""
 
 # Prevent two runs colliding if a manual trigger overlaps the scheduled one
 concurrency:
@@ -42,7 +47,8 @@ jobs:
       - name: Skip if a post already exists for today
         id: guard
         run: |
-          TODAY=$(TZ="America/New_York" date +%Y-%m-%d)
+          TODAY="${{ github.event.inputs.target_date }}"
+          if [ -z "$TODAY" ]; then TODAY=$(TZ="America/New_York" date +%Y-%m-%d); fi
           echo "today=$TODAY" >> "$GITHUB_OUTPUT"
           if python3 -c "
           import json, sys

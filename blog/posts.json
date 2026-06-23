@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "read-hormone-panel-like-clinician",
+      "title": "How to Read Your Hormone Panel Like a Clinician",
+      "excerpt": "Testosterone, estradiol, SHBG, LH, FSH, thyroid, cortisol — what each marker on a hormone panel actually means, and where the clinical cutoffs sit.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-06-24",
+      "dateLabel": "June 24, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png",
+      "keywords": [
+        "how to read hormone panel",
+        "hormone blood test results",
+        "testosterone lab results",
+        "SHBG normal range",
+        "estradiol levels men",
+        "LH FSH ratio",
+        "thyroid panel interpretation",
+        "free testosterone calculation"
+      ]
+    },
+    {
       "slug": "trt-hematocrit-why-blood-thickens-when-to-donate",
       "title": "TRT and hematocrit: why your blood thickens on testosterone, and when to donate",
       "excerpt": "The most common lab change on injectable testosterone isn't your testosterone level — it's your hematocrit climbing. Left unmonitored it raises clot risk. Managed correctly, it's a non-issue. Here's the clinician's view.",

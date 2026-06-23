@@ -84,6 +84,37 @@ jobs:
           }
           git push origin main
           echo "Published: $NEW_SLUG"
+          echo "deployed_slug=$NEW_SLUG" >> "$GITHUB_OUTPUT"
+        id: push
+
+      - name: Deploy to Vercel production
+        if: steps.guard.outputs.already_posted == 'false'
+        env:
+          # Org + project IDs are not secret — they just identify the project.
+          # Only the token is sensitive, so it comes from a repo secret.
+          VERCEL_ORG_ID: team_ICtN3SJuhyRwIU5Q1ujMl6cn
+          VERCEL_PROJECT_ID: prj_n3jnECvkFJltSCUxVhZv47U6RKLF
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "::warning::VERCEL_TOKEN secret not set — skipping prod deploy. Post is pushed to git but won't go live until a production deploy runs."
+            exit 0
+          fi
+          npx --yes vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+          npx --yes vercel deploy --prod --yes --token="$VERCEL_TOKEN"
+
+      - name: Verify live
+        if: steps.guard.outputs.already_posted == 'false' && env.VERCEL_TOKEN != ''
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        run: |
+          SLUG="${{ steps.push.outputs.deployed_slug }}"
+          for i in $(seq 1 12); do
+            CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://www.directcare.ai/blog/$SLUG?cb=$RANDOM")
+            if [ "$CODE" = "200" ]; then echo "✓ LIVE: https://www.directcare.ai/blog/$SLUG"; exit 0; fi
+            echo "  attempt $i: HTTP $CODE — waiting 10s..."; sleep 10
+          done
+          echo "::warning::Post pushed + deploy ran but URL not 200 yet — check Vercel dashboard."
 
       - name: Summary
         if: always()

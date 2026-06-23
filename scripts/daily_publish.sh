@@ -12,7 +12,7 @@
 
 set -euo pipefail
 
-REPO="/Users/dachewilliams/Desktop/Claude Code/Home Page (DCAI)"
+REPO="/Users/dachewilliams/Projects/directcare-home"
 LOG_DIR="$REPO/.daily-publish-logs"
 FLAG_FILE="$LOG_DIR/last-run.txt"
 TODAY=$(date "+%Y-%m-%d")

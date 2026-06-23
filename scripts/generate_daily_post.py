@@ -21,6 +21,7 @@ import json
 import os
 import re
 import sys
+import time
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -352,21 +353,44 @@ def call_claude(topic: dict[str, str], date_label: str) -> dict:
         print("ERROR: ANTHROPIC_API_KEY not set in environment.", file=sys.stderr)
         sys.exit(3)
 
-    client = anthropic.Anthropic(api_key=api_key)
+    # Build the SDK client with built-in retries. A single transient network
+    # blip (e.g. "Connection reset by peer") used to kill the whole daily cron
+    # run; max_retries lets the SDK retry with exponential backoff internally.
+    client = anthropic.Anthropic(api_key=api_key, max_retries=5, timeout=120.0)
     prompt = PROMPT_TEMPLATE.format(category=topic["category"], angle=topic["angle"], date_label=date_label)
 
-    resp = client.messages.create(
-        model=CLAUDE_MODEL,
-        max_tokens=MAX_TOKENS,
-        messages=[{"role": "user", "content": prompt}],
-    )
+    # Outer retry loop on top of the SDK's internal retries: covers connection
+    # errors, server overloads, and the occasional bad-JSON response. We sleep
+    # between attempts so a flaky network at 8 AM doesn't lose the day.
+    last_err: Exception | None = None
+    for attempt in range(1, 6):
+        try:
+            resp = client.messages.create(
+                model=CLAUDE_MODEL,
+                max_tokens=MAX_TOKENS,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            text = "".join(block.text for block in resp.content if getattr(block, "type", None) == "text")
+            text = text.strip()
+            if text.startswith("```"):
+                text = re.sub(r"^```(?:json)?\s*", "", text)
+                text = re.sub(r"\s*```$", "", text)
+            return json.loads(text)
+        except Exception as err:  # noqa: BLE001 — we want to retry on anything transient
+            last_err = err
+            wait = min(60, 5 * (2 ** (attempt - 1)))  # 5, 10, 20, 40, 60
+            print(
+                f"[generate_daily_post] attempt {attempt}/5 failed: {type(err).__name__}: {err}. "
+                f"Retrying in {wait}s..." if attempt < 5 else
+                f"[generate_daily_post] attempt {attempt}/5 failed: {type(err).__name__}: {err}.",
+                file=sys.stderr,
+            )
+            if attempt < 5:
+                time.sleep(wait)
 
-    text = "".join(block.text for block in resp.content if getattr(block, "type", None) == "text")
-    text = text.strip()
-    if text.startswith("```"):
-        text = re.sub(r"^```(?:json)?\s*", "", text)
-        text = re.sub(r"\s*```$", "", text)
-    return json.loads(text)
+    # All retries exhausted — re-raise so the wrapper logs failure and the next
+    # trigger (login or 8 AM) retries cleanly without a half-written post.
+    raise SystemExit(f"ERROR: Claude API call failed after 5 attempts: {last_err}")
 
 
 def merge_product_metadata(payload: dict, category: str) -> dict:

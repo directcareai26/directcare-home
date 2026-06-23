@@ -15,7 +15,7 @@
 #   - vercel CLI logged in
 set -euo pipefail
 
-REPO="/Users/dachewilliams/Desktop/Claude Code/Home Page (DCAI)"
+REPO="/Users/dachewilliams/Projects/directcare-home"
 cd "$REPO"
 
 if [ -z "${ANTHROPIC_API_KEY:-}" ]; then

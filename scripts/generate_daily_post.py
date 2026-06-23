@@ -28,6 +28,10 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 BLOG_DIR = REPO_ROOT / "blog"
 MANIFEST_PATH = BLOG_DIR / "posts.json"
 TOPIC_BANK_PATH = Path(__file__).resolve().parent / "topic_bank.json"
+# Ledger of bank angles the generator has already consumed. Keyed on the exact
+# bank angle string so an angle is never re-picked even if its generated slug
+# varies day to day (the bug that produced two "grip strength" posts).
+USED_TOPICS_PATH = Path(__file__).resolve().parent / "used_topics.json"
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from render_post import write_post  # noqa: E402
@@ -244,14 +248,13 @@ def slugify(text: str) -> str:
     return text.strip("-")[:80]
 
 
-def existing_slugs() -> set[str]:
+def manifest_posts() -> list[dict[str, str]]:
     if not MANIFEST_PATH.exists():
-        return set()
+        return []
     try:
-        data = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+        return json.loads(MANIFEST_PATH.read_text(encoding="utf-8")).get("posts", [])
     except json.JSONDecodeError:
-        return set()
-    return {p.get("slug", "") for p in data.get("posts", [])}
+        return []
 
 
 def load_topic_bank() -> list[dict[str, str]]:
@@ -263,26 +266,123 @@ def load_topic_bank() -> list[dict[str, str]]:
     return DEFAULT_TOPIC_BANK
 
 
-def pick_topic(today: dt.date) -> dict[str, str]:
-    """Pick a topic that hasn't been used yet, deterministic from date so re-runs
-    on the same day pick the same topic."""
-    topics = load_topic_bank()
-    used = existing_slugs()
+def load_used_angles() -> set[str]:
+    """Bank angles the generator has already produced a post from."""
+    if USED_TOPICS_PATH.exists():
+        try:
+            return set(json.loads(USED_TOPICS_PATH.read_text(encoding="utf-8")))
+        except json.JSONDecodeError:
+            return set()
+    return set()
 
-    # Order topics by a date-seeded hash, then take the first unused one.
+
+def record_used_angle(angle: str) -> None:
+    """Append an angle to the used-topics ledger (after a successful publish)."""
+    used = load_used_angles()
+    used.add(angle)
+    USED_TOPICS_PATH.write_text(json.dumps(sorted(used), indent=2) + "\n", encoding="utf-8")
+
+
+def category_last_used() -> dict[str, str]:
+    """category -> most recent ISO date a post in that category was published."""
+    last: dict[str, str] = {}
+    for p in manifest_posts():
+        cat, date = p.get("category", ""), p.get("date", "")
+        if cat and (cat not in last or date > last[cat]):
+            last[cat] = date
+    return last
+
+
+_STOPWORDS = {
+    "with", "your", "that", "this", "what", "when", "from", "have", "they", "them",
+    "more", "most", "than", "into", "about", "actually", "really", "should", "could",
+    "does", "doesnt", "isnt", "arent", "and", "the", "for", "you", "are", "but", "not",
+    "how", "why", "which", "their", "these", "those", "will", "can", "its", "vs",
+}
+
+
+def _tokens(s: str) -> set[str]:
+    return {w for w in re.split(r"[^a-z0-9]+", (s or "").lower()) if len(w) > 3} - _STOPWORDS
+
+
+def angle_already_covered(angle: str) -> bool:
+    """True if a heavily-overlapping post already exists in the manifest.
+
+    Catches near-duplicates whose slugs differ (e.g. 'grip-strength-longevity-
+    3-exercises' vs '...-predictor-three-exercises') AND posts created outside
+    the generator (manual scripts), which the ledger alone wouldn't know about.
+    """
+    cand = _tokens(angle)
+    if len(cand) < 2:
+        return False
+    threshold = max(2, int(0.5 * len(cand)))
+    for p in manifest_posts():
+        existing = _tokens(p.get("slug", "")) | _tokens(p.get("title", ""))
+        overlap = cand & existing
+        # Either a broad overlap (>= half the candidate's meaningful tokens), OR
+        # two-plus shared DISTINCTIVE terms — long tokens (>= 7 chars) are almost
+        # always drug names / biomarkers (sildenafil, tadalafil, minoxidil,
+        # semaglutide, estradiol, hematocrit), so two matching = same topic.
+        distinctive = {w for w in overlap if len(w) >= 7}
+        if len(overlap) >= threshold or len(distinctive) >= 2:
+            return True
+    return False
+
+
+def pick_topic(today: dt.date) -> dict[str, str]:
+    """Pick the next topic on a true rotation.
+
+    1. Rotate CATEGORIES by staleness — the category that's gone longest
+       without a post comes first (never-used categories first of all).
+    2. Within the chosen category, order angles by a date-seeded hash for
+       day-to-day variety, and skip any angle already used (ledger) or already
+       covered by an existing post (keyword-overlap heuristic).
+
+    Deterministic per day: same date -> same pick on re-run.
+    """
+    topics = load_topic_bank()
+    used_angles = load_used_angles()
+    last_used = category_last_used()
     seed = today.isoformat()
 
-    def score(t: dict[str, str]) -> str:
-        h = hashlib.sha256(f"{seed}::{t['category']}::{t['angle']}".encode()).hexdigest()
-        return h
+    # Distinct categories in bank order
+    bank_categories: list[str] = []
+    for t in topics:
+        if t["category"] not in bank_categories:
+            bank_categories.append(t["category"])
 
-    ordered = sorted(topics, key=score)
-    for t in ordered:
-        candidate_slug = slugify(t["angle"])
-        if candidate_slug not in used:
+    # Stalest category first. Never-used categories sort to the very front.
+    categories_by_staleness = sorted(
+        bank_categories, key=lambda c: last_used.get(c, "0000-00-00")
+    )
+
+    def angle_score(t: dict[str, str]) -> str:
+        return hashlib.sha256(f"{seed}::{t['angle']}".encode()).hexdigest()
+
+    # Walk categories stalest-first; first fresh angle wins.
+    for cat in categories_by_staleness:
+        cat_topics = sorted((t for t in topics if t["category"] == cat), key=angle_score)
+        for t in cat_topics:
+            if t["angle"] in used_angles:
+                continue
+            if angle_already_covered(t["angle"]):
+                continue
             return t
-    # All used — return the first ordered topic anyway; the model will rewrite it.
-    return ordered[0]
+
+    # Fallback 1: any angle not in the ledger, regardless of coverage heuristic.
+    for t in sorted(topics, key=angle_score):
+        if t["angle"] not in used_angles:
+            return t
+
+    # Fallback 2: bank exhausted. Return the stalest category's first angle and
+    # let the model write a fresh take. Signals the topic bank needs refilling.
+    print(
+        "[generate_daily_post] WARNING: topic bank exhausted — every angle has "
+        "been used. Add more angles to topic_bank.json / DEFAULT_TOPIC_BANK.",
+        file=sys.stderr,
+    )
+    cat = categories_by_staleness[0]
+    return sorted((t for t in topics if t["category"] == cat), key=angle_score)[0]
 
 
 PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-powered direct-to-patient telehealth platform. You write the brand's Blog — long-form, SEO-friendly, clinician-tone articles that help patients understand the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, supplements, nutrition (including recipes), and fitness/training.
@@ -435,6 +535,13 @@ def main() -> int:
         return 0
 
     path = write_post(payload)
+
+    # Burn the angle in the ledger ONLY after a successful write, so a failed
+    # generation (network blip) doesn't permanently consume the topic. Skip
+    # when the angle was forced via --angle (manual one-off, not from the bank).
+    if not (args.category and args.angle):
+        record_used_angle(topic["angle"])
+
     print(json.dumps({"ok": True, "path": str(path.relative_to(REPO_ROOT)), "slug": payload["slug"], "title": payload["title"]}, indent=2))
     return 0
 

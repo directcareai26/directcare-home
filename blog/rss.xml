@@ -18,6 +18,18 @@
       <link>https://www.directcare.ai/blog/</link>
     </image>
     <item>
+      <title>Perimenopause vs. Menopause: How Lab Values Differ</title>
+      <link>https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values</guid>
+      <pubDate>Thu, 25 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[FSH, estradiol, AMH — the lab patterns that distinguish perimenopause from menopause are different, and so is the treatment logic that follows from each.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" />
+    </item>
+    <item>
       <title>Omega-3 EPA/DHA: The Dose That Lowers Inflammation</title>
       <link>https://www.directcare.ai/blog/omega-3-epa-dha-dose-inflammation-markers</link>
       <guid isPermaLink="true">https://www.directcare.ai/blog/omega-3-epa-dha-dose-inflammation-markers</guid>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
-    </item>
-    <item>
-      <title>10 Biomarkers That Actually Predict Longevity</title>
-      <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</guid>
-      <pubDate>Wed, 27 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan — and why your annual physical probably checks none of them.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
     </item>
   </channel>
 </rss>

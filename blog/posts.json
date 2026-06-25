@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "perimenopause-vs-menopause-lab-values",
+      "title": "Perimenopause vs. Menopause: How Lab Values Differ",
+      "excerpt": "FSH, estradiol, AMH — the lab patterns that distinguish perimenopause from menopause are different, and so is the treatment logic that follows from each.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-06-25",
+      "dateLabel": "June 25, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png",
+      "keywords": [
+        "perimenopause vs menopause lab values",
+        "FSH perimenopause",
+        "estradiol menopause levels",
+        "AMH perimenopause",
+        "hormone testing menopause",
+        "perimenopause hormone therapy",
+        "menopause HRT"
+      ]
+    },
+    {
       "slug": "omega-3-epa-dha-dose-inflammation-markers",
       "title": "Omega-3 EPA/DHA: The Dose That Lowers Inflammation",
       "excerpt": "The fish oil aisle is built around 300 mg softgels. The inflammation literature is built around 2-4 grams. Here's how to bridge that gap without flying blind.",

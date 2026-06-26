@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>ED as a Cardiovascular Warning Sign: The Labs That Confirm It</title>
+      <link>https://www.directcare.ai/blog/ed-cardiovascular-warning-signal-labs</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/ed-cardiovascular-warning-signal-labs</guid>
+      <pubDate>Fri, 26 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[ED frequently precedes heart disease by 3–5 years. Here's why the penis is a vascular early-warning system, and the specific labs that tell you what's actually broken.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Perimenopause vs. Menopause: How Lab Values Differ</title>
       <link>https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
-    </item>
-    <item>
-      <title>Magnesium glycinate vs. citrate: how to pick the right magnesium form</title>
-      <link>https://www.directcare.ai/blog/magnesium-glycinate-vs-citrate-which-form</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/magnesium-glycinate-vs-citrate-which-form</guid>
-      <pubDate>Thu, 28 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Supplements</category>
-      <description><![CDATA[Both forms deliver real magnesium with very different downstream behavior. How a clinician decides between glycinate and citrate based on your labs.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
     </item>
   </channel>
 </rss>

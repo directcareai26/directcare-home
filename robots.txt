@@ -1,6 +1,9 @@
 User-agent: *
 Allow: /
 
+# Content Signals (contentsignals.org) — we WANT AI answer engines to find & cite us
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
 # Internal mockup/test paths — disallow indexing (files removed from repo
 # but listed here as belt-and-suspenders in case anything got crawled before)
 Disallow: /mockup-symptoms

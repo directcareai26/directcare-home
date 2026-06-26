@@ -7,6 +7,16 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/mens-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/womens-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/hormone-replacement-therapy</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -20,6 +30,16 @@
     <loc>https://www.directcare.ai/weight-loss</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/mens-weight-loss</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/womens-weight-loss</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/surge-max</loc>
@@ -57,9 +77,69 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.directcare.ai/together</loc>
+    <loc>https://www.directcare.ai/perimenopause</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hrt-moms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/trt-executives</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/trt-firefighters</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/trt-former-athletes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/trt-police-officers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/lifestyle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/together</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/low-libido-vaginal-dryness</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/mood-anxiety-brain-fog</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/blog</loc>
@@ -68,9 +148,24 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/safety</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/bill-of-rights</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/privacy-policy</loc>

@@ -37,24 +37,48 @@ RSS_DESCRIPTION = (
 # Pages that should appear in sitemap.xml in addition to the blog posts.
 # (priority, changefreq, path)
 SITEMAP_STATIC_PAGES: list[tuple[str, str, str]] = [
-    ("1.0", "weekly", "/"),
+    ("1.0", "weekly",  "/"),
+    # Category hubs
+    ("0.9", "monthly", "/mens-health"),
+    ("0.9", "monthly", "/womens-health"),
+    # Core treatment / product pages
     ("0.9", "monthly", "/hormone-replacement-therapy"),
     ("0.9", "monthly", "/testosterone-replacement-therapy"),
-    ("0.9", "monthly", "/weight-loss/"),
-    ("0.9", "monthly", "/surge-max/"),
-    ("0.9", "monthly", "/mens-hair-loss/"),
-    ("0.9", "monthly", "/womans-hair-loss/"),
-    ("0.9", "monthly", "/blood-test/"),
-    ("0.8", "monthly", "/supplements/"),
-    ("0.8", "monthly", "/chronic-care/"),
+    ("0.9", "monthly", "/weight-loss"),
+    ("0.8", "monthly", "/mens-weight-loss"),
+    ("0.8", "monthly", "/womens-weight-loss"),
+    ("0.9", "monthly", "/surge-max"),
+    ("0.9", "monthly", "/mens-hair-loss"),
+    ("0.9", "monthly", "/womans-hair-loss"),
+    ("0.9", "monthly", "/blood-test"),
+    ("0.8", "monthly", "/supplements"),
+    ("0.8", "monthly", "/chronic-care"),
     ("0.7", "monthly", "/peptides"),
-    ("0.7", "monthly", "/together"),
-    ("0.6", "daily",   "/blog/"),
-    ("0.4", "yearly",  "/safety/"),
-    ("0.3", "yearly",  "/privacy-policy/"),
-    ("0.3", "yearly",  "/terms-and-conditions/"),
-    ("0.3", "yearly",  "/medical-consent/"),
-    ("0.3", "yearly",  "/ccpa/"),
+    # Audience / vertical landing pages
+    ("0.7", "monthly", "/perimenopause"),
+    ("0.7", "monthly", "/hrt-moms"),
+    ("0.7", "monthly", "/trt-executives"),
+    ("0.7", "monthly", "/trt-firefighters"),
+    ("0.7", "monthly", "/trt-former-athletes"),
+    ("0.7", "monthly", "/trt-police-officers"),
+    ("0.6", "monthly", "/lifestyle"),
+    ("0.6", "monthly", "/together"),
+    # HRT symptom sub-pages
+    ("0.6", "monthly", "/hormone-replacement-therapy/hot-flashes-and-night-sweats"),
+    ("0.6", "monthly", "/hormone-replacement-therapy/low-libido-vaginal-dryness"),
+    ("0.6", "monthly", "/hormone-replacement-therapy/mood-anxiety-brain-fog"),
+    ("0.6", "monthly", "/hormone-replacement-therapy/trouble-sleeping"),
+    ("0.6", "monthly", "/hormone-replacement-therapy/weight-gain-energy-crashes"),
+    # Info + legal
+    ("0.6", "daily",   "/blog"),
+    ("0.5", "monthly", "/about"),
+    ("0.5", "monthly", "/faq"),
+    ("0.4", "yearly",  "/safety"),
+    ("0.3", "yearly",  "/bill-of-rights"),
+    ("0.3", "yearly",  "/privacy-policy"),
+    ("0.3", "yearly",  "/terms-and-conditions"),
+    ("0.3", "yearly",  "/medical-consent"),
+    ("0.3", "yearly",  "/ccpa"),
 ]
 
 
@@ -379,7 +403,7 @@ def update_sitemap() -> None:
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
 
     for priority, freq, path in SITEMAP_STATIC_PAGES:
-        lastmod = today_iso if path in ("/", "/blog/") else None
+        lastmod = today_iso if path in ("/", "/blog") else None
         lines.append("  <url>")
         lines.append(f"    <loc>https://www.directcare.ai{path}</loc>")
         if lastmod:

@@ -115,31 +115,6 @@
     { "source": "/blood-labs", "destination": "/blood-test" },
     { "source": "/blood-labs/", "destination": "/blood-test" },
 
-    { "source": "/mens-hair-loss", "destination": "https://mens-hair-loss.vercel.app/" },
-    { "source": "/mens-hair-loss/", "destination": "https://mens-hair-loss.vercel.app/" },
-    { "source": "/mens-hair-loss/:path*", "destination": "https://mens-hair-loss.vercel.app/:path*" },
-
-    { "source": "/womans-hair-loss", "destination": "https://womens-hair-loss.vercel.app/" },
-    { "source": "/womans-hair-loss/", "destination": "https://womens-hair-loss.vercel.app/" },
-    { "source": "/womans-hair-loss/:path*", "destination": "https://womens-hair-loss.vercel.app/:path*" },
-
-    { "source": "/surge-max", "destination": "https://sexual-health-mocha.vercel.app/" },
-    { "source": "/surge-max/", "destination": "https://sexual-health-mocha.vercel.app/" },
-    { "source": "/surge-max/:path*", "destination": "https://sexual-health-mocha.vercel.app/:path*" },
-
-    { "source": "/weight-loss", "destination": "https://directcare-weight-loss.vercel.app/" },
-    { "source": "/weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/" },
-    { "source": "/weight-loss/:path*", "destination": "https://directcare-weight-loss.vercel.app/:path*" },
-
-    { "source": "/mens-weight-loss", "destination": "https://directcare-weight-loss.vercel.app/men/" },
-    { "source": "/mens-weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/men/" },
-    { "source": "/womens-weight-loss", "destination": "https://directcare-weight-loss.vercel.app/women/" },
-    { "source": "/womens-weight-loss/", "destination": "https://directcare-weight-loss.vercel.app/women/" },
-
-    { "source": "/chronic-care", "destination": "https://chronic-care-azure.vercel.app/" },
-    { "source": "/chronic-care/", "destination": "https://chronic-care-azure.vercel.app/" },
-    { "source": "/chronic-care/:path*", "destination": "https://chronic-care-azure.vercel.app/:path*" },
-
     { "source": "/blog/:slug([a-z0-9][a-z0-9-]+)", "destination": "/blog/:slug.html" }
   ],
   "headers": [

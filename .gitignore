@@ -5,3 +5,5 @@ __pycache__/
 .env.local
 .vercel/
 .daily-publish-logs/
+.vercel
+.env*

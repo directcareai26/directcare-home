@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 26 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 27 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Why Your Weight-Loss Plateau Is Hormonal, Not Motivational</title>
+      <link>https://www.directcare.ai/blog/weight-loss-plateau-hormonal-not-motivational</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/weight-loss-plateau-hormonal-not-motivational</guid>
+      <pubDate>Sat, 27 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[Plateaus aren't a character flaw. They're a predictable hormonal response to weight loss — and once you understand the biology, the fix gets a lot clearer.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
+    </item>
     <item>
       <title>ED as a Cardiovascular Warning Sign: The Labs That Confirm It</title>
       <link>https://www.directcare.ai/blog/ed-cardiovascular-warning-signal-labs</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" />
-    </item>
-    <item>
-      <title>Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms</title>
-      <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand</guid>
-      <pubDate>Thu, 28 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Sexual Health</category>
-      <description><![CDATA[On-demand sildenafil works. So does 50-100 mg tadalafil as needed. But 2.5-5 mg of daily tadalafil is a different mode of therapy — and for a meaningful slice of patients, it's the right one.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
     </item>
   </channel>
 </rss>

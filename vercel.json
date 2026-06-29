@@ -63,6 +63,17 @@
     { "source": "/weight-loss-new", "destination": "/weight-loss", "permanent": true },
     { "source": "/weight-loss-new/", "destination": "/weight-loss", "permanent": true },
 
+    { "source": "/glp-1", "destination": "/weight-loss", "permanent": true },
+    { "source": "/glp-1/", "destination": "/weight-loss", "permanent": true },
+    { "source": "/hrt", "destination": "/hormone-replacement-therapy", "permanent": true },
+    { "source": "/hrt/", "destination": "/hormone-replacement-therapy", "permanent": true },
+    { "source": "/trt", "destination": "/testosterone-replacement-therapy", "permanent": true },
+    { "source": "/trt/", "destination": "/testosterone-replacement-therapy", "permanent": true },
+    { "source": "/hair", "destination": "/mens-hair-loss", "permanent": true },
+    { "source": "/hair/", "destination": "/mens-hair-loss", "permanent": true },
+    { "source": "/contact", "destination": "/about", "permanent": true },
+    { "source": "/contact/", "destination": "/about", "permanent": true },
+
     { "source": "/minoxidil-finasteride-biotin", "destination": "/mens-hair-loss", "permanent": true },
     { "source": "/minoxidil-finasteride-biotin/", "destination": "/mens-hair-loss", "permanent": true },
     { "source": "/platinum-hairless", "destination": "/mens-hair-loss", "permanent": true },

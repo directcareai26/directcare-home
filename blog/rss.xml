@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jun 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>TRT and Fertility: Preserving Sperm Production on Therapy</title>
+      <link>https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-production</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-production</guid>
+      <pubDate>Mon, 29 Jun 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Testosterone replacement shuts down sperm production in most men — but hCG, SERMs, and smart protocol design can preserve fertility while you treat low T.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Walking vs Running for Heart Health: What Data Shows</title>
       <link>https://www.directcare.ai/blog/walking-vs-running-cardiovascular-risk-data</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
-    </item>
-    <item>
-      <title>Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working</title>
-      <link>https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working</guid>
-      <pubDate>Fri, 29 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Hair Regrowth</category>
-      <description><![CDATA[Around week 2 to 6 of starting minoxidil, a meaningful percentage of patients shed more hair than they've ever lost — and most of them quit. Here's the biology of why that shed is the protocol working, not failing.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
     </item>
   </channel>
 </rss>

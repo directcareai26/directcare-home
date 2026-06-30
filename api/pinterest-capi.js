@@ -57,7 +57,12 @@ module.exports = async (req, res) => {
   const token = process.env.PINTEREST_CAPI_TOKEN;
   const account = process.env.PINTEREST_AD_ACCOUNT_ID;
   if (!token || !account) {
-    res.status(200).json({ skipped: 'capi_not_configured' });
+    // Diagnostic booleans only — never the secret values.
+    res.status(200).json({
+      skipped: 'capi_not_configured',
+      has_PINTEREST_CAPI_TOKEN: !!token,
+      has_PINTEREST_AD_ACCOUNT_ID: !!account,
+    });
     return;
   }
 

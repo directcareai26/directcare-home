@@ -22,6 +22,23 @@ same events server-to-server for better match quality and ad-blocker resilience.
 - Quick endpoint check: `curl -X POST https://www.directcare.ai/api/pinterest-capi`
   returns `{"skipped":"capi_not_configured"}` before setup, and a Pinterest status after.
 
+## Event payload (what callers can send)
+POST JSON to `/api/pinterest-capi` from the browser beacon, the iOS app, or an intake form:
+
+| Field | Notes |
+|---|---|
+| `event_name` | e.g. `lead`, `page_visit`, `signup`, `checkout` (default `lead`) |
+| `event_id` | dedupes the server event against the browser `pintrk` event |
+| `action_source` | `web` (default), or `app_ios` / `app_android` from the app |
+| `event_time` | unix seconds (defaults to now) |
+| `event_url` | page URL (sent as `event_source_url`) |
+| `email` / `maid` | **plaintext** — normalized + SHA-256 hashed server-side into `em` / `hashed_maids` |
+| `em` / `hashed_maids` | already SHA-256-hashed — passed through as-is |
+| `custom_data` | optional object (default `{}`) |
+
+`client_ip_address` and `client_user_agent` are added automatically from the request.
+Plaintext email/maid are hashed in-memory and never logged or stored.
+
 ## Security
 - The token is a **server-side secret** — it lives ONLY in Vercel env vars, never in the repo
   or in client-side HTML. `.env` / `.env.local` are gitignored if you test locally.

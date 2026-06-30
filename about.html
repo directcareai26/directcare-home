@@ -47,6 +47,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+
 
 
 <meta charset="UTF-8" />

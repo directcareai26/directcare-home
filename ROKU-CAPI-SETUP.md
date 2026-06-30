@@ -1,15 +1,21 @@
-# Roku Conversions API (CAPI) — turn-on steps
+# Roku conversion tracking — client pixel + Conversions API
 
-Tracks **conversions from Roku ad campaigns** on directcare.ai.
+Tracks **conversions from Roku ad campaigns** on directcare.ai using BOTH halves of Roku's
+recommended hybrid setup, deduped against each other by a shared `event_id`:
 
-Every page fires a **`LEAD`** conversion when a visitor clicks through to the intake portal
-(`portal.tellescope.com`) — the genuine signup-intent signal — reusing the **same
-`event_id`** as the Pinterest/Meta events so Roku can dedupe browser vs. server.
+1. **Client-side JS pixel** (`rkp`, pixel/advertiser id `Pacc66xnjXEH`) — installed
+   lazy-loaded in the `<head>` of every page (loader `https://cdn.ravm.tv/ust/dist/rkp.loader.js`,
+   same first-interaction/10s pattern as GTM/Meta/Pinterest). Fires `PAGE_VIEW` on load and
+   `LEAD` on the portal click-through. **Live in the markup — no config needed.**
+2. **Conversions API (server-side)** — relay at [`api/roku-capi.js`](api/roku-capi.js) sends the
+   same events server-to-server (IP + user-agent, plus SHA-256-hashed email/phone when
+   available) to `https://events.ads.rokuapi.net/v1/events`. **Inert until two secrets are set
+   in Vercel** (below) — the site works fine either way.
 
-The **Conversions API** relay at [`api/roku-capi.js`](api/roku-capi.js) sends those events
-server-to-server (IP + user-agent, plus SHA-256-hashed email/phone when available) to
-`https://events.ads.rokuapi.net/v1/events`. It is **inert until you add two secrets in
-Vercel** — the site works fine either way.
+The conversion trigger on both is a visitor clicking through to the intake portal
+(`portal.tellescope.com`) — the genuine signup-intent signal — and both reuse the **same
+`event_id`** (shared with Pinterest/Meta) so Roku dedupes browser vs. server within its
+10-minute window.
 
 ## To turn CAPI on
 1. Vercel → project **directcare-home** → **Settings → Environment Variables** → add (Production):

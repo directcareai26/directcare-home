@@ -89,6 +89,9 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
       navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
         event_name: 'lead', event_id: eid, event_url: location.href
       }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
     } catch (err) {}
   }, { capture: true });
 })();

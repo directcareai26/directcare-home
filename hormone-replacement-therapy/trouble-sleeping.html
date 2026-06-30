@@ -51,6 +51,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
         event_name: 'lead', event_id: eid, event_url: location.href
       }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
     } catch (err) {}
   }, { capture: true });
 })();

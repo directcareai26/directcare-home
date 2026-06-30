@@ -63,8 +63,8 @@ module.exports = async (req, res) => {
       skipped: 'capi_not_configured',
       has_PINTEREST_CAPI_TOKEN: !!token,
       has_PINTEREST_AD_ACCOUNT_ID: !!account,
-      pinterest_env_keys_present: Object.keys(process.env).filter((k) =>
-        /pinterest|pina/i.test(k)
+      candidate_env_keys_present: Object.keys(process.env).filter((k) =>
+        /pinterest|pina|capi|token|conversion|ad_acc/i.test(k)
       ),
     });
     return;

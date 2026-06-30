@@ -57,16 +57,7 @@ module.exports = async (req, res) => {
   const token = process.env.PINTEREST_CAPI_TOKEN;
   const account = process.env.PINTEREST_AD_ACCOUNT_ID;
   if (!token || !account) {
-    // Diagnostic: report presence + the Pinterest-related env var NAMES that
-    // actually exist at runtime (names only — never any secret values).
-    res.status(200).json({
-      skipped: 'capi_not_configured',
-      has_PINTEREST_CAPI_TOKEN: !!token,
-      has_PINTEREST_AD_ACCOUNT_ID: !!account,
-      candidate_env_keys_present: Object.keys(process.env).filter((k) =>
-        /pinterest|pina|capi|token|conversion|ad_acc/i.test(k)
-      ),
-    });
+    res.status(200).json({ skipped: 'capi_not_configured' });
     return;
   }
 

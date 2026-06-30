@@ -27,6 +27,7 @@ jobs:
         env:
           GSC_TOKEN_JSON: ${{ secrets.GSC_TOKEN_JSON }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          SLACK_WEBHOOK_GROWTH: ${{ secrets.SLACK_WEBHOOK_GROWTH }}
           SLACK_WEBHOOK_PERSONAL: ${{ secrets.SLACK_WEBHOOK_PERSONAL }}
           GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
           GMAIL_SMTP_HOST: ${{ secrets.GMAIL_SMTP_HOST }}

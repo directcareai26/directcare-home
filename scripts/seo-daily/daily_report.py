@@ -265,7 +265,9 @@ def render_slack(seo, aeo, today):
 
 # ---------------------------------------------------------------- delivery
 def send_slack(text):
-    hook = os.environ.get("SLACK_WEBHOOK_PERSONAL") or os.environ.get("SLACK_WEBHOOK_MARKETING")
+    hook = (os.environ.get("SLACK_WEBHOOK_GROWTH")
+            or os.environ.get("SLACK_WEBHOOK_PERSONAL")
+            or os.environ.get("SLACK_WEBHOOK_MARKETING"))
     if not hook:
         print("! no Slack webhook configured"); return False
     req = urllib.request.Request(hook, data=json.dumps({"text": text}).encode(),

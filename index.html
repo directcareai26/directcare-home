@@ -104,6 +104,7 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
     if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
     var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
     try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
     try {
       navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
         event_name: 'lead', event_id: eid, event_url: location.href
@@ -119,6 +120,38 @@ src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
 src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 /></noscript>
 <!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
 
 
 

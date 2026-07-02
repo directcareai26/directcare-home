@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Testosterone in Women's HRT: The Case Most Clinics Miss</title>
+      <link>https://www.directcare.ai/blog/testosterone-for-women-hrt-protocols</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/testosterone-for-women-hrt-protocols</guid>
+      <pubDate>Thu, 02 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Testosterone is part of female physiology, but most HRT protocols still ignore it. Here's the evidence, the trade-offs, and what a thorough workup looks like.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
+    </item>
     <item>
       <title>Ferritin in Women: The Deficiency Mistaken for Menopause</title>
       <link>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
-    </item>
-    <item>
-      <title>GLP-1 maintenance after weight loss: how to stay off without rebounding</title>
-      <link>https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss</guid>
-      <pubDate>Sun, 31 May 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[The STEP-4 trial showed roughly two-thirds of weight lost on a GLP-1 comes back within a year of stopping. The maintenance protocol that prevents it isn't quitting cold turkey — and isn't staying on full dose either.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
     </item>
   </channel>
 </rss>

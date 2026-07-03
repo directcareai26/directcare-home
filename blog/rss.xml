@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Vitamin D3 + K2: Dosing, Targets, and Why You're Low</title>
+      <link>https://www.directcare.ai/blog/vitamin-d3-k2-dosing-blood-level-targets</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/vitamin-d3-k2-dosing-blood-level-targets</guid>
+      <pubDate>Fri, 03 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Supplements</category>
+      <description><![CDATA[Most adults who supplement vitamin D still test deficient. Here's the D3 + K2 dosing logic, the blood-level target range, and what to actually retest.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
+    </item>
     <item>
       <title>Testosterone in Women's HRT: The Case Most Clinics Miss</title>
       <link>https://www.directcare.ai/blog/testosterone-for-women-hrt-protocols</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Lifestyle%20%26%20Exercise.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Lifestyle%20%26%20Exercise.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Lifestyle%20%26%20Exercise.png" />
-    </item>
-    <item>
-      <title>Estradiol on TRT: when men need an aromatase inhibitor and most don't</title>
-      <link>https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed</guid>
-      <pubDate>Mon, 01 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Most men on testosterone therapy don't need anastrozole — and over-suppression of estradiol causes more symptoms than the high estradiol clinics were trying to fix. The clinical case for restraint.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
     </item>
   </channel>
 </rss>

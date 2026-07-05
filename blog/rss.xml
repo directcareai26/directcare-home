@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 04 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>5-Minute Mobility Warm-Up: Real Injury Risk Reduction</title>
+      <link>https://www.directcare.ai/blog/5-minute-mobility-warmup-reduce-injury-risk</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/5-minute-mobility-warmup-reduce-injury-risk</guid>
+      <pubDate>Sun, 05 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Five minutes of targeted mobility before you lift or run isn't ceremonial — it changes tissue temperature, joint range, and neural drive. Here's the sequence worth doing.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
     <item>
       <title>GLP-1 Dose Titration: How to Avoid a Month of Nausea</title>
       <link>https://www.directcare.ai/blog/glp1-dose-titration-without-nausea</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)</title>
-      <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevity</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevity</guid>
-      <pubDate>Tue, 02 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Supplements</category>
-      <description><![CDATA[The cleanest, cheapest, best-studied supplement on the market is also the one most women have written off as a bodybuilding drug. The published evidence in cognition, bone density, and healthy aging says they shouldn't.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
     </item>
   </channel>
 </rss>

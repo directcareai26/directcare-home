@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Subq vs. IM Testosterone: What the PK Data Actually Shows</title>
+      <link>https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</guid>
+      <pubDate>Mon, 06 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Subq testosterone produces flatter peaks and troughs than IM at the same weekly dose. Here's what the pharmacokinetics literature actually shows — and how to think about the trade-offs.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
+    </item>
     <item>
       <title>5-Minute Mobility Warm-Up: Real Injury Risk Reduction</title>
       <link>https://www.directcare.ai/blog/5-minute-mobility-warmup-reduce-injury-risk</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
-    </item>
-    <item>
-      <title>ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)</title>
-      <link>https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include</guid>
-      <pubDate>Wed, 03 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[Modern cardiology has shifted from LDL cholesterol to apolipoprotein B (ApoB) as the cleaner measure of cardiovascular risk. Most annual physicals still order the wrong test — and read it wrong when they do.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
     </item>
   </channel>
 </rss>

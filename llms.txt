@@ -14,11 +14,14 @@ DirectCare AI partners with US-licensed compounding pharmacies and clinical labs
 - [Hair Regrowth — Women](https://www.directcare.ai/womans-hair-loss/): Hormonal-panel-driven hair-loss protocols for women.
 - [Blood Labs](https://www.directcare.ai/blood-test/): Clinician-ordered 80+ biomarker panel with a plain-English roadmap, $196.
 - [Supplements](https://www.directcare.ai/supplements/): Physician-formulated supplement protocols matched to bloodwork.
+- [Peptides](https://www.directcare.ai/peptides): Clinician-prescribed peptide protocols (BPC-157, ipamorelin, sermorelin, GHK-Cu, PT-141) for recovery, sleep, and metabolic health, where clinically appropriate.
+- [Chronic Condition Care](https://www.directcare.ai/chronic-care): Remote patient monitoring and chronic care management with ongoing clinician oversight.
 
 ## The Blog (editorial)
 
 - [The DirectCare AI Blog](https://www.directcare.ai/blog/): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.
 - [Posts manifest (JSON)](https://www.directcare.ai/blog/posts.json): Machine-readable list of all blog posts with slug, title, excerpt, category, date, image, and keywords.
+- [RSS feed](https://www.directcare.ai/blog/rss.xml): Full-post RSS feed, updated daily.
 
 ## Compliance & trust
 

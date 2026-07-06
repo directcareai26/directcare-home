@@ -37,24 +37,32 @@ RSS_DESCRIPTION = (
 # Pages that should appear in sitemap.xml in addition to the blog posts.
 # (priority, changefreq, path)
 SITEMAP_STATIC_PAGES: list[tuple[str, str, str]] = [
+    # Paths must match each page's rel=canonical (no trailing slash —
+    # vercel.json trailingSlash:false 308-redirects the slash variants).
     ("1.0", "weekly", "/"),
     ("0.9", "monthly", "/hormone-replacement-therapy"),
     ("0.9", "monthly", "/testosterone-replacement-therapy"),
-    ("0.9", "monthly", "/weight-loss/"),
-    ("0.9", "monthly", "/surge-max/"),
-    ("0.9", "monthly", "/mens-hair-loss/"),
-    ("0.9", "monthly", "/womans-hair-loss/"),
-    ("0.9", "monthly", "/blood-test/"),
-    ("0.8", "monthly", "/supplements/"),
-    ("0.8", "monthly", "/chronic-care/"),
+    ("0.9", "monthly", "/weight-loss"),
+    ("0.9", "monthly", "/mens-weight-loss"),
+    ("0.9", "monthly", "/womens-weight-loss"),
+    ("0.9", "monthly", "/surge-max"),
+    ("0.9", "monthly", "/mens-hair-loss"),
+    ("0.9", "monthly", "/womans-hair-loss"),
+    ("0.9", "monthly", "/blood-test"),
+    ("0.8", "monthly", "/mens-health"),
+    ("0.8", "monthly", "/womens-health"),
+    ("0.8", "monthly", "/supplements"),
+    ("0.8", "monthly", "/chronic-care"),
     ("0.7", "monthly", "/peptides"),
     ("0.7", "monthly", "/together"),
-    ("0.6", "daily",   "/blog/"),
-    ("0.4", "yearly",  "/safety/"),
-    ("0.3", "yearly",  "/privacy-policy/"),
-    ("0.3", "yearly",  "/terms-and-conditions/"),
-    ("0.3", "yearly",  "/medical-consent/"),
-    ("0.3", "yearly",  "/ccpa/"),
+    ("0.6", "daily",   "/blog"),
+    ("0.5", "monthly", "/faq"),
+    ("0.5", "yearly",  "/about"),
+    ("0.4", "yearly",  "/safety"),
+    ("0.3", "yearly",  "/privacy-policy"),
+    ("0.3", "yearly",  "/terms-and-conditions"),
+    ("0.3", "yearly",  "/medical-consent"),
+    ("0.3", "yearly",  "/ccpa"),
 ]
 
 

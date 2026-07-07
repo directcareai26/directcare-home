@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "eat-the-rainbow-phytonutrient-targets-by-color",
+      "title": "Eat the Rainbow: Phytonutrient Targets by Color",
+      "excerpt": "A clinician's breakdown of what each produce color actually delivers — carotenoids, anthocyanins, glucosinolates — and the daily targets that move real biomarkers.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-07-07",
+      "dateLabel": "July 7, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+      "keywords": [
+        "eat the rainbow",
+        "phytonutrients by color",
+        "phytonutrient targets",
+        "carotenoids anthocyanins glucosinolates",
+        "colorful vegetables health benefits",
+        "polyphenol daily intake"
+      ]
+    },
+    {
       "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
       "title": "Subq vs. IM Testosterone: What the PK Data Actually Shows",
       "excerpt": "Subq testosterone produces flatter peaks and troughs than IM at the same weekly dose. Here's what the pharmacokinetics literature actually shows — and how to think about the trade-offs.",

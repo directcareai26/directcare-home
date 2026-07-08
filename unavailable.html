@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DirectCare AI — Available in the United States</title>
+<meta name="robots" content="noindex" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{--p:#500978;--pd:#2B0441;--a:#CC6BE4;--g:#31C520;--mut:#cdbfe0}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:#fff}
+.split{display:grid;grid-template-columns:1.05fr .95fr;min-height:100vh}
+/* LEFT — content */
+.pane{position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(32px,5vw,64px);
+  background:
+   radial-gradient(60% 55% at 15% 15%,rgba(204,107,228,.35),transparent 60%),
+   radial-gradient(55% 55% at 90% 85%,rgba(49,197,32,.14),transparent 60%),
+   linear-gradient(150deg,#2B0441,#3a0658 55%,#1c022e);overflow:hidden}
+.pane .inner{position:relative;max-width:520px}
+.brand-logo{height:40px;width:auto;margin-bottom:30px;display:block;filter:drop-shadow(0 6px 18px rgba(0,0,0,.35))}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);
+  color:#fff;font-weight:600;font-size:.82rem;padding:.45rem 1rem;border-radius:999px;margin-bottom:20px}
+h1{font-size:clamp(2rem,4.6vw,3rem);font-weight:800;line-height:1.12;letter-spacing:-.025em;margin-bottom:16px}
+h1 span{background:linear-gradient(110deg,#fff,var(--a) 55%,var(--g));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+p.lead{color:#e9dcf5;font-size:1.1rem;line-height:1.6;margin-bottom:22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.chips span{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+  color:#efe6fa;font-size:.82rem;font-weight:600;padding:.4rem .85rem;border-radius:10px}
+.chips span b{color:var(--g)}
+.formlabel{color:var(--mut);font-size:.9rem;margin-bottom:10px;font-weight:600}
+form{display:flex;gap:10px;flex-wrap:wrap;max-width:460px}
+form input{flex:1 1 220px;padding:.95rem 1.1rem;border:0;border-radius:12px;font-size:1rem;font-family:inherit}
+form button{flex:none;background:linear-gradient(110deg,var(--g),#28a417);color:#fff;font-weight:700;border:0;border-radius:12px;
+  padding:.95rem 1.6rem;cursor:pointer;font-size:1rem;box-shadow:0 12px 28px rgba(49,197,32,.4);transition:.2s}
+form button:hover{transform:translateY(-2px)}
+.detected{display:none;color:#efe6fa;font-size:.95rem;margin-bottom:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:.6rem .9rem}
+.consent{color:#9d8bb8;font-size:.78rem;line-height:1.5;margin-top:10px;max-width:460px}
+.consent a{color:#e9dcf5;text-decoration:underline}
+.ok{display:none;background:rgba(49,197,32,.16);border:1px solid rgba(49,197,32,.4);color:#d9ffd0;padding:1rem;border-radius:12px;font-weight:600;max-width:460px}
+.note{margin-top:22px;color:var(--mut);font-size:.9rem;line-height:1.5;max-width:460px}
+.note b{color:#fff}
+.foot{margin-top:30px;color:#9d8bb8;font-size:.8rem;line-height:1.5}
+/* RIGHT — image */
+.photo{position:relative;background:#2B0441 url('people-us.png') center/cover no-repeat}
+.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(43,4,65,.45),transparent 45%),linear-gradient(0deg,rgba(43,4,65,.4),transparent 45%)}
+.photo .heartmark{position:absolute;inset:0;display:grid;place-items:center;z-index:2}
+.hcircle{display:grid;place-items:center}
+.hcircle svg{width:clamp(120px,15vw,172px);height:auto;filter:drop-shadow(0 16px 36px rgba(0,0,0,.55))}
+.photo .cap{position:absolute;left:0;right:0;bottom:26px;text-align:center;z-index:2;color:#fff;
+  font-weight:700;font-size:.95rem;text-shadow:0 4px 16px rgba(0,0,0,.5)}
+.photo .cap small{display:block;font-weight:500;color:#efe6fa;font-size:.82rem;margin-top:2px}
+@media(max-width:860px){
+  .split{grid-template-columns:1fr}
+  .photo{order:-1;min-height:200px}
+  .pane{padding:32px 24px 40px}
+}
+</style>
+</head>
+<body>
+  <div class="split">
+    <div class="pane"><div class="inner">
+      <img class="brand-logo" src="logo-white.png" alt="DirectCare AI" />
+      <div class="kicker">🇺🇸 United States only</div>
+      <h1>We're currently available in the <span>United States</span></h1>
+      <p class="lead">DirectCare AI provides US-licensed telehealth and connected-care services to residents of the United States. It looks like you're visiting from outside the U.S., so our services aren't available in your region just yet.</p>
+      <p class="detected" id="detected"></p>
+      <div class="chips"><span><b>✓</b> US-licensed clinicians</span><span><b>✓</b> Available in all 50 states</span><span><b>✓</b> HIPAA-aware &amp; secure</span></div>
+
+      <div class="formlabel">Want to know when we expand? Join the list:</div>
+      <form id="waitForm" onsubmit="return notify(event)">
+        <input type="text" name="first_name" placeholder="First name (optional)" autocomplete="given-name" />
+        <input type="email" name="email" placeholder="you@email.com" required />
+        <input type="hidden" name="country" id="fCountry" />
+        <input type="hidden" name="region" id="fRegion" />
+        <button type="submit">Notify me</button>
+      </form>
+      <div class="consent">By joining you agree to receive occasional email updates from DirectCare AI. We only use your details to notify you and never sell them. <a href="#">Privacy&nbsp;Policy</a>.</div>
+      <div class="ok" id="okMsg">✅ Thanks! We'll let you know the moment we're available in your area.</div>
+
+      <p class="note">Using a <b>VPN</b> or think this is a mistake? Turn off your VPN and refresh, or reach us at <b>contact@directcareai.com</b>.</p>
+      <p class="foot">© 2026 DirectCare AI · United States<br>Educational &amp; administrative support only. Licensed clinicians make all clinical decisions.</p>
+    </div></div>
+
+    <div class="photo">
+      <div class="heartmark"><div class="hcircle">
+        <svg viewBox="0 0 100 94" aria-label="DirectCare AI">
+          <path d="M50 87 C22 66 7 47 7 31 C7 17 18 8 30 8 C41 8 47 17 50 24 C53 17 59 8 70 8 C82 8 93 17 93 31 C93 47 78 66 50 87 Z" fill="#C089DB" transform="translate(2.5,2.5)"/>
+          <path d="M50 87 C22 66 7 47 7 31 C7 17 18 8 30 8 C41 8 47 17 50 24 C53 17 59 8 70 8 C82 8 93 17 93 31 C93 47 78 66 50 87 Z" fill="#8E3FA9"/>
+          <rect x="44" y="27" width="12" height="33" rx="3.4" fill="#fff"/>
+          <rect x="33.5" y="37.5" width="33" height="12" rx="3.4" fill="#fff"/>
+        </svg>
+      </div></div>
+      <div class="cap">Care, built around you<small>Connected, clinician-led health — in the U.S.</small></div>
+    </div>
+  </div>
+<script>
+function countryName(code){try{return new Intl.DisplayNames(['en'],{type:'region'}).of(code)||code;}catch(_){return code;}}
+(function(){
+  // Middleware appends the detected country/region: /unavailable?c=GB&r=ENG
+  var p=new URLSearchParams(location.search);
+  var c=(p.get('c')||p.get('country')||'').toUpperCase();
+  var r=p.get('r')||p.get('region')||'';
+  if(c){
+    document.getElementById('fCountry').value=c;
+    var el=document.getElementById('detected');
+    el.textContent='📍 It looks like you’re visiting from '+countryName(c)+(r?' ('+r+')':'')+'.';
+    el.style.display='block';
+  }
+  if(r) document.getElementById('fRegion').value=r;
+})();
+function notify(e){e.preventDefault();var f=document.getElementById('waitForm');
+  var payload={first_name:f.first_name.value,email:f.email.value,
+    country:document.getElementById('fCountry').value,region:document.getElementById('fRegion').value};
+  fetch('/api/lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).catch(function(){});
+  f.style.display='none';document.querySelector('.consent').style.display='none';
+  document.getElementById('okMsg').style.display='block';return false;}
+</script>
+</body>
+</html>

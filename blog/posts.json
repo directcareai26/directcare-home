@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "glp1-thyroid-monitoring-when-to-stop",
+      "title": "GLP-1s and Thyroid: What to Monitor and When to Stop",
+      "excerpt": "The boxed thyroid warning on GLP-1s scares patients more than it should — and misses the real monitoring questions. Here's what actually matters.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-07-09",
+      "dateLabel": "July 9, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png",
+      "keywords": [
+        "GLP-1 thyroid monitoring",
+        "semaglutide thyroid cancer risk",
+        "tirzepatide TSH",
+        "medullary thyroid carcinoma GLP-1",
+        "levothyroxine and GLP-1",
+        "when to stop semaglutide",
+        "calcitonin monitoring"
+      ]
+    },
+    {
       "slug": "hrt-bone-density-estradiol-prevents-fractures",
       "title": "HRT and Bone Density: How Estradiol Prevents Fractures",
       "excerpt": "Estradiol is your skeleton's loudest signal to keep bone. Here's how HRT protects bone density in midlife and reduces fracture risk decades later.",

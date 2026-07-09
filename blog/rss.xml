@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>GLP-1s and Thyroid: What to Monitor and When to Stop</title>
+      <link>https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop</guid>
+      <pubDate>Thu, 09 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[The boxed thyroid warning on GLP-1s scares patients more than it should — and misses the real monitoring questions. Here's what actually matters.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
+    </item>
     <item>
       <title>HRT and Bone Density: How Estradiol Prevents Fractures</title>
       <link>https://www.directcare.ai/blog/hrt-bone-density-estradiol-prevents-fractures</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" />
-    </item>
-    <item>
-      <title>Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan</title>
-      <link>https://www.directcare.ai/blog/harissa-salmon-sheet-pan-recipe-36g-protein</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/harissa-salmon-sheet-pan-recipe-36g-protein</guid>
-      <pubDate>Sat, 06 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Salmon, cauliflower, chickpeas, harissa. One pan. 35 minutes. 36 grams of protein. The Saturday-night dinner that feels like more effort than it actually was.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
     </item>
   </channel>
 </rss>

@@ -54,8 +54,17 @@ form button:hover{transform:translateY(-2px)}
 .photo .cap small{display:block;font-weight:500;color:#efe6fa;font-size:.82rem;margin-top:2px}
 @media(max-width:860px){
   .split{grid-template-columns:1fr}
-  .photo{order:-1;min-height:200px}
-  .pane{padding:32px 24px 40px}
+  .photo{order:-1;min-height:220px}
+  .pane{padding:36px 22px 44px}
+  /* center + evenly align everything on mobile */
+  .pane .inner{max-width:440px;margin:0 auto;text-align:center}
+  .brand-logo{margin-left:auto;margin-right:auto}
+  .kicker{margin-left:auto;margin-right:auto}
+  .lead,.detected,.formlabel,.consent,.note,.foot,.ok{margin-left:auto;margin-right:auto}
+  .chips{justify-content:center}
+  form{justify-content:center;margin-left:auto;margin-right:auto}
+  form input{flex:1 1 100%;text-align:center}
+  form button{flex:1 1 100%}
 }
 </style>
 </head>

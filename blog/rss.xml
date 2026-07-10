@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Rucking: The Cardio That Builds Strength at the Same Time</title>
+      <link>https://www.directcare.ai/blog/rucking-cardio-strength-training-guide</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/rucking-cardio-strength-training-guide</guid>
+      <pubDate>Fri, 10 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Rucking pairs cardio and load-bearing strength in a single low-impact session. Here's how to program it — weight, distance, progression, and warm-up.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
+    </item>
     <item>
       <title>GLP-1s and Thyroid: What to Monitor and When to Stop</title>
       <link>https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
-    </item>
-    <item>
-      <title>PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow</title>
-      <link>https://www.directcare.ai/blog/pt-141-bremelanotide-libido-melanocortin-pathway</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/pt-141-bremelanotide-libido-melanocortin-pathway</guid>
-      <pubDate>Sun, 07 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Sexual Health</category>
-      <description><![CDATA[PDE5 inhibitors fix the plumbing. PT-141 fixes the signal. A melanocortin agonist that drives desire — not just mechanical response — and pairs differently with the protocols clinics already prescribe.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" />
     </item>
   </channel>
 </rss>

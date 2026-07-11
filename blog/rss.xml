@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Free vs. Total Testosterone: Which Number Actually Matters</title>
+      <link>https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-matters</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-matters</guid>
+      <pubDate>Sat, 11 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Total testosterone gets the headlines. Free testosterone does the work. Here's how to read both — and why SHBG is the variable most men miss.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
+    </item>
     <item>
       <title>Rucking: The Cardio That Builds Strength at the Same Time</title>
       <link>https://www.directcare.ai/blog/rucking-cardio-strength-training-guide</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
-    </item>
-    <item>
-      <title>Compounded vs. branded GLP-1: the actual difference, and when one beats the other</title>
-      <link>https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference</guid>
-      <pubDate>Mon, 08 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[Same active ingredient. Same mechanism. Often a fraction of the cost. The real differences between compounded semaglutide/tirzepatide and the branded Wegovy/Zepbound versions are mostly about supply, dose flexibility, and oversight — not wh]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png" />
     </item>
   </channel>
 </rss>

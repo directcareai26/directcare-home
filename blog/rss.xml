@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Magnesium Foods vs. Supplements: When Food Is Enough</title>
+      <link>https://www.directcare.ai/blog/magnesium-rich-foods-vs-supplements</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/magnesium-rich-foods-vs-supplements</guid>
+      <pubDate>Sun, 12 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Magnesium is the mineral most Americans quietly underdose. Here's when food fixes it, and when a supplement is the smarter move.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+    </item>
     <item>
       <title>Free vs. Total Testosterone: Which Number Actually Matters</title>
       <link>https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-matters</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
-    </item>
-    <item>
-      <title>TRT and sleep apnea: the bidirectional relationship most clinics miss</title>
-      <link>https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship</guid>
-      <pubDate>Tue, 09 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Low testosterone makes sleep apnea worse. Untreated sleep apnea drives testosterone down. Patients can spend years on testosterone protocols that aren't working — because the actual root cause is upstream in the airway.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
     </item>
   </channel>
 </rss>

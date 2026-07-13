@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs</title>
+      <link>https://www.directcare.ai/blog/estradiol-patches-vs-gels-vs-pellets</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-patches-vs-gels-vs-pellets</guid>
+      <pubDate>Mon, 13 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Patches, gels, and pellets all deliver bioidentical estradiol through the skin — but their pharmacokinetics, dosing flexibility, and safety profiles diverge sharply. Here's the clinical picture.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
+    </item>
     <item>
       <title>Magnesium Foods vs. Supplements: When Food Is Enough</title>
       <link>https://www.directcare.ai/blog/magnesium-rich-foods-vs-supplements</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>Grip strength predicts how long you'll live — and the 3 exercises that actually build it</title>
-      <link>https://www.directcare.ai/blog/grip-strength-longevity-predictor-three-exercises</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/grip-strength-longevity-predictor-three-exercises</guid>
-      <pubDate>Wed, 10 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Fitness</category>
-      <description><![CDATA[Grip strength is one of the cleanest biomarkers of all-cause mortality in adults. The Lancet's PURE study, with 140,000 participants across 17 countries, found it outperforms blood pressure as a predictor. The good news: it's also one of th]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
     </item>
   </channel>
 </rss>

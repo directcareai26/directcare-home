@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Fiber on a GLP-1: Why 25-35g Daily Keeps Appetite Steady</title>
+      <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite</guid>
+      <pubDate>Wed, 15 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[GLP-1s work better when you feed them fiber. Here's why 25-35g daily keeps appetite suppression sustainable — and how to actually hit it without a supplement crutch.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
     <item>
       <title>Zone 2 Cardio Over 40: What It Is and How to Measure It</title>
       <link>https://www.directcare.ai/blog/zone-2-cardio-over-40-how-to-measure</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
-    </item>
-    <item>
-      <title>Berberine isn't 'nature's Ozempic' — but it isn't nothing, either. A clinician's honest view</title>
-      <link>https://www.directcare.ai/blog/berberine-natures-ozempic-clinician-honest-view</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/berberine-natures-ozempic-clinician-honest-view</guid>
-      <pubDate>Fri, 12 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Supplements</category>
-      <description><![CDATA[TikTok says berberine is a natural GLP-1. It isn't. But it does meaningfully lower blood glucose and modestly improve metabolic markers in some patients. Here's the honest version — what it actually does, what it doesn't, and where it fits.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
     </item>
   </channel>
 </rss>

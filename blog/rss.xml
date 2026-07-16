@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Lifting Through Perimenopause: Reps, Recovery, Real Rules</title>
+      <link>https://www.directcare.ai/blog/lifting-through-perimenopause-rep-ranges-recovery</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/lifting-through-perimenopause-rep-ranges-recovery</guid>
+      <pubDate>Thu, 16 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[The rep ranges, rest periods, and recovery rules that make strength training work through perimenopause — grounded in ACSM guidance and current research.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
+    </item>
     <item>
       <title>Fiber on a GLP-1: Why 25-35g Daily Keeps Appetite Steady</title>
       <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
-    </item>
-    <item>
-      <title>Greek lemon chicken with herbed quinoa: 38g protein, 30 minutes, one skillet</title>
-      <link>https://www.directcare.ai/blog/greek-lemon-chicken-herbed-quinoa-recipe</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/greek-lemon-chicken-herbed-quinoa-recipe</guid>
-      <pubDate>Sat, 13 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Chicken thighs, lemon, garlic, oregano. Herbed quinoa cooked in the same pan. 38 grams of protein, 9 grams of fiber, 30 minutes start to plate. The Saturday-night dinner you'll actually want to repeat on Tuesday.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
     </item>
   </channel>
 </rss>

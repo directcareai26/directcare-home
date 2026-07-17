@@ -760,6 +760,52 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
     small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
+
+  /* ============================================================
+     ABOVE-THE-FOLD CONVERSION LAYER (2026-07 CTA/pricing lift)
+     ============================================================ */
+  /* Hero price chip */
+  .hero-price-chip { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 22px; padding: 10px 20px; border-radius: 999px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(8px); color: rgba(255,255,255,0.85); font-size: 0.95rem; }
+  .hero-price-chip strong { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.35rem; color: white; }
+
+  /* Quick panel picker (compact pricing strip under the trust bar) */
+  .quick-panels-head { text-align: center; max-width: 680px; margin: 0 auto 28px; }
+  .quick-panels-head p { margin-top: 12px; font-size: 1.02rem; }
+  .quick-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  @media (max-width: 860px) { .quick-panels { grid-template-columns: 1fr; } }
+  .quick-panel { display: flex; flex-direction: column; gap: 6px; background: white; border: 1px solid var(--lavender-100, #E9D9F2); border-radius: 18px; padding: 24px 22px; box-shadow: 0 8px 24px -10px rgba(118,43,164,0.10); transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease; }
+  .quick-panel:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.4); box-shadow: 0 18px 44px -14px rgba(118,43,164,0.28); }
+  .quick-panel.featured { border-color: var(--brand, #af4bed); box-shadow: 0 18px 44px -14px rgba(175,75,237,0.35); position: relative; }
+  .quick-panel .qp-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--brand, #af4bed); color: white; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; white-space: nowrap; }
+  .quick-panel h3 { font-size: 1.08rem; }
+  .quick-panel .qp-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.9rem; line-height: 1; color: var(--ink, #281A31); }
+  .quick-panel .qp-price small { font-size: 0.72rem; font-weight: 600; color: var(--muted, #3d3247); margin-left: 4px; }
+  .quick-panel .qp-sub { font-size: 0.86rem; color: var(--muted, #3d3247); min-height: 2.6em; }
+  .quick-panel .qp-save { font-size: 0.78rem; font-weight: 700; color: #059669; }
+  .quick-panel .btn { margin-top: 10px; width: 100%; padding: 13px 18px; font-size: 0.92rem; }
+  .quick-panels-foot { text-align: center; margin-top: 18px; font-size: 0.9rem; color: var(--muted, #3d3247); }
+  .quick-panels-foot a { color: var(--brand-deep, #762ba4); font-weight: 700; }
+
+  /* Mid-page CTA band */
+  .mid-cta { text-align: center; margin-top: 40px; }
+  .mid-cta .cta-assure { margin-top: 14px; font-size: 0.88rem; color: var(--muted, #3d3247); }
+  .section.soft .mid-cta .cta-assure, .section.dark .mid-cta .cta-assure { color: rgba(255,255,255,0.7); }
+
+  /* Sticky CTA bar (mirrors surge-max) */
+  .sticky-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 45; background: rgba(26,15,36,0.94); backdrop-filter: blur(14px); border-top: 1px solid rgba(255,255,255,0.08); padding: 12px clamp(16px, 4vw, 32px); display: flex; align-items: center; justify-content: space-between; gap: 16px; transform: translateY(110%); transition: transform .25s ease; box-shadow: 0 -10px 30px -10px rgba(0,0,0,0.4); }
+  .sticky-cta.visible { transform: translateY(0); }
+  .sticky-cta-left { display: flex; flex-direction: column; line-height: 1.2; color: white; }
+  .sticky-cta-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 800; font-size: 1.12rem; }
+  .sticky-cta-price .accent { color: #d8b4fe; }
+  .sticky-cta-sub { font-size: 0.78rem; color: rgba(255,255,255,0.65); }
+  .sticky-cta .btn { padding: 14px 24px; font-size: 0.92rem; white-space: nowrap; box-shadow: 0 8px 22px -6px rgba(175,75,237,0.5); }
+  @media (max-width: 480px) {
+    .sticky-cta { padding: 10px 14px; gap: 10px; }
+    .sticky-cta-price { font-size: 1rem; }
+    .sticky-cta-sub { font-size: 0.72rem; }
+    .sticky-cta .btn { padding: 12px 18px; font-size: 0.85rem; }
+  }
+  body.sticky-active footer { padding-bottom: 100px; }
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -863,8 +909,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h1 class="rise d1">Move Better. Feel Stronger.<br/><span class="accent h-italic">Live Fully.</span></h1>
       <p class="hero-sub rise d2">Up to <strong>80 clinician-ordered biomarkers</strong>, a plain-English interpretation, and a personalized supplement &amp; lifestyle protocol. Built around the numbers that drive how you feel, perform, and age.</p>
       <div class="hero-cta-row rise d3">
-        <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See My Numbers →</a>
+        <a href="#panels" class="btn btn-primary btn-primary-xl pulse-glow">See Panels &amp; Pricing →</a>
         <a href="#how" class="btn btn-ghost-light btn-primary-xl">How it works</a>
+      </div>
+      <div class="hero-price-chip rise d3">
+        <span>Panels from</span>
+        <strong>$196</strong>
+        <span style="opacity:.5;">·</span>
+        <span>up to 80 biomarkers</span>
+        <span style="opacity:.5;">·</span>
+        <span>save $1,000+ vs à la carte</span>
       </div>
     </div>
   </div>
@@ -894,6 +948,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
+<!-- QUICK PANEL PICKER (above-the-fold pricing + direct order CTAs) -->
+<section class="section" id="panels">
+  <div class="container">
+    <div class="quick-panels-head">
+      <h2>Pick your panel. <span class="h-italic">Order in 60 seconds.</span></h2>
+      <p>Every panel includes the draw, clinician interpretation, a personalized supplement protocol, and permanent access to your results.</p>
+    </div>
+    <div class="quick-panels">
+      <div class="quick-panel">
+        <h3>Essential Panel</h3>
+        <div class="qp-price">$196<small>one-time</small></div>
+        <p class="qp-sub">70 biomarkers — the annual baseline everyone should have.</p>
+        <span class="qp-save">À la carte: ~$1,200 · You save ~$1,000</span>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=" class="btn btn-ghost">Order Essential →</a>
+      </div>
+      <div class="quick-panel featured">
+        <span class="qp-badge">Most Popular</span>
+        <h3>Men's Health Panel</h3>
+        <div class="qp-price">$296<small>one-time</small></div>
+        <p class="qp-sub">75 biomarkers — full testosterone, thyroid, metabolic &amp; cardio.</p>
+        <span class="qp-save">À la carte: ~$1,800 · You save ~$1,500</span>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=" class="btn btn-primary">Order Men's →</a>
+      </div>
+      <div class="quick-panel">
+        <h3>Women's Health Panel</h3>
+        <div class="qp-price">$346<small>one-time</small></div>
+        <p class="qp-sub">80 biomarkers — full female hormones, thyroid, metabolic &amp; bone.</p>
+        <span class="qp-save">À la carte: ~$2,200 · You save ~$1,850</span>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=" class="btn btn-ghost">Order Women's →</a>
+      </div>
+    </div>
+    <p class="quick-panels-foot">Not sure which fits? <a href="#pricing">Compare everything included in each panel ↓</a></p>
+  </div>
+</section>
+
 <!-- JOURNEY -->
 <section class="section soft" id="journey">
   <div class="container">
@@ -920,6 +1009,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div class="journey-note">
       Real progress happens <strong>between visits</strong>. Your plan keeps you connected, informed, and motivated.
+    </div>
+    <div class="mid-cta">
+      <a href="#panels" class="btn btn-primary btn-primary-xl">Choose My Panel →</a>
+      <p class="cta-assure">Panels from $196 · Results in 3–5 days · 2,000+ draw sites nationwide</p>
     </div>
   </div>
 </section>
@@ -1031,6 +1124,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Full white &amp; red cell differential, platelets, hemoglobin, hematocrit, MCV, MCH, RDW, MPV.</p>
       </div>
     </div>
+    <div class="mid-cta">
+      <a href="#panels" class="btn btn-primary btn-primary-xl">Test All 8 Systems →</a>
+      <p class="cta-assure">One draw covers everything · From $196 · Clinician-interpreted</p>
+    </div>
   </div>
 </section>
 
@@ -1138,7 +1235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="compare-cta">
-      <a href="#pricing" class="btn btn-primary btn-primary-xl pulse-glow">See the panel built for you →</a>
+      <a href="#panels" class="btn btn-primary btn-primary-xl pulse-glow">See the panel built for you →</a>
     </div>
   </div>
 </section>
@@ -1343,6 +1440,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </footer>
+
+<!-- ============ STICKY CTA BAR ============ -->
+<div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+  <div class="sticky-cta-left">
+    <span class="sticky-cta-price"><span class="accent">$196</span> Essential · <span class="accent">$296</span> Men's · <span class="accent">$346</span> Women's</span>
+    <span class="sticky-cta-sub">Up to 80 biomarkers · Results in 3–5 days</span>
+  </div>
+  <a class="btn btn-primary" href="#panels">Choose My Panel →</a>
+</div>
+
+<script>
+  /* === Sticky CTA visibility (mirrors surge-max) === */
+  (function() {
+    var bar = document.getElementById('sticky-cta');
+    if (!bar) return;
+    var hero = document.querySelector('.hero');
+    var footer = document.querySelector('footer');
+    var panels = document.getElementById('panels');
+    function onScroll() {
+      var heroBottom = hero ? hero.offsetTop + hero.offsetHeight : 600;
+      var footerTop = footer ? footer.getBoundingClientRect().top + window.scrollY : Infinity;
+      var y = window.scrollY;
+      // Hide while the quick-panel picker itself is on screen (its own CTAs win)
+      var panelsVisible = false;
+      if (panels) {
+        var r = panels.getBoundingClientRect();
+        panelsVisible = r.top < window.innerHeight * 0.7 && r.bottom > 120;
+      }
+      var visible = y > heroBottom - 80 && !panelsVisible && y + window.innerHeight < footerTop + 160;
+      bar.classList.toggle('visible', visible);
+      document.body.classList.toggle('sticky-active', visible);
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  })();
+</script>
 
 <script>
   /* Background videos — fade in once actually playing (kills the poster-to-video flicker) */

@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "30-gram-protein-lunch-rule",
+      "title": "The 30-Gram Protein Lunch Rule: Why Real Meals Win",
+      "excerpt": "A bar isn't lunch. Here's why 30 grams of protein at midday changes appetite, glucose, and lean mass — and how to hit the number without cooking.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-07-17",
+      "dateLabel": "July 17, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "30 gram protein lunch",
+        "high protein lunch",
+        "protein per meal",
+        "muscle protein synthesis",
+        "protein leverage hypothesis",
+        "high protein meal ideas"
+      ]
+    },
+    {
       "slug": "lifting-through-perimenopause-rep-ranges-recovery",
       "title": "Lifting Through Perimenopause: Reps, Recovery, Real Rules",
       "excerpt": "The rep ranges, rest periods, and recovery rules that make strength training work through perimenopause — grounded in ACSM guidance and current research.",

@@ -543,6 +543,9 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .compare-list { display: grid; gap: 14px; padding: 0; margin: 0; list-style: none; }
   .compare-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.96rem; color: var(--muted); }
   .compare-list li.good-li { color: var(--ink); }
+  /* Keeps a line with inline markup (<em>, <strong>) as ONE flex item so it wraps as
+     normal text instead of splitting each element onto its own line on narrow screens. */
+  .compare-list li .compare-text { flex: 1; min-width: 0; }
   .check, .xmark { flex: 0 0 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 0.7rem; font-weight: 900; margin-top: 2px; }
   .check { background: rgba(20,152,58,0.12); color: var(--green); border: 1px solid rgba(20,152,58,0.3); }
   .xmark { background: rgba(208,69,69,0.10); color: var(--bad); border: 1px solid rgba(208,69,69,0.3); }
@@ -1324,7 +1327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li class="good-li"><span class="check">✓</span> Four ingredients. Four mechanisms. Full-system response.</li>
           <li class="good-li"><span class="check">✓</span> Absorbs under the tongue. Onset in ~10 minutes.</li>
           <li class="good-li"><span class="check">✓</span> Works through dinner, drinks, and the whole night.</li>
-          <li class="good-li"><span class="check">✓</span> Activates desire <em>and</em> the physical response.</li>
+          <li class="good-li"><span class="check">✓</span><span class="compare-text">Activates desire <em>and</em> the physical response.</span></li>
           <li class="good-li"><span class="check">✓</span> Direct-from-pharmacy, no insurance, unmarked packaging.</li>
         </ul>
       </div>

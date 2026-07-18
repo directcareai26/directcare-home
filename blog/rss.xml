@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>The Two-Lift Minimum: Busy-Week Strength That Preserves Muscle</title>
+      <link>https://www.directcare.ai/blog/two-lift-minimum-busy-week-strength-template</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/two-lift-minimum-busy-week-strength-template</guid>
+      <pubDate>Sat, 18 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Two compound lifts per session, three days a week. It's not optimal — it's the floor. And the floor is high enough to keep your muscle and most of your strength when life gets loud.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
+    </item>
     <item>
       <title>The 30-Gram Protein Lunch Rule: Why Real Meals Win</title>
       <link>https://www.directcare.ai/blog/30-gram-protein-lunch-rule</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better</title>
-      <link>https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol</guid>
-      <pubDate>Mon, 15 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Hair Regrowth</category>
-      <description><![CDATA[A $25 dermaroller, used correctly, roughly doubles the regrowth produced by topical minoxidil alone. The mechanism is real, the published evidence is solid, and most patients are doing it wrong.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
     </item>
   </channel>
 </rss>

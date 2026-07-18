@@ -557,18 +557,21 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .step-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3.4rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
   .step-card h3 { margin-bottom: 10px; }
 
-  /* ============== VALUE CALLOUT ($80 → $12) ============== */
+  /* ============== VALUE CALLOUT (single-ingredient pill → $12 4-in-1 dose) ============== */
   .value-callout-wrap { margin-bottom: clamp(40px, 6vw, 64px); text-align: center; }
   .value-callout-eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(20,152,58,0.10); color: var(--green); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(20,152,58,0.25); margin-bottom: 22px; }
   .value-callout-eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
   .value-callout { display: grid; grid-template-columns: 0.9fr 44px 1.1fr; gap: 16px; align-items: center; max-width: 860px; margin: 0 auto; }
   @media (max-width: 720px) { .value-callout { grid-template-columns: 1fr; gap: 14px; } }
   .value-tile { padding: 24px 22px; border-radius: var(--radius-lg); position: relative; overflow: hidden; text-align: left; display: flex; flex-direction: column; justify-content: center; }
-  /* Left "$80" tile stays compact / fit-to-content; pricing tile is bigger but not dominant */
+  /* Left "before" tile stays compact / fit-to-content; pricing tile is bigger but not dominant */
   .value-tile.before { padding: 22px 20px; }
   .value-tile.before .value-amount { font-size: clamp(2.6rem, 5.5vw, 3.6rem); }
+  /* A price range is ~3x the characters of a single figure — step it down so it
+     doesn't wrap or overflow the compact "before" tile on narrow screens. */
+  .value-tile.before .value-amount-range { font-size: clamp(2rem, 4.2vw, 2.8rem); white-space: nowrap; }
   .value-tile.before .value-meta { font-size: 0.82rem; line-height: 1.45; margin-top: 8px; }
-  /* Pricing-inside-tile variant — bigger than $80 but not dominant */
+  /* Pricing-inside-tile variant — bigger than the "before" tile but not dominant */
   .value-tile-priced { padding: 26px 22px; justify-content: flex-start; }
   .value-tile-priced .value-tag { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.14em; color: rgba(255,255,255,0.78); font-weight: 800; }
   .value-tile-priced .value-was-row { margin-top: 10px; display: flex; align-items: center; gap: 10px; }
@@ -1436,13 +1439,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="value-callout-wrap">
       <span class="value-callout-eyebrow"><span class="dot"></span> The Real Math</span>
-      <h2 style="margin-bottom:10px;">From $80 a pill to $12 a dose.</h2>
-      <p style="max-width: 580px; margin: 0 auto 32px; font-size: 1.05rem;">Brand-name Viagra retails for around $80 a pill at major pharmacies. For one ingredient, one mechanism, one short window. Here's what changes when you skip the markup and the middleman.</p>
+      <h2 style="margin-bottom:10px;">From one ingredient to four.</h2>
+      <p style="max-width: 580px; margin: 0 auto 32px; font-size: 1.05rem;">A single-ingredient pill runs about $5 generic and up to $85 for brand-name Viagra — plus the office visit and the pharmacy trip. Here's what changes when you skip the markup and the middleman.</p>
       <div class="value-callout">
         <div class="value-tile before">
-          <div class="value-amount">$80</div>
-          <div class="value-label">per Viagra pill</div>
-          <div class="value-meta">Retail at a major pharmacy. One ingredient. 45 to 60 min onset. ~4 hour window.</div>
+          <div class="value-amount value-amount-range">$5&ndash;$85</div>
+          <div class="value-label">per single-ingredient pill</div>
+          <div class="value-meta">Generic sildenafil to brand-name Viagra. One ingredient. 45 to 60 min onset. ~4 hour window. Office visit and pharmacy trip not included.</div>
         </div>
         <div class="value-arrow" aria-hidden="true">→</div>
         <div class="value-tile after value-tile-priced">
@@ -1462,7 +1465,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p class="value-guarantee">If you don't qualify, you don't pay. Guaranteed.</p>
         </div>
       </div>
-      <p class="value-savings"><span class="badge">85% LESS</span> per dose · Stronger · Faster · Longer · No insurance, no pharmacy lines.</p>
+      <p class="value-savings"><span class="badge">4 MECHANISMS</span> in one dose · Stronger · Faster · Longer · Clinician review and shipping included. No insurance, no pharmacy lines.</p>
     </div>
   </div>
 </section>

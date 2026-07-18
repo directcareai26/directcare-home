@@ -587,7 +587,9 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .value-tile-priced .btn-primary-xl { padding: 14px 22px; font-size: 0.96rem; }
   .value-tile-priced .value-guarantee { font-size: 0.76rem; color: rgba(255,255,255,0.7); text-align: center; margin-top: 10px; }
   @media (max-width: 720px) { .value-tile-priced { padding: 24px 20px; } }
-  .value-tile.before { background: linear-gradient(180deg, #faf1f1 0%, #fff5f5 100%); border: 1px solid rgba(208,69,69,0.18); }
+  /* Warm tan, resolving to the page background (--bg #faf6f0) at the bottom so the
+     tile melts into the section instead of reading as a pink card floating on tan. */
+  .value-tile.before { background: linear-gradient(180deg, #f3ebdf 0%, #faf6f0 100%); border: 1px solid rgba(146,116,82,0.20); }
   .value-tile.after { background: linear-gradient(135deg, #6e1fa6 0%, var(--brand) 60%, #d185ff 120%); color: white; border: 1px solid rgba(175,75,237,0.45); box-shadow: 0 24px 60px -16px rgba(118,43,164,0.45); }
   .value-amount { font-family: 'Geist', 'Manrope', sans-serif; font-size: clamp(3.4rem, 7vw, 5.2rem); font-weight: 900; line-height: 0.95; letter-spacing: -0.04em; }
   .value-tile.before .value-amount { color: #c34a4a; text-decoration: line-through; text-decoration-thickness: 4px; text-decoration-color: rgba(195,74,74,0.45); }

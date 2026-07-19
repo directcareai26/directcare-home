@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Plant Protein in Perimenopause: Lentil, Tofu, Tempeh</title>
+      <link>https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh</guid>
+      <pubDate>Sun, 19 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Perimenopause bumps your protein target higher, not lower. Here's a lentil, tofu, and tempeh rotation that hits it — with real gram counts and three recipes.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
+    </item>
     <item>
       <title>The Two-Lift Minimum: Busy-Week Strength That Preserves Muscle</title>
       <link>https://www.directcare.ai/blog/two-lift-minimum-busy-week-strength-template</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
-    </item>
-    <item>
-      <title>Low Libido in Men: Testosterone, Stress, or Neither?</title>
-      <link>https://www.directcare.ai/blog/low-libido-men-testosterone-stress-or-neither</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/low-libido-men-testosterone-stress-or-neither</guid>
-      <pubDate>Fri, 19 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Sexual Health</category>
-      <description><![CDATA[Low libido in men gets blamed on testosterone, but stress, sleep, SSRIs, and metabolic disease drive just as many cases. Here's how to tell them apart.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
     </item>
   </channel>
 </rss>

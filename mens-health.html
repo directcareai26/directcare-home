@@ -269,23 +269,47 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   /* PRODUCT GRID */
   .grid-head { text-align: center; max-width: 760px; margin: 0 auto 44px; }
   .grid-head h2 { margin-bottom: 14px; }
+  .dark-grid { background: #0d0714; padding: clamp(44px, 6vw, 76px) 0; }
+  .dark-grid .grid-head h2 { color: #f5f1fa; }
+  .dark-grid .grid-head p { color: #b4a7c6; font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+  .dark-grid .h-italic { background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
   .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  @media (max-width: 980px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 620px) {
-    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-    .product-tile-name { font-size: 1.05rem !important; line-height: 1.15 !important; font-weight: 700 !important; }
+  @media (max-width: 980px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+  @media (max-width: 640px) { .product-grid { grid-template-columns: 1fr; gap: 16px; } }
+  .product-card { display: flex; flex-direction: column; background: #170d21; border: 1px solid rgba(175,75,237,0.16); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+  .product-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.42); box-shadow: 0 22px 44px -16px rgba(175,75,237,0.28); }
+  @media (prefers-reduced-motion: reduce) { .product-card, .product-card:hover { transition: none; transform: none; } }
+  .product-card-media { position: relative; aspect-ratio: 16 / 11; overflow: hidden; }
+  .product-card-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .product-card-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(13,7,20,0.55) 100%); }
+  .product-card-icon { position: absolute; left: 18px; bottom: 14px; z-index: 2; width: 54px; height: 54px; border-radius: 50%; background: rgba(13,7,20,0.55); border: 1.5px solid rgba(201,140,244,0.55); backdrop-filter: blur(6px); display: grid; place-items: center; color: #c98cf4; }
+  .product-card-body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 24px; flex: 1; }
+  .product-card-title { color: #f5f1fa; font-size: 1.4rem; font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+  .product-card-sub { color: #b4a7c6; font-size: 0.95rem; line-height: 1.5; }
+  .product-card-checks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .product-card-checks li { display: flex; align-items: center; gap: 9px; color: #f5f1fa; font-size: 0.95rem; font-weight: 600; }
+  .product-card-checks svg { flex: none; color: #c98cf4; }
+  .product-card-rx { color: #8d7da1; font-size: 0.83rem; font-weight: 600; margin-top: auto; padding-top: 4px; }
+  .product-card-link { display: inline-flex; align-items: center; gap: 8px; color: #c98cf4; font-weight: 700; font-size: 0.98rem; }
+  .product-card:hover .product-card-link { color: #ddb6ff; }
+  .product-card-link svg { transition: transform .2s ease; }
+  .product-card:hover .product-card-link svg { transform: translateX(3px); }
+  .trust-bar { margin-top: clamp(30px, 4.5vw, 46px); background: #170d21; border: 1px solid rgba(175,75,237,0.16); border-radius: var(--radius-lg); display: grid; grid-template-columns: repeat(4, 1fr); }
+  .trust-item { display: flex; gap: 14px; align-items: flex-start; padding: 24px 26px; border-left: 1px solid rgba(175,75,237,0.12); }
+  .trust-item:first-child { border-left: none; }
+  .trust-item svg { flex: none; color: #c98cf4; margin-top: 2px; }
+  .trust-item h3 { color: #f5f1fa; font-size: 0.98rem; font-weight: 800; line-height: 1.25; margin: 0; }
+  .trust-item p { color: #b4a7c6; font-size: 0.85rem; margin: 4px 0 0; line-height: 1.4; }
+  @media (max-width: 980px) {
+    .trust-bar { grid-template-columns: repeat(2, 1fr); }
+    .trust-item:nth-child(3) { border-left: none; }
+    .trust-item:nth-child(n+3) { border-top: 1px solid rgba(175,75,237,0.12); }
   }
-  .product-tile { position: relative; display: block; overflow: hidden; border-radius: var(--radius-lg); aspect-ratio: 4 / 5; box-shadow: 0 12px 28px -10px rgba(118,43,164,0.18); transition: transform .25s ease, box-shadow .25s ease; isolation: isolate; }
-  .product-tile:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -14px rgba(118,43,164,0.30); }
-  .product-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
-  .product-tile:hover img { transform: scale(1.04); }
-  .product-tile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(26,15,36,0.78) 100%); }
-  .product-tile-info { position: absolute; left: 22px; right: 22px; bottom: 20px; z-index: 2; color: white; }
-  .product-tile-tag { display: inline-block; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.26); padding: 4px 12px; border-radius: 999px; font-size: 0.66rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 10px; backdrop-filter: blur(6px); }
-  .product-tile-name { font-family: 'Geist', sans-serif; font-size: 1.45rem; font-weight: 800; line-height: 1.1; margin-bottom: 6px; }
-  .product-tile-sub { font-size: 0.92rem; opacity: 0.86; line-height: 1.4; }
-  .product-tile-arrow { position: absolute; top: 22px; right: 22px; z-index: 2; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.30); display: grid; place-items: center; color: white; backdrop-filter: blur(6px); transition: background .2s ease, transform .2s ease; }
-  .product-tile:hover .product-tile-arrow { background: white; color: var(--brand-darker); transform: translateX(2px) translateY(-2px); }
+  @media (max-width: 640px) {
+    .trust-bar { grid-template-columns: 1fr; }
+    .trust-item { border-left: none; padding: 18px 22px; }
+    .trust-item:nth-child(n+2) { border-top: 1px solid rgba(175,75,237,0.12); }
+  }
 
   /* CLINICAL ADVISOR */
   .clinical-advisor { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 200px 1fr; gap: clamp(28px, 4vw, 48px); align-items: center; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 18px 50px -16px rgba(118,43,164,0.16); }
@@ -642,62 +666,108 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- PRODUCT GRID -->
-<section class="section">
+<!-- PRODUCT GRID (dark) -->
+<section class="dark-grid">
   <div class="container">
     <div class="grid-head">
-      <h2 style="margin-top: 18px;">Care, <span class="h-italic">tuned to your levels.</span></h2>
-      <p>Every protocol below is prescribed by a US-licensed clinician, compounded in the USA, and shipped discreetly to your door.</p>
+      <h2>Personalized care for <span class="h-italic">every part of your health.</span></h2>
+      <p>Provider-prescribed treatments. Convenient. Discreet. Delivered.</p>
     </div>
     <div class="product-grid">
-      <a class="product-tile" href="/testosterone-replacement-therapy">
-        <img src="/optimized/testosterone-lifestyleimage-800.webp" alt="TRT. Testosterone Replacement Therapy" width="928" height="1152" srcset="/optimized/testosterone-lifestyleimage-400.webp 400w, /optimized/testosterone-lifestyleimage-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Testosterone Replacement</div>
-          <div class="product-tile-sub">Injectable, oral, and enclomiphene. Dosed to your real bloodwork.</div>
+      <a class="product-card" href="/testosterone-replacement-therapy">
+        <div class="product-card-media">
+          <img src="/optimized/testosterone-lifestyleimage-800.webp" alt="TRT. Testosterone Replacement Therapy" width="928" height="1152" srcset="/optimized/testosterone-lifestyleimage-400.webp 400w, /optimized/testosterone-lifestyleimage-800.webp 800w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="6"/><line x1="14.5" y1="9.5" x2="21" y2="3"/><polyline points="15.5 3 21 3 21 8.5"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Testosterone Replacement</div>
+          <ul class="product-card-checks">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Support energy.</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Restore libido.</li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Support lean muscle.</li>
+          </ul>
+          <div class="product-card-rx">For men with clinically low testosterone &mdash; confirmed by labs, prescribed by a provider.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
-      <a class="product-tile" href="/surge-max/">
-        <img src="/optimized/morning-bed-foreheads-touching-800.webp" alt="Surge Max. Sexual Health" width="928" height="1152" srcset="/optimized/morning-bed-foreheads-touching-400.webp 400w, /optimized/morning-bed-foreheads-touching-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Surge Max</div>
-          <div class="product-tile-sub">The 4-in-1 sublingual: sildenafil + tadalafil + vardenafil + apomorphine.</div>
+      <a class="product-card" href="/surge-max/">
+        <div class="product-card-media">
+          <img src="/optimized/morning-bed-foreheads-touching-800.webp" alt="Surge Max. Sexual Health" width="928" height="1152" srcset="/optimized/morning-bed-foreheads-touching-400.webp 400w, /optimized/morning-bed-foreheads-touching-800.webp 800w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Surge Max</div>
+          <div class="product-card-sub">The 4-in-1 sublingual: sildenafil + tadalafil + vardenafil + apomorphine.</div>
+          <div class="product-card-rx">Provider prescribed.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
-      <a class="product-tile" href="/mens-weight-loss">
-        <img src="/optimized/weight-loss-lifestyleimage-800.webp" alt="GLP-1 Weight Loss" width="928" height="1152" srcset="/optimized/weight-loss-lifestyleimage-400.webp 400w, /optimized/weight-loss-lifestyleimage-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Weight Loss</div>
-          <div class="product-tile-sub">Compounded semaglutide &amp; tirzepatide with a Care Coach from day one.</div>
+      <a class="product-card" href="/mens-hair-loss/">
+        <div class="product-card-media">
+          <img src="/optimized/hair-regrowth-lifestyleimage-800.webp" alt="Hair Regrowth for Men" width="928" height="1152" srcset="/optimized/hair-regrowth-lifestyleimage-400.webp 400w, /optimized/hair-regrowth-lifestyleimage-800.webp 800w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2.5 3-2.5 5.5 0 8.5 2.5-3 2.5-5.5 0-8.5z"/><path d="M12 11.5V21"/><path d="M8.5 15.5c1 .5 2.3.8 3.5.8s2.5-.3 3.5-.8"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Hair Regrowth</div>
+          <div class="product-card-sub">Topical and oral protocols. Finasteride, dutasteride, minoxidil and more.</div>
+          <div class="product-card-rx">Provider prescribed.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
-      <a class="product-tile" href="/mens-hair-loss/">
-        <img src="/optimized/hair-regrowth-lifestyleimage-800.webp" alt="Hair Regrowth for Men" width="928" height="1152" srcset="/optimized/hair-regrowth-lifestyleimage-400.webp 400w, /optimized/hair-regrowth-lifestyleimage-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Hair Regrowth</div>
-          <div class="product-tile-sub">Topical and oral protocols. Finasteride, dutasteride, minoxidil and more.</div>
+      <a class="product-card" href="/mens-weight-loss">
+        <div class="product-card-media">
+          <img src="/optimized/weight-loss-lifestyleimage-800.webp" alt="GLP-1 Weight Loss" width="928" height="1152" srcset="/optimized/weight-loss-lifestyleimage-400.webp 400w, /optimized/weight-loss-lifestyleimage-800.webp 800w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M12 4v4"/><path d="M9.5 12.5 12 10l2.5 2.5"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Weight Loss</div>
+          <div class="product-card-sub">Compounded semaglutide &amp; tirzepatide with a Care Coach from day one.</div>
+          <div class="product-card-rx">Provider prescribed.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
-      <a class="product-tile" href="/blood-test/">
-        <img src="/optimized/health-check-lifestyleimage-800.webp" alt="Blood Labs" width="928" height="1152" srcset="/optimized/health-check-lifestyleimage-400.webp 400w, /optimized/health-check-lifestyleimage-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Blood Labs</div>
-          <div class="product-tile-sub">80+ biomarker panel with a clinician-written, plain-English plan.</div>
+      <a class="product-card" href="/blood-test/">
+        <div class="product-card-media">
+          <img src="/optimized/health-check-lifestyleimage-800.webp" alt="Blood Labs" width="928" height="1152" srcset="/optimized/health-check-lifestyleimage-400.webp 400w, /optimized/health-check-lifestyleimage-800.webp 800w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v6.5L4.5 18a3 3 0 0 0 2.6 4.5h9.8a3 3 0 0 0 2.6-4.5L14 8.5V2"/><line x1="8" y1="2" x2="16" y2="2"/><line x1="7" y1="15" x2="17" y2="15"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Blood Labs</div>
+          <div class="product-card-sub">80+ biomarker panel with a clinician-written, plain-English plan.</div>
+          <div class="product-card-rx">Provider prescribed.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
-      <a class="product-tile" href="/supplements/">
-        <img src="/optimized/flatlay-of-women-s-protocol-bottles-800.webp" alt="Supplements" width="1376" height="768" srcset="/optimized/flatlay-of-women-s-protocol-bottles-400.webp 400w, /optimized/flatlay-of-women-s-protocol-bottles-800.webp 800w, /optimized/flatlay-of-women-s-protocol-bottles-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        <div class="product-tile-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-        <div class="product-tile-info">
-          <div class="product-tile-name">Supplements</div>
-          <div class="product-tile-sub">Physician-formulated stacks via Fullscript. Recommended by your clinician.</div>
+      <a class="product-card" href="/supplements/">
+        <div class="product-card-media">
+          <img src="/optimized/flatlay-of-women-s-protocol-bottles-800.webp" alt="Supplements" width="1376" height="768" srcset="/optimized/flatlay-of-women-s-protocol-bottles-400.webp 400w, /optimized/flatlay-of-women-s-protocol-bottles-800.webp 800w, /optimized/flatlay-of-women-s-protocol-bottles-1200.webp 1200w" sizes="(max-width: 640px) 100vw, (max-width: 980px) 50vw, 33vw" decoding="async" loading="lazy">
+          <div class="product-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+        </div>
+        <div class="product-card-body">
+          <div class="product-card-title">Supplements</div>
+          <div class="product-card-sub">Physician-formulated stacks via Fullscript. Recommended by your clinician.</div>
+          <div class="product-card-rx">Clinician recommended.</div>
+          <span class="product-card-link">Learn more <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </div>
       </a>
+    </div>
+    <div class="trust-bar">
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-3.5 8-10V5l-8-3-8 3v7c0 6.5 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        <div><h3>Licensed Providers</h3><p>US-licensed clinicians review every intake.</p></div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15.5" r="1.6"/></svg>
+        <div><h3>Secure &amp; Private</h3><p>HIPAA-compliant platform. Discreet packaging and billing.</p></div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1.5" y="6" width="13" height="11" rx="1.5"/><path d="M14.5 9.5H18l3 3.5v4h-6.5"/><circle cx="6" cy="19" r="1.8"/><circle cx="17.5" cy="19" r="1.8"/></svg>
+        <div><h3>Fast, Discreet Shipping</h3><p>Compounded in the USA, delivered to your door.</p></div>
+      </div>
+      <div class="trust-item">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><polyline points="8.5 12.5 11 15 16 9.5"/></svg>
+        <div><h3>Free Evaluation</h3><p>No cost to find out if you&rsquo;re a candidate.</p></div>
+      </div>
     </div>
   </div>
 </section>

@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>ED as a Cardiovascular Warning Sign: The Labs That Confirm It</title>
+      <link>https://www.directcare.ai/blog/ed-cardiovascular-warning-signs-labs</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/ed-cardiovascular-warning-signs-labs</guid>
+      <pubDate>Mon, 20 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[ED frequently precedes a cardiac event by 3–5 years. Here's the vascular biology behind that link — and the blood work that separates a plumbing problem from a testosterone problem.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png" />
+    </item>
     <item>
       <title>Plant Protein in Perimenopause: Lentil, Tofu, Tempeh</title>
       <link>https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
-    </item>
-    <item>
-      <title>Weight setpoint theory and GLP-1s: can these drugs actually move it downward?</title>
-      <link>https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it</guid>
-      <pubDate>Sat, 20 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[Every diet that's ever failed has a name in metabolism research: rebound to setpoint. GLP-1s are the first class of drugs with serious published evidence they may actually reset that setpoint — and the implication for long-term treatment is]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
     </item>
   </channel>
 </rss>

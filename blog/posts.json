@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "apob-vs-ldl-cholesterol-cardiologists-ask",
+      "title": "ApoB vs. LDL: The Cholesterol Number That Matters More",
+      "excerpt": "LDL-C tells you how much cholesterol is in your blood. ApoB tells you how many atherogenic particles are actually driving plaque. Here's why the difference matters.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-07-23",
+      "dateLabel": "July 23, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "ApoB vs LDL",
+        "apolipoprotein B test",
+        "ApoB cholesterol",
+        "LDL-C accuracy",
+        "cardiovascular risk blood test",
+        "discordant LDL ApoB",
+        "advanced lipid panel"
+      ]
+    },
+    {
       "slug": "female-pattern-hair-loss-hormonal-panel",
       "title": "Female-Pattern Hair Loss: The Hormonal Panel to Run First",
       "excerpt": "Female-pattern hair loss usually has a hormonal fingerprint. Here are the labs worth having on the table before you commit to a protocol.",

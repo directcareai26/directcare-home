@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>ApoB vs. LDL: The Cholesterol Number That Matters More</title>
+      <link>https://www.directcare.ai/blog/apob-vs-ldl-cholesterol-cardiologists-ask</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/apob-vs-ldl-cholesterol-cardiologists-ask</guid>
+      <pubDate>Thu, 23 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[LDL-C tells you how much cholesterol is in your blood. ApoB tells you how many atherogenic particles are actually driving plaque. Here's why the difference matters.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
+    </item>
     <item>
       <title>Female-Pattern Hair Loss: The Hormonal Panel to Run First</title>
       <link>https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
-    </item>
-    <item>
-      <title>TRT and hematocrit: why your blood thickens on testosterone, and when to donate</title>
-      <link>https://www.directcare.ai/blog/trt-hematocrit-why-blood-thickens-when-to-donate</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/trt-hematocrit-why-blood-thickens-when-to-donate</guid>
-      <pubDate>Tue, 23 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[The most common lab change on injectable testosterone isn't your testosterone level — it's your hematocrit climbing. Left unmonitored it raises clot risk. Managed correctly, it's a non-issue. Here's the clinician's view.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" />
     </item>
   </channel>
 </rss>

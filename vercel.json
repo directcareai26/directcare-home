@@ -459,6 +459,76 @@
       "source": "/post/:path*",
       "destination": "/blog",
       "permanent": true
+    },
+    {
+      "source": "/surge-max-thankyou",
+      "destination": "/thankyou?p=surgemax",
+      "permanent": false
+    },
+    {
+      "source": "/surge-max-thankyou/",
+      "destination": "/thankyou?p=surgemax",
+      "permanent": false
+    },
+    {
+      "source": "/trt-thankyou",
+      "destination": "/thankyou?p=trt",
+      "permanent": false
+    },
+    {
+      "source": "/trt-thankyou/",
+      "destination": "/thankyou?p=trt",
+      "permanent": false
+    },
+    {
+      "source": "/hrt-thankyou",
+      "destination": "/thankyou?p=hrt",
+      "permanent": false
+    },
+    {
+      "source": "/hrt-thankyou/",
+      "destination": "/thankyou?p=hrt",
+      "permanent": false
+    },
+    {
+      "source": "/mens-weight-loss-thankyou",
+      "destination": "/thankyou?p=glp1m",
+      "permanent": false
+    },
+    {
+      "source": "/mens-weight-loss-thankyou/",
+      "destination": "/thankyou?p=glp1m",
+      "permanent": false
+    },
+    {
+      "source": "/womens-weight-loss-thankyou",
+      "destination": "/thankyou?p=glp1w",
+      "permanent": false
+    },
+    {
+      "source": "/womens-weight-loss-thankyou/",
+      "destination": "/thankyou?p=glp1w",
+      "permanent": false
+    },
+    {
+      "source": "/mens-hair-loss-thankyou",
+      "destination": "/thankyou?p=hairm",
+      "permanent": false
+    },
+    {
+      "source": "/mens-hair-loss-thankyou/",
+      "destination": "/thankyou?p=hairm",
+      "permanent": false
+    },
+    {
+      "source": "/womens-hair-loss-thankyou",
+      "destination": "/thankyou?p=hairw",
+      "permanent": false
+    },
+    {
+      "source": "/womens-hair-loss-thankyou/",
+      "destination": "/thankyou?p=hairw",
+      "permanent": false
     }
   ],
   "rewrites": [

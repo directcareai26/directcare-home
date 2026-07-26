@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
+      "title": "Subcutaneous vs. IM Testosterone: What the PK Data Says",
+      "excerpt": "SubQ and IM testosterone injections both work — but the pharmacokinetic curves aren't identical. Here's what the data says about peaks, troughs, estradiol, and side effects.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-07-26",
+      "dateLabel": "July 26, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
+      "keywords": [
+        "subcutaneous testosterone injections",
+        "intramuscular testosterone injections",
+        "subq vs im testosterone",
+        "testosterone cypionate pharmacokinetics",
+        "TRT injection site",
+        "peak to trough testosterone",
+        "subcutaneous TRT estradiol"
+      ]
+    },
+    {
       "slug": "glp1-maintenance-dosing-after-weight-loss",
       "title": "GLP-1 Maintenance Dosing: Staying Off Without Rebound",
       "excerpt": "You hit your goal weight on a GLP-1. Now what? A clinician's-eye view of maintenance dosing, tapering, and the rebound data most patients don't hear about.",
@@ -356,25 +375,6 @@
         "carotenoids anthocyanins glucosinolates",
         "colorful vegetables health benefits",
         "polyphenol daily intake"
-      ]
-    },
-    {
-      "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
-      "title": "Subq vs. IM Testosterone: What the PK Data Actually Shows",
-      "excerpt": "Subq testosterone produces flatter peaks and troughs than IM at the same weekly dose. Here's what the pharmacokinetics literature actually shows — and how to think about the trade-offs.",
-      "category": "TRT",
-      "categorySlug": "trt",
-      "date": "2026-07-06",
-      "dateLabel": "July 6, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
-      "keywords": [
-        "subcutaneous testosterone injection",
-        "intramuscular testosterone injection",
-        "subq vs IM testosterone",
-        "testosterone cypionate pharmacokinetics",
-        "TRT injection route",
-        "testosterone peak trough",
-        "TRT side effects"
       ]
     },
     {

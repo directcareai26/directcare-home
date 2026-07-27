@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "grip-strength-longevity-3-exercises",
+      "title": "Grip Strength and Longevity: 3 Exercises That Build It",
+      "excerpt": "Grip strength outpredicts systolic blood pressure for all-cause mortality in some cohorts. Three exercises — farmer's carry, dead hang, heavy row — build it fast.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-07-27",
+      "dateLabel": "July 27, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png",
+      "keywords": [
+        "grip strength longevity",
+        "grip strength exercises",
+        "farmer's carry benefits",
+        "dead hang exercise",
+        "handgrip mortality",
+        "how to improve grip strength",
+        "grip strength test"
+      ]
+    },
+    {
       "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
       "title": "Subcutaneous vs. IM Testosterone: What the PK Data Says",
       "excerpt": "SubQ and IM testosterone injections both work — but the pharmacokinetic curves aren't identical. Here's what the data says about peaks, troughs, estradiol, and side effects.",
@@ -620,25 +639,6 @@
         "hemoglobin testosterone",
         "TRT thick blood",
         "polycythemia testosterone"
-      ]
-    },
-    {
-      "slug": "grip-strength-longevity-3-exercises",
-      "title": "Grip Strength and Longevity: 3 Exercises That Build It",
-      "excerpt": "Grip strength tracks all-cause mortality better than systolic blood pressure in some cohorts. Here's the science — and three exercises that build it.",
-      "category": "Fitness",
-      "categorySlug": "fitness",
-      "date": "2026-06-22",
-      "dateLabel": "June 22, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
-      "keywords": [
-        "grip strength longevity",
-        "grip strength exercises",
-        "grip strength mortality",
-        "how to build grip strength",
-        "farmer's carry benefits",
-        "dead hang exercise",
-        "grip strength test"
       ]
     },
     {

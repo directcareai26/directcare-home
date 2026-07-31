@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 Jul 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Dutasteride vs Finasteride: When Aggressive Is Right</title>
+      <link>https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-dht-blockade</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-dht-blockade</guid>
+      <pubDate>Fri, 31 Jul 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Dutasteride suppresses DHT more completely than finasteride — sometimes 90%+ vs ~70%. That extra suppression is a tool, not a default. Here's when to reach for it.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Testosterone in Women's HRT: The Missing Hormone</title>
       <link>https://www.directcare.ai/blog/testosterone-in-womens-hrt-protocols</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
-    </item>
-    <item>
-      <title>TRT and Fertility: Preserving Sperm Production on Therapy</title>
-      <link>https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-production</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-production</guid>
-      <pubDate>Mon, 29 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Testosterone replacement shuts down sperm production in most men — but hCG, SERMs, and smart protocol design can preserve fertility while you treat low T.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" />
     </item>
   </channel>
 </rss>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.directcare.ai/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -63,7 +63,7 @@
   </url>
   <url>
     <loc>https://www.directcare.ai/blog/</loc>
-    <lastmod>2026-07-31</lastmod>
+    <lastmod>2026-08-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -91,6 +91,12 @@
     <loc>https://www.directcare.ai/ccpa/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</loc>
+    <lastmod>2026-08-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-dht-blockade</loc>
@@ -257,12 +263,6 @@
   <url>
     <loc>https://www.directcare.ai/blog/testosterone-for-women-hrt-protocols</loc>
     <lastmod>2026-07-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</loc>
-    <lastmod>2026-07-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

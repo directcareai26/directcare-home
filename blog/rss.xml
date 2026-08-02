@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Creatine for Women: The Cognition and Bone Data</title>
+      <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health</guid>
+      <pubDate>Sun, 02 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Supplements</category>
+      <description><![CDATA[The most-studied supplement in sports nutrition is quietly building a case in cognition and bone health — especially for women over 40. Here's what the data says.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
+    </item>
     <item>
       <title>Ferritin in Women: The Deficiency Mistaken for Menopause</title>
       <link>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</link>
@@ -112,18 +124,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
-    </item>
-    <item>
-      <title>Creatine for Women: Cognition &amp; Bone Health Data</title>
-      <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health</guid>
-      <pubDate>Fri, 24 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Supplements</category>
-      <description><![CDATA[Creatine isn't just a gym supplement. The cognition, mood, and bone density data in women are strong enough that it deserves a second look — here's what the research actually says.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
     </item>
     <item>
       <title>ApoB vs. LDL: The Cholesterol Number That Matters More</title>

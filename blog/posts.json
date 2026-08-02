@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "creatine-for-women-cognition-bone-health",
+      "title": "Creatine for Women: The Cognition and Bone Data",
+      "excerpt": "The most-studied supplement in sports nutrition is quietly building a case in cognition and bone health — especially for women over 40. Here's what the data says.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-08-02",
+      "dateLabel": "August 2, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "creatine for women",
+        "creatine monohydrate cognition",
+        "creatine bone density",
+        "creatine dose women",
+        "creatine sleep deprivation",
+        "creatine menopause"
+      ]
+    },
+    {
       "slug": "ferritin-iron-deficiency-women-mistaken-for-menopause",
       "title": "Ferritin in Women: The Deficiency Mistaken for Menopause",
       "excerpt": "Fatigue, hair shedding, and brain fog get blamed on hormones. In menstruating women, the culprit is often ferritin — and the lab costs less than lunch.",
@@ -147,25 +165,6 @@
         "how to stop GLP-1 without regaining weight",
         "tapering off Ozempic",
         "weight loss maintenance after GLP-1"
-      ]
-    },
-    {
-      "slug": "creatine-for-women-cognition-bone-health",
-      "title": "Creatine for Women: Cognition & Bone Health Data",
-      "excerpt": "Creatine isn't just a gym supplement. The cognition, mood, and bone density data in women are strong enough that it deserves a second look — here's what the research actually says.",
-      "category": "Supplements",
-      "categorySlug": "supplements",
-      "date": "2026-07-24",
-      "dateLabel": "July 24, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
-      "keywords": [
-        "creatine for women",
-        "creatine monohydrate benefits",
-        "creatine and cognition",
-        "creatine and bone density",
-        "creatine for perimenopause",
-        "creatine dosing women",
-        "creatine and menopause"
       ]
     },
     {

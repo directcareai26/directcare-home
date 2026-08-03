@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>GLP-1s and Thyroid: What to Monitor and When to Stop</title>
+      <link>https://www.directcare.ai/blog/glp1-and-thyroid-what-to-monitor-when-to-stop</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-and-thyroid-what-to-monitor-when-to-stop</guid>
+      <pubDate>Mon, 03 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[The GLP-1 thyroid warning is real but frequently misunderstood. Here's what to monitor, what the trials actually showed, and when stopping is the right call.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
     <item>
       <title>Creatine for Women: The Cognition and Bone Data</title>
       <link>https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
-    </item>
-    <item>
-      <title>Fasted Coffee and Cortisol: What to Drink First Instead</title>
-      <link>https://www.directcare.ai/blog/fasted-coffee-cortisol-what-to-drink-first</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/fasted-coffee-cortisol-what-to-drink-first</guid>
-      <pubDate>Tue, 30 Jun 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Fasted coffee stacks caffeine on top of your natural cortisol peak. Here's what to drink in the first 30–60 minutes instead — and when coffee actually works in your favor.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
     </item>
   </channel>
 </rss>

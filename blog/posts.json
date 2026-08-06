@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "protein-fiber-breakfast-template-busy-mornings",
+      "title": "The Protein + Fiber Breakfast Template: 3 Fast Rotations",
+      "excerpt": "Thirty grams of protein and eight grams of fiber before 9 a.m. — three real rotations that fit a busy morning without the food-blog theatrics.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-08-06",
+      "dateLabel": "August 6, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+      "keywords": [
+        "high protein breakfast",
+        "protein and fiber breakfast",
+        "30g protein breakfast",
+        "breakfast for blood sugar",
+        "quick high protein breakfast ideas",
+        "fiber breakfast for weight loss"
+      ]
+    },
+    {
       "slug": "zone-2-cardio-adults-over-40",
       "title": "Zone 2 Cardio After 40: What It Is and How to Measure It",
       "excerpt": "Zone 2 is the conversational-pace cardio that rebuilds mitochondrial function after 40. Here's what the research says and three ways to measure it accurately.",
@@ -147,24 +165,6 @@
         "endothelial dysfunction ED",
         "hs-CRP erectile dysfunction",
         "ED warning sign heart attack"
-      ]
-    },
-    {
-      "slug": "protein-fiber-breakfast-template-busy-mornings",
-      "title": "The Protein + Fiber Breakfast Template: 3 Fast Rotations",
-      "excerpt": "Aim for ~30 g protein and ~10 g fiber before 10 a.m. Three rotations, each under seven minutes, that actually hold you until lunch.",
-      "category": "Nutrition",
-      "categorySlug": "nutrition",
-      "date": "2026-07-28",
-      "dateLabel": "July 28, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png",
-      "keywords": [
-        "high protein breakfast",
-        "high fiber breakfast",
-        "protein and fiber breakfast",
-        "30 grams protein breakfast",
-        "busy morning breakfast",
-        "GLP-1 friendly breakfast"
       ]
     },
     {

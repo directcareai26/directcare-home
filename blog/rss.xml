@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>The Protein + Fiber Breakfast Template: 3 Fast Rotations</title>
+      <link>https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings</guid>
+      <pubDate>Thu, 06 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[Thirty grams of protein and eight grams of fiber before 9 a.m. — three real rotations that fit a busy morning without the food-blog theatrics.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+    </item>
     <item>
       <title>Zone 2 Cardio After 40: What It Is and How to Measure It</title>
       <link>https://www.directcare.ai/blog/zone-2-cardio-adults-over-40</link>
@@ -112,18 +124,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>The Protein + Fiber Breakfast Template: 3 Fast Rotations</title>
-      <link>https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings</guid>
-      <pubDate>Tue, 28 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Aim for ~30 g protein and ~10 g fiber before 10 a.m. Three rotations, each under seven minutes, that actually hold you until lunch.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
     </item>
     <item>
       <title>Grip Strength and Longevity: 3 Exercises That Build It</title>

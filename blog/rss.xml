@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Dutasteride vs Finasteride: When Aggressive Is Right</title>
+      <link>https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-hair-loss</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-hair-loss</guid>
+      <pubDate>Sun, 09 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Dutasteride blocks both isoforms of 5-alpha reductase, not just one. That's why it works faster for some men — and why the trade-offs deserve a serious look before you switch.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Testosterone in Women's HRT: The Overlooked Hormone</title>
       <link>https://www.directcare.ai/blog/testosterone-in-womens-hrt-protocols</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
-    </item>
-    <item>
-      <title>5-Minute Mobility Warm-Up: Real Injury Risk Reduction</title>
-      <link>https://www.directcare.ai/blog/5-minute-mobility-warmup-reduce-injury-risk</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/5-minute-mobility-warmup-reduce-injury-risk</guid>
-      <pubDate>Sun, 05 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Fitness</category>
-      <description><![CDATA[Five minutes of targeted mobility before you lift or run isn't ceremonial — it changes tissue temperature, joint range, and neural drive. Here's the sequence worth doing.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
     </item>
   </channel>
 </rss>

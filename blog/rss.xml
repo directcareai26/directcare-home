@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Ferritin in Women: The Deficiency Mistaken for Menopause</title>
+      <link>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</guid>
+      <pubDate>Mon, 10 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Fatigue, hair shedding, and brain fog in women 35–55 are routinely blamed on hormones when the real driver is low ferritin. Here's how to read the iron panel that actually finds it.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
+    </item>
     <item>
       <title>Dutasteride vs Finasteride: When Aggressive Is Right</title>
       <link>https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-hair-loss</link>
@@ -112,18 +124,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
-    </item>
-    <item>
-      <title>Ferritin in Women: The Deficiency Mistaken for Menopause</title>
-      <link>https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/ferritin-iron-deficiency-women-mistaken-for-menopause</guid>
-      <pubDate>Sat, 01 Aug 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[Fatigue, hair shedding, and brain fog get blamed on hormones. In menstruating women, the culprit is often ferritin — and the lab costs less than lunch.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
     </item>
     <item>
       <title>Dutasteride vs Finasteride: When Aggressive Is Right</title>

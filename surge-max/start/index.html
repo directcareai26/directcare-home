@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
-<title>Start Your ED Evaluation · DirectCare AI</title>
-<meta name="description" content="Private, 3-minute erectile dysfunction evaluation reviewed by US-licensed clinicians. No video visit. Discreet, free shipping." />
+<title>Start Your ED Evaluation &middot; DirectCare AI</title>
+<meta name="description" content="Private, clinician-reviewed erectile dysfunction (ED) evaluation. No video visit. Discreet, free shipping." />
 <link rel="canonical" href="https://www.directcare.ai/surge-max/start" />
 
 <!-- Google Tag Manager -->
@@ -98,12 +98,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight:700; font-size:10.5px; letter-spacing:.04em;
     padding:3px 9px; border-radius:999px;
   }
-  .form-card__body{ position:relative; background:#fff; }
+  .form-card__body{ position:relative; background:#fff; overflow:hidden; }
   .intake-iframe{
     display:block; width:100%; height:700px; border:0;
     background:#fff;
   }
-  /* graceful skeleton while the iframe loads */
   .iframe-skeleton{
     position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
     color:var(--muted); font-size:14px; gap:10px; pointer-events:none;
@@ -138,11 +137,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .hero-content{ gap:14px; }
     .form-card{ border-radius:22px; }
     .form-card__head{ padding:12px 18px; }
-    /* give the form nearly the full screen on phones — long option lists need room */
-    .intake-iframe{ height:660px; }
+    .intake-iframe{ height:calc(660px + 252px); margin-top:-252px; }
   }
   @media (max-width:400px){
-    .intake-iframe{ height:620px; }
+    .intake-iframe{ height:calc(620px + 252px); margin-top:-252px; }
   }
 </style>
 </head>
@@ -159,22 +157,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-    <a class="wordmark" href="https://www.directcare.ai/surge-max" aria-label="DirectCare AI"><img src="/logo-white.png" alt="DirectCare AI" width="120" height="30" /></a>
+    <a class="wordmark" href="/surge-max" aria-label="DirectCare AI"><img src="/logo-white.png" alt="DirectCare AI" width="120" height="30" /></a>
 
-    <span class="eyebrow"><i></i> Sexual Health · Erectile Dysfunction</span>
+    <span class="eyebrow"><i></i> Sexual Health &middot; Erectile Dysfunction</span>
 
     <h1>Get back to <span class="accent">confident.</span></h1>
 
-    <p class="sub">A private, 3-minute evaluation — reviewed by <strong>US-licensed clinicians</strong>. No video visit. Discreet, free shipping.</p>
+    <p class="sub">A private, 3-minute evaluation &mdash; reviewed by <strong>US-licensed clinicians</strong>. No video visit. Discreet, free shipping.</p>
 
     <div class="form-card">
       <div class="form-card__head">
-        <span class="lock" aria-hidden="true">🔒</span>
+        <span class="lock" aria-hidden="true">&#128274;</span>
         <span class="head-text">Secure &amp; confidential intake</span>
         <span class="hipaa">HIPAA</span>
       </div>
       <div class="form-card__body">
-        <div class="iframe-skeleton" id="skeleton"><span class="spinner"></span> Loading your secure intake…</div>
+        <div class="iframe-skeleton" id="skeleton"><span class="spinner"></span> Loading your secure intake&hellip;</div>
         <iframe
           id="intake"
           class="intake-iframe"
@@ -197,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="https://www.directcare.ai/medical-consent">Medical Consent</a>
     <a href="https://www.directcare.ai/contact">Contact</a>
   </nav>
-  <p>© 2026 DirectCare AI · Telehealth by US-licensed clinicians · Pharmacy by licensed compounding pharmacies</p>
+  <p>&copy; 2026 DirectCare AI &middot; Telehealth by US-licensed clinicians &middot; Pharmacy by licensed compounding pharmacies</p>
 </footer>
 
 <script>
@@ -209,19 +207,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   })();
 
-  // Hide the loading skeleton once the iframe reports load.
   (function(){
     var f = document.getElementById('intake');
     var sk = document.getElementById('skeleton');
     if(!f) return;
     f.addEventListener('load', function(){ if(sk){ sk.classList.add('hide'); setTimeout(function(){ sk.style.display='none'; }, 450); } });
-    // Fallback: hide skeleton after 6s regardless.
     setTimeout(function(){ if(sk){ sk.classList.add('hide'); setTimeout(function(){ sk.style.display='none'; }, 450); } }, 6000);
   })();
 
   // Progressive enhancement: react to messages from the Tellescope iframe.
-  //  - auto-resize the frame if a height is posted
-  //  - push a lead event to the dataLayer on form completion (for GTM → Meta/Pinterest tags)
   window.addEventListener('message', function(ev){
     try{
       if(!/tellescope\.com$/.test(new URL(ev.origin).hostname)) return;
@@ -229,14 +223,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var d = ev.data || {};
     if(typeof d === 'string'){ try{ d = JSON.parse(d); }catch(e){ d = {}; } }
 
-    // Auto-height (only grow, keep the roomy minimum)
     var h = d.height || d.frameHeight || (d.payload && d.payload.height);
     if(h && +h > 400){
       var f = document.getElementById('intake');
       if(f) f.style.height = Math.max(560, +h) + 'px';
     }
 
-    // Completion / submission signal → lead conversion
     var type = (d.type || d.event || d.action || '').toString().toLowerCase();
     if(type.indexOf('submit') > -1 || type.indexOf('complete') > -1 || type.indexOf('finish') > -1){
       window.dataLayer = window.dataLayer || [];

@@ -699,7 +699,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 (function(){
   if (typeof fbq !== 'function') return;
   document.addEventListener('click', function(e) {
-    var a = e.target.closest('a[href*="tellescope.com"]');
+    var a = e.target.closest('a[href*="/start"]');
     if (a) {
       try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
     }

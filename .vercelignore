@@ -1,0 +1,5 @@
+# Dev/build artifacts — never publish to the live site
+scripts/link_audit.py
+scripts/question-mining/
+content-queue/
+.github/workflows/daily-question-mining.yml

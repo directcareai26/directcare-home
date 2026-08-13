@@ -25,6 +25,8 @@ BASE = "https://www.directcare.ai"
 
 # Always-checked critical paths (homepage, products, funnels, key redirects).
 CRITICAL = [
+    # intake / ad-landing funnels (paid traffic lands here — must never 404):
+    "/surge-max/start", "/testosterone-replacement-therapy/start", "/hormone-replacement-therapy/start", "/mens-hair-loss/start", "/womans-hair-loss/start", "/weight-loss/start",
     "/", "/about", "/blog/",
     "/surge-max", "/weight-loss", "/mens-weight-loss", "/womens-weight-loss",
     "/mens-hair-loss", "/womans-hair-loss", "/chronic-care",

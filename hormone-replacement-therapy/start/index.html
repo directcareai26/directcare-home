@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+<title>Start Your HRT Evaluation &middot; DirectCare AI</title>
+<meta name="description" content="Private, clinician-reviewed hormone replacement therapy (HRT) evaluation for women. Personalized care, delivered discreetly." />
+<link rel="canonical" href="https://www.directcare.ai/hormone-replacement-therapy/start" />
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://crsurakhmbalgxim.public.blob.vercel-storage.com" crossorigin />
+
+<style>
+  :root{
+    --bg:#faf6f0; --soft:#fbf5fe; --ink:#281A31; --muted:#3d3247;
+    --brand:#af4bed; --brand-deep:#9043bf; --brand-darker:#762ba4;
+    --accent-light:#d9a6ff; --green:#0f7a2e; --dark:#1a0f24; --dark-2:#160c1f;
+    --line:#E9D9F2;
+  }
+  *{ box-sizing:border-box; }
+  html,body{ margin:0; padding:0; }
+  body{
+    background:var(--dark); color:var(--ink);
+    font-family:'Inter','Geist',system-ui,-apple-system,'Segoe UI',sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.55; overflow-x:hidden;
+  }
+  a{ color:inherit; }
+
+  /* ---------- Video banner hero ---------- */
+  .hero{
+    position:relative; min-height:100vh; min-height:100svh;
+    display:flex; align-items:flex-start; justify-content:center;
+    padding:54px 20px 60px; background:var(--dark);
+    overflow:hidden; isolation:isolate;
+  }
+  .hero-bg-video{
+    position:absolute; inset:0; width:100%; height:100%;
+    object-fit:cover; z-index:0; opacity:.6;
+    filter:saturate(1.05) contrast(1.05); pointer-events:none;
+  }
+  .hero-overlay{
+    position:absolute; inset:0; z-index:1; pointer-events:none;
+    background:linear-gradient(180deg, rgba(22,12,31,.50) 0%, rgba(22,12,31,.72) 55%, rgba(22,12,31,.82) 100%);
+  }
+  .hero-content{
+    position:relative; z-index:2; width:100%; max-width:760px;
+    display:flex; flex-direction:column; align-items:center; gap:16px;
+    text-align:center; color:#fff;
+  }
+  .wordmark{ font-weight:800; font-size:18px; letter-spacing:-.01em; text-decoration:none; color:#fff; display:inline-block; }
+  .wordmark img{ height:30px; width:auto; display:block; }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:6px 14px; border-radius:999px;
+    background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+    font-size:11.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+  }
+  .eyebrow i{ width:7px; height:7px; border-radius:50%; background:var(--accent-light); display:inline-block; }
+  .hero-content h1{
+    font-family:'Manrope','Geist',sans-serif; font-weight:800;
+    font-size:clamp(2rem, 5vw, 2.7rem); line-height:1.08; letter-spacing:-.02em;
+    margin:2px 0 0;
+  }
+  .hero-content h1 .accent{ color:var(--accent-light); }
+  .sub{
+    font-size:clamp(1rem, 1.6vw, 1.05rem); line-height:1.5;
+    color:rgba(255,255,255,.9); max-width:620px; margin:0;
+  }
+  .sub strong{ color:#fff; font-weight:700; }
+
+  /* ---------- Intake card (embedded Tellescope form) ---------- */
+  .form-card{
+    width:100%; max-width:720px; margin:8px auto 0;
+    background:#fff; border-radius:26px; overflow:hidden;
+    box-shadow:0 34px 80px -20px rgba(0,0,0,.45);
+  }
+  .form-card__head{
+    display:flex; align-items:center; gap:8px;
+    padding:14px 24px; background:var(--soft);
+    font-size:13px; font-weight:600; color:var(--brand-deep);
+    border-bottom:1px solid var(--line);
+  }
+  .form-card__head .lock{ font-size:13px; }
+  .form-card__head .head-text{ flex:1; text-align:left; }
+  .form-card__head .hipaa{
+    background:rgba(20,152,58,.12); color:var(--green);
+    font-weight:700; font-size:10.5px; letter-spacing:.04em;
+    padding:3px 9px; border-radius:999px;
+  }
+  .form-card__body{ position:relative; background:#fff; }
+  .intake-iframe{
+    display:block; width:100%; height:720px; border:0;
+    background:#fff;
+  }
+  .iframe-skeleton{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    color:var(--muted); font-size:14px; gap:10px; pointer-events:none;
+    transition:opacity .4s ease;
+  }
+  .iframe-skeleton.hide{ opacity:0; }
+  .spinner{
+    width:20px; height:20px; border-radius:50%;
+    border:2.5px solid var(--line); border-top-color:var(--brand);
+    animation:spin .8s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+
+  .disclaimer{
+    font-size:12px; line-height:1.5; color:rgba(255,255,255,.7);
+    max-width:640px; margin:6px auto 0;
+  }
+
+  /* ---------- Slim footer ---------- */
+  .site-footer{
+    background:var(--dark-2); color:#E9D9F2; text-align:center;
+    padding:24px 20px;
+  }
+  .site-footer nav{ display:flex; gap:22px; justify-content:center; flex-wrap:wrap; margin-bottom:8px; }
+  .site-footer nav a{ color:#E9D9F2; text-decoration:none; font-size:12.5px; font-weight:500; opacity:.9; }
+  .site-footer nav a:hover{ opacity:1; }
+  .site-footer p{ font-size:11.5px; color:rgba(233,217,242,.6); margin:0; }
+
+  /* ---------- Mobile: bigger form, tighter banner ---------- */
+  @media (max-width:760px){
+    .hero{ padding:40px 14px 44px; align-items:flex-start; }
+    .hero-content{ gap:14px; }
+    .form-card{ border-radius:22px; }
+    .form-card__head{ padding:12px 18px; }
+    .intake-iframe{ height:calc(100svh - 300px); min-height:560px; }
+  }
+  @media (max-width:400px){
+    .intake-iframe{ min-height:520px; }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<section class="hero">
+  <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" poster="/hormone-replacement-therapy/start/poster.jpg" aria-hidden="true">
+    <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/middle%20age%20ww.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <a class="wordmark" href="/hormone-replacement-therapy" aria-label="DirectCare AI"><img src="/logo-white.png" alt="DirectCare AI" width="120" height="30" /></a>
+
+    <span class="eyebrow"><i></i> Hormone Health &middot; HRT for Women</span>
+
+    <h1>Hormone care, <span class="accent">personalized</span>.</h1>
+
+    <p class="sub">A private hormone evaluation reviewed by <strong>US-licensed clinicians</strong>. If appropriate, personalized therapy shipped discreetly.</p>
+
+    <div class="form-card">
+      <div class="form-card__head">
+        <span class="lock" aria-hidden="true">&#128274;</span>
+        <span class="head-text">Secure &amp; confidential intake</span>
+        <span class="hipaa">HIPAA</span>
+      </div>
+      <div class="form-card__body">
+        <div class="iframe-skeleton" id="skeleton"><span class="spinner"></span> Loading your secure intake&hellip;</div>
+        <iframe
+          id="intake"
+          class="intake-iframe"
+          title="Hormone replacement therapy (HRT) intake evaluation"
+          src="https://business.tellescope.com/e/public/form?f=69c1e89bf262d405b182c3fa&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&"
+          loading="eager"
+          allow="clipboard-write; clipboard-read"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <p class="disclaimer">Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <nav>
+    <a href="https://www.directcare.ai/privacy">Privacy</a>
+    <a href="https://www.directcare.ai/terms">Terms</a>
+    <a href="https://www.directcare.ai/medical-consent">Medical Consent</a>
+    <a href="https://www.directcare.ai/contact">Contact</a>
+  </nav>
+  <p>&copy; 2026 DirectCare AI &middot; Telehealth by US-licensed clinicians &middot; Pharmacy by licensed compounding pharmacies</p>
+</footer>
+
+<script>
+  // Forward inbound query params (e.g. from an on-site quiz: ?onset=...&goal=...) into the Tellescope iframe.
+  (function(){
+    var fr = document.getElementById('intake');
+    if(fr && location.search && location.search.length > 1){
+      fr.setAttribute('src', fr.getAttribute('src') + location.search.slice(1));
+    }
+  })();
+
+  (function(){
+    var f = document.getElementById('intake');
+    var sk = document.getElementById('skeleton');
+    if(!f) return;
+    f.addEventListener('load', function(){ if(sk){ sk.classList.add('hide'); setTimeout(function(){ sk.style.display='none'; }, 450); } });
+    setTimeout(function(){ if(sk){ sk.classList.add('hide'); setTimeout(function(){ sk.style.display='none'; }, 450); } }, 6000);
+  })();
+
+  // Progressive enhancement: react to messages from the Tellescope iframe.
+  window.addEventListener('message', function(ev){
+    try{
+      if(!/tellescope\.com$/.test(new URL(ev.origin).hostname)) return;
+    }catch(e){ return; }
+    var d = ev.data || {};
+    if(typeof d === 'string'){ try{ d = JSON.parse(d); }catch(e){ d = {}; } }
+
+    var h = d.height || d.frameHeight || (d.payload && d.payload.height);
+    if(h && +h > 400){
+      var f = document.getElementById('intake');
+      if(f) f.style.height = Math.max(560, +h) + 'px';
+    }
+
+    var type = (d.type || d.event || d.action || '').toString().toLowerCase();
+    if(type.indexOf('submit') > -1 || type.indexOf('complete') > -1 || type.indexOf('finish') > -1){
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event:'intake_lead', product:'hrt', category:'HRT', form:'69c1e89bf262d405b182c3fa' });
+    }
+  }, false);
+</script>
+</body>
+</html>

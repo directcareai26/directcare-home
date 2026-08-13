@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Hematocrit on TRT: When to Donate Blood and Why</title>
+      <link>https://www.directcare.ai/blog/hematocrit-on-trt-blood-donation-frequency</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/hematocrit-on-trt-blood-donation-frequency</guid>
+      <pubDate>Thu, 13 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Injectable testosterone predictably raises hematocrit. Here's the threshold that matters, why it happens, and how often donating blood actually helps.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" />
+    </item>
     <item>
       <title>Weight-Loss Plateau? It's Probably Hormonal, Not Willpower</title>
       <link>https://www.directcare.ai/blog/weight-loss-plateau-hormonal-not-motivational</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
-    </item>
-    <item>
-      <title>GLP-1s and Thyroid: What to Monitor and When to Stop</title>
-      <link>https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop</guid>
-      <pubDate>Thu, 09 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Weight Loss</category>
-      <description><![CDATA[The boxed thyroid warning on GLP-1s scares patients more than it should — and misses the real monitoring questions. Here's what actually matters.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
     </item>
   </channel>
 </rss>

@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Rucking: Cardio and Strength in One Weighted Walk</title>
+      <link>https://www.directcare.ai/blog/rucking-cardio-strength-training-benefits</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/rucking-cardio-strength-training-benefits</guid>
+      <pubDate>Fri, 14 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[Rucking pairs zone 2 cardio with load-bearing strength work in a single walk. Here's how to program it, how heavy to start, and why it belongs in most training weeks.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png" />
+    </item>
     <item>
       <title>Hematocrit on TRT: When to Donate Blood and Why</title>
       <link>https://www.directcare.ai/blog/hematocrit-on-trt-blood-donation-frequency</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
-    </item>
-    <item>
-      <title>Rucking: The Cardio That Builds Strength at the Same Time</title>
-      <link>https://www.directcare.ai/blog/rucking-cardio-strength-training-guide</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/rucking-cardio-strength-training-guide</guid>
-      <pubDate>Fri, 10 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Fitness</category>
-      <description><![CDATA[Rucking pairs cardio and load-bearing strength in a single low-impact session. Here's how to program it — weight, distance, progression, and warm-up.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png" />
     </item>
   </channel>
 </rss>

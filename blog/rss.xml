@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Fiber on a GLP-1: Why 25–35g Daily Keeps It Working</title>
+      <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</guid>
+      <pubDate>Sat, 15 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[GLP-1s work better when your fiber intake is dialed in. Here's why 25–35g daily stabilizes appetite suppression, protects your gut, and keeps cravings quiet.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
+    </item>
     <item>
       <title>Rucking: Cardio and Strength in One Weighted Walk</title>
       <link>https://www.directcare.ai/blog/rucking-cardio-strength-training-benefits</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
-    </item>
-    <item>
-      <title>Free vs. Total Testosterone: Which Number Actually Matters</title>
-      <link>https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-matters</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-matters</guid>
-      <pubDate>Sat, 11 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Total testosterone gets the headlines. Free testosterone does the work. Here's how to read both — and why SHBG is the variable most men miss.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
     </item>
   </channel>
 </rss>

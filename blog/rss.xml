@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 18 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Topical vs. Oral Finasteride: Matching Delivery to Tolerance</title>
+      <link>https://www.directcare.ai/blog/topical-vs-oral-finasteride-side-effects</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/topical-vs-oral-finasteride-side-effects</guid>
+      <pubDate>Tue, 18 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Oral and topical finasteride both suppress scalp DHT, but they differ in systemic exposure and side-effect profile. Here's how to match the delivery to your tolerance.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" />
+    </item>
     <item>
       <title>Testosterone in Women's HRT: The Missing Hormone</title>
       <link>https://www.directcare.ai/blog/testosterone-in-womens-hrt-protocols</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
-    </item>
-    <item>
-      <title>Magnesium Foods vs. Supplements: When Food Is Enough</title>
-      <link>https://www.directcare.ai/blog/magnesium-rich-foods-vs-supplements</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/magnesium-rich-foods-vs-supplements</guid>
-      <pubDate>Sun, 12 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Magnesium is the mineral most Americans quietly underdose. Here's when food fixes it, and when a supplement is the smarter move.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
     </item>
   </channel>
 </rss>

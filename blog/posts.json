@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "apob-vs-ldl-cholesterol-test-cardiologists",
+      "title": "ApoB vs. LDL: The Cholesterol Number That Matters More",
+      "excerpt": "LDL measures cholesterol content. ApoB counts the particles carrying it. Here's why cardiologists increasingly trust the particle count — and when it changes the plan.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-08-19",
+      "dateLabel": "August 19, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "ApoB vs LDL",
+        "apolipoprotein B test",
+        "ApoB cholesterol",
+        "cardiovascular risk markers",
+        "advanced lipid panel",
+        "LDL particle number",
+        "discordant LDL ApoB"
+      ]
+    },
+    {
       "slug": "topical-vs-oral-finasteride-side-effects",
       "title": "Topical vs. Oral Finasteride: Matching Delivery to Tolerance",
       "excerpt": "Oral and topical finasteride both suppress scalp DHT, but they differ in systemic exposure and side-effect profile. Here's how to match the delivery to your tolerance.",

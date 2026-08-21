@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "muscle-preservation-glp1-protein-resistance-training",
+      "title": "Muscle Preservation on GLP-1s: Protein & Training Rules",
+      "excerpt": "GLP-1s work — but without protein and lifting, up to 40% of the weight you lose can be lean mass. Here's the muscle-preservation protocol that actually matters.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-08-21",
+      "dateLabel": "August 21, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "muscle preservation on GLP-1",
+        "protein intake on semaglutide",
+        "resistance training on tirzepatide",
+        "lean mass loss GLP-1",
+        "GLP-1 muscle loss",
+        "how to keep muscle on GLP-1"
+      ]
+    },
+    {
       "slug": "magnesium-glycinate-vs-citrate-vs-threonate",
       "title": "Magnesium Glycinate vs Citrate vs Threonate: How to Pick",
       "excerpt": "Three magnesium forms, three different jobs. Here's how to choose glycinate, citrate, or threonate based on what you actually need — sleep, digestion, or cognition.",

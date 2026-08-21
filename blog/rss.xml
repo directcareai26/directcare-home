@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Muscle Preservation on GLP-1s: Protein &amp; Training Rules</title>
+      <link>https://www.directcare.ai/blog/muscle-preservation-glp1-protein-resistance-training</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/muscle-preservation-glp1-protein-resistance-training</guid>
+      <pubDate>Fri, 21 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[GLP-1s work — but without protein and lifting, up to 40% of the weight you lose can be lean mass. Here's the muscle-preservation protocol that actually matters.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
     <item>
       <title>Magnesium Glycinate vs Citrate vs Threonate: How to Pick</title>
       <link>https://www.directcare.ai/blog/magnesium-glycinate-vs-citrate-vs-threonate</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
-    </item>
-    <item>
-      <title>Zone 2 Cardio Over 40: What It Is and How to Measure It</title>
-      <link>https://www.directcare.ai/blog/zone-2-cardio-over-40-how-to-measure</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/zone-2-cardio-over-40-how-to-measure</guid>
-      <pubDate>Tue, 14 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Fitness</category>
-      <description><![CDATA[Zone 2 is the low-intensity aerobic sweet spot where mitochondria adapt fastest. Here's how to find yours after 40 — with or without a lab.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
     </item>
   </channel>
 </rss>

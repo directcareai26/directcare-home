@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Subcutaneous vs. IM Testosterone: What the PK Data Shows</title>
+      <link>https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</guid>
+      <pubDate>Sat, 22 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>TRT</category>
+      <description><![CDATA[Head-to-head studies show subcutaneous testosterone delivers steadier levels than intramuscular injections at the same dose — with less pain and comparable efficacy. Here's what the PK data actually says.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Muscle Preservation on GLP-1s: Protein &amp; Training Rules</title>
       <link>https://www.directcare.ai/blog/muscle-preservation-glp1-protein-resistance-training</link>
@@ -256,18 +268,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" />
-    </item>
-    <item>
-      <title>Subcutaneous vs. IM Testosterone: What the PK Data Says</title>
-      <link>https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharmacokinetics</guid>
-      <pubDate>Sun, 26 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[SubQ and IM testosterone injections both work — but the pharmacokinetic curves aren't identical. Here's what the data says about peaks, troughs, estradiol, and side effects.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
     </item>
     <item>
       <title>GLP-1 Maintenance Dosing: Staying Off Without Rebound</title>

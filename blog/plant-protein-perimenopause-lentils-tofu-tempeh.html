@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('track', 'PageView');
+
+  // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#241432" />
+<title>Plant Protein in Perimenopause: A 3-Food Rotation | DirectCare AI Blog</title>
+<meta name="description" content="Plant protein for perimenopause: how a lentil, tofu, and tempeh rotation supports muscle, insulin, and estrogen metabolism — with real numbers and a weekly plan." />
+<meta name="keywords" content="plant protein perimenopause, protein for perimenopausal women, lentils tofu tempeh, leucine threshold women, soy and estrogen perimenopause, high protein plant-based recipes, perimenopause nutrition" />
+<link rel="canonical" href="https://www.directcare.ai/blog/plant-protein-perimenopause-lentils-tofu-tempeh" />
+<link rel="alternate" type="application/rss+xml" title="DirectCare AI Blog" href="https://www.directcare.ai/blog/rss.xml" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.directcare.ai/blog/plant-protein-perimenopause-lentils-tofu-tempeh" />
+<meta property="og:title" content="Plant Protein in Perimenopause: A 3-Food Rotation" />
+<meta property="og:description" content="Plant protein for perimenopause: how a lentil, tofu, and tempeh rotation supports muscle, insulin, and estrogen metabolism — with real numbers and a weekly plan." />
+<meta property="og:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
+<meta property="article:published_time" content="2026-08-24" />
+<meta property="article:section" content="Nutrition" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalScholarlyArticle",
+  "headline": "Plant Protein in Perimenopause: A 3-Food Rotation",
+  "datePublished": "2026-08-24",
+  "dateModified": "2026-08-24",
+  "description": "Plant protein for perimenopause: how a lentil, tofu, and tempeh rotation supports muscle, insulin, and estrogen metabolism — with real numbers and a weekly plan.",
+  "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+  "articleSection": "Nutrition",
+  "author": {
+    "@type": "Organization",
+    "name": "DirectCare AI Clinical Team",
+    "url": "https://www.directcare.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DirectCare AI",
+    "url": "https://www.directcare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.directcare.ai/blog/plant-protein-perimenopause-lentils-tofu-tempeh"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #faf6f0; --bg-2: #f4eee5; --bg-cream: #f0e8d8; --surface: #ffffff;
+    --ink: #241432; --ink-soft: #332543; --muted: #3d3247;
+    --line: rgba(36,20,50,0.10); --line-strong: rgba(36,20,50,0.18);
+    --brand: #af4bed; --brand-deep: #762ba4; --brand-darker: #44215A; --dark: #241432;
+    --gold-soft: #f5e6c2;
+    --radius: 14px; --radius-lg: 22px; --radius-xl: 32px;
+  }
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: -0.01em; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.1; font-weight: 500; color: var(--ink); }
+  p { margin: 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+
+  .top-strip { background: var(--gold-soft); color: var(--ink); padding: 9px 16px; text-align: center; font-size: 0.82rem; font-weight: 500; }
+  .top-strip a { font-weight: 600; text-decoration: underline; margin-left: 4px; }
+
+  .nav { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1320px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); gap: 16px; }
+  .nav-logo img { height: 30px; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-link { font-size: 0.90rem; font-weight: 500; color: var(--ink); padding: 6px 0; display: inline-flex; align-items: center; gap: 4px; transition: color .15s ease; }
+  .nav-link:hover { color: var(--brand-deep); }
+  .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
+  .nav-link.active { color: var(--brand-deep); font-weight: 600; }
+  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  .mobile-toggle { display: none; width: 38px; height: 38px; border-radius: 50%; background: var(--bg-2); border: 1px solid var(--line); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  .mobile-toggle svg { width: 20px; height: 20px; }
+  @media (max-width: 820px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } .nav-login { display: none; } }
+
+  /* ARTICLE LAYOUT */
+  .article-hero { padding: clamp(36px, 5vw, 60px) 0 0; }
+  .article-meta { display: inline-flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 18px; }
+  .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--brand-deep); opacity: 0.5; }
+  .article-meta .date { color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
+  .article-meta a { color: var(--brand-deep); }
+  .article-title { font-size: clamp(2.0rem, 4.4vw, 3.4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.0; max-width: 880px; margin-bottom: 18px; }
+  .article-title em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-deck { font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(1.05rem, 1.4vw, 1.22rem); color: var(--ink-soft); line-height: 1.55; max-width: 760px; margin: 0 0 32px; }
+  .article-cover { aspect-ratio: 16/9; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 48px; box-shadow: 0 24px 56px -20px rgba(36,20,50,0.30); }
+  .article-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .article-body { max-width: 720px; margin: 0 auto; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.1rem; line-height: 1.75; color: var(--ink); }
+  .article-body h2 { font-family: 'Geist', sans-serif; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.025em; margin: 56px 0 18px; line-height: 1.15; color: var(--ink); }
+  .article-body h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-body h3 { font-family: 'Geist', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.015em; margin: 36px 0 12px; color: var(--ink); }
+  .article-body p { margin: 0 0 22px; }
+  .article-body a { color: var(--brand-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .article-body a:hover { color: var(--brand-darker); }
+  .article-body ul, .article-body ol { margin: 0 0 22px; padding-left: 24px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body blockquote { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.22rem; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--brand); padding: 4px 0 4px 24px; margin: 32px 0; }
+  .article-body strong { font-weight: 600; color: var(--ink); }
+  .callout { background: var(--bg-cream); border-radius: var(--radius-lg); padding: 22px 26px; margin: 32px 0; font-family: 'Geist', sans-serif; font-size: 0.98rem; line-height: 1.6; color: var(--ink-soft); }
+  .callout-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 6px; }
+
+  /* PRODUCT CTA */
+  .product-cta { background: linear-gradient(135deg, #efe0fa 0%, #f4eee5 100%); border-radius: var(--radius-xl); padding: 32px 36px; margin: 48px 0; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+  @media (max-width: 720px) { .product-cta { grid-template-columns: 1fr; text-align: center; } }
+  .product-cta-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; font-family: 'Geist', sans-serif; }
+  .product-cta h3 { font-family: 'Geist', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; color: var(--ink); }
+  .product-cta p { font-family: 'Geist', sans-serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5; margin-bottom: 16px; }
+  .product-cta .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); padding: 12px 24px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; font-family: 'Geist', sans-serif; transition: background .25s ease; }
+  .product-cta .btn:hover { background: var(--brand-darker); }
+
+  .article-disclaimer { max-width: 720px; margin: 56px auto 0; padding: 20px 0 0; border-top: 1px solid var(--line); font-family: 'Geist', sans-serif; font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+  /* RELATED POSTS */
+  .related-section { max-width: 1280px; margin: 72px auto 0; padding: 0 clamp(20px, 4vw, 48px); }
+  .related-section h3 { font-family: 'Geist', sans-serif; font-size: 1.4rem; font-weight: 500; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 80px; }
+  @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: 1fr; } }
+  .related-card { background: white; border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -18px rgba(36,20,50,0.22); border-color: var(--line-strong); }
+  .related-card-image { aspect-ratio: 16/10; overflow: hidden; background: var(--bg-2); }
+  .related-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
+  .related-card:hover .related-card-image img { transform: scale(1.05); }
+  .related-card-body { padding: 20px 22px 22px; }
+  .related-card-meta { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-deep); margin-bottom: 8px; }
+  .related-card h4 { font-family: 'Geist', sans-serif; font-size: 1.04rem; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; color: var(--ink); }
+
+  /* FOOTER (lite) */
+  footer { background: var(--bg-2); border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 40px; font-family: 'Geist', sans-serif; }
+  footer .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 16px; }
+  .foot-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 360px; color: var(--ink-soft); }
+  .foot-col h5 { font-size: 0.82rem; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 16px; }
+  .foot-col a { display: block; font-size: 0.9rem; color: var(--muted); padding: 4px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="top-strip">
+  Save up to 80% on prescriptions with the DirectCare Pharmacy Card. <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer">Get yours free →</a>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <a class="nav-link has-arrow" href="/womens-health/">Women's Health</a>
+      <a class="nav-link has-arrow" href="/mens-health/">Men's Health</a>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <header class="article-hero">
+      <div class="article-meta">
+        <a href="/blog/">Blog</a>
+        <span class="dot"></span>
+        <span>Nutrition</span>
+        <span class="dot"></span>
+        <span class="date">August 24, 2026</span>
+      </div>
+      <h1 class="article-title">Plant Protein in Perimenopause: <em>a 3-food rotation</em></h1>
+      <p class="article-deck">Perimenopause changes how your body handles protein, insulin, and muscle. A weekly rotation of lentils, tofu, and tempeh hits the leucine threshold, supports estrogen metabolism, and keeps fiber high — without pushing saturated fat.</p>
+      <div class="article-cover">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" alt="" />
+      </div>
+    </header>
+
+    <div class="article-body">
+      <p>Perimenopause is not a nutrition emergency, but it is a nutrition inflection point. Estrogen fluctuation blunts muscle protein synthesis, nudges visceral fat upward, and makes insulin sensitivity a moving target (<a href="https://insight.jci.org/articles/view/124865" target="_blank" rel="noopener noreferrer">Greendale et al., <em>JCI Insight</em> 2019</a>). The fix is not exotic — it's protein distribution, fiber, and consistency. And for a lot of women, the cleanest way to get there is a rotating base of <strong>lentils, tofu, and tempeh</strong>.</p>
+      <p>This is not an anti-meat argument. It's a <em>these three foods do specific jobs</em> argument.</p>
+      <h2>Why protein needs change in perimenopause</h2>
+      <p>Around the menopausal transition, women develop what researchers call <em>anabolic resistance</em> — the same protein dose triggers less muscle protein synthesis than it did at 30 (<a href="https://pubmed.ncbi.nlm.nih.gov/24164531/" target="_blank" rel="noopener noreferrer">Smith et al., <em>Clin Sci</em> 2014</a>). <em>In plain English:</em> you need more protein per meal, not per day, to get the same signal.</p>
+      <p>The practical target most clinicians land on:</p>
+      <ul>
+        <li><strong>1.2–1.6 g/kg body weight per day</strong> of total protein</li>
+        <li><strong>30–40 g per meal</strong>, three meals</li>
+        <li><strong>~2.5–3 g leucine per meal</strong> to cross the muscle-synthesis threshold</li>
+      </ul>
+      <p>That leucine number is the one plant-based eaters miss most often. Lentils, tofu, and tempeh each solve it differently.</p>
+      <h2>What lentils, tofu, and tempeh actually do</h2>
+      <p>These three are not interchangeable. They occupy different slots in the week.</p>
+      <p><strong>Lentils</strong> (cooked, 1 cup / ~200g): ~18 g protein, 16 g fiber, 40 g carbs, low fat. The fiber load is the point — soluble fiber feeds gut bacteria that metabolize estrogen through the <em>estrobolome</em>, which matters when estrogen is already erratic (<a href="https://academic.oup.com/jnci/article/108/8/djw029/2457487" target="_blank" rel="noopener noreferrer">Kwa et al., <em>JNCI</em> 2016</a>). Leucine per cup: ~1.3 g, so lentils alone don't hit the threshold — pair with another source.</p>
+      <p><strong>Tofu</strong> (firm, 150g): ~24 g protein, 2 g fiber, 3 g carbs, 12 g fat (mostly unsaturated). Complete amino acid profile, ~2 g leucine per serving, and the isoflavones (genistein, daidzein) have modest evidence for reducing hot flash frequency (<a href="https://pubmed.ncbi.nlm.nih.gov/25389384/" target="_blank" rel="noopener noreferrer">Chen et al., <em>Menopause</em> 2015</a>).</p>
+      <p><strong>Tempeh</strong> (100g): ~20 g protein, 7 g fiber, 9 g carbs, 11 g fat. Fermented, so the isoflavones are more bioavailable and the antinutrient load is lower. Leucine: ~1.7 g per 100g. It's the densest of the three per gram.</p>
+      <blockquote>The soy fear is outdated. Human data does not show soy raises breast cancer risk — if anything, moderate intake is associated with lower recurrence (<a href="https://pubmed.ncbi.nlm.nih.gov/22648714/" target="_blank" rel="noopener noreferrer">Nechuta et al., <em>AJCN</em> 2012</a>).</blockquote>
+      <p>{callout: The takeaway} In perimenopause, hitting 30–40 g of protein <em>and</em> 2.5 g of leucine at each meal matters more than daily totals — a lentil-tofu-tempeh rotation gets you there while adding fiber your estrobolome actually uses.</p>
+      <h2>The weekly rotation, <em>tuned to your numbers</em></h2>
+      <p>Here's a 7-day framework. It's not a meal plan — it's a slot system. Fill breakfast and one snack with whatever fits your life.</p>
+      <ul>
+        <li><strong>Mon:</strong> Lentil soup with olive oil + a side of tofu (combined leucine ~3 g)</li>
+        <li><strong>Tue:</strong> Tempeh stir-fry over quinoa</li>
+        <li><strong>Wed:</strong> Tofu scramble at breakfast; lentil salad at lunch</li>
+        <li><strong>Thu:</strong> Tempeh tacos, black beans, avocado</li>
+        <li><strong>Fri:</strong> Red lentil dal + baked tofu</li>
+        <li><strong>Sat:</strong> Flex day — fish, eggs, or repeat a favorite</li>
+        <li><strong>Sun:</strong> Batch cook: 3 cups lentils, 1 block tempeh, 2 blocks tofu</li>
+      </ul>
+      <p>Three hits of tempeh, three of lentils, three of tofu across the week. Roughly 90–100 g of plant protein per day before you add anything else.</p>
+      <h2>Recipe: Marinated tempeh and lentil bowl</h2>
+      <p>This is the one to learn first. It hits ~38 g protein and ~14 g fiber in one bowl.</p>
+      <p><strong>Ingredients (serves 2):</strong></p>
+      <ul>
+        <li>200g tempeh, cubed</li>
+        <li>1 cup dry green or black lentils</li>
+        <li>3 tbsp low-sodium tamari or soy sauce</li>
+        <li>1 tbsp rice vinegar</li>
+        <li>1 tbsp maple syrup</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tbsp grated ginger</li>
+        <li>2 tbsp olive oil</li>
+        <li>4 cups baby spinach or arugula</li>
+        <li>1 avocado, sliced</li>
+        <li>Sesame seeds and lime to finish</li>
+      </ul>
+      <p><strong>Method:</strong> 1. Simmer lentils in 3 cups water for 20–25 minutes until tender but not mushy. Drain, salt, set aside. 2. Whisk tamari, vinegar, maple, garlic, and ginger. Toss tempeh cubes in half the marinade; let sit 10 minutes. 3. Heat olive oil in a skillet over medium-high. Sear tempeh 3–4 minutes per side until crisp edges form. 4. Deglaze the pan with the remaining marinade and let it reduce for 30 seconds, coating the tempeh. 5. Build bowls: greens, lentils, tempeh, avocado. Finish with sesame seeds and lime.</p>
+      <p><strong>Approximate nutrition per bowl:</strong> 38 g protein · 14 g fiber · 42 g carbs · 22 g fat · 520 calories · ~3.1 g leucine (crosses the threshold).</p>
+      <h3>Variations</h3>
+      <ul>
+        <li><strong>Lower carb:</strong> swap lentils for a second block of tofu, cubed and seared alongside the tempeh. Drops carbs to ~15 g.</li>
+        <li><strong>Higher volume:</strong> double the greens and add roasted broccoli. Adds ~5 g fiber for negligible calories.</li>
+        <li><strong>Sheet-pan version:</strong> toss marinated tempeh and pre-cooked lentils on a sheet pan at 425°F for 20 minutes with any sturdy vegetable.</li>
+        <li><strong>Cold/meal-prep:</strong> make it as a grain bowl with cold lentils, refrigerate up to 4 days; dress just before eating.</li>
+      </ul>
+      <h2>Common mistakes women make with plant protein in perimenopause</h2>
+      <p><strong>Under-dosing at breakfast.</strong> A smoothie with a scoop of pea protein is 20 g. That's a snack, not a meal. Add tofu to your scramble or Greek yogurt to your bowl.</p>
+      <p><strong>Skipping leucine math.</strong> Beans and rice hit protein totals but often miss the 2.5 g leucine threshold in a single sitting. Tempeh, tofu, and (for omnivores) dairy fix this.</p>
+      <p><strong>Ignoring iron and B12.</strong> Perimenopausal cycles can still be heavy — ferritin often runs low. If you're mostly plant-based, get B12 from a supplement or fortified foods, and know your ferritin. These are among the labs worth having before you decide anything is a "nutrition" problem versus a lab problem.</p>
+      <p><strong>Fearing soy.</strong> Whole soy foods (tofu, tempeh, edamame, soy milk) are not the same as isolated soy protein concentrate. The whole-food form is what the outcome data is based on.</p>
+      <h2>Where labs fit in</h2>
+      <p>If your energy, body composition, or sleep is shifting and you're not sure what's diet versus what's hormonal, a thorough workup would typically include FSH, estradiol, TSH, fasting insulin, HbA1c, ferritin, and vitamin D. Symptoms alone can point in the wrong direction during perimenopause, when hormone levels swing week to week.</p>
+      <p>A rotation like this one gives you a clean nutrition baseline. From there, if symptoms persist, it's easier for a clinician to see what's actually driving them — and to decide whether HRT, targeted supplementation, or just more time is the right next step.</p>
+      <div class="product-cta">
+        <div>
+          <div class="product-cta-eyebrow">Make weight loss easier</div>
+          <h3>Compounded GLP-1, with clinician oversight.</h3>
+          <p>DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition guidance to make a suppressed appetite still hit protein and fiber.</p>
+          <a class="btn" href="/weight-loss/">See if you qualify →</a>
+        </div>
+        <div></div>
+      </div>
+      <p class="article-disclaimer">
+        <strong>Editorial disclosure:</strong> This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.
+      </p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <h3>Keep reading</h3>
+    <div class="related-grid" id="related-grid"></div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Blog</h5>
+        <a href="/blog/">All posts</a>
+        <a href="/blog/?cat=TRT">TRT</a>
+        <a href="/blog/?cat=HRT">HRT</a>
+        <a href="/blog/?cat=Weight%20Loss">Weight Loss</a>
+      </div>
+      <div class="foot-col">
+        <h5>Products</h5>
+        <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/blood-test/">Blood Labs</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Related posts: pull other recent posts from manifest, excluding this slug
+  (function() {
+    var grid = document.getElementById('related-grid');
+    if (!grid) return;
+    var thisSlug = 'plant-protein-perimenopause-lentils-tofu-tempeh';
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+    fetch('/blog/posts.json', { cache: 'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var posts = (data.posts || []).filter(function(p){ return p.slug !== thisSlug; }).slice(0, 3);
+        if (posts.length === 0) { grid.parentElement.style.display = 'none'; return; }
+        grid.innerHTML = posts.map(function(p){
+          return ''
+            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '">'
+            +   '<div class="related-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
+            +   '<div class="related-card-body">'
+            +     '<div class="related-card-meta">' + escapeHtml(p.category) + '</div>'
+            +     '<h4>' + escapeHtml(p.title) + '</h4>'
+            +   '</div>'
+            + '</a>';
+        }).join('');
+      })
+      .catch(function(){ grid.parentElement.style.display = 'none'; });
+  })();
+</script>
+
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="tellescope.com"]');
+    if (a) {
+      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

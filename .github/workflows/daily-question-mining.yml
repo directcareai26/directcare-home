@@ -1,0 +1,97 @@
+name: Daily Healthcare Question Miner
+
+# "Answer The Public"-style question discovery from FREE sources, scoped to
+# DirectCare AI's categories, deduped against a persisted watermark, clustered +
+# compliance-flagged by Claude, and delivered as a daily brief (Slack + email)
+# plus a draft content-queue artifact for the fleet to seed GHL drafts from.
+#
+# Runs fully in the cloud. Zero commits to the repo (no Vercel deploy side-effect):
+# the watermark persists via actions/cache; the brief + queue ship as an artifact.
+# 10:40 UTC = 6:40 AM ET — lands just before the daily SEO report.
+
+on:
+  schedule:
+    - cron: "40 10 * * *"
+  workflow_dispatch:
+    inputs:
+      no_reddit:
+        description: "Skip the Reddit pass (often rate-limited from CI)"
+        required: false
+        default: "false"
+
+concurrency:
+  group: daily-question-mining
+  cancel-in-progress: false
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r scripts/question-mining/requirements.txt
+
+      # Restore the "already-seen questions" watermark from the most recent run.
+      # Immutable per-run key + rolling restore prefix keeps it carrying forward.
+      - name: Restore question watermark
+        uses: actions/cache/restore@v4
+        with:
+          path: scripts/question-mining/state
+          key: qm-state-${{ github.run_id }}
+          restore-keys: |
+            qm-state-
+
+      - name: Mine, cluster & send
+        env:
+          GSC_TOKEN_JSON: ${{ secrets.GSC_TOKEN_JSON }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SLACK_WEBHOOK_GROWTH: ${{ secrets.SLACK_WEBHOOK_GROWTH }}
+          SLACK_WEBHOOK_PERSONAL: ${{ secrets.SLACK_WEBHOOK_PERSONAL }}
+          GMAIL_SMTP_USER: ${{ secrets.GMAIL_SMTP_USER }}
+          GMAIL_SMTP_HOST: ${{ secrets.GMAIL_SMTP_HOST }}
+          GMAIL_SMTP_PORT: ${{ secrets.GMAIL_SMTP_PORT }}
+          GMAIL_SMTP_APP_PASSWORD: ${{ secrets.GMAIL_SMTP_APP_PASSWORD }}
+          REPORT_EMAIL_TO: ${{ secrets.REPORT_EMAIL_TO }}
+          # Optional cost/quality knobs (defaults: claude-opus-4-8 / medium effort)
+          QM_MODEL: ${{ vars.QM_MODEL }}
+          QM_EFFORT: ${{ vars.QM_EFFORT }}
+        run: |
+          FLAGS="--send"
+          if [ "${{ github.event.inputs.no_reddit }}" = "true" ]; then FLAGS="$FLAGS --no-reddit"; fi
+          python scripts/question-mining/mine_questions.py $FLAGS
+
+      # Persist the advanced watermark for tomorrow.
+      - name: Save question watermark
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: scripts/question-mining/state
+          key: qm-state-${{ github.run_id }}
+
+      # The compliance-flagged draft queue + brief, for the fleet to seed GHL drafts.
+      - name: Upload brief + content queue
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: question-miner-${{ github.run_id }}
+          path: |
+            scripts/question-mining/out/
+            content-queue/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Daily Healthcare Question Miner" >> "$GITHUB_STEP_SUMMARY"
+          LATEST=$(ls -1t scripts/question-mining/out/*.md 2>/dev/null | head -1)
+          if [ -n "$LATEST" ]; then
+            echo "Brief: \`$LATEST\` — full draft queue in the run artifact." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "Quiet run — no net-new questions today." >> "$GITHUB_STEP_SUMMARY"
+          fi

@@ -1,0 +1,3 @@
+# Generated at runtime — briefs and the dedupe watermark (persisted via CI cache)
+out/
+state/

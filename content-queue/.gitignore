@@ -1,0 +1,4 @@
+# Daily draft specs are generated + shipped as CI artifacts, not committed.
+# Keep the directory tracked; ignore its generated contents.
+*
+!.gitignore

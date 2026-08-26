@@ -529,6 +529,66 @@
       "source": "/womens-hair-loss-thankyou/",
       "destination": "/thankyou?p=hairw",
       "permanent": false
+    },
+    {
+      "source": "/surge-max-welcome",
+      "destination": "/welcome?p=surgemax",
+      "permanent": false
+    },
+    {
+      "source": "/surge-max-welcome/",
+      "destination": "/welcome?p=surgemax",
+      "permanent": false
+    },
+    {
+      "source": "/trt-welcome",
+      "destination": "/welcome?p=trt",
+      "permanent": false
+    },
+    {
+      "source": "/trt-welcome/",
+      "destination": "/welcome?p=trt",
+      "permanent": false
+    },
+    {
+      "source": "/hrt-welcome",
+      "destination": "/welcome?p=hrt",
+      "permanent": false
+    },
+    {
+      "source": "/hrt-welcome/",
+      "destination": "/welcome?p=hrt",
+      "permanent": false
+    },
+    {
+      "source": "/weight-loss-welcome",
+      "destination": "/welcome?p=glp1",
+      "permanent": false
+    },
+    {
+      "source": "/weight-loss-welcome/",
+      "destination": "/welcome?p=glp1",
+      "permanent": false
+    },
+    {
+      "source": "/mens-hair-loss-welcome",
+      "destination": "/welcome?p=hairm",
+      "permanent": false
+    },
+    {
+      "source": "/mens-hair-loss-welcome/",
+      "destination": "/welcome?p=hairm",
+      "permanent": false
+    },
+    {
+      "source": "/womens-hair-loss-welcome",
+      "destination": "/welcome?p=hairw",
+      "permanent": false
+    },
+    {
+      "source": "/womens-hair-loss-welcome/",
+      "destination": "/welcome?p=hairw",
+      "permanent": false
     }
   ],
   "rewrites": [

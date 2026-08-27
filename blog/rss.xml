@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Female Hair Loss: The Hormonal Panel to Run First</title>
+      <link>https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</guid>
+      <pubDate>Thu, 27 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Hair Regrowth</category>
+      <description><![CDATA[Female-pattern hair loss usually has a hormonal or nutritional driver hiding underneath. Here's the first-line panel that actually changes the treatment plan.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Micronized Progesterone vs. Progestins: Why It Matters</title>
       <link>https://www.directcare.ai/blog/oral-micronized-progesterone-vs-progestins</link>
@@ -340,18 +352,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
-    </item>
-    <item>
-      <title>Female-Pattern Hair Loss: The Hormonal Panel to Run First</title>
-      <link>https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</guid>
-      <pubDate>Wed, 22 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Hair Regrowth</category>
-      <description><![CDATA[Female-pattern hair loss usually has a hormonal fingerprint. Here are the labs worth having on the table before you commit to a protocol.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
     </item>
     <item>
       <title>Perimenopause vs. Menopause: Lab Values and What They Mean</title>

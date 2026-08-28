@@ -1,6 +1,26 @@
 {
   "posts": [
     {
+      "slug": "10-biomarkers-that-predict-longevity",
+      "title": "10 Biomarkers That Predict Longevity (Most Physicals Miss)",
+      "excerpt": "Total cholesterol and fasting glucose won't tell you much about how long you'll live. These 10 biomarkers — from ApoB to hs-CRP to HbA1c — will.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-08-28",
+      "dateLabel": "August 28, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "longevity biomarkers",
+        "annual physical blood tests",
+        "ApoB test",
+        "hs-CRP longevity",
+        "HbA1c prediabetes",
+        "lipoprotein(a)",
+        "healthspan biomarkers",
+        "advanced blood panel"
+      ]
+    },
+    {
       "slug": "female-pattern-hair-loss-hormonal-panel",
       "title": "Female Hair Loss: The Hormonal Panel to Run First",
       "excerpt": "Female-pattern hair loss usually has a hormonal or nutritional driver hiding underneath. Here's the first-line panel that actually changes the treatment plan.",
@@ -1407,28 +1427,6 @@
         "RBC magnesium",
         "magnesium deficiency",
         "supplements"
-      ]
-    },
-    {
-      "slug": "10-biomarkers-that-predict-longevity",
-      "title": "10 Biomarkers That Actually Predict Longevity",
-      "excerpt": "Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan — and why your annual physical probably checks none of them.",
-      "category": "Blood Labs",
-      "categorySlug": "blood-labs",
-      "date": "2026-05-27",
-      "dateLabel": "May 27, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
-      "keywords": [
-        "longevity biomarkers",
-        "blood labs for longevity",
-        "ApoB test",
-        "Lp(a) test",
-        "hs-CRP",
-        "HbA1c",
-        "GGT liver marker",
-        "advanced lipid panel",
-        "annual physical bloodwork",
-        "biomarkers that predict mortality"
       ]
     },
     {

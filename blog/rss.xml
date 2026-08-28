@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>10 Biomarkers That Predict Longevity (Most Physicals Miss)</title>
+      <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</guid>
+      <pubDate>Fri, 28 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Total cholesterol and fasting glucose won't tell you much about how long you'll live. These 10 biomarkers — from ApoB to hs-CRP to HbA1c — will.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
+    </item>
     <item>
       <title>Female Hair Loss: The Hormonal Panel to Run First</title>
       <link>https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
-    </item>
-    <item>
-      <title>Plant Protein in Perimenopause: Lentil, Tofu, Tempeh</title>
-      <link>https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh</guid>
-      <pubDate>Sun, 19 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[Perimenopause bumps your protein target higher, not lower. Here's a lentil, tofu, and tempeh rotation that hits it — with real gram counts and three recipes.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
     </item>
   </channel>
 </rss>

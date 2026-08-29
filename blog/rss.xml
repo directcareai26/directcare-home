@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Omega-3 EPA/DHA Dose That Moves Inflammation Markers</title>
+      <link>https://www.directcare.ai/blog/omega-3-epa-dha-dose-inflammation-markers</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/omega-3-epa-dha-dose-inflammation-markers</guid>
+      <pubDate>Sat, 29 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Supplements</category>
+      <description><![CDATA[The 1,000 mg fish oil softgel on your counter probably isn't touching your inflammation markers. Here's the EPA/DHA dose the trials actually used — and what to measure.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
+    </item>
     <item>
       <title>10 Biomarkers That Predict Longevity (Most Physicals Miss)</title>
       <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
-    </item>
-    <item>
-      <title>Perimenopause vs. Menopause: Lab Values and What They Mean</title>
-      <link>https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values</guid>
-      <pubDate>Tue, 21 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>HRT</category>
-      <description><![CDATA[The bloodwork tells you which phase you're in — and which phase you're in determines what HRT should actually look like. Here's how to read the panel.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" />
     </item>
   </channel>
 </rss>

@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>GLP-1 Maintenance Dosing: How to Stay Off Without Rebound</title>
+      <link>https://www.directcare.ai/blog/glp-1-maintenance-dosing-avoid-rebound</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/glp-1-maintenance-dosing-avoid-rebound</guid>
+      <pubDate>Sun, 30 Aug 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Weight Loss</category>
+      <description><![CDATA[Hitting your goal weight on a GLP-1 is the easy part. Here's how maintenance dosing, tapering, and lab-guided monitoring keep the weight off without a rebound.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" />
+    </item>
     <item>
       <title>Omega-3 EPA/DHA Dose That Moves Inflammation Markers</title>
       <link>https://www.directcare.ai/blog/omega-3-epa-dha-dose-inflammation-markers</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" />
-    </item>
-    <item>
-      <title>ApoB vs. LDL: The Cholesterol Number That Matters More</title>
-      <link>https://www.directcare.ai/blog/apob-vs-ldl-cholesterol-cardiologists-ask</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/apob-vs-ldl-cholesterol-cardiologists-ask</guid>
-      <pubDate>Thu, 23 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[LDL-C tells you how much cholesterol is in your blood. ApoB tells you how many atherogenic particles are actually driving plaque. Here's why the difference matters.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
     </item>
   </channel>
 </rss>

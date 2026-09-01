@@ -160,14 +160,14 @@ def sticky_and_js(variant, first_q_id="quizTop"):
     var a = e.target.closest('[data-cta]'); if (a) dl('cta_click', {{placement:a.dataset.cta}});
   }});
 
-  var answers = {{}};
+  var answers = {{}}, answerList = [];
 
   // ---- quiz ----
   var quiz = document.getElementById('quiz');
   if (quiz) {{
     var steps = JSON.parse(quiz.dataset.steps), i = 0;
     var saved = null; try {{ saved = JSON.parse(localStorage.getItem('dca_ed_quiz')||'null'); }} catch(_e) {{}}
-    if (saved && saved.answers) answers = saved.answers;
+    if (saved && saved.answers) {{ answers = saved.answers; answerList = saved.list || []; }}
     var qEl = quiz.querySelector('.q'), oEl = quiz.querySelector('.opts'), dEl = quiz.querySelector('.dots');
     var capture = document.getElementById('capture');
 
@@ -181,8 +181,10 @@ def sticky_and_js(variant, first_q_id="quizTop"):
     oEl.addEventListener('click', function(e){{
       var b = e.target.closest('.opt'); if (!b) return;
       var s = steps[i]; answers[s.k] = s.a[+b.dataset.i];
+      answerList = answerList.filter(function(x){{ return x.title !== s.q; }});
+      answerList.push({{title:s.q, value:answers[s.k]}});
       dl('quiz_step', {{step:i+1, question:s.k, answer:answers[s.k]}});
-      try {{ localStorage.setItem('dca_ed_quiz', JSON.stringify({{answers:answers, at:Date.now()}})); }} catch(_e) {{}}
+      try {{ localStorage.setItem('dca_ed_quiz', JSON.stringify({{answers:answers, list:answerList, at:Date.now()}})); }} catch(_e) {{}}
       i++; render();
     }});
     function finish(){{
@@ -206,9 +208,10 @@ def sticky_and_js(variant, first_q_id="quizTop"):
         errEl.textContent = 'Enter an email we can send your results to.'; errEl.style.display='block'; return;
       }}
       errEl.style.display='none';
-      var body = {{ funnel:'ed', started:true, source:'lp-'+V,
-        first_name:(fd.get('first_name')||'').trim(), email:email, phone:(fd.get('phone')||'').trim(),
-        answers:answers }};
+      var body = {{ funnel:'ed', partial:true, source:'lp-'+V,
+        contact:{{ firstName:(fd.get('first_name')||'').trim(), email:email,
+                  phone:(fd.get('phone')||'').trim() }},
+        answers: answerList }};
       fetch('/api/quiz-submit', {{method:'POST', headers:{{'Content-Type':'application/json'}}, body:JSON.stringify(body)}})
         .catch(function(){{}});
       dl('lead_captured');

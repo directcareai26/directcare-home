@@ -47,22 +47,23 @@ def f1():
     s  = head("Surge Max — see if you qualify", "Four medications in one liquid dose. Free evaluation, reviewed by a US-licensed clinician.", "f1")
     s += '<div class="bar">100% online &middot; free rush shipping &middot; plain packaging</div>'
     s += f'<header class="nav"><div class="wrap"><img src="{LOGO_D}" alt="DirectCare AI"></div></header>'
-    s += f"""<section data-hero style="padding-top:8px" class="lilac">
-      <div class="wrap split">
+    s += f"""<section data-hero class="hero">
+      <img class="heroimg" src="{IMG % 'the-strength-couple'}" alt="" fetchpriority="high">
+      <div class="wrap inner"><div class="grid2">
         <div>
           <h1>Four medications.<br>One liquid dose.<br>Ninety seconds.</h1>
           <p class="lede">SURGE MAX is a rapid-absorb liquid &mdash; no pill to swallow, no waiting around for it
             to work. A US-licensed clinician reviews your evaluation within 24 hours.</p>
-          <div class="card" style="display:flex;gap:16px;align-items:center;margin-top:18px">
+          <div class="card" style="display:flex;gap:16px;align-items:center;margin:18px 0 0">
             <img src="{IMG % 'holding-4in1'}" alt="SURGE MAX single-dose vial" width="92" height="112"
-              style="width:92px;height:112px;object-fit:cover;border-radius:10px">
+              style="width:92px;height:112px;object-fit:cover;border-radius:12px" loading="lazy">
             <div><b style="font-size:17px">SURGE MAX 10-pack</b>
               <div style="color:#6d28d9;font-weight:700">$179 &middot; $17.90 a dose</div>
               <div class="tiny">Sildenafil 40 &middot; Tadalafil 11 &middot; Vardenafil 7.5 &middot; Apomorphine 2</div></div>
           </div>
         </div>
-        <div id="quizTop">{quiz_block()}</div>
-      </div>
+        <div id="quizTop" style="margin-top:22px">{quiz_block()}</div>
+      </div></div>
     </section>"""
     s += f'<img class="band" src="{IMG % "the-strength-couple"}" alt="" loading="lazy">'
     s += plans_block("Good news &mdash; you&rsquo;ve got three options.",

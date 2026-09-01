@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Lifting Through Perimenopause: Rep Ranges &amp; Recovery Rules</title>
+      <link>https://www.directcare.ai/blog/lifting-through-perimenopause-rep-ranges-recovery</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/lifting-through-perimenopause-rep-ranges-recovery</guid>
+      <pubDate>Tue, 01 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Fitness</category>
+      <description><![CDATA[The rep ranges, weekly split, and recovery rules that actually work when estrogen is fluctuating and recovery is slower than it used to be.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" />
+    </item>
     <item>
       <title>TRT and Fertility: Preserving Sperm on Testosterone</title>
       <link>https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-production</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>Grip Strength and Longevity: 3 Exercises That Build It</title>
-      <link>https://www.directcare.ai/blog/grip-strength-longevity-3-exercises</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/grip-strength-longevity-3-exercises</guid>
-      <pubDate>Mon, 27 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Fitness</category>
-      <description><![CDATA[Grip strength outpredicts systolic blood pressure for all-cause mortality in some cohorts. Three exercises — farmer's carry, dead hang, heavy row — build it fast.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" />
     </item>
   </channel>
 </rss>

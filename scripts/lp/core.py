@@ -1,0 +1,314 @@
+# -*- coding: utf-8 -*-
+"""Shared chrome for the five ED landing-page variants."""
+
+GTM = """<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>"""
+
+FORM = ("https://business.tellescope.com/e/public/form?f=6a91c05fa9cb082abb340d5e"
+        "&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId="
+        "&orgIds=&skipMatch=false&autoStart=false&sessionId=&")
+
+LOGO_D = "/logo-dark.png"
+LOGO_W = "/logo-white.png"
+
+COMPLIANCE = ("Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, "
+              "effectiveness or quality. Prescription products require an online consultation; a US-licensed "
+              "clinician decides whether treatment is appropriate for you, and not every formula is appropriate "
+              "for every patient. Do not use with nitrate medications or if you are being treated for a serious "
+              "heart condition. Not available in all states. Individual results vary.")
+
+CREDENTIALS = [
+    ("US-licensed clinicians",
+     "Every evaluation is read by a clinician licensed in your state, usually within 24 hours. "
+     "If treatment isn&rsquo;t appropriate for you, you are not charged."),
+    ("LegitScript certified",
+     "Independently verified telehealth and pharmacy practices &mdash; not a grey-market site."),
+    ("Licensed US compounding pharmacy",
+     "Your formula is prepared and shipped from a licensed US pharmacy, plain and unmarked."),
+]
+
+PLANS = [
+    ("SURGE MAX", "10-pack", "$179", "$17.90 a dose",
+     "The 4-in-1 rapid-absorb liquid. Absorbs in about 90 seconds, 36-hour window.", "surgemax"),
+    ("Go Long", "12-pack", "$149", "$12.42 a dose",
+     "Silodosin + tadalafil troche, built for staying power.", "golong"),
+    ("Daily Boost", "28-pack", "$119", "$4.25 a day",
+     "A low daily dose &mdash; readiness as the default rather than an event.", "dailyboost"),
+]
+
+def head(title, desc, variant, dark=False):
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://www.directcare.ai/erectile-dysfunction">
+<link rel="preconnect" href="https://business.tellescope.com">
+<link rel="icon" href="/favicon.ico">
+{GTM}
+<style>{css(dark)}</style>
+</head>
+<body data-variant="{variant}">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>"""
+
+def css(dark=False):
+    return """
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color:#1c1024;background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.bar{background:#241432;color:#cdb9d8;font-size:11px;letter-spacing:.06em;text-align:center;
+  padding:9px 16px;font-weight:600;text-transform:uppercase}
+.bar.gold{color:#f3c969}
+header.nav{padding:16px 0}
+header.nav img{width:132px;height:auto}
+h1{font-size:clamp(30px,7vw,60px);line-height:1.04;letter-spacing:-.02em;margin:0 0 16px;font-weight:900}
+h2{font-size:clamp(22px,4.2vw,36px);line-height:1.12;letter-spacing:-.015em;margin:0 0 14px;font-weight:800}
+h3{font-size:18px;line-height:1.25;margin:0 0 6px;font-weight:800}
+p{margin:0 0 14px}
+.lede{font-size:clamp(16px,2.2vw,19px);color:#4b3d59;line-height:1.55}
+.muted{color:#7a6d88}
+.tiny{font-size:12px;line-height:1.5;color:#7a6d88}
+section{padding:34px 0}
+.lilac{background:#f2ecf6}
+.plum{background:#241432;color:#f4eefb}
+.plum h2,.plum h3{color:#fff}
+.plum .lede,.plum p{color:#cdb9d8}
+.ink{background:#0d0812;color:#fff}
+.cta{display:block;width:100%;max-width:440px;margin:0 auto;text-align:center;text-decoration:none;
+  background:linear-gradient(95deg,#0b6f37 0%,#16a84f 50%,#2bb866 100%);color:#fff;font-size:18px;font-weight:800;
+  padding:18px 20px;border-radius:999px;border:0;cursor:pointer;box-shadow:0 8px 24px rgba(24,201,101,.32)}
+.cta:active{transform:translateY(1px)}
+.cta.light{background:#fff;color:#44215A;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+.grid{display:grid;gap:14px}
+@media(min-width:860px){.grid.g3{grid-template-columns:repeat(3,1fr)}.grid.g2{grid-template-columns:1fr 1fr}
+  .split{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}}
+.card{background:#fff;border:1px solid #e5dbec;border-radius:16px;padding:20px}
+.plum .card,.ink .card{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14)}
+.pill{display:inline-block;background:#6d28d9;color:#fff;font-size:11px;font-weight:800;letter-spacing:.12em;
+  padding:7px 14px;border-radius:999px;text-transform:uppercase}
+.price{font-size:34px;font-weight:900;letter-spacing:-.02em}
+.hero-img{border-radius:18px;overflow:hidden;background:#f2ecf6}
+.hero-img img{width:100%;height:auto;object-fit:cover}
+.band{width:100%;height:210px;object-fit:cover;object-position:center 22%}
+@media(min-width:860px){.band{height:340px}}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}
+.trust div{background:#faf7fb;border:1px solid #e5dbec;border-radius:12px;padding:13px 8px;text-align:center;
+  font-size:12.5px;font-weight:800;line-height:1.3}
+.plum .trust div{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.14);color:#fff}
+/* quiz */
+.quiz{background:#241432;border-radius:18px;padding:22px 20px 24px;color:#fff}
+.dots{display:flex;gap:6px;margin-bottom:14px}
+.dots i{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.22)}
+.dots i.on{background:#f3c969}
+.q{font-size:clamp(21px,3.4vw,30px);font-weight:800;line-height:1.15;margin:0 0 16px;letter-spacing:-.01em}
+.opts{display:grid;gap:10px}
+.opt{display:block;width:100%;text-align:left;background:#fff;color:#241432;border:0;border-radius:13px;
+  padding:16px 18px;font-size:17px;font-weight:700;cursor:pointer;font-family:inherit}
+.opt:hover{background:#f2ecf6}
+.skip{display:block;text-align:center;margin-top:14px;color:#d185ff;font-size:14px;font-weight:600;
+  text-decoration:none;background:0;border:0;cursor:pointer;width:100%;font-family:inherit}
+.field{width:100%;padding:15px 16px;border-radius:13px;border:1px solid rgba(255,255,255,.25);
+  background:rgba(255,255,255,.08);color:#fff;font-size:16px;font-family:inherit;margin-bottom:10px}
+.field::placeholder{color:#9c87a8}
+.err{color:#ffb3c6;font-size:13px;margin:2px 0 10px;display:none}
+/* plan rows */
+.plan{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 16px;border-radius:14px;
+  background:#faf7fb;border:1px solid #e5dbec;text-decoration:none;color:inherit}
+.plum .plan{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.14);color:#fff}
+.plan b{display:block;font-size:16px}
+.plan span{font-size:13px;color:#7a6d88}
+.plum .plan span{color:#cdb9d8}
+.plan em{font-style:normal;font-size:19px;font-weight:900;color:#6d28d9;white-space:nowrap}
+.plum .plan em{color:#f3c969}
+/* sticky */
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-top:1px solid #e5dbec;z-index:50;
+  transform:translateY(120%);transition:transform .25s ease}
+.sticky.show{transform:translateY(0)}
+.sticky .cta{font-size:16px;padding:15px 18px}
+body{padding-bottom:0}
+#intake{border:0;width:100%;min-height:1100px;background:#fff;border-radius:16px}
+.hide{display:none!important}
+footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
+"""
+
+def sticky_and_js(variant, first_q_id="quizTop"):
+    return f"""
+<div class="sticky" id="stickyBar"><a class="cta" href="#{first_q_id}" data-cta="sticky">Check if I qualify &nbsp;&rarr;</a></div>
+<script>
+(function(){{
+  var V = document.body.dataset.variant;
+  var dl = function(ev, extra){{ window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({{event:ev, variant:V, product:'surge-max', category:'ED'}}, extra||{{}})); }};
+  dl('lp_view');
+
+  // sticky CTA appears once the hero is behind you
+  var bar = document.getElementById('stickyBar'), hero = document.querySelector('[data-hero]');
+  if (bar && hero && 'IntersectionObserver' in window) {{
+    new IntersectionObserver(function(es){{ bar.classList.toggle('show', !es[0].isIntersecting); }},
+      {{rootMargin:'-80px 0px 0px 0px'}}).observe(hero);
+  }}
+  document.addEventListener('click', function(e){{
+    var a = e.target.closest('[data-cta]'); if (a) dl('cta_click', {{placement:a.dataset.cta}});
+  }});
+
+  var answers = {{}};
+
+  // ---- quiz ----
+  var quiz = document.getElementById('quiz');
+  if (quiz) {{
+    var steps = JSON.parse(quiz.dataset.steps), i = 0;
+    var saved = null; try {{ saved = JSON.parse(localStorage.getItem('dca_ed_quiz')||'null'); }} catch(_e) {{}}
+    if (saved && saved.answers) answers = saved.answers;
+    var qEl = quiz.querySelector('.q'), oEl = quiz.querySelector('.opts'), dEl = quiz.querySelector('.dots');
+    var capture = document.getElementById('capture');
+
+    function dots(){{ dEl.innerHTML = steps.map(function(_,n){{ return '<i class="'+(n<=i?'on':'')+'"></i>'; }}).join(''); }}
+    function render(){{
+      if (i >= steps.length) return finish();
+      var s = steps[i]; dots(); qEl.textContent = s.q;
+      oEl.innerHTML = s.a.map(function(o,n){{ return '<button class="opt" data-i="'+n+'">'+o+'</button>'; }}).join('');
+      if (i === 0) dl('quiz_start');
+    }}
+    oEl.addEventListener('click', function(e){{
+      var b = e.target.closest('.opt'); if (!b) return;
+      var s = steps[i]; answers[s.k] = s.a[+b.dataset.i];
+      dl('quiz_step', {{step:i+1, question:s.k, answer:answers[s.k]}});
+      try {{ localStorage.setItem('dca_ed_quiz', JSON.stringify({{answers:answers, at:Date.now()}})); }} catch(_e) {{}}
+      i++; render();
+    }});
+    function finish(){{
+      dl('quiz_complete', {{answers_count:Object.keys(answers).length}});
+      quiz.classList.add('hide');
+      if (capture) {{ capture.classList.remove('hide'); capture.scrollIntoView({{behavior:'smooth', block:'center'}}); }}
+      var shelf = document.getElementById('shelf'); if (shelf) shelf.classList.remove('hide');
+    }}
+    render();
+
+  }}
+
+  // ---- lead capture: this is what puts an abandoner into the follow-up sequence ----
+  (function(){{
+    var form = document.getElementById('leadForm');
+    if (form) form.addEventListener('submit', function(e){{
+      e.preventDefault();
+      var fd = new FormData(form), email = (fd.get('email')||'').trim();
+      var errEl = form.querySelector('.err');
+      if (!/^[^@\\s]+@[^@\\s]+\\.[^@\\s]{{2,}}$/.test(email)) {{
+        errEl.textContent = 'Enter an email we can send your results to.'; errEl.style.display='block'; return;
+      }}
+      errEl.style.display='none';
+      var body = {{ funnel:'ed', started:true, source:'lp-'+V,
+        first_name:(fd.get('first_name')||'').trim(), email:email, phone:(fd.get('phone')||'').trim(),
+        answers:answers }};
+      fetch('/api/quiz-submit', {{method:'POST', headers:{{'Content-Type':'application/json'}}, body:JSON.stringify(body)}})
+        .catch(function(){{}});
+      dl('lead_captured');
+      document.getElementById('capture').classList.add('hide');
+      window.startIntake();
+    }});
+  }})();
+
+  // ---- Tellescope intake, loaded only when asked for ----
+  window.startIntake = function(){{
+    var host = document.getElementById('intakeWrap'); if (!host) return;
+    host.classList.remove('hide');
+    var f = document.getElementById('intake');
+    if (f && !f.src) {{ f.src = f.dataset.src; dl('intake_start'); }}
+    host.scrollIntoView({{behavior:'smooth', block:'start'}});
+  }};
+  document.querySelectorAll('[data-start]').forEach(function(el){{
+    el.addEventListener('click', function(e){{ e.preventDefault(); window.startIntake(); }});
+  }});
+
+  // Tellescope posts a message when the form is submitted
+  window.addEventListener('message', function(ev){{
+    if (typeof ev.data === 'string' && ev.data.toLowerCase().indexOf('submit') > -1) {{
+      dl('intake_lead', {{form:'6a91c05fa9cb082abb340d5e'}});
+    }}
+  }});
+}})();
+</script>"""
+
+def standalone_capture(dark=False):
+    """The soft ask. Without it, anyone who leaves before the medical form is invisible
+    to us — no contact in GHL, so the abandoned-intake emails can never fire."""
+    return f"""
+<section class="{'ink' if dark else 'lilac'}">
+  <div class="wrap" style="max-width:640px">
+    <div class="quiz" id="capture">
+      <h3 style="font-size:22px;margin-bottom:6px">Not ready right now?</h3>
+      <p style="color:#cdb9d8;font-size:15px;margin-bottom:16px">We&rsquo;ll send your three options and a link
+        to pick this up whenever it suits. One click to unsubscribe.</p>
+      <form id="leadForm" novalidate>
+        <input class="field" name="first_name" placeholder="First name" autocomplete="given-name">
+        <input class="field" name="email" type="email" placeholder="Email" autocomplete="email" required>
+        <input class="field" name="phone" type="tel" placeholder="Mobile (optional)" autocomplete="tel">
+        <p class="err"></p>
+        <button class="cta" type="submit" data-cta="capture">Send my options &nbsp;&rarr;</button>
+      </form>
+      <p class="tiny" style="color:#9c87a8;margin:12px 0 0;text-align:center">Free evaluation &middot; no charge if you don&rsquo;t qualify</p>
+    </div>
+  </div>
+</section>"""
+
+def intake_block():
+    return f"""
+<section id="intakeWrap" class="hide">
+  <div class="wrap">
+    <h2>Your evaluation</h2>
+    <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
+      appropriate for you, you are not charged.</p>
+    <iframe id="intake" data-src="{FORM}" title="Erectile dysfunction intake evaluation"
+      loading="lazy" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>"""
+
+def credentials_block(on_plum=False):
+    cards = "".join(f'<div class="card"><h3>{h}</h3><p class="tiny" style="color:inherit;opacity:.85">{d}</p></div>'
+                    for h, d in CREDENTIALS)
+    return f"""
+<section class="{'plum' if on_plum else ''}">
+  <div class="wrap">
+    <h2>Who reviews your evaluation</h2>
+    <p class="lede">Every evaluation is read by a US-licensed clinician before anything is prescribed &mdash;
+      licensed in your state, not a questionnaire with an automatic yes.</p>
+    <div class="grid g3">{cards}</div>
+  </div>
+</section>"""
+
+def plans_block(title, note, on_plum=False, link_all=True):
+    rows = "".join(
+        f'<a class="plan" href="#" data-start data-cta="plan-{k}"><span><b>{n}</b>'
+        f'<span>{p} &middot; {per}</span></span><em>{price}</em></a>'
+        for n, p, price, per, d, k in PLANS)
+    return f"""
+<section class="{'plum' if on_plum else ''}" id="shelf">
+  <div class="wrap">
+    <h2>{title}</h2>
+    <p class="lede">{note}</p>
+    <div class="grid" style="gap:10px">{rows}</div>
+    <p class="tiny" style="margin-top:14px">Complete program price &mdash; clinician review and free shipping
+      included, no membership fee.</p>
+  </div>
+</section>"""
+
+def footer():
+    return f"""
+<footer>
+  <div class="wrap">
+    <img src="{LOGO_D}" alt="DirectCare AI" style="width:150px;margin-bottom:14px">
+    <p class="tiny">{COMPLIANCE}</p>
+    <p class="tiny"><a href="/privacy-policy">Privacy</a> &middot; <a href="/terms-and-conditions">Terms</a>
+      &middot; DirectCare AI, 30 N Gould St, STE N, Sheridan, WY 82801</p>
+  </div>
+</footer>
+</body></html>"""

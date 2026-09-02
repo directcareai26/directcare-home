@@ -1,0 +1,766 @@
+{
+ "slug": "trt",
+ "title": "TRT",
+ "product": "Testosterone Replacement",
+ "intro": "Let's see whether testosterone therapy is right for you",
+ "images": {
+  "hero": "/optimized/firefly-a-man-in-his-mid-50s-fit-but-age-realistic-slim-posture-upright-not-a-fitness-mod-411695-1200.webp",
+  "mid": "/optimized/firefly-gemini-flash-a-man-in-his-early-60s-lean-fit-realistic-build-not-bulky-just-maintained-white-411695-800.webp"
+ },
+ "formId": "683872d1d3039feba26af038",
+ "questions": [
+  {
+   "id": "6a0a46c6fa039f59ca29435c",
+   "title": "Question 4",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "685d48f1581d5f37c4e9d527",
+   "title": "Please provide your Driver's License State.",
+   "type": "address",
+   "required": true,
+   "section": "Driver's License"
+  },
+  {
+   "id": "6851d38b66e6e63e736bd585",
+   "title": "Please provide your Driver's License Number.",
+   "type": "text",
+   "required": true,
+   "section": "Driver's License"
+  },
+  {
+   "id": "683872d24a2e8fbe239adb31",
+   "title": "Please upload documentation regarding your past history/diagnosis of prostate cancer.",
+   "type": "text",
+   "required": true,
+   "section": "Please upload documentation related to your history, diagnosis, and/or treatment.",
+   "showWhen": {
+    "field": "683872d24a2e8fbe239adb1c",
+    "op": "eq",
+    "value": "Past prostate cancer"
+   }
+  },
+  {
+   "id": "683872d24a2e8fbe239adb30",
+   "title": "Do it now or save for later?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Upload now",
+    "Skip for now"
+   ],
+   "section": "Please upload documentation related to your history, diagnosis, and/or treatment.",
+   "showWhen": {
+    "field": "683872d24a2e8fbe239adb1c",
+    "op": "eq",
+    "value": "Past prostate cancer"
+   }
+  },
+  {
+   "id": "683872d24a2e8fbe239adb29",
+   "title": "Weight (in pounds)",
+   "type": "number",
+   "required": true,
+   "section": "Please enter your height and weight"
+  },
+  {
+   "id": "683872d24a2e8fbe239adb28",
+   "title": "Height (in feet and inches)",
+   "type": "text",
+   "required": true,
+   "section": "Please enter your height and weight"
+  },
+  {
+   "id": "683872d24a2e8fbe239adb23",
+   "title": "What's your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb22",
+   "title": "Do you agree to receive SMS Communications from DirectCareAI?",
+   "type": "single",
+   "required": false,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb24",
+   "title": "Date of Birth",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb26",
+   "title": "Sex assigned at birth",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb2a",
+   "title": "Race",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "American Indian or Alaska Native",
+    "Asian",
+    "Black or African American",
+    "Native Hawaiian or Other Pacific Islander",
+    "White"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb2b",
+   "title": "Ethnicity",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hispanic or Latino",
+    "Not Hispanic or Latino"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb2c",
+   "title": "What is your address?",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb20",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Current, or suspected prostate cancer",
+    "Breast cancer",
+    "Other cancer (active diagnosis, active treatment, or in remission or cancer-free for less than 5 continuous years; does not apply to non-melanoma skin cancer that was considered cured via simple excision alone)",
+    "Untreated and/or severe heart failure or other heart disease",
+    "Uncontrolled blood pressure (average systolic/top number \u2265 160 or average diastolic/bottom number \u2265 100)",
+    "Hemoglobin > 18 g/dL, hematocrit > 50% (polycythemia) on prior lab tests or history of blood donation due to high blood counts",
+    "Untreated and/or severe sleep apnea",
+    "Desire to preserve fertility or have more children",
+    "Known hypersensitivity to testosterone, anastrozole, enclomiphene or any of its ingredients",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb1f",
+   "title": "Do any of the following conditions or situations apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Decreased sexual vigor and libido",
+    "Decreased energy or increased fatigue",
+    "Depressed mood or depression",
+    "Decreased muscle mass",
+    "Decreased body hair",
+    "Erectile dysfunction",
+    "Hot flashes",
+    "Low bone density",
+    "Poor sleep",
+    "Difficulty with focus/concentration",
+    "Weight gain",
+    "Joint pain",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb1c",
+   "title": "Do any of the following conditions or situations apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Past prostate cancer",
+    "Liver disease",
+    "Brain or pituitary (region of the brain) tumor",
+    "Uncontrolled adrenal disease",
+    "Uncontrolled thyroid disease",
+    "Blood pressure with upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99",
+    "Kidney disease",
+    "Elevated cholesterol levels",
+    "Controlled and treated heart failure or other heart disease",
+    "Controlled and treated sleep apnea",
+    "History of a blood clot",
+    "Testicular cancer",
+    "Estrogen-dependent tumor",
+    "Early puberty",
+    "Gynecomastia (breast enlargement in men due to benign or non-cancerous breast tissue growth)",
+    "Shrinking testicles or small testes",
+    "Signs and symptoms of an enlarged prostate (increased urination at night, trouble starting urinary stream, urinating many times daily, urinary urgency, inability to pass urine, or weak urine flow)",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb1b",
+   "title": "Do any of the following conditions or situations apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Low levels of testosterone on prior labs",
+    "Current or prior diagnosis of hypogonadism or low testosterone",
+    "Prior use of testosterone replacement therapy",
+    "Current use of testosterone replacement therapy",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb1a",
+   "title": "If you have previously been or currently are on testosterone (or related) replacement therapy, which form were or are you on?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Gel",
+    "Cream",
+    "Injection",
+    "Pellet",
+    "Pill",
+    "hCG (human chorionic gonadotropin)",
+    "Enclomiphene",
+    "Over the counter testosterone booster/supplement",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb19",
+   "title": "Please list the name, strength, and date of the last dose of testosterone (or related) replacement therapy. If you have never been on any of the above, please list \u2018N/A\u2019.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69407a67cc2b375ede2d0258",
+   "title": "Please select one of the following identify verification methods:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Driver\u2019s License",
+    "State ID",
+    "Passport"
+   ]
+  },
+  {
+   "id": "69407b0c5a48b9ad00518e55",
+   "title": "Please provide your Passport ID Number.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb18",
+   "title": "Please list your allergies to medications, dyes, foods, and any other substances.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb0f",
+   "title": "Please list your current prescription and over-the-counter medications",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb0b",
+   "title": "Please select your product preference.",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Testosterone Cypionate Injection + Anastrazole",
+    "Testosterone Oral + Anastrazole"
+   ]
+  },
+  {
+   "id": "683872d24a2e8fbe239adb08",
+   "title": "Please select your product preference.",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Testosterone Cypionate Injection + Anastrazole",
+    "Testosterone Oral + Anastrazole",
+    "Enclomiphene + Anastrazole"
+   ]
+  },
+  {
+   "id": "69407af794d53a6ce2b07c21",
+   "title": "Please provide your State ID Number.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "683872d24a2e8fbe239adb12",
+   "title": "Please provide details regarding your known hypersensitivity to testosterone, anastrozole, enclomiphene or any of its ingredients",
+   "type": "longtext",
+   "required": true,
+   "showWhen": {
+    "field": "683872d24a2e8fbe239adb20",
+    "op": "eq",
+    "value": "Known hypersensitivity to testosterone, anastrozole, enclomiphene or any of its ingredients"
+   }
+  },
+  {
+   "id": "683872d24a2e8fbe239adb11",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "all": [
+     {
+      "field": "683872d24a2e8fbe239adb2c",
+      "op": "eq",
+      "value": "NE"
+     },
+     {
+      "field": "Calculated: Age",
+      "op": "lt",
+      "value": "19"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb1f",
+      "op": "eq",
+      "value": "None of the above"
+     },
+     {
+      "all": [
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Desire to preserve fertility or have more children"
+       },
+       {
+        "any": [
+         {
+          "field": "683872d24a2e8fbe239adb1c",
+          "op": "eq",
+          "value": "Liver disease"
+         },
+         {
+          "field": "683872d24a2e8fbe239adb1c",
+          "op": "eq",
+          "value": "Brain or pituitary (region of the brain) tumor"
+         },
+         {
+          "field": "683872d24a2e8fbe239adb1c",
+          "op": "eq",
+          "value": "Uncontrolled adrenal disease"
+         },
+         {
+          "field": "683872d24a2e8fbe239adb1c",
+          "op": "eq",
+          "value": "Uncontrolled thyroid disease"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Current, or suspected prostate cancer"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Breast cancer"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Other cancer (active diagnosis, active treatment, or in remission or cancer-free for less than 5 continuous years; does not apply to non-melanoma skin cancer that was considered cured via simple excision alone)"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Untreated and/or severe heart failure or other heart disease"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Uncontrolled blood pressure (average systolic/top number \u2265 160 or average diastolic/bottom number \u2265 100)"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Hemoglobin > 18 g/dL, hematocrit > 50% (polycythemia) on prior lab tests or history of blood donation due to high blood counts"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb20",
+        "op": "eq",
+        "value": "Untreated and/or severe sleep apnea"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "18"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb26",
+        "op": "eq",
+        "value": "Female"
+       },
+       {
+        "field": "683872d24a2e8fbe239adb2c",
+        "op": "eq",
+        "value": "LA"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "Prostate Cancer Documentation Needed",
+   "when": {
+    "field": "683872d24a2e8fbe239adb30",
+    "op": "eq",
+    "value": "Skip for now"
+   }
+  },
+  {
+   "flag": "Passport ID",
+   "when": {
+    "field": "69407a67cc2b375ede2d0258",
+    "op": "eq",
+    "value": "Passport"
+   }
+  },
+  {
+   "flag": "TRT",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Liver disease"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Brain or pituitary (region of the brain) tumor"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Uncontrolled adrenal disease"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Uncontrolled thyroid disease"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "AL"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "CT"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "GA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "HI"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "LA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MN"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MO"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "NC"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "ND"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "OK"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "PA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "SC"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MA"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "Testosterone Cypionate Injection + Anastrazole",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb0b",
+      "op": "eq",
+      "value": "Testosterone Cypionate Injection + Anastrazole"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb08",
+      "op": "eq",
+      "value": "Testosterone Cypionate Injection + Anastrazole"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "Testosterone Oral + Anastrazole",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb0b",
+      "op": "eq",
+      "value": "Testosterone Oral + Anastrazole"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb08",
+      "op": "eq",
+      "value": "Testosterone Oral + Anastrazole"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "Enclomiphene",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb20",
+      "op": "eq",
+      "value": "Desire to preserve fertility or have more children"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "AL"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "CT"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "GA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "HI"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "LA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MN"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MO"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "NC"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "ND"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "OK"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "PA"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "SC"
+     },
+     {
+      "field": "State",
+      "op": "eq",
+      "value": "MA"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "Enclomiphene + Anastrazole",
+   "when": {
+    "field": "683872d24a2e8fbe239adb08",
+    "op": "eq",
+    "value": "Enclomiphene + Anastrazole"
+   }
+  },
+  {
+   "flag": "18-25",
+   "when": {
+    "all": [
+     {
+      "field": "Calculated: Age",
+      "op": "lt",
+      "value": "25"
+     },
+     {
+      "field": "Calculated: Age",
+      "op": "gt",
+      "value": "17"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Liver disease"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Brain or pituitary (region of the brain) tumor"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Uncontrolled adrenal disease"
+     },
+     {
+      "field": "683872d24a2e8fbe239adb1c",
+      "op": "eq",
+      "value": "Uncontrolled thyroid disease"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "State ID",
+   "when": {
+    "field": "69407a67cc2b375ede2d0258",
+    "op": "eq",
+    "value": "State ID"
+   }
+  }
+ ],
+ "products": [
+  {
+   "name": "Lab Order & Consultation",
+   "when": null,
+   "stripe": {
+    "product_id": "prod_SOyv0j78zWdS9n",
+    "name": "Initial Labs + Consult fee",
+    "confidence": 0.82,
+    "price_id": "price_1RUAxXGfVju1b2ft5rCXJrQ5",
+    "amount": 14000,
+    "currency": "usd",
+    "days": null,
+    "label": "$140"
+   }
+  }
+ ]
+}

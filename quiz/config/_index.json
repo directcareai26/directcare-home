@@ -1,0 +1,38 @@
+[
+ {
+  "slug": "ed",
+  "title": "ED / Surge Max",
+  "questions": 43,
+  "dqRules": 3
+ },
+ {
+  "slug": "trt",
+  "title": "TRT",
+  "questions": 29,
+  "dqRules": 13
+ },
+ {
+  "slug": "hrt",
+  "title": "HRT",
+  "questions": 49,
+  "dqRules": 10
+ },
+ {
+  "slug": "weight-loss",
+  "title": "Weight Loss",
+  "questions": 47,
+  "dqRules": 13
+ },
+ {
+  "slug": "mens-hair-loss",
+  "title": "Hair Loss (Men)",
+  "questions": 25,
+  "dqRules": 2
+ },
+ {
+  "slug": "womens-hair-loss",
+  "title": "Hair Loss (Women)",
+  "questions": 28,
+  "dqRules": 2
+ }
+]

@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap">
 <link rel="icon" href="/favicon.ico">
+<script src="/js/meta-match.js" defer></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -340,6 +341,14 @@ footer .tiny{max-width:78ch}
         answers: answerList };
       fetch('/api/quiz-submit', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
         .catch(function(){});
+      // advanced matching: identify first so the Lead carries the parameters,
+      // then fire once — dcaTrack sends browser + server with one event_id.
+      try {
+        if (window.dcaIdentify) window.dcaIdentify({
+          em: email, ph: (fd.get('phone')||'').trim(), fn: (fd.get('first_name')||'').trim(), country: 'us'
+        });
+        if (window.dcaTrack) window.dcaTrack('Lead');
+      } catch(_e) {}
       dl('lead_captured');
       document.getElementById('capture').classList.add('hide');
       window.startIntake();

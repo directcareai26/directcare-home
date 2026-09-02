@@ -1,0 +1,694 @@
+{
+ "slug": "womens-hair-loss",
+ "title": "Hair Loss (Women)",
+ "product": "Hair Loss",
+ "intro": "Let's find the right hair loss treatment for you",
+ "images": {
+  "hero": "/optimized/woman-tying-hair-up-confidently-1200.webp",
+  "mid": "/optimized/hair-part-close-up-deeper-skin-tone-for-diversity-800.webp"
+ },
+ "formId": "69c1e76a88e5800ffbb0c73e",
+ "questions": [
+  {
+   "id": "69c1e76b8aa752251af5c5b6",
+   "title": "",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b5",
+   "title": "What is your sex assigned at birth?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b4",
+   "title": "Race",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "American Indian or Alaska Native",
+    "Asian",
+    "Black or African American",
+    "Native Hawaiian or Other Pacific Islander",
+    "White"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b3",
+   "title": "What is your ethnicity?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hispanic or Latino",
+    "Not Hispanic or Latino"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5af",
+   "title": "What is your address?",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5ae",
+   "title": "",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5ad",
+   "title": "Please describe your hair loss symptoms.",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hair fall",
+    "Hair thinning",
+    "Widening of the part"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5aa",
+   "title": "",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Front",
+    "Top",
+    "Part Area",
+    "All over"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a9",
+   "title": "",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Mild",
+    "Moderate",
+    "Severe"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a8",
+   "title": "Have you previously tried any medication for your hair loss? If so, please list the name, dosage, frequency, timeline, and effectiveness.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a7",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Male sex",
+    "Age < 18 or \u2265 50 years old",
+    "Currently pregnant, possibly pregnant, or planning to become pregnant within the next year",
+    "Currently breastfeeding or bottle feeding with breastmilk",
+    "Kidney disease",
+    "Liver disease",
+    "Active cancer or chemotherapy regimen",
+    "Abnormal blood counts (e.g. anemia or low hemoglobin) or blood cancer",
+    "Gout",
+    "Chronic gastrointestinal condition that causes abdominal pain, nausea, vomiting, and/or diarrhea",
+    "Electrolyte abnormalities, including elevated potassium",
+    "Addison disease (low production of certain hormones by the adrenal gland)",
+    "Diabetes insipidus",
+    "Thyroid disease",
+    "Autoimmune conditions such as (but not limited to) lupus",
+    "Low blood pressure",
+    "Heart disease, such as heart attack, congestive heart failure, and heart rhythm problems (including but not limited to torsades de pointes, QT prolongation, and long QT syndrome)",
+    "Mental health condition that includes psychosis, delirium (altered mental status), uncontrolled depression or anxiety, or hair-pulling disorder",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a6",
+   "title": "Have you experienced any of the following with regard to your hair loss?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below (Select this answer to continue)",
+    "Severe dandruff",
+    "Sudden hair loss",
+    "Hair loss on any other part of your body other than your scalp",
+    "Thin band of hair loss along the front hairline",
+    "Pain, itching, burning, bumps, red rings, or other rashes on the scalp",
+    "Scalp psoriasis or scalp eczema",
+    "Patches of rough or scaly skin",
+    "Pustules, scarring, or crusting",
+    "Complete loss of hair in certain areas of the scalp"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a5",
+   "title": "Do you take any of the following medications?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Triamterene",
+    "Trimethoprim",
+    "Lithium",
+    "Cholestyramine",
+    "Arginine",
+    "ACE inhibitors like lisinopril, ramipril, or enalapril",
+    "Angiotensin receptor blockers (ARBs) like losartan or valsartan",
+    "NSAIDs like aspirin, ibuprofen, naproxen, Advil, Aleve, or Motrin",
+    "Eplerenone",
+    "Digoxin",
+    "Potassium supplements",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a4",
+   "title": "Please list your medical conditions.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a3",
+   "title": "Please list your current prescription medications, over the counter medications, and supplements, including name, dose, and frequency. Please also include any antibiotic use within the last 2 weeks.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a2",
+   "title": "Please list your medication allergies, including name of medication and reaction.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a1",
+   "title": "I understand that oral spironolactone and topical dutasteride can cause birth defects. I attest that I am not currently pregnant, possibly pregnant, or planning to become pregnant within the next year. Furthermore, I am not currently breastfeeding or bottle feeding with breastmilk. I also attest that if I am sexually active, I am either post-menopausal or using a consistent and reliable method of birth control. If I do become pregnant while taking these medications, I will stop taking them and consult a physician immediately. Finally, I understand that I may be given a medication that is off-label (approved by the FDA for a condition other than hair loss in women, but is being prescribed for hair loss in women based on current clinical evidence). Overall, I understand the risks associated with taking these medications.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I attest to the above",
+    "I do not attest to the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5a0",
+   "title": "Is there anything else that is relevant to this clinical condition that you would like to share with your clinician? Please do not share urgent symptoms or information since this is not monitored continuously",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c59f",
+   "title": "Please upload photos facing forward, of the top of your head, and of the side of your head to allow us to evaluate your hair loss more completely.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c59e",
+   "title": "Please select the product that you would like to purchase",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Minoxidil 2.5 mg tablets",
+    "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin (0.005%)",
+    "Minoxidil 5% foam"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c596",
+   "title": "You will need to book a synchronous visit before we can prescribe medications.",
+   "type": "info",
+   "required": false
+  },
+  {
+   "id": "69c1e76b8aa752251af5c59d",
+   "title": "Please select the product that you would like to purchase",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin (0.005%)",
+    "Minoxidil 5% foam"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c5a1",
+      "op": "eq",
+      "value": "I do not attest to the above"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Potassium supplements"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Triamterene"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Trimethoprim"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Lithium"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Cholestyramine"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Arginine"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "ACE inhibitors like lisinopril, ramipril, or enalapril"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Angiotensin receptor blockers (ARBs) like losartan or valsartan"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "NSAIDs like aspirin, ibuprofen, naproxen, Advil, Aleve, or Motrin"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Eplerenone"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Digoxin"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a5",
+      "op": "eq",
+      "value": "Potassium supplements"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b8",
+   "title": "What is your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b7",
+   "title": "Do you agree to receive SMS Communications from Direct Care AI?",
+   "type": "single",
+   "required": false,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b1",
+   "title": "Height (in feet and inches)",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c5b0",
+   "title": "Weight (in pounds)",
+   "type": "number",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c58e",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c58d",
+   "title": "Auto-Renewal Consent:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I agree"
+   ]
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c5ae",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5a9",
+      "op": "eq",
+      "value": "Severe"
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Male sex"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Age < 18 or \u2265 50 years old"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Currently pregnant, possibly pregnant, or planning to become pregnant within the next year"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Currently breastfeeding or bottle feeding with breastmilk"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Kidney disease"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Liver disease"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Active cancer or chemotherapy regimen"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Abnormal blood counts (e.g. anemia or low hemoglobin) or blood cancer"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Gout"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Chronic gastrointestinal condition that causes abdominal pain, nausea, vomiting, and/or diarrhea"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Electrolyte abnormalities, including elevated potassium"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Addison disease (low production of certain hormones by the adrenal gland)"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Diabetes insipidus"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Thyroid disease"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Autoimmune conditions such as (but not limited to) lupus"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Low blood pressure"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Heart disease, such as heart attack, congestive heart failure, and heart rhythm problems (including but not limited to torsades de pointes, QT prolongation, and long QT syndrome)"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a7",
+        "op": "eq",
+        "value": "Mental health condition that includes psychosis, delirium (altered mental status), uncontrolled depression or anxiety, or hair-pulling disorder"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Severe dandruff"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Sudden hair loss"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Hair loss on any other part of your body other than your scalp"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Thin band of hair loss along the front hairline"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Pain, itching, burning, bumps, red rings, or other rashes on the scalp"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Scalp psoriasis or scalp eczema"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Patches of rough or scaly skin"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Pustules, scarring, or crusting"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5a6",
+        "op": "eq",
+        "value": "Complete loss of hair in certain areas of the scalp"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "18"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c5b5",
+        "op": "eq",
+        "value": "Male"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "DC"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "MS"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "NM"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "WV"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "CO"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "HI"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "KY"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "MO"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "SC"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "UT"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "AK"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "KS"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c5af",
+      "op": "eq",
+      "value": "VA"
+     }
+    ]
+   }
+  }
+ ],
+ "products": [
+  {
+   "name": "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin (0.005%)",
+   "when": {
+    "field": "69c1e76b8aa752251af5c59e",
+    "op": "eq",
+    "value": "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin (0.005%)"
+   },
+   "stripe": {
+    "product_id": "prod_U89Oyt94jMp5cN",
+    "name": "Topical Female/Male: Minoxidil + Fluocinolone + Tretinoin",
+    "confidence": 1.0,
+    "price_id": "price_1T9t63GfVju1b2ftpjlVi5at",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Minoxidil 2.5 mg tablets",
+   "when": null,
+   "stripe": {
+    "product_id": "prod_U89XElPvJw1sdc",
+    "name": "Oral Female/Male: Minoxidil",
+    "confidence": 1.0,
+    "price_id": "price_1T9tElGfVju1b2ftibYbppfg",
+    "amount": 6500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$65 / 4 weeks"
+   }
+  },
+  {
+   "name": "Spironolactone 50 mg",
+   "when": {
+    "field": "69c1e76b8aa752251af5c59e",
+    "op": "eq",
+    "value": "Spironolactone 50 mg"
+   }
+  },
+  {
+   "name": "Spironolactone 100 mg",
+   "when": {
+    "field": "69c1e76b8aa752251af5c59e",
+    "op": "eq",
+    "value": "Spironolactone 100 mg"
+   }
+  },
+  {
+   "name": "Minoxidil 5% foam",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c59e",
+      "op": "eq",
+      "value": "Minoxidil 5% foam"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c59d",
+      "op": "eq",
+      "value": "Minoxidil 5% foam"
+     }
+    ]
+   },
+   "stripe": {
+    "product_id": "prod_U89WLFfvhZSWPT",
+    "name": "Topical Female/Male: Minoxidil",
+    "confidence": 1.0,
+    "price_id": "price_1T9tDPGfVju1b2ftXK8DCvyU",
+    "amount": 7500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$75 / 4 weeks"
+   }
+  }
+ ]
+}

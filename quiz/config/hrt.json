@@ -1,0 +1,1112 @@
+{
+ "slug": "hrt",
+ "title": "HRT",
+ "product": "Hormone Replacement",
+ "intro": "Let's find the right hormone therapy for you",
+ "images": {
+  "hero": "/optimized/firefly-a-woman-in-her-late-40s-perimenopausal-realistic-body-soft-middle-fuller-hips-re-411695-1200.webp",
+  "mid": "/optimized/firefly-gemini-flash-a-woman-in-her-late-50s-fit-but-age-realistic-slim-posture-upright-natural-face-w-411695-800.webp"
+ },
+ "formId": "69c1e89bf262d405b182c3fa",
+ "questions": [
+  {
+   "id": "69c1e89b2216878aa3e5634e",
+   "title": "Auto-Renewal Consent:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I agree"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e5634d",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56341",
+   "title": "Approximately when was the intrauterine device/IUD (e.g. Mirena) removed? If it has not been removed, please type - \u201cNot removed\u201d.",
+   "type": "text",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e5633c",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56340",
+   "title": "Approximately when was the injected (e.g. Depo-Provera) contraception last administered?",
+   "type": "text",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e5633c",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633f",
+   "title": "Approximately when was the implantable (e.g. Nexplanon) removed? If it has not been removed, please type - \u201cNot removed\u201d.",
+   "type": "text",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e5633c",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633e",
+   "title": "What type of hormone treatment are you currently taking or have recently stopped taking?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Oral contraceptive pills",
+    "Implanted contraception (e.g. Nexplanon)",
+    "Injectable contraception (e.g. Depo-Provera)",
+    "Intrauterine device (IUD) (e.g. Mirena)",
+    "Transdermal (patch) contraception",
+    "Oral hormone therapy",
+    "Topical hormone therapy (e.g. cream/gel/spray/patch)",
+    "Vaginal hormone therapy (e.g. ring/cream/tablet)",
+    "Testosterone therapy (e.g. injection/cream)"
+   ],
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e5633c",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56332",
+   "title": "Not being able to stop or control worrying.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 - Not at all",
+    "1 - Several days",
+    "2 - More than half the days",
+    "3 - Nearly every day"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56331",
+   "title": "Feeling nervous, anxious or on edge",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 - Not at all",
+    "1 - Several days",
+    "2 - More than half the days",
+    "3 - Nearly every day"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56330",
+   "title": "Feeling down, depressed, or hopeless.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 - Not at all",
+    "1 - Several days",
+    "2 - More than half the days",
+    "3 - Nearly every day"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5632f",
+   "title": "Little Interest or pleasure doing things",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 - Not at all",
+    "1- Several days",
+    "2- More than half the days",
+    "3- Nearly every day"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5632d",
+   "title": "When did anxiety symptoms start?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 to 2 years ago",
+    "More than 2 to less than 5 years ago",
+    "More than 5 to less than 10 years ago",
+    "More than 10 years ago"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5632c",
+   "title": "When did depression symptoms start?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0 to 2 years ago",
+    "More than 2 to less than 5 years ago",
+    "More than 5 to less than 10 years ago",
+    "More than 10 years ago"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56319",
+   "title": "Height (feet/inches)",
+   "type": "text",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69c1e89b2216878aa3e56318",
+   "title": "Weight (pounds)",
+   "type": "number",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69c1e89b2216878aa3e56315",
+   "title": "Do you agree to receive SMS Communications from Direct Care AI?",
+   "type": "single",
+   "required": false,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56314",
+   "title": "What is your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e56313",
+   "title": "Date of Birth",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e56312",
+   "title": "Preferred First Name",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e56317",
+   "title": "Sex Assigned at Birth",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e5631c",
+   "title": "Waist circumference (inches)(Optional)",
+   "type": "text",
+   "required": false
+  },
+  {
+   "id": "69c1e89b2216878aa3e5631d",
+   "title": "What is your address?",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e5631e",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Pregnant or possibly pregnant",
+    "Breastfeeding"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56320",
+   "title": "Do you have thoughts that you would be better off dead or of hurting yourself in some way?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56321",
+   "title": "How would you describe your menstrual cycle in the past year?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Regular",
+    "Irregular or unpredictable (e.g. too close together, skipping periods, or a change in duration or amount of flow)",
+    "No period in over a year",
+    "Changes (no periods) in menstrual cycle due to hysterectomy (removal of uterus)",
+    "Other vaginal discharge (with or without bleeding)"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56324",
+   "title": "If you are no longer having periods, how long has it been?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Less than 1 year",
+    "Greater than 1 year",
+    "Greater than 5 years",
+    "Greater than 10 years"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56321",
+      "op": "eq",
+      "value": "No period in over a year"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56321",
+      "op": "eq",
+      "value": "Changes (no periods) in menstrual cycle due to hysterectomy (removal of uterus)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56327",
+   "title": "Have you experienced any vaginal bleeding since your periods stopped?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56325",
+   "title": "Which of the following menopausal symptoms are you experiencing?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hot flashes",
+    "Night sweats",
+    "Vaginal issues (e.g. dryness)",
+    "Weight gain",
+    "Joint pain",
+    "Fatigue/tiredness",
+    "Trouble sleeping (insomnia)",
+    "Headaches",
+    "Rapid heartbeats (palpitations)",
+    "Bladder issues (e.g. reduced control or incontinence)",
+    "Painful sex",
+    "Low sexual desire (low libido)",
+    "Brain fog (i.e. concentration or memory issues)",
+    "Irritability",
+    "Depression",
+    "Anxiety",
+    "Mood swings",
+    "Skin issues (e.g. dry or itchy skin)",
+    "Facial acne",
+    "Hair loss",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56334",
+   "title": "Which of the following medical conditions have YOU (does not apply to your family history, which will be asked later) currently or previously been diagnosed with?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Unexplained episodes of post-menopausal bleeding (if you\u2019ve had no period in over a year)",
+    "Thyroid issues",
+    "Breast cancer",
+    "Diagnosis of atypical ductal hyperplasia on breast biopsy",
+    "Heart attack or blockage in the heart arteries (coronary artery disease)",
+    "Stroke or transient ischemic attack (TIA or \u201cmini-strokes\u201d)",
+    "Blood clot in legs or lungs",
+    "Positive BRCA 1/2 test (genetic test for cancer risk)",
+    "Blood in the stool and/or a diagnosis of colon cancer",
+    "Abnormal Pap smear and/or a diagnosis of cervical cancer",
+    "Migraine headaches with aura (e.g. ashing lights or blind spots)",
+    "Lupus (a type of autoimmune condition)",
+    "Endometrial cancer (cancer of the inner lining of the uterus)",
+    "Ovarian cancer",
+    "Pain or bulging/bloating in the pelvis",
+    "Unintentional weight loss of 5% or 10 pounds of body weight within the last 6-12 months without trying",
+    "Liver disease",
+    "Kidney disease",
+    "Insulin-dependent diabetes",
+    "Non-insulin-dependent diabetes (diabetes controlled with diet or medications other than insulin)",
+    "Elevated cholesterol",
+    "Elevated blood pressure (hypertension)",
+    "Osteoporosis (low bone density)",
+    "Polycystic Ovarian Syndrome (PCOS)",
+    "Elevated hemoglobin/hematocrit",
+    "Untreated and/or severe sleep apnea",
+    "Thalassemia"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56337",
+   "title": "Which of the following medical conditions has your FIRST-DEGREE FAMILY MEMBER (biological parents, siblings) currently or previously been diagnosed with?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Breast cancer",
+    "Diagnosis of atypical ductal hyperplasia on breast biopsy",
+    "Heart attack or blockage in the heart arteries (coronary artery disease)",
+    "Stroke or transient ischemic attack (TIA or \u201cmini-strokes\u201d)",
+    "Blood clot in legs or lungs",
+    "Positive BRCA 1/2 test (genetic test for cancer risk)",
+    "Unexplained episodes of post-menopausal bleeding (if you\u2019ve had no period in over a year)",
+    "Endometrial cancer (cancer of the inner lining of the uterus)",
+    "Ovarian cancer",
+    "Sickle cell disease or trait",
+    "Thalassemia",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56338",
+   "title": "When was your last mammogram?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Within the last 2 years",
+    "2 or more years ago",
+    "I have never had a mammogram"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633a",
+   "title": "Do you currently use nicotine products?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e56338",
+    "op": "eq",
+    "value": "I have never had a mammogram"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633c",
+   "title": "Are you currently taking (or have stopped taking within the last 90 days) any hormonal birth control or menopausal hormone treatment?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633d",
+   "title": "Do any of the following apply to you?:",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Had a hysterectomy (surgical removal of uterus)",
+    "Have a single ovary",
+    "Do not have ovaries",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56343",
+   "title": "Please provide details, including dates, for any of the above situations.",
+   "type": "text",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e5633d",
+    "op": "ne",
+    "value": "None of the above"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56342",
+   "title": "Please list any major surgeries (including dates) you have had.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e56344",
+   "title": "Are you currently taking any Selective Serotonin Reuptake Inhibitors (SSRIs) or Serotonin Norepinephrine Reuptake Inhibitors (SNRIs), such as escitalopram (Lexapro), sertraline (Zoloft), paroxetine (Paxil), uoxetine (Prozac), or venlafaxine (Effexor)?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56346",
+   "title": "Please list the name and dose of the SSRI/SNRI that you are currently taking.",
+   "type": "text",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e56344",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56345",
+   "title": "Please list your current medications and supplements, including any medications taken for anxiety or depression.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e5630c",
+   "title": "Please list your medication allergies. Please also include any allergies to substances such as peanuts or adhesives",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e89b2216878aa3e56333",
+   "title": "If eligible and assuming no contraindications, which of the following treatments are you interested in?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Oral hormone therapy",
+    "Transdermal (via the skin) hormone therapy (e.g. gel/patch)",
+    "Vaginal hormone therapy (e.g. ring/cream/tablet)",
+    "Oral non-hormone therapy (e.g. Paxil/paroxetine)",
+    "Testosterone",
+    "None of the above",
+    "I don\u2019t know"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56359",
+   "title": "If eligible for both systemic [oral pill, transdermal (via the skin) gel, or skin patch] and local (vaginal cream or suppository) treatment, are you interested in being prescribed both forms of treatment?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56349",
+   "title": "You will need to book a synchronous visit before we can prescribe medications.",
+   "type": "info",
+   "required": false
+  },
+  {
+   "id": "69c1e89b2216878aa3e56339",
+   "title": "What were the results of your last mammogram?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Normal",
+    "I had another visit for additional views or testing (e.g. ultrasound), but was told everything was normal",
+    "Abnormal"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e5633b",
+   "title": "Please provide any details on the abnormal mammogram",
+   "type": "longtext",
+   "required": true,
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e56339",
+    "op": "eq",
+    "value": "Abnormal"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56335",
+   "title": "What has your approximate average blood pressure (either with or without blood pressure medication) been over the past 3 months?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Upper number (systolic) between \u2264 120 and 139; lower number (diastolic) between \u2264 80 and 89",
+    "Upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99",
+    "Upper number (systolic) \u2265 160; lower number (diastolic) \u2265 100"
+   ],
+   "showWhen": {
+    "field": "69c1e89b2216878aa3e56334",
+    "op": "eq",
+    "value": "Elevated blood pressure (hypertension)"
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56326",
+   "title": "What was the approximate date of your last menstrual period (LMP)?",
+   "type": "date",
+   "required": true,
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56324",
+      "op": "eq",
+      "value": "Less than 1 year"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56324",
+      "op": "eq",
+      "value": "Greater than 1 year"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e56323",
+   "title": "If you have had periods in the last year, how many would you approximate?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "1-2 periods",
+    "3-5 periods",
+    "6-12 periods",
+    "More than 12"
+   ]
+  },
+  {
+   "id": "69c1e89b2216878aa3e56310",
+   "title": "Over the last 2 weeks, how often have you been bothered by any of the following problems:",
+   "type": "info",
+   "required": false,
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69c1e89b2216878aa3e5630f",
+   "title": "Over the last 2 weeks, how often have you been bothered by the following problems",
+   "type": "info",
+   "required": false,
+   "showWhen": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Depression"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Anxiety"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "Mood swings"
+     }
+    ]
+   }
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "35"
+       },
+       {
+        "field": "69c1e89b2216878aa3e56317",
+        "op": "eq",
+        "value": "Male"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e89b2216878aa3e5631e",
+        "op": "eq",
+        "value": "Pregnant or possibly pregnant"
+       },
+       {
+        "field": "69c1e89b2216878aa3e5631e",
+        "op": "eq",
+        "value": "Breastfeeding"
+       }
+      ]
+     },
+     {
+      "field": "69c1e89b2216878aa3e56325",
+      "op": "eq",
+      "value": "None of the above"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "field": "69c1e89b2216878aa3e56320",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "field": "69c1e89b2216878aa3e56327",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "flag": "no_oral_estradiol",
+   "when": {
+    "any": [
+     {
+      "any": [
+       {
+        "field": "69c1e89b2216878aa3e56334",
+        "op": "eq",
+        "value": "Thyroid issues"
+       },
+       {
+        "field": "69c1e89b2216878aa3e5633a",
+        "op": "eq",
+        "value": "Yes"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e89b2216878aa3e56334",
+        "op": "eq",
+        "value": "Thyroid issues"
+       },
+       {
+        "field": "69c1e89b2216878aa3e5633a",
+        "op": "eq",
+        "value": "Yes"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Insulin-dependent diabetes"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56335",
+      "op": "eq",
+      "value": "Upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56335",
+      "op": "eq",
+      "value": "Upper number (systolic) \u2265 160; lower number (diastolic) \u2265 100"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "DC"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "MS"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "NM"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "WV"
+     },
+     {
+      "field": "69c1e89b2216878aa3e5631d",
+      "op": "eq",
+      "value": "KS"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "no_SSRIs_or_SNRIs",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56344",
+      "op": "eq",
+      "value": "Yes"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56344",
+      "op": "eq",
+      "value": "Yes"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "no_desvenlafaxine",
+   "when": {
+    "any": [
+     {
+      "any": [
+       {
+        "field": "69c1e89b2216878aa3e56335",
+        "op": "eq",
+        "value": "Upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99"
+       },
+       {
+        "field": "69c1e89b2216878aa3e56335",
+        "op": "eq",
+        "value": "Upper number (systolic) \u2265 160; lower number (diastolic) \u2265 100"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e89b2216878aa3e56335",
+        "op": "eq",
+        "value": "Upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99"
+       },
+       {
+        "field": "69c1e89b2216878aa3e56335",
+        "op": "eq",
+        "value": "Upper number (systolic) \u2265 160; lower number (diastolic) \u2265 100"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "no_systemic_estradiol",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e89b2216878aa3e56324",
+      "op": "eq",
+      "value": "Greater than 10 years"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Breast cancer"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Diagnosis of atypical ductal hyperplasia on breast biopsy"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Heart attack or blockage in the heart arteries (coronary artery disease)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Stroke or transient ischemic attack (TIA or \u201cmini-strokes\u201d)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Blood clot in legs or lungs"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Positive BRCA 1/2 test (genetic test for cancer risk)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Blood in the stool and/or a diagnosis of colon cancer"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Abnormal Pap smear and/or a diagnosis of cervical cancer"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Migraine headaches with aura (e.g. flashing lights or blind spots)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Lupus (a type of autoimmune condition)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Endometrial cancer (cancer of the inner lining of the uterus)"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Ovarian cancer"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Pain or bulging/bloating in the pelvis"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Unintentional weight loss of 5% or 10 pounds of body weight within the last 6-12 months without trying"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Liver disease"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56334",
+      "op": "eq",
+      "value": "Insulin-dependent diabetes"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56335",
+      "op": "eq",
+      "value": "Upper number (systolic) between 140 and 159; lower number (diastolic) between 90 and 99"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56335",
+      "op": "eq",
+      "value": "Upper number (systolic) \u2265 160; lower number (diastolic) \u2265 100"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56338",
+      "op": "eq",
+      "value": "2 or more years ago"
+     },
+     {
+      "field": "69c1e89b2216878aa3e56338",
+      "op": "eq",
+      "value": "I have never had a mammogram"
+     },
+     {
+      "field": "Calculated: Age",
+      "op": "eq",
+      "value": "66"
+     },
+     {
+      "field": "Calculated: Age",
+      "op": "gt",
+      "value": "66"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "no_systemic_estradiol",
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "eq",
+        "value": "35"
+       },
+       {
+        "field": "Calculated: Age",
+        "op": "gt",
+        "value": "35"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "eq",
+        "value": "39"
+       },
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "39"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "field": "69c1e89b2216878aa3e56334",
+    "op": "eq",
+    "value": "Unexplained episodes of post-menopausal bleeding (if you\u2019ve had no period in over a year)"
+   }
+  }
+ ],
+ "products": []
+}

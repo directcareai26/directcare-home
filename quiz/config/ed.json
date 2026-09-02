@@ -1,0 +1,1535 @@
+{
+ "slug": "ed",
+ "title": "ED / Surge Max",
+ "product": "Surge Max",
+ "intro": "Let's find the right ED treatment for you",
+ "images": {
+  "hero": "/optimized/sexual-health-lifestyleimage-1200.webp",
+  "mid": "/optimized/firefly-a-man-in-his-mid-50s-fit-but-age-realistic-slim-posture-upright-not-a-fitness-mod-411695-800.webp"
+ },
+ "formId": "6a91c05fa9cb082abb340d5e",
+ "questions": [
+  {
+   "id": "6a357b1862f8aaa47da706ad",
+   "title": "What is your date of birth?",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da706ac",
+   "title": "Sex Assigned at Birth",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a9",
+   "title": "What is your address",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a5",
+   "title": "It is important to note that clinicians can only make decisions based on the information provided to them. To that end, it is critical that the details provided and questions answered (for example, medication history) are complete and accurate. Do you agree to answer all questions completely and accurately?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a3",
+   "title": "Do you ever have a problem getting or maintaining an erection that\u2019s hard and satisfying enough for sex?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Every time",
+    "More than half the time",
+    "Occasionally",
+    "Rarely",
+    "Never"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a2",
+   "title": "When masturbating, does your erection remain hard as long as you would like?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes, always",
+    "Sometimes",
+    "Rarely",
+    "Never"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a1",
+   "title": "Do you sometimes have spontaneous night time and morning erections?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da706ae",
+   "title": "I agree that I will discuss the symptoms outlined here and other health concerns with my primary care clinician.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70690",
+   "title": "Have you been diagnosed with high blood pressure (hypertension) low (hypotension) blood pressure?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "No",
+    "Yes"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7068f",
+   "title": "Do you currently have, or have you ever had, any of the following?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "You have been advised by a clinician not to have sex (for any reason)",
+    "A prior heart attack or heart failure in the past 6 months",
+    "Any clotting or bleeding disorder",
+    "Stroke or severe insufficiency of the autonomous nervous system",
+    "Severe low blood pressure",
+    "Sickle cell anemia, myeloma, or leukemia",
+    "Retinitis pigmentosa or anterior ischemic optic neuropathy",
+    "Idiopathic hypertrophic subaortic sclerosis",
+    "Pulmonary hypertension",
+    "Severe migraines",
+    "Severe depression",
+    "Hallucinations, mania, schizophrenia, psychosis, or bipolar disorder",
+    "Low blood pressure, dizziness, or fainting upon standing from a seated or reclined position, also known as orthostatic hypotension",
+    "Parkinson\u2019s disease or dopamine-related movement disorders",
+    "Low sodium levels",
+    "No, I have never had any of these conditions"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7068b",
+   "title": "Do any of the following conditions apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "A marked curve or bend in the penis that interferes with sex or Peyronie\u2019s disease",
+    "Foreskin that is too tight",
+    "Prolonged erections lasting longer than four hours",
+    "Fibrous tissue in the penis (lumps and bumps under the skin that feels hard)",
+    "Pain with erections or with ejaculation",
+    "No, I do not have any of these conditions"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7068a",
+   "title": "Do you currently have, or have you ever had, any of the following?:",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Surgery or radiation to the prostate or pelvis",
+    "Multiple sclerosis (MS) or similar disease, spinal injuries or paralysis, or neurological diseases",
+    "Kidney transplant or any condition affecting the kidney",
+    "Liver disease characterized by abnormal liver labs (liver function tests)",
+    "Stomach, intestinal or bowel ulcers",
+    "Prostate or bladder cancer",
+    "Heart arrhythmias (including A-Fib) which is an abnormal beating of the heart",
+    "Inflammatory bowel disease such as Crohn\u2019s or ulcerative colitis",
+    "Any acquired congenital or developmental abnormalities of the heart including heart murmurs",
+    "No, I have never had any of these conditions"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70689",
+   "title": "Do you have any of the following cardiovascular risk factors?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "High cholesterol",
+    "My father had a heart attack or heart disease at 55 years or younger",
+    "My mother had a heart attack or heart disease at 65 years or younger",
+    "Diabetes or pre-diabetes",
+    "High blood pressure",
+    "None"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70688",
+   "title": "Do any of the following symptoms apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Abnormal heart beats or heart rhythm - rapid, irregular, unusually slow (fewer than 50 beats/minute)",
+    "Severe cramping or pain in the calves or thighs with exercise (claudication)",
+    "Any unexplained fainting, dizziness or lightheadedness",
+    "Chest pain (angina) or shortness of breath while walking up 2 flights of stairs",
+    "None apply to me"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70685",
+   "title": "In the past 6 months, have you used any of these recreational drugs?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Methamphetamines or amphetamines (crystal meth)",
+    "Amyl Nitrate or Butyl Nitrate",
+    "Cocaine",
+    "Poppers or Rush",
+    "Molly (MDMA, ecstasy)",
+    "Other drug, prescription medication not prescribed by a clinician, or prescription medicine not used in the way it was written by a clinician",
+    "No, I have not used any of these drugs in the past 6 months"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70684",
+   "title": "Do you have a known medication allergy to sildenafil/Viagra, tadalafil/Cialis, vardenafil/Levitra, or avanafil/Stendra?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "No",
+    "Yes"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70680",
+   "title": "Do you have any other allergies (medications, foods, dyes, etc)?",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da7067f",
+   "title": "Please list your current medications (prescription and over-the-counter) and supplements?",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da7067d",
+   "title": "Do you have any further information which you would like the doctor to know? Please do not include urgent or emergent medical information here, as this is not reviewed immediately.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da70687",
+   "title": "In the past 3 months, what was your hemoglobin A1C value? If you don\u2019t know, please indicate that below.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Less than 7%",
+    "7% - 7.9%",
+    "8% - 8.9%",
+    "Greater than 9%",
+    "I don\u2019t remember or I haven\u2019t had it measured in the last 3 months"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da70689",
+    "op": "eq",
+    "value": "Diabetes or pre-diabetes"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069f",
+   "title": "Please list approximate dates or lengths of time (in days/months/years) that you have tried any of the above medications. Please include doses.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a7",
+   "title": "What's your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "6a357b1862f8aaa47da706a6",
+   "title": "Do you agree to receive SMS Communications from Direct Care AI?",
+   "type": "single",
+   "required": false,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069e",
+   "title": "Which of the following treatments have you tried?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Viagra (sildenafil)",
+    "Cialis (tadalafil)",
+    "Levitra (vardenafil)",
+    "Staxyn (vardenafil)",
+    "Stendra (avanafil)",
+    "A medication or supplement which is not listed here",
+    "Treatment such as penile surgery, penile injections, penile vacuum pump, or prosthesis",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069d",
+   "title": "For Viagra, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "Viagra (sildenafil)"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069c",
+   "title": "For Cialis, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "Cialis (tadalafil)"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069b",
+   "title": "For Levitra, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "Levitra (vardenafil)"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7069a",
+   "title": "For Staxyn, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "Staxyn (vardenafil)"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70699",
+   "title": "For Stendra, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "Stendra (avanafil)"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70698",
+   "title": "For your other medication or supplement, please choose the level of effectiveness:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Ineffective",
+    "Mildly effective",
+    "Moderately effective",
+    "Fully effective"
+   ],
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da7069e",
+    "op": "eq",
+    "value": "A medication or supplement which is not listed here"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70696",
+   "title": "Did Viagra cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Viagra (sildenafil)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70695",
+   "title": "Did Cialis cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Cialis (tadalafil)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70694",
+   "title": "Did Levitra cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Levitra (vardenafil)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70693",
+   "title": "Did Staxyn cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Staxyn (vardenafil)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70692",
+   "title": "Did Stendra cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Stendra (avanafil)"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70691",
+   "title": "Did your other medication or supplement cause any of the below reactions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)",
+    "Heart attack, stroke, or heart rhythm disorder",
+    "Severely low blood pressure (less than 90 over 50)",
+    "Internal bleeding (brain, lung, retina, or other area)",
+    "Vision or hearing changes or loss",
+    "Seizures",
+    "Persistent or painful erection lasting more than 4 hours",
+    "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count",
+    "Headache",
+    "Upset stomach",
+    "Skin flushing or mild skin rash",
+    "Trouble sleeping",
+    "Muscle aches",
+    "Runny nose or sinus congestion",
+    "Numbness or tingling of extremities",
+    "None of the above"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7069d",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069c",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069b",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da7069a",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70699",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "6a357b1862f8aaa47da70698",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "A medication or supplement which is not listed here"
+     }
+    ]
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7068d",
+   "title": "Systolic",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Under 90",
+    "91 - 119",
+    "120 - 139",
+    "140 - 149",
+    "150-159",
+    "Over 160",
+    "I don\u2019t know"
+   ],
+   "section": "In what range has your blood pressure reading been within the past 3-6 months?",
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da70690",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da7068c",
+   "title": "Diastolic",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Under 50",
+    "51 - 70",
+    "71 - 80",
+    "81 - 90",
+    "Over 90",
+    "I don\u2019t know"
+   ],
+   "section": "In what range has your blood pressure reading been within the past 3-6 months?",
+   "showWhen": {
+    "field": "6a357b1862f8aaa47da70690",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "6a357b1862f8aaa47da70683",
+   "title": "Do you use any of the following?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Any medicine containing nitrates except nitroglycerin under the tongue (such as BiDil, isosorbide dinitrate, Imdur, Ismo, Isordil, Monoket, nitroprusside, Nipride, nitroglycerin patch/ointment, Nitro-Bid, Nitro-Dur)",
+    "Supplements that boost nitric oxide",
+    "Nitroglycerin under the tongue (spray or tablet)",
+    "Adempas (riociguat), which is used to treat pulmonary hypertension",
+    "Any alpha blocker",
+    "Isosorbide mononitrate or isosorbide dinitrate",
+    "Ritonavir or any HIV protease inhibitor",
+    "Dopamine agonist or antagonist medications",
+    "Serotonin receptor antagonists such as ondansetron (Zofran) to treat nausea/vomiting",
+    "Any benzodiazepines",
+    "Any opioids",
+    "Any sedative hypnotic sleep medications such as zolpidem or eszopiclone",
+    "More than 2 alcoholic drinks per day on average",
+    "No, I have never used any of these"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70682",
+   "title": "In the past 2 weeks, how often have you used nitroglycerin under the tongue?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Zero times",
+    "1 time",
+    "2 or more times",
+    "I don\u2019t know"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da70681",
+   "title": "When was the last time you had your alpha blocker dose adjusted?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Less than 4 weeks ago",
+    "4 weeks or more ago",
+    "I don\u2019t know"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7067b",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  },
+  {
+   "id": "6a357b1862f8aaa47da7067a",
+   "title": "Auto-Renewal Consent:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I agree"
+   ]
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "6a357b1862f8aaa47da706a5",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a3",
+      "op": "eq",
+      "value": "Never"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a2",
+      "op": "eq",
+      "value": "Yes, always"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7069e",
+      "op": "eq",
+      "value": "Treatment such as penile surgery, penile injections, penile vacuum pump, or prosthesis"
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70696",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70695",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70694",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours "
+       },
+       {
+        "field": "6a357b1862f8aaa47da70693",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70692",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Severe allergic reaction (\u201canaphylaxis\u201d symptoms may include rash, wheezing, lip/tongue/throat swelling, shortness of breath, nausea/vomiting/diarrhea, flushing, dizziness/fainting, heart attack, or seizures)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Heart attack, stroke, or heart rhythm disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Severely low blood pressure (less than 90 over 50)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Internal bleeding (brain, lung, retina, or other area)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Vision or hearing changes or loss"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Seizures"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Persistent or painful erection lasting more than 4 hours"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70691",
+        "op": "eq",
+        "value": "Reduced white or red (low hemoglobin or \u201canemia\u201d) blood cell count"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7068d",
+        "op": "eq",
+        "value": "Under 90"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068d",
+        "op": "eq",
+        "value": "Over 160"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068d",
+        "op": "eq",
+        "value": "I don\u2019t know"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068c",
+        "op": "eq",
+        "value": "Under 50"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068c",
+        "op": "eq",
+        "value": "Over 90"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068c",
+        "op": "eq",
+        "value": "I don\u2019t know"
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068b",
+      "op": "ne",
+      "value": "No, I do not have any of these conditions"
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da70689",
+        "op": "eq",
+        "value": "My father had a heart attack or heart disease at 55 years or younger"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70689",
+        "op": "eq",
+        "value": "My mother had a heart attack or heart disease at 65 years or younger"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da70687",
+        "op": "eq",
+        "value": "Greater than 9%"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70687",
+        "op": "eq",
+        "value": "I don\u2019t remember or I haven\u2019t had it measured in the last 3 months"
+       }
+      ]
+     },
+     {
+      "field": "6a357b1862f8aaa47da70688",
+      "op": "ne",
+      "value": "None apply to me"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70685",
+      "op": "ne",
+      "value": "No, I have not used any of these drugs in the past 6 months"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70684",
+      "op": "eq",
+      "value": "Yes"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068a",
+      "op": "ne",
+      "value": "No, I have never had any of these conditions"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706ae",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "You have been advised by a clinician not to have sex (for any reason)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "A prior heart attack or heart failure in the past 6 months"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Any clotting or bleeding disorder"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Stroke or severe insufficiency of the autonomous nervous system"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Severe low blood pressure"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Sickle cell anemia, myeloma, or leukemia"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Retinitis pigmentosa or anterior ischemic optic neuropathy"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Idiopathic hypertrophic subaortic sclerosis"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Pulmonary hypertension"
+       },
+       {
+        "field": "6a357b1862f8aaa47da7068f",
+        "op": "eq",
+        "value": "Low blood pressure, dizziness, or fainting upon standing from a seated or reclined position, also known as orthostatic hypotension"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da70683",
+        "op": "eq",
+        "value": "Any medicine containing nitrates except nitroglycerin under the tongue (such as BiDil, isosorbide dinitrate, Imdur, Ismo, Isordil, Monoket, nitroprusside, Nipride, nitroglycerin patch/ointment, Nitro-Bid, Nitro-Dur)"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70683",
+        "op": "eq",
+        "value": "Supplements that boost nitric oxide"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70683",
+        "op": "eq",
+        "value": "Adempas (riociguat), which is used to treat pulmonary hypertension"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70683",
+        "op": "eq",
+        "value": "Isosorbide mononitrate or isosorbide dinitrate"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70682",
+        "op": "eq",
+        "value": "2 or more times"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70682",
+        "op": "eq",
+        "value": "I don\u2019t know"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70681",
+        "op": "eq",
+        "value": "Less than 4 weeks ago"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70681",
+        "op": "eq",
+        "value": "I don\u2019t know"
+       },
+       {
+        "field": "6a357b1862f8aaa47da70683",
+        "op": "eq",
+        "value": "Ritonavir or any HIV protease inhibitor"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "6a357b1862f8aaa47da706ac",
+        "op": "eq",
+        "value": "Female"
+       },
+       {
+        "field": "6a357b1862f8aaa47da706a9",
+        "op": "eq",
+        "value": "ND"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "21"
+       },
+       {
+        "field": "Calculated: Age",
+        "op": "gt",
+        "value": "85"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "no_apomorphine",
+   "when": {
+    "any": [
+     {
+      "field": "6a357b1862f8aaa47da7068f",
+      "op": "eq",
+      "value": "Hallucinations, mania, schizophrenia, psychosis, or bipolar disorder"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068f",
+      "op": "eq",
+      "value": "Parkinson\u2019s disease or dopamine-related movement disorders"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "Dopamine agonist or antagonist medications"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "Serotonin receptor antagonists such as ondansetron (Zofran) to treat nausea/vomiting"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "Any benzodiazepines"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "Any opioids"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "Any sedative hypnotic sleep medications such as zolpidem or eszopiclone"
+     },
+     {
+      "field": "6a357b1862f8aaa47da70683",
+      "op": "eq",
+      "value": "More than 2 alcoholic drinks per day on average (men)"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068d",
+      "op": "eq",
+      "value": "91 - 119"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068c",
+      "op": "eq",
+      "value": "51 - 70"
+     },
+     {
+      "field": "6a357b1862f8aaa47da7068f",
+      "op": "eq",
+      "value": "Severe depression"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "any": [
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "DC"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "MS"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "NM"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "WV"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "CO"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "HI"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "KY"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "MO"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "SC"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "UT"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "AK"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "KS"
+     },
+     {
+      "field": "6a357b1862f8aaa47da706a9",
+      "op": "eq",
+      "value": "VA"
+     }
+    ]
+   }
+  }
+ ],
+ "products": []
+}

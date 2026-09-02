@@ -1,0 +1,131 @@
+/* DirectCare AI — quiz engine. Brand tokens per DCA mandate. */
+:root{
+  --plum:#241432; --purple:#6d28d9; --accent:#a855f7;
+  --page:#faf9fb; --card:#fff; --border:#e5e1ea; --border-sel:#6d28d9;
+  --text:#1a1024; --text-2:#6b6478; --on-brand:#fff;
+  --success:#16a34a; --caution:#b45309;
+  --r-sm:8px; --r-md:12px; --r-lg:16px; --r-pill:999px;
+  --maxw:640px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body.dca-quiz{
+  background:var(--page); color:var(--text);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing:antialiased; line-height:1.5;
+}
+.q-shell{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}
+.q-top{position:sticky;top:0;z-index:5;background:var(--page);padding:16px 24px 12px}
+.q-top-in{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:16px}
+.q-back{background:none;border:0;padding:6px;margin:-6px;cursor:pointer;color:var(--text-2);
+  font-size:22px;line-height:1;border-radius:var(--r-sm)}
+.q-back:hover{color:var(--text)}
+.q-back[hidden]{visibility:hidden;display:block}
+.q-bar{flex:1;height:6px;background:var(--border);border-radius:var(--r-pill);overflow:hidden}
+.q-bar>i{display:block;height:100%;width:0;background:var(--purple);
+  border-radius:var(--r-pill);transition:width .32s cubic-bezier(.4,0,.2,1)}
+.q-main{flex:1;padding:24px 24px 140px}
+.q-wrap{max-width:var(--maxw);margin:0 auto}
+.q-step{font-size:13px;font-weight:500;color:var(--text-2);margin:0 0 10px;letter-spacing:.2px}
+.q-title{font-size:30px;line-height:1.25;font-weight:700;margin:0 0 10px;letter-spacing:-.4px}
+.q-help{font-size:16px;color:var(--text-2);margin:0 0 20px}
+.q-opts{display:flex;flex-direction:column;gap:10px;margin:20px 0 0}
+.q-opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;
+  background:var(--card);border:1px solid var(--border);border-radius:var(--r-md);
+  padding:17px 20px;font:inherit;font-size:16px;color:var(--text);cursor:pointer;
+  transition:border-color .14s,box-shadow .14s,background .14s}
+.q-opt:hover{border-color:#c9bde0}
+.q-opt[aria-checked="true"]{border-color:var(--border-sel);border-width:2px;padding:16px 19px;
+  background:#faf7ff}
+.q-mark{flex:0 0 24px;height:24px;border:1.5px solid var(--border);position:relative}
+.q-opt[data-multi="0"] .q-mark{border-radius:50%;order:2;margin-left:auto}
+.q-opt[data-multi="1"] .q-mark{border-radius:6px;order:0}
+.q-opt[aria-checked="true"] .q-mark{border-color:var(--purple)}
+.q-opt[data-multi="0"][aria-checked="true"] .q-mark{border-width:7px}
+.q-opt[data-multi="1"][aria-checked="true"] .q-mark{background:var(--purple)}
+.q-opt[data-multi="1"][aria-checked="true"] .q-mark::after{
+  content:"";position:absolute;left:8px;top:3px;width:6px;height:12px;
+  border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.q-opt-label{flex:1}
+.q-field{width:100%;background:var(--card);border:1px solid var(--border);
+  border-radius:var(--r-md);padding:17px 20px;font:inherit;font-size:16px;color:var(--text)}
+.q-field:focus{outline:none;border-color:var(--purple);box-shadow:0 0 0 3px rgba(109,40,217,.12)}
+textarea.q-field{min-height:132px;resize:vertical}
+.q-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.q-grid .q-span{grid-column:1/-1}
+.q-foot{position:fixed;left:0;right:0;bottom:0;padding:16px 24px calc(16px + env(safe-area-inset-bottom));
+  background:linear-gradient(to top,var(--page) 62%,rgba(250,249,251,0));}
+.q-foot-in{max-width:var(--maxw);margin:0 auto}
+.q-cta{width:100%;border:0;border-radius:var(--r-pill);padding:18px 32px;
+  font:inherit;font-size:16px;font-weight:600;color:var(--on-brand);
+  background:var(--purple);cursor:pointer;transition:opacity .15s,transform .06s}
+.q-cta:hover:not(:disabled){opacity:.92}
+.q-cta:active:not(:disabled){transform:translateY(1px)}
+.q-cta:disabled{background:var(--border);color:var(--text-2);cursor:not-allowed}
+.q-legal{font-size:13px;color:var(--text-2);margin:14px 0 0;text-align:center}
+.q-eyebrow{font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;
+  margin:0 0 12px;color:var(--purple)}
+.q-eyebrow.ok{color:var(--success)} .q-eyebrow.warn{color:var(--caution)}
+.q-card{background:var(--card);border-radius:var(--r-lg);padding:24px;margin:20px 0}
+.q-card.brand{background:var(--plum);color:#fff}
+.q-card.brand .q-eyebrow{color:var(--accent)}
+.q-card h3{margin:0 0 8px;font-size:22px}
+.q-card ul{margin:10px 0 0;padding-left:20px} .q-card li{margin-bottom:6px}
+.q-alert{font-size:14px;font-weight:500;color:var(--caution);margin-top:16px}
+.q-spin{width:44px;height:44px;border:3px solid var(--border);border-top-color:var(--purple);
+  border-radius:50%;animation:qspin .8s linear infinite;margin:40px auto}
+@keyframes qspin{to{transform:rotate(360deg)}}
+.q-center{text-align:center;padding-top:14vh}
+@media(min-width:768px){
+  .q-main{padding:48px 24px 160px}
+  .q-title{font-size:34px}
+  .q-top{padding:24px 24px 16px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.q-card .q-price{margin:2px 0 0;font-size:15px;font-weight:600;opacity:.92}
+.q-card.brand .q-price{color:var(--accent)}
+
+/* ---------- engagement layer: imagery, trust, interstitials ---------- */
+.q-hero{width:100%;max-width:var(--maxw);aspect-ratio:16/9;object-fit:cover;
+  border-radius:var(--r-lg);display:block;margin:0 0 22px;background:var(--border)}
+.q-trust{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.q-trust li{display:flex;align-items:center;gap:6px;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--r-pill);
+  padding:7px 14px;font-size:13px;font-weight:500;color:var(--text-2)}
+.q-trust li::before{content:"";width:6px;height:6px;border-radius:50%;
+  background:var(--success);flex:0 0 6px}
+.q-clin{display:flex;align-items:center;gap:14px;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--r-md);padding:14px 16px;margin:18px 0 0}
+.q-clin img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:0 0 52px;
+  background:var(--border)}
+.q-clin .q-clin-t{font-size:14px;font-weight:600;margin:0 0 2px;line-height:1.3}
+.q-clin .q-clin-s{font-size:13px;color:var(--text-2);margin:0;line-height:1.4}
+.q-inter{text-align:center;animation:qfade .34s ease both}
+.q-inter img{width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover;
+  border-radius:var(--r-lg);margin:0 auto 26px;display:block;background:var(--border)}
+.q-inter .q-title{font-size:29px}
+.q-inter .q-help{max-width:520px;margin-left:auto;margin-right:auto}
+.q-tick{display:inline-flex;align-items:center;justify-content:center;
+  width:56px;height:56px;border-radius:50%;background:var(--success);margin:0 auto 18px}
+.q-tick::after{content:"";width:14px;height:26px;border:solid #fff;
+  border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-3px)}
+@keyframes qfade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.q-section{font-size:13px;font-weight:600;color:var(--purple);letter-spacing:.4px;
+  text-transform:uppercase;margin:0 0 6px}
+@media(prefers-reduced-motion:reduce){.q-inter{animation:none}}
+
+/* ---------- brand mark ---------- */
+.q-logo{display:block;max-width:var(--maxw);margin:0 auto 14px;line-height:0}
+.q-logo img{height:26px;width:auto;display:block}
+@media(min-width:768px){.q-logo img{height:30px}}
+
+/* Very narrow phones (iPhone SE, 320px): side-by-side name fields get too
+   cramped to read their own placeholders, so stack them. */
+@media(max-width:359px){
+  .q-grid{grid-template-columns:1fr}
+  .q-title{font-size:26px}
+  .q-inter .q-title{font-size:24px}
+  .q-opt{padding:15px 16px;font-size:15px}
+  .q-main{padding:20px 18px 132px}
+  .q-top,.q-foot{padding-left:18px;padding-right:18px}
+}

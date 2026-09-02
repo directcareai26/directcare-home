@@ -53,6 +53,7 @@ def head(title, desc, variant, dark=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap">
 <link rel="icon" href="/favicon.ico">
+<script src="/js/meta-match.js" defer></script>
 {GTM}
 <style>{css(dark)}</style>
 </head>
@@ -305,6 +306,14 @@ def sticky_and_js(variant, first_q_id="quizTop"):
         answers: answerList }};
       fetch('/api/quiz-submit', {{method:'POST', headers:{{'Content-Type':'application/json'}}, body:JSON.stringify(body)}})
         .catch(function(){{}});
+      // advanced matching: identify first so the Lead carries the parameters,
+      // then fire once — dcaTrack sends browser + server with one event_id.
+      try {{
+        if (window.dcaIdentify) window.dcaIdentify({{
+          em: email, ph: (fd.get('phone')||'').trim(), fn: (fd.get('first_name')||'').trim(), country: 'us'
+        }});
+        if (window.dcaTrack) window.dcaTrack('Lead');
+      }} catch(_e) {{}}
       dl('lead_captured');
       document.getElementById('capture').classList.add('hide');
       window.startIntake();

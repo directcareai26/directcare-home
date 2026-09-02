@@ -1,0 +1,1076 @@
+{
+ "slug": "weight-loss",
+ "title": "Weight Loss",
+ "product": "Medical Weight Loss",
+ "intro": "Let's find the right weight loss treatment for you",
+ "images": {
+  "hero": "/optimized/weight-loss-lifestyleimage-1200.webp",
+  "mid": "/optimized/glp-1-nutrition-800.webp"
+ },
+ "formId": "69bb46e1daa89ddd6544007c",
+ "questions": [
+  {
+   "id": "69bb46e2940faea2e37d3d37",
+   "title": "Auto-Renewal Consent:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I agree"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d32",
+   "title": "Do it now or save for later?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Skip for now",
+    "Complete now"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d30",
+   "title": "Do it now or save for later?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Skip for now",
+    "Complete now"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d2c",
+   "title": "Please do not include urgent or emergency medical information here, as this is not reviewed immediately.",
+   "type": "longtext",
+   "required": false
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d2b",
+   "title": "Is there any further information which you would like the doctor to know?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d25",
+   "title": "Please provide brief details about your previous weight management program(s).",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d24",
+   "title": "Which of the following lifestyle factors apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "I have attempted to lose weight in a weight management program before, such as through caloric restriction, exercise, or behavior modification.",
+    "I am willing to reduce my caloric intake alongside medication, if clinically appropriate.",
+    "I am willing to increase my physical activity alongside medication, if clinically appropriate.",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d20",
+   "title": "Please list your current prescription and over the counter medications, including name, dose, and frequency.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d17",
+   "title": "Please upload a picture of your current GLP-1 medication pen or vial.",
+   "type": "text",
+   "required": true,
+   "section": "Please upload a picture of your current GLP-1 medication pen or vial."
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d16",
+   "title": "Do it now or save for later?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Skip for now",
+    "Upload now"
+   ],
+   "section": "Please upload a picture of your current GLP-1 medication pen or vial."
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d15",
+   "title": "Do it now or save for later?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Skip for now",
+    "Complete now"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d11",
+   "title": "Do any of these health conditions or situations apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Inflammatory bowel disease or IBD (Crohn\u2019s disease, ulcerative colitis, etc)",
+    "Bariatric or abdominal/pelvic surgery within the past 1 year",
+    "Low sodium levels or a diagnosis of SIADH (syndrome of inappropriate antidiuretic hormone secretion)",
+    "Ongoing chronic use of opiate pain medications",
+    "Personal history of thyroid cancer (other than medullary thyroid carcinoma)"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d04",
+   "title": "Unfortunately - based on your responses, your are ineligible to continue.",
+   "type": "info",
+   "required": false
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d0f",
+   "title": "Weight (in pounds)",
+   "type": "number",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d0e",
+   "title": "Height (in feet and inches)",
+   "type": "text",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d08",
+   "title": "Do you agree to receive SMS Communications from Direct Care AI?",
+   "type": "multi",
+   "required": false,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d07",
+   "title": "What's your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d09",
+   "title": "What is your date of birth?",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d0a",
+   "title": "",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d0b",
+   "title": "What is your race?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "American Indian or Alaska Native",
+    "Asian",
+    "Black or African American",
+    "Native Hawaiian or Other Pacific Islander",
+    "White"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d0c",
+   "title": "What is your ethnicity?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Hispanic or Latino",
+    "Not Hispanic or Latino"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d10",
+   "title": "What is your address?",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d05",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Severe kidney disease (on or about to be on dialysis)",
+    "Severe liver disease (cirrhosis)",
+    "Current or prior eating disorder",
+    "Current suicidal thoughts and/or prior suicidal attempt",
+    "Cancer (active diagnosis, active treatment, or in remission or cancer-free for less than 5 continuous years; does not apply to non-melanoma skin cancer that was considered cured via simple excision alone)",
+    "History of organ transplant on anti-rejection medication",
+    "Severe gastrointestinal condition (gastroparesis, blockage, bowel resection, etc)",
+    "Currently untreated/unmonitored opioid, alcohol (including binge drinking), or substance use disorder/dependence",
+    "Personal or family history of medullary thyroid cancer or multiple endocrine neoplasia syndrome type 2",
+    "Type 2 diabetes on insulin or with an A1c greater than 10%",
+    "Type 1 diabetes",
+    "Diabetic retinopathy (diabetic eye disease), damage to the optic nerve from trauma or reduced blood flow, macular degeneration, or blindness",
+    "Use of the blood thinner warfarin (Coumadin/Jantoven)",
+    "History of or current pancreatitis",
+    "Use of street drugs or any prescription medication without a valid prescription",
+    "Heart attack or stroke in the past 1 year",
+    "Untreated Hypothyroidism"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d12",
+   "title": "",
+   "type": "single",
+   "required": true,
+   "options": [
+    "No",
+    "Yes, I currently take or have recently (within the last 1 month) taken a GLP-1 medication for weight loss",
+    "Yes, I currently take or have recently (within the last 1 month) taken another (non-GLP-1) medication for weight loss",
+    "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d33",
+   "title": "Unfortunately - based on your responses, you are ineligible to continue.",
+   "type": "info",
+   "required": false
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d31",
+   "title": "Please list the name, dose, frequency, and timeline of your weight loss medication(s).",
+   "type": "longtext",
+   "required": true,
+   "showWhen": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: BMI",
+        "op": "eq",
+        "value": "25"
+       },
+       {
+        "field": "Calculated: BMI",
+        "op": "gt",
+        "value": "25"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d21",
+   "title": "Have you had prior bariatric (weight loss) surgery?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d23",
+   "title": "Please list all your prior bariatric (weight loss), abdominal, and pelvic surgeries. Please include date range and type of surgery.",
+   "type": "longtext",
+   "required": true,
+   "showWhen": {
+    "field": "69bb46e2940faea2e37d3d21",
+    "op": "eq",
+    "value": "Yes"
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d26",
+   "title": "What is your current or average blood pressure range?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "<120/80 (Normal)",
+    "120-129/<80 (Elevated)",
+    "130-139/80-89 (High Stage 1)",
+    "\u2265140/90 (High Stage 2)",
+    "\u2265160/100"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d27",
+   "title": "What is your current or average resting heart rate range?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "<60 beats per minute (Slow)",
+    "60-100 beats per minute (Normal)",
+    "101-110 beats per minute (Slightly Fast)",
+    ">110 beats per minute (Fast)"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d39",
+   "title": "If you are eligible, we take your specific situation into account while determining your medication formulation. To help with this, please select all of the following formulation options that you are interested in:",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "May help maintain muscle mass",
+    "Does not require injections",
+    "May help manage side effects such as nausea/vomiting",
+    "May assist with aging and longevity (cellular/DNA damage, immune system dysfunction, etc)",
+    "May assist with improving cognitive function and mental clarity",
+    "May assist with maintaining energy levels",
+    "May assist with insulin resistance and hormonal status",
+    "May assist with improving sleep quality",
+    "I\u2019m not sure - I\u2019d like to discuss formulation options with a clinician via a live virtual consult"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3ce2",
+   "title": "Which product would you like to purchase?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Injectable Tirzepatide ($339.00)",
+    "Zepbound ($1399.00)"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d13",
+   "title": "Please list the name, dose, frequency, and timeline of your weight loss medication(s).",
+   "type": "longtext",
+   "required": true,
+   "showWhen": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "Yes, I currently take or have recently (within the last 1 month) taken a GLP-1 medication for weight loss"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "Yes, I currently take or have recently (within the last 1 month) taken another (non-GLP-1) medication for weight loss"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d19",
+   "title": "What was your starting weight in pounds (lbs)",
+   "type": "number",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d1a",
+   "title": "What is your current weight in pounds (lbs)?",
+   "type": "number",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d1b",
+   "title": "Do you agree to only obtain weight loss medication through this platform moving forward?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d1c",
+   "title": "When was your last dose of medication?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "0-5 days",
+    "6-10 days",
+    "11-14 days",
+    "More than 2 weeks ago but within the last 4 weeks",
+    "More than 4 weeks ago"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3d1d",
+   "title": "If your last dose of GLP-1 medication was greater than 4 weeks ago, please note that we restart the dose at level 1 (the lowest dose) of medication.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "Yes, I currently take or have recently (within the last 1 month) taken a GLP-1 medication for weight loss"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "Yes, I currently take or have recently (within the last 1 month) taken a GLP-1 medication for weight loss"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d1c",
+      "op": "eq",
+      "value": "More than 4 weeks ago"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cf7",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cf6",
+   "title": "Do any of these health conditions or situations apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Elevated prolactin levels",
+    "Elevated IGF-1 (insulin-like growth factor) levels",
+    "Gallbladder disease",
+    "Kidney disease",
+    "QT prolongation or other heart rhythm disorder",
+    "Constipation",
+    "Hyperemesis gravidarum (nausea/vomiting in pregnancy)"
+   ]
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cf4",
+   "title": "Please list your medication allergies, including name and reaction.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cf2",
+   "title": "Please include the date range, name, dose, and frequency of opiate pain medications.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cf0",
+   "title": "Upload Torso Selfie (Optional)",
+   "type": "text",
+   "required": false
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cee",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Currently or possibly pregnant, or actively trying to become pregnant",
+    "Breastfeeding or bottle-feeding with breastmilk",
+    "Have given birth to a child within the last 6 months requires clearance prior to GLP-1 prescription"
+   ],
+   "showWhen": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3d0a",
+      "op": "eq",
+      "value": "Female"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d05",
+      "op": "eq",
+      "value": "None of the below"
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3cec",
+   "title": "Do any of the following weight-related medical conditions apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Coronary artery disease",
+    "Congestive heart failure",
+    "Hypertension (high blood pressure)",
+    "Sleep apnea",
+    "Prediabetes",
+    "Type 2 diabetes (not on insulin)",
+    "High cholesterol or triglycerides",
+    "Acid reflux",
+    "Asthma/reactive airway disease",
+    "Urinary stress incontinence",
+    "Polycystic ovarian syndrome",
+    "Clinically proven low testosterone (male hypogonadism)",
+    "Osteoarthritis",
+    "Liver disease, including fatty liver",
+    "Treated and controlled hypothyroidism"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+     },
+     {
+      "all": [
+       {
+        "field": "69bb46e2940faea2e37d3d12",
+        "op": "eq",
+        "value": "No"
+       },
+       {
+        "any": [
+         {
+          "field": "Calculated: BMI",
+          "op": "eq",
+          "value": "25"
+         },
+         {
+          "field": "Calculated: BMI",
+          "op": "gt",
+          "value": "25"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3ceb",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "None of the below",
+    "Active or frequent chest pain or shortness of breath",
+    "Hospitalization for heart disease in the past 1 year",
+    "Multiple dose or medication increases for heart disease in the past 1 year",
+    "Heart disease not managed by a physician such as a cardiologist or a primary care physician"
+   ],
+   "showWhen": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+     },
+     {
+      "all": [
+       {
+        "field": "69bb46e2940faea2e37d3d12",
+        "op": "eq",
+        "value": "No"
+       },
+       {
+        "any": [
+         {
+          "field": "Calculated: BMI",
+          "op": "eq",
+          "value": "25"
+         },
+         {
+          "field": "Calculated: BMI",
+          "op": "gt",
+          "value": "25"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "69bb46e2940faea2e37d3ce4",
+   "title": "Has your gallbladder been surgically removed?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d1d",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d1b",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "18"
+       },
+       {
+        "field": "Calculated: Age",
+        "op": "gt",
+        "value": "75"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d10",
+        "op": "eq",
+        "value": "LA"
+       },
+       {
+        "field": "Calculated: BMI",
+        "op": "lt",
+        "value": "22"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "Type 2 diabetes (on insulin)"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "Type 1 diabetes"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "Diabetic retinopathy (diabetic eye disease), damage to the optic nerve from trauma or reduced blood flow, or blindness"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "Use of the blood thinner warfarin (Coumadin/Jantoven)"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "History of or current pancreatitis"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d11",
+        "op": "eq",
+        "value": "Personal or family history of thyroid cyst/nodule, thyroid cancer, medullary thyroid carcinoma, or multiple endocrine neoplasia syndrome type 2"
+       }
+      ]
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d05",
+      "op": "ne",
+      "value": "None of the below"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d26",
+      "op": "eq",
+      "value": "\u2265160/100"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d27",
+      "op": "eq",
+      "value": ">110 beats per minute (Fast)"
+     },
+     {
+      "all": [
+       {
+        "field": "69bb46e2940faea2e37d3ceb",
+        "op": "ne",
+        "value": "None of the below"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3ceb",
+        "op": "exists",
+        "value": true
+       }
+      ]
+     },
+     {
+      "all": [
+       {
+        "field": "69bb46e2940faea2e37d3ce4",
+        "op": "exists",
+        "value": true
+       },
+       {
+        "field": "69bb46e2940faea2e37d3ce4",
+        "op": "eq",
+        "value": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "field": "69bb46e2940faea2e37d3d05",
+    "op": "eq",
+    "value": "Current suicidal thoughts and/or prior suicidal attempt"
+   }
+  },
+  {
+   "flag": "support_follow_up_tier_2",
+   "when": {
+    "field": "69bb46e2940faea2e37d3d11",
+    "op": "ne",
+    "value": "None of the below"
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago"
+     },
+     {
+      "field": "Calculated: BMI",
+      "op": "lt",
+      "value": "25"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3d12",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "field": "Calculated: BMI",
+      "op": "lt",
+      "value": "25"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "support_follow_up",
+   "when": {
+    "field": "69bb46e2940faea2e37d3cf4",
+    "op": "eq",
+    "value": "Skip for Now"
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "all": [
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "eq",
+        "value": "65"
+       },
+       {
+        "field": "Calculated: Age",
+        "op": "gt",
+        "value": "65"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69bb46e2940faea2e37d3cf6",
+        "op": "eq",
+        "value": "Kidney disease"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3cec",
+        "op": "eq",
+        "value": "Type 2 diabetes (not on insulin)"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3cec",
+        "op": "eq",
+        "value": "Liver disease, including fatty liver"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "any": [
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "DC"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "MS"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "NM"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "WV"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "LA"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d39",
+      "op": "eq",
+      "value": "I\u2019m not sure - I\u2019d like to discuss formulation options with a clinician via a live virtual consult"
+     },
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "KS"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3cec",
+      "op": "eq",
+      "value": "None of the below"
+     },
+     {
+      "field": "Calculated: BMI",
+      "op": "lt",
+      "value": "27"
+     },
+     {
+      "any": [
+       {
+        "field": "69bb46e2940faea2e37d3d12",
+        "op": "eq",
+        "value": "No, I have taken medication(s) for weight loss before but it was over 1 month ago (BMI must be \u2265 25 with a weight-related comorbidity or otherwise \u2265 27 to be eligible)"
+       },
+       {
+        "field": "69bb46e2940faea2e37d3d12",
+        "op": "eq",
+        "value": "No"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "support_follow_up",
+   "when": {
+    "field": "69bb46e2940faea2e37d3d20",
+    "op": "eq",
+    "value": "Skip for Now"
+   }
+  },
+  {
+   "flag": "support_follow_up",
+   "when": {
+    "field": "69bb46e2940faea2e37d3d16",
+    "op": "eq",
+    "value": "Skip for now"
+   }
+  },
+  {
+   "flag": "DQ",
+   "when": {
+    "all": [
+     {
+      "field": "69bb46e2940faea2e37d3d10",
+      "op": "eq",
+      "value": "NE"
+     },
+     {
+      "field": "Calculated: Age",
+      "op": "lt",
+      "value": "19"
+     }
+    ]
+   }
+  },
+  {
+   "flag": "torso_uploaded",
+   "when": {
+    "field": "69bb46e2940faea2e37d3cf0",
+    "op": "exists",
+    "value": true
+   }
+  }
+ ],
+ "products": [
+  {
+   "name": "Oral Tirzepatide",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "eq",
+    "value": "Oral Tirzepatide"
+   },
+   "stripe": {
+    "product_id": "prod_UGLYkz0f727z7m",
+    "name": "Personalized Care \u2013 Oral Contains Tirzepatide",
+    "confidence": 1.0,
+    "price_id": "price_1THorkGfVju1b2ft2k7asylr",
+    "amount": 33900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$339 / 4 weeks"
+   }
+  },
+  {
+   "name": "Injectable Tirzepatide",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "contains",
+    "value": "Injectable Tirzepatide"
+   },
+   "stripe": {
+    "product_id": "prod_UGLaEXwaLFMFB7",
+    "name": "Personalized Care \u2013 Injection Contains Tirzepatide",
+    "confidence": 1.0,
+    "price_id": "price_1THothGfVju1b2ft9CJhwPnm",
+    "amount": 33900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$339 / 4 weeks"
+   }
+  },
+  {
+   "name": "Injectable Semaglutide",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "contains",
+    "value": "Injectable Semaglutide"
+   },
+   "stripe": {
+    "product_id": "prod_U8Z7HGwNdszq5z",
+    "name": "Personalized Care \u2013 Injection Contains Semaglutide",
+    "confidence": 1.0,
+    "price_id": "price_1TAHzFGfVju1b2ftf51wok7F",
+    "amount": 24900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$249 / 4 weeks"
+   }
+  },
+  {
+   "name": "Oral Semaglutide",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "contains",
+    "value": "Oral Semaglutide"
+   },
+   "stripe": {
+    "product_id": "prod_U8Z9LdYEK2xlT1",
+    "name": "Personalized Care \u2013 Oral Contains Semaglutide",
+    "confidence": 1.0,
+    "price_id": "price_1TAI0kGfVju1b2ftrF7ZbQwK",
+    "amount": 27900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$279 / 4 weeks"
+   }
+  },
+  {
+   "name": "Zepbound",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "contains",
+    "value": "Zepbound"
+   },
+   "stripe": {
+    "product_id": "prod_U8Z92O9f1xT53C",
+    "name": "Zepbound",
+    "confidence": 1.0,
+    "price_id": "price_1TAI1SGfVju1b2ftUOYhvxbk",
+    "amount": 139900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$1,399 / 4 weeks"
+   }
+  },
+  {
+   "name": "Ozempic",
+   "when": {
+    "field": "69bb46e2940faea2e37d3ce2",
+    "op": "contains",
+    "value": "Ozempic"
+   },
+   "stripe": {
+    "product_id": "prod_U8Z9nWLVwRBOVB",
+    "name": "Ozempic",
+    "confidence": 1.0,
+    "price_id": "price_1TAI17GfVju1b2ftz0MTVu6t",
+    "amount": 129900,
+    "currency": "usd",
+    "days": 28,
+    "label": "$1,299 / 4 weeks"
+   }
+  }
+ ]
+}

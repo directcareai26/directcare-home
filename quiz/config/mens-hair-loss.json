@@ -1,0 +1,587 @@
+{
+ "slug": "mens-hair-loss",
+ "title": "Hair Loss (Men)",
+ "product": "Hair Loss",
+ "intro": "Let's find the right hair loss treatment for you",
+ "images": {
+  "hero": "/optimized/hair-regrowth-lifestyleimage-1200.webp",
+  "mid": "/optimized/hair-part-close-up-light-skin-800.webp"
+ },
+ "formId": "69c1e76a88e5800ffbb0c73b",
+ "questions": [
+  {
+   "id": "69c74d78126f48940371ba91",
+   "title": "Weight (in pounds)",
+   "type": "number",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69c74d78126f48940371ba90",
+   "title": "Height (in feet and inches)",
+   "type": "text",
+   "required": true,
+   "section": "What is your height and weight?"
+  },
+  {
+   "id": "69c1e76b8aa752251af5c54f",
+   "title": "Please provide more details.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c54e",
+   "title": "Do you have any known medication allergies or intolerances, including finasteride or topical minoxidil?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c54b",
+   "title": "Do you accept our Telehealth Consent, Terms of Service, and Privacy Policy?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "I accept"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c53a",
+   "title": "Date of Birth",
+   "type": "date",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c539",
+   "title": "What is your sex assigned at birth?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Male",
+    "Female"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c53f",
+   "title": "What is your address?",
+   "type": "address",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c542",
+   "title": "It is important to note that clinicians can only make decisions based on the information provided to them. To that end, it is critical that the details provided and questions answered (for example, medication history) are complete and accurate. Do you agree to answer all questions completely and accurately?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c543",
+   "title": "What best describes your hair?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Receding hairline",
+    "Thinning at the crown",
+    "Overall hair loss / thinning",
+    "Patchy with some odd hair loss all over my scalp",
+    "Full head of hair"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c544",
+   "title": "What sort of results are you looking for?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Regrow hair",
+    "Prevent further hair loss",
+    "Both regrowth and prevention"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c545",
+   "title": "When did you first notice your hair loss?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "In the last month",
+    "In the last 6 months to a year",
+    "Over a year ago"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c546",
+   "title": "Have you experienced any of the following symptoms on your scalp?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Severe dandruff",
+    "Sudden hair loss",
+    "Pain, itching, burning, or bumps on the scalp",
+    "Red rings or other rashes on the scalp",
+    "A diagnosis of scalp psoriasis or scalp eczema",
+    "Scarring",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c547",
+   "title": "Have you ever been diagnosed with prostate cancer or benign prostatic hyperplasia (BPH)? This includes prostate enlargement, a weak stream, feeling an urgent need to urinate, or diminished urinary flow.",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c538",
+   "title": "Do any of the following apply to you?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hepatic (liver) impairment",
+    "Suffering from depression or anxiety",
+    "Erectile dysfunction",
+    "Macular degeneration",
+    "Losing body hair or hair from any area other than your head",
+    "Low blood pressure (\u201chypotension\u201d)",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c548",
+   "title": "Do you have any of the following medical conditions?",
+   "type": "multi",
+   "required": true,
+   "options": [
+    "Hypertension (high blood pressure)",
+    "Pulmonary (lung) hypertension",
+    "Diabetes (high blood sugar)",
+    "Hyperlipidemia (high cholesterol)",
+    "Hypothyroidism (low thyroid function)",
+    "Heart disease, such as heart attack, congestive heart failure, and heart rhythm problems (including but not limited to torsades de pointes, QT prolongation, and long QT syndrome)",
+    "Stroke",
+    "Abnormal blood counts (e.g. anemia or low hemoglobin)",
+    "Pheochromocytoma",
+    "None of the above"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c549",
+   "title": "Please upload photos of hair loss from 3 different angles.",
+   "type": "text",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c555",
+   "title": "Do you have any further information which you would like the doctor to know? Please do not include urgent or emergent medical information here, as this is not reviewed immediately.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c56b2ec553f2f3e0cb9bb7",
+   "title": "Please select which product(s) you would like to purchase:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Finasteride 0.1% + Minoxidil 7% + Tretinoin 0.025%",
+    "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin 0.005%",
+    "Dutasteride 0.1% + Minoxidil 5% + Tretinoin 0.025%",
+    "Minoxidil 5% foam spray",
+    "Finasteride 1 mg tablets",
+    "Minoxidil 1mg + Finasteride 1mg + Biotin 25mg + Nutrients 100 mg",
+    "Minoxidil 2.5 mg tablets",
+    "Biotin 10,000 mcg supplement",
+    "Shampoo: Ketoconazole 2%"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c552",
+   "title": "Before completing your order you will need to have a synchronous Telehealth appointment with a provider. After clicking next you will be taken to a booking page to schedule your visit.",
+   "type": "info",
+   "required": false
+  },
+  {
+   "id": "69c1e76b8aa752251af5c53d",
+   "title": "Do you agree to receive SMS Communications from Direct Care AI?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "YES, I agree to receive SMS communications"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c53c",
+   "title": "What's your phone number?",
+   "type": "phone",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c536",
+   "title": "Are you taking any prescription, over-the-counter medications or supplements?",
+   "type": "single",
+   "required": true,
+   "options": [
+    "Yes",
+    "No"
+   ]
+  },
+  {
+   "id": "69c1e76b8aa752251af5c535",
+   "title": "Please provide more details.",
+   "type": "longtext",
+   "required": true
+  },
+  {
+   "id": "69c1e76b8aa752251af5c532",
+   "title": "Auto-Renewal Consent:",
+   "type": "single",
+   "required": true,
+   "options": [
+    "I agree"
+   ]
+  }
+ ],
+ "dqRules": [
+  {
+   "flag": "DQ",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c542",
+      "op": "eq",
+      "value": "No"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c546",
+      "op": "ne",
+      "value": "None of the above"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c547",
+      "op": "eq",
+      "value": "Yes"
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e76b8aa752251af5c548",
+        "op": "eq",
+        "value": "Hepatic (liver) impairment"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c548",
+        "op": "eq",
+        "value": "Suffering from depression or anxiety"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e76b8aa752251af5c543",
+        "op": "eq",
+        "value": "Full head of hair"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c543",
+        "op": "eq",
+        "value": "Patchy with some odd hair loss all over my scalp"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "69c1e76b8aa752251af5c538",
+        "op": "eq",
+        "value": "Hepatic (liver) impairment"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c538",
+        "op": "eq",
+        "value": "Suffering from depression or anxiety"
+       }
+      ]
+     },
+     {
+      "any": [
+       {
+        "field": "Calculated: Age",
+        "op": "lt",
+        "value": "18"
+       },
+       {
+        "field": "69c1e76b8aa752251af5c539",
+        "op": "eq",
+        "value": "Female"
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "flag": "sync_visit",
+   "when": {
+    "any": [
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "AR"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "DC"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "DE"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "MS"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "NM"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "RI"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "WV"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "CO"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "HI"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "KY"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "MO"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "SC"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "UT"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "AK"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "KS"
+     },
+     {
+      "field": "69c1e76b8aa752251af5c53f",
+      "op": "eq",
+      "value": "VA"
+     }
+    ]
+   }
+  }
+ ],
+ "products": [
+  {
+   "name": "Minoxidil 5% foam spray & Finasteride 1 mg tablets",
+   "when": null,
+   "stripe": {
+    "product_id": "prod_U89SN9xBq66ywR",
+    "name": "Topical + Oral Combo Male: Minoxidil + Finasteride",
+    "confidence": 1.0,
+    "price_id": "price_1T9t9RGfVju1b2ftbTQJok1r",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Shampoo: Ketoconazole 2%",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Shampoo: Ketoconazole 2%"
+   },
+   "stripe": {
+    "product_id": "prod_U89Z9iQVMb0Rd5",
+    "name": "Shampoo: Ketoconazole 2%",
+    "confidence": 1.0,
+    "price_id": "price_1T9tG7GfVju1b2ftX1ftTdui",
+    "amount": 3500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$35 / 4 weeks"
+   }
+  },
+  {
+   "name": "Finasteride 0.1% + Minoxidil 7% + Tretinoin 0.025%",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Finasteride 0.1% + Minoxidil 7% + Tretinoin 0.025%"
+   },
+   "stripe": {
+    "product_id": "prod_U89NyQ4sWsScvt",
+    "name": "Topical Male: Finasteride + Minoxidil + Tretinoin",
+    "confidence": 1.0,
+    "price_id": "price_1T9t4SGfVju1b2ftHAjD8mbl",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin 0.005%",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Minoxidil 5% + Fluocinolone 0.01% + Tretinoin 0.005%"
+   },
+   "stripe": {
+    "product_id": "prod_U89Oyt94jMp5cN",
+    "name": "Topical Female/Male: Minoxidil + Fluocinolone + Tretinoin",
+    "confidence": 1.0,
+    "price_id": "price_1T9t63GfVju1b2ftpjlVi5at",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Dutasteride 0.1% + Minoxidil 5% + Tretinoin 0.025%",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Dutasteride 0.1% + Minoxidil 5% + Tretinoin 0.025%"
+   },
+   "stripe": {
+    "product_id": "prod_U89QerpdjQBfJM",
+    "name": "Topical Male/Female: Dutasteride + Minoxidil + Tretinoin",
+    "confidence": 1.0,
+    "price_id": "price_1T9t7dGfVju1b2ft6nfdWe52",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Minoxidil 5% foam spray",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Minoxidil 5% foam spray"
+   },
+   "stripe": {
+    "product_id": "prod_U89WLFfvhZSWPT",
+    "name": "Topical Female/Male: Minoxidil",
+    "confidence": 1.0,
+    "price_id": "price_1T9tDPGfVju1b2ftXK8DCvyU",
+    "amount": 7500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$75 / 4 weeks"
+   }
+  },
+  {
+   "name": "Finasteride 1 mg tablets",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Finasteride 1 mg tablets"
+   },
+   "stripe": {
+    "product_id": "prod_U89SN9xBq66ywR",
+    "name": "Topical + Oral Combo Male: Minoxidil + Finasteride",
+    "confidence": 0.75,
+    "price_id": "price_1T9t9RGfVju1b2ftbTQJok1r",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Minoxidil 1mg + Finasteride 1mg + Biotin 25mg + Nutrients 100 mg",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Minoxidil 1mg + Finasteride 1mg + Biotin 25mg + Nutrients 100 mg"
+   },
+   "stripe": {
+    "product_id": "prod_U89TOzpjYy76fX",
+    "name": "Oral Male: Minoxidil + Finasteride + Biotin + Nutrients",
+    "confidence": 1.0,
+    "price_id": "price_1T9tAhGfVju1b2ftUXDC1VWe",
+    "amount": 8500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$85 / 4 weeks"
+   }
+  },
+  {
+   "name": "Biotin 10,000 mcg supplement",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Biotin 10,000 mcg supplement"
+   }
+  },
+  {
+   "name": "Minoxidil 2.5 mg tablets",
+   "when": {
+    "field": "69c56b2ec553f2f3e0cb9bb7",
+    "op": "eq",
+    "value": "Minoxidil 2.5 mg tablets"
+   },
+   "stripe": {
+    "product_id": "prod_U89XElPvJw1sdc",
+    "name": "Oral Female/Male: Minoxidil",
+    "confidence": 1.0,
+    "price_id": "price_1T9tElGfVju1b2ftibYbppfg",
+    "amount": 6500,
+    "currency": "usd",
+    "days": 28,
+    "label": "$65 / 4 weeks"
+   }
+  }
+ ]
+}

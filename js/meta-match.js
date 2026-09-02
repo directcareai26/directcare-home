@@ -62,9 +62,29 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     },
     name: function (v) { return String(v).trim().toLowerCase().replace(/[^\p{L}\p{M}'-]/gu, ''); },
     ct: function (v) { return String(v).trim().toLowerCase().replace(/[^a-z]/g, ''); },
-    st: function (v) { return String(v).trim().toLowerCase().replace(/[^a-z]/g, '').slice(0, 2); },
+    st: function (v) {                       // 2-letter ANSI code; map full US state names
+      var s = String(v).trim().toLowerCase().replace(/[^a-z]/g, '');
+      if (s.length === 2) return s;
+      var ST = { alabama:'al',alaska:'ak',arizona:'az',arkansas:'ar',california:'ca',colorado:'co',
+        connecticut:'ct',delaware:'de',florida:'fl',georgia:'ga',hawaii:'hi',idaho:'id',illinois:'il',
+        indiana:'in',iowa:'ia',kansas:'ks',kentucky:'ky',louisiana:'la',maine:'me',maryland:'md',
+        massachusetts:'ma',michigan:'mi',minnesota:'mn',mississippi:'ms',missouri:'mo',montana:'mt',
+        nebraska:'ne',nevada:'nv',newhampshire:'nh',newjersey:'nj',newmexico:'nm',newyork:'ny',
+        northcarolina:'nc',northdakota:'nd',ohio:'oh',oklahoma:'ok',oregon:'or',pennsylvania:'pa',
+        rhodeisland:'ri',southcarolina:'sc',southdakota:'sd',tennessee:'tn',texas:'tx',utah:'ut',
+        vermont:'vt',virginia:'va',washington:'wa',westvirginia:'wv',wisconsin:'wi',wyoming:'wy',
+        districtofcolumbia:'dc' };
+      return ST[s] || s.slice(0, 2);
+    },
     zp: function (v) { return String(v).trim().toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5); },
-    country: function (v) { return String(v).trim().toLowerCase().slice(0, 2); },
+    country: function (v) {                  // must be ISO 3166-1 alpha-2, not "un"
+      var s = String(v).trim().toLowerCase().replace(/[^a-z ]/g, '');
+      if (/^[a-z]{2}$/.test(s)) return s;
+      var NAMES = { 'united states': 'us', 'united states of america': 'us', usa: 'us', us: 'us',
+                    america: 'us', canada: 'ca', 'united kingdom': 'gb', uk: 'gb', england: 'gb',
+                    scotland: 'gb', wales: 'gb', australia: 'au', mexico: 'mx', ireland: 'ie' };
+      return NAMES[s] || '';                 // unknown -> omit rather than send garbage
+    },
     db: function (v) {                       // -> YYYYMMDD
       var s = String(v).replace(/\D/g, '');
       if (s.length === 8) return s;
@@ -142,13 +162,19 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
 
   function track(eventName, customData) {
     var eventId = uuid();
+    // set window.dcaOptOut = true (consent banner, DNT, an unsubscribed user)
+    // and the event is still measured but excluded from ads delivery.
+    var optOut = w.dcaOptOut === true;
     var custom = customData || {};
     try { w.fbq && w.fbq('track', eventName, custom, { eventID: eventId }); } catch (e) {}
     post({
       event_name: eventName,
       event_id: eventId,                       // same id both sides => Meta dedupes
+      action_source: 'website',
       event_source_url: location.origin + location.pathname, // path only, no query
+      referrer_url: (d.referrer || '').split('?')[0] || undefined,
       custom_data: custom,
+      opt_out: optOut || undefined,
       user_data: Object.assign({}, stored(), {
         external_id: externalId(),
         fbp: getCookie('_fbp') || null,

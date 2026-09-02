@@ -17,8 +17,15 @@ const GRAPH = 'https://graph.facebook.com/v21.0';
 
 // hashed, per Meta's normalisation rules (the client normalises; we hash)
 const HASHED = ['em', 'ph', 'fn', 'ln', 'db', 'ge', 'ct', 'st', 'zp', 'country', 'external_id'];
-// passed through as-is
-const RAW = ['client_ip_address', 'client_user_agent', 'fbc', 'fbp', 'subscription_id', 'lead_id'];
+// passed through as-is (never hashed, per Meta's spec)
+const RAW = [
+  'client_ip_address', 'client_user_agent', 'fbc', 'fbp',
+  'subscription_id', 'lead_id', 'fb_login_id',
+  'page_id', 'page_scoped_user_id',            // messenger bot events
+  'ctwa_clid',                                  // click-to-WhatsApp
+  'ig_account_id', 'ig_sid',                    // instagram
+  'anon_id', 'madid',                           // app events only
+];
 // custom_data keys we will forward — deliberately excludes anything naming a
 // product, condition, page or funnel, which on a telehealth site would turn an
 // ad event into a disclosure about someone's health.
@@ -73,18 +80,62 @@ export default async function handler(req, res) {
     custom_data[k] = body.custom_data[k];
   }
 
+  // action_source must be truthful — Meta's terms require it to describe where
+  // the event really happened.
+  const ACTION_SOURCES = ['website', 'app', 'email', 'phone_call', 'chat',
+                          'physical_store', 'system_generated', 'business_messaging', 'other'];
+  const action_source = ACTION_SOURCES.includes(body.action_source) ? body.action_source : 'website';
+
   const event = {
     event_name: eventName,
     event_time: Math.floor(Date.now() / 1000),
     event_id: String(body.event_id || crypto.randomUUID()),
-    action_source: 'website',
-    event_source_url: String(body.event_source_url || '').split('?')[0].slice(0, 500),
+    action_source,
     user_data,
     ...(Object.keys(custom_data).length ? { custom_data } : {}),
   };
 
+  // website events also require event_source_url; non-web events must not carry it
+  if (action_source === 'website') {
+    event.event_source_url = String(body.event_source_url || '').split('?')[0].slice(0, 500);
+  }
+  // referrer helps attribution; strip the query so no ids ride along
+  if (body.referrer_url) event.referrer_url = String(body.referrer_url).split('?')[0].slice(0, 500);
+
+  // suppress this event from ads delivery/optimisation while still measuring it
+  if (body.opt_out === true) event.opt_out = true;
+
+  // Limited Data Use. [] = normal processing; ['LDU'] with 0/0 lets Meta geolocate.
+  if (process.env.META_LDU === '1') {
+    event.data_processing_options = ['LDU'];
+    event.data_processing_options_country = 0;
+    event.data_processing_options_state = 0;
+  } else if (Array.isArray(body.data_processing_options)) {
+    event.data_processing_options = body.data_processing_options;
+    if (body.data_processing_options_country !== undefined)
+      event.data_processing_options_country = Number(body.data_processing_options_country);
+    if (body.data_processing_options_state !== undefined)
+      event.data_processing_options_state = Number(body.data_processing_options_state);
+  }
+
+  // segmentation label for reporting — never a condition or product on this site
+  if (body.customer_segmentation) event.customer_segmentation = String(body.customer_segmentation).slice(0, 100);
+
+  // links a downstream event (a CRM close) back to the original website lead,
+  // which is what Conversions API for Lead Optimisation matches on
+  const oed = body.original_event_data;
+  if (oed && oed.event_name) {
+    event.original_event_data = {
+      event_name: String(oed.event_name).slice(0, 60),
+      ...(oed.event_time ? { event_time: Number(oed.event_time) } : {}),
+      ...(oed.order_id ? { order_id: String(oed.order_id).slice(0, 100) } : {}),
+      ...(oed.event_id ? { event_id: String(oed.event_id).slice(0, 100) } : {}),
+    };
+  }
+
   const payload = { data: [event] };
-  if (process.env.META_TEST_EVENT_CODE) payload.test_event_code = process.env.META_TEST_EVENT_CODE;
+  const testCode = body.test_event_code || process.env.META_TEST_EVENT_CODE;
+  if (testCode) payload.test_event_code = String(testCode);
 
   const results = await Promise.all(PIXELS.map(async (pixel) => {
     try {

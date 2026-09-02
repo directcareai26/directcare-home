@@ -105,7 +105,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
   fbq('init', '1567193354573862');
   fbq('init', '1068250912518605');
-  fbq('track', 'PageView');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
   var loaded = false;
   function loadFbEvents() {
     if (loaded) return; loaded = true;
@@ -467,7 +467,7 @@ AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
 AdvertiserMaxTrack.getClick();
 </script>
 <!-- End FlexOffers -->
-  <script src="/js/meta-match.js" defer></script>
+  <script src="/js/dc-signal.js" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

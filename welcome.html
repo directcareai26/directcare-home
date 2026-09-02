@@ -20,7 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   if (!window._fbq) window._fbq = n;
   n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
   fbq('init', '1567193354573862');
-  fbq('track', 'PageView');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
   var loaded = false;
   function loadFbEvents() {
     if (loaded) return; loaded = true;
@@ -319,7 +319,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1" /></no
     .btn:hover, .badges a:hover { transform: none; }
   }
 </style>
-  <script src="/js/meta-match.js" defer></script>
+  <script src="/js/dc-signal.js" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

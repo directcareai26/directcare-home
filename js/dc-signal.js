@@ -1,4 +1,8 @@
-/*! DirectCare AI — Meta advanced matching + CAPI bridge.
+/*! DirectCare AI — advanced matching + Conversions API bridge.
+ *
+ * Named neutrally on purpose: a file called meta-*.js is a common blocklist
+ * pattern, and losing this file loses PageView entirely now that it is the
+ * single source of that event.
  *
  * One place that owns: the first-party external_id, the fbc/fbp cookies, the
  * normalised customer-information parameters, and event de-duplication between

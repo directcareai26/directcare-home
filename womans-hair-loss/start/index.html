@@ -29,7 +29,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // Queue events NOW so they're sent the moment fbevents.js loads
   fbq('init', '1567193354573862');
   fbq('init', '1068250912518605');
-  fbq('track', 'PageView');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
 
   // Lazy-load fbevents.js on first interaction or 10s — keeps it out of
   // the PageSpeed TBT measurement window on mobile
@@ -185,7 +185,7 @@ src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
     .intake-iframe{ height:calc(620px + 183px); margin-top:-183px; }
   }
 </style>
-  <script src="/js/meta-match.js" defer></script>
+  <script src="/js/dc-signal.js" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

@@ -22,7 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // Queue events NOW so they're sent the moment fbevents.js loads
   fbq('init', '1567193354573862');
   fbq('init', '1068250912518605');
-  fbq('track', 'PageView');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
 
   // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
   // the PageSpeed TBT measurement window on mobile
@@ -634,7 +634,7 @@ AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
 AdvertiserMaxTrack.getClick();
 </script>
 <!-- End FlexOffers -->
-  <script src="/js/meta-match.js" defer></script>
+  <script src="/js/dc-signal.js" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->

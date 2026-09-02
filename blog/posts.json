@@ -1,22 +1,644 @@
 {
   "posts": [
     {
+      "slug": "20-minute-salmon-asparagus-omega-3-dinner",
+      "title": "20-Minute Salmon and Asparagus: Hit Your Omega-3 Target",
+      "excerpt": "A clinician-built 20-minute salmon and asparagus sheet-pan dinner — dialed to the EPA+DHA omega-3 dose that actually moves your labs.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-09-02",
+      "dateLabel": "September 2, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "salmon and asparagus recipe",
+        "omega-3 dinner",
+        "EPA DHA target",
+        "sheet pan salmon",
+        "20 minute healthy dinner",
+        "omega-3 rich meal",
+        "wild salmon nutrition"
+      ]
+    },
+    {
+      "slug": "lifting-through-perimenopause-rep-ranges-recovery",
+      "title": "Lifting Through Perimenopause: Rep Ranges & Recovery Rules",
+      "excerpt": "The rep ranges, weekly split, and recovery rules that actually work when estrogen is fluctuating and recovery is slower than it used to be.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-09-01",
+      "dateLabel": "September 1, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
+      "keywords": [
+        "perimenopause lifting",
+        "strength training perimenopause",
+        "rep ranges for women over 40",
+        "perimenopause workout plan",
+        "recovery perimenopause",
+        "heavy lifting menopause"
+      ]
+    },
+    {
+      "slug": "trt-and-fertility-preserve-sperm-production",
+      "title": "TRT and Fertility: Preserving Sperm on Testosterone",
+      "excerpt": "Testosterone therapy shuts down sperm production in most men. Here's how hCG, SERMs, and pre-treatment sperm banking keep fertility on the table.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-08-31",
+      "dateLabel": "August 31, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
+      "keywords": [
+        "TRT and fertility",
+        "testosterone therapy sperm production",
+        "hCG on TRT",
+        "preserve fertility on testosterone",
+        "clomiphene TRT",
+        "azoospermia TRT",
+        "sperm banking before TRT"
+      ]
+    },
+    {
+      "slug": "glp-1-maintenance-dosing-avoid-rebound",
+      "title": "GLP-1 Maintenance Dosing: How to Stay Off Without Rebound",
+      "excerpt": "Hitting your goal weight on a GLP-1 is the easy part. Here's how maintenance dosing, tapering, and lab-guided monitoring keep the weight off without a rebound.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-08-30",
+      "dateLabel": "August 30, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "GLP-1 maintenance dose",
+        "semaglutide maintenance dosing",
+        "tirzepatide maintenance",
+        "GLP-1 rebound weight gain",
+        "how to taper off GLP-1",
+        "staying off Ozempic without regaining",
+        "weight loss maintenance after GLP-1"
+      ]
+    },
+    {
+      "slug": "omega-3-epa-dha-dose-inflammation-markers",
+      "title": "Omega-3 EPA/DHA Dose That Moves Inflammation Markers",
+      "excerpt": "The 1,000 mg fish oil softgel on your counter probably isn't touching your inflammation markers. Here's the EPA/DHA dose the trials actually used — and what to measure.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-08-29",
+      "dateLabel": "August 29, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png",
+      "keywords": [
+        "omega-3 dose for inflammation",
+        "EPA DHA dosage",
+        "omega-3 index target",
+        "fish oil hs-CRP",
+        "how much EPA DHA per day",
+        "omega-3 triglycerides",
+        "anti-inflammatory supplements"
+      ]
+    },
+    {
+      "slug": "10-biomarkers-that-predict-longevity",
+      "title": "10 Biomarkers That Predict Longevity (Most Physicals Miss)",
+      "excerpt": "Total cholesterol and fasting glucose won't tell you much about how long you'll live. These 10 biomarkers — from ApoB to hs-CRP to HbA1c — will.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-08-28",
+      "dateLabel": "August 28, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "longevity biomarkers",
+        "annual physical blood tests",
+        "ApoB test",
+        "hs-CRP longevity",
+        "HbA1c prediabetes",
+        "lipoprotein(a)",
+        "healthspan biomarkers",
+        "advanced blood panel"
+      ]
+    },
+    {
       "slug": "female-pattern-hair-loss-hormonal-panel",
-      "title": "Female-Pattern Hair Loss: The Hormonal Panel to Run First",
-      "excerpt": "Female-pattern hair loss usually has a hormonal fingerprint. Here are the labs worth having on the table before you commit to a protocol.",
+      "title": "Female Hair Loss: The Hormonal Panel to Run First",
+      "excerpt": "Female-pattern hair loss usually has a hormonal or nutritional driver hiding underneath. Here's the first-line panel that actually changes the treatment plan.",
       "category": "Hair Regrowth",
       "categorySlug": "hair-regrowth",
-      "date": "2026-07-22",
-      "dateLabel": "July 22, 2026",
+      "date": "2026-08-27",
+      "dateLabel": "August 27, 2026",
       "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
       "keywords": [
-        "female pattern hair loss hormonal panel",
-        "female hair loss blood tests",
-        "androgens and hair loss in women",
-        "ferritin hair loss women",
+        "female pattern hair loss labs",
+        "hormonal panel hair loss women",
+        "androgenetic alopecia workup",
+        "ferritin hair loss",
         "DHEA-S hair thinning",
-        "thyroid hair loss labs",
-        "PCOS hair loss workup"
+        "thyroid hair loss TSH",
+        "female hair loss blood test",
+        "telogen effluvium labs"
+      ]
+    },
+    {
+      "slug": "oral-micronized-progesterone-vs-progestins",
+      "title": "Micronized Progesterone vs. Progestins: Why It Matters",
+      "excerpt": "Micronized progesterone and synthetic progestins share one job — protecting the uterus — but they behave very differently in breast tissue and the brain. Here's the clinical read.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-08-26",
+      "dateLabel": "August 26, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png",
+      "keywords": [
+        "oral micronized progesterone",
+        "progestins vs progesterone",
+        "progesterone breast cancer risk",
+        "HRT progesterone brain",
+        "bioidentical progesterone HRT",
+        "medroxyprogesterone alternatives"
+      ]
+    },
+    {
+      "slug": "sildenafil-vs-tadalafil-how-to-choose",
+      "title": "Sildenafil vs. Tadalafil: How to Pick the Right ED Med",
+      "excerpt": "Sildenafil is fast and short. Tadalafil is slow and long. Here's how a clinician actually decides which PDE5 inhibitor fits your body and your schedule.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-08-25",
+      "dateLabel": "August 25, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png",
+      "keywords": [
+        "sildenafil vs tadalafil",
+        "ED medication comparison",
+        "how to choose ED pill",
+        "tadalafil daily dose",
+        "sildenafil onset time",
+        "PDE5 inhibitors",
+        "Viagra vs Cialis"
+      ]
+    },
+    {
+      "slug": "plant-protein-perimenopause-lentils-tofu-tempeh",
+      "title": "Plant Protein in Perimenopause: A 3-Food Rotation",
+      "excerpt": "Lentils, tofu, and tempeh cover the three things perimenopausal protein needs to do: hit leucine, hold insulin steady, and add fiber. Here's the rotation, with real macros.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-08-24",
+      "dateLabel": "August 24, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+      "keywords": [
+        "plant protein perimenopause",
+        "protein for perimenopausal women",
+        "lentils tofu tempeh",
+        "leucine threshold women",
+        "soy and estrogen perimenopause",
+        "high protein plant-based recipes",
+        "perimenopause nutrition"
+      ]
+    },
+    {
+      "slug": "two-lift-minimum-busy-week-strength-template",
+      "title": "The Two-Lift Minimum: Busy-Week Strength That Holds",
+      "excerpt": "Two compound lifts, three days a week, 30 minutes per session. Here's the minimum effective dose to preserve strength and muscle when your schedule falls apart.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-08-23",
+      "dateLabel": "August 23, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png",
+      "keywords": [
+        "minimum effective dose strength training",
+        "busy week workout template",
+        "two lifts per day",
+        "preserve muscle low volume",
+        "minimalist strength program",
+        "maintenance lifting program"
+      ]
+    },
+    {
+      "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
+      "title": "Subcutaneous vs. IM Testosterone: What the PK Data Shows",
+      "excerpt": "Head-to-head studies show subcutaneous testosterone delivers steadier levels than intramuscular injections at the same dose — with less pain and comparable efficacy. Here's what the PK data actually says.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-08-22",
+      "dateLabel": "August 22, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "subcutaneous vs intramuscular testosterone",
+        "subQ testosterone injection",
+        "testosterone injection pharmacokinetics",
+        "TRT injection route",
+        "testosterone cypionate subcutaneous",
+        "IM vs subQ TRT",
+        "testosterone peak and trough"
+      ]
+    },
+    {
+      "slug": "muscle-preservation-glp1-protein-resistance-training",
+      "title": "Muscle Preservation on GLP-1s: Protein & Training Rules",
+      "excerpt": "GLP-1s work — but without protein and lifting, up to 40% of the weight you lose can be lean mass. Here's the muscle-preservation protocol that actually matters.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-08-21",
+      "dateLabel": "August 21, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png",
+      "keywords": [
+        "muscle preservation on GLP-1",
+        "protein intake on semaglutide",
+        "resistance training on tirzepatide",
+        "lean mass loss GLP-1",
+        "GLP-1 muscle loss",
+        "how to keep muscle on GLP-1"
+      ]
+    },
+    {
+      "slug": "magnesium-glycinate-vs-citrate-vs-threonate",
+      "title": "Magnesium Glycinate vs Citrate vs Threonate: How to Pick",
+      "excerpt": "Three magnesium forms, three different jobs. Here's how to choose glycinate, citrate, or threonate based on what you actually need — sleep, digestion, or cognition.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-08-20",
+      "dateLabel": "August 20, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "magnesium glycinate vs citrate vs threonate",
+        "best magnesium for sleep",
+        "magnesium citrate constipation",
+        "magnesium l-threonate cognition",
+        "magnesium bisglycinate",
+        "magnesium supplement guide",
+        "magnesium bioavailability"
+      ]
+    },
+    {
+      "slug": "apob-vs-ldl-cholesterol-test-cardiologists",
+      "title": "ApoB vs. LDL: The Cholesterol Number That Matters More",
+      "excerpt": "LDL measures cholesterol content. ApoB counts the particles carrying it. Here's why cardiologists increasingly trust the particle count — and when it changes the plan.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-08-19",
+      "dateLabel": "August 19, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "ApoB vs LDL",
+        "apolipoprotein B test",
+        "ApoB cholesterol",
+        "cardiovascular risk markers",
+        "advanced lipid panel",
+        "LDL particle number",
+        "discordant LDL ApoB"
+      ]
+    },
+    {
+      "slug": "topical-vs-oral-finasteride-side-effects",
+      "title": "Topical vs. Oral Finasteride: Matching Delivery to Tolerance",
+      "excerpt": "Oral and topical finasteride both suppress scalp DHT, but they differ in systemic exposure and side-effect profile. Here's how to match the delivery to your tolerance.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-08-18",
+      "dateLabel": "August 18, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png",
+      "keywords": [
+        "topical finasteride",
+        "oral finasteride",
+        "finasteride side effects",
+        "topical vs oral finasteride",
+        "finasteride for hair loss",
+        "DHT hair loss treatment",
+        "androgenetic alopecia treatment"
+      ]
+    },
+    {
+      "slug": "testosterone-in-womens-hrt-protocols",
+      "title": "Testosterone in Women's HRT: The Missing Hormone",
+      "excerpt": "Testosterone declines earlier and faster than estrogen in women — and the evidence for low-dose replacement is stronger than most clinics acknowledge.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-08-17",
+      "dateLabel": "August 17, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png",
+      "keywords": [
+        "testosterone for women",
+        "women's HRT protocols",
+        "female testosterone therapy",
+        "low-dose testosterone women",
+        "HSDD treatment",
+        "menopause testosterone",
+        "female androgen deficiency"
+      ]
+    },
+    {
+      "slug": "ed-cardiovascular-warning-signal-labs",
+      "title": "ED as a Cardiovascular Warning Sign: The Labs That Confirm It",
+      "excerpt": "ED often precedes heart disease by 3–5 years because penile arteries clog first. Here's the lab panel that separates a vascular problem from a hormonal one.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-08-16",
+      "dateLabel": "August 16, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "ED cardiovascular signal",
+        "erectile dysfunction heart disease",
+        "labs for erectile dysfunction",
+        "ED and endothelial dysfunction",
+        "ApoB and ED",
+        "testosterone and ED",
+        "hs-CRP erectile dysfunction"
+      ]
+    },
+    {
+      "slug": "fiber-on-glp1-25-35g-daily-appetite-suppression",
+      "title": "Fiber on a GLP-1: Why 25–35g Daily Keeps It Working",
+      "excerpt": "GLP-1s work better when your fiber intake is dialed in. Here's why 25–35g daily stabilizes appetite suppression, protects your gut, and keeps cravings quiet.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-08-15",
+      "dateLabel": "August 15, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png",
+      "keywords": [
+        "fiber on GLP-1",
+        "GLP-1 fiber intake",
+        "semaglutide fiber",
+        "tirzepatide constipation",
+        "25 to 35 grams fiber daily",
+        "GLP-1 nutrition",
+        "appetite suppression sustainable"
+      ]
+    },
+    {
+      "slug": "rucking-cardio-strength-training-benefits",
+      "title": "Rucking: Cardio and Strength in One Weighted Walk",
+      "excerpt": "Rucking pairs zone 2 cardio with load-bearing strength work in a single walk. Here's how to program it, how heavy to start, and why it belongs in most training weeks.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-08-14",
+      "dateLabel": "August 14, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20fitness%20model%20performing%20dumbbell%20shoulder%20press%20in%20upscale%20gym%2C%20natural%2022947.png",
+      "keywords": [
+        "rucking",
+        "rucking benefits",
+        "weighted walking workout",
+        "rucking for beginners",
+        "zone 2 cardio",
+        "rucking vs running",
+        "how much weight to ruck with"
+      ]
+    },
+    {
+      "slug": "hematocrit-on-trt-blood-donation-frequency",
+      "title": "Hematocrit on TRT: When to Donate Blood and Why",
+      "excerpt": "Injectable testosterone predictably raises hematocrit. Here's the threshold that matters, why it happens, and how often donating blood actually helps.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-08-13",
+      "dateLabel": "August 13, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png",
+      "keywords": [
+        "hematocrit on TRT",
+        "testosterone and blood donation",
+        "erythrocytosis testosterone",
+        "TRT phlebotomy frequency",
+        "high hematocrit injectable testosterone",
+        "polycythemia TRT"
+      ]
+    },
+    {
+      "slug": "weight-loss-plateau-hormonal-not-motivational",
+      "title": "Weight-Loss Plateau? It's Probably Hormonal, Not Willpower",
+      "excerpt": "Plateaus aren't proof you've lost willpower. They're proof your endocrine system is doing exactly what it evolved to do — and there are specific ways to work around it.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-08-12",
+      "dateLabel": "August 12, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
+      "keywords": [
+        "weight loss plateau",
+        "hormonal weight loss plateau",
+        "leptin resistance",
+        "metabolic adaptation",
+        "GLP-1 plateau",
+        "thyroid weight loss",
+        "cortisol weight gain",
+        "why am I not losing weight"
+      ]
+    },
+    {
+      "slug": "ferritin-iron-deficiency-women-mistaken-for-menopause",
+      "title": "Ferritin in Women: The Deficiency Mistaken for Menopause",
+      "excerpt": "Fatigue, hair shedding, and brain fog in women 35–55 are routinely blamed on hormones when the real driver is low ferritin. Here's how to read the iron panel that actually finds it.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-08-10",
+      "dateLabel": "August 10, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "ferritin in women",
+        "iron deficiency without anemia",
+        "low ferritin symptoms women",
+        "ferritin vs menopause",
+        "iron panel interpretation",
+        "ferritin hair loss",
+        "perimenopause fatigue causes"
+      ]
+    },
+    {
+      "slug": "dutasteride-vs-finasteride-aggressive-hair-loss",
+      "title": "Dutasteride vs Finasteride: When Aggressive Is Right",
+      "excerpt": "Dutasteride blocks both isoforms of 5-alpha reductase, not just one. That's why it works faster for some men — and why the trade-offs deserve a serious look before you switch.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-08-09",
+      "dateLabel": "August 9, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "dutasteride vs finasteride",
+        "dutasteride for hair loss",
+        "aggressive hair loss treatment",
+        "5-alpha reductase inhibitor",
+        "DHT blocker hair loss",
+        "finasteride not working",
+        "male pattern baldness treatment"
+      ]
+    },
+    {
+      "slug": "protein-fiber-breakfast-template-busy-mornings",
+      "title": "The Protein + Fiber Breakfast Template: 3 Fast Rotations",
+      "excerpt": "Thirty grams of protein and eight grams of fiber before 9 a.m. — three real rotations that fit a busy morning without the food-blog theatrics.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-08-06",
+      "dateLabel": "August 6, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+      "keywords": [
+        "high protein breakfast",
+        "protein and fiber breakfast",
+        "30g protein breakfast",
+        "breakfast for blood sugar",
+        "quick high protein breakfast ideas",
+        "fiber breakfast for weight loss"
+      ]
+    },
+    {
+      "slug": "zone-2-cardio-adults-over-40",
+      "title": "Zone 2 Cardio After 40: What It Is and How to Measure It",
+      "excerpt": "Zone 2 is the conversational-pace cardio that rebuilds mitochondrial function after 40. Here's what the research says and three ways to measure it accurately.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-08-05",
+      "dateLabel": "August 5, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png",
+      "keywords": [
+        "zone 2 cardio",
+        "zone 2 heart rate",
+        "zone 2 training over 40",
+        "mitochondrial function exercise",
+        "aerobic base training",
+        "how to measure zone 2",
+        "zone 2 for longevity"
+      ]
+    },
+    {
+      "slug": "estradiol-on-trt-aromatase-inhibitor",
+      "title": "Estradiol on TRT: Who Actually Needs an AI (Most Don't)",
+      "excerpt": "Estradiol isn't the villain of TRT — it's a co-pilot. Here's when an aromatase inhibitor helps, when it hurts, and how to read your E2 numbers honestly.",
+      "category": "TRT",
+      "categorySlug": "trt",
+      "date": "2026-08-04",
+      "dateLabel": "August 4, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
+      "keywords": [
+        "estradiol on TRT",
+        "aromatase inhibitor TRT",
+        "anastrozole TRT",
+        "high estrogen on testosterone",
+        "E2 levels men",
+        "TRT side effects",
+        "sensitive estradiol test"
+      ]
+    },
+    {
+      "slug": "glp1-and-thyroid-what-to-monitor-when-to-stop",
+      "title": "GLP-1s and Thyroid: What to Monitor and When to Stop",
+      "excerpt": "The GLP-1 thyroid warning is real but frequently misunderstood. Here's what to monitor, what the trials actually showed, and when stopping is the right call.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-08-03",
+      "dateLabel": "August 3, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
+      "keywords": [
+        "GLP-1 and thyroid",
+        "semaglutide thyroid cancer risk",
+        "tirzepatide thyroid monitoring",
+        "medullary thyroid carcinoma GLP-1",
+        "TSH on semaglutide",
+        "when to stop GLP-1",
+        "thyroid nodules and GLP-1"
+      ]
+    },
+    {
+      "slug": "creatine-for-women-cognition-bone-health",
+      "title": "Creatine for Women: The Cognition and Bone Data",
+      "excerpt": "The most-studied supplement in sports nutrition is quietly building a case in cognition and bone health — especially for women over 40. Here's what the data says.",
+      "category": "Supplements",
+      "categorySlug": "supplements",
+      "date": "2026-08-02",
+      "dateLabel": "August 2, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
+      "keywords": [
+        "creatine for women",
+        "creatine monohydrate cognition",
+        "creatine bone density",
+        "creatine dose women",
+        "creatine sleep deprivation",
+        "creatine menopause"
+      ]
+    },
+    {
+      "slug": "dutasteride-vs-finasteride-aggressive-dht-blockade",
+      "title": "Dutasteride vs Finasteride: When Aggressive Is Right",
+      "excerpt": "Dutasteride suppresses DHT more completely than finasteride — sometimes 90%+ vs ~70%. That extra suppression is a tool, not a default. Here's when to reach for it.",
+      "category": "Hair Regrowth",
+      "categorySlug": "hair-regrowth",
+      "date": "2026-07-31",
+      "dateLabel": "July 31, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "dutasteride vs finasteride",
+        "dutasteride for hair loss",
+        "5-alpha reductase inhibitors",
+        "DHT blocker hair loss",
+        "aggressive hair loss treatment",
+        "finasteride non-responder"
+      ]
+    },
+    {
+      "slug": "ed-cardiovascular-warning-signs-labs",
+      "title": "ED as a Cardiovascular Warning: The Labs That Confirm It",
+      "excerpt": "ED frequently precedes cardiac events by years because penile arteries narrow first. Here's the lab panel that separates a vascular problem from a hormonal one.",
+      "category": "Sexual Health",
+      "categorySlug": "sexual-health",
+      "date": "2026-07-29",
+      "dateLabel": "July 29, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
+      "keywords": [
+        "ED and heart disease",
+        "erectile dysfunction cardiovascular risk",
+        "labs for ED",
+        "ApoB testosterone ED",
+        "endothelial dysfunction ED",
+        "hs-CRP erectile dysfunction",
+        "ED warning sign heart attack"
+      ]
+    },
+    {
+      "slug": "grip-strength-longevity-3-exercises",
+      "title": "Grip Strength and Longevity: 3 Exercises That Build It",
+      "excerpt": "Grip strength outpredicts systolic blood pressure for all-cause mortality in some cohorts. Three exercises — farmer's carry, dead hang, heavy row — build it fast.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-07-27",
+      "dateLabel": "July 27, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png",
+      "keywords": [
+        "grip strength longevity",
+        "grip strength exercises",
+        "farmer's carry benefits",
+        "dead hang exercise",
+        "handgrip mortality",
+        "how to improve grip strength",
+        "grip strength test"
+      ]
+    },
+    {
+      "slug": "glp1-maintenance-dosing-after-weight-loss",
+      "title": "GLP-1 Maintenance Dosing: Staying Off Without Rebound",
+      "excerpt": "You hit your goal weight on a GLP-1. Now what? A clinician's-eye view of maintenance dosing, tapering, and the rebound data most patients don't hear about.",
+      "category": "Weight Loss",
+      "categorySlug": "weight-loss",
+      "date": "2026-07-25",
+      "dateLabel": "July 25, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png",
+      "keywords": [
+        "GLP-1 maintenance dose",
+        "semaglutide maintenance dosing",
+        "tirzepatide maintenance",
+        "GLP-1 rebound weight gain",
+        "how to stop GLP-1 without regaining weight",
+        "tapering off Ozempic",
+        "weight loss maintenance after GLP-1"
+      ]
+    },
+    {
+      "slug": "apob-vs-ldl-cholesterol-cardiologists-ask",
+      "title": "ApoB vs. LDL: The Cholesterol Number That Matters More",
+      "excerpt": "LDL-C tells you how much cholesterol is in your blood. ApoB tells you how many atherogenic particles are actually driving plaque. Here's why the difference matters.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-07-23",
+      "dateLabel": "July 23, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
+      "keywords": [
+        "ApoB vs LDL",
+        "apolipoprotein B test",
+        "ApoB cholesterol",
+        "LDL-C accuracy",
+        "cardiovascular risk blood test",
+        "discordant LDL ApoB",
+        "advanced lipid panel"
       ]
     },
     {
@@ -39,24 +661,6 @@
       ]
     },
     {
-      "slug": "ed-cardiovascular-warning-signs-labs",
-      "title": "ED as a Cardiovascular Warning Sign: The Labs That Confirm It",
-      "excerpt": "ED frequently precedes a cardiac event by 3–5 years. Here's the vascular biology behind that link — and the blood work that separates a plumbing problem from a testosterone problem.",
-      "category": "Sexual Health",
-      "categorySlug": "sexual-health",
-      "date": "2026-07-20",
-      "dateLabel": "July 20, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Morning%20bed%2C%20foreheads%20touching.png",
-      "keywords": [
-        "ED and cardiovascular disease",
-        "erectile dysfunction warning sign heart",
-        "labs for ED workup",
-        "endothelial dysfunction ED",
-        "ED biomarkers",
-        "is ED a sign of heart disease"
-      ]
-    },
-    {
       "slug": "plant-protein-perimenopause-lentil-tofu-tempeh",
       "title": "Plant Protein in Perimenopause: Lentil, Tofu, Tempeh",
       "excerpt": "Perimenopause bumps your protein target higher, not lower. Here's a lentil, tofu, and tempeh rotation that hits it — with real gram counts and three recipes.",
@@ -75,24 +679,6 @@
       ]
     },
     {
-      "slug": "two-lift-minimum-busy-week-strength-template",
-      "title": "The Two-Lift Minimum: Busy-Week Strength That Preserves Muscle",
-      "excerpt": "Two compound lifts per session, three days a week. It's not optimal — it's the floor. And the floor is high enough to keep your muscle and most of your strength when life gets loud.",
-      "category": "Fitness",
-      "categorySlug": "fitness",
-      "date": "2026-07-18",
-      "dateLabel": "July 18, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png",
-      "keywords": [
-        "minimalist strength training",
-        "two lifts per day",
-        "busy week workout",
-        "minimum effective dose strength training",
-        "preserve muscle short workouts",
-        "compound lift template"
-      ]
-    },
-    {
       "slug": "30-gram-protein-lunch-rule",
       "title": "The 30-Gram Protein Lunch Rule: Why Real Meals Win",
       "excerpt": "A bar isn't lunch. Here's why 30 grams of protein at midday changes appetite, glucose, and lean mass — and how to hit the number without cooking.",
@@ -108,24 +694,6 @@
         "muscle protein synthesis",
         "protein leverage hypothesis",
         "high protein meal ideas"
-      ]
-    },
-    {
-      "slug": "lifting-through-perimenopause-rep-ranges-recovery",
-      "title": "Lifting Through Perimenopause: Reps, Recovery, Real Rules",
-      "excerpt": "The rep ranges, rest periods, and recovery rules that make strength training work through perimenopause — grounded in ACSM guidance and current research.",
-      "category": "Fitness",
-      "categorySlug": "fitness",
-      "date": "2026-07-16",
-      "dateLabel": "July 16, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Active%20mature%20woman%20walking%20through%20a%20park%20in%20morning%20sunlight%2C%20healthy%20aging%20concept%2022947.png",
-      "keywords": [
-        "perimenopause strength training",
-        "lifting through perimenopause",
-        "rep ranges for women over 40",
-        "perimenopause recovery",
-        "resistance training menopause",
-        "heavy lifting women 45"
       ]
     },
     {
@@ -302,25 +870,6 @@
       ]
     },
     {
-      "slug": "subq-vs-im-testosterone-injections-pharmacokinetics",
-      "title": "Subq vs. IM Testosterone: What the PK Data Actually Shows",
-      "excerpt": "Subq testosterone produces flatter peaks and troughs than IM at the same weekly dose. Here's what the pharmacokinetics literature actually shows — and how to think about the trade-offs.",
-      "category": "TRT",
-      "categorySlug": "trt",
-      "date": "2026-07-06",
-      "dateLabel": "July 6, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png",
-      "keywords": [
-        "subcutaneous testosterone injection",
-        "intramuscular testosterone injection",
-        "subq vs IM testosterone",
-        "testosterone cypionate pharmacokinetics",
-        "TRT injection route",
-        "testosterone peak trough",
-        "TRT side effects"
-      ]
-    },
-    {
       "slug": "5-minute-mobility-warmup-reduce-injury-risk",
       "title": "5-Minute Mobility Warm-Up: Real Injury Risk Reduction",
       "excerpt": "Five minutes of targeted mobility before you lift or run isn't ceremonial — it changes tissue temperature, joint range, and neural drive. Here's the sequence worth doing.",
@@ -395,25 +944,6 @@
       ]
     },
     {
-      "slug": "ferritin-iron-deficiency-women-mistaken-for-menopause",
-      "title": "Ferritin in Women: The Deficiency Mistaken for Menopause",
-      "excerpt": "Fatigue, hair shedding, and brain fog in women over 40 get blamed on menopause. Often it's iron deficiency — and ferritin is the marker that tells you which.",
-      "category": "Blood Labs",
-      "categorySlug": "blood-labs",
-      "date": "2026-07-01",
-      "dateLabel": "July 1, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png",
-      "keywords": [
-        "ferritin in women",
-        "iron deficiency menopause",
-        "low ferritin symptoms",
-        "ferritin normal range women",
-        "iron deficiency hair loss",
-        "ferritin vs menopause fatigue",
-        "iron panel women"
-      ]
-    },
-    {
       "slug": "fasted-coffee-cortisol-what-to-drink-first",
       "title": "Fasted Coffee and Cortisol: What to Drink First Instead",
       "excerpt": "Fasted coffee stacks caffeine on top of your natural cortisol peak. Here's what to drink in the first 30–60 minutes instead — and when coffee actually works in your favor.",
@@ -429,25 +959,6 @@
         "coffee and cortisol spike",
         "morning routine cortisol",
         "caffeine cortisol awakening response"
-      ]
-    },
-    {
-      "slug": "trt-and-fertility-preserve-sperm-production",
-      "title": "TRT and Fertility: Preserving Sperm Production on Therapy",
-      "excerpt": "Testosterone replacement shuts down sperm production in most men — but hCG, SERMs, and smart protocol design can preserve fertility while you treat low T.",
-      "category": "TRT",
-      "categorySlug": "trt",
-      "date": "2026-06-29",
-      "dateLabel": "June 29, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png",
-      "keywords": [
-        "TRT and fertility",
-        "testosterone therapy sperm production",
-        "hCG with TRT",
-        "preserve fertility on TRT",
-        "TRT azoospermia",
-        "enclomiphene fertility",
-        "TRT sperm banking"
       ]
     },
     {
@@ -467,63 +978,6 @@
         "zone 2 cardio",
         "weekly cardio minutes",
         "exercise and blood pressure"
-      ]
-    },
-    {
-      "slug": "weight-loss-plateau-hormonal-not-motivational",
-      "title": "Why Your Weight-Loss Plateau Is Hormonal, Not Motivational",
-      "excerpt": "Plateaus aren't a character flaw. They're a predictable hormonal response to weight loss — and once you understand the biology, the fix gets a lot clearer.",
-      "category": "Weight Loss",
-      "categorySlug": "weight-loss",
-      "date": "2026-06-27",
-      "dateLabel": "June 27, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png",
-      "keywords": [
-        "weight loss plateau",
-        "hormonal weight loss plateau",
-        "metabolic adaptation",
-        "leptin and weight loss",
-        "why am I not losing weight",
-        "thyroid weight plateau",
-        "cortisol belly fat",
-        "GLP-1 plateau"
-      ]
-    },
-    {
-      "slug": "ed-cardiovascular-warning-signal-labs",
-      "title": "ED as a Cardiovascular Warning Sign: The Labs That Confirm It",
-      "excerpt": "ED frequently precedes heart disease by 3–5 years. Here's why the penis is a vascular early-warning system, and the specific labs that tell you what's actually broken.",
-      "category": "Sexual Health",
-      "categorySlug": "sexual-health",
-      "date": "2026-06-26",
-      "dateLabel": "June 26, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png",
-      "keywords": [
-        "ED cardiovascular signal",
-        "erectile dysfunction heart disease",
-        "labs for ED",
-        "ApoB and erectile dysfunction",
-        "endothelial dysfunction ED",
-        "testosterone and ED",
-        "ED workup"
-      ]
-    },
-    {
-      "slug": "omega-3-epa-dha-dose-inflammation-markers",
-      "title": "Omega-3 EPA/DHA: The Dose That Lowers Inflammation",
-      "excerpt": "The fish oil aisle is built around 300 mg softgels. The inflammation literature is built around 2-4 grams. Here's how to bridge that gap without flying blind.",
-      "category": "Supplements",
-      "categorySlug": "supplements",
-      "date": "2026-06-25",
-      "dateLabel": "June 25, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png",
-      "keywords": [
-        "omega-3 dose for inflammation",
-        "EPA DHA dosage",
-        "omega-3 index",
-        "fish oil hs-CRP",
-        "triglycerides omega-3",
-        "EPA DHA for inflammation markers"
       ]
     },
     {
@@ -563,25 +1017,6 @@
         "hemoglobin testosterone",
         "TRT thick blood",
         "polycythemia testosterone"
-      ]
-    },
-    {
-      "slug": "grip-strength-longevity-3-exercises",
-      "title": "Grip Strength and Longevity: 3 Exercises That Build It",
-      "excerpt": "Grip strength tracks all-cause mortality better than systolic blood pressure in some cohorts. Here's the science — and three exercises that build it.",
-      "category": "Fitness",
-      "categorySlug": "fitness",
-      "date": "2026-06-22",
-      "dateLabel": "June 22, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png",
-      "keywords": [
-        "grip strength longevity",
-        "grip strength exercises",
-        "grip strength mortality",
-        "how to build grip strength",
-        "farmer's carry benefits",
-        "dead hang exercise",
-        "grip strength test"
       ]
     },
     {
@@ -1031,28 +1466,6 @@
         "RBC magnesium",
         "magnesium deficiency",
         "supplements"
-      ]
-    },
-    {
-      "slug": "10-biomarkers-that-predict-longevity",
-      "title": "10 Biomarkers That Actually Predict Longevity",
-      "excerpt": "Explains the 10 biomarkers (ApoB, Lp(a), hs-CRP, HOMA-IR, GGT, ferritin, uric acid, HbA1c, eGFR, ALT) most predictive of lifespan — and why your annual physical probably checks none of them.",
-      "category": "Blood Labs",
-      "categorySlug": "blood-labs",
-      "date": "2026-05-27",
-      "dateLabel": "May 27, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png",
-      "keywords": [
-        "longevity biomarkers",
-        "blood labs for longevity",
-        "ApoB test",
-        "Lp(a) test",
-        "hs-CRP",
-        "HbA1c",
-        "GGT liver marker",
-        "advanced lipid panel",
-        "annual physical bloodwork",
-        "biomarkers that predict mortality"
       ]
     },
     {

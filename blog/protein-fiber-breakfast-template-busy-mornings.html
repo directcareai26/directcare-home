@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
+  fbq('track', 'PageView');
+
+  // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#241432" />
+<title>The Protein + Fiber Breakfast Template: 3 Fast Rotations | DirectCare AI Blog</title>
+<meta name="description" content="A clinician-built protein and fiber breakfast template with three fast rotations to steady blood sugar, cut cravings, and hold you until lunch." />
+<meta name="keywords" content="high protein breakfast, protein and fiber breakfast, 30g protein breakfast, breakfast for blood sugar, quick high protein breakfast ideas, fiber breakfast for weight loss" />
+<link rel="canonical" href="https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings" />
+<link rel="alternate" type="application/rss+xml" title="DirectCare AI Blog" href="https://www.directcare.ai/blog/rss.xml" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings" />
+<meta property="og:title" content="The Protein + Fiber Breakfast Template: 3 Fast Rotations" />
+<meta property="og:description" content="A clinician-built protein and fiber breakfast template with three fast rotations to steady blood sugar, cut cravings, and hold you until lunch." />
+<meta property="og:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" />
+<meta property="article:published_time" content="2026-08-06" />
+<meta property="article:section" content="Nutrition" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalScholarlyArticle",
+  "headline": "The Protein + Fiber Breakfast Template: 3 Fast Rotations",
+  "datePublished": "2026-08-06",
+  "dateModified": "2026-08-06",
+  "description": "A clinician-built protein and fiber breakfast template with three fast rotations to steady blood sugar, cut cravings, and hold you until lunch.",
+  "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png",
+  "articleSection": "Nutrition",
+  "author": {
+    "@type": "Organization",
+    "name": "DirectCare AI Clinical Team",
+    "url": "https://www.directcare.ai"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "DirectCare AI",
+    "url": "https://www.directcare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.directcare.ai/blog/protein-fiber-breakfast-template-busy-mornings"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #faf6f0; --bg-2: #f4eee5; --bg-cream: #f0e8d8; --surface: #ffffff;
+    --ink: #241432; --ink-soft: #332543; --muted: #3d3247;
+    --line: rgba(36,20,50,0.10); --line-strong: rgba(36,20,50,0.18);
+    --brand: #af4bed; --brand-deep: #762ba4; --brand-darker: #44215A; --dark: #241432;
+    --gold-soft: #f5e6c2;
+    --radius: 14px; --radius-lg: 22px; --radius-xl: 32px;
+  }
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: -0.01em; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.1; font-weight: 500; color: var(--ink); }
+  p { margin: 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+
+  .top-strip { background: var(--gold-soft); color: var(--ink); padding: 9px 16px; text-align: center; font-size: 0.82rem; font-weight: 500; }
+  .top-strip a { font-weight: 600; text-decoration: underline; margin-left: 4px; }
+
+  .nav { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1320px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); gap: 16px; }
+  .nav-logo img { height: 30px; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-link { font-size: 0.90rem; font-weight: 500; color: var(--ink); padding: 6px 0; display: inline-flex; align-items: center; gap: 4px; transition: color .15s ease; }
+  .nav-link:hover { color: var(--brand-deep); }
+  .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
+  .nav-link.active { color: var(--brand-deep); font-weight: 600; }
+  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  .mobile-toggle { display: none; width: 38px; height: 38px; border-radius: 50%; background: var(--bg-2); border: 1px solid var(--line); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  .mobile-toggle svg { width: 20px; height: 20px; }
+  @media (max-width: 820px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } .nav-login { display: none; } }
+
+  /* ARTICLE LAYOUT */
+  .article-hero { padding: clamp(36px, 5vw, 60px) 0 0; }
+  .article-meta { display: inline-flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 18px; }
+  .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--brand-deep); opacity: 0.5; }
+  .article-meta .date { color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
+  .article-meta a { color: var(--brand-deep); }
+  .article-title { font-size: clamp(2.0rem, 4.4vw, 3.4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.0; max-width: 880px; margin-bottom: 18px; }
+  .article-title em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-deck { font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(1.05rem, 1.4vw, 1.22rem); color: var(--ink-soft); line-height: 1.55; max-width: 760px; margin: 0 0 32px; }
+  .article-cover { aspect-ratio: 16/9; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 48px; box-shadow: 0 24px 56px -20px rgba(36,20,50,0.30); }
+  .article-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .article-body { max-width: 720px; margin: 0 auto; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.1rem; line-height: 1.75; color: var(--ink); }
+  .article-body h2 { font-family: 'Geist', sans-serif; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.025em; margin: 56px 0 18px; line-height: 1.15; color: var(--ink); }
+  .article-body h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-body h3 { font-family: 'Geist', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.015em; margin: 36px 0 12px; color: var(--ink); }
+  .article-body p { margin: 0 0 22px; }
+  .article-body a { color: var(--brand-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .article-body a:hover { color: var(--brand-darker); }
+  .article-body ul, .article-body ol { margin: 0 0 22px; padding-left: 24px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body blockquote { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.22rem; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--brand); padding: 4px 0 4px 24px; margin: 32px 0; }
+  .article-body strong { font-weight: 600; color: var(--ink); }
+  .callout { background: var(--bg-cream); border-radius: var(--radius-lg); padding: 22px 26px; margin: 32px 0; font-family: 'Geist', sans-serif; font-size: 0.98rem; line-height: 1.6; color: var(--ink-soft); }
+  .callout-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 6px; }
+
+  /* PRODUCT CTA */
+  .product-cta { background: linear-gradient(135deg, #efe0fa 0%, #f4eee5 100%); border-radius: var(--radius-xl); padding: 32px 36px; margin: 48px 0; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+  @media (max-width: 720px) { .product-cta { grid-template-columns: 1fr; text-align: center; } }
+  .product-cta-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; font-family: 'Geist', sans-serif; }
+  .product-cta h3 { font-family: 'Geist', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; color: var(--ink); }
+  .product-cta p { font-family: 'Geist', sans-serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5; margin-bottom: 16px; }
+  .product-cta .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); padding: 12px 24px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; font-family: 'Geist', sans-serif; transition: background .25s ease; }
+  .product-cta .btn:hover { background: var(--brand-darker); }
+
+  .article-disclaimer { max-width: 720px; margin: 56px auto 0; padding: 20px 0 0; border-top: 1px solid var(--line); font-family: 'Geist', sans-serif; font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+  /* RELATED POSTS */
+  .related-section { max-width: 1280px; margin: 72px auto 0; padding: 0 clamp(20px, 4vw, 48px); }
+  .related-section h3 { font-family: 'Geist', sans-serif; font-size: 1.4rem; font-weight: 500; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 80px; }
+  @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: 1fr; } }
+  .related-card { background: white; border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -18px rgba(36,20,50,0.22); border-color: var(--line-strong); }
+  .related-card-image { aspect-ratio: 16/10; overflow: hidden; background: var(--bg-2); }
+  .related-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
+  .related-card:hover .related-card-image img { transform: scale(1.05); }
+  .related-card-body { padding: 20px 22px 22px; }
+  .related-card-meta { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-deep); margin-bottom: 8px; }
+  .related-card h4 { font-family: 'Geist', sans-serif; font-size: 1.04rem; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; color: var(--ink); }
+
+  /* FOOTER (lite) */
+  footer { background: var(--bg-2); border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 40px; font-family: 'Geist', sans-serif; }
+  footer .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 16px; }
+  .foot-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 360px; color: var(--ink-soft); }
+  .foot-col h5 { font-size: 0.82rem; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 16px; }
+  .foot-col a { display: block; font-size: 0.9rem; color: var(--muted); padding: 4px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="top-strip">
+  Save up to 80% on prescriptions with the DirectCare Pharmacy Card. <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer">Get yours free →</a>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <a class="nav-link has-arrow" href="/womens-health/">Women's Health</a>
+      <a class="nav-link has-arrow" href="/mens-health/">Men's Health</a>
+      <a class="nav-link" href="/supplements/">Supplements</a>
+      <a class="nav-link" href="/blood-test/">Blood Labs</a>
+    </div>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+  </div>
+</nav>
+
+<div class="container">
+  <article>
+    <header class="article-hero">
+      <div class="article-meta">
+        <a href="/blog/">Blog</a>
+        <span class="dot"></span>
+        <span>Nutrition</span>
+        <span class="dot"></span>
+        <span class="date">August 6, 2026</span>
+      </div>
+      <h1 class="article-title">The Protein + Fiber Breakfast Template: <em>3 Fast Rotations</em></h1>
+      <p class="article-deck">A breakfast that holds you until lunch needs at least 30g of protein and 8g of fiber. This template gives you three rotations that hit both in under 10 minutes.</p>
+      <div class="article-cover">
+        <img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Vibrant%20%26%20energetic%20%28younger%2040s%2C%20more%20uplift%29.png" alt="" />
+      </div>
+    </header>
+
+    <div class="article-body">
+      <p>If your breakfast leaves you hunting for a snack by 10:30, the problem is almost always the same: not enough protein, and almost no fiber. The fix is a template, not a recipe — hit the numbers, rotate the ingredients, and the rest takes care of itself.</p>
+      <p>Below is the target we build around, the three rotations we actually use, and the small tweaks that make each one work for GLP-1 users, perimenopausal appetite shifts, or a training block.</p>
+      <h2>Why 30g protein and 8g fiber? <em>the numbers that matter</em></h2>
+      <p>Thirty grams is the protein threshold most often cited for meaningful muscle protein synthesis in adults, particularly as we age past 40 and anabolic resistance sets in (Moore et al., <em>J Gerontol</em>, 2015). It's also the dose that reliably blunts the post-meal ghrelin rebound that drives mid-morning snacking.</p>
+      <p>Eight grams of fiber is roughly a third of the daily 25–35g target, and — more practically — it's the dose that noticeably slows gastric emptying and flattens the glucose curve after breakfast. Most Americans get about 15g of fiber a <em>day</em>, which is why energy crashes at 10 a.m. feel normal. They aren't.</p>
+      <blockquote>A breakfast that hits both numbers is doing two jobs at once: preserving lean mass and stabilizing appetite for the next four hours.</blockquote>
+      <p>{callout: The template} Protein anchor (30g+) + fiber source (8g+) + optional fat and flavor. Everything else — sweet, savory, hot, cold — is a rotation, not a rule.</p>
+      <h2>Rotation 1: Greek yogurt bowl — <em>the two-minute default</em></h2>
+      <p>This is the fastest option and the one we recommend when mornings are genuinely chaotic. No cooking, no cleanup.</p>
+      <p><strong>Ingredients</strong></p>
+      <ul>
+        <li>1 cup (200g) nonfat Greek yogurt, 0% or 2%</li>
+        <li>1/2 cup raspberries or blackberries (highest-fiber berries)</li>
+        <li>2 tbsp chia seeds</li>
+        <li>1 tbsp sliced almonds</li>
+        <li>Optional: 1 tsp honey or a few drops of vanilla extract</li>
+      </ul>
+      <p><strong>Method</strong> 1. Spoon yogurt into a bowl. 2. Top with berries. 3. Sprinkle chia and almonds over the top. 4. Add honey or vanilla if using. 5. Eat.</p>
+      <p><strong>Approximate nutrition:</strong> 32g protein · 12g fiber · 22g carbs · 11g fat · 320 kcal</p>
+      <p><strong>Variations</strong></p>
+      <ul>
+        <li><strong>Savory version:</strong> swap berries for cucumber, cherry tomatoes, olive oil, and za'atar. Skip the chia; add 2 tbsp hemp seeds.</li>
+        <li><strong>Higher calorie (training days):</strong> add 1/2 cup rolled oats soaked overnight in the yogurt. Adds ~150 kcal and 4g fiber.</li>
+        <li><strong>Dairy-free:</strong> use unsweetened soy yogurt (the only plant yogurt with real protein — 8–10g per cup) and add a scoop of unflavored protein isolate to hit 30g.</li>
+      </ul>
+      <h2>Rotation 2: Savory scramble with beans — <em>when you need something hot</em></h2>
+      <p>The egg-only scramble is a protein-and-fiber trap: three eggs give you ~18g protein and zero fiber. Beans fix both problems.</p>
+      <p><strong>Ingredients</strong></p>
+      <ul>
+        <li>2 whole eggs + 3 egg whites (or 2 eggs + 1/2 cup liquid whites)</li>
+        <li>1/2 cup canned black beans, rinsed</li>
+        <li>1 cup baby spinach</li>
+        <li>2 tbsp salsa</li>
+        <li>1/4 avocado</li>
+        <li>Salt, pepper, olive oil spray</li>
+      </ul>
+      <p><strong>Method</strong> 1. Heat a nonstick pan over medium, spray with olive oil. 2. Add spinach, wilt for 30 seconds, then add beans to warm through. 3. Pour in beaten eggs and whites, stir gently until just set (about 90 seconds). 4. Slide onto a plate, top with salsa and sliced avocado. 5. Serve.</p>
+      <p><strong>Approximate nutrition:</strong> 34g protein · 9g fiber · 18g carbs · 14g fat · 340 kcal</p>
+      <p><strong>Variations</strong></p>
+      <ul>
+        <li><strong>Burrito bowl style:</strong> add 1/3 cup cooked quinoa for +4g fiber and +100 kcal.</li>
+        <li><strong>Higher fiber:</strong> swap black beans for 1/2 cup edamame — bumps protein another 4g.</li>
+        <li><strong>Meal prep:</strong> make four portions Sunday night in muffin tins at 350°F for 20 minutes; reheat 60 seconds.</li>
+      </ul>
+      <h2>Rotation 3: Overnight oats, done right — <em>the make-ahead option</em></h2>
+      <p>Most overnight oats recipes are dessert with a health halo — 40g of carbs, 8g of protein, and a spike-and-crash by 10 a.m. This version inverts the ratio.</p>
+      <p><strong>Ingredients</strong></p>
+      <ul>
+        <li>1/3 cup rolled oats (not instant)</li>
+        <li>1 scoop (about 25g protein) unflavored or vanilla whey or plant protein</li>
+        <li>1 tbsp chia seeds</li>
+        <li>1 tbsp ground flaxseed</li>
+        <li>3/4 cup unsweetened almond milk</li>
+        <li>1/4 cup Greek yogurt</li>
+        <li>1/2 cup blueberries or diced apple</li>
+        <li>Cinnamon to taste</li>
+      </ul>
+      <p><strong>Method</strong> 1. In a jar, whisk protein powder into almond milk until smooth (this order matters — protein clumps if added last). 2. Stir in oats, chia, flax, and cinnamon. 3. Top with Greek yogurt, then fruit. 4. Seal and refrigerate at least 6 hours or overnight. 5. Eat cold, or microwave 60 seconds.</p>
+      <p><strong>Approximate nutrition:</strong> 35g protein · 11g fiber · 32g carbs · 9g fat · 380 kcal</p>
+      <p><strong>Variations</strong></p>
+      <ul>
+        <li><strong>Chocolate:</strong> use chocolate protein, add 1 tsp cocoa powder and a few dark chocolate chips.</li>
+        <li><strong>PB&J:</strong> 1 tbsp powdered peanut butter mixed in, strawberries on top.</li>
+        <li><strong>Lower carb:</strong> cut oats to 2 tbsp, double the chia. Drops carbs to ~18g while keeping fiber high.</li>
+      </ul>
+      <h2>What if you're on a GLP-1? <em>the appetite-first tweak</em></h2>
+      <p>On tirzepatide or semaglutide, early satiety is the constraint — you can't finish a 400-kcal bowl, and forcing it triggers nausea. The template still works; the portions shrink.</p>
+      <p>Aim for the same <em>ratio</em> (protein-forward, fiber-included) in a smaller footprint: 3/4 cup Greek yogurt instead of a full cup, half the scramble, half the oats. What you can't afford to skip is the protein — GLP-1 weight loss is roughly 25–40% lean mass without adequate intake (Wilding et al., STEP 1, <em>NEJM</em>, 2021), and breakfast is the meal most likely to get skipped.</p>
+      <p>If a bowl feels heavy, a protein shake with a tablespoon of chia stirred in hits both numbers in 8 ounces.</p>
+      <h2>The mistakes that quietly break the template</h2>
+      <p><strong>Fruit juice instead of whole fruit.</strong> Juice loses the fiber. A glass of orange juice adds 25g of sugar and 0g of fiber to an otherwise good breakfast.</p>
+      <p><strong>"Protein" cereals and bars.</strong> Most deliver 10–15g of protein and count on you not reading the label. If you're using a bar, it needs 20g+ protein and 5g+ fiber to earn the spot.</p>
+      <p><strong>Nut butter as the protein source.</strong> Two tablespoons of almond butter is 7g of protein and 200 kcal — a fat source, not a protein source. Use it for flavor, not for the anchor.</p>
+      <p><strong>Skipping breakfast "because intermittent fasting."</strong> Fine if it works for you, but the research on time-restricted eating for body composition is mixed at best (Lowe et al., <em>JAMA Intern Med</em>, 2020), and skipping breakfast tends to push protein intake below the 1.6 g/kg threshold that supports lean mass in adults over 40.</p>
+      <h2>How this fits a bigger plan — <em>the labs worth watching</em></h2>
+      <p>Breakfast is one lever. If you're using nutrition to move a specific number — fasting glucose, HbA1c, LDL, ApoB, or hs-CRP — the labs worth having before you start optimizing are the ones that tell you which direction to push. A metabolic panel with lipids, HbA1c, and a fasting insulin will show whether the protein-and-fiber template is doing what you want it to do over 8–12 weeks.</p>
+      <p>Rotate the three above for two weeks. Then look at how you feel at 11 a.m. — that's the first, cheapest data point you have.</p>
+      <div class="product-cta">
+        <div>
+          <div class="product-cta-eyebrow">Make weight loss easier</div>
+          <h3>Compounded GLP-1, with clinician oversight.</h3>
+          <p>DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition guidance to make a suppressed appetite still hit protein and fiber.</p>
+          <a class="btn" href="/weight-loss/">See if you qualify →</a>
+        </div>
+        <div></div>
+      </div>
+      <p class="article-disclaimer">
+        <strong>Editorial disclosure:</strong> This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.
+      </p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <h3>Keep reading</h3>
+    <div class="related-grid" id="related-grid"></div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png" alt="DirectCare AI" />
+        <p>DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Blog</h5>
+        <a href="/blog/">All posts</a>
+        <a href="/blog/?cat=TRT">TRT</a>
+        <a href="/blog/?cat=HRT">HRT</a>
+        <a href="/blog/?cat=Weight%20Loss">Weight Loss</a>
+      </div>
+      <div class="foot-col">
+        <h5>Products</h5>
+        <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/weight-loss/">Weight Loss</a>
+        <a href="/blood-test/">Blood Labs</a>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI, Inc. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Related posts: pull other recent posts from manifest, excluding this slug
+  (function() {
+    var grid = document.getElementById('related-grid');
+    if (!grid) return;
+    var thisSlug = 'protein-fiber-breakfast-template-busy-mornings';
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+    fetch('/blog/posts.json', { cache: 'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var posts = (data.posts || []).filter(function(p){ return p.slug !== thisSlug; }).slice(0, 3);
+        if (posts.length === 0) { grid.parentElement.style.display = 'none'; return; }
+        grid.innerHTML = posts.map(function(p){
+          return ''
+            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '">'
+            +   '<div class="related-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
+            +   '<div class="related-card-body">'
+            +     '<div class="related-card-meta">' + escapeHtml(p.category) + '</div>'
+            +     '<h4>' + escapeHtml(p.title) + '</h4>'
+            +   '</div>'
+            + '</a>';
+        }).join('');
+      })
+      .catch(function(){ grid.parentElement.style.display = 'none'; });
+  })();
+</script>
+
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="tellescope.com"]');
+    if (a) {
+      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

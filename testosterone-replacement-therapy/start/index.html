@@ -15,6 +15,48 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
 <!-- End Google Tag Manager -->
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
+  fbq('track', 'PageView');
+
+  // Lazy-load fbevents.js on first interaction or 10s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,9 +81,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* ---------- Video banner hero ---------- */
   .hero{
-    position:relative; min-height:100vh; min-height:100svh;
+    position:relative;
     display:flex; align-items:flex-start; justify-content:center;
-    padding:54px 20px 60px; background:var(--dark);
+    padding:44px 20px 52px; background:var(--dark);
     overflow:hidden; isolation:isolate;
   }
   .hero-bg-video{
@@ -98,9 +140,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     font-weight:700; font-size:10.5px; letter-spacing:.04em;
     padding:3px 9px; border-radius:999px;
   }
-  .form-card__body{ position:relative; background:#fff; }
+  .form-card__body{ position:relative; background:#fff; overflow:hidden; }
   .intake-iframe{
-    display:block; width:100%; height:720px; border:0;
+    display:block; width:100%; height:700px; border:0;
     background:#fff;
   }
   .iframe-skeleton{
@@ -133,14 +175,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   /* ---------- Mobile: bigger form, tighter banner ---------- */
   @media (max-width:760px){
-    .hero{ padding:40px 14px 44px; align-items:flex-start; }
+    .hero{ padding:32px 14px 40px; align-items:flex-start; }
     .hero-content{ gap:14px; }
     .form-card{ border-radius:22px; }
     .form-card__head{ padding:12px 18px; }
-    .intake-iframe{ height:calc(100svh - 300px); min-height:560px; }
+    .intake-iframe{ height:calc(660px + 161px); margin-top:-161px; }
   }
   @media (max-width:400px){
-    .intake-iframe{ min-height:520px; }
+    .intake-iframe{ height:calc(620px + 161px); margin-top:-161px; }
   }
 </style>
 </head>

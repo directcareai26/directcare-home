@@ -22,6 +22,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   // Queue events NOW so they're sent the moment fbevents.js loads
   fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
   fbq('track', 'PageView');
 
   // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
@@ -45,6 +46,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
@@ -280,7 +284,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .btn-soon.btn-light-on-dark { background: rgba(255,255,255,0.92); color: var(--brand-darker); }
   .btn-soon::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.6; animation: soon-pulse 1.8s ease-in-out infinite; margin-right: 2px; }
   @keyframes soon-pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
-  .soon-banner { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; background: linear-gradient(135deg, rgba(175,75,237,0.10), rgba(232,111,196,0.10)); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--brand-darker); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
+  .soon-banner { display: inline-flex; align-items: center; gap: 10px; padding: 10px 18px; background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.08)); border: 1px solid rgba(255,255,255,0.28); border-radius: 999px; font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.82rem; font-weight: 800; color: #ffffff; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 14px; }
   .soon-banner .dot-live { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); animation: soon-pulse 1.6s ease-in-out infinite; }
 
   /* BUTTONS */
@@ -294,30 +298,26 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .btn-light-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
 
   /* HERO */
-  .hero { position: relative; overflow: hidden; padding: 64px 0 100px; isolation: isolate; background: linear-gradient(180deg, #ffffff 0%, var(--soft) 100%); }
-  .hero-bg-orbs { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
-  .orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.55; }
-  .orb.a { width: 540px; height: 540px; background: radial-gradient(circle, #d185ff 0%, transparent 70%); top: -200px; right: -120px; }
-  .orb.b { width: 480px; height: 480px; background: radial-gradient(circle, #af4bed 0%, transparent 70%); bottom: -240px; left: -160px; opacity: 0.35; }
-  @keyframes drift-a { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(40px, -30px) scale(1.08); } }
-  @keyframes drift-b { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-50px, 40px) scale(1.1); } }
-  .orb.a { animation: drift-a 14s ease-in-out infinite; }
-  .orb.b { animation: drift-b 17s ease-in-out infinite; }
+  .hero { position: relative; overflow: hidden; padding: 64px 0 100px; isolation: isolate; background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%); }
+  .hero-bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.55; filter: saturate(1.05) contrast(1.05); pointer-events: none; }
+  .hero-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(180deg, rgba(26,15,36,0.55) 0%, rgba(26,15,36,0.75) 100%), radial-gradient(900px 500px at 12% 30%, rgba(175,75,237,0.32), transparent 60%), radial-gradient(700px 400px at 92% 80%, rgba(232,111,196,0.18), transparent 60%); }
 
   .hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center; }
   @media (max-width: 980px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
-  .hero-copy h1 { margin-top: 22px; }
-  .hero-copy h1 .accent { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.22rem); max-width: 560px; margin: 24px 0 32px; color: var(--muted); line-height: 1.55; }
-  .hero-sub strong { color: var(--ink); font-weight: 700; }
-  .hero-answer { display: inline-flex; align-items: flex-start; gap: 10px; padding: 14px 18px; background: rgba(175,75,237,0.08); border: 1px solid rgba(175,75,237,0.18); border-radius: var(--radius); font-size: 0.94rem; color: var(--ink); line-height: 1.55; max-width: 580px; }
-  .hero-answer strong { color: var(--brand-darker); font-weight: 800; }
+  .hero-copy h1 { margin-top: 22px; color: #ffffff; }
+  .hero-copy h1 .accent { background: linear-gradient(135deg, #e8b6ff 0%, #d185ff 50%, #af4bed 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.22rem); max-width: 560px; margin: 24px 0 32px; color: rgba(255,255,255,0.82); line-height: 1.55; }
+  .hero-sub strong { color: #ffffff; font-weight: 700; }
+  .hero-answer { display: inline-flex; align-items: flex-start; gap: 10px; padding: 14px 18px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.20); border-radius: var(--radius); font-size: 0.94rem; color: rgba(255,255,255,0.90); line-height: 1.55; max-width: 580px; }
+  .hero-answer strong { color: #e8b6ff; font-weight: 800; }
   .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; margin-top: 8px; }
-  .hero-meta { font-size: 0.84rem; color: var(--muted); }
-  .hero-trust { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px 22px; margin-top: 28px; font-size: 0.86rem; color: var(--muted); max-width: 560px; }
+  .hero-meta { font-size: 0.84rem; color: rgba(255,255,255,0.72); }
+  .hero-trust { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px 22px; margin-top: 28px; font-size: 0.86rem; color: rgba(255,255,255,0.80); max-width: 560px; }
   @media (min-width: 600px) { .hero-trust { grid-template-columns: repeat(4, minmax(0,1fr)); } }
   .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
-  .hero-trust-item svg { color: var(--brand); flex-shrink: 0; }
+  .hero-trust-item svg { color: #e8b6ff; flex-shrink: 0; }
+  /* Coming-soon ghost button on the dark video hero */
+  .hero .btn-soon.btn-ghost { background: rgba(255,255,255,0.10); color: #ffffff; border: 1px dashed rgba(255,255,255,0.38); }
 
   /* Hero visual (image, not quiz, since we don't have peptide-specific intake) */
   .hero-visual { position: relative; aspect-ratio: 4/5; border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg); background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); }
@@ -438,7 +438,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
   .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
   .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
-  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; margin-top: 60px; }
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 64px 0 28px; }
   .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 40px; }
   @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
   @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
@@ -465,6 +465,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     .section { padding: 64px 0; }
     .section-head { margin-bottom: 40px; }
     .hero { padding: 40px 0 64px; }
+    .hero-bg-video { display: none; }
     footer { padding: 48px 0 24px; }
     .btn-primary-xl { padding: 18px 30px; font-size: 1rem; }
   }
@@ -638,6 +639,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/womans-hair-loss/">Hair Regrowth</a>
           <a href="/supplements/">Supplements</a>
           <a href="/blood-test/">Blood Labs</a>
+          <a href="/peptides">Peptides</a>
           <a class="view-all" href="/womens-health/">View all →</a>
         </div>
       </div>
@@ -650,6 +652,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a href="/mens-hair-loss/">Hair Regrowth</a>
           <a href="/supplements/">Supplements</a>
           <a href="/blood-test/">Blood Labs</a>
+          <a href="/peptides">Peptides</a>
           <a class="view-all" href="/mens-health/">View all →</a>
         </div>
       </div>
@@ -675,6 +678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="/womans-hair-loss/">Hair Regrowth</a>
     <a href="/supplements/">Supplements</a>
     <a href="/blood-test/">Blood Labs</a>
+    <a href="/peptides">Peptides</a>
     <a href="/womens-health/">View all →</a>
   </details>
   <details><summary>Men's Health</summary>
@@ -684,6 +688,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="/mens-hair-loss/">Hair Regrowth</a>
     <a href="/supplements/">Supplements</a>
     <a href="/blood-test/">Blood Labs</a>
+    <a href="/peptides">Peptides</a>
     <a href="/mens-health/">View all →</a>
   </details>
   <a href="/supplements/">Supplements</a>
@@ -693,10 +698,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- HERO -->
 <header class="hero">
-  <div class="hero-bg-orbs" aria-hidden="true">
-    <span class="orb a"></span>
-    <span class="orb b"></span>
-  </div>
+  <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+    <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/middle%20age%20ww.mp4" type="video/mp4" />
+  </video>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy">
@@ -709,7 +714,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div class="hero-cta-row rise d3" style="margin-top:24px;">
           <button type="button" class="btn btn-primary btn-primary-xl btn-soon" disabled aria-disabled="true">Coming Soon</button>
-          <button type="button" class="btn btn-ghost btn-primary-xl btn-soon" disabled aria-disabled="true">Coming Soon</button>
         </div>
         <div class="hero-trust rise d4">
           <span class="hero-trust-item">
@@ -776,7 +780,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section soft" id="peptide-list">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> Our Peptide Protocols</span>
       <h2>One body. <span class="accent">Six targeted signals.</span></h2>
       <p>Each peptide protocol is clinician-prescribed based on your labs, symptoms, and goals. And compounded by a US-licensed pharmacy. Not all peptides are appropriate for everyone.</p>
     </div>
@@ -844,7 +847,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section" id="how">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> How it works</span>
       <h2>A clinician-guided path,<br/><span class="accent">from intake to your door.</span></h2>
       <p>Peptides are powerful signaling molecules. Every protocol on DirectCare AI starts with a medical intake and is built around your goals and (where indicated) bloodwork.</p>
     </div>
@@ -882,7 +884,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="section lavender">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><span class="dot"></span> Who qualifies?</span>
       <h2>Peptide therapy may be<br/>appropriate <span class="accent">if you're…</span></h2>
       <p>Adult men and women looking for targeted, clinician-guided peptide protocols. And who meet the clinical criteria for the specific peptide selected by your provider.</p>
     </div>
@@ -922,37 +923,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- SAFETY DARK -->
-<section class="section safety">
-  <div class="container">
-    <div class="safety-grid">
-      <div>
-        <span class="eyebrow on-dark"><span class="dot"></span> Safety &amp; Transparency</span>
-        <h2>Straight answers on the questions that matter.</h2>
-      </div>
-      <div>
-        <div class="safety-block">
-          <strong>Are compounded peptides FDA-approved?</strong>
-          Some peptide active ingredients are individually FDA-approved (e.g., semaglutide, tirzepatide, sermorelin, tesamorelin, PT-141/bremelanotide). Compounded peptide preparations are <em>not</em> FDA-approved as finished products and have not been evaluated by the FDA for safety or effectiveness as a final compound. Several research-grade peptides do not have FDA-approved branded equivalents at all. Your clinician will discuss what's appropriate.
-        </div>
-        <div class="safety-block">
-          <strong>Are peptides safe?</strong>
-          When prescribed by a licensed clinician based on your medical history, most peptides have a favorable safety profile in healthy adults. As with any prescription therapy, side effects are possible and clinical monitoring is built into every program. Peptides are not a substitute for foundational lifestyle health (sleep, training, nutrition).
-        </div>
-        <div class="safety-note">This page is for educational purposes and does not constitute medical advice. Only a licensed clinician can determine whether any treatment is appropriate for you. Peptides should not be used to replace standard medical care for diagnosed conditions.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT IS DCAI -->
+<!-- ALMOST READY CTA -->
 <section class="section">
   <div class="container">
-    <div class="ent-card">
-      <span class="eyebrow"><span class="dot"></span> What is DirectCare AI?</span>
-      <h2><span class="accent">A clinician-guided care model,</span> built for the way you actually live.</h2>
-      <p>DirectCare AI is a HIPAA-compliant telehealth platform connecting patients with US-licensed providers for peptide therapy, hormone replacement, weight loss, sexual health, hair regrowth, blood labs, and chronic condition care. Coordinated end-to-end, from intake to refills.</p>
-      <button type="button" class="btn btn-ghost btn-primary-xl btn-soon" disabled aria-disabled="true" style="margin-top:6px;">Coming Soon</button>
+    <div class="final-cta">
+      <h2>Peptide therapy is<br/>almost ready.</h2>
+      <p>Our peptide program is in final clinical review, timed to an expected 2026 shift in FDA compounding guidance. We'll announce availability the moment it's cleared. Check back, or explore everything we already treat.</p>
+      <button type="button" class="btn btn-light-on-dark btn-primary-xl btn-soon" disabled aria-disabled="true" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Coming Soon</button>
+      <div class="meta">Your info will stay private and HIPAA-protected when we open enrollment.</div>
     </div>
   </div>
 </section>
@@ -962,7 +940,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="faq-layout">
       <aside class="faq-side">
-      <span class="eyebrow"><span class="dot"></span> Frequently Asked</span>
       <h2>Still have <span class="accent">questions?</span></h2>
       <p>Short, direct answers. Have one we missed? Message a clinician inside the patient portal.</p>
       </aside>
@@ -974,7 +951,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </details>
       <details class="faq">
         <summary>Are peptides legal?</summary>
-        <div class="faq-body">When prescribed by a licensed clinician and compounded by a state-licensed pharmacy, peptides used in medical practice are legal in the United States. The FDA periodically reviews which substances pharmacies are permitted to compound. Your clinician will only prescribe peptides that are within the current legal framework for compounding.</div>
+        <div class="faq-body">When prescribed by a licensed clinician and compounded by a state-licensed pharmacy, peptides used in medical practice are legal in the United States. The FDA periodically reviews which substances pharmacies are permitted to compound — and in 2026 an FDA advisory panel is reviewing several peptides (including BPC-157 and TB-500) currently restricted to research use, a decision expected to expand access over the months that follow. That's why we're building our program now and marking it <strong>Coming Soon</strong>: your clinician will only ever prescribe peptides that are within the current legal framework for compounding.</div>
       </details>
       <details class="faq">
         <summary>Are compounded peptides FDA-approved?</summary>
@@ -1013,19 +990,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- FINAL CTA -->
-<section class="section">
-  <div class="container">
-    <div class="final-cta">
-      <span class="eyebrow on-dark"><span class="dot"></span> Launching soon</span>
-      <h2>Peptide therapy is<br/>almost ready.</h2>
-      <p>Our peptide program is in final clinical review. We'll announce availability soon. Check back, or explore everything we already treat.</p>
-      <button type="button" class="btn btn-light-on-dark btn-primary-xl btn-soon" disabled aria-disabled="true" style="box-shadow: 0 16px 40px -6px rgba(0,0,0,0.25);">Coming Soon</button>
-      <div class="meta">Your info will stay private and HIPAA-protected when we open enrollment.</div>
-    </div>
-  </div>
-</section>
-
 <!-- FOOTER -->
 <footer>
   <div class="container">
@@ -1048,6 +1012,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="/womans-hair-loss/">Hair Regrowth</a>
         <a href="/supplements/">Supplements</a>
         <a href="/blood-test">Blood Labs</a>
+        <a href="/peptides">Peptides</a>
         <a href="/chronic-care/">Chronic Care</a>
         <a href="/womens-health/">View All</a>
       </div>

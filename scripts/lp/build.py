@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from core import (head, sticky_and_js, intake_block, credentials_block, plans_block, footer, standalone_capture,
+from core import (head, sticky_and_js, intake_block, credentials_block, plans_block, footer, standalone_capture, hero_cta,
                   LOGO_D, LOGO_W, PLANS)
 
 OUT = pathlib.Path.home()/"directcare-home"/"surge"
@@ -62,9 +62,10 @@ def f1():
               <div class="tiny">Sildenafil 40 &middot; Tadalafil 11 &middot; Vardenafil 7.5 &middot; Apomorphine 2</div></div>
           </div>
         </div>
-        <div id="quizTop" style="margin-top:22px">{quiz_block()}</div>
+        <div id="quizTop" style="margin-top:22px">{hero_cta()}</div>
       </div></div>
     </section>"""
+    s += intake_block()
     s += f'<img class="band" src="{IMG % "the-strength-couple"}" alt="" loading="lazy">'
     s += plans_block("Good news &mdash; you&rsquo;ve got three options.",
                      "Pick one and a clinician takes it from there, usually within 24 hours.")
@@ -78,7 +79,7 @@ def f1():
       <p style="margin-top:22px"><a class="cta" href="#" data-start data-cta="mid">Check if I qualify &nbsp;&rarr;</a></p>
     </div></section>"""
     s += credentials_block()
-    s += intake_block() + sticky_and_js("f1") + footer()
+    s += standalone_capture() + sticky_and_js("f1") + footer()
     return s
 
 # ---------------------------------------------------------------- f2 offer-first
@@ -103,6 +104,7 @@ def f2():
       </div>
       <div class="hero-img"><img src="{IMG % 'the-spark-man'}" alt="" style="aspect-ratio:1/1;object-position:center 20%"></div>
     </div></section>"""
+    s += intake_block()
     s += f"""<section class="lilac"><div class="wrap">
       <h2>How it works</h2>
       <div class="grid g3">
@@ -128,7 +130,7 @@ def f2():
       </div>
       <p style="margin-top:22px"><a class="cta" href="#" data-start data-cta="mid">Check My Eligibility</a></p>
     </div></section>"""
-    s += standalone_capture() + intake_block() + sticky_and_js("f2") + footer()
+    s += standalone_capture() + sticky_and_js("f2") + footer()
     return s
 
 # ---------------------------------------------------------------- f3 product drop
@@ -150,6 +152,7 @@ def f3():
       </div>
     </div></section>"""
     # needs the .ink class or `.ink .card` never applies and the white headings vanish on white cards
+    s += intake_block(dark=True)
     s += """<section class="ink" style="background:#150e1e"><div class="wrap"><div class="grid g3">
       <div class="card"><h3 style="color:#fff">Absorbs in about 90 seconds</h3><p class="tiny" style="color:#a495b2">No pill to swallow, no waiting on a tablet to work.</p></div>
       <div class="card"><h3 style="color:#fff">A 36-hour window</h3><p class="tiny" style="color:#a495b2">One dose covers the night without watching a clock.</p></div>
@@ -159,7 +162,7 @@ def f3():
     s += credentials_block()
     s += """<section class="ink"><div class="wrap" style="text-align:center">
       <a class="cta" href="#" data-start data-cta="footer">Check if I qualify &nbsp;&rarr;</a></div></section>"""
-    s += standalone_capture(dark=True) + intake_block() + sticky_and_js("f3") + footer()
+    s += standalone_capture(dark=True) + sticky_and_js("f3") + footer()
     return s
 
 # ---------------------------------------------------------------- f4 symptom match
@@ -190,7 +193,8 @@ def f4():
       <p style="text-align:center;margin-top:18px"><a href="#quizTop" data-cta="unsure"
         style="color:#6d28d9;font-weight:700;text-decoration:none">Not sure? Take the 60-second match &rarr;</a></p>
     </div></section>"""
-    s += f"""<section class="lilac" id="quizTop"><div class="wrap" style="max-width:640px">{quiz_block()}</div></section>"""
+    s += f"""<section class="lilac" id="quizTop"><div class="wrap" style="max-width:640px">{hero_cta()}</div></section>"""
+    s += intake_block()
     s += f"""<section><div class="wrap">
       <h2>Whichever you pick, the price includes</h2>
       <div class="grid g3">
@@ -200,7 +204,7 @@ def f4():
       </div>
     </div></section>"""
     s += credentials_block(on_plum=True)
-    s += intake_block() + sticky_and_js("f4") + footer()
+    s += standalone_capture() + sticky_and_js("f4") + footer()
     return s
 
 # ---------------------------------------------------------------- f5 proof first
@@ -230,11 +234,12 @@ def f5():
       <div class="grid g2">{cards}</div>
     </div></section>"""
     s += credentials_block()
+    s += intake_block()
     s += plans_block("Now the part that costs you nothing",
                      "Three formulas, from $119. The evaluation is free and takes about three minutes.", on_plum=True)
     s += """<section style="text-align:center"><div class="wrap">
       <a class="cta" href="#" data-start data-cta="footer">Check if I qualify &nbsp;&rarr;</a></div></section>"""
-    s += standalone_capture() + intake_block() + sticky_and_js("f5") + footer()
+    s += standalone_capture() + sticky_and_js("f5") + footer()
     return s
 
 if __name__ == "__main__":

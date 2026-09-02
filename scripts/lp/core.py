@@ -159,7 +159,9 @@ section{padding:40px 0}
 .sticky.show{transform:translateY(0)}
 .sticky .cta{font-size:16px;padding:15px 18px}
 body{padding-bottom:0}
-#intake{border:0;width:100%;min-height:1100px;background:#fff;border-radius:16px}
+#intake{border:0;width:100%;min-height:1180px;background:#fff;border-radius:18px;
+  box-shadow:0 1px 2px rgba(36,20,50,.05),0 24px 60px -34px rgba(36,20,50,.6)}
+@media(min-width:860px){#intake{min-height:1000px}}
 .hide{display:none!important}
 .hero{position:relative;overflow:hidden;background:#241432}
 .hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
@@ -267,14 +269,20 @@ def sticky_and_js(variant, first_q_id="quizTop"):
     }});
   }})();
 
-  // ---- Tellescope intake, loaded only when asked for ----
+  // ---- the intake is embedded; CTAs just take you to it ----
+  var startedFired = false;
   window.startIntake = function(){{
     var host = document.getElementById('intakeWrap'); if (!host) return;
-    host.classList.remove('hide');
-    var f = document.getElementById('intake');
-    if (f && !f.src) {{ f.src = f.dataset.src; dl('intake_start'); }}
     host.scrollIntoView({{behavior:'smooth', block:'start'}});
+    if (!startedFired) {{ startedFired = true; dl('intake_start'); }}
   }};
+  // count it as started once the form actually comes into view, however they got there
+  if ('IntersectionObserver' in window) {{
+    var iw = document.getElementById('intakeWrap');
+    if (iw) new IntersectionObserver(function(es, o){{
+      if (es[0].isIntersecting && !startedFired) {{ startedFired = true; dl('intake_start'); o.disconnect(); }}
+    }}, {{threshold:.35}}).observe(iw);
+  }}
   document.querySelectorAll('[data-start]').forEach(function(el){{
     el.addEventListener('click', function(e){{ e.preventDefault(); window.startIntake(); }});
   }});
@@ -287,6 +295,21 @@ def sticky_and_js(variant, first_q_id="quizTop"):
   }});
 }})();
 </script>"""
+
+def hero_cta():
+    """Replaces the quiz card in the hero: says what the next step costs and sends
+    them to the embedded evaluation."""
+    return """
+    <div class="quiz">
+      <p style="font-size:12px;letter-spacing:.14em;color:#f3c969;font-weight:800;margin:0 0 10px">
+        STEP 1 OF 1</p>
+      <p class="q" style="margin-bottom:12px">Start your free evaluation</p>
+      <p style="color:#cdb9d8;font-size:15.5px;margin:0 0 18px">About three minutes. A US-licensed clinician
+        reviews it within 24 hours &mdash; and if treatment isn&rsquo;t appropriate for you, you are not charged.</p>
+      <a class="cta" href="#intakeWrap" data-start data-cta="hero">Check if I qualify &nbsp;&rarr;</a>
+      <p class="tiny" style="color:#9c87a8;margin:14px 0 0;text-align:center">
+        No membership fee &middot; free rush shipping &middot; plain packaging</p>
+    </div>"""
 
 def standalone_capture(dark=False):
     """The soft ask. Without it, anyone who leaves before the medical form is invisible
@@ -310,15 +333,17 @@ def standalone_capture(dark=False):
   </div>
 </section>"""
 
-def intake_block():
+def intake_block(eager=False, dark=False):
+    """The Tellescope evaluation, embedded in place. When eager it is the page's
+    main event and loads immediately; otherwise it stays below the fold."""
     return f"""
-<section id="intakeWrap" class="hide">
+<section id="intakeWrap" class="{'plum' if dark else ''}">
   <div class="wrap">
     <h2>Your evaluation</h2>
     <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
       appropriate for you, you are not charged.</p>
-    <iframe id="intake" data-src="{FORM}" title="Erectile dysfunction intake evaluation"
-      loading="lazy" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe id="intake" src="{FORM}" title="Erectile dysfunction intake evaluation"
+      loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>"""
 

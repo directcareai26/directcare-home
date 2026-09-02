@@ -115,7 +115,9 @@ section{padding:40px 0}
 .sticky.show{transform:translateY(0)}
 .sticky .cta{font-size:16px;padding:15px 18px}
 body{padding-bottom:0}
-#intake{border:0;width:100%;min-height:1100px;background:#fff;border-radius:16px}
+#intake{border:0;width:100%;min-height:1180px;background:#fff;border-radius:18px;
+  box-shadow:0 1px 2px rgba(36,20,50,.05),0 24px 60px -34px rgba(36,20,50,.6)}
+@media(min-width:860px){#intake{min-height:1000px}}
 .hide{display:none!important}
 .hero{position:relative;overflow:hidden;background:#241432}
 .hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
@@ -162,6 +164,15 @@ footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
     <div class="grid g3"><div class="card"><h3>US-licensed clinicians</h3><p class="tiny" style="color:inherit;opacity:.85">Every evaluation is read by a clinician licensed in your state, usually within 24 hours. If treatment isn&rsquo;t appropriate for you, you are not charged.</p></div><div class="card"><h3>LegitScript certified</h3><p class="tiny" style="color:inherit;opacity:.85">Independently verified telehealth and pharmacy practices &mdash; not a grey-market site.</p></div><div class="card"><h3>Licensed US compounding pharmacy</h3><p class="tiny" style="color:inherit;opacity:.85">Your formula is prepared and shipped from a licensed US pharmacy, plain and unmarked.</p></div></div>
   </div>
 </section>
+<section id="intakeWrap" class="">
+  <div class="wrap">
+    <h2>Your evaluation</h2>
+    <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
+      appropriate for you, you are not charged.</p>
+    <iframe id="intake" src="https://business.tellescope.com/e/public/form?f=6a91c05fa9cb082abb340d5e&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&" title="Erectile dysfunction intake evaluation"
+      loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
 <section class="plum" id="shelf">
   <div class="wrap">
     <h2>Now the part that costs you nothing</h2>
@@ -187,15 +198,6 @@ footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
       </form>
       <p class="tiny" style="color:#9c87a8;margin:12px 0 0;text-align:center">Free evaluation &middot; no charge if you don&rsquo;t qualify</p>
     </div>
-  </div>
-</section>
-<section id="intakeWrap" class="hide">
-  <div class="wrap">
-    <h2>Your evaluation</h2>
-    <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
-      appropriate for you, you are not charged.</p>
-    <iframe id="intake" data-src="https://business.tellescope.com/e/public/form?f=6a91c05fa9cb082abb340d5e&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&" title="Erectile dysfunction intake evaluation"
-      loading="lazy" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </section>
 <div class="sticky" id="stickyBar"><a class="cta" href="#quizTop" data-cta="sticky">Check if I qualify &nbsp;&rarr;</a></div>
@@ -278,14 +280,20 @@ footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
     });
   })();
 
-  // ---- Tellescope intake, loaded only when asked for ----
+  // ---- the intake is embedded; CTAs just take you to it ----
+  var startedFired = false;
   window.startIntake = function(){
     var host = document.getElementById('intakeWrap'); if (!host) return;
-    host.classList.remove('hide');
-    var f = document.getElementById('intake');
-    if (f && !f.src) { f.src = f.dataset.src; dl('intake_start'); }
     host.scrollIntoView({behavior:'smooth', block:'start'});
+    if (!startedFired) { startedFired = true; dl('intake_start'); }
   };
+  // count it as started once the form actually comes into view, however they got there
+  if ('IntersectionObserver' in window) {
+    var iw = document.getElementById('intakeWrap');
+    if (iw) new IntersectionObserver(function(es, o){
+      if (es[0].isIntersecting && !startedFired) { startedFired = true; dl('intake_start'); o.disconnect(); }
+    }, {threshold:.35}).observe(iw);
+  }
   document.querySelectorAll('[data-start]').forEach(function(el){
     el.addEventListener('click', function(e){ e.preventDefault(); window.startIntake(); });
   });

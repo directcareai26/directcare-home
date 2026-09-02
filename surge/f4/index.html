@@ -29,7 +29,7 @@ img{max-width:100%;display:block}
 .bar.gold{color:#f3c969}
 header.nav{padding:16px 0}
 header.nav img{width:132px;height:auto}
-h1{font-size:clamp(34px,7.6vw,64px);line-height:1.01;letter-spacing:-.033em;margin:0 0 18px;font-weight:900}
+h1{font-size:clamp(34px,5.4vw,52px);line-height:1.03;letter-spacing:-.03em;margin:0 0 18px;font-weight:900}
 h2{font-size:clamp(24px,4.4vw,40px);line-height:1.08;letter-spacing:-.028em;margin:0 0 14px;font-weight:800}
 h3{font-size:18px;line-height:1.25;margin:0 0 6px;font-weight:700;letter-spacing:-.015em}
 p{margin:0 0 14px}
@@ -115,9 +115,14 @@ section{padding:40px 0}
 .sticky.show{transform:translateY(0)}
 .sticky .cta{font-size:16px;padding:15px 18px}
 body{padding-bottom:0}
-#intake{border:0;width:100%;min-height:1180px;background:#fff;border-radius:18px;
-  box-shadow:0 1px 2px rgba(36,20,50,.05),0 24px 60px -34px rgba(36,20,50,.6)}
-@media(min-width:860px){#intake{min-height:1000px}}
+/* height is set from Tellescope's postMessage; this is only the pre-JS fallback */
+#intake{border:0;width:100%;height:1240px;background:#fff;border-radius:18px;display:block;
+  box-shadow:0 1px 2px rgba(36,20,50,.05),0 24px 60px -34px rgba(36,20,50,.6);
+  transition:height .18s ease}
+#intake[data-autosized]{transition:height .18s ease}
+/* the form renders as a ~640px column, so a full-width box on desktop is mostly dead space */
+.intake-shell{max-width:760px;margin:0 auto}
+@media(min-width:860px){#intake{height:1040px}}
 .hide{display:none!important}
 .hero{position:relative;overflow:hidden;background:#241432}
 .hero .heroimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 18%}
@@ -189,8 +194,10 @@ footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
     <h2>Your evaluation</h2>
     <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
       appropriate for you, you are not charged.</p>
-    <iframe id="intake" src="https://business.tellescope.com/e/public/form?f=6a91c05fa9cb082abb340d5e&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&" title="Erectile dysfunction intake evaluation"
-      loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="intake-shell">
+      <iframe id="intake" src="https://business.tellescope.com/e/public/form?f=6a91c05fa9cb082abb340d5e&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&" title="Erectile dysfunction intake evaluation" scrolling="no"
+        loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </div>
 </section><section><div class="wrap">
       <h2>Whichever you pick, the price includes</h2>
@@ -323,11 +330,27 @@ footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
     el.addEventListener('click', function(e){ e.preventDefault(); window.startIntake(); });
   });
 
-  // Tellescope posts a message when the form is submitted
+  // Tellescope posts {type:'height', height:N} as the form grows and shrinks.
+  // Without this the iframe keeps a guessed height and the form's own NEXT button
+  // ends up below the fold of the box — you have to scroll INSIDE the iframe to
+  // reach it, which on a phone is close to invisible.
   window.addEventListener('message', function(ev){
-    if (typeof ev.data === 'string' && ev.data.toLowerCase().indexOf('submit') > -1) {
-      dl('intake_lead', {form:'6a91c05fa9cb082abb340d5e'});
+    if (ev.origin !== 'https://business.tellescope.com') return;
+    var d = ev.data;
+    if (typeof d === 'string') {
+      if (d.toLowerCase().indexOf('submit') > -1) dl('intake_lead', {form:'6a91c05fa9cb082abb340d5e'});
+      try { d = JSON.parse(d); } catch(_e) { return; }
     }
+    if (!d || typeof d !== 'object') return;
+    if (d.type === 'height' && +d.height > 0) {
+      var f = document.getElementById('intake');
+      if (f) {
+        var h = Math.min(Math.max(+d.height + 32, 560), 6000);
+        f.style.height = h + 'px';
+        f.setAttribute('data-autosized', '1');
+      }
+    }
+    if (d.type === 'submit' || d.submitted) dl('intake_lead', {form:'6a91c05fa9cb082abb340d5e'});
   });
 })();
 </script>

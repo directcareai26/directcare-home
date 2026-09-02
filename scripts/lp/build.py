@@ -55,7 +55,7 @@ def f1():
           <p class="lede">SURGE MAX is a rapid-absorb liquid &mdash; no pill to swallow, no waiting around for it
             to work. A US-licensed clinician reviews your evaluation within 24 hours.</p>
           <div class="card" style="display:flex;gap:16px;align-items:center;margin:18px 0 0">
-            <img src="{IMG % 'holding-4in1'}" alt="SURGE MAX single-dose vial" width="92" height="112"
+            <img src="/optimized/surge-max-vial-light-400.webp" alt="SURGE MAX single-dose vial" width="92" height="112"
               style="width:92px;height:112px;object-fit:cover;border-radius:12px" loading="lazy">
             <div><b style="font-size:17px">SURGE MAX 10-pack</b>
               <div style="color:#6d28d9;font-weight:700">$179 &middot; $17.90 a dose</div>
@@ -138,7 +138,7 @@ def f3():
     s  = head("Surge Max — the 4-in-1 liquid", "Four medications in one dose. Absorbs in about 90 seconds.", "f3", dark=True)
     s += f'<header class="nav ink"><div class="wrap"><img src="{LOGO_W}" alt="DirectCare AI"></div></header>'
     s += f"""<section data-hero class="ink"><div class="wrap split">
-      <div class="hero-img" style="background:#241432"><img src="{IMG % '4in1-dorp'}" alt="SURGE MAX liquid dose" style="aspect-ratio:1/1"></div>
+      <div class="hero-img" style="background:#241432"><img src="{IMG % 'surge-max-vial-dark'}" alt="SURGE MAX single-dose vial" style="aspect-ratio:1/1" fetchpriority="high"></div>
       <div>
         <p style="color:#f3c969;font-weight:800;letter-spacing:.18em;font-size:12px;margin:0 0 12px">THE 4-IN-1 LIQUID</p>
         <h1 style="color:#fff">Four medications.<br>One dose.<br>Ninety seconds.</h1>

@@ -360,7 +360,7 @@ def credentials_block(on_plum=False):
   </div>
 </section>"""
 
-def plans_block(title, note, on_plum=False, link_all=True):
+def plans_block(title, note, on_plum=False, link_all=True, show_pack=False):
     rows = "".join(
         f'<a class="plan" href="#" data-start data-cta="plan-{k}"><span><b>{n}</b>'
         f'<span>{p} &middot; {per}</span></span><em>{price}</em></a>'
@@ -370,6 +370,8 @@ def plans_block(title, note, on_plum=False, link_all=True):
   <div class="wrap">
     <h2>{title}</h2>
     <p class="lede">{note}</p>
+    <img src="/optimized/surge-max-pack-1200.webp" alt="SURGE MAX single-dose vials"
+      style="width:100%;max-width:560px;height:auto;border-radius:18px;margin:4px 0 16px" loading="lazy">
     <div class="grid" style="gap:10px">{rows}</div>
     <p class="tiny" style="margin-top:14px">Complete program price &mdash; clinician review and free shipping
       included, no membership fee.</p>

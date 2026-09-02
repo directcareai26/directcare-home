@@ -1,6 +1,25 @@
 {
   "posts": [
     {
+      "slug": "20-minute-salmon-asparagus-omega-3-dinner",
+      "title": "20-Minute Salmon and Asparagus: Hit Your Omega-3 Target",
+      "excerpt": "A clinician-built 20-minute salmon and asparagus sheet-pan dinner — dialed to the EPA+DHA omega-3 dose that actually moves your labs.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-09-02",
+      "dateLabel": "September 2, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Emotional%20Eating.png",
+      "keywords": [
+        "salmon and asparagus recipe",
+        "omega-3 dinner",
+        "EPA DHA target",
+        "sheet pan salmon",
+        "20 minute healthy dinner",
+        "omega-3 rich meal",
+        "wild salmon nutrition"
+      ]
+    },
+    {
       "slug": "lifting-through-perimenopause-rep-ranges-recovery",
       "title": "Lifting Through Perimenopause: Rep Ranges & Recovery Rules",
       "excerpt": "The rep ranges, weekly split, and recovery rules that actually work when estrogen is fluctuating and recovery is slower than it used to be.",

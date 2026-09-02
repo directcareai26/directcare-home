@@ -67,7 +67,7 @@ body{margin:0;font-family:Archivo,-apple-system,BlinkMacSystemFont,"Segoe UI",He
   color:#1c1024;background:#fff;line-height:1.5;-webkit-font-smoothing:antialiased;
   font-synthesis-weight:none;letter-spacing:-.005em}
 img{max-width:100%;display:block}
-.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .bar{background:#241432;color:#cdb9d8;font-size:11px;letter-spacing:.06em;text-align:center;
   padding:9px 16px;font-weight:600;text-transform:uppercase}
 .bar.gold{color:#f3c969}
@@ -151,6 +151,17 @@ section{padding:40px 0}
 .plan span{font-size:13px;color:#7a6d88}
 .plum .plan span{color:#cdb9d8}
 .plan em{font-style:normal;font-size:19px;font-weight:900;color:#6d28d9;white-space:nowrap}
+.packshot{width:100%;max-width:460px;height:auto;border-radius:18px;margin:4px 0 18px}
+@media(min-width:860px){.packshot{margin:8px auto 26px;display:block}}
+.plan-grid{display:grid;gap:10px}
+.plan{transition:transform .13s ease,box-shadow .13s ease}
+.plan:hover{transform:translateY(-2px);box-shadow:0 14px 30px -18px rgba(36,20,50,.55)}
+@media(min-width:860px){
+  .plan-grid{grid-template-columns:repeat(3,1fr);gap:16px}
+  .plan{flex-direction:column;align-items:flex-start;gap:10px;padding:24px 22px;min-height:152px}
+  .plan em{font-size:30px}
+  section{padding:72px 0}
+}
 .plum .plan em{color:#f3c969}
 /* sticky */
 .sticky{position:fixed;left:0;right:0;bottom:0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));
@@ -166,6 +177,27 @@ body{padding-bottom:0}
 #intake[data-autosized]{transition:height .18s ease}
 /* the form renders as a ~640px column, so a full-width box on desktop is mostly dead space */
 .intake-shell{max-width:760px;margin:0 auto}
+.intake-grid{display:block}
+.rail-extra{display:none}
+.rail-list{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:12px}
+.rail-list li{position:relative;padding-left:24px;font-size:15px;color:#4b3d59;line-height:1.45}
+.rail-list li:before{content:"";position:absolute;left:0;top:7px;width:9px;height:9px;border-radius:50%;
+  background:#16a84f;box-shadow:0 0 0 4px rgba(22,168,79,.14)}
+.rail-list b{color:#1c1024}
+.plum .rail-list li{color:#cdb9d8}
+.plum .rail-list b{color:#fff}
+.rail-price{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:22px;
+  padding-top:18px;border-top:1px solid #e5dbec;font-size:15px;color:#4b3d59}
+.rail-price b{font-size:30px;font-weight:900;color:#241432;letter-spacing:-.02em}
+.plum .rail-price{border-color:rgba(255,255,255,.16);color:#cdb9d8}
+.plum .rail-price b{color:#f3c969}
+@media(min-width:1000px){
+  .intake-grid{display:grid;grid-template-columns:330px minmax(0,1fr);gap:56px;align-items:start}
+  .intake-rail{position:sticky;top:28px}
+  .rail-extra{display:block}
+  .intake-shell{margin:0}
+  #intakeWrap h2{margin-bottom:10px}
+}
 @media(min-width:860px){#intake{height:1040px}}
 .hide{display:none!important}
 .hero{position:relative;overflow:hidden;background:#241432}
@@ -190,6 +222,11 @@ body{padding-bottom:0}
   .hero .grid2 > div:last-child{margin-top:0!important}
 }
 footer{padding:26px 0 40px;border-top:1px solid #e5dbec;margin-top:10px}
+footer .tiny{max-width:78ch}
+@media(min-width:860px){
+  .quiz{max-width:620px}
+  #capture.quiz{margin:0 auto}
+}
 """
 
 def sticky_and_js(variant, first_q_id="quizTop"):
@@ -360,12 +397,26 @@ def intake_block(eager=False, dark=False):
     return f"""
 <section id="intakeWrap" class="{'plum' if dark else ''}">
   <div class="wrap">
-    <h2>Your evaluation</h2>
-    <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
-      appropriate for you, you are not charged.</p>
-    <div class="intake-shell">
+    <div class="intake-grid">
+      <aside class="intake-rail">
+        <h2>Your evaluation</h2>
+        <p class="lede">A US-licensed clinician reviews this, usually within 24 hours. If treatment
+          isn&rsquo;t appropriate for you, you are not charged.</p>
+        <div class="rail-extra">
+          <ul class="rail-list">
+            <li><b>About three minutes.</b> No video visit, no waiting room.</li>
+            <li><b>Reviewed within 24 hours</b> by a clinician licensed in your state.</li>
+            <li><b>$0 if you don&rsquo;t qualify.</b> You are only charged if one prescribes.</li>
+            <li><b>Free rush shipping</b> in plain, unmarked packaging.</li>
+          </ul>
+          <div class="rail-price"><span>SURGE MAX 10-pack</span><b>$179</b></div>
+          <p class="tiny" style="margin:10px 0 0">Go Long $149 &middot; Daily Boost $119 &middot; no membership fee</p>
+        </div>
+      </aside>
+      <div class="intake-shell">
       <iframe id="intake" src="{FORM}" title="Erectile dysfunction intake evaluation" scrolling="no"
         loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
 </section>"""
@@ -394,8 +445,8 @@ def plans_block(title, note, on_plum=False, link_all=True, show_pack=False):
     <h2>{title}</h2>
     <p class="lede">{note}</p>
     <img src="/optimized/surge-max-pack-1200.webp" alt="SURGE MAX single-dose vials"
-      style="width:100%;max-width:560px;height:auto;border-radius:18px;margin:4px 0 16px" loading="lazy">
-    <div class="grid" style="gap:10px">{rows}</div>
+      class="packshot" loading="lazy">
+    <div class="plan-grid">{rows}</div>
     <p class="tiny" style="margin-top:14px">Complete program price &mdash; clinician review and free shipping
       included, no membership fee.</p>
   </div>

@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "slug": "estradiol-patches-vs-gels-vs-pellets",
+      "title": "Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs",
+      "excerpt": "Patches, gels, and pellets all deliver bioidentical estradiol without first-pass liver metabolism — but they behave very differently week to week. Here's the clinical breakdown.",
+      "category": "HRT",
+      "categorySlug": "hrt",
+      "date": "2026-09-04",
+      "dateLabel": "September 4, 2026",
+      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png",
+      "keywords": [
+        "transdermal estradiol",
+        "estradiol patches vs gels vs pellets",
+        "bioidentical HRT delivery methods",
+        "estradiol pellet side effects",
+        "HRT for menopause",
+        "estradiol gel dosing"
+      ]
+    },
+    {
       "slug": "sildenafil-vs-tadalafil-how-to-choose",
       "title": "Sildenafil vs. Tadalafil: How to Pick the Right ED Med",
       "excerpt": "Sildenafil and tadalafil treat the same problem through the same mechanism — but their pharmacokinetics point to very different lifestyles. Here's how to choose.",
@@ -733,26 +751,6 @@
         "aerobic base training",
         "lactate threshold",
         "how to measure zone 2"
-      ]
-    },
-    {
-      "slug": "estradiol-patches-vs-gels-vs-pellets",
-      "title": "Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs",
-      "excerpt": "Patches, gels, and pellets all deliver bioidentical estradiol through the skin — but their pharmacokinetics, dosing flexibility, and safety profiles diverge sharply. Here's the clinical picture.",
-      "category": "HRT",
-      "categorySlug": "hrt",
-      "date": "2026-07-13",
-      "dateLabel": "July 13, 2026",
-      "image": "https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png",
-      "keywords": [
-        "estradiol patch vs gel vs pellet",
-        "transdermal estradiol",
-        "bioidentical HRT delivery",
-        "estradiol pellet side effects",
-        "estradiol gel absorption",
-        "menopause hormone therapy options",
-        "HRT clot risk",
-        "estradiol pharmacokinetics"
       ]
     },
     {

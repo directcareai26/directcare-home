@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs</title>
+      <link>https://www.directcare.ai/blog/estradiol-patches-vs-gels-vs-pellets</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-patches-vs-gels-vs-pellets</guid>
+      <pubDate>Fri, 04 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Patches, gels, and pellets all deliver bioidentical estradiol without first-pass liver metabolism — but they behave very differently week to week. Here's the clinical breakdown.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" />
+    </item>
     <item>
       <title>Sildenafil vs. Tadalafil: How to Pick the Right ED Med</title>
       <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" />
-    </item>
-    <item>
-      <title>Dutasteride vs Finasteride: When Aggressive Is Right</title>
-      <link>https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-dht-blockade</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-dht-blockade</guid>
-      <pubDate>Fri, 31 Jul 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Hair Regrowth</category>
-      <description><![CDATA[Dutasteride suppresses DHT more completely than finasteride — sometimes 90%+ vs ~70%. That extra suppression is a tool, not a default. Here's when to reach for it.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" />
     </item>
   </channel>
 </rss>

@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>10 Biomarkers That Actually Predict Longevity</title>
+      <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</guid>
+      <pubDate>Sun, 06 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Blood Labs</category>
+      <description><![CDATA[Your annual physical probably checks cholesterol and glucose. Here are the 10 blood biomarkers that actually predict longevity — and the ones most primary care panels quietly skip.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" />
+    </item>
     <item>
       <title>Female Hair Loss: The Hormonal Panel to Run First</title>
       <link>https://www.directcare.ai/blog/female-pattern-hair-loss-hormonal-panel</link>
@@ -112,18 +124,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" />
-    </item>
-    <item>
-      <title>10 Biomarkers That Predict Longevity (Most Physicals Miss)</title>
-      <link>https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity</guid>
-      <pubDate>Fri, 28 Aug 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Blood Labs</category>
-      <description><![CDATA[Total cholesterol and fasting glucose won't tell you much about how long you'll live. These 10 biomarkers — from ApoB to hs-CRP to HbA1c — will.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" />
     </item>
     <item>
       <title>Micronized Progesterone vs. Progestins: Why It Matters</title>

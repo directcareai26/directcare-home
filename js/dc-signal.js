@@ -164,6 +164,31 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     } catch (e) {}
   }
 
+  // fbevents.js writes the _fbp cookie when it loads, and the page's stub only
+  // loads it on first interaction or after 10s; the server copy of PageView
+  // used to leave before that, so Meta saw fbp on only 7.8% of server
+  // PageViews vs 100% of later events. The server copy now waits for the
+  // cookie (up to 12s, past the 10s lazy timer) and is flushed at once if the
+  // page hides, so nothing is lost when a visitor leaves early.
+  var pending = [];
+  function withFbp(payload) { payload.user_data.fbp = getCookie('_fbp') || null; return payload; }
+  function flushPending() {
+    while (pending.length) post(withFbp(pending.shift()));
+  }
+  function postWhenReady(payload) {
+    if (getCookie('_fbp')) return post(withFbp(payload));
+    pending.push(payload);
+    var tries = 0;
+    (function poll() {
+      var i = pending.indexOf(payload);
+      if (i < 0) return;                                   // already flushed
+      if (getCookie('_fbp') || ++tries >= 120) { pending.splice(i, 1); post(withFbp(payload)); return; }
+      setTimeout(poll, 100);
+    })();
+  }
+  d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') flushPending(); });
+  w.addEventListener('pagehide', flushPending);
+
   function track(eventName, customData) {
     var eventId = uuid();
     // set window.dcaOptOut = true (consent banner, DNT, an unsubscribed user)
@@ -171,7 +196,7 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     var optOut = w.dcaOptOut === true;
     var custom = customData || {};
     try { w.fbq && w.fbq('track', eventName, custom, { eventID: eventId }); } catch (e) {}
-    post({
+    postWhenReady({
       event_name: eventName,
       event_id: eventId,                       // same id both sides => Meta dedupes
       action_source: 'website',

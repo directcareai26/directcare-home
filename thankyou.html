@@ -21,6 +21,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   // Queue events NOW so they're sent the moment fbevents.js loads
   fbq('init', '1567193354573862');
+  /* 1068250912518605 is the dataset act 707327008899561 optimises against. dc-signal.js
+     also inits it, but that file is deferred — it runs AFTER the in-body Lead call below,
+     so a Lead queued before it would reach only the legacy pixel. Init it here, in the
+     head, or the lead campaigns' optimisation event never lands. Not a duplicate. */
+  fbq('init', '1068250912518605');
   /* PageView fired by /js/dc-signal.js with a shared event_id */
 
   // Lazy-load fbevents.js on first interaction or 2.5s — this page exists to
@@ -44,6 +49,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 <!-- Pinterest Tag (lazy-loaded — conversion page, so the safety timeout is short) -->
@@ -278,7 +286,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     .card { padding: 36px 22px; border-radius: var(--radius-lg); }
   }
 </style>
-  <script src="/js/dc-signal.js" defer></script>
+  <script src="/js/dc-signal.js?v=20260910" defer></script>
 </head>
 <body>
 

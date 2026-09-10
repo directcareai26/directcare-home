@@ -8,9 +8,16 @@ outage like the silent product-page 404s can never go unnoticed again.
 
 Behaviour:
   • Failure-only by default — stays quiet while everything is green (high signal).
-  • Each failing URL is re-checked twice before alerting, to avoid paging on a transient blip.
+  • A URL that fails the sweep is re-checked in three spaced rounds (15 s, 30 s, 60 s
+    apart — about two minutes end to end) and only alerts if it fails every round.
+    A GitHub runner's path to Vercel can degrade for a minute or two at a time
+    (2026-09-10: two healthy blog pages hit "Connection reset by peer" on three
+    tries 3 s apart), and a quick triple-retry inside that window still pages.
   • Re-alerts every run while still down (keeps reminding until fixed).
   • Once-a-day "all green" heartbeat (08:00 ET window) so you know it's alive.
+  • Wall-clock guarded: the sweep and the re-check rounds stop before the workflow's
+    10-minute job timeout, so a full outage (every request timing out) still produces
+    an alert instead of a killed job.
 
 Webhook: SITE_HEALTH_WEBHOOK env (GitHub secret) or --webhook, or ../.vault/slack.env fallback.
 
@@ -39,6 +46,16 @@ CRITICAL = [
 TIMEOUT = 20
 UA = "DirectCareSiteHealth/1.0 (+monitoring)"
 VAULT = pathlib.Path(__file__).resolve().parents[3] / "tooling" / ".vault"
+
+# Confirmation rounds for anything that failed the sweep. Each value is the pause
+# before that round; a URL drops out the moment it comes back. Total ≈ 105 s.
+RECHECK_DELAYS = (15, 30, 60)
+# Stop sweeping new URLs after this long so the re-check rounds and the alert
+# still fit inside the workflow's 10-minute job timeout.
+SWEEP_BUDGET = 6 * 60
+# Hard stop for everything (sweep + rounds); whatever is still failing is alerted.
+DEADLINE = 8.5 * 60
+SWEEP_BUDGET_LEFT_MIN = DEADLINE - SWEEP_BUDGET   # sweep may run until this much time remains
 
 
 def get_webhook(cli):
@@ -85,6 +102,45 @@ def build_targets():
     return targets
 
 
+def sweep(targets, time_left):
+    """First pass over every target. Returns ({url: (status, note)}, urls_checked)."""
+    suspects = {}
+    checked = 0
+    for url in targets:
+        if time_left() < SWEEP_BUDGET_LEFT_MIN:
+            print(f"! sweep stopped after {checked}/{len(targets)} URLs — out of time budget", flush=True)
+            break
+        ok, status, final, note = check(url)
+        checked += 1
+        if not ok:
+            suspects[url] = (status, note)
+            print(f"  suspect {status or 'ERR'} {url} {note}", flush=True)
+    return suspects, checked
+
+
+def confirm(suspects, time_left):
+    """Re-check suspects in spaced rounds; drop any that recover. Returns the confirmed set."""
+    failures = dict(suspects)
+    for i, delay in enumerate(RECHECK_DELAYS, 1):
+        if not failures:
+            break
+        if time_left() < delay + 30:
+            print(f"! skipping re-check round {i} — out of time budget", flush=True)
+            break
+        time.sleep(delay)
+        for url in list(failures):
+            if time_left() < 0:
+                break
+            ok, status, final, note = check(url)
+            if ok:
+                print(f"  recovered (round {i}) {url}", flush=True)
+                del failures[url]
+            else:
+                failures[url] = (status, note)
+    return failures
+
+
+
 def post_slack(webhook, text):
     req = urllib.request.Request(webhook, data=json.dumps({"text": text}).encode(),
                                  headers={"Content-Type": "application/json"})
@@ -103,24 +159,25 @@ def main():
     ap.add_argument("--heartbeat", action="store_true")
     args = ap.parse_args()
 
+    try:
+        sys.stdout.reconfigure(line_buffering=True)   # timestamps in the Actions log are real
+    except Exception:
+        pass
+
+    t0 = time.monotonic()
+    def time_left():
+        return DEADLINE - (time.monotonic() - t0)
+
     targets = build_targets()
-    failures = []
-    for url in targets:
-        ok, status, final, note = check(url)
-        if not ok:
-            # re-check twice before trusting the failure (transient-blip guard)
-            confirmed = True
-            for _ in range(2):
-                time.sleep(3)
-                ok2, status, final, note = check(url)
-                if ok2:
-                    confirmed = False
-                    break
-            if confirmed:
-                failures.append((url, status, note))
+    suspects, checked = sweep(targets, time_left)
+    if suspects:
+        print(f"{len(suspects)} suspect(s) after sweep — confirming over {sum(RECHECK_DELAYS)} s", flush=True)
+    confirmed = confirm(suspects, time_left)
+    failures = [(u, s, n) for u, (s, n) in confirmed.items()]
 
     now = datetime.datetime.now(datetime.timezone.utc)
-    print(f"Checked {len(targets)} URLs at {now.isoformat()}Z — {len(failures)} down")
+    elapsed = time.monotonic() - t0
+    print(f"Checked {checked} URLs at {now.isoformat()}Z in {elapsed:.0f}s — {len(failures)} down")
     for u, s, n in failures:
         print(f"  DOWN {s or ''} {u} {n}")
 
@@ -130,7 +187,9 @@ def main():
         lines = [f":rotating_light: *DirectCare site health — {len(failures)} page(s) DOWN*  ({now:%Y-%m-%d %H:%M} UTC)"]
         for u, s, n in failures[:25]:
             lines.append(f"• `{s or 'ERR'}` {u}  {('— ' + n) if n else ''}")
-        lines.append(f"_Checked {len(targets)} URLs on www.directcare.ai. Re-checks every 15 min until resolved._")
+        partial = f" (sweep stopped early at {checked} of {len(targets)})" if checked < len(targets) else ""
+        lines.append(f"_Each page failed {len(RECHECK_DELAYS) + 1} checks over ~{sum(RECHECK_DELAYS)} s. "
+                     f"Checked {checked} URLs on www.directcare.ai{partial}. Re-checks every scheduled run until resolved._")
         msg = "\n".join(lines)
         if args.dry_run or not webhook:
             print("\n[dry-run / no webhook]\n" + msg)

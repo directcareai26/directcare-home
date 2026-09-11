@@ -71,6 +71,66 @@ def is_primary(url: str) -> bool:
     return any(host == h or host.endswith("." + h) for h in PRIMARY_HOSTS)
 
 
+
+# --- does the cited work actually exist? -------------------------------------
+# The host allowlist stops a supplement blog being passed off as evidence. It
+# does NOT stop a fabricated citation: a made-up PubMed ID sits on the right
+# host and looks identical to a real one. Worse, pubmed.ncbi.nlm.nih.gov
+# returns HTTP 203 for a nonexistent PMID, so a status check proves nothing.
+#
+# So PMIDs are checked against NCBI's own summary API and DOIs against
+# doi.org, both of which answer definitively.
+#
+# LIMIT, and it matters: this proves the paper EXISTS, not that it says what
+# the sentence claims. PMID 12345678 is a real record — it is the "Denpasar
+# Declaration on Population and Development", which supports nothing we write
+# about. Fabrication is caught here; misattribution still needs a human.
+#
+# Fail-safe by design: a definitive "no such record" blocks, but a network
+# error does not. A CI blip must not stop the blog publishing, and an
+# unverifiable citation is no worse than the host check alone.
+_VERIFY_TIMEOUT = 12
+
+
+def verify_citation(url: str) -> tuple[bool, str]:
+    """(ok, note). ok=False ONLY when the source is known not to exist."""
+    import json as _json
+    import urllib.error
+    import urllib.request
+
+    def _get(u):
+        req = urllib.request.Request(u, headers={"User-Agent": "DirectCareEditorialGuard/1.0"})
+        return urllib.request.urlopen(req, timeout=_VERIFY_TIMEOUT)
+
+    m = re.search(r"pubmed\.ncbi\.nlm\.nih\.gov/(\d+)", url or "")
+    if m:
+        pmid = m.group(1)
+        try:
+            with _get("https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi"
+                      f"?db=pubmed&id={pmid}&retmode=json") as r:
+                res = _json.loads(r.read().decode("utf-8", "replace")).get("result", {})
+            uids = res.get("uids") or []
+            if not uids or "error" in (res.get(uids[0]) or {}):
+                return False, f"PMID {pmid} does not exist in PubMed"
+            return True, (res[uids[0]].get("title") or "")[:90]
+        except Exception as e:
+            return True, f"unverified ({type(e).__name__})"
+
+    m = re.search(r"doi\.org/(10\.[^\s\"'<>]+)", url or "")
+    if m:
+        try:
+            _get("https://doi.org/" + m.group(1)).close()
+            return True, "DOI resolves"
+        except urllib.error.HTTPError as e:
+            if e.code == 404:
+                return False, f"DOI {m.group(1)} does not resolve"
+            return True, f"DOI resolves (publisher returned {e.code})"
+        except Exception as e:
+            return True, f"unverified ({type(e).__name__})"
+
+    return True, "host allowlisted; not individually verifiable"
+
+
 def check_reviewer(slug: str, category: str, reg: dict) -> list[str]:
     """Errors for the reviewer assigned to `slug`. Empty list = fine."""
     entry = (reg.get("reviews") or {}).get(slug)
@@ -100,14 +160,21 @@ def check_reviewer(slug: str, category: str, reg: dict) -> list[str]:
     return errs
 
 
-def check_references(refs, category: str) -> list[str]:
+def check_references(refs, category: str, verify: bool = True) -> list[str]:
     need = MIN_REFS.get(category, 1)
     if not need:
         return []
     if not isinstance(refs, list):
         return [f"'{category}' posts need >= {need} references; none were provided"]
-    good = [r for r in refs
-            if isinstance(r, dict) and r.get("citation") and is_primary(r.get("url", ""))]
+    good, fabricated = [], []
+    for r in refs:
+        if not (isinstance(r, dict) and r.get("citation") and is_primary(r.get("url", ""))):
+            continue
+        ok, note = verify_citation(r["url"]) if verify else (True, "")
+        (good if ok else fabricated).append((r, note))
+    if fabricated:
+        return ["FABRICATED CITATION: " + n + f" — {(r.get('citation') or '')[:70]}"
+                for r, n in fabricated]
     if len(good) < need:
         return [
             f"'{category}' posts need >= {need} references to a primary source or "

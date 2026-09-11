@@ -674,6 +674,59 @@
           "value": "public, max-age=3600, stale-while-revalidate=86400"
         }
       ]
+    },
+    {
+      "source": "/(.*)\\.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/markdown; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, stale-while-revalidate=86400"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</index.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/blog/:slug([a-z0-9][a-z0-9-]*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</blog/:slug.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/:slug([a-z0-9][a-z0-9-]*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</:slug.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
+    },
+    {
+      "source": "/:section([a-z0-9][a-z0-9-]*)/:slug([a-z0-9][a-z0-9-]*)",
+      "headers": [
+        {
+          "key": "Link",
+          "value": "</:section/:slug.md>; rel=\"alternate\"; type=\"text/markdown\""
+        }
+      ]
     }
   ]
 }

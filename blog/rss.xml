@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Sep 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Fiber on a GLP-1: Why 25-35g Daily Makes It Work</title>
+      <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</guid>
+      <pubDate>Fri, 11 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Nutrition</category>
+      <description><![CDATA[GLP-1s slow gastric emptying — which is exactly why fiber intake matters more, not less. Here's how 25-35g daily keeps the appetite suppression comfortable and constipation at bay.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Diverse%20group%20of%20healthy%20adults%20smiling%20naturally%20together%2C%20authentic%20expressions%2C%20he%20395753.png" />
+    </item>
     <item>
       <title>5-Minute Mobility Warm-Up: Real Injury Risk Reduction</title>
       <link>https://www.directcare.ai/blog/5-minute-mobility-warm-up-reduces-injury-risk</link>
@@ -268,18 +280,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
-    </item>
-    <item>
-      <title>Fiber on a GLP-1: Why 25–35g Daily Keeps It Working</title>
-      <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</guid>
-      <pubDate>Sat, 15 Aug 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Nutrition</category>
-      <description><![CDATA[GLP-1s work better when your fiber intake is dialed in. Here's why 25–35g daily stabilizes appetite suppression, protects your gut, and keeps cravings quiet.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Happy%20healthy%20family%20sharing%20nutritious%20meal%20at%20dining%20table%2C%20natural%20laughter%2C%20authe%2022947.png" />
     </item>
     <item>
       <title>Rucking: Cardio and Strength in One Weighted Walk</title>

@@ -53,7 +53,7 @@ def head(title, desc, variant, dark=False):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&display=swap">
 <link rel="icon" href="/favicon.ico">
-<script src="/js/dc-signal.js?v=20260910" defer></script>
+<script src="/js/dc-signal.js?v=20260911" defer></script>
 {GTM}
 <style>{css(dark)}</style>
 </head>

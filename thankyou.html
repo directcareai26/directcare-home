@@ -286,7 +286,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     .card { padding: 36px 22px; border-radius: var(--radius-lg); }
   }
 </style>
-  <script src="/js/dc-signal.js?v=20260910" defer></script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
 </head>
 <body>
 
@@ -359,7 +359,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
    Fires once per program per browser session (sessionStorage guard, so a
    refresh doesn't double-count):
      - GA4 (via GTM):  dataLayer push  event 'lead_submitted', param 'program'
-     - Meta Pixel:     fbq('track', 'Lead')            (deduped by eventID)
+     - Meta:           browser + Conversions API via dcaQueue (deduped by eventID)
      - Pinterest:      pintrk('track', 'lead')          + /api/pinterest-capi beacon (deduped by event_id)
      - Roku:           rkp('event', 'LEAD')             + /api/roku-capi beacon      (deduped by event_id)
    The 'program' param is the pillar code from ?p= (surgemax/trt/glp1m/glp1w/
@@ -385,8 +385,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({ event: 'lead_submitted', program: program, event_id: eid });
 
-  // Meta Pixel (stub queues until fbevents.js loads)
-  try { fbq('track', 'Lead', { content_name: program }, { eventID: eid }); } catch (err) {}
+  // Meta: browser AND server on one event_id. dc-signal.js attaches the customer
+  // information parameters (em/ph/fn remembered from the funnel form, external_id,
+  // fbp, fbc) and the relay adds client_ip_address + client_user_agent server-side.
+  // It is a deferred script, so this queues and drains once it runs.
+  (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: program }, eid]);
 
   // Pinterest (stub queues until core.js loads) + server-side CAPI relay
   try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}

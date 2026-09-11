@@ -327,7 +327,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1" /></no
     .btn:hover, .badges a:hover { transform: none; }
   }
 </style>
-  <script src="/js/dc-signal.js?v=20260910" defer></script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -608,11 +608,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push(Object.assign({ event: 'purchase_confirmed' }, payload));
 
-    if (window.fbq) {
-      var meta = { content_name: cfg.name, content_category: code || 'generic' };
-      if (hasValue) { meta.value = value; meta.currency = currency; }
-      fbq('track', 'Purchase', meta, { eventID: eventId });
-    }
+    /* Meta: browser AND server, one event_id, so Meta de-duplicates.
+       Routing through dc-signal.js is what attaches the customer information
+       parameters: em/ph/fn remembered from the funnel form, external_id, fbp,
+       fbc — plus client_ip_address and client_user_agent, which are added
+       server-side because a browser cannot state them about itself and which
+       Meta requires for website events. A browser-only Purchase carried none
+       of that and vanished entirely whenever the pixel was blocked.
+       dc-signal.js is deferred, so this queues and it drains on load.
+       content_name/content_category stay on the browser copy only; the relay's
+       allow-list drops them so no product name reaches the server event. */
+    var meta = { content_name: cfg.name, content_category: code || 'generic' };
+    if (hasValue) { meta.value = value; meta.currency = currency; }
+    (window.dcaQueue = window.dcaQueue || []).push(['Purchase', meta, eventId]);
 
     if (window.pintrk) {
       var pin = { product_category: cfg.name, event_id: eventId };

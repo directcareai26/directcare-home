@@ -1005,7 +1005,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.directcare.ai/"},{"@type":"ListItem","position":2,"name":"Weight Loss (GLP-1)"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalProcedure","@id":"https://www.directcare.ai/weight-loss/#procedure","name":"Compounded GLP-1 Weight Loss (Tirzepatide / Semaglutide)","alternateName":["Tirzepatide therapy","Semaglutide therapy","GLP-1"],"procedureType":"https://schema.org/TherapeuticProcedure","howPerformed":"Weekly subcutaneous injection of compounded semaglutide or tirzepatide prescribed by a US-licensed clinician after a 5-minute intake and clinical review. Patients receive bi-weekly 1:1 Care Coaching from a Certified Medical Assistant.","indication":[{"@type":"MedicalIndication","name":"Obesity"},{"@type":"MedicalIndication","name":"Overweight with comorbidity"},{"@type":"MedicalIndication","name":"Type 2 diabetes mellitus"}],"performer":{"@type":"MedicalOrganization","@id":"https://www.directcare.ai/#org","name":"DirectCare AI"}}</script>
 <link rel="preload" as="image" href="/optimized/firefly-gemini-flash-a-woman-in-her-mid-40s-curvy-realistic-build-with-full-hips-and-a-soft-middle-mixed-411695-800.webp" imagesrcset="/optimized/firefly-gemini-flash-a-woman-in-her-mid-40s-curvy-realistic-build-with-full-hips-and-a-soft-middle-mixed-411695-400.webp 400w, /optimized/firefly-gemini-flash-a-woman-in-her-mid-40s-curvy-realistic-build-with-full-hips-and-a-soft-middle-mixed-411695-800.webp 800w, /optimized/firefly-gemini-flash-a-woman-in-her-mid-40s-curvy-realistic-build-with-full-hips-and-a-soft-middle-mixed-411695-1200.webp 1200w, /optimized/firefly-gemini-flash-a-woman-in-her-mid-40s-curvy-realistic-build-with-full-hips-and-a-soft-middle-mixed-411695-1600.webp 1600w" imagesizes="(max-width: 720px) 100vw, 50vw" fetchpriority="high">
-  <script src="/js/dc-signal.js?v=20260910" defer></script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -1983,7 +1983,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('click', function(e) {
     var a = e.target.closest('a[href*="/start"]');
     if (a) {
-      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
     }
   }, { passive: true });
 })();

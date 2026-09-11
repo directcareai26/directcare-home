@@ -64,7 +64,11 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
       if (s.length === 10) s = '1' + s;      // bare US number
       return s;
     },
-    name: function (v) { return String(v).trim().toLowerCase().replace(/[^\p{L}\p{M}'-]/gu, ''); },
+    // Meta: "Lowercase only with no punctuation." Apostrophes and hyphens must go
+    // (o'brien -> obrien, smith-jones -> smithjones) so the browser hash and the
+    // server hash are taken over the identical string. Accents stay: Meta's own
+    // example normalises Valéry -> valéry.
+    name: function (v) { return String(v).trim().toLowerCase().replace(/[^\p{L}\p{M}]/gu, ''); },
     ct: function (v) { return String(v).trim().toLowerCase().replace(/[^a-z]/g, ''); },
     st: function (v) {                       // 2-letter ANSI code; map full US state names
       var s = String(v).trim().toLowerCase().replace(/[^a-z]/g, '');
@@ -189,8 +193,8 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
   d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') flushPending(); });
   w.addEventListener('pagehide', flushPending);
 
-  function track(eventName, customData) {
-    var eventId = uuid();
+  function track(eventName, customData, presetId) {
+    var eventId = presetId || uuid();
     // set window.dcaOptOut = true (consent banner, DNT, an unsubscribed user)
     // and the event is still measured but excluded from ads delivery.
     var optOut = w.dcaOptOut === true;
@@ -220,11 +224,26 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     return true;
   };
   w.dcaTrack = track;
+
   w.dcaExternalId = externalId;
 
+  // Inline page scripts run while the document is parsing; this file is `defer`,
+  // so it runs after them and w.dcaTrack does not exist yet at that point. Pages
+  // push ['EventName', customData, eventId] onto w.dcaQueue instead.
+  //
+  // The drain MUST come after initPixels(). Advanced matching is applied at
+  // fbq('init', id, params) time, so an event that fires before that init reaches
+  // Meta with no customer information parameters on the browser copy at all.
+  function drainQueue() {
+    var q = w.dcaQueue;
+    w.dcaQueue = { push: function (args) { try { track.apply(null, args); } catch (e) {} return 1; } };
+    if (q && q.length) for (var i = 0; i < q.length; i++) w.dcaQueue.push(q[i]);
+  }
+  function boot() { initPixels(); drainQueue(); }
+
   clickId();                                   // capture fbclid on the landing hit
-  if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', initPixels);
-  else initPixels();
+  if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', boot);
+  else boot();
 
   /* COMPLIANCE
    * - Matching parameters describe a person, never a condition. We do not pass

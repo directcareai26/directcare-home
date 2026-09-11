@@ -364,7 +364,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   AdvertiserMaxTrack.getClick();
 </script>
 <link rel="preload" as="image" href="/optimized/hipaa-compliance-1-800.webp" imagesrcset="/optimized/hipaa-compliance-1-400.webp 400w, /optimized/hipaa-compliance-1-800.webp 800w, /optimized/hipaa-compliance-1-1200.webp 1200w, /optimized/hipaa-compliance-1-1600.webp 1600w" imagesizes="(max-width: 720px) 100vw, 50vw" fetchpriority="high">
-  <script src="/js/dc-signal.js?v=20260910" defer></script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -639,7 +639,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('click', function(e) {
     var a = e.target.closest('a[href*="/start"]');
     if (a) {
-      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
     }
   }, { passive: true });
 })();

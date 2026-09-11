@@ -299,7 +299,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
 </style>
-  <script src="/js/dc-signal.js?v=20260910" defer></script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -493,7 +493,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   document.addEventListener('click', function(e) {
     var a = e.target.closest('a[href*="tellescope.com"]');
     if (a) {
-      try { fbq('track', 'Lead', { content_name: a.textContent.trim().slice(0, 80) }); } catch (err) {}
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
     }
   }, { passive: true });
 })();

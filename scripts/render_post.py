@@ -177,6 +177,51 @@ def _escape_attr(s: str) -> str:
     return _html.escape(s or "", quote=True)
 
 
+def _references_html(refs: Any) -> str:
+    """A visible, linked source list.
+
+    Named trials in prose are not citations — a reader (or an AI engine
+    deciding whether to trust the page) cannot follow "SURMOUNT-5 showed".
+    Rendering the list makes the evidence checkable and is the single
+    largest lever on getting cited back.
+    """
+    if not isinstance(refs, list) or not refs:
+        return ""
+    items = []
+    for r in refs:
+        if not isinstance(r, dict):
+            continue
+        cite, url = (r.get("citation") or "").strip(), (r.get("url") or "").strip()
+        if not cite or not url:
+            continue
+        items.append(
+            f'<li>{_escape_attr(cite)} '
+            f'<a href="{_escape_attr(url)}" rel="noopener nofollow" target="_blank">Source</a></li>'
+        )
+    if not items:
+        return ""
+    return ('\n<section class="article-references" aria-labelledby="references-heading">'
+            '\n  <h2 id="references-heading">References</h2>\n  <ol>\n    '
+            + "\n    ".join(items) + "\n  </ol>\n</section>\n")
+
+
+def _reviewer_parts(slug: str) -> tuple[str, str]:
+    """(byline HTML, schema fragment) for a recorded review; ('','') if none.
+
+    Absence of a review must render nothing. A reviewer byline is a factual
+    claim that a named clinician read this post on that date.
+    """
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent / "blog"))
+        import editorial_guard as _g
+        reg = _g.load_registry()
+        schema = _g.reviewer_schema(slug, reg)
+        return _g.byline_html(slug, reg), (
+            "," + json.dumps(schema)[1:-1] if schema else "")
+    except Exception:
+        return "", ""
+
+
 def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     """Render one post. Returns (html, manifest_entry)."""
     required = ["slug", "title", "category", "deck", "body_markdown"]
@@ -223,7 +268,9 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         "{{DATE_LABEL}}": _escape_attr(date_label),
         "{{IMAGE}}": _escape_attr(image),
         "{{DECK}}": _escape_attr(deck),
-        "{{BODY_HTML}}": body_html,
+        "{{BODY_HTML}}": body_html + _references_html(payload.get("references")),
+        "{{REVIEWER_BYLINE}}": _reviewer_parts(slug)[0],
+        "{{REVIEWER_SCHEMA}}": _reviewer_parts(slug)[1],
         "{{PRODUCT_EYEBROW}}": _escape_attr(product_eyebrow),
         "{{PRODUCT_HEADLINE}}": _escape_attr(product_headline),
         "{{PRODUCT_BLURB}}": _escape_attr(product_blurb),

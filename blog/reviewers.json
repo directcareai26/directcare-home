@@ -1,0 +1,52 @@
+{
+  "_comment": [
+    "Who may be named as the medical reviewer of a blog post, and on what.",
+    "",
+    "This file exists to make one specific mistake impossible: putting a",
+    "clinician's name and credential on content outside their licensed scope of",
+    "practice. A byline that says 'Medically reviewed by Dr. X, D.C.' attaches",
+    "that person's licence to the claims in the post. If the post is about",
+    "testosterone dosing and the reviewer is a chiropractor, that is a",
+    "scope-of-practice problem for them and a substantiation problem for us.",
+    "",
+    "Two rules, both enforced by scripts/blog/editorial_guard.py, which fails",
+    "the daily-publish build rather than warning:",
+    "  1. A reviewer may only be named on categories in their 'scopes' list.",
+    "  2. A category marked requiresPrescriber accepts only a reviewer whose",
+    "     'prescribes' is true.",
+    "",
+    "A post with no reviewer renders NO reviewer byline. That is the correct",
+    "behaviour and the default. Never add an entry to 'reviews' for a review",
+    "that did not actually happen — the byline is a factual claim about a named",
+    "person on a specific date."
+  ],
+
+  "reviewers": {
+    "tim-pepin": {
+      "name": "Dr. Tim Pepin",
+      "credential": "D.C.",
+      "credentialName": "Doctor of Chiropractic",
+      "title": "Clinical Advisor",
+      "url": "https://www.directcare.ai/#dr-tim-pepin",
+      "prescribes": false,
+      "scopes": ["Fitness", "Nutrition"],
+      "_note": "A D.C. does not prescribe and does not manage endocrine conditions. Musculoskeletal health, mobility, recovery, training and general nutrition are in scope. Hormones, GLP-1s, ED, hair-loss pharmacology and lab interpretation are not."
+    }
+  },
+
+  "categories": {
+    "TRT":            { "requiresPrescriber": true },
+    "HRT":            { "requiresPrescriber": true },
+    "Weight Loss":    { "requiresPrescriber": true },
+    "Sexual Health":  { "requiresPrescriber": true },
+    "Hair Regrowth":  { "requiresPrescriber": true },
+    "Blood Labs":     { "requiresPrescriber": true },
+    "Supplements":    { "requiresPrescriber": false },
+    "Nutrition":      { "requiresPrescriber": false },
+    "Fitness":        { "requiresPrescriber": false }
+  },
+
+  "reviews": {
+    "_comment": "slug -> { reviewer: <key>, date: YYYY-MM-DD }. Empty because no review has been recorded yet. Add an entry only when a named reviewer has actually read that post."
+  }
+}

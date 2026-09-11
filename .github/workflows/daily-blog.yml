@@ -72,6 +72,13 @@ jobs:
       # A new post changes the sitemap, so the Markdown twins and llms-full.txt
       # are stale the moment it lands. Regenerating here keeps the machine-readable
       # edition in lockstep with the HTML instead of drifting a post behind.
+      # The blog index builds its grid from posts.json at request time, so a new
+      # post changes what readers see without changing blog/index.html. Its
+      # dateModified is taken from the newest post, and only this step moves it.
+      - name: Refresh page schema (dateModified)
+        if: steps.guard.outputs.already_posted == 'false'
+        run: python3 scripts/agent-files/build_page_schema.py
+
       - name: Rebuild agent-readable files
         if: steps.guard.outputs.already_posted == 'false'
         run: python3 scripts/agent-files/build_agent_files.py

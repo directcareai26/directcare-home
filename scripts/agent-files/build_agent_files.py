@@ -29,6 +29,7 @@ Usage:
 """
 import argparse
 import html as _html
+import json
 import pathlib
 import re
 import sys
@@ -249,6 +250,38 @@ def md_target(path: str):
     return ROOT / rel / "index.md"
 
 
+def blog_index_posts() -> str:
+    """The post list, rendered from posts.json.
+
+    blog/index.html builds its grid client-side by fetching posts.json, so the
+    served HTML names only the 4 hard-coded featured posts. Agents do not run
+    JavaScript, so a straight conversion of that page advertises a blog of 112
+    posts and then lists almost none of them. Read the same JSON the browser
+    reads and write the list out flat.
+    """
+    f = ROOT / "blog" / "posts.json"
+    if not f.is_file():
+        return ""
+    try:
+        posts = json.loads(f.read_text(encoding="utf-8")).get("posts", [])
+    except Exception:
+        return ""
+    if not posts:
+        return ""
+    out = [f"\n\n## All posts ({len(posts)})\n"]
+    for p in posts:
+        slug, title = p.get("slug", ""), p.get("title", "").strip()
+        if not slug or not title:
+            continue
+        bits = [b for b in (p.get("date", ""), p.get("category", "")) if b]
+        out.append(f"\n### [{title}]({BASE}/blog/{slug})\n")
+        if bits:
+            out.append(f"{' · '.join(bits)}\n")
+        if p.get("excerpt"):
+            out.append(f"\n{p['excerpt'].strip()}\n")
+    return "".join(out)
+
+
 def render(path: str, doc: str) -> str:
     title = _text(re.search(r"<title[^>]*>(.*?)</title>", doc, re.S | re.I).group(1)) \
         if re.search(r"<title[^>]*>", doc, re.I) else path
@@ -259,6 +292,8 @@ def render(path: str, doc: str) -> str:
     if desc:
         head += [f"> {desc}", ""]
     head += [f"Source: {BASE}{path}", ""]
+    if path.strip("/") == "blog":
+        body += blog_index_posts()
     return "\n".join(head) + "\n" + body + "\n"
 
 

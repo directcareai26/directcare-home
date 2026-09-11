@@ -13,6 +13,27 @@ Disallow: /hero-collage
 Disallow: /trt-preview
 Disallow: /index-legacy-2026-05-21
 
+# ---------------------------------------------------------------------------
+# Content Signals — our stated preference for how this content may be used.
+# Syntax: https://contentsignals.org  (Cloudflare, 2025). A declaration of
+# permission, not an access control; the Allow/Disallow rules above are what
+# actually gates crawling.
+#
+#   search    = yes  Build a search index and link back to us. Yes — this is
+#                    how patients find us.
+#   ai-input  = yes  Use our pages as the source for an AI-generated answer
+#                    (RAG / grounding). Yes — being cited in ChatGPT,
+#                    Perplexity and AI Overviews is a deliberate goal, and
+#                    declining this would opt us out of it.
+#   ai-train  = no   Train or fine-tune a model on our content. No — our
+#                    clinical copy is reviewed, liability-bearing medical
+#                    writing; we license no rights to absorb it into a model.
+#
+# To change this posture, edit the single line below. It is a business and
+# legal decision, not a technical one.
+# ---------------------------------------------------------------------------
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
 # Major AI crawlers — explicitly allowed
 User-agent: GPTBot
 Allow: /

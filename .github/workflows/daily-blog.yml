@@ -69,12 +69,20 @@ jobs:
         run: |
           python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}"
 
+      # A new post changes the sitemap, so the Markdown twins and llms-full.txt
+      # are stale the moment it lands. Regenerating here keeps the machine-readable
+      # edition in lockstep with the HTML instead of drifting a post behind.
+      - name: Rebuild agent-readable files
+        if: steps.guard.outputs.already_posted == 'false'
+        run: python3 scripts/agent-files/build_agent_files.py
+
       - name: Commit and push
         if: steps.guard.outputs.already_posted == 'false'
         run: |
           git config user.name  "DirectCare Blog Bot"
           git config user.email "directcareai@gmail.com"
           git add blog/ sitemap.xml scripts/used_topics.json
+          git add -A '*.md' llms-full.txt scripts/agent-files/generated-files.txt
           # Pull in any work pushed since checkout, then push our new post.
           git pull --rebase --autostash origin main || true
           NEW_SLUG=$(python3 -c "import json; print(json.load(open('blog/posts.json'))['posts'][0]['slug'])")

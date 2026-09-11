@@ -20,6 +20,12 @@ DirectCare AI partners with US-licensed compounding pharmacies and clinical labs
 - [The DirectCare AI Blog](https://www.directcare.ai/blog/): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.
 - [Posts manifest (JSON)](https://www.directcare.ai/blog/posts.json): Machine-readable list of all blog posts with slug, title, excerpt, category, date, image, and keywords.
 
+## Machine-readable editions
+
+- [llms-full.txt](https://www.directcare.ai/llms-full.txt): Every public page of this site as plain Markdown in a single file, so the whole catalogue can be read in one request instead of crawling 129 pages of HTML. Regenerated automatically whenever a page is published.
+- Per-page Markdown: any page has a Markdown twin at the same path with a `.md` extension (for example `/blood-test` and `/blood-test.md`). Each HTML response also advertises its twin with a `Link: <...>; rel="alternate"; type="text/markdown"` header, so there is no need to guess the URL.
+- [Content usage policy](https://www.directcare.ai/robots.txt): stated as Content-Signals in robots.txt. Indexing and use as the source for an AI-generated answer are both permitted; training on this content is not.
+
 ## Compliance & trust
 
 - US-licensed clinicians review every protocol.

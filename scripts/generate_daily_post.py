@@ -20,6 +20,7 @@ import hashlib
 import json
 import os
 import re
+import pathlib
 import sys
 import time
 from pathlib import Path
@@ -390,7 +391,7 @@ PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-po
 ## Category nuances
 - **Recipe posts (Nutrition):** include real ingredient lists, real method steps numbered 1-5, an approximate nutrition block (protein/fiber/carbs/fat/calories), and 2-4 variations. Tone is still clinician-built, not food-blogger breathless.
 - **Workout posts (Fitness):** include real exercise names, sets/reps/rest, progression rules, and warm-up notes. Cite ACSM or similar.
-- **Science posts (TRT/HRT/Weight Loss/Sexual Health/Hair Regrowth/Blood Labs/Supplements):** lead with the clinical signal or trade-off, cite literature inline.
+- **Science posts (TRT/HRT/Weight Loss/Sexual Health/Hair Regrowth/Blood Labs/Supplements):** lead with the clinical signal or trade-off, and back the load-bearing claims with the `references` array described below. These categories are REJECTED at build time without at least 2 references to a primary source or guideline body.
 
 ## Brand voice
 - Plain English, clinician's-eye view, never breathless.
@@ -408,6 +409,22 @@ PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-po
 - Note that compounded medications are not FDA-approved as finished products (the article disclaimer handles this; you can reference it casually).
 - No before/after weight-loss specifics that imply average results.
 - For GLP-1s, weight-loss percentages must be cited from named trials (SURMOUNT-5, STEP, etc.) — never just "studies show."
+
+## Sourcing (ENFORCED — the build fails without this)
+- Populate the `references` array with the studies and guidelines the article actually leans on.
+- Each URL must point at a primary source or a guideline body: pubmed.ncbi.nlm.nih.gov, doi.org,
+  nejm.org, jamanetwork.com, thelancet.com, bmj.com, academic.oup.com, endocrine.org, auanet.org,
+  acog.org, menopause.org, aad.org, acsm.org, nih.gov, fda.gov, cochranelibrary.com,
+  clinicaltrials.gov. A link to our own site, a supplement retailer or a news write-up of a study
+  does NOT count and will be rejected.
+- Naming a trial in prose is not a citation. "SURMOUNT-5 showed..." needs a matching entry.
+- **Cite only what you can identify precisely and are confident exists.** A fabricated citation is
+  far worse than an uncited sentence: it is a false claim dressed as evidence, on health content,
+  under our name. If you are not certain of a specific paper, write the claim more cautiously and
+  cite the guideline instead — guideline bodies are always safer ground than a half-remembered trial.
+- Never cite a video, a podcast, or a named clinician's social media as evidence for a clinical
+  claim. If a viral claim is the subject of the piece, describe the claim, then answer it from the
+  literature.
 
 ## SEO requirements
 - Title is 50–65 characters, includes the primary keyword naturally.
@@ -434,6 +451,9 @@ Return a JSON object with this exact schema:
   "meta_description": "140-158 char meta description.",
   "excerpt": "1-2 sentence card excerpt, max 240 chars.",
   "keywords": ["primary keyword", "secondary keyword", "long-tail keyword", "..."],
+  "references": [
+    {{"citation": "Author A, Author B. Title. Journal. Year.", "url": "https://pubmed.ncbi.nlm.nih.gov/NNNNNNNN/"}}
+  ],
   "body_markdown": "Full article in markdown-lite. Use:\\n\\n## H2 headings\\n### H3 headings (sparingly)\\n**bold** and *italic*\\n- bullet lists\\n> blockquote for the single best line\\n[link text](https://or-internal-/path)\\n{{callout: optional eyebrow}} The single most important sentence in the article.\\n\\nKeep paragraphs short (2-4 sentences). Use blank lines between paragraphs. Do NOT use HTML tags — just markdown. End the body before any product CTA; the template adds that automatically."
 }}
 
@@ -529,6 +549,26 @@ def main() -> int:
     payload["date"] = today.isoformat()
     payload["dateLabel"] = date_label
     payload = merge_product_metadata(payload, topic["category"])
+
+    # Editorial gate. Runs BEFORE the post is written, and before the angle is
+    # burned from the ledger, so a rejected post costs nothing and the topic can
+    # be retried. Enforced here rather than in the workflow because this script
+    # is also invoked by launchd on the publishing Mac, which the workflow does
+    # not gate.
+    sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "blog"))
+    import editorial_guard as guard
+    registry = guard.load_registry()
+    problems = (
+        guard.check_references(payload.get("references"), topic["category"])
+        + guard.check_reviewer(payload.get("slug", ""), topic["category"], registry)
+    )
+    if problems:
+        print(f"[generate_daily_post] BLOCKED — {payload.get('slug','?')} "
+              f"({topic['category']}) fails editorial policy:", file=sys.stderr)
+        for pr in problems:
+            print("  - " + pr, file=sys.stderr)
+        print("  Nothing was written and the angle was not consumed.", file=sys.stderr)
+        return 1
 
     if args.dry_run:
         print(json.dumps(payload, indent=2, ensure_ascii=False))

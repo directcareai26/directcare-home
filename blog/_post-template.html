@@ -177,7 +177,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     "@type": "Organization",
     "name": "DirectCare AI Clinical Team",
     "url": "https://www.directcare.ai"
-  },
+  }{{REVIEWER_SCHEMA}},
   "publisher": {
     "@type": "Organization",
     "name": "DirectCare AI",
@@ -232,6 +232,12 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .article-hero { padding: clamp(36px, 5vw, 60px) 0 0; }
   .article-meta { display: inline-flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 18px; }
   .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--brand-deep); opacity: 0.5; }
+  .article-references { margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line, #e6e1ee); }
+  .article-references h2 { font-size: 1.02rem; letter-spacing: 0.01em; margin-bottom: 12px; }
+  .article-references ol { padding-left: 20px; }
+  .article-references li { font-size: 0.86rem; line-height: 1.55; color: var(--muted, #5b5566); margin-bottom: 9px; }
+  .article-references a { color: var(--brand-deep); white-space: nowrap; }
+  .article-meta .reviewed { text-transform: none; letter-spacing: 0.01em; font-weight: 500; }
   .article-meta .date { color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
   .article-meta a { color: var(--brand-deep); }
   .article-title { font-size: clamp(2.0rem, 4.4vw, 3.4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.0; max-width: 880px; margin-bottom: 18px; }
@@ -336,7 +342,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span>{{CATEGORY}}</span>
         <span class="dot"></span>
         <span class="date">{{DATE_LABEL}}</span>
-      </div>
+      {{REVIEWER_BYLINE}}</div>
       <h1 class="article-title">{{TITLE_HTML}}</h1>
       <p class="article-deck">{{DECK}}</p>
       <div class="article-cover">

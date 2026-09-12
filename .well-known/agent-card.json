@@ -1,0 +1,58 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "DirectCare AI Concierge",
+  "description": "Read-only concierge for DirectCare AI, a US-only direct-to-patient telehealth service. It tells other agents which programs exist (weight loss, hormone replacement therapy, testosterone replacement therapy, sexual health, hair regrowth, blood labs, supplements, chronic condition care), returns the authoritative page for each, and points to the site's machine-readable resources. It does not give medical advice, does not hold or access patient records, and does not take orders or intake. Every treatment is reviewed by a US-licensed clinician on the website and in the patient portal.",
+  "url": "https://www.directcare.ai/api/a2a",
+  "preferredTransport": "JSONRPC",
+  "supportedInterfaces": [
+    {
+      "url": "https://www.directcare.ai/api/a2a",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "provider": {
+    "organization": "DirectCare AI",
+    "url": "https://www.directcare.ai"
+  },
+  "iconUrl": "https://www.directcare.ai/icon-192.png",
+  "documentationUrl": "https://www.directcare.ai/llms.txt",
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false,
+    "extendedAgentCard": false
+  },
+  "securitySchemes": {},
+  "security": [],
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "application/json"],
+  "skills": [
+    {
+      "id": "program-directory",
+      "name": "Program directory",
+      "description": "Given a health goal or a program name, returns the matching DirectCare AI program(s) with the canonical page URL, a one-line description taken from the site's llms.txt, and how a person starts (online intake reviewed by a US-licensed clinician). Informational only. Not medical advice.",
+      "tags": ["telehealth", "directory", "weight-loss", "hormone-replacement-therapy", "testosterone", "sexual-health", "hair-loss", "blood-labs", "supplements", "chronic-care"],
+      "examples": [
+        "Which programs does DirectCare AI offer?",
+        "Where does someone start testosterone replacement therapy with DirectCare AI?",
+        "Does DirectCare AI offer GLP-1 weight loss?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "machine-readable-resources",
+      "name": "Machine-readable resources",
+      "description": "Returns the URLs of DirectCare AI's agent-readable resources: llms.txt, llms-full.txt, the blog posts manifest, the sitemap, and the Markdown twin of any page.",
+      "tags": ["llms.txt", "sitemap", "markdown", "resources"],
+      "examples": [
+        "Give me your llms.txt and sitemap.",
+        "Is there a machine-readable list of blog posts?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["application/json", "text/plain"]
+    }
+  ]
+}

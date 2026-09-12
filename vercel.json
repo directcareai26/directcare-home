@@ -553,6 +553,10 @@
   ],
   "rewrites": [
     {
+      "source": "/.well-known/agent.json",
+      "destination": "/.well-known/agent-card.json"
+    },
+    {
       "source": "/start-hrt",
       "destination": "/hormone-replacement-therapy"
     },
@@ -630,6 +634,14 @@
     }
   ],
   "headers": [
+    {
+      "source": "/.well-known/(agent|agent-card).json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Cache-Control", "value": "public, max-age=300, stale-while-revalidate=86400" }
+      ]
+    },
     {
       "source": "/(.*)\\.(png|jpg|jpeg|webp|avif|svg|ico|gif)",
       "headers": [

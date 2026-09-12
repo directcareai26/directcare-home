@@ -230,7 +230,11 @@ footer .tiny{max-width:78ch}
 }
 """
 
-def sticky_and_js(variant, first_q_id="quizTop"):
+# 2026-09-11: default was "quizTop", which only f1 and f4 define -- so the sticky
+# bar, the one CTA visible on every scroll position, jumped nowhere on f2/f3/f5.
+# "intakeWrap" is emitted by intake_block() on every variant and is what hero_cta()
+# and the [data-start] handler below already target, so it cannot go missing again.
+def sticky_and_js(variant, first_q_id="intakeWrap"):
     return f"""
 <div class="sticky" id="stickyBar"><a class="cta" href="#{first_q_id}" data-cta="sticky">Check if I qualify &nbsp;&rarr;</a></div>
 <script>

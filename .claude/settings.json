@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v jq >/dev/null 2>&1 || exit 0; f=$(jq -r '.tool_input.file_path // empty'); case \"$f\" in */js/dc-signal.js) ;; *) exit 0;; esac; cd \"${CLAUDE_PROJECT_DIR:-.}\" 2>/dev/null || exit 0; today=$(date +%Y%m%d); vs=$(grep -rhoE 'dc-signal[.]js[?]v=[0-9]+' --include='*.html' . | sed 's/.*v=//' | sort -u); n=$(printf '%s\\n' \"$vs\" | grep -c .); if [ \"$n\" -eq 1 ] && [ \"$vs\" = \"$today\" ]; then exit 0; fi; printf 'STOP: js/dc-signal.js changed but the HTML cache-buster was not bumped to today (%s).\\nvercel.json serves /(.*).(css|js) as max-age=31536000, immutable, so every visitor keeps the OLD file and this edit reaches nobody.\\nHTML currently points at: %s\\nBump ?v= to %s across every .html file (run /bump-signal), then re-check.\\n' \"$today\" \"$(printf '%s' \"$vs\" | tr '\\n' ' ')\" \"$today\" >&2; exit 2"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v jq >/dev/null 2>&1 || exit 0; c=$(jq -r '.tool_input.command // empty'); case \"$c\" in *scripts/deploy.sh*) exit 0;; esac; printf '%s' \"$c\" | grep -qE 'vercel([^|;&]*)(--prod|deploy)' || exit 0; echo 'REFUSING: directcare.ai deploys only through ./scripts/deploy.sh (see DEPLOY.md). That script refuses to ship off main, behind origin, with a dirty tree, or from a checkout holding a stale .vercel link. A raw vercel deploy from the wrong tree reverted production on 2026-08-30 and again on 2026-09-02. Print the command for the user to run instead.' >&2; exit 2"
+          }
+        ]
+      }
+    ]
+  }
+}

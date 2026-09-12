@@ -31,6 +31,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## All posts (112)
 
+### [Sildenafil vs. Tadalafil: How to Pick the Right ED Med](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose)
+2026-09-12 · Sexual Health
+
+Sildenafil is the sprinter, tadalafil is the marathoner. Here's how to choose the PDE5 inhibitor that actually fits your relationship, schedule, and side-effect tolerance.
+
 ### [Fiber on a GLP-1: Why 25-35g Daily Makes It Work](https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression)
 2026-09-11 · Nutrition
 
@@ -70,11 +75,6 @@ Female-pattern hair loss is a hormonal signal, not just a genetic one. Here's th
 2026-09-04 · HRT
 
 Patches, gels, and pellets all deliver bioidentical estradiol without first-pass liver metabolism — but they behave very differently week to week. Here's the clinical breakdown.
-
-### [Sildenafil vs. Tadalafil: How to Pick the Right ED Med](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose)
-2026-09-03 · Sexual Health
-
-Sildenafil and tadalafil treat the same problem through the same mechanism — but their pharmacokinetics point to very different lifestyles. Here's how to choose.
 
 ### [20-Minute Salmon and Asparagus: Hit Your Omega-3 Target](https://www.directcare.ai/blog/20-minute-salmon-asparagus-omega-3-dinner)
 2026-09-02 · Nutrition

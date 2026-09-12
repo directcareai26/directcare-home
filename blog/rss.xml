@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Sep 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Sildenafil vs. Tadalafil: How to Pick the Right ED Med</title>
+      <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</guid>
+      <pubDate>Sat, 12 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>Sexual Health</category>
+      <description><![CDATA[Sildenafil is the sprinter, tadalafil is the marathoner. Here's how to choose the PDE5 inhibitor that actually fits your relationship, schedule, and side-effect tolerance.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" />
+    </item>
     <item>
       <title>Fiber on a GLP-1: Why 25-35g Daily Makes It Work</title>
       <link>https://www.directcare.ai/blog/fiber-on-glp1-25-35g-daily-appetite-suppression</link>
@@ -112,18 +124,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/perimenopausal%20woman.png" />
-    </item>
-    <item>
-      <title>Sildenafil vs. Tadalafil: How to Pick the Right ED Med</title>
-      <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</guid>
-      <pubDate>Thu, 03 Sep 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>Sexual Health</category>
-      <description><![CDATA[Sildenafil and tadalafil treat the same problem through the same mechanism — but their pharmacokinetics point to very different lifestyles. Here's how to choose.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Sexual%20Health%20%E2%80%94%20lifestyleImage.png" />
     </item>
     <item>
       <title>20-Minute Salmon and Asparagus: Hit Your Omega-3 Target</title>

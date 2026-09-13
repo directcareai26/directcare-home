@@ -2,7 +2,7 @@
 
 > Personalized hair regrowth for women — clinically dosed minoxidil, spironolactone, dutasteride and biotin, prescribed online by US-licensed clinicians.
 
-Source: https://www.directcare.ai/womans-hair-loss/
+Source: https://www.directcare.ai/womans-hair-loss
 
 ## Women's hair loss treatment online: minoxidil & spironolactone.
 

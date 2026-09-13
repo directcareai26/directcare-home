@@ -2,7 +2,7 @@
 
 > DirectCare AI Telehealth Informed Consent. Benefits, risks, and patient acknowledgments for telehealth services delivered by the Meta Digital Medical Network.
 
-Source: https://www.directcare.ai/medical-consent/
+Source: https://www.directcare.ai/medical-consent
 
 Medical Consent
 

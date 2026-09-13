@@ -2,7 +2,7 @@
 
 > DirectCare AI California Consumer Privacy Notice. Rights of California residents under the CCPA/CPRA, including the right to know, delete, correct, limit sensitive data, and opt out of sale/sharing.
 
-Source: https://www.directcare.ai/ccpa/
+Source: https://www.directcare.ai/ccpa
 
 California Residents
 

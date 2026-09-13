@@ -2,7 +2,7 @@
 
 > Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, and longevity protocols. Written by US-licensed clinicians at DirectCare AI.
 
-Source: https://www.directcare.ai/blog/
+Source: https://www.directcare.ai/blog
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 

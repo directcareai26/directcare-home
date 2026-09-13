@@ -2,7 +2,7 @@
 
 > At-home blood labs and biomarker panels reviewed by US-licensed clinicians. Get hormones, metabolic health, inflammation, micronutrients, and full-body biomarkers tested. Plus a personalized, clinician-built plan and supplement protocol.
 
-Source: https://www.directcare.ai/blood-test/
+Source: https://www.directcare.ai/blood-test
 
 ## Blood tests online: biomarker panels
  ordered by licensed clinicians.

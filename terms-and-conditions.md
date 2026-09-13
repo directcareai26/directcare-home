@@ -2,7 +2,7 @@
 
 > DirectCare AI Terms of Use. Your rights and responsibilities when using the DirectCare AI website, mobile applications, and related products and services. Includes mandatory arbitration agreement and class action waiver.
 
-Source: https://www.directcare.ai/terms-and-conditions/
+Source: https://www.directcare.ai/terms-and-conditions
 
 Legal
 

@@ -1,29 +1,79 @@
-# ED Treatment Online — Surge Max 4-in-1 | DirectCare AI
+# Erectile Dysfunction Treatment Online — 3 Prescription Formulas | DirectCare AI
 
-> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine for faster, stronger results. Prescribed online, shipped discreetly.
+> Three clinician-prescribed erectile dysfunction formulas: SURGE MAX 4-in-1 on demand, Go Long for staying power, and Daily Boost for everyday readiness. Online evaluation, US-licensed clinicians, discreet shipping. No charge unless prescribed.
 
-Source: https://www.directcare.ai/surge-max
+Source: https://www.directcare.ai/erectile-dysfunction
 
-The 4-in-1 Performance Formula
+Erectile Dysfunction Treatment
 
-## Surge Max: 4-in-1 sublingual ED medication, prescribed online.
+## Erectile dysfunction treatment online:
+ three prescription formulas.
 
- SURGE MAX is the first 4-in-1 rapid-absorb sublingual liquid that activates your desire and your body , **on cue, on demand, for up to 36 hours.**
+ One evaluation, three clinician-prescribed formulas — **the fastest, the longest, and the everyday.** Because "take a pill and wait an hour" was never the only answer.
 
  [See If You Qualify →](https://www.directcare.ai/surge-max/start)
- How It Works
+ Compare Formulas
 
  From
- **$17.90**
- / dose
+ **$4.25**
+ / day
  ·
- 10-pack **$179**
+ SURGE MAX 10-pack **$179**
 
  **LegitScript Certified**
  Verified safe telehealth
 
  **HIPAA Compliant**
  Encrypted & private
+
+### Three formulas.
+One evaluation.
+
+ Erectile dysfunction isn't one problem, so we don't sell one answer. Same clinician review, same US pharmacy, same free shipping — pick the one that matches what's actually getting in the way.
+
+ On demand · fastest & strongest
+
+ SURGE MAX
+ 4-in-1
+
+ Sildenafil 40 mg
+ Tadalafil 11 mg
+ Vardenafil 7.5 mg
+ Apomorphine 2 mg
+
+ Four mechanisms in one rapid-absorb liquid. Three PDE5 inhibitors for the physical response plus a central-acting activator for desire. Absorbs under the tongue in about 10 minutes and holds a window up to 36 hours.
+
+ $17910-pack · **$17.90 / dose**
+
+ [See If You Qualify →](https://www.directcare.ai/surge-max/start)
+ [Full SURGE MAX details →](https://www.directcare.ai/surge-max)
+
+ Control · staying power
+
+ GO LONG
+
+ Silodosin 5 mg
+ Tadalafil 10 mg
+
+ A dissolvable troche for men whose problem isn't getting there — it's staying there. Tadalafil holds the erectile response while silodosin works on ejaculatory timing. No water, no wait.
+
+ $14912-pack · **$12.42 / dose**
+
+ [See If You Qualify →](https://www.directcare.ai/surge-max/start)
+
+ Every day · always ready
+
+ DAILY BOOST
+
+ Tadalafil 2.5 mg or 5 mg
+
+ One low dose every morning instead of planning around a single one. Four weeks per pack — for men who want readiness to be the default state rather than an event they have to schedule.
+
+ $11928-pack · **$4.25 / day**
+
+ [See If You Qualify →](https://www.directcare.ai/surge-max/start)
+
+ **Prescription products.** Prices shown are the complete program price and include clinician review and free shipping — there is no separate membership fee. All three formulas require an online consultation; a US-licensed clinician decides whether treatment is appropriate for you, and not every formula is appropriate for every patient. These are compounded formulations prepared by a licensed US pharmacy; compounded drugs are not FDA-approved and are not reviewed by the FDA for safety or effectiveness. Availability varies by state. **If you don't qualify, you don't pay.**
 
  Engineered for your body
 
@@ -39,7 +89,7 @@ Lasts All Weekend.
  From dose to ready
  Reported average onset time
 
- Quadruple Powered
+ Inside SURGE MAX
 
 ### 4 Powerful Ingredients.
 One Liquid Dose.
@@ -198,13 +248,13 @@ Your treatment shouldn't either.
 - ✓ Direct-from-pharmacy, no insurance, unmarked packaging.
 
  See Pricing →
- $17.90 / dose · 10-pack $179 · Free rush shipping
+ SURGE MAX $17.90 / dose · Go Long $12.42 / dose · Daily Boost $4.25 / day · Free rush shipping
 
  60-Second Check
 
-### Is SURGE MAX right for you?
+### Which formula is right for you?
 
- Three quick questions. Then a US-licensed clinician reviews your free evaluation and decides if SURGE MAX is a fit.
+ Three quick questions. Then a US-licensed clinician reviews your free evaluation and decides which formula is a fit.
 
  How long do traditional ED pills usually take to kick in for you?
 
@@ -259,7 +309,7 @@ Your treatment shouldn't either.
 
 #### Fast, Discreet Delivery
 
- Your SURGE MAX liquid ships from a US compounding pharmacy in plain, unmarked packaging. Free rush shipping on every order.
+ Your formula ships from a US compounding pharmacy in plain, unmarked packaging. Free rush shipping on every order.
 
  [Start My 3-Minute Evaluation →](https://www.directcare.ai/surge-max/start)
 
@@ -282,16 +332,16 @@ Your treatment shouldn't either.
 
  Billed once as **$179** for the 10-pack.
 
-- 10 doses of 4-in-1 SURGE MAX liquid
+- 10 doses of the 4-in-1 rapid-absorb liquid
 
-- Doctor Consultation Included
+- Clinician consultation included
 
-- Free Rush Shipping
+- Free rush shipping
 
  [See If You Qualify →](https://www.directcare.ai/surge-max/start)
  If you don't qualify, you don't pay. Guaranteed.
 
- 4 MECHANISMS in one dose · Stronger · Faster · Longer · Clinician review and shipping included. No insurance, no pharmacy lines.
+ 4 MECHANISMS in one dose · Or step down to **Go Long $12.42/dose** · **Daily Boost $4.25/day** · Clinician review and shipping included on all three.
 
  Common questions
 
@@ -299,58 +349,58 @@ Your treatment shouldn't either.
 
  Honest answers, before you start. Six of the questions we hear most. And what our team would tell you on a call.
 
- What is Surge Max?
- Surge Max is a compounded rapid-onset sublingual sexual health protocol combining four active ingredients: sildenafil, tadalafil, vardenafil, and apomorphine. It dissolves under the tongue for faster absorption (15-30 minutes) compared to oral tablets (30-60 minutes).
+ Which erectile dysfunction formula is right for me?
+ There are three. **SURGE MAX** is the on-demand rapid-absorb liquid (sildenafil 40 mg, tadalafil 11 mg, vardenafil 7.5 mg, apomorphine 2 mg) — the fastest and strongest, for men who want a dose that works in about 10 minutes. **Go Long** pairs silodosin 5 mg with tadalafil 10 mg in a dissolvable troche, for men whose concern is control and staying power rather than onset. **Daily Boost** is low-dose tadalafil (2.5 mg or 5 mg) taken every day, for men who want readiness to be continuous rather than planned. Your clinician confirms which is appropriate at intake.
 
  How does sublingual delivery work?
  Medication dissolved under the tongue absorbs directly into the bloodstream through capillaries in the oral mucosa, bypassing first-pass liver metabolism. This typically results in faster onset and slightly higher bioavailability than swallowed tablets.
 
- What's the difference between Surge Max and Viagra/Cialis?
- Viagra (sildenafil 25-100mg) and Cialis (tadalafil 5-20mg) are single-ingredient FDA-approved tablets. Surge Max combines four active ingredients at clinician-calibrated doses in a sublingual delivery format. The combination targets multiple pathways (PDE-5 inhibition + dopaminergic stimulation via apomorphine).
+ What's the difference between SURGE MAX and Viagra/Cialis?
+ Viagra (sildenafil 25-100mg) and Cialis (tadalafil 5-20mg) are single-ingredient FDA-approved tablets. SURGE MAX combines four active ingredients at clinician-calibrated doses in a sublingual delivery format. The combination targets multiple pathways (PDE-5 inhibition + dopaminergic stimulation via apomorphine).
 
- How fast does Surge Max work?
+ How fast does SURGE MAX work?
  Most patients report effect within 15-30 minutes of dissolving under the tongue. Full effect typically peaks at 30-45 minutes and lasts 4-6 hours, depending on individual metabolism.
 
- Can I take Surge Max with food or alcohol?
- Surge Max works well on an empty stomach but does not require it. Heavy fatty meals can slightly delay absorption. Moderate alcohol (1-2 drinks) is generally fine; heavy alcohol use blunts the effect and increases blood pressure risk.
+ Can I take SURGE MAX with food or alcohol?
+ SURGE MAX works well on an empty stomach but does not require it. Heavy fatty meals can slightly delay absorption. Moderate alcohol (1-2 drinks) is generally fine; heavy alcohol use blunts the effect and increases blood pressure risk.
 
  What are the side effects?
  Common (mild, transient): facial flushing, mild headache, nasal congestion, indigestion. Less common: dizziness, back pain (tadalafil), blue-tinted vision (sildenafil), priapism (erection lasting >4 hours — requires emergency care, rare). Most resolve within 1-2 doses.
 
- Is Surge Max safe with my heart medications?
- Surge Max is contraindicated with nitrates (nitroglycerin, isosorbide) and guanylate cyclase stimulators (riociguat) — the combination can cause severe hypotension. Most other heart medications (beta-blockers, ACE inhibitors, statins) are compatible but disclose everything at intake.
+ Is SURGE MAX safe with my heart medications?
+ SURGE MAX is contraindicated with nitrates (nitroglycerin, isosorbide) and guanylate cyclase stimulators (riociguat) — the combination can cause severe hypotension. Most other heart medications (beta-blockers, ACE inhibitors, statins) are compatible but disclose everything at intake.
 
- Can I take Surge Max if I have high blood pressure?
- Controlled hypertension is generally compatible with Surge Max. Uncontrolled or severe hypertension (>170/100) needs to be addressed first. Your clinician reviews your blood pressure history at intake; you can also start a free blood-pressure reading by mentioning it during intake.
+ Can I take SURGE MAX if I have high blood pressure?
+ Controlled hypertension is generally compatible with SURGE MAX. Uncontrolled or severe hypertension (>170/100) needs to be addressed first. Your clinician reviews your blood pressure history at intake; you can also start a free blood-pressure reading by mentioning it during intake.
 
  How is this different from injectable sexual health treatments?
- Injectables (trimix, bimix) deliver vasoactive medications directly into the penis — they work for almost everyone but require self-injection. Surge Max is a non-invasive sublingual alternative for men whose response to oral PDE-5 inhibitors is insufficient but who want to avoid injections.
+ Injectables (trimix, bimix) deliver vasoactive medications directly into the penis — they work for almost everyone but require self-injection. SURGE MAX is a non-invasive sublingual alternative for men whose response to oral PDE-5 inhibitors is insufficient but who want to avoid injections.
 
- Will Surge Max work if oral Viagra/Cialis didn't?
+ Will SURGE MAX work if oral Viagra/Cialis didn't?
  Often, yes. Sublingual delivery bypasses first-pass liver metabolism, achieving higher peak plasma levels at lower doses. The four-ingredient combination also targets pathways beyond PDE-5. If pure PDE-5 inhibition failed, the apomorphine component (which works on dopamine receptors in the brain) may make the difference.
 
- Can I take Surge Max daily?
- Surge Max is designed for as-needed use, not daily dosing. Daily PDE-5 inhibitor therapy (low-dose tadalafil 2.5-5mg daily) is a separate protocol that some patients prefer for spontaneity. Discuss with your clinician at intake which approach fits your lifestyle.
+ Can I take SURGE MAX daily?
+ SURGE MAX is designed for as-needed use, not daily dosing. Daily PDE-5 inhibitor therapy (low-dose tadalafil 2.5-5mg daily) is a separate protocol that some patients prefer for spontaneity. Discuss with your clinician at intake which approach fits your lifestyle.
 
- Does Surge Max increase libido?
+ Does SURGE MAX increase libido?
  The PDE-5 components (sildenafil, tadalafil, vardenafil) do not increase libido — they enable an erectile response when libido is already present. The apomorphine component works on central dopaminergic pathways and may modestly enhance arousal in some patients.
 
- Can I take Surge Max with TRT?
- Yes. Many patients are on both. TRT addresses libido and morning erection quality (testosterone-dependent); Surge Max addresses the on-demand mechanical response. The two are complementary, not redundant.
+ Can I take SURGE MAX with TRT?
+ Yes. Many patients are on both. TRT addresses libido and morning erection quality (testosterone-dependent); SURGE MAX addresses the on-demand mechanical response. The two are complementary, not redundant.
 
  Will I become dependent on it?
  No. PDE-5 inhibitors do not cause physical or psychological dependence. The medication enhances the body's natural erectile response — it does not replace it. Many men cycle on/off as needed without rebound effects.
 
- Who shouldn't take Surge Max?
+ Who shouldn't take SURGE MAX?
  Contraindications: nitrate medications, severe cardiovascular disease (recent heart attack or stroke), retinitis pigmentosa, severe liver disease (Child-Pugh class C), uncontrolled hypertension, severe hypotension, or known hypersensitivity to any active ingredient.
 
- How much does Surge Max cost?
- SURGE MAX is $179 for a 10-pack ($17.90 per dose). Go Long is $149 for a 12-pack ($12.42 per dose) and Daily Boost is $119 for a 28-pack ($4.25 per day). Every price is the complete program price and includes clinician review and free shipping — there is no separate membership fee. The clinician intake and review are free; you only pay when you order.
+ How much does erectile dysfunction treatment cost?
+ SURGE MAX is **$179** for a 10-pack ($17.90 per dose). Go Long is **$149** for a 12-pack ($12.42 per dose). Daily Boost is **$119** for a 28-pack ($4.25 per day). Every price is the complete program price and includes clinician review and free shipping — there is no separate membership fee. The evaluation is free and you are only charged if a clinician prescribes.
 
  Is my purchase discreet?
  Yes. Shipments use unmarked outer packaging with the return address showing a generic name (no DirectCare AI branding, no medical descriptors). Billing on your card appears as a generic merchant name.
 
- $17.90/dose · 10-pack $179
+ $4.25/day · SURGE MAX 10-pack $179
  No charge if you don't qualify
 
  [Get Started →](https://www.directcare.ai/surge-max/start)

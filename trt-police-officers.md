@@ -1,6 +1,6 @@
-# TRT for Police Officers, Stay Sharp on Every Shift, DirectCare AI
+# TRT for Police Officers | DirectCare AI
 
-> TRT for police officers. Rotating shifts, high-stress calls, and broken sleep can drive testosterone down — draining the energy, focus, and strength the job demands. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for police officers. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-police-officers
 

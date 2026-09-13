@@ -1,6 +1,6 @@
 # Frequently Asked Questions | DirectCare AI
 
-> Answers to common questions about DirectCare AI: programs, pricing, insurance, eligibility, safety, compounded medications, and how online treatment with US-licensed clinicians works.
+> Answers to common questions about DirectCare AI: programs, pricing, insurance, eligibility, safety, and compounded medications.
 
 Source: https://www.directcare.ai/faq
 

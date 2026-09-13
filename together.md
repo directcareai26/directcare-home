@@ -1,6 +1,6 @@
 # Together | Whole-Household Care | DirectCare AI
 
-> One platform for both partners. HRT for her, TRT for him. Labs included, clinician-prescribed, shipped to your door. Each partner gets their own private care on the same trusted DirectCare AI platform.
+> One platform for both partners. HRT for her, TRT for him. Each partner gets their own private care on the same DirectCare AI platform.
 
 Source: https://www.directcare.ai/together
 

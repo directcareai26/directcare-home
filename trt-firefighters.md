@@ -1,6 +1,6 @@
-# TRT for Firefighters, Stay Strong for the Call, DirectCare AI
+# TRT for Firefighters | DirectCare AI
 
-> TRT for firefighters. 24-hour shifts, disrupted sleep, and the physical toll of the job can drive testosterone down — draining the energy, strength, and recovery the work demands. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for firefighters. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-firefighters
 

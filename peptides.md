@@ -1,6 +1,6 @@
-# Peptide Therapy | Recovery, Performance & Longevity | DirectCare AI
+# Peptide Therapy | Recovery & Longevity | DirectCare AI
 
-> Clinician-prescribed peptide therapy. BPC-157, ipamorelin, sermorelin, GHK-Cu, PT-141 and more. Personalized protocols for recovery, sleep, hair, libido and longevity. Labs ordered, shipped to your door.
+> Clinician-prescribed peptide therapy. BPC-157, ipamorelin, sermorelin, PT-141 and more. Personalized protocols for recovery, sleep, libido and longevity.
 
 Source: https://www.directcare.ai/peptides
 

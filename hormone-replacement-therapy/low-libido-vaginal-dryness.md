@@ -1,6 +1,6 @@
 # Low Libido & Vaginal Dryness Treatment · DirectCare AI
 
-> Up to 50% of postmenopausal women report vaginal dryness; 40% report low desire. Estrogen, testosterone, and targeted treatment help. Talk to a US-licensed clinician online.
+> Low libido and vaginal dryness after menopause: talk to a US-licensed clinician online about estrogen, testosterone, and targeted treatment.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/low-libido-vaginal-dryness
 

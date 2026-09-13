@@ -1,6 +1,6 @@
-# Menopause Weight Gain & Energy Crashes · Treatment Online · DirectCare AI
+# Menopause Weight Gain & Energy Crashes | DirectCare AI
 
-> Most women gain 10–15 lbs through midlife and shift fat to the belly. It's hormones, not discipline. HRT, GLP-1, and a real protocol. Talk to a US-licensed clinician online.
+> Menopause weight gain and energy crashes: HRT, GLP-1, and a real protocol. Talk to a US-licensed clinician online.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes
 

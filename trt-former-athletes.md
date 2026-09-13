@@ -1,6 +1,6 @@
 # TRT for Former Athletes, Get Your Edge Back, DirectCare AI
 
-> TRT for former athletes. If you used to train, compete, and recover fast, declining testosterone can steal the energy, strength, and drive you built. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for former athletes. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-former-athletes
 

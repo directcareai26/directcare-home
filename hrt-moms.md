@@ -1,6 +1,6 @@
 # HRT for Moms, Feel Like Yourself Again, DirectCare AI
 
-> HRT for moms. Between the kids, work, and everything else, perimenopause can bring brain fog, exhaustion, mood swings, stubborn weight gain, and low libido. Personalized, clinician-guided hormone care for mothers, with labs, treatment, and ongoing support. See if you are a candidate in 2 minutes.
+> HRT for moms. Personalized, clinician-guided hormone care for mothers, with labs, treatment, and ongoing support.
 
 Source: https://www.directcare.ai/hrt-moms
 

@@ -1,4 +1,4 @@
-# Insomnia & Sleep Problems in Menopause · Treatment Online · DirectCare AI
+# Insomnia & Sleep Problems in Menopause | DirectCare AI
 
 > Up to 60% of women in perimenopause develop new insomnia. Estrogen and progesterone matter for sleep. HRT helps. Talk to a US-licensed clinician online.
 

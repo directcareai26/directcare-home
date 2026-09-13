@@ -1,6 +1,6 @@
 # Blog | DirectCare AI
 
-> Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, and longevity protocols. Written by US-licensed clinicians at DirectCare AI.
+> Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health and hair regrowth.
 
 Source: https://www.directcare.ai/blog
 

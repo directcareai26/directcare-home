@@ -1,6 +1,6 @@
-# Supplements | Clinically Trusted Wellness Plans · DirectCare AI
+# Supplements & Wellness Plans | DirectCare AI
 
-> Physician-grade supplements and curated wellness plans from DirectCare AI. Blood Sugar, Heart, Hair, Hormones, Menopause, GLP-1 support, Immune, Anti-Aging, Energy and General Wellness. Backed by clinical research, shipped to your door.
+> Physician-grade supplements and curated wellness plans from DirectCare AI. Blood sugar, heart, hair, hormones, menopause, immune and energy.
 
 Source: https://www.directcare.ai/supplements
 

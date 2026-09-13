@@ -1,6 +1,6 @@
-# For the Lifestyle | Performance, Desire & Confidence for Couples Who Play | DirectCare AI
+# For the Lifestyle | Couples Who Play | DirectCare AI
 
-> Discreet, clinician-prescribed wellness built for the lifestyle. On-demand sexual-health protocols, libido and desire therapies, TRT and HRT for drive, GLP-1 for confidence, and full sexual-health blood labs. US-licensed clinicians. Plain, unmarked shipping. No insurance, no judgment.
+> Discreet, clinician-prescribed wellness built for the lifestyle. Sexual-health protocols, TRT, HRT and blood labs. US-licensed clinicians.
 
 Source: https://www.directcare.ai/lifestyle
 

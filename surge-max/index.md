@@ -1,6 +1,6 @@
 # ED Treatment Online — Surge Max 4-in-1 | DirectCare AI
 
-> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine for faster, stronger results. Prescribed online, shipped discreetly.
+> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine. Prescribed online, shipped discreetly.
 
 Source: https://www.directcare.ai/surge-max
 

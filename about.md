@@ -1,6 +1,6 @@
 # About | DirectCare AI — Modern Healthcare, Built Around You
 
-> DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed care — weight loss, hormones, sexual health, hair regrowth, supplements and blood labs — all in one place. Founded 2025. US-licensed clinicians. No insurance required.
+> DirectCare AI is a telehealth platform delivering clinician-prescribed care: weight loss, hormones, sexual health, hair regrowth and blood labs.
 
 Source: https://www.directcare.ai/about
 

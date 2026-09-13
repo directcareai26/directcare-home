@@ -16,7 +16,7 @@ Pages: 150
 - [Men's Hair Loss: Finasteride & Minoxidil | DirectCare AI](https://www.directcare.ai/mens-hair-loss)
 - [Women's Hair Loss: Minoxidil, Spironolactone | DirectCare AI](https://www.directcare.ai/womans-hair-loss)
 - [Blood Labs & Biomarker Testing | DirectCare AI](https://www.directcare.ai/blood-test)
-- [Supplements | Clinically Trusted Wellness Plans · DirectCare AI](https://www.directcare.ai/supplements)
+- [Supplements & Wellness Plans | DirectCare AI](https://www.directcare.ai/supplements)
 - [Remote Patient Monitoring & Chronic Care | DirectCare AI](https://www.directcare.ai/chronic-care)
 - [Erectile Dysfunction Treatment Online | DirectCare AI](https://www.directcare.ai/erectile-dysfunction)
 - [Weight Loss for Men — Compounded Tirzepatide | DirectCare AI](https://www.directcare.ai/mens-weight-loss)
@@ -26,20 +26,20 @@ Pages: 150
 - [Perimenopause Treatment Online | DirectCare AI](https://www.directcare.ai/perimenopause)
 - [Hot Flashes & Night Sweats Treatment Online · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats)
 - [Low Libido & Vaginal Dryness Treatment · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/low-libido-vaginal-dryness)
-- [Mood Swings, Anxiety & Brain Fog in Menopause · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/mood-anxiety-brain-fog)
-- [Insomnia & Sleep Problems in Menopause · Treatment Online · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping)
-- [Menopause Weight Gain & Energy Crashes · Treatment Online · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes)
-- [Peptide Therapy | Recovery, Performance & Longevity | DirectCare AI](https://www.directcare.ai/peptides)
+- [Mood, Anxiety & Brain Fog in Menopause | DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/mood-anxiety-brain-fog)
+- [Insomnia & Sleep Problems in Menopause | DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping)
+- [Menopause Weight Gain & Energy Crashes | DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes)
+- [Peptide Therapy | Recovery & Longevity | DirectCare AI](https://www.directcare.ai/peptides)
 - [Together | Whole-Household Care | DirectCare AI](https://www.directcare.ai/together)
 - [HRT for Moms, Feel Like Yourself Again, DirectCare AI](https://www.directcare.ai/hrt-moms)
 - [TRT for Executives, Restore Your Drive, DirectCare AI](https://www.directcare.ai/trt-executives)
-- [TRT for Firefighters, Stay Strong for the Call, DirectCare AI](https://www.directcare.ai/trt-firefighters)
+- [TRT for Firefighters | DirectCare AI](https://www.directcare.ai/trt-firefighters)
 - [TRT for Former Athletes, Get Your Edge Back, DirectCare AI](https://www.directcare.ai/trt-former-athletes)
-- [TRT for Police Officers, Stay Sharp on Every Shift, DirectCare AI](https://www.directcare.ai/trt-police-officers)
+- [TRT for Police Officers | DirectCare AI](https://www.directcare.ai/trt-police-officers)
 - [Frequently Asked Questions | DirectCare AI](https://www.directcare.ai/faq)
 - [Blog | DirectCare AI](https://www.directcare.ai/blog)
 - [About | DirectCare AI — Modern Healthcare, Built Around You](https://www.directcare.ai/about)
-- [For the Lifestyle | Performance, Desire & Confidence for Couples Who Play | DirectCare AI](https://www.directcare.ai/lifestyle)
+- [For the Lifestyle | Couples Who Play | DirectCare AI](https://www.directcare.ai/lifestyle)
 - [Patient Bill of Rights | DirectCare AI](https://www.directcare.ai/bill-of-rights)
 - [Safety | DirectCare AI](https://www.directcare.ai/safety)
 - [Privacy Policy | DirectCare AI](https://www.directcare.ai/privacy-policy)
@@ -1319,7 +1319,7 @@ from intake to your door.
 
 # ED Treatment Online — Surge Max 4-in-1 | DirectCare AI
 
-> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine for faster, stronger results. Prescribed online, shipped discreetly.
+> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine. Prescribed online, shipped discreetly.
 
 Source: https://www.directcare.ai/surge-max
 
@@ -1679,7 +1679,7 @@ Your treatment shouldn't either.
 
 # Men's Hair Loss: Finasteride & Minoxidil | DirectCare AI
 
-> Personalized hair regrowth for men — clinically dosed finasteride, dutasteride and minoxidil, prescribed online by US-licensed clinicians, shipped discreetly.
+> Personalized hair regrowth for men — finasteride, dutasteride and minoxidil, prescribed online by US-licensed clinicians, shipped discreetly.
 
 Source: https://www.directcare.ai/mens-hair-loss
 
@@ -2822,9 +2822,9 @@ Source: https://www.directcare.ai/blood-test
 
 ---
 
-# Supplements | Clinically Trusted Wellness Plans · DirectCare AI
+# Supplements & Wellness Plans | DirectCare AI
 
-> Physician-grade supplements and curated wellness plans from DirectCare AI. Blood Sugar, Heart, Hair, Hormones, Menopause, GLP-1 support, Immune, Anti-Aging, Energy and General Wellness. Backed by clinical research, shipped to your door.
+> Physician-grade supplements and curated wellness plans from DirectCare AI. Blood sugar, heart, hair, hormones, menopause, immune and energy.
 
 Source: https://www.directcare.ai/supplements
 
@@ -4594,7 +4594,7 @@ Source: https://www.directcare.ai/womens-health
 
 # Perimenopause Treatment Online | DirectCare AI
 
-> Perimenopause treatment. Brain fog, exhaustion, mood swings, stubborn weight gain, sleepless nights, and low libido are not in your head — they are hormonal. Personalized, clinician-guided hormone care with labs, treatment, and ongoing support. See if you are a candidate in 2 minutes.
+> Perimenopause treatment. Personalized, clinician-guided hormone care with labs, treatment, and ongoing support.
 
 Source: https://www.directcare.ai/perimenopause
 
@@ -4862,7 +4862,7 @@ Provider Network
 
 # Hot Flashes & Night Sweats Treatment Online · DirectCare AI
 
-> Up to 75% of women experience hot flashes and night sweats. HRT relieves them by up to 90%. Meet with a US-licensed clinician online and get a personalized treatment plan delivered to your door if appropriate.
+> Hot flashes and night sweats: meet with a US-licensed clinician online and get a personalized plan, delivered to your door if appropriate.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats
 
@@ -5091,7 +5091,7 @@ Menopause symptoms · Treated online
 
 # Low Libido & Vaginal Dryness Treatment · DirectCare AI
 
-> Up to 50% of postmenopausal women report vaginal dryness; 40% report low desire. Estrogen, testosterone, and targeted treatment help. Talk to a US-licensed clinician online.
+> Low libido and vaginal dryness after menopause: talk to a US-licensed clinician online about estrogen, testosterone, and targeted treatment.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/low-libido-vaginal-dryness
 
@@ -5314,7 +5314,7 @@ Menopause symptoms · Treated online
 
 ---
 
-# Mood Swings, Anxiety & Brain Fog in Menopause · DirectCare AI
+# Mood, Anxiety & Brain Fog in Menopause | DirectCare AI
 
 > Up to 40% of women develop new mood symptoms in perimenopause. Estrogen runs serotonin, dopamine, and the prefrontal cortex. HRT and targeted treatment help.
 
@@ -5539,7 +5539,7 @@ Menopause symptoms · Treated online
 
 ---
 
-# Insomnia & Sleep Problems in Menopause · Treatment Online · DirectCare AI
+# Insomnia & Sleep Problems in Menopause | DirectCare AI
 
 > Up to 60% of women in perimenopause develop new insomnia. Estrogen and progesterone matter for sleep. HRT helps. Talk to a US-licensed clinician online.
 
@@ -5764,9 +5764,9 @@ Menopause symptoms · Treated online
 
 ---
 
-# Menopause Weight Gain & Energy Crashes · Treatment Online · DirectCare AI
+# Menopause Weight Gain & Energy Crashes | DirectCare AI
 
-> Most women gain 10–15 lbs through midlife and shift fat to the belly. It's hormones, not discipline. HRT, GLP-1, and a real protocol. Talk to a US-licensed clinician online.
+> Menopause weight gain and energy crashes: HRT, GLP-1, and a real protocol. Talk to a US-licensed clinician online.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes
 
@@ -5993,9 +5993,9 @@ Menopause symptoms · Treated online
 
 ---
 
-# Peptide Therapy | Recovery, Performance & Longevity | DirectCare AI
+# Peptide Therapy | Recovery & Longevity | DirectCare AI
 
-> Clinician-prescribed peptide therapy. BPC-157, ipamorelin, sermorelin, GHK-Cu, PT-141 and more. Personalized protocols for recovery, sleep, hair, libido and longevity. Labs ordered, shipped to your door.
+> Clinician-prescribed peptide therapy. BPC-157, ipamorelin, sermorelin, PT-141 and more. Personalized protocols for recovery, sleep, libido and longevity.
 
 Source: https://www.directcare.ai/peptides
 
@@ -6187,7 +6187,7 @@ almost ready.
 
 # Together | Whole-Household Care | DirectCare AI
 
-> One platform for both partners. HRT for her, TRT for him. Labs included, clinician-prescribed, shipped to your door. Each partner gets their own private care on the same trusted DirectCare AI platform.
+> One platform for both partners. HRT for her, TRT for him. Each partner gets their own private care on the same DirectCare AI platform.
 
 Source: https://www.directcare.ai/together
 
@@ -6393,7 +6393,7 @@ One household. Built around both of you.
 
 # HRT for Moms, Feel Like Yourself Again, DirectCare AI
 
-> HRT for moms. Between the kids, work, and everything else, perimenopause can bring brain fog, exhaustion, mood swings, stubborn weight gain, and low libido. Personalized, clinician-guided hormone care for mothers, with labs, treatment, and ongoing support. See if you are a candidate in 2 minutes.
+> HRT for moms. Personalized, clinician-guided hormone care for mothers, with labs, treatment, and ongoing support.
 
 Source: https://www.directcare.ai/hrt-moms
 
@@ -6660,7 +6660,7 @@ Provider Network
 
 # TRT for Executives, Restore Your Drive, DirectCare AI
 
-> TRT for high-performing executives. Chronic stress, long hours, and poor sleep accelerate testosterone decline, draining energy, focus, drive, and performance. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for high-performing executives. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-executives
 
@@ -6886,9 +6886,9 @@ Science-backed. Doctor-guided. Personalized care.
 
 ---
 
-# TRT for Firefighters, Stay Strong for the Call, DirectCare AI
+# TRT for Firefighters | DirectCare AI
 
-> TRT for firefighters. 24-hour shifts, disrupted sleep, and the physical toll of the job can drive testosterone down — draining the energy, strength, and recovery the work demands. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for firefighters. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-firefighters
 
@@ -7153,7 +7153,7 @@ Provider Network
 
 # TRT for Former Athletes, Get Your Edge Back, DirectCare AI
 
-> TRT for former athletes. If you used to train, compete, and recover fast, declining testosterone can steal the energy, strength, and drive you built. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for former athletes. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-former-athletes
 
@@ -7406,9 +7406,9 @@ Provider Network
 
 ---
 
-# TRT for Police Officers, Stay Sharp on Every Shift, DirectCare AI
+# TRT for Police Officers | DirectCare AI
 
-> TRT for police officers. Rotating shifts, high-stress calls, and broken sleep can drive testosterone down — draining the energy, focus, and strength the job demands. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for police officers. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-police-officers
 
@@ -7673,7 +7673,7 @@ Provider Network
 
 # Frequently Asked Questions | DirectCare AI
 
-> Answers to common questions about DirectCare AI: programs, pricing, insurance, eligibility, safety, compounded medications, and how online treatment with US-licensed clinicians works.
+> Answers to common questions about DirectCare AI: programs, pricing, insurance, eligibility, safety, and compounded medications.
 
 Source: https://www.directcare.ai/faq
 
@@ -7799,7 +7799,7 @@ Help Center
 
 # Blog | DirectCare AI
 
-> Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, and longevity protocols. Written by US-licensed clinicians at DirectCare AI.
+> Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health and hair regrowth.
 
 Source: https://www.directcare.ai/blog
 
@@ -8396,7 +8396,7 @@ Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Gre
 
 # About | DirectCare AI — Modern Healthcare, Built Around You
 
-> DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed care — weight loss, hormones, sexual health, hair regrowth, supplements and blood labs — all in one place. Founded 2025. US-licensed clinicians. No insurance required.
+> DirectCare AI is a telehealth platform delivering clinician-prescribed care: weight loss, hormones, sexual health, hair regrowth and blood labs.
 
 Source: https://www.directcare.ai/about
 
@@ -8507,9 +8507,9 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 
 ---
 
-# For the Lifestyle | Performance, Desire & Confidence for Couples Who Play | DirectCare AI
+# For the Lifestyle | Couples Who Play | DirectCare AI
 
-> Discreet, clinician-prescribed wellness built for the lifestyle. On-demand sexual-health protocols, libido and desire therapies, TRT and HRT for drive, GLP-1 for confidence, and full sexual-health blood labs. US-licensed clinicians. Plain, unmarked shipping. No insurance, no judgment.
+> Discreet, clinician-prescribed wellness built for the lifestyle. Sexual-health protocols, TRT, HRT and blood labs. US-licensed clinicians.
 
 Source: https://www.directcare.ai/lifestyle
 

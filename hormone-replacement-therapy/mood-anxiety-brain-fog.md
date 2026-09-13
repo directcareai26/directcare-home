@@ -1,4 +1,4 @@
-# Mood Swings, Anxiety & Brain Fog in Menopause · DirectCare AI
+# Mood, Anxiety & Brain Fog in Menopause | DirectCare AI
 
 > Up to 40% of women develop new mood symptoms in perimenopause. Estrogen runs serotonin, dopamine, and the prefrontal cortex. HRT and targeted treatment help.
 

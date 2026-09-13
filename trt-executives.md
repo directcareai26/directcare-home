@@ -1,6 +1,6 @@
 # TRT for Executives, Restore Your Drive, DirectCare AI
 
-> TRT for high-performing executives. Chronic stress, long hours, and poor sleep accelerate testosterone decline, draining energy, focus, drive, and performance. Clinician-guided TRT, labs, and prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT for high-performing executives. Clinician-guided TRT and labs.
 
 Source: https://www.directcare.ai/trt-executives
 

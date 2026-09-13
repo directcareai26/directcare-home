@@ -1,6 +1,6 @@
 # Hot Flashes & Night Sweats Treatment Online · DirectCare AI
 
-> Up to 75% of women experience hot flashes and night sweats. HRT relieves them by up to 90%. Meet with a US-licensed clinician online and get a personalized treatment plan delivered to your door if appropriate.
+> Hot flashes and night sweats: meet with a US-licensed clinician online and get a personalized plan, delivered to your door if appropriate.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats
 

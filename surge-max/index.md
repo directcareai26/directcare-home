@@ -2,7 +2,7 @@
 
 > Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine for faster, stronger results. Prescribed online, shipped discreetly.
 
-Source: https://www.directcare.ai/surge-max/
+Source: https://www.directcare.ai/surge-max
 
 The 4-in-1 Performance Formula
 

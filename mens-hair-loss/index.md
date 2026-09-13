@@ -2,7 +2,7 @@
 
 > Personalized hair regrowth for men — clinically dosed finasteride, dutasteride and minoxidil, prescribed online by US-licensed clinicians, shipped discreetly.
 
-Source: https://www.directcare.ai/mens-hair-loss/
+Source: https://www.directcare.ai/mens-hair-loss
 
 ## Men's hair loss treatment online: finasteride & minoxidil.
 

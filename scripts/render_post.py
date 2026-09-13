@@ -34,27 +34,50 @@ RSS_DESCRIPTION = (
     "Written by US-licensed clinicians at DirectCare AI."
 )
 
-# Pages that should appear in sitemap.xml in addition to the blog posts.
-# (priority, changefreq, path)
+# Canonical form only — no trailing slash: vercel.json sets trailingSlash:false,
+# so the slashed form 308s and a sitemap must not list redirects. A page belongs
+# here when it is indexable and self-canonical. Funnels (/start, /quiz, /surge/f*)
+# and utility pages (welcome, thankyou, unavailable) stay out on purpose; the
+# Markdown twins and llms-full.txt are generated from this list via sitemap.xml.
 SITEMAP_STATIC_PAGES: list[tuple[str, str, str]] = [
     ("1.0", "weekly", "/"),
     ("0.9", "monthly", "/hormone-replacement-therapy"),
     ("0.9", "monthly", "/testosterone-replacement-therapy"),
-    ("0.9", "monthly", "/weight-loss/"),
-    ("0.9", "monthly", "/surge-max/"),
-    ("0.9", "monthly", "/mens-hair-loss/"),
-    ("0.9", "monthly", "/womans-hair-loss/"),
-    ("0.9", "monthly", "/blood-test/"),
-    ("0.8", "monthly", "/supplements/"),
-    ("0.8", "monthly", "/chronic-care/"),
+    ("0.9", "monthly", "/weight-loss"),
+    ("0.9", "monthly", "/surge-max"),
+    ("0.9", "monthly", "/mens-hair-loss"),
+    ("0.9", "monthly", "/womans-hair-loss"),
+    ("0.9", "monthly", "/blood-test"),
+    ("0.8", "monthly", "/supplements"),
+    ("0.8", "monthly", "/chronic-care"),
+    ("0.8", "monthly", "/erectile-dysfunction"),
+    ("0.8", "monthly", "/mens-weight-loss"),
+    ("0.8", "monthly", "/womens-weight-loss"),
+    ("0.8", "monthly", "/mens-health"),
+    ("0.8", "monthly", "/womens-health"),
+    ("0.7", "monthly", "/perimenopause"),
+    ("0.7", "monthly", "/hormone-replacement-therapy/hot-flashes-and-night-sweats"),
+    ("0.7", "monthly", "/hormone-replacement-therapy/low-libido-vaginal-dryness"),
+    ("0.7", "monthly", "/hormone-replacement-therapy/mood-anxiety-brain-fog"),
+    ("0.7", "monthly", "/hormone-replacement-therapy/trouble-sleeping"),
+    ("0.7", "monthly", "/hormone-replacement-therapy/weight-gain-energy-crashes"),
     ("0.7", "monthly", "/peptides"),
     ("0.7", "monthly", "/together"),
-    ("0.6", "daily",   "/blog/"),
-    ("0.4", "yearly",  "/safety/"),
-    ("0.3", "yearly",  "/privacy-policy/"),
-    ("0.3", "yearly",  "/terms-and-conditions/"),
-    ("0.3", "yearly",  "/medical-consent/"),
-    ("0.3", "yearly",  "/ccpa/"),
+    ("0.6", "monthly", "/hrt-moms"),
+    ("0.6", "monthly", "/trt-executives"),
+    ("0.6", "monthly", "/trt-firefighters"),
+    ("0.6", "monthly", "/trt-former-athletes"),
+    ("0.6", "monthly", "/trt-police-officers"),
+    ("0.6", "monthly", "/faq"),
+    ("0.6", "daily",   "/blog"),
+    ("0.5", "monthly", "/about"),
+    ("0.5", "monthly", "/lifestyle"),
+    ("0.4", "yearly",  "/bill-of-rights"),
+    ("0.4", "yearly",  "/safety"),
+    ("0.3", "yearly",  "/privacy-policy"),
+    ("0.3", "yearly",  "/terms-and-conditions"),
+    ("0.3", "yearly",  "/medical-consent"),
+    ("0.3", "yearly",  "/ccpa"),
 ]
 
 

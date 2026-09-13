@@ -2,7 +2,7 @@
 
 > Lose weight with compounded tirzepatide, prescribed online by US-licensed clinicians and paired with 1:1 care coaching. From $269/mo. No insurance needed.
 
-Source: https://www.directcare.ai/weight-loss/
+Source: https://www.directcare.ai/weight-loss
 
 ## GLP-1 weight loss online: compounded tirzepatide,
  clinician-prescribed.
@@ -50,7 +50,7 @@ You get a Care Coach.
 
  "Your week-2 check-in is Friday at 10am. Bring your last 7 days of food noise notes, we'll layer the nutrition module on top of your current side-effect plan."
 
-###### What care coaching is not
+#### What care coaching is not
 
  Care Coaching is medically-centered support for your weight loss treatment, provided by Certified Medical Assistants. It is **not registered dietitian services, not a prescriptive diet or eating restrictions, not mental health therapy, and not a substitute for other specialized professional services**. If you need any of those, your DirectCare AI clinician can help with a referral.
 

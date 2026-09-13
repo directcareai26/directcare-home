@@ -2,7 +2,7 @@
 
 > Continuous glucose, blood pressure and weight monitoring with a real care team. RPM and CCM for diabetes, hypertension and more — covered by Medicare.
 
-Source: https://www.directcare.ai/chronic-care/
+Source: https://www.directcare.ai/chronic-care
 
 Remote Patient Monitoring · Chronic Care Management
 

@@ -167,16 +167,6 @@ def block_for(path, doc, date):
         # WebSite node an @id and this is worth adding back.
         "publisher": {"@id": f"{BASE}/#org"},
     }
-    if _medical(path):
-        # Designated clinical reviewer (DaChé, 2026-09-13). Described exactly as the homepage's
-        # Person node already does: a Doctor of Chiropractic and Clinical Advisor, not a physician.
-        # No lastReviewed until a real review date exists for the page.
-        node["reviewedBy"] = {
-            "@type": "Person", "@id": f"{BASE}/#dr-tim-pepin", "name": "Dr. Tim Pepin",
-            "honorificPrefix": "Dr.", "honorificSuffix": "D.C.",
-            "jobTitle": "Clinical Advisor & Director of Integrative Health",
-            "worksFor": {"@id": f"{BASE}/#org"},
-        }
     desc = meta(doc, "description")
     if desc:
         node["description"] = desc

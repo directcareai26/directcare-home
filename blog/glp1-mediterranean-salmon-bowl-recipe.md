@@ -21,7 +21,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on semaglutide or tirzepatide, you already know the problem: your appetite has been dialed down to a whisper, and whatever you do eat needs to do the work of several normal meals. That's where this bowl earns its keep.
 
- It's protein-forward (38 g), fiber-dense (10 g), packed with omega-3s, and built around foods your gut will still tolerate on a GLP-1. The base is adapted from a Mediterranean salmon-bowl pattern popularized by [The Mediterranean Dish](https://www.themediterraneandish.com/mediterranean-salmon-bowls/). We tightened the protein math for telehealth patients on appetite-suppressing protocols.
+ It's protein-forward (38 g), fiber-dense (10 g), packed with omega-3s, and built around foods your gut will still tolerate on a GLP-1. The base is adapted from a Mediterranean salmon-bowl pattern popularized by [The Mediterranean Dish](https://www.themediterraneandish.com/salmon-rice-bowl/). We tightened the protein math for telehealth patients on appetite-suppressing protocols.
 
 ### Why this bowl, specifically.
 
@@ -116,7 +116,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  We've written separately about [why preserving muscle on a GLP-1 isn't optional](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) and [the four-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) that lives behind recipes like this one. The short version: your appetite is the limiting reagent now, so every bite has to pull its weight. A bowl like this is the easiest way to put 38 g of protein and 10 g of fiber on a plate without forcing yourself through volume you don't want.
 
  The patients who do best on GLP-1s over 12+ months aren't the ones eating less of everything. They're the ones eating more of a small number of nutrient-dense meals. And this is one of them.
- Recipe adapted from [The Mediterranean Dish. Mediterranean Salmon Bowls](https://www.themediterraneandish.com/mediterranean-salmon-bowls/), with protein and fiber adjusted for GLP-1 patient targets. Nutrition guidance drawn from [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) and the [Mayo Clinic Mediterranean Diet overview](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801).
+ Recipe adapted from [The Mediterranean Dish. Mediterranean Salmon Bowls](https://www.themediterraneandish.com/salmon-rice-bowl/), with protein and fiber adjusted for GLP-1 patient targets. Nutrition guidance drawn from [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) and the [Mayo Clinic Mediterranean Diet overview](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801).
 
  Eat better, lose better
 

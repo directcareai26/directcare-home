@@ -126,7 +126,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference) for the molecular choice and [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss) for the back-end protocol.
 
  Same active ingredient, different package, different price. The clinical question isn't compounded-vs-branded — it's whether your provider and pharmacy are real and whether the protocol fits your physiology.
- Sources: [FDA on compounded drugs and the 503A/503B pathway](https://www.fda.gov/drugs/human-drug-compounding); [FDA drug shortage status updates](https://www.accessdata.fda.gov/scripts/drugshortages/); [Endocrine Society statement on appropriate compounded medication use in obesity](https://pubmed.ncbi.nlm.nih.gov/38157317/).
+ Sources: [FDA on compounded drugs and the 503A/503B pathway](https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding); [FDA drug shortage status updates](https://www.accessdata.fda.gov/scripts/drugshortages/); [Endocrine Society statement on appropriate compounded medication use in obesity](https://pubmed.ncbi.nlm.nih.gov/38157317/).
 
  Get the right protocol
 

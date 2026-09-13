@@ -106,17 +106,17 @@ Medical Consent
 
 - Iowa — [Iowa Board of Medicine](https://medicalboard.iowa.gov/)
 
-- Kentucky — [Kentucky Board of Medical Licensure](https://kbml.ky.gov/grievances/Pages/file-a-grievance.aspx)
+- Kentucky — [Kentucky Board of Medical Licensure](https://kbml.ky.gov/grievances/Pages/default.aspx)
 
-- Maine — [Maine Board of Licensure in Medicine](https://www.maine.gov/md/complaints)
+- Maine — [Maine Board of Licensure in Medicine](https://www.maine.gov/md/complaint/file-complaint)
 
 - New York — [NY Office of Professional Medical Conduct](https://www.health.ny.gov/professionals/doctors/conduct/)
 
-- Oregon — [Oregon Medical Board](https://www.oregon.gov/omb/board/Pages/Complaints.aspx)
+- Oregon — [Oregon Medical Board](https://www.oregon.gov/omb/investigations/pages/how-to-file-a-complaint.aspx)
 
-- Texas — [Texas Medical Board](https://www.tmb.state.tx.us/page/filing-a-complaint) or call 1-800-201-9353
+- Texas — [Texas Medical Board](https://www.tmb.texas.gov/resources/for-the-public/complaint-about-licensee) or call 1-800-201-9353
 
-- Vermont — [Vermont Board of Medical Practice](https://sos.vermont.gov/medical-practice/file-a-complaint/)
+- Vermont — [Vermont Board of Medical Practice](https://www.healthvermont.gov/systems/board-medical-practice/file-complaint)
 
 - Wyoming — [Wyoming Board of Medicine](https://wyomedboard.state.wy.us/complaints/)
 

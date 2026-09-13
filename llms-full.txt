@@ -9787,17 +9787,17 @@ Medical Consent
 
 - Iowa — [Iowa Board of Medicine](https://medicalboard.iowa.gov/)
 
-- Kentucky — [Kentucky Board of Medical Licensure](https://kbml.ky.gov/grievances/Pages/file-a-grievance.aspx)
+- Kentucky — [Kentucky Board of Medical Licensure](https://kbml.ky.gov/grievances/Pages/default.aspx)
 
-- Maine — [Maine Board of Licensure in Medicine](https://www.maine.gov/md/complaints)
+- Maine — [Maine Board of Licensure in Medicine](https://www.maine.gov/md/complaint/file-complaint)
 
 - New York — [NY Office of Professional Medical Conduct](https://www.health.ny.gov/professionals/doctors/conduct/)
 
-- Oregon — [Oregon Medical Board](https://www.oregon.gov/omb/board/Pages/Complaints.aspx)
+- Oregon — [Oregon Medical Board](https://www.oregon.gov/omb/investigations/pages/how-to-file-a-complaint.aspx)
 
-- Texas — [Texas Medical Board](https://www.tmb.state.tx.us/page/filing-a-complaint) or call 1-800-201-9353
+- Texas — [Texas Medical Board](https://www.tmb.texas.gov/resources/for-the-public/complaint-about-licensee) or call 1-800-201-9353
 
-- Vermont — [Vermont Board of Medical Practice](https://sos.vermont.gov/medical-practice/file-a-complaint/)
+- Vermont — [Vermont Board of Medical Practice](https://www.healthvermont.gov/systems/board-medical-practice/file-complaint)
 
 - Wyoming — [Wyoming Board of Medicine](https://wyomedboard.state.wy.us/complaints/)
 
@@ -17024,7 +17024,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference) for the molecular choice and [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss) for the back-end protocol.
 
  Same active ingredient, different package, different price. The clinical question isn't compounded-vs-branded — it's whether your provider and pharmacy are real and whether the protocol fits your physiology.
- Sources: [FDA on compounded drugs and the 503A/503B pathway](https://www.fda.gov/drugs/human-drug-compounding); [FDA drug shortage status updates](https://www.accessdata.fda.gov/scripts/drugshortages/); [Endocrine Society statement on appropriate compounded medication use in obesity](https://pubmed.ncbi.nlm.nih.gov/38157317/).
+ Sources: [FDA on compounded drugs and the 503A/503B pathway](https://www.fda.gov/drugs/guidance-compliance-regulatory-information/human-drug-compounding); [FDA drug shortage status updates](https://www.accessdata.fda.gov/scripts/drugshortages/); [Endocrine Society statement on appropriate compounded medication use in obesity](https://pubmed.ncbi.nlm.nih.gov/38157317/).
 
  Get the right protocol
 
@@ -19833,7 +19833,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on semaglutide or tirzepatide, you already know the problem: your appetite has been dialed down to a whisper, and whatever you do eat needs to do the work of several normal meals. That's where this bowl earns its keep.
 
- It's protein-forward (38 g), fiber-dense (10 g), packed with omega-3s, and built around foods your gut will still tolerate on a GLP-1. The base is adapted from a Mediterranean salmon-bowl pattern popularized by [The Mediterranean Dish](https://www.themediterraneandish.com/mediterranean-salmon-bowls/). We tightened the protein math for telehealth patients on appetite-suppressing protocols.
+ It's protein-forward (38 g), fiber-dense (10 g), packed with omega-3s, and built around foods your gut will still tolerate on a GLP-1. The base is adapted from a Mediterranean salmon-bowl pattern popularized by [The Mediterranean Dish](https://www.themediterraneandish.com/salmon-rice-bowl/). We tightened the protein math for telehealth patients on appetite-suppressing protocols.
 
 ### Why this bowl, specifically.
 
@@ -19928,7 +19928,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  We've written separately about [why preserving muscle on a GLP-1 isn't optional](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) and [the four-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) that lives behind recipes like this one. The short version: your appetite is the limiting reagent now, so every bite has to pull its weight. A bowl like this is the easiest way to put 38 g of protein and 10 g of fiber on a plate without forcing yourself through volume you don't want.
 
  The patients who do best on GLP-1s over 12+ months aren't the ones eating less of everything. They're the ones eating more of a small number of nutrient-dense meals. And this is one of them.
- Recipe adapted from [The Mediterranean Dish. Mediterranean Salmon Bowls](https://www.themediterraneandish.com/mediterranean-salmon-bowls/), with protein and fiber adjusted for GLP-1 patient targets. Nutrition guidance drawn from [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) and the [Mayo Clinic Mediterranean Diet overview](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801).
+ Recipe adapted from [The Mediterranean Dish. Mediterranean Salmon Bowls](https://www.themediterraneandish.com/salmon-rice-bowl/), with protein and fiber adjusted for GLP-1 patient targets. Nutrition guidance drawn from [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) and the [Mayo Clinic Mediterranean Diet overview](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801).
 
  Eat better, lose better
 
@@ -20020,7 +20020,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Rule 4: Sequence: protein → fiber → carbs.
 
- There's good evidence , [highlighted by the Cleveland Clinic](https://health.clevelandclinic.org/eating-food-in-the-right-order) and several controlled studies. That eating protein and fiber before simple carbs at the same meal flattens the post-meal glucose curve. On a GLP-1, where insulin sensitivity is one of the things the drug is trying to improve, food sequencing is a small lever that consistently helps.
+ There's good evidence , [highlighted by the Cleveland Clinic](https://health.clevelandclinic.org/how-to-lower-blood-sugar) and several controlled studies. That eating protein and fiber before simple carbs at the same meal flattens the post-meal glucose curve. On a GLP-1, where insulin sensitivity is one of the things the drug is trying to improve, food sequencing is a small lever that consistently helps.
 
  In practice, this means: chicken before rice. Salad before pasta. Eggs before toast. You'll find that you fill up partway into the protein and fiber anyway, which naturally limits the simple-carb portion to a side note rather than the main event.
 
@@ -20039,7 +20039,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  We published a recipe today that hits all four rules in a single bowl: [the Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe). 38 g of protein, 10 g of fiber, 1,500 mg of omega-3, and a built-in protein-first sequence. If you're looking for a default meal to repeat on the busiest days, that's a strong candidate.
 
  The best GLP-1 nutrition plan isn't restrictive. It's additive. Add the protein. Add the fiber. Add the water. The drug already removed the rest.
- Sources: [International Society of Sports Nutrition](https://pubmed.ncbi.nlm.nih.gov/28642676/) protein position stand; [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) fiber and nutrition guidance; [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/) nutrition library; [Cleveland Clinic](https://health.clevelandclinic.org/eating-food-in-the-right-order) on food sequencing; [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/list-all/) factsheets.
+ Sources: [International Society of Sports Nutrition](https://pubmed.ncbi.nlm.nih.gov/28642676/) protein position stand; [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) fiber and nutrition guidance; [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/) nutrition library; [Cleveland Clinic](https://health.clevelandclinic.org/how-to-lower-blood-sugar) on food sequencing; [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/list-all/) factsheets.
 
  Get the protocol that fits
 

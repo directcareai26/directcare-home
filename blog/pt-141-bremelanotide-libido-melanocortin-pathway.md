@@ -1,4 +1,4 @@
-# PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow | DirectCare AI Blog
+# PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow
 
 > What PT-141 (bremelanotide) is, how the melanocortin pathway differs from PDE5 inhibitors, who it fits, and how the FDA-approved version for women compares to compounded protocols for men.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/pt-141-bremelanotide-libido-melanocortin-
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Sexual Health
 
@@ -101,7 +101,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **With HRT (including testosterone for women):** estradiol + testosterone for women addresses much of the perimenopausal libido drop. PT-141 is the addition when HRT alone hasn't fully addressed desire.
 
- Pair this with [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison/), [daily low-dose tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand/), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation/) post for the full sexual-health landscape.
+ Pair this with [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison), [daily low-dose tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation) post for the full sexual-health landscape.
 
 ### The bottom line.
 
@@ -116,6 +116,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI's clinical team prescribes PDE5 protocols and — when warranted — compounded PT-141 combinations matched to the specific mechanism that's the bottleneck for you.
 
- [Get Surge Max →](https://www.directcare.ai/surge-max/)
+ [Get Surge Max →](https://www.directcare.ai/surge-max)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

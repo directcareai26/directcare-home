@@ -1,4 +1,4 @@
-# Subcutaneous vs. IM Testosterone: What the PK Data Shows | DirectCare AI Blog
+# Subcutaneous vs. IM Testosterone: What the PK Data Shows
 
 > Subcutaneous vs. intramuscular testosterone injections: what the pharmacokinetic data actually shows about peaks, troughs, estradiol, and side effects.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/subq-vs-im-testosterone-injections-pharma
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 

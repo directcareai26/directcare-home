@@ -1,4 +1,4 @@
-# Micronized Progesterone vs. Progestins: Breast & Brain | DirectCare AI Blog
+# Micronized Progesterone vs. Progestins: Breast & Brain
 
 > Micronized progesterone vs. progestins in HRT: what the evidence says about breast cancer risk, brain effects, and sleep — with real trial data, not vibes.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/micronized-progesterone-vs-progestins-bre
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

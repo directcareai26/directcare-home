@@ -1,4 +1,4 @@
-# Salmon tacos with cabbage slaw: a 30-minute omega-3 dinner | DirectCare AI Blog
+# Salmon tacos with cabbage slaw: a 30-minute omega-3 dinner
 
 > Recipe for 20-minute salmon tacos with cabbage slaw: 32g protein per serving, omega-3 target, the lime-yogurt sauce that makes salmon work in a taco.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/salmon-tacos-cabbage-slaw-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -133,7 +133,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The bigger picture
 
- If you're working through our perimenopause [5-categories framework](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help/), this dinner checks two of them in one meal: omega-3 fish + high-quality protein. The slaw layer brings the cruciferous-vegetable fiber rule along for the ride.
+ If you're working through our perimenopause [5-categories framework](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help), this dinner checks two of them in one meal: omega-3 fish + high-quality protein. The slaw layer brings the cruciferous-vegetable fiber rule along for the ride.
 
  Two salmon dinners a week is one of the cheapest interventions you can run on yourself. This is one of the better executions.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient values; [Harvard T.H. Chan School of Public Health on omega-3s](https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/); [USDA seafood safety](https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/seafood/seafood-shellfish-fish-safety).
@@ -144,6 +144,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

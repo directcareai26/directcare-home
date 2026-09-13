@@ -1,4 +1,4 @@
-# Continuous glucose monitors (CGM) for non-diabetics: what the data actually shows in 2026 | DirectCare AI Blog
+# Continuous glucose monitors (CGM) for non-diabetics: what the data actually shows in 2026
 
 > What continuous glucose monitors (CGM) like Stelo and Lingo actually show in non-diabetics, what 'normal' glucose variability looks like, and when the data is genuinely useful vs. just anxiety-producing.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/continuous-glucose-monitor-cgm-for-non-di
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Blood Labs
 
@@ -71,9 +71,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **1. Borderline prediabetes (HbA1c 5.7–6.0).** A CGM helps identify which foods and habits are driving your numbers up. The intervention isn't "never eat carbs" — it's "which carbs at which times produce the response you want to minimize."
 
- **2. PCOS or family history of Type 2 diabetes.** Insulin resistance often precedes glucose dysregulation. CGM data, paired with fasting insulin and HOMA-IR (covered in the [12 markers we look at first](https://www.directcare.ai/blog/12-markers-hormone-panel-priority/)), helps catch metabolic dysfunction earlier than HbA1c alone.
+ **2. PCOS or family history of Type 2 diabetes.** Insulin resistance often precedes glucose dysregulation. CGM data, paired with fasting insulin and HOMA-IR (covered in the [12 markers we look at first](https://www.directcare.ai/blog/12-markers-hormone-panel-priority)), helps catch metabolic dysfunction earlier than HbA1c alone.
 
- **3. Pre-GLP-1 or post-GLP-1 transition.** Patients starting a GLP-1 protocol often see dramatic CGM changes within weeks. Patients tapering off (covered in [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss/)) can use CGM to monitor whether metabolic gains are holding.
+ **3. Pre-GLP-1 or post-GLP-1 transition.** Patients starting a GLP-1 protocol often see dramatic CGM changes within weeks. Patients tapering off (covered in [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss)) can use CGM to monitor whether metabolic gains are holding.
 
  **4. Athletes optimizing performance.** Endurance athletes use CGM to understand fueling — when to eat what, how training affects glucose, how recovery looks on the data.
 
@@ -131,7 +131,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're curious, a 2-week trial run is reasonable. The pattern recognition is most useful in the first 14 days; continuous use beyond that has diminishing returns for most people.
 
- Pair with the broader metabolic context in the [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity/) and the [ApoB vs. LDL conversation](https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include/) — CGM data without those is incomplete.
+ Pair with the broader metabolic context in the [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [ApoB vs. LDL conversation](https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include) — CGM data without those is incomplete.
 
  The CGM revolution is real. The most useful version of it lives in a 2-week trial paired with a real metabolic blood panel — not in years of obsessive number-watching without context.
  Sources: [Hall et al, Glucotypes in healthy adults, PLOS Biology 2018](https://pubmed.ncbi.nlm.nih.gov/30040842/); [FDA clearance announcement for Dexcom Stelo OTC CGM](https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor); [International Diabetes Federation consensus on CGM time-in-range targets](https://pubmed.ncbi.nlm.nih.gov/31177185/).
@@ -142,6 +142,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI's blood panel includes the metabolic markers that matter most — fasting insulin, HOMA-IR, HbA1c, ApoB — with a personalized roadmap from a US-licensed clinician.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

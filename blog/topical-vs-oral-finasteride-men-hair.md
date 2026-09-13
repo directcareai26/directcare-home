@@ -1,4 +1,4 @@
-# Topical finasteride vs. oral: how to get scalp results with fewer side effects | DirectCare AI Blog
+# Topical finasteride vs. oral: how to get scalp results with fewer side effects
 
 > Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure — and the side effects (libido, mood) it reduces.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -87,6 +87,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes topical and oral finasteride, dutasteride, and minoxidil combination protocols based on your scalp pattern, lab work, and side-effect history.
 
- [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss/)
+ [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

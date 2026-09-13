@@ -39,7 +39,7 @@ Source: https://www.directcare.ai/womens-health
 
  Wondering if it's hormonal? Start with the numbers.
 
- [Learn your numbers →](https://www.directcare.ai/blood-test/)
+ [Learn your numbers →](https://www.directcare.ai/blood-test)
 
  hot flashes
  night sweats
@@ -76,9 +76,9 @@ Source: https://www.directcare.ai/womens-health
 
  [HRT](https://www.directcare.ai/hormone-replacement-therapy)
  [Weight Loss](https://www.directcare.ai/womens-weight-loss)
- [Hair Regrowth](https://www.directcare.ai/womans-hair-loss/)
- [Blood Labs](https://www.directcare.ai/blood-test/)
- [Supplements](https://www.directcare.ai/supplements/)
+ [Hair Regrowth](https://www.directcare.ai/womans-hair-loss)
+ [Blood Labs](https://www.directcare.ai/blood-test)
+ [Supplements](https://www.directcare.ai/supplements)
  [Whole-household care](https://www.directcare.ai/together)
 
 ### Three steps. No insurance hoops.

@@ -1,4 +1,4 @@
-# What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp | DirectCare AI Blog
+# What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp
 
 > Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3, energy returns by week 4.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp1-month-one-side-effects-food-noise
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -97,6 +97,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds your dose escalation around how your body actually responds. Not a flat 4-week schedule. Clinician review at every step.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

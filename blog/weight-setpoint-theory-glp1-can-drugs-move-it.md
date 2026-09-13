@@ -1,4 +1,4 @@
-# Weight setpoint theory and GLP-1s: can these drugs actually move it downward? | DirectCare AI Blog
+# Weight setpoint theory and GLP-1s: can these drugs actually move it downward?
 
 > What weight setpoint theory says about why diets rebound, the published evidence that GLP-1 drugs may actually shift the setpoint downward, and what that means for long-term treatment strategy.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-mov
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -85,9 +85,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Three practical takeaways:
 
- **1. The four habits that hold the result matter more than the medication choice.** Protein intake, resistance training, sleep, and daily movement (covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/) and the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/)) determine whether the setpoint reset becomes durable.
+ **1. The four habits that hold the result matter more than the medication choice.** Protein intake, resistance training, sleep, and daily movement (covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) and the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework)) determine whether the setpoint reset becomes durable.
 
- **2. The maintenance protocol matters as much as the weight-loss protocol.** Quitting cold turkey at goal weight is the most common reason for rebound, regardless of what your hypothalamus is doing. The [GLP-1 maintenance framework](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss/) explains the tiered approach we use.
+ **2. The maintenance protocol matters as much as the weight-loss protocol.** Quitting cold turkey at goal weight is the most common reason for rebound, regardless of what your hypothalamus is doing. The [GLP-1 maintenance framework](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss) explains the tiered approach we use.
 
  **3. Long-term, low-dose GLP-1 use is increasingly the conversation in modern obesity medicine.** Not as a failure — as the equivalent of long-term, low-dose HRT or statin therapy. The drug class is increasingly framed as chronic disease management, not as a temporary intervention.
 
@@ -117,7 +117,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The implication isn't that everyone needs lifelong GLP-1 therapy. It's that the question "how long do I take this?" should be answered by your bloodwork, your habits, and your body's individual response — not by an arbitrary 6-month or 12-month cutoff. The drug class is increasingly understood as chronic disease management, and the clinical decisions should follow that framing.
 
- Pair this with [GLP-1 maintenance after weight loss](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss/), [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference/), and [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference/) for the full strategic picture.
+ Pair this with [GLP-1 maintenance after weight loss](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss), [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference), and [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference) for the full strategic picture.
 
  Conventional dieting fights the setpoint and loses. GLP-1s appear to move the setpoint — at least partially, for most patients. The right question isn't how to stay on a diet forever; it's whether the drugs that may reset the underlying biology should be part of a long-term plan.
  Sources: [Sumithran et al, NEJM 2011 on long-term hormonal adaptation after weight loss](https://pubmed.ncbi.nlm.nih.gov/22029981/); [metabolic adaptation research from the Biggest Loser follow-up study](https://pubmed.ncbi.nlm.nih.gov/27136388/); [STEP-4 trial on semaglutide discontinuation](https://pubmed.ncbi.nlm.nih.gov/33755728/); [review on GLP-1 receptor mechanisms in central nervous system](https://pubmed.ncbi.nlm.nih.gov/33564099/).
@@ -128,6 +128,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols with the maintenance phase planned from day one — because the setpoint conversation is what determines whether the loss actually holds.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

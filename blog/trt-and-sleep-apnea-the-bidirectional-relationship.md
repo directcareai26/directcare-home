@@ -1,4 +1,4 @@
-# TRT and sleep apnea: the bidirectional relationship most clinics miss | DirectCare AI Blog
+# TRT and sleep apnea: the bidirectional relationship most clinics miss
 
 > Why sleep apnea both causes low testosterone and is worsened by TRT in untreated patients, the screening questions every TRT consult should include, and the clinical sequence that resolves both.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-rel
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 
@@ -145,7 +145,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're a candidate for TRT and you snore, are fatigued, or have any of the STOP-BANG risk factors — the cleanest sequence is to screen the airway first. The treatment outcomes for both conditions are dramatically better when addressed in the right order.
 
- Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol/), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing/), and [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed/) for the broader TRT workup picture.
+ Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing), and [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed) for the broader TRT workup picture.
 
  The low-T diagnosis that gets missed most often isn't a low-T problem. It's a sleep problem causing a low-T result. Fix the airway, recheck the numbers, then decide.
  Sources: [STOP-BANG questionnaire validation in OSA screening](https://pubmed.ncbi.nlm.nih.gov/20210429/); [systematic review on OSA and testosterone](https://pubmed.ncbi.nlm.nih.gov/30903777/); [CPAP and testosterone restoration trials](https://pubmed.ncbi.nlm.nih.gov/24001036/).

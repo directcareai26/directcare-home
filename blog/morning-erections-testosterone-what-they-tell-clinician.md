@@ -1,4 +1,4 @@
-# Morning erections and testosterone: what nocturnal tumescence actually tells your clinician | DirectCare AI Blog
+# Morning erections and testosterone: what nocturnal tumescence actually tells your clinician
 
 > Explains why morning erections are a free clinical signal for low testosterone, vascular health, and sleep quality — and what a clinician reads from their frequency.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/morning-erections-testosterone-what-they-
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 
@@ -71,11 +71,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you've gone from most mornings to rarely-to-never over 2–6 months — and your sleep hasn't catastrophically changed — the workup we'd recommend includes:
 
-- Morning, fasting total testosterone — the only valid window for diagnostic T-level draws (covered in [why morning testosterone tests matter](https://www.directcare.ai/blog/morning-testosterone-test-timing/)).
+- Morning, fasting total testosterone — the only valid window for diagnostic T-level draws (covered in [why morning testosterone tests matter](https://www.directcare.ai/blog/morning-testosterone-test-timing)).
 
 - Free testosterone and SHBG — total T alone misses a meaningful percentage of functional low-T cases.
 
-- LH and FSH — distinguishes primary from secondary hypogonadism, which determines whether [TRT or enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol/) is the right protocol.
+- LH and FSH — distinguishes primary from secondary hypogonadism, which determines whether [TRT or enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol) is the right protocol.
 
 - Estradiol and prolactin — both can suppress libido and erections at the wrong levels.
 
@@ -87,7 +87,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What about PDE5 inhibitors?
 
- Sildenafil and tadalafil (covered in [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison/)) work mechanically downstream of the upstream problem. They can absolutely help — but starting one without identifying the underlying cause means you're treating a symptom that may also be a warning sign for something else.
+ Sildenafil and tadalafil (covered in [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison)) work mechanically downstream of the upstream problem. They can absolutely help — but starting one without identifying the underlying cause means you're treating a symptom that may also be a warning sign for something else.
 
  The clean sequence: identify why NPT dropped first, address that, then add a PDE5 if symptoms warrant after the cause is being treated.
 

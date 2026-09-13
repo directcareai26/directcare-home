@@ -1,4 +1,4 @@
-# Body recomp on GLP-1s: how to lose fat without losing muscle | DirectCare AI Blog
+# Body recomp on GLP-1s: how to lose fat without losing muscle
 
 > Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week, and a 10-15% calorie deficit (not 30%).
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -105,6 +105,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols with protein targets, resistance-training cadence, and quarterly DEXA-style monitoring so your loss is fat, not muscle.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

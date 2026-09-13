@@ -1,4 +1,4 @@
-# Grip strength predicts how long you'll live — and the 3 exercises that actually build it | DirectCare AI Blog
+# Grip strength predicts how long you'll live — and the 3 exercises that actually build it
 
 > Why grip strength is one of the strongest predictors of longevity, what the PURE study and other research actually showed, and the 3 exercises that build it efficiently.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/grip-strength-longevity-predictor-three-e
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Fitness
 
@@ -123,13 +123,13 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - A standalone fitness program. Strong grip with no overall conditioning is unusual and not the goal. The grip is the indicator; full-body resistance training is the program.
 
-- A reason to neglect cardio. Grip strength correlates with longevity but doesn't replace cardiovascular fitness. The [3x-per-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/) plus [7,000 daily steps](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription/) is the foundation.
+- A reason to neglect cardio. Grip strength correlates with longevity but doesn't replace cardiovascular fitness. The [3x-per-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation) plus [7,000 daily steps](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription) is the foundation.
 
 - A fix-in-isolation move. Grip improves alongside everything else when you train consistently. It's a signal of broader fitness, not a separable lever.
 
 ### How this fits the bigger picture.
 
- Patients who pair these three exercises with the [3x-per-week resistance template](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/), the [7,000-step daily target](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription/), and good protein intake from the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) — generally see grip strength improve measurably within 8–12 weeks. The whole-body benefits follow on the same timeline.
+ Patients who pair these three exercises with the [3x-per-week resistance template](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation), the [7,000-step daily target](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription), and good protein intake from the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) — generally see grip strength improve measurably within 8–12 weeks. The whole-body benefits follow on the same timeline.
 
  If you're on TRT or HRT, the protocols often pair beautifully with this kind of training — testosterone and estradiol both support the recovery from heavy lifting that builds grip and full-body strength most effectively.
 
@@ -148,6 +148,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds hormone, weight-loss, and longevity protocols designed to layer on top of the training and habit foundation that actually moves outcomes — including the markers that quietly predict how long you'll live.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

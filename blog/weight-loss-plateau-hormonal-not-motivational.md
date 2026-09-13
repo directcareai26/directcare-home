@@ -1,4 +1,4 @@
-# Weight-Loss Plateau? It's Probably Hormonal, Not Willpower | DirectCare AI Blog
+# Weight-Loss Plateau? It's Probably Hormonal, Not Willpower
 
 > Your weight-loss plateau is likely hormonal, not motivational. Learn how leptin, thyroid, cortisol, and GLP-1 drive stalls — and how to break through.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/weight-loss-plateau-hormonal-not-motivati
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -110,6 +110,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded semaglutide and tirzepatide. Weekly injection, US-licensed clinician oversight, dose titration based on your real bloodwork — not a one-size-fits-all script.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

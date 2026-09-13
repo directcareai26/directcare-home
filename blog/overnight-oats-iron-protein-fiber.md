@@ -1,4 +1,4 @@
-# The 5-minute overnight oats that hit your iron, protein, and fiber targets | DirectCare AI Blog
+# The 5-minute overnight oats that hit your iron, protein, and fiber targets
 
 > Recipe for 5-minute overnight oats with 28g protein, 10g fiber, and 4mg iron per jar: rolled oats, Greek yogurt, chia, pumpkin seeds, milk, fortified cereal.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/overnight-oats-iron-protein-fiber
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -31,7 +31,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The bloodwork to know
 
- Ferritin under 50 ng/mL is functionally deficient for hair growth and energy, even when the lab flags it as "normal." The target we anchor on is 50-100 ng/mL. See our [women's hair-loss hormonal panel post](https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel/) for the full markers.
+ Ferritin under 50 ng/mL is functionally deficient for hair growth and energy, even when the lab flags it as "normal." The target we anchor on is 50-100 ng/mL. See our [women's hair-loss hormonal panel post](https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel) for the full markers.
 
 ### Ingredients (1 jar, 1 serving. Scale up to 3 jars on Sunday night)
 
@@ -99,7 +99,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Pumpkin seeds . 1.5 mg iron + 2.5 g protein per tablespoon. Also a strong zinc source.
 
-- Ground flax . 2 g fiber per tablespoon. Lignans support hormonal balance during perimenopause (covered in [our perimenopause-foods post](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help/)).
+- Ground flax . 2 g fiber per tablespoon. Lignans support hormonal balance during perimenopause (covered in [our perimenopause-foods post](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help)).
 
 - Greek yogurt . 5 g protein + casein (slow-digesting) to balance the whey burst.
 
@@ -136,6 +136,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Bloodwork is the cleanest way to find the deficiencies driving symptoms. Vitamin D, ferritin, B12, thyroid, and more. Results in 3-5 days with a plain-English plan.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

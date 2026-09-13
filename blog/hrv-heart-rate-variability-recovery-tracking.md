@@ -1,4 +1,4 @@
-# Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it | DirectCare AI Blog
+# Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it
 
 > What heart rate variability (HRV) actually measures, why it matters more than resting heart rate for recovery, and the four daily levers (sleep, alcohol, training, breath) that move it most.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/hrv-heart-rate-variability-recovery-track
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Fitness
 
@@ -113,7 +113,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How HRV interacts with the protocols we prescribe.
 
- **On TRT:** properly dosed TRT typically raises baseline HRV over 8–16 weeks, primarily by improving sleep architecture and recovery. Over-dosed TRT (with poor estradiol management — see [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed/)) often drops HRV by raising sympathetic tone. Track it.
+ **On TRT:** properly dosed TRT typically raises baseline HRV over 8–16 weeks, primarily by improving sleep architecture and recovery. Over-dosed TRT (with poor estradiol management — see [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed)) often drops HRV by raising sympathetic tone. Track it.
 
  **On HRT:** women starting HRT for perimenopause typically see meaningful HRV improvement once sleep stabilizes — most often within 4–8 weeks. The first wave of HRT benefits (sleep, mood, cognition) shows up cleanly in HRV data before the patient consciously notices.
 
@@ -164,6 +164,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds hormone, weight-loss, and longevity protocols designed to improve the markers that actually predict how you feel and how long you'll live — including recovery, body composition, and metabolic health.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

@@ -1,4 +1,4 @@
-# Dutasteride vs. finasteride: when men should consider the more aggressive 5-alpha reductase blocker | DirectCare AI Blog
+# Dutasteride vs. finasteride: when men should consider the more aggressive 5-alpha reductase blocker
 
 > When men should consider dutasteride over finasteride for hair loss: dosing, side-effect profile, head-to-head trial data, and the patients who benefit most from the more potent 5-alpha reductase inhibitor.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/dutasteride-vs-finasteride-when-to-step-u
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -107,7 +107,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Substantially reduces systemic side-effect rates
 
- Covered in detail in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair/). The same logic applies to topical dutasteride. For men who responded to oral finasteride but had side effects, switching to topical dutasteride often gives stronger regrowth with cleaner tolerability.
+ Covered in detail in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair). The same logic applies to topical dutasteride. For men who responded to oral finasteride but had side effects, switching to topical dutasteride often gives stronger regrowth with cleaner tolerability.
 
 ### Standard dosing.
 
@@ -131,7 +131,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Dutasteride is the second-line option for men whose finasteride response is incomplete, and the first-line option for men whose hair loss profile suggests aggressive intervention from the start. The trade-off is real but manageable — slightly higher side-effect risk for meaningfully better hair retention and regrowth.
 
- Pair with the [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair/) post for the topical-vs-systemic decision, and the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working/) post for what to expect on the minoxidil side of the protocol.
+ Pair with the [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) post for the topical-vs-systemic decision, and the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post for what to expect on the minoxidil side of the protocol.
 
  Finasteride works for most men. For the rest, dutasteride is the cleaner version of the same conversation — same mechanism, more suppression, real regrowth when finasteride alone isn't enough.
  Sources: [JAAD 2006 head-to-head trial](https://pubmed.ncbi.nlm.nih.gov/16635664/); [Korean trial of dutasteride 0.5 mg vs finasteride 1 mg](https://pubmed.ncbi.nlm.nih.gov/24612477/); [2017 systematic review on dutasteride for AGA](https://pubmed.ncbi.nlm.nih.gov/28233889/).
@@ -142,6 +142,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded topical and oral protocols — finasteride, dutasteride, minoxidil — matched to your scalp pattern, your previous response, and your side-effect tolerance.
 
- [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss/)
+ [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

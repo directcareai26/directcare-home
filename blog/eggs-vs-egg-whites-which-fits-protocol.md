@@ -1,4 +1,4 @@
-# Eggs vs. egg whites: which one actually fits your protocol | DirectCare AI Blog
+# Eggs vs. egg whites: which one actually fits your protocol
 
 > Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you're hitting 1g/lb protein on a calorie ceiling.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -119,7 +119,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Putting it together
 
- If you're working through our [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) or trying to hit protein-front-loaded breakfasts, the default we recommend is:
+ If you're working through our [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) or trying to hit protein-front-loaded breakfasts, the default we recommend is:
 
  **1 whole egg + 2 egg whites + a side of fruit and 1/2 cup cottage cheese.**
 
@@ -134,6 +134,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Bloodwork is the cleanest way to find the deficiencies driving symptoms. Vitamin D, ferritin, B12, thyroid, and more. Results in 3-5 days with a plain-English plan.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

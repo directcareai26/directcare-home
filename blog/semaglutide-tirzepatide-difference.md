@@ -1,4 +1,4 @@
-# Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs | DirectCare AI Blog
+# Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs
 
 > Compares semaglutide vs. tirzepatide for weight loss: tirzepatide hits two receptors (GIP + GLP-1) and drops 15-22% body weight vs 12-15% for semaglutide.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/semaglutide-tirzepatide-difference
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -108,6 +108,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded semaglutide and tirzepatide protocols. Weekly injection, US-licensed clinician oversight, dose titration based on your real bloodwork. Not a one-size-fits-all script.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

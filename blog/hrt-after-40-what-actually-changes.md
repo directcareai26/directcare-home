@@ -1,4 +1,4 @@
-# HRT after 40: what actually changes when estradiol and progesterone come back online | DirectCare AI Blog
+# HRT after 40: what actually changes when estradiol and progesterone come back online
 
 > Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks, body composition and libido shift at 3-6 months.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/hrt-after-40-what-actually-changes
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

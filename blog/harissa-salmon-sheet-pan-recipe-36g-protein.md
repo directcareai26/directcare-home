@@ -1,4 +1,4 @@
-# Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan | DirectCare AI Blog
+# Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan
 
 > A 35-minute sheet-pan harissa salmon recipe with cauliflower and chickpeas. 36g protein, 12g fiber, omega-3 target met. Clinician-built weekend dinner that scales to four.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/harissa-salmon-sheet-pan-recipe-36g-prote
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -109,7 +109,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits the bigger picture.
 
- Pair with the [Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe/) on weeknights and this one on weekends, and you've hit your weekly omega-3 target with two recipes. Add the [chickpea-and-tuna lunch bowl](https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl/) for desk lunches and the [40-gram-protein smoothie](https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast/) for breakfasts, and your nutrition framework is essentially done with four recipes you'll actually make.
+ Pair with the [Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe) on weeknights and this one on weekends, and you've hit your weekly omega-3 target with two recipes. Add the [chickpea-and-tuna lunch bowl](https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl) for desk lunches and the [40-gram-protein smoothie](https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast) for breakfasts, and your nutrition framework is essentially done with four recipes you'll actually make.
 
  One pan. 35 minutes. 36 grams of protein and 2 grams of omega-3s on the plate. The recipe to write down and put on the Saturday rotation.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient calculations; [American Heart Association on omega-3 fatty acids](https://www.heart.org/en/healthy-living/healthy-eating/eat-smart/fats/fish-and-omega-3-fatty-acids).
@@ -120,6 +120,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition coaching to make a suppressed appetite still hit protein and omega-3 targets.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

@@ -1,4 +1,4 @@
-# GLP-1 Maintenance Dosing: How to Stay Off Without Rebound | DirectCare AI Blog
+# GLP-1 Maintenance Dosing: How to Stay Off Without Rebound
 
 > How GLP-1 maintenance dosing works after weight loss — taper strategy, rebound risk from STEP and SURMOUNT data, and how to stay off semaglutide or tirzepatide.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp-1-maintenance-dosing-avoid-rebound
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -100,6 +100,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded semaglutide and tirzepatide. Weekly injection, US-licensed clinician oversight, dose titration based on your real bloodwork — not a one-size-fits-all script.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

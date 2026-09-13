@@ -1,4 +1,4 @@
-# Fiber: the nutrient most weight-loss patients underdose (and the fix) | DirectCare AI Blog
+# Fiber: the nutrient most weight-loss patients underdose (and the fix)
 
 > Explains why most adults eat 12-15g fiber when the target is 30-40g — and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/fiber-target-most-patients-underdose
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -102,6 +102,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Bloodwork is the cleanest way to find the deficiencies driving symptoms. Vitamin D, ferritin, B12, thyroid, and more. Results in 3-5 days with a plain-English plan.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

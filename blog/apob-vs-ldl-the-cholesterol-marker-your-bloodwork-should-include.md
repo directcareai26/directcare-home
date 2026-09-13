@@ -1,4 +1,4 @@
-# ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't) | DirectCare AI Blog
+# ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)
 
 > Why apolipoprotein B (ApoB) outperforms LDL cholesterol for cardiovascular risk prediction, what numbers to target, and why most annual physicals still don't order the right test.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-b
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Blood Labs
 
@@ -97,7 +97,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Lipidology or preventive cardiology referral. These specialists treat to ApoB and will order it by default.
 
-- Direct-to-consumer panels. DirectCare AI's [80+ biomarker panel](https://www.directcare.ai/blood-test/) includes ApoB, Lp(a), HOMA-IR, fasting insulin, and the other markers most primary care visits miss — covered as part of the broader [longevity biomarkers](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity/) panel.
+- Direct-to-consumer panels. DirectCare AI's [80+ biomarker panel](https://www.directcare.ai/blood-test) includes ApoB, Lp(a), HOMA-IR, fasting insulin, and the other markers most primary care visits miss — covered as part of the broader [longevity biomarkers](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) panel.
 
 ### How to interpret yours.
 
@@ -125,7 +125,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you've had your cholesterol checked and your doctor told you it's "fine," but you have any cardiovascular risk factors — family history, metabolic syndrome, prediabetes, elevated triglycerides — get an ApoB test. The $30 you spend on it may be the single best preventive-cardiology investment you make this decade.
 
- Pair this with the broader [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity/) and the [12 markers we look at first](https://www.directcare.ai/blog/12-markers-hormone-panel-priority/) for the full panel-based picture.
+ Pair this with the broader [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [12 markers we look at first](https://www.directcare.ai/blog/12-markers-hormone-panel-priority) for the full panel-based picture.
 
  The right cardiovascular bloodwork is one test deeper than the standard panel. The marker that catches the disagreement between cholesterol content and particle count is the one worth running.
  Sources: [JACC 2019 meta-analysis on ApoB vs. LDL for cardiovascular risk](https://pubmed.ncbi.nlm.nih.gov/31104754/); [INTERHEART study](https://pubmed.ncbi.nlm.nih.gov/15364185/); [Copenhagen General Population Study on ApoB](https://pubmed.ncbi.nlm.nih.gov/33301936/); [American Heart Association guideline on advanced lipid testing](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625).
@@ -136,6 +136,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI's blood lab panel includes ApoB, Lp(a), HOMA-IR, hs-CRP, and the other markers most annual physicals miss — with a personalized roadmap from a US-licensed clinician.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

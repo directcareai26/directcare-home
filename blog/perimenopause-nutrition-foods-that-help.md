@@ -1,4 +1,4 @@
-# What to eat during perimenopause: the 5 food categories that move symptoms | DirectCare AI Blog
+# What to eat during perimenopause: the 5 food categories that move symptoms
 
 > Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3), cruciferous vegetables (DIM).
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -59,7 +59,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The protein target during perimenopause should track closer to the upper end of the published range: **0.7 to 1.0 g per pound of target body weight per day,** with at least 30 g per meal to maximize the muscle protein synthesis signal. This is consistent with the [International Society of Sports Nutrition position stand](https://pubmed.ncbi.nlm.nih.gov/28642676/) and recent perimenopause-focused nutrition reviews.
 
- Practical executions: a Greek yogurt or cottage cheese breakfast, a protein-forward lunch like chicken salad over greens, and a salmon or chicken dinner. We've published [a 40-gram-protein Greek yogurt bowl](https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein/) and a [sheet-pan chicken pattern](https://www.directcare.ai/blog/sheet-pan-chicken-thighs-roasted-vegetables/) that hit the rule.
+ Practical executions: a Greek yogurt or cottage cheese breakfast, a protein-forward lunch like chicken salad over greens, and a salmon or chicken dinner. We've published [a 40-gram-protein Greek yogurt bowl](https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein) and a [sheet-pan chicken pattern](https://www.directcare.ai/blog/sheet-pan-chicken-thighs-roasted-vegetables) that hit the rule.
 
 ### 4. Calcium + vitamin D foods (for bone health that just got harder).
 
@@ -89,7 +89,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Insulin sensitivity drops measurably during the perimenopausal transition. The visible result is the "weight that just appeared around my midsection."
 
- The food fix is fiber at every meal and complex carbs in place of simple ones. The [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801) and the [Dietary Guidelines for Americans](https://www.dietaryguidelines.gov/) both anchor on **25 to 35 g of fiber per day**. See our [deeper dive on the fiber gap](https://www.directcare.ai/blog/fiber-target-most-patients-underdose/).
+ The food fix is fiber at every meal and complex carbs in place of simple ones. The [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801) and the [Dietary Guidelines for Americans](https://www.dietaryguidelines.gov/) both anchor on **25 to 35 g of fiber per day**. See our [deeper dive on the fiber gap](https://www.directcare.ai/blog/fiber-target-most-patients-underdose).
 
  Practical executions:
 

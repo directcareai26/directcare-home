@@ -1,4 +1,4 @@
-# The 30-minute beginner home workout: a full-body routine that needs zero equipment | DirectCare AI Blog
+# The 30-minute beginner home workout: a full-body routine that needs zero equipment
 
 > Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE — no equipment.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/30-minute-beginner-home-workout-no-equipm
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 

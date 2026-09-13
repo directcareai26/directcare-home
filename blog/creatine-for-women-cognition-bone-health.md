@@ -1,4 +1,4 @@
-# Creatine for Women: The Cognition and Bone Data | DirectCare AI Blog
+# Creatine for Women: The Cognition and Bone Data
 
 > Creatine monohydrate for women: the cognition, sleep, and bone density data behind the supplement — plus how to dose it safely without the loading myth.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/creatine-for-women-cognition-bone-health
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Supplements
 
@@ -115,6 +115,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI clinicians curate supplement protocols matched to your actual bloodwork — not a generic multivitamin.
 
- [Browse supplements →](https://www.directcare.ai/supplements/)
+ [Browse supplements →](https://www.directcare.ai/supplements)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

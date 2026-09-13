@@ -1,4 +1,4 @@
-# Protein timing: does the 30-minute post-workout window actually matter? | DirectCare AI Blog
+# Protein timing: does the 30-minute post-workout window actually matter?
 
 > Explains why the 'anabolic window' is mostly a myth: total daily protein matters far more than post-workout timing as long as you hit 1g/lb goal weight across 4 meals.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/protein-timing-post-workout-window
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -59,7 +59,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For patients training during the day, the protein meal closest to bedtime. Particularly slow-digesting casein from cottage cheese, Greek yogurt, or a casein shake. Supports overnight muscle protein synthesis. This is the [casein bedtime protocol](https://pubmed.ncbi.nlm.nih.gov/22330017/) that consistently shows benefit in the literature.
 
- We wrote about [cottage cheese bowls](https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack/) for exactly this reason. The casein-heavy profile makes it the ideal late-evening protein source.
+ We wrote about [cottage cheese bowls](https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack) for exactly this reason. The casein-heavy profile makes it the ideal late-evening protein source.
 
 ### Practical translation.
 
@@ -85,7 +85,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Two situations where timing genuinely matters:
 
-- You're in a meaningful calorie deficit (e.g., GLP-1 protocols, weight-loss phases). The smaller the deficit, the more critical it is that the limited protein you do eat is well-distributed. We covered this in the [body recomp post](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/).
+- You're in a meaningful calorie deficit (e.g., GLP-1 protocols, weight-loss phases). The smaller the deficit, the more critical it is that the limited protein you do eat is well-distributed. We covered this in the [body recomp post](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle).
 
 - You're older. Anabolic resistance increases with age. Older adults need slightly higher per-meal protein (35 to 45 g) to produce the same MPS signal as a 25-year-old eating 25 g. The window doesn't shrink; the dose needs to rise.
 
@@ -106,6 +106,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

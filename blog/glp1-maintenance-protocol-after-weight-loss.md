@@ -1,4 +1,4 @@
-# GLP-1 maintenance after weight loss: how to stay off without rebounding | DirectCare AI Blog
+# GLP-1 maintenance after weight loss: how to stay off without rebounding
 
 > How to maintain weight loss after stopping a GLP-1: the dose-tapering, protein, training, and monitoring framework that prevents the average ~2/3 rebound published in STEP-4.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-lo
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -54,13 +54,13 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Independent of which tier you're in, four things have to be solid before you reduce dose meaningfully:
 
- **1. Protein floor of 1 g per pound of target body weight, daily.** Covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/). This is the biggest single variable preventing muscle-mass loss during the weight-loss phase and preventing rebound after.
+ **1. Protein floor of 1 g per pound of target body weight, daily.** Covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle). This is the biggest single variable preventing muscle-mass loss during the weight-loss phase and preventing rebound after.
 
- **2. Resistance training 3x/week.** Walking + zone 2 cardio is great for cardiovascular health and largely useless for maintaining muscle. Resistance training is the keep-this-muscle signal. The [3x-per-week resistance template](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/) is the minimum.
+ **2. Resistance training 3x/week.** Walking + zone 2 cardio is great for cardiovascular health and largely useless for maintaining muscle. Resistance training is the keep-this-muscle signal. The [3x-per-week resistance template](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation) is the minimum.
 
- **3. Steady step count at 7,000+ daily.** Walking is the most underrated maintenance lever (covered in [the 7,000-step rule](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription/)). Patients who keep daily movement up after stopping a GLP-1 rebound dramatically less than patients who don't.
+ **3. Steady step count at 7,000+ daily.** Walking is the most underrated maintenance lever (covered in [the 7,000-step rule](https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription)). Patients who keep daily movement up after stopping a GLP-1 rebound dramatically less than patients who don't.
 
- **4. A specific eating pattern, not a vague "healthier diet."** What you actually eat day-to-day matters more than the abstract "I'll eat better." A protein-and-fiber-first framework — like the [4 rules we use](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) — that you can articulate in one sentence is more durable than a complex meal plan.
+ **4. A specific eating pattern, not a vague "healthier diet."** What you actually eat day-to-day matters more than the abstract "I'll eat better." A protein-and-fiber-first framework — like the [4 rules we use](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) — that you can articulate in one sentence is more durable than a complex meal plan.
 
  If any of those four isn't in place, holding the maintenance dose longer (Tier 1 or Tier 2) is the right call. If all four are solid, a slow taper (Tier 3) becomes a real option.
 
@@ -117,6 +117,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds the maintenance phase into your GLP-1 protocol from the start — taper, dose-reduction, and the nutrition and training plan that holds the result.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

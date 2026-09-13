@@ -1,4 +1,4 @@
-# Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner | DirectCare AI Blog
+# Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner
 
 > Recipe for sheet-pan miso-glazed salmon with charred bok choy and brown rice: 25 minutes, 35g protein, omega-3 target hit in one pan.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/sheet-pan-miso-salmon-bok-choy-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -25,9 +25,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Why this dinner, specifically.
 
-- Salmon brings 30+ g of protein and ~1,500 mg of EPA + DHA per 5 oz fillet. The same omega-3 logic we covered in [the original Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe/).
+- Salmon brings 30+ g of protein and ~1,500 mg of EPA + DHA per 5 oz fillet. The same omega-3 logic we covered in [the original Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe).
 
-- Bok choy is a cruciferous vegetable with serious calcium content (~150 mg per cup cooked). Particularly relevant during the [perimenopausal calcium window](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help/).
+- Bok choy is a cruciferous vegetable with serious calcium content (~150 mg per cup cooked). Particularly relevant during the [perimenopausal calcium window](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help).
 
 - Miso paste is a fermented soy product. The phytoestrogen content is modest but real, and the umami it adds means the salmon doesn't need a heavy sauce on top.
 
@@ -131,7 +131,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits the bigger picture
 
- We've published [why two salmon dinners a week](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help/) is one of the highest-leverage food interventions for hormone and longevity outcomes. This is one. The Mediterranean salmon bowl is the other. Rotating them through the week is the entire fish-twice-a-week target with two recipes total.
+ We've published [why two salmon dinners a week](https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help) is one of the highest-leverage food interventions for hormone and longevity outcomes. This is one. The Mediterranean salmon bowl is the other. Rotating them through the week is the entire fish-twice-a-week target with two recipes total.
 
  Restaurant-quality salmon in 25 minutes. The flavor density makes hitting your omega-3 target feel like a treat, not a protocol.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient values; [Harvard T.H. Chan School of Public Health on omega-3s](https://nutritionsource.hsph.harvard.edu/what-should-you-eat/fats-and-cholesterol/types-of-fat/omega-3-fats/); cooking pattern inspired by traditional Japanese miso-glazed cod, popularized in the US by [Bon Appétit](https://www.bonappetit.com/) and other recipe publications.
@@ -142,6 +142,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

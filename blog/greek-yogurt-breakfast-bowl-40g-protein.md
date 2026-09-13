@@ -1,4 +1,4 @@
-# The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch | DirectCare AI Blog
+# The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch
 
 > Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey — the bowl that replaces a smoothie.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -85,7 +85,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits a longer protocol
 
- If you're working through one of our published nutrition frameworks , [the 4-rule food framework for GLP-1 patients](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) or the muscle-preservation logic in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/). This bowl is the easiest possible execution of rule #1 (protein first).
+ If you're working through one of our published nutrition frameworks , [the 4-rule food framework for GLP-1 patients](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) or the muscle-preservation logic in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle). This bowl is the easiest possible execution of rule #1 (protein first).
 
  Repeat it on the busiest days. The patients who hit their annual targets aren't the ones with the most variety on the menu. They're the ones with a default breakfast they can do in their sleep.
 
@@ -98,6 +98,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

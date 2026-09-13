@@ -1,4 +1,4 @@
-# Why morning testosterone tests matter (and what time of day ruins yours) | DirectCare AI Blog
+# Why morning testosterone tests matter (and what time of day ruins yours)
 
 > Explains why testosterone must be tested before 10am: levels can drop 25-30% from 7am to noon, enough to flip a normal reading into a low-T diagnosis or vice versa.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/morning-testosterone-test-timing
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 

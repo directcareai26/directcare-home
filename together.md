@@ -147,27 +147,27 @@ Source: https://www.directcare.ai/together
  [Either partner
  Weight Loss (GLP-1)
  Compounded semaglutide and tirzepatide. Weekly injection, clinician-monitored.
- From $269 /mo](https://www.directcare.ai/weight-loss/)
+ From $269 /mo](https://www.directcare.ai/weight-loss)
  [Him · ED
  Surge Max
  4-in-1 ED protocol. Sildenafil, tadalafil, and more.
- From $12 /vial](https://www.directcare.ai/surge-max/)
+ From $12 /vial](https://www.directcare.ai/surge-max)
  [Him · Hair
  Hair Regrowth (Men)
  Finasteride, dutasteride, minoxidil, tretinoin. Personalized topicals + oral.
- From $59 /mo](https://www.directcare.ai/mens-hair-loss/)
+ From $59 /mo](https://www.directcare.ai/mens-hair-loss)
  [Her · Hair
  Hair Regrowth (Women)
  Spironolactone, low-dose oral minoxidil, topical combos & clinical shampoo.
- From $59 /mo](https://www.directcare.ai/womans-hair-loss/)
+ From $59 /mo](https://www.directcare.ai/womans-hair-loss)
  [Either partner
  Blood Labs
  70–80 biomarker panel + clinician interpretation + personalized plan.
- From $196 one-time](https://www.directcare.ai/blood-test/)
+ From $196 one-time](https://www.directcare.ai/blood-test)
  [Whole family
  Supplements
  Physician-formulated stacks via Fullscript. Pharmaceutical-grade brands.
- Member pricing](https://www.directcare.ai/supplements/)
+ Member pricing](https://www.directcare.ai/supplements)
 
  Couples questions
 

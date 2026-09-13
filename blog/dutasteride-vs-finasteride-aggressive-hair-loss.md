@@ -1,4 +1,4 @@
-# Dutasteride vs Finasteride: When Aggressive Is Right | DirectCare AI Blog
+# Dutasteride vs Finasteride: When Aggressive Is Right
 
 > Dutasteride vs finasteride for hair loss: how much stronger it really is, side effect trade-offs, and when to escalate — clinician-built breakdown.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/dutasteride-vs-finasteride-aggressive-hai
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -106,6 +106,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Topical and oral finasteride, dutasteride, and minoxidil — prescribed and titrated based on what your scalp actually needs.
 
- [Start regrowth →](https://www.directcare.ai/mens-hair-loss/)
+ [Start regrowth →](https://www.directcare.ai/mens-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

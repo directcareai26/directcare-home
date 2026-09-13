@@ -117,6 +117,6 @@ Help Center
 
  Start a free eligibility check for the program you're interested in, or message a clinician once you're inside your patient portal. This page is general information and not medical advice.
 
- [Women's Health →](https://www.directcare.ai/womens-health/)
- [Men's Health →](https://www.directcare.ai/mens-health/)
+ [Women's Health →](https://www.directcare.ai/womens-health)
+ [Men's Health →](https://www.directcare.ai/mens-health)
  [Patient portal](https://directcareai.portal.tellescope.com/)

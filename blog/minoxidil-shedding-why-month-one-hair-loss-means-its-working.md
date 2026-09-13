@@ -1,4 +1,4 @@
-# Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working | DirectCare AI Blog
+# Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working
 
 > Why minoxidil causes increased hair shedding in weeks 2–6 of treatment, how to tell normal shed from a problem, and what to expect on the standard 3–6 month timeline.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-los
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -111,7 +111,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Pair it with the rest of the protocol.
 
- Topical or oral minoxidil rarely runs alone in our practice. Most men also get topical or oral finasteride or dutasteride to block DHT (covered in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair/)). Most women get a panel-driven workup to identify the upstream cause (covered in [women's hair loss isn't just male-pattern](https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel/)).
+ Topical or oral minoxidil rarely runs alone in our practice. Most men also get topical or oral finasteride or dutasteride to block DHT (covered in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair)). Most women get a panel-driven workup to identify the upstream cause (covered in [women's hair loss isn't just male-pattern](https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel)).
 
  Both protocols produce a shed phase. Knowing it's coming and what it means is the difference between sticking with a working protocol and quitting on month two of a 12-month process.
 
@@ -123,6 +123,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded topical and oral hair-loss protocols with clinician follow-up at the 4-week and 12-week marks — so a normal shed doesn't end the regimen that would have worked.
 
- [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss/)
+ [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

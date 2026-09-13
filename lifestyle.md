@@ -99,7 +99,7 @@ Source: https://www.directcare.ai/lifestyle
 
  From $12 /dose
 
- [Start his intake →](https://www.directcare.ai/surge-max/)
+ [Start his intake →](https://www.directcare.ai/surge-max)
 
 #### Enroll together. Save 10%, every month.
 
@@ -123,7 +123,7 @@ Source: https://www.directcare.ai/lifestyle
  [Performance · ED
  Sexual Health
  4-in-1 protocol: sildenafil, tadalafil & more. On-demand or daily-low-dose so you're always ready.
- From $12 /dose](https://www.directcare.ai/surge-max/)
+ From $12 /dose](https://www.directcare.ai/surge-max)
  [Desire on demand
  PT-141 & Peptides
  Bremelanotide for libido in both partners, plus recovery & stamina peptide stacks.
@@ -139,19 +139,19 @@ Source: https://www.directcare.ai/lifestyle
  [Confidence
  Weight Loss (GLP-1)
  Compounded semaglutide & tirzepatide. Look the way you want to feel undressed.
- From $269 /mo](https://www.directcare.ai/weight-loss/)
+ From $269 /mo](https://www.directcare.ai/weight-loss)
  [Know your numbers
  Sexual-Health Blood Labs
  70–80 biomarker panel + hormone & sexual-health screening, with clinician interpretation.
- From $196 one-time](https://www.directcare.ai/blood-test/)
+ From $196 one-time](https://www.directcare.ai/blood-test)
  [Him · Look
  Hair Regrowth (Men)
  Finasteride, dutasteride, minoxidil & tretinoin. Personalized topicals + oral.
- From $59 /mo](https://www.directcare.ai/mens-hair-loss/)
+ From $59 /mo](https://www.directcare.ai/mens-hair-loss)
  [Daily edge
  Supplements
  Nitric-oxide, energy & recovery stacks. Physician-formulated, pharmaceutical-grade.
- Member pricing](https://www.directcare.ai/supplements/)
+ Member pricing](https://www.directcare.ai/supplements)
 
  Built for privacy
 

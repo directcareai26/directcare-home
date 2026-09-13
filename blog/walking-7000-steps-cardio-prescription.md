@@ -1,4 +1,4 @@
-# The 7,000-step rule: why walking is the underrated cardio prescription | DirectCare AI Blog
+# The 7,000-step rule: why walking is the underrated cardio prescription
 
 > Explains why 7,000 daily steps is the most evidence-backed cardio target for adults — and why higher counts show diminishing returns in the published literature.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/walking-7000-steps-cardio-prescription
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Fitness
 
@@ -50,7 +50,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How walking pairs with the protocols we prescribe.
 
- **On a GLP-1.** You're already in a meaningful calorie deficit. Adding hours of running on top of that pushes most patients into burnout, hunger spikes, and lean-mass loss. Walking adds energy expenditure without competing for recovery. Pair with the [3x-per-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/) and you have a complete program.
+ **On a GLP-1.** You're already in a meaningful calorie deficit. Adding hours of running on top of that pushes most patients into burnout, hunger spikes, and lean-mass loss. Walking adds energy expenditure without competing for recovery. Pair with the [3x-per-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation) and you have a complete program.
 
  **On HRT.** Walking is one of the highest-leverage interventions for bone-density support, in combination with the hormonal floor estradiol restores. Most perimenopausal patients see meaningful body-composition shifts on HRT only when daily movement is solid.
 
@@ -82,7 +82,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What walking doesn't do.
 
-- Build meaningful muscle. That's what resistance training is for — covered in the [3x-per-week workout post](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/) and the [30-minute beginner home routine](https://www.directcare.ai/blog/30-minute-beginner-home-workout-no-equipment/).
+- Build meaningful muscle. That's what resistance training is for — covered in the [3x-per-week workout post](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation) and the [30-minute beginner home routine](https://www.directcare.ai/blog/30-minute-beginner-home-workout-no-equipment).
 
 - Replace a hormonal protocol. Walking won't fix low T or perimenopausal hormone deficits. It makes whatever protocol you're on work better.
 

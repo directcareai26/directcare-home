@@ -1,4 +1,4 @@
-# Berberine isn't 'nature's Ozempic' — but it isn't nothing, either. A clinician's honest view | DirectCare AI Blog
+# Berberine isn't 'nature's Ozempic' — but it isn't nothing, either. A clinician's honest view
 
 > What berberine actually does for blood glucose, weight, and metabolic health — and why the 'nature's Ozempic' framing misses the mechanism. The clinician's view on dosing, safety, and where it fits.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/berberine-natures-ozempic-clinician-hones
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Supplements
 
@@ -91,7 +91,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Four cases where berberine is the wrong choice:
 
- **1. Patients who actually need significant weight loss.** Berberine produces modest, slow weight loss in some patients. If you need to lose 30+ lb and you have clinical indications, a GLP-1 is the right protocol — covered in [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference/). Berberine is not a substitute.
+ **1. Patients who actually need significant weight loss.** Berberine produces modest, slow weight loss in some patients. If you need to lose 30+ lb and you have clinical indications, a GLP-1 is the right protocol — covered in [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference). Berberine is not a substitute.
 
  **2. Patients with established Type 2 diabetes.** Metformin is cheap, well-studied, FDA-approved, and the first-line conversation. Berberine is interesting but not a substitute for actual diabetes management.
 
@@ -141,7 +141,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  It is not "nature's Ozempic." Anyone selling it that way is selling marketing, not science. But for the right patient — prediabetes, PCOS, mild insulin resistance, or as a supplement to lifestyle change — it's a reasonable, evidence-backed addition to consider.
 
- Pair with the broader supplement framework in [the 4 supplement gaps almost every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps/), the metabolic context in [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity/), and the GLP-1 conversation in [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference/).
+ Pair with the broader supplement framework in [the 4 supplement gaps almost every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps), the metabolic context in [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity), and the GLP-1 conversation in [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference).
 
  Berberine isn't a substitute for a GLP-1. It's a different drug solving a different part of the metabolic problem. The right patient for it isn't the one who wants to lose 40 pounds — it's the one who's trying to nudge prediabetes back to normal without a prescription.
  Sources: [Metabolism 2008 trial of berberine vs. metformin in T2D](https://pubmed.ncbi.nlm.nih.gov/18374395/); [Evidence-Based Complementary and Alternative Medicine 2012 meta-analysis](https://pubmed.ncbi.nlm.nih.gov/22962556/); [Cochrane-style review of berberine for cardiovascular risk factors](https://pubmed.ncbi.nlm.nih.gov/26122295/).
@@ -152,6 +152,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with clinician oversight. When supplements like berberine are clinically appropriate, we'll tell you. When they aren't, we'll tell you that too.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

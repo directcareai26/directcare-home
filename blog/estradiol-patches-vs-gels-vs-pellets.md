@@ -1,4 +1,4 @@
-# Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs | DirectCare AI Blog
+# Estradiol Patches vs. Gels vs. Pellets: Real Trade-offs
 
 > Compare transdermal estradiol patches, gels, and pellets for HRT — dose stability, side effects, cost, and who each delivery method actually suits best.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/estradiol-patches-vs-gels-vs-pellets
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

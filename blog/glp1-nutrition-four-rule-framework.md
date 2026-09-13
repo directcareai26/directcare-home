@@ -1,4 +1,4 @@
-# The 4-rule food framework for staying full and fueled on a GLP-1 | DirectCare AI Blog
+# The 4-rule food framework for staying full and fueled on a GLP-1
 
 > Outlines the 4-rule eating framework for GLP-1 patients: 1g protein per pound goal weight, fiber > 25g/day, hydration > 80oz, no liquid calories.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -85,13 +85,13 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Dose too high too fast. The patient who escalates aggressively often crashes nutritionally. Holding a dose another month is a real option.
 
-- Wrong drug for your physiology. Semaglutide and tirzepatide do not produce identical side effects, even at equivalent weight-loss doses. We covered the picking logic in [Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference/).
+- Wrong drug for your physiology. Semaglutide and tirzepatide do not produce identical side effects, even at equivalent weight-loss doses. We covered the picking logic in [Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference).
 
 - Underlying deficiency. Low iron, low vitamin D, untreated hypothyroidism, or B12 deficiency all amplify GLP-1 side effects. The [Office of Dietary Supplements at NIH](https://ods.od.nih.gov/factsheets/list-all/) has plain-language summaries of each.
 
 ### Putting the rules on a plate
 
- We published a recipe today that hits all four rules in a single bowl: [the Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe/). 38 g of protein, 10 g of fiber, 1,500 mg of omega-3, and a built-in protein-first sequence. If you're looking for a default meal to repeat on the busiest days, that's a strong candidate.
+ We published a recipe today that hits all four rules in a single bowl: [the Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe). 38 g of protein, 10 g of fiber, 1,500 mg of omega-3, and a built-in protein-first sequence. If you're looking for a default meal to repeat on the busiest days, that's a strong candidate.
 
  The best GLP-1 nutrition plan isn't restrictive. It's additive. Add the protein. Add the fiber. Add the water. The drug already removed the rest.
  Sources: [International Society of Sports Nutrition](https://pubmed.ncbi.nlm.nih.gov/28642676/) protein position stand; [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) fiber and nutrition guidance; [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/) nutrition library; [Cleveland Clinic](https://health.clevelandclinic.org/eating-food-in-the-right-order) on food sequencing; [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/list-all/) factsheets.
@@ -102,6 +102,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

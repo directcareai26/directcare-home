@@ -1,4 +1,4 @@
-# The 3x-per-week resistance workout that preserves muscle on a GLP-1 | DirectCare AI Blog
+# The 3x-per-week resistance workout that preserves muscle on a GLP-1
 
 > Outlines the three-day-per-week resistance training protocol that preserves muscle during GLP-1 weight loss: six compound lifts, 6-12 reps, two work sets each.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-pr
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Fitness
 
@@ -23,7 +23,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  In the SURMOUNT-1 trial, lean mass accounted for [roughly 25–40 percent of total weight lost](https://pubmed.ncbi.nlm.nih.gov/35658024/) in patients on tirzepatide. The STEP trials showed similar numbers for semaglutide. That's a meaningful problem — muscle is what runs your resting metabolism, supports your joints, and keeps you functional through your 50s, 60s, and 70s.
 
- Two things change the math: **protein** (covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/)) and **resistance training.** This is the workout side. Three sessions a week. Six compound lifts. About 45 minutes per session. It's the minimum effective dose for muscle preservation during a caloric deficit, and it's enough.
+ Two things change the math: **protein** (covered in [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle)) and **resistance training.** This is the workout side. Three sessions a week. Six compound lifts. About 45 minutes per session. It's the minimum effective dose for muscle preservation during a caloric deficit, and it's enough.
 
 ### Why this template, specifically.
 
@@ -150,6 +150,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols with a nutrition and training plan layered in — so the weight you lose is fat, not the muscle that runs your metabolism.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

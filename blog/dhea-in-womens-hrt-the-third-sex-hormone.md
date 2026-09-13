@@ -1,4 +1,4 @@
-# DHEA in women's HRT: the often-skipped third sex hormone | DirectCare AI Blog
+# DHEA in women's HRT: the often-skipped third sex hormone
 
 > Why DHEA matters in women's HRT protocols, what the bloodwork looks like, and how clinician-prescribed DHEA pairs with estradiol and progesterone for perimenopausal and postmenopausal women.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/dhea-in-womens-hrt-the-third-sex-hormone
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 
@@ -111,7 +111,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DHEA is the third sex hormone most women's HRT protocols skip. The case for including it is strongest in women over 50 whose DHEA-S is functionally low and who have symptoms — fatigue, libido changes, GSM, mood flatness — that aren't fully resolving on estradiol and progesterone alone.
 
- Pair this with the broader HRT picture in [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes/), the GSM case in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt/), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation/) conversation that often runs in parallel.
+ Pair this with the broader HRT picture in [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes), the GSM case in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation) conversation that often runs in parallel.
 
  Most women's HRT protocols are two hormones. The patients who feel best are often on three — sometimes four. DHEA is the one most providers forget to test for.
  Sources: [Endocrine Society DHEA position statement](https://academic.oup.com/jcem/article/96/6/1655/2833822); [Cochrane review on DHEA in postmenopausal women](https://pubmed.ncbi.nlm.nih.gov/26282153/); [FDA prescribing information for vaginal prasterone](https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/208470s000lbl.pdf).

@@ -1,4 +1,4 @@
-# Testosterone in Women's HRT: The Missing Hormone | DirectCare AI Blog
+# Testosterone in Women's HRT: The Missing Hormone
 
 > Why testosterone belongs in women's HRT protocols, what the evidence says about low-dose therapy, and why most menopause clinics still don't offer it.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/testosterone-in-womens-hrt-protocols
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

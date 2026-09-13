@@ -1,4 +1,4 @@
-# TRT and Fertility: Preserve Sperm Production on Testosterone | DirectCare AI Blog
+# TRT and Fertility: Preserve Sperm Production on Testosterone
 
 > TRT can suppress sperm production, but hCG, clomiphene, and sperm banking preserve fertility on testosterone therapy. A clinician's guide to what works.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/trt-and-fertility-preserve-sperm-producti
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 

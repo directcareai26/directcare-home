@@ -1,4 +1,4 @@
-# GLP-1s and Thyroid: What to Monitor and When to Stop | DirectCare AI Blog
+# GLP-1s and Thyroid: What to Monitor and When to Stop
 
 > GLP-1s and thyroid health: which labs to monitor, what the medullary thyroid cancer warning really means, and when semaglutide or tirzepatide should be stopped.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -131,6 +131,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded semaglutide and tirzepatide. Weekly injection, US-licensed clinician oversight, dose titration based on your real bloodwork — not a one-size-fits-all script.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

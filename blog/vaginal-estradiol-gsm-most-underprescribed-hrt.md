@@ -1,4 +1,4 @@
-# Vaginal estradiol for GSM: the most under-prescribed protocol in women's health | DirectCare AI Blog
+# Vaginal estradiol for GSM: the most under-prescribed protocol in women's health
 
 > Why vaginal estradiol for genitourinary syndrome of menopause (GSM) is safer, more effective, and more under-prescribed than any other HRT protocol. The clinical case.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 
@@ -127,7 +127,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - You stopped having sex because of these symptoms
 
- Pair this with the full HRT picture in [HRT after 40: what actually changes](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes/) and [progesterone at night](https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose/) for the systemic side of the conversation.
+ Pair this with the full HRT picture in [HRT after 40: what actually changes](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes) and [progesterone at night](https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose) for the systemic side of the conversation.
 
  Half of postmenopausal women have these symptoms. Seven percent are on the treatment that fixes them. The single biggest under-served opportunity in women's health is a 30-second prescription away.
  Sources: [International Society for the Study of Women's Sexual Health & NAMS 2014 GSM definition](https://pubmed.ncbi.nlm.nih.gov/24735103/); [NAMS 2020 position statement on GSM](https://pubmed.ncbi.nlm.nih.gov/32852454/); [ACOG Committee Opinion on vaginal estrogen in women with breast cancer history](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2016/03/the-use-of-vaginal-estrogen-in-women-with-a-history-of-estrogen-dependent-breast-cancer).

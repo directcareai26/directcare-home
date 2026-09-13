@@ -1,4 +1,4 @@
-# HRT and Bone Density: How Estradiol Prevents Fractures | DirectCare AI Blog
+# HRT and Bone Density: How Estradiol Prevents Fractures
 
 > How estradiol protects bone density, why menopause accelerates loss, and how HRT reduces fracture risk decades later — with real numbers, not vague promises.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/hrt-bone-density-estradiol-prevents-fract
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

@@ -1,4 +1,4 @@
-# 10 Biomarkers That Actually Predict Longevity | DirectCare AI Blog
+# 10 Biomarkers That Actually Predict Longevity
 
 > The 10 longevity biomarkers that outperform a standard annual physical, from ApoB to hs-CRP — plus why your yearly labs likely miss half of them.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Blood Labs
 
@@ -89,6 +89,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A clinician-ordered, 80+ biomarker panel. Results in 3–5 days, with a personalized roadmap from a US-licensed clinician — not a chart you have to decode yourself.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

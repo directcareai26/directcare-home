@@ -1,4 +1,4 @@
-# Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner | DirectCare AI Blog
+# Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner
 
 > Recipe for sheet-pan chicken thighs with roasted vegetables: 30 minutes, 38g protein per serving, four-component meal prep with one tray.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/sheet-pan-chicken-thighs-roasted-vegetabl
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -105,7 +105,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The bigger pattern
 
- If you're working through our published [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) or trying to defend your muscle during [GLP-1 weight loss](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/), the sheet-pan dinner is the most repeatable execution of "protein first." Pick two. Chicken thighs Monday, salmon bowl Thursday. And rotate them. That's the whole strategy.
+ If you're working through our published [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) or trying to defend your muscle during [GLP-1 weight loss](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle), the sheet-pan dinner is the most repeatable execution of "protein first." Pick two. Chicken thighs Monday, salmon bowl Thursday. And rotate them. That's the whole strategy.
 
  The simplest weeknight habit you can build is one good dinner you can make in 30 minutes, four servings at a time. This is one of them.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for chicken thigh nutrient values; [EatingWell sheet-pan recipes](https://www.eatingwell.com/recipes/) for the technique pattern.
@@ -116,6 +116,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

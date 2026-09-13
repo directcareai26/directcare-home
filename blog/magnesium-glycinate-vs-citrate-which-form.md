@@ -1,4 +1,4 @@
-# Magnesium glycinate vs. citrate: how to pick the right magnesium form | DirectCare AI Blog
+# Magnesium glycinate vs. citrate: how to pick the right magnesium form
 
 > Magnesium glycinate vs. citrate compared by a clinician: how each form works, what your labs say, side effects, and how to pick for sleep, constipation, or repletion.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/magnesium-glycinate-vs-citrate-which-form
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Supplements
 

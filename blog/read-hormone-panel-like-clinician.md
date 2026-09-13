@@ -1,4 +1,4 @@
-# How to Read Your Hormone Panel Like a Clinician | DirectCare AI Blog
+# How to Read Your Hormone Panel Like a Clinician
 
 > Learn how to read a hormone panel like a clinician: testosterone, estradiol, SHBG, LH, FSH, thyroid, cortisol — what's normal and what's not.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/read-hormone-panel-like-clinician
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Blood Labs
 
@@ -108,6 +108,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A clinician-ordered, 80+ biomarker panel. Results in 3–5 days, with a personalized roadmap from a US-licensed clinician — not a chart you have to decode yourself.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

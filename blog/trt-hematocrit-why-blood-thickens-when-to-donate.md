@@ -1,4 +1,4 @@
-# TRT and hematocrit: why your blood thickens on testosterone, and when to donate | DirectCare AI Blog
+# TRT and hematocrit: why your blood thickens on testosterone, and when to donate
 
 > Why testosterone therapy raises hematocrit and hemoglobin, what level is too high, how blood donation fixes it, and the monitoring schedule every TRT patient should be on.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/trt-hematocrit-why-blood-thickens-when-to
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 
@@ -103,7 +103,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **4. Lower the dose.** Sometimes the simplest answer. If hematocrit is climbing and your testosterone is in the upper range, a small dose reduction addresses both.
 
- **5. Stay well-hydrated and address sleep apnea.** Dehydration falsely elevates hematocrit readings; untreated sleep apnea independently raises it (covered in [TRT and sleep apnea](https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship/)).
+ **5. Stay well-hydrated and address sleep apnea.** Dehydration falsely elevates hematocrit readings; untreated sleep apnea independently raises it (covered in [TRT and sleep apnea](https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship)).
 
 ### The monitoring schedule that should be standard.
 
@@ -131,7 +131,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on TRT, know your hematocrit number, know your trend, and make sure your provider is checking it at least twice a year. Managed properly, it's a footnote. Ignored, it's the one real risk of an otherwise very safe therapy.
 
- Pair this with [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed/), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing/), and [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol/) for the complete TRT monitoring picture.
+ Pair this with [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing), and [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol) for the complete TRT monitoring picture.
 
  The most-watched number on a testosterone protocol isn't your testosterone — it's your hematocrit. Know it, track the trend, and donate blood when it climbs. That's the whole management strategy in one sentence.
  Sources: [Endocrine Society testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [review of testosterone-induced erythrocytosis](https://pubmed.ncbi.nlm.nih.gov/29178226/); [American Urological Association testosterone deficiency guideline on hematocrit monitoring](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline).

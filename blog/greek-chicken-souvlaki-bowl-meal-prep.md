@@ -1,4 +1,4 @@
-# Greek chicken souvlaki bowl: the meal-prep base that holds a whole week | DirectCare AI Blog
+# Greek chicken souvlaki bowl: the meal-prep base that holds a whole week
 
 > Recipe for meal-prep Greek chicken souvlaki bowls: 4 servings, 35g protein each, marinated chicken thighs, lemon-oregano dressing, tzatziki, cucumber-tomato salad.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -155,7 +155,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits a longer protocol
 
- The hardest part of any nutrition plan is the consistency. Meal-prep removes the decision-making that derails most weeks. If you've read our [4-rule framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/), this is the rule #1 (protein first) executed at scale. Five lunches at 38 g each is 190 g of weekly protein you didn't have to think about Monday through Friday.
+ The hardest part of any nutrition plan is the consistency. Meal-prep removes the decision-making that derails most weeks. If you've read our [4-rule framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework), this is the rule #1 (protein first) executed at scale. Five lunches at 38 g each is 190 g of weekly protein you didn't have to think about Monday through Friday.
 
  One Sunday afternoon, five workday lunches solved. The patients who actually hit their annual targets have a meal-prep habit. This is the version we recommend most.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient values; [Mayo Clinic Mediterranean Diet](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801) for the meal pattern.
@@ -166,6 +166,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

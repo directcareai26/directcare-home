@@ -5,7 +5,7 @@
 Source: https://www.directcare.ai/about
 
 Free clinician consult · US-licensed providers · Shipped to your door —
- [Get started](https://www.directcare.ai/womens-health/)
+ [Get started](https://www.directcare.ai/womens-health)
 
 ## About DirectCare AI: clinician-led telehealth, built around you.
 
@@ -63,15 +63,15 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 
  DirectCare AI brings primary, preventive, and longevity-oriented care under one roof. One patient profile. One care team that talks to itself. One place to track everything.
 
- [Explore for Women →](https://www.directcare.ai/womens-health/)
- [Explore for Men →](https://www.directcare.ai/mens-health/)
+ [Explore for Women →](https://www.directcare.ai/womens-health)
+ [Explore for Men →](https://www.directcare.ai/mens-health)
 
- [Weight Loss →](https://www.directcare.ai/weight-loss/)
+ [Weight Loss →](https://www.directcare.ai/weight-loss)
  [HRT →](https://www.directcare.ai/hormone-replacement-therapy)
  [TRT →](https://www.directcare.ai/testosterone-replacement-therapy)
- [Sexual Health →](https://www.directcare.ai/surge-max/)
- [Hair Regrowth →](https://www.directcare.ai/mens-hair-loss/)
- [Blood Labs →](https://www.directcare.ai/blood-test/)
+ [Sexual Health →](https://www.directcare.ai/surge-max)
+ [Hair Regrowth →](https://www.directcare.ai/mens-hair-loss)
+ [Blood Labs →](https://www.directcare.ai/blood-test)
 
 ### We're with you between visits, too.
 
@@ -105,5 +105,5 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 
  Take a 2-minute health assessment and a US-licensed clinician will review it. If a treatment plan is right for you, it ships directly to your door.
 
- [For Women →](https://www.directcare.ai/womens-health/)
- [For Men →](https://www.directcare.ai/mens-health/)
+ [For Women →](https://www.directcare.ai/womens-health)
+ [For Men →](https://www.directcare.ai/mens-health)

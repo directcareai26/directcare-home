@@ -1,4 +1,4 @@
-# Estradiol delivery: patch, gel, pellet, or pill? How a clinician actually decides | DirectCare AI Blog
+# Estradiol delivery: patch, gel, pellet, or pill? How a clinician actually decides
 
 > Patch vs. gel vs. pellet vs. oral estradiol for HRT — how each delivery method differs on cardiovascular safety, dose stability, convenience, and cost. The clinician's decision framework.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 
@@ -179,13 +179,13 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What about cream?
 
- Compounded estradiol creams exist and work similarly to gels — transdermal absorption, fine dose precision, no liver first-pass effect. Their main use is in patients who specifically want a compounded protocol or who have skin sensitivity to gel formulations. Vaginal estradiol cream (covered in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt/)) is a different conversation — it's a local treatment, not a systemic one.
+ Compounded estradiol creams exist and work similarly to gels — transdermal absorption, fine dose precision, no liver first-pass effect. Their main use is in patients who specifically want a compounded protocol or who have skin sensitivity to gel formulations. Vaginal estradiol cream (covered in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt)) is a different conversation — it's a local treatment, not a systemic one.
 
 ### The bottom line.
 
  Pick the delivery method based on your cardiovascular risk profile first, your daily-compliance reality second, and your dose-precision needs third. For most women starting HRT in 2026, that progression typically lands at a transdermal patch or gel — with oral reserved for low-risk patients who prefer pills, and pellets reserved for narrow use cases where supraphysiologic dosing is acceptable.
 
- Pair this with the broader HRT picture in [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes/), the progesterone timing conversation in [progesterone at night](https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose/), and the local-estrogen option for GSM in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt/).
+ Pair this with the broader HRT picture in [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes), the progesterone timing conversation in [progesterone at night](https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose), and the local-estrogen option for GSM in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt).
 
  The estradiol molecule doesn't change. How it gets into you does — and that delivery choice often matters more than the absolute dose.
  Sources: [NAMS 2022 hormone therapy position statement](https://pubmed.ncbi.nlm.nih.gov/35797481/); [British Menopause Society guidance on transdermal vs oral estrogen](https://thebms.org.uk/_wprs/wp-content/uploads/2024/01/BMS-TfC-The-history-of-the-HRT-debate-DEC2023-A.pdf); [Endocrine Society clinical practice guideline on menopause](https://academic.oup.com/jcem/article/100/11/3975/2836066).

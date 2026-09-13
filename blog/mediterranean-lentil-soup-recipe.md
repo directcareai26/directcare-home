@@ -1,4 +1,4 @@
-# Mediterranean lentil soup: 22g protein, 18g fiber per bowl, freezer-friendly | DirectCare AI Blog
+# Mediterranean lentil soup: 22g protein, 18g fiber per bowl, freezer-friendly
 
 > Recipe for a 30-minute Mediterranean lentil soup: 22g protein, 16g fiber per bowl, six pantry ingredients, the kind of weeknight dinner that hits 1,000+ recipes on Pinterest.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/mediterranean-lentil-soup-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -121,7 +121,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The bigger picture
 
- Hitting a 30-gram-fiber day is hard. Hitting it with one meal is the easiest way to get there. And this is that meal. If you're working through the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/), one bowl of this soup completes the fiber rule for the day before you've even thought about it.
+ Hitting a 30-gram-fiber day is hard. Hitting it with one meal is the easiest way to get there. And this is that meal. If you're working through the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework), one bowl of this soup completes the fiber rule for the day before you've even thought about it.
 
  The patients who win on a hormone or weight-loss protocol aren't the ones with the longest recipe collection. They're the ones with 5 dinners they can repeat without thinking. This is one of them.
  Recipe pattern adapted from the Mediterranean diet template at the [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801); lentil and fiber nutrition data via [USDA FoodData Central](https://fdc.nal.usda.gov/) and [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/).
@@ -132,6 +132,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

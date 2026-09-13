@@ -1,4 +1,4 @@
-# The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein | DirectCare AI Blog
+# The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein
 
 > Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk. Blends in 3 minutes from a Sunday-night freezer prep.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfa
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most smoothie recipes hit 20 to 25 grams of protein and quit. The literature on muscle protein synthesis. Including the [International Society of Sports Nutrition position stand](https://pubmed.ncbi.nlm.nih.gov/28642676/). Points to **30 to 45 grams of protein at the first meal of the day** as the threshold that meaningfully outperforms a smaller breakfast. This recipe lands at the top of that range.
 
- The way it gets there matters too: half the protein comes from whey isolate (fast-digesting, high leucine), and half from Greek yogurt + milk (slow-digesting casein). That two-speed delivery extends the muscle-protein-synthesis window past what a whey-only shake produces. Useful for any patient working through our [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/) framework, where preserving lean mass is the whole game.
+ The way it gets there matters too: half the protein comes from whey isolate (fast-digesting, high leucine), and half from Greek yogurt + milk (slow-digesting casein). That two-speed delivery extends the muscle-protein-synthesis window past what a whey-only shake produces. Useful for any patient working through our [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) framework, where preserving lean mass is the whole game.
 
 ### Ingredients (one big glass , ~20 oz)
 
@@ -111,9 +111,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits the bigger picture
 
- If you're already running the protein-front-loading rule in our [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/), this smoothie is the laziest possible execution of rule #1. You don't have to cook. You don't have to chew. You hit 40 g of protein and 10 g of fiber before 8 a.m. on a workday you'd otherwise have skipped breakfast entirely.
+ If you're already running the protein-front-loading rule in our [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework), this smoothie is the laziest possible execution of rule #1. You don't have to cook. You don't have to chew. You hit 40 g of protein and 10 g of fiber before 8 a.m. on a workday you'd otherwise have skipped breakfast entirely.
 
- Rotate it with the [Greek yogurt breakfast bowl](https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein/) and the [overnight oats](https://www.directcare.ai/blog/overnight-oats-iron-protein-fiber/) and you've got three high-protein breakfasts on a 3-day loop. Most patients don't need a fourth.
+ Rotate it with the [Greek yogurt breakfast bowl](https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein) and the [overnight oats](https://www.directcare.ai/blog/overnight-oats-iron-protein-fiber) and you've got three high-protein breakfasts on a 3-day loop. Most patients don't need a fourth.
 
  Boring breakfasts win the year. This one is fast, drinkable, and tastes like a milkshake. Put it on Monday-Wednesday-Friday and stop thinking about breakfast.
  Sources: [International Society of Sports Nutrition position stand on protein](https://pubmed.ncbi.nlm.nih.gov/28642676/); [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient values; [Harvard T.H. Chan School of Public Health on protein](https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/).
@@ -124,6 +124,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

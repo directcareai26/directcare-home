@@ -1,4 +1,4 @@
-# Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better | DirectCare AI Blog
+# Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better
 
 > How microneedling with a dermaroller enhances topical minoxidil and finasteride absorption for hair regrowth. Protocol, needle depth, frequency, and the trial evidence behind it.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrow
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -89,7 +89,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most of the published microneedling research has used topical minoxidil. The pharmacologic logic suggests it should similarly amplify topical finasteride or dutasteride absorption. Several smaller trials have confirmed this — adding microneedling to compounded topical finasteride + minoxidil typically produces better outcomes than the topicals alone.
 
- For the right patient — early-to-moderate AGA, comfortable with the routine, willing to commit to consistent weekly use — this combination is one of the strongest non-pharmaceutical levers we have. Pair it with the compounded topical protocols discussed in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair/) and [dutasteride vs. finasteride](https://www.directcare.ai/blog/dutasteride-vs-finasteride-when-to-step-up/) for the complete picture.
+ For the right patient — early-to-moderate AGA, comfortable with the routine, willing to commit to consistent weekly use — this combination is one of the strongest non-pharmaceutical levers we have. Pair it with the compounded topical protocols discussed in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) and [dutasteride vs. finasteride](https://www.directcare.ai/blog/dutasteride-vs-finasteride-when-to-step-up) for the complete picture.
 
 ### What microneedling isn't .
 
@@ -107,7 +107,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're already on topical minoxidil or a compounded finasteride/minoxidil protocol and you're not microneedling weekly, you're meaningfully underperforming what the same medication could do. The dermaroller is on Amazon for $25. The amplification effect is in the published literature.
 
- Pair with the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working/) post to know what to expect in the early weeks, and the compounded topical protocols in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair/) for the full regimen picture.
+ Pair with the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post to know what to expect in the early weeks, and the compounded topical protocols in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) for the full regimen picture.
 
  A $25 dermaroller, used once a week with the right technique, makes the medication you're already paying for work meaningfully better. That's the most cost-effective intervention in hair-loss medicine.
  Sources: [Dhurat et al, International Journal of Trichology 2013](https://pubmed.ncbi.nlm.nih.gov/23960398/); [follow-up RCT on microneedling + minoxidil, 2017](https://pubmed.ncbi.nlm.nih.gov/27870434/); [systematic review on microneedling for AGA, Dermatologic Surgery 2020](https://pubmed.ncbi.nlm.nih.gov/31764399/).
@@ -118,6 +118,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded topical minoxidil, finasteride, and dutasteride protocols that pair effectively with at-home microneedling — with the clinician guidance to use them right.
 
- [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss/)
+ [Start hair regrowth →](https://www.directcare.ai/mens-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

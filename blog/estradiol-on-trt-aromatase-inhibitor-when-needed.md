@@ -1,4 +1,4 @@
-# Estradiol on TRT: when men need an aromatase inhibitor and most don't | DirectCare AI Blog
+# Estradiol on TRT: when men need an aromatase inhibitor and most don't
 
 > When elevated estradiol on TRT actually warrants an aromatase inhibitor (anastrozole) — and the wider clinical evidence that most men on TRT don't need one and are harmed by routine prescription.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 
@@ -117,7 +117,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most TRT patients do best with **no aromatase inhibitor, ever.** A smaller subset benefit from a low, infrequent dose for a specific period when warranted by symptoms — not bloodwork alone. The clinics still routinely prescribing anastrozole alongside every testosterone protocol are practicing an outdated standard.
 
- If you're on TRT and you've felt worse since the addition of anastrozole, that's the conversation worth having with your clinician. Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol/) and [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing/) for the full diagnostic picture.
+ If you're on TRT and you've felt worse since the addition of anastrozole, that's the conversation worth having with your clinician. Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol) and [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing) for the full diagnostic picture.
 
  The right testosterone protocol is the one that improves your bloodwork and your life. If you're feeling worse on TRT than off it, the medication you should suspect first isn't the testosterone.
  Sources: [Endocrine Society 2018 testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [American Urological Association 2018 testosterone deficiency guideline](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline); [position statements on sensitive estradiol assay in men](https://pubmed.ncbi.nlm.nih.gov/24684464/).

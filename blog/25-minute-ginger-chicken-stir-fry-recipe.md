@@ -1,4 +1,4 @@
-# The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy | DirectCare AI Blog
+# The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy
 
 > A 25-minute ginger chicken stir-fry recipe with 38g protein, 9g fiber, and three variations. One-pan, weeknight-easy, scales for one or four.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/25-minute-ginger-chicken-stir-fry-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -115,7 +115,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Why this works for almost every protocol we prescribe.
 
-- On a GLP-1: 38g of protein and 9g of fiber in a 520-calorie meal is right in the sweet spot for a suppressed appetite. Pair with the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) and you're hitting muscle preservation targets.
+- On a GLP-1: 38g of protein and 9g of fiber in a 520-calorie meal is right in the sweet spot for a suppressed appetite. Pair with the [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) and you're hitting muscle preservation targets.
 
 - On HRT or TRT: Same protein target works for hormone-driven muscle support. The vitamin C from the bell pepper aids iron absorption, which matters more than most patients realize.
 
@@ -134,6 +134,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition coaching to make a suppressed appetite still hit protein and fiber targets.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

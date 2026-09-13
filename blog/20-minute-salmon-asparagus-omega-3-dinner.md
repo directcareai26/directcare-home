@@ -1,4 +1,4 @@
-# 20-Minute Salmon and Asparagus: Hit Your Omega-3 Target | DirectCare AI Blog
+# 20-Minute Salmon and Asparagus: Hit Your Omega-3 Target
 
 > A 20-minute salmon and asparagus recipe engineered to hit EPA+DHA omega-3 targets that matter for heart, brain, and inflammation markers.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/20-minute-salmon-asparagus-omega-3-dinner
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -133,6 +133,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition guidance to make a suppressed appetite still hit protein and fiber.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

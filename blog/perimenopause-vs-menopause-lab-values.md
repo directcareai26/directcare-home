@@ -1,4 +1,4 @@
-# Perimenopause vs. Menopause: Lab Values and What They Mean | DirectCare AI Blog
+# Perimenopause vs. Menopause: Lab Values and What They Mean
 
 > Perimenopause vs menopause lab values compared: FSH, estradiol, progesterone, and what each pattern calls for in HRT. A clinician's plain-English guide.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/perimenopause-vs-menopause-lab-values
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

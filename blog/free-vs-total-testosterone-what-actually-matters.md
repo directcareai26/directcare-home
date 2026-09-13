@@ -1,4 +1,4 @@
-# Free vs. Total Testosterone: Which Number Actually Matters | DirectCare AI Blog
+# Free vs. Total Testosterone: Which Number Actually Matters
 
 > How to read free testosterone vs. total testosterone on your labs, why SHBG changes everything, and which number actually predicts how you feel.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/free-vs-total-testosterone-what-actually-
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 

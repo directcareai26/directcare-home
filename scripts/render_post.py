@@ -245,6 +245,19 @@ def _reviewer_parts(slug: str) -> tuple[str, str]:
         return "", ""
 
 
+_INTERNAL_SLASH = re.compile(r'href="(?:https://www\.directcare\.ai)?(/(?:[a-z0-9-]+/)*[a-z0-9-]+)/(["#?])')
+
+
+def normalize_internal_links(html: str) -> str:
+    """Rewrite internal hrefs to their canonical no-trailing-slash, root-relative form.
+
+    vercel.json sets trailingSlash:false, so "/blog/x/" is a 308 hop to "/blog/x".
+    Writers (and the model that drafts posts) habitually emit the slash form; every
+    such link is a redirecting internal link in a crawler's report. 2026-09-13.
+    """
+    return _INTERNAL_SLASH.sub(lambda m: f'href="{m.group(1)}{m.group(2)}', html)
+
+
 def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     """Render one post. Returns (html, manifest_entry)."""
     required = ["slug", "title", "category", "deck", "body_markdown"]
@@ -257,6 +270,10 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         raise ValueError(f"Invalid slug: {slug!r}")
 
     title = payload["title"].strip()
+    # <title> carries the brand suffix only when the whole tag stays within 60 characters (the
+    # crawler/SERP title budget); longer post titles stand alone. og:title and the Article
+    # headline always use the bare title. 2026-09-13.
+    html_title = f"{title} | DirectCare AI" if len(title) + len(" | DirectCare AI") <= 60 else title
     # Optional title_html lets the author wrap part of the title in <em>...</em>.
     title_html = payload.get("title_html") or _html.escape(title)
     category = payload["category"].strip()
@@ -284,6 +301,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         "{{SLUG}}": slug,
         "{{TITLE}}": _escape_attr(title),
         "{{TITLE_HTML}}": title_html,
+        "{{HTML_TITLE}}": _escape_attr(html_title),
         "{{META_DESCRIPTION}}": _escape_attr(meta_description),
         "{{KEYWORDS}}": _escape_attr(keywords),
         "{{CATEGORY}}": _escape_attr(category),
@@ -302,6 +320,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     }
     for k, v in replacements.items():
         template = template.replace(k, v)
+    template = normalize_internal_links(template)
 
     manifest_entry = {
         "slug": slug,

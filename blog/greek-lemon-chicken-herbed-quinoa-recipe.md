@@ -1,4 +1,4 @@
-# Greek lemon chicken with herbed quinoa: 38g protein, 30 minutes, one skillet | DirectCare AI Blog
+# Greek lemon chicken with herbed quinoa: 38g protein, 30 minutes, one skillet
 
 > A 30-minute Greek lemon chicken thigh recipe with herbed quinoa. 38g protein, 9g fiber, one skillet. Clinician-built weekend dinner that scales for one or four.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/greek-lemon-chicken-herbed-quinoa-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -109,9 +109,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits the bigger picture.
 
- Pair this with the [25-minute ginger chicken stir-fry](https://www.directcare.ai/blog/25-minute-ginger-chicken-stir-fry-recipe/) on weeknights, [harissa salmon](https://www.directcare.ai/blog/harissa-salmon-sheet-pan-recipe-36g-protein/) on Saturdays, and the [chickpea-and-tuna lunch bowl](https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl/) for desk lunches, and you've covered the protein-and-fiber template across most of the week with four recipes.
+ Pair this with the [25-minute ginger chicken stir-fry](https://www.directcare.ai/blog/25-minute-ginger-chicken-stir-fry-recipe) on weeknights, [harissa salmon](https://www.directcare.ai/blog/harissa-salmon-sheet-pan-recipe-36g-protein) on Saturdays, and the [chickpea-and-tuna lunch bowl](https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl) for desk lunches, and you've covered the protein-and-fiber template across most of the week with four recipes.
 
- The [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) explains why this protein-forward, fiber-dense template works on a GLP-1 or HRT/TRT protocol. This recipe is the practical version.
+ The [4-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) explains why this protein-forward, fiber-dense template works on a GLP-1 or HRT/TRT protocol. This recipe is the practical version.
 
  One skillet. 30 minutes. 38 grams of protein. The Greek lemon chicken you'll write down and put on the Tuesday rotation, not just the Saturday one.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient calculations; [Harvard T.H. Chan School of Public Health on protein](https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/) for daily protein targets.
@@ -122,6 +122,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition guidance to make a suppressed appetite still hit protein and fiber targets.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

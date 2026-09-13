@@ -1,4 +1,4 @@
-# Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters | DirectCare AI Blog
+# Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters
 
 > Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin — and what each finding means.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/womens-hair-loss-hormonal-panel
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Hair Regrowth
 
@@ -89,6 +89,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI tests the full hormonal picture and prescribes compounded topical and oral protocols matched to what's actually driving your hair loss.
 
- [Start hair regrowth →](https://www.directcare.ai/womans-hair-loss/)
+ [Start hair regrowth →](https://www.directcare.ai/womans-hair-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

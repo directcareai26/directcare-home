@@ -1,4 +1,4 @@
-# Progesterone at night: why timing matters more than dose for menopause sleep | DirectCare AI Blog
+# Progesterone at night: why timing matters more than dose for menopause sleep
 
 > Explains why oral micronized progesterone for menopause must be taken at bedtime: timing drives the sedating effect more than dose, and morning dosing wastes the benefit.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

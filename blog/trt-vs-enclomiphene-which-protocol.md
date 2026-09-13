@@ -1,4 +1,4 @@
-# TRT vs. enclomiphene: which testosterone protocol is right for you? | DirectCare AI Blog
+# TRT vs. enclomiphene: which testosterone protocol is right for you?
 
 > Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene — and which bloodwork pattern fits each.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)TRTMay 19, 2026
+ [Blog](https://www.directcare.ai/blog)TRTMay 19, 2026
  Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-05-19
 
 ## TRT vs. enclomiphene: which testosterone protocol is right for you?

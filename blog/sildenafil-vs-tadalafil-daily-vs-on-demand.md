@@ -1,4 +1,4 @@
-# Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms | DirectCare AI Blog
+# Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms
 
 > When daily low-dose tadalafil (2.5-5 mg) actually outperforms on-demand sildenafil or tadalafil — and the BPH and endothelial benefits that come with continuous PDE5 dosing.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-deman
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Sexual Health
 
@@ -25,7 +25,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Quick refresher on the molecules
 
- We covered the full sildenafil-vs-tadalafil comparison in [a previous post](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison/). The short version:
+ We covered the full sildenafil-vs-tadalafil comparison in [a previous post](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison). The short version:
 
 - Sildenafil: onset 30–60 min, peak ~1 hour, duration 4–6 hours. Sensitive to food. Best as a planned-encounter drug.
 
@@ -111,7 +111,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Three honest limits:
 
-- Low testosterone. PDE5 inhibitors work mechanically on vascular smooth muscle. If your libido is in the floor because testosterone is low, the medication will produce an erection that you don't particularly want. Cover both — read [morning erections and testosterone](https://www.directcare.ai/blog/morning-erections-testosterone-what-they-tell-clinician/) for the bloodwork conversation that should happen first.
+- Low testosterone. PDE5 inhibitors work mechanically on vascular smooth muscle. If your libido is in the floor because testosterone is low, the medication will produce an erection that you don't particularly want. Cover both — read [morning erections and testosterone](https://www.directcare.ai/blog/morning-erections-testosterone-what-they-tell-clinician) for the bloodwork conversation that should happen first.
 
 - Severe vascular disease. PDE5 inhibitors require functional endothelium to amplify. Patients with severe peripheral vascular disease or post-radical-prostatectomy ED often need penile injections or other interventions in parallel.
 
@@ -126,6 +126,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded sildenafil, tadalafil, and daily low-dose tadalafil protocols — matched to your lifestyle and bloodwork, shipped discreetly.
 
- [Get Surge Max →](https://www.directcare.ai/surge-max/)
+ [Get Surge Max →](https://www.directcare.ai/surge-max)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

@@ -11,28 +11,28 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  [For women
  Whole-woman care, built around you.
- Women's health →](https://www.directcare.ai/womens-health/)
+ Women's health →](https://www.directcare.ai/womens-health)
  [For men
  Total care, tuned to your levels.
- Men's health →](https://www.directcare.ai/mens-health/)
+ Men's health →](https://www.directcare.ai/mens-health)
 
- [Sexual health](https://www.directcare.ai/surge-max/)
- [Hair regrowth](https://www.directcare.ai/mens-hair-loss/)
- [Weight loss](https://www.directcare.ai/weight-loss/)
- [Blood labs](https://www.directcare.ai/blood-test/)
- [Supplements](https://www.directcare.ai/supplements/)
+ [Sexual health](https://www.directcare.ai/surge-max)
+ [Hair regrowth](https://www.directcare.ai/mens-hair-loss)
+ [Weight loss](https://www.directcare.ai/weight-loss)
+ [Blood labs](https://www.directcare.ai/blood-test)
+ [Supplements](https://www.directcare.ai/supplements)
 
 ### Sustainable weight loss,
  built around you.
 
  Compounded semaglutide and tirzepatide. Weekly injection, clinician-titrated.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  [Sexual Health
 
  Surge Max
- 4-in-1 sublingual · On cue, on demand](https://www.directcare.ai/surge-max/)
+ 4-in-1 sublingual · On cue, on demand](https://www.directcare.ai/surge-max)
  [Hormone Therapy
 
  HRT
@@ -40,11 +40,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  [For Women
 
  Hair Regrowth
- Minoxidil · Spironolactone · Topicals](https://www.directcare.ai/womans-hair-loss/)
+ Minoxidil · Spironolactone · Topicals](https://www.directcare.ai/womans-hair-loss)
  [Wellness
 
  Supplements
- Physician-formulated stacks via Fullscript](https://www.directcare.ai/supplements/)
+ Physician-formulated stacks via Fullscript](https://www.directcare.ai/supplements)
 
 ### Testosterone, tailored to your numbers.
 
@@ -63,7 +63,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Hormones included
  From $196
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  Prescription savings · Bonus
 
@@ -102,4 +102,4 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  [TRT May 19, 2026
  TRT vs. enclomiphene: which testosterone protocol is right for you?](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol)
 
- [Read all posts →](https://www.directcare.ai/blog/)
+ [Read all posts →](https://www.directcare.ai/blog)

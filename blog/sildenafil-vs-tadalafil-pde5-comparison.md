@@ -1,4 +1,4 @@
-# Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently | DirectCare AI Blog
+# Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently
 
 > Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours — daily dosing changes the math.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Sexual Health
 
@@ -85,6 +85,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded sildenafil, tadalafil, and combination protocols. Prescribed by a US-licensed clinician after a brief intake, shipped discreetly.
 
- [Get Surge Max →](https://www.directcare.ai/surge-max/)
+ [Get Surge Max →](https://www.directcare.ai/surge-max)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

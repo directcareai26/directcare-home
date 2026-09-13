@@ -1,4 +1,4 @@
-# Compounded vs. branded GLP-1: the actual difference, and when one beats the other | DirectCare AI Blog
+# Compounded vs. branded GLP-1: the actual difference, and when one beats the other
 
 > What compounded semaglutide and tirzepatide actually are, how they compare to Wegovy and Zepbound, the regulatory situation in 2026, and when each route makes sense.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-differe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Weight Loss
 
@@ -123,7 +123,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For most patients without strong insurance coverage, compounded semaglutide or tirzepatide through a reputable clinician-supervised platform produces the same clinical result as the branded version at a fraction of the cost. The regulatory framework is more specific in 2026 than it was in 2023, but the core conclusion holds: same active ingredient, different cost, similar outcome — provided the pharmacy and the clinical oversight are real.
 
- Pair this with [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference/) for the molecular choice and [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss/) for the back-end protocol.
+ Pair this with [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference) for the molecular choice and [GLP-1 maintenance](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss) for the back-end protocol.
 
  Same active ingredient, different package, different price. The clinical question isn't compounded-vs-branded — it's whether your provider and pharmacy are real and whether the protocol fits your physiology.
  Sources: [FDA on compounded drugs and the 503A/503B pathway](https://www.fda.gov/drugs/human-drug-compounding); [FDA drug shortage status updates](https://www.accessdata.fda.gov/scripts/drugshortages/); [Endocrine Society statement on appropriate compounded medication use in obesity](https://pubmed.ncbi.nlm.nih.gov/38157317/).
@@ -134,6 +134,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide protocols through US-licensed compounding pharmacies, with the clinician oversight and dose titration that make the result hold.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

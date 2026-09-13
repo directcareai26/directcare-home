@@ -1,4 +1,4 @@
-# Cottage cheese bowls: the 30g-protein snack everyone forgot about | DirectCare AI Blog
+# Cottage cheese bowls: the 30g-protein snack everyone forgot about
 
 > Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds — the snack that beats a protein bar nutritionally.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -123,7 +123,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits a longer protocol
 
- If you're working through the [muscle-preservation logic during GLP-1 loss](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/) or trying to consistently hit the protein-front-loading rule in our [nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/), cottage cheese is the cheapest way to add a 25 to 30 g protein hit at any meal of the day without adding cooking time.
+ If you're working through the [muscle-preservation logic during GLP-1 loss](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) or trying to consistently hit the protein-front-loading rule in our [nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework), cottage cheese is the cheapest way to add a 25 to 30 g protein hit at any meal of the day without adding cooking time.
 
  The most underrated kitchen staple of the GLP-1 era. Cheap, fast, protein-dense, no recipe required.
  Sources: [USDA FoodData Central](https://fdc.nal.usda.gov/) for cottage cheese nutrient profile; [casein and overnight muscle protein synthesis review](https://pubmed.ncbi.nlm.nih.gov/22330017/) for pre-bed snack rationale.
@@ -134,6 +134,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols around your bloodwork, your training, and a nutrition plan that actually works at a suppressed appetite.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

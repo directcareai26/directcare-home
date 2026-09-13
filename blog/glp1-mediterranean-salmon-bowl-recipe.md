@@ -1,4 +1,4 @@
-# The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark | DirectCare AI Blog
+# The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark
 
 > Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s — built for the smaller appetite a GLP-1 leaves you with.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -113,7 +113,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Why "protein first" matters more on a GLP-1
 
- We've written separately about [why preserving muscle on a GLP-1 isn't optional](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/) and [the four-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework/) that lives behind recipes like this one. The short version: your appetite is the limiting reagent now, so every bite has to pull its weight. A bowl like this is the easiest way to put 38 g of protein and 10 g of fiber on a plate without forcing yourself through volume you don't want.
+ We've written separately about [why preserving muscle on a GLP-1 isn't optional](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle) and [the four-rule nutrition framework](https://www.directcare.ai/blog/glp1-nutrition-four-rule-framework) that lives behind recipes like this one. The short version: your appetite is the limiting reagent now, so every bite has to pull its weight. A bowl like this is the easiest way to put 38 g of protein and 10 g of fiber on a plate without forcing yourself through volume you don't want.
 
  The patients who do best on GLP-1s over 12+ months aren't the ones eating less of everything. They're the ones eating more of a small number of nutrient-dense meals. And this is one of them.
  Recipe adapted from [The Mediterranean Dish. Mediterranean Salmon Bowls](https://www.themediterraneandish.com/mediterranean-salmon-bowls/), with protein and fiber adjusted for GLP-1 patient targets. Nutrition guidance drawn from [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) and the [Mayo Clinic Mediterranean Diet overview](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/in-depth/mediterranean-diet/art-20047801).
@@ -124,6 +124,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds GLP-1 protocols with protein targets, training cadence, and quarterly monitoring. So the loss is fat, not muscle.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

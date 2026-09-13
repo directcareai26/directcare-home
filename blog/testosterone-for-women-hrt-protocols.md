@@ -1,4 +1,4 @@
-# Testosterone in Women's HRT: The Case Most Clinics Miss | DirectCare AI Blog
+# Testosterone in Women's HRT: The Case Most Clinics Miss
 
 > Testosterone for women in HRT: the evidence, the dosing ranges, and why most menopause clinics skip it. A clinician-built guide to female androgen therapy.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/testosterone-for-women-hrt-protocols
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

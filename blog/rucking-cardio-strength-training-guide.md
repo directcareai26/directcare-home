@@ -1,4 +1,4 @@
-# Rucking: The Cardio That Builds Strength at the Same Time | DirectCare AI Blog
+# Rucking: The Cardio That Builds Strength at the Same Time
 
 > Rucking blends cardio and strength training in one low-impact session. Here's how to program weight, distance, and progression — tuned to your fitness level.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/rucking-cardio-strength-training-guide
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Fitness
 
@@ -168,6 +168,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes hormone, weight-loss, and longevity protocols designed to layer on top of the training and nutrition habits that actually move outcomes.
 
- [Start an intake →](https://www.directcare.ai/weight-loss/)
+ [Start an intake →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

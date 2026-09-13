@@ -52,7 +52,7 @@ Medical Consent
 
 - Communicate with your clinician through a secure, encrypted patient portal.
 
-- Receive a copy of our [Privacy Policy](https://www.directcare.ai/privacy-policy/) describing how we collect, use, and protect your information.
+- Receive a copy of our [Privacy Policy](https://www.directcare.ai/privacy-policy) describing how we collect, use, and protect your information.
 
 - Request restrictions on how your information is used or disclosed.
 

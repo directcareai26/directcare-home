@@ -1,4 +1,4 @@
-# Hematocrit on TRT: When to Donate Blood and Why | DirectCare AI Blog
+# Hematocrit on TRT: When to Donate Blood and Why
 
 > How injectable testosterone raises hematocrit, the threshold that matters, and how often to donate blood on TRT to keep viscosity in a safe range.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/hematocrit-on-trt-blood-donation-frequenc
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  TRT
 

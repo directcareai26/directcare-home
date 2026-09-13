@@ -1,4 +1,4 @@
-# Micronized Progesterone vs. Progestins: Why It Matters | DirectCare AI Blog
+# Micronized Progesterone vs. Progestins: Why It Matters
 
 > Oral micronized progesterone vs. progestins in HRT: how they differ on breast cancer risk, brain and sleep effects, and which markers to check first.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/oral-micronized-progesterone-vs-progestin
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  HRT
 

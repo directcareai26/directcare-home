@@ -1,4 +1,4 @@
-# ED as a Cardiovascular Warning: The Labs That Confirm It | DirectCare AI Blog
+# ED as a Cardiovascular Warning: The Labs That Confirm It
 
 > Erectile dysfunction is often an early cardiovascular signal. Here are the labs — lipids, ApoB, hs-CRP, HbA1c, testosterone — that confirm the cause.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/ed-cardiovascular-warning-signs-labs
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Sexual Health
 
@@ -101,6 +101,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compounded sildenafil, tadalafil, and combination protocols. US-licensed clinician oversight. Shipped discreetly.
 
- [See your options →](https://www.directcare.ai/surge-max/)
+ [See your options →](https://www.directcare.ai/surge-max)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

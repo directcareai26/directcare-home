@@ -1,4 +1,4 @@
-# Vitamin D3 + K2: Dosing, Targets, and Why You're Low | DirectCare AI Blog
+# Vitamin D3 + K2: Dosing, Targets, and Why You're Low
 
 > Vitamin D3 and K2 dosing, 25-hydroxy vitamin D blood targets, and why most patients stay deficient despite supplementing. Real numbers, real trade-offs.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/vitamin-d3-k2-dosing-blood-level-targets
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Supplements
 
@@ -143,6 +143,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI clinicians curate supplement protocols matched to your actual bloodwork — not a generic multivitamin.
 
- [Browse supplements →](https://www.directcare.ai/supplements/)
+ [Browse supplements →](https://www.directcare.ai/supplements)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

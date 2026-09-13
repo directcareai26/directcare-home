@@ -1,4 +1,4 @@
-# The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required | DirectCare AI Blog
+# The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required
 
 > Recipe for a 5-minute pantry lunch bowl: canned chickpeas + tuna + olive oil + lemon. Hits 35g protein and 14g fiber with no stove or microwave.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/5-minute-chickpea-tuna-lunch-bowl
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Nutrition
 
@@ -147,9 +147,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How this fits the bigger picture
 
- Pair this with the [40-gram-protein breakfast smoothie](https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast/) and you've already hit 75 grams of protein and 24 grams of fiber by 1 p.m. — without thinking about food beyond opening a blender and a can. The remaining 25–40 grams of protein at dinner gets you to a complete protein day with effectively zero meal-planning friction.
+ Pair this with the [40-gram-protein breakfast smoothie](https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast) and you've already hit 75 grams of protein and 24 grams of fiber by 1 p.m. — without thinking about food beyond opening a blender and a can. The remaining 25–40 grams of protein at dinner gets you to a complete protein day with effectively zero meal-planning friction.
 
- That's the underrated argument for repetition: low-effort breakfasts and low-effort lunches free you up to actually cook a real dinner. The [Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe/) or the [Greek chicken souvlaki meal prep](https://www.directcare.ai/blog/greek-chicken-souvlaki-meal-prep/) takes 30 minutes when breakfast and lunch took six total.
+ That's the underrated argument for repetition: low-effort breakfasts and low-effort lunches free you up to actually cook a real dinner. The [Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe) or the [Greek chicken souvlaki meal prep](https://www.directcare.ai/blog/greek-chicken-souvlaki-bowl-meal-prep) takes 30 minutes when breakfast and lunch took six total.
 
  Lunch should not be the part of the day you have to think about. Two cans, a knife, a bowl, and a lemon. Five minutes. 35 grams of protein. Done.
  Sources: [Harvard T.H. Chan School of Public Health on protein](https://nutritionsource.hsph.harvard.edu/what-should-you-eat/protein/); [FDA advice about eating fish](https://www.fda.gov/food/consumers/advice-about-eating-fish); [USDA FoodData Central](https://fdc.nal.usda.gov/) for nutrient calculations.
@@ -160,6 +160,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI prescribes compounded semaglutide and tirzepatide with the nutrition coaching to make a suppressed appetite still hit protein and fiber.
 
- [See if you qualify →](https://www.directcare.ai/weight-loss/)
+ [See if you qualify →](https://www.directcare.ai/weight-loss)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

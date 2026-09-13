@@ -1,4 +1,4 @@
-# The 12 markers we actually look at first on a DirectCare AI hormone panel | DirectCare AI Blog
+# The 12 markers we actually look at first on a DirectCare AI hormone panel
 
 > Lists the 12 biomarkers a clinician opens first on a hormone panel: total/free testosterone, SHBG, estradiol, DHEA-S, LH, FSH, TSH, free T3/T4, fasting insulin, ApoB, hs-CRP.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/12-markers-hormone-panel-priority
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Blood Labs
 
@@ -75,6 +75,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Real bloodwork, results in 3 to 5 days, with a personalized plan from a US-licensed clinician. Not a chart you have to decode yourself.
 
- [See my numbers →](https://www.directcare.ai/blood-test/)
+ [See my numbers →](https://www.directcare.ai/blood-test)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

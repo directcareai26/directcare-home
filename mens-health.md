@@ -9,7 +9,7 @@ Source: https://www.directcare.ai/mens-health
  Get expert treatment for testosterone, weight loss, sexual health, hair restoration, and more, all from home.
 
  [Start TRT intake →](https://www.directcare.ai/testosterone-replacement-therapy)
- [Order blood labs](https://www.directcare.ai/blood-test/)
+ [Order blood labs](https://www.directcare.ai/blood-test)
 
  US-licensed clinicians
 
@@ -36,11 +36,11 @@ Source: https://www.directcare.ai/mens-health
  [Sexual Health
  Surge Max, the 4-in-1 sublingual: sildenafil + tadalafil + vardenafil + apomorphine.
  Provider prescribed.
- Learn more](https://www.directcare.ai/surge-max/)
+ Learn more](https://www.directcare.ai/surge-max)
  [Hair Regrowth
  Topical and oral protocols. Finasteride, dutasteride, minoxidil and more.
  Provider prescribed.
- Learn more](https://www.directcare.ai/mens-hair-loss/)
+ Learn more](https://www.directcare.ai/mens-hair-loss)
  [Weight Loss
  Compounded semaglutide & tirzepatide with a Care Coach from day one.
  Provider prescribed.
@@ -48,11 +48,11 @@ Source: https://www.directcare.ai/mens-health
  [Blood Labs
  80+ biomarker panel with a clinician-written, plain-English plan.
  Provider prescribed.
- Learn more](https://www.directcare.ai/blood-test/)
+ Learn more](https://www.directcare.ai/blood-test)
  [Supplements
  Physician-formulated stacks via Fullscript. Recommended by your clinician.
  Clinician recommended.
- Learn more](https://www.directcare.ai/supplements/)
+ Learn more](https://www.directcare.ai/supplements)
 
 #### Licensed Providers
 

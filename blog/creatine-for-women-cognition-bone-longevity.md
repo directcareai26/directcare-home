@@ -1,4 +1,4 @@
-# Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym) | DirectCare AI Blog
+# Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)
 
 > Why creatine monohydrate is the most evidence-backed supplement for women's cognition, bone density, and healthy aging — not just muscle. Dosing, safety, and the perimenopause case.
 
@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/blog/creatine-for-women-cognition-bone-longevi
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
- [Blog](https://www.directcare.ai/blog/)
+ [Blog](https://www.directcare.ai/blog)
 
  Supplements
 
@@ -61,7 +61,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The mechanism appears to involve creatine's effects on osteoblast activity (the bone-building cells) and on the muscle contractions that signal bone to remodel. Creatine without resistance training doesn't show the same bone effect — the two are synergistic.
 
- For women on HRT plus a strength training program (see [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes/) and the [3x-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation/)), creatine is the missing third leg of the protocol.
+ For women on HRT plus a strength training program (see [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes) and the [3x-week resistance workout](https://www.directcare.ai/blog/3x-week-resistance-workout-glp1-muscle-preservation)), creatine is the missing third leg of the protocol.
 
 ### The longevity case.
 
@@ -107,11 +107,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### How it fits the bigger picture.
 
- For most of the women we work with, the supplement stack worth taking is fairly short — covered in [the 4 supplement gaps every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps/). Add creatine as a fifth, and you've covered the major evidence-backed bases.
+ For most of the women we work with, the supplement stack worth taking is fairly short — covered in [the 4 supplement gaps every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps). Add creatine as a fifth, and you've covered the major evidence-backed bases.
 
 - On HRT: creatine pairs synergistically with the bone and cognitive benefits of estradiol.
 
-- On a GLP-1: creatine is one of the few supplements with credible evidence for preserving muscle mass during caloric deficit (see [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle/)).
+- On a GLP-1: creatine is one of the few supplements with credible evidence for preserving muscle mass during caloric deficit (see [body recomp on GLP-1s](https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle)).
 
 - In perimenopause without HRT: creatine + resistance training is the strongest non-hormonal lever for preserving bone, muscle, and cognitive function.
 
@@ -130,6 +130,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  DirectCare AI builds supplement stacks around your actual bloodwork — including evidence-based additions like creatine that most clinics never bring up.
 
- [Get your protocol →](https://www.directcare.ai/supplements/)
+ [Get your protocol →](https://www.directcare.ai/supplements)
 
  **Editorial disclosure:** This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.

@@ -1,6 +1,6 @@
 # Men's Health | TRT, Sexual Health, Hair Regrowth & Labs | DirectCare AI
 
-> Personalized men's health from real clinicians. TRT, sexual health (Surge Max), GLP-1 weight loss, hair regrowth, blood labs, and physician-formulated supplements. Built around your bloodwork, shipped to your door.
+> Personalized men's health from DirectCare AI. TRT, sexual health, hair loss, blood labs & supplements. Built around your bloodwork, shipped to your door.
 
 Source: https://www.directcare.ai/mens-health
 

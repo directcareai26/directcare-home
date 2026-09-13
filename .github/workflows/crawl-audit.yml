@@ -1,0 +1,26 @@
+name: Crawl Audit (weekly)
+# Ahrefs/GSC-style crawl of both hosts: sitemap health, broken/redirecting internal links, duplicates,
+# orphans, JSON-LD validity. Fails the job (and posts to Slack) on error-class findings.
+on:
+  schedule:
+    - cron: "30 11 * * 1"   # Mondays 07:30 ET
+  workflow_dispatch:
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Crawl both hosts
+        env:
+          SITE_HEALTH_WEBHOOK: ${{ secrets.SITE_HEALTH_WEBHOOK }}
+        run: python3 scripts/site-health/crawl_audit.py --json crawl-audit.json
+      - name: Keep the full report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawl-audit
+          path: crawl-audit.json

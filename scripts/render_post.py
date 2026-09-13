@@ -317,7 +317,36 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     return template, manifest_entry
 
 
+REVIEWERS_PATH = REPO_ROOT / "blog" / "reviewers.json"
+STANDING_REVIEWER = "tim-pepin"
+
+
+def record_review(slug: str, date_iso: str, reviewer: str = STANDING_REVIEWER) -> bool:
+    """Record the standing clinical review of a new post, dated to its posting date.
+
+    DaChé (COO), 2026-09-13: Dr. Tim Pepin, D.C. is the clinical reviewer of every
+    post; he is not the prescriber; review date = posting date; automation of this
+    entry was explicitly authorised the same day. Idempotent: an existing entry for
+    the slug is never overwritten (a later manual review keeps its own date).
+    The editorial guard still validates the entry against the registry's scopes.
+    """
+    try:
+        reg = json.loads(REVIEWERS_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    if reviewer not in (reg.get("reviewers") or {}):
+        return False
+    reviews = reg.setdefault("reviews", {})
+    if isinstance(reviews.get(slug), dict):
+        return False
+    reviews[slug] = {"reviewer": reviewer, "date": date_iso}
+    REVIEWERS_PATH.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    return True
+
+
 def write_post(payload: dict[str, Any]) -> Path:
+    record_review(payload["slug"].strip().lower(),
+                  payload.get("date") or dt.date.today().isoformat())
     html, entry = render_post(payload)
     # Flat files (e.g. blog/foo.html) so Vercel's cleanUrls serves them at /blog/foo
     post_path = BLOG_DIR / f"{entry['slug']}.html"

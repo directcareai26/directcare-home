@@ -29,7 +29,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Subscribe
 
-## All posts (112)
+## All posts (113)
+
+### [Micronized Progesterone vs. Progestins: Breast & Brain](https://www.directcare.ai/blog/micronized-progesterone-vs-progestins-breast-brain)
+2026-09-13 · HRT
+
+Micronized progesterone and synthetic progestins behave differently in the breast and brain. Here's the trial evidence, in plain English.
 
 ### [Sildenafil vs. Tadalafil: How to Pick the Right ED Med](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose)
 2026-09-12 · Sexual Health

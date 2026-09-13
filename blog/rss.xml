@@ -10,13 +10,25 @@
     <atom:link href="https://www.directcare.ai/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Plain-English breakdowns of the science behind TRT, HRT, GLP-1 weight loss, sexual health, hair regrowth, nutrition, fitness, blood labs, and supplements. Written by US-licensed clinicians at DirectCare AI.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 12 Sep 2026 08:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 08:00:00 -0400</lastBuildDate>
     <generator>DirectCare AI blog pipeline</generator>
     <image>
       <url>https://cdn.prod.website-files.com/67e9a176f4ad60e0a777c24a/67e9a176f4ad60e0a777c2a3_DC%20logo%20long%20trans.png</url>
       <title>DirectCare AI Blog</title>
       <link>https://www.directcare.ai/blog/</link>
     </image>
+    <item>
+      <title>Micronized Progesterone vs. Progestins: Breast &amp; Brain</title>
+      <link>https://www.directcare.ai/blog/micronized-progesterone-vs-progestins-breast-brain</link>
+      <guid isPermaLink="true">https://www.directcare.ai/blog/micronized-progesterone-vs-progestins-breast-brain</guid>
+      <pubDate>Sun, 13 Sep 2026 08:00:00 -0400</pubDate>
+      <dc:creator>DirectCare AI Clinical Team</dc:creator>
+      <category>HRT</category>
+      <description><![CDATA[Micronized progesterone and synthetic progestins behave differently in the breast and brain. Here's the trial evidence, in plain English.]]></description>
+      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" type="image/png" length="0" />
+      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" medium="image" />
+      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" />
+    </item>
     <item>
       <title>Sildenafil vs. Tadalafil: How to Pick the Right ED Med</title>
       <link>https://www.directcare.ai/blog/sildenafil-vs-tadalafil-how-to-choose</link>
@@ -364,18 +376,6 @@
       <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" type="image/png" length="0" />
       <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" medium="image" />
       <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" />
-    </item>
-    <item>
-      <title>Estradiol on TRT: Who Actually Needs an AI (Most Don't)</title>
-      <link>https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor</link>
-      <guid isPermaLink="true">https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor</guid>
-      <pubDate>Tue, 04 Aug 2026 08:00:00 -0400</pubDate>
-      <dc:creator>DirectCare AI Clinical Team</dc:creator>
-      <category>TRT</category>
-      <description><![CDATA[Estradiol isn't the villain of TRT — it's a co-pilot. Here's when an aromatase inhibitor helps, when it hurts, and how to read your E2 numbers honestly.]]></description>
-      <enclosure url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" type="image/png" length="0" />
-      <media:content url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" medium="image" />
-      <media:thumbnail url="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" />
     </item>
   </channel>
 </rss>

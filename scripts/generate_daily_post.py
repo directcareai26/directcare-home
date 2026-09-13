@@ -15,6 +15,7 @@ written topic list if all rotation seeds have been used.
 from __future__ import annotations
 
 import argparse
+import re
 import datetime as dt
 import hashlib
 import json
@@ -330,6 +331,24 @@ def angle_already_covered(angle: str) -> bool:
     return False
 
 
+def near_duplicate_of_existing(slug: str, title: str) -> list[str]:
+    """Final guard on the GENERATED post: block it when its slug or title is a near-copy of a
+    live post. The angle-level heuristic runs before the model writes; this runs after, on
+    what would actually be published. Added 2026-09-13 after a crawl found 16 duplicate pairs
+    (same title, two slugs) competing against each other."""
+    import difflib
+    def norm(x: str) -> str:
+        return re.sub(r"[^a-z0-9 ]", " ", (x or "").lower())
+    out: list[str] = []
+    for p in manifest_posts():
+        ts = difflib.SequenceMatcher(None, norm(title), norm(p.get("title", ""))).ratio()
+        ss = difflib.SequenceMatcher(None, slug, p.get("slug", "")).ratio()
+        if ts >= 0.75 or ss >= 0.8:
+            out.append(f"near-duplicate of existing post /blog/{p.get('slug')} "
+                       f"(title similarity {ts:.2f}, slug similarity {ss:.2f})")
+    return out
+
+
 def pick_topic(today: dt.date) -> dict[str, str]:
     """Pick the next topic on a true rotation.
 
@@ -370,9 +389,10 @@ def pick_topic(today: dt.date) -> dict[str, str]:
                 continue
             return t
 
-    # Fallback 1: any angle not in the ledger, regardless of coverage heuristic.
+    # Fallback 1: any angle not in the ledger — but still never one the site already covers.
+    # (Before 2026-09-13 this fallback ignored coverage; 16 near-duplicate post pairs resulted.)
     for t in sorted(topics, key=angle_score):
-        if t["angle"] not in used_angles:
+        if t["angle"] not in used_angles and not angle_already_covered(t["angle"]):
             return t
 
     # Fallback 2: bank exhausted. Return the stalest category's first angle and
@@ -562,6 +582,7 @@ def main() -> int:
         guard.check_references(payload.get("references"), topic["category"])
         + guard.check_reviewer(payload.get("slug", ""), topic["category"], registry)
     )
+    problems += near_duplicate_of_existing(payload.get("slug", ""), payload.get("title", ""))
     if problems:
         print(f"[generate_daily_post] BLOCKED — {payload.get('slug','?')} "
               f"({topic['category']}) fails editorial policy:", file=sys.stderr)

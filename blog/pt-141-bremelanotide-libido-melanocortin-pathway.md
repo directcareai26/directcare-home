@@ -1,6 +1,6 @@
 # PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow
 
-> What PT-141 (bremelanotide) is, how the melanocortin pathway differs from PDE5 inhibitors, who it fits, and how the FDA-approved version for women compares to compounded protocols for men.
+> What PT-141 (bremelanotide) is, how the melanocortin pathway differs from PDE5 inhibitors, who it fits.
 
 Source: https://www.directcare.ai/blog/pt-141-bremelanotide-libido-melanocortin-pathway
 

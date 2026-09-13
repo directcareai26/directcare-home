@@ -1,6 +1,6 @@
 # HRT and Bone Density: How Estradiol Prevents Fractures
 
-> How estradiol protects bone density, why menopause accelerates loss, and how HRT reduces fracture risk decades later — with real numbers, not vague promises.
+> How estradiol protects bone density, why menopause accelerates loss, and how HRT reduces fracture risk decades later.
 
 Source: https://www.directcare.ai/blog/hrt-bone-density-estradiol-prevents-fractures
 

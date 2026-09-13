@@ -1,6 +1,6 @@
 # Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better
 
-> How microneedling with a dermaroller enhances topical minoxidil and finasteride absorption for hair regrowth. Protocol, needle depth, frequency, and the trial evidence behind it.
+> How microneedling with a dermaroller enhances topical minoxidil and finasteride absorption for hair regrowth.
 
 Source: https://www.directcare.ai/blog/microneedling-dermaroller-for-hair-regrowth-protocol
 

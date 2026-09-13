@@ -1,6 +1,6 @@
 # Estradiol delivery: patch, gel, pellet, or pill? How a clinician actually decides
 
-> Patch vs. gel vs. pellet vs. oral estradiol for HRT — how each delivery method differs on cardiovascular safety, dose stability, convenience, and cost. The clinician's decision framework.
+> Patch vs. gel vs. pellet vs. oral estradiol for HRT — how each delivery method differs on cardiovascular safety, dose stability, convenience, and cost.
 
 Source: https://www.directcare.ai/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill
 

@@ -1,6 +1,6 @@
 # Continuous glucose monitors (CGM) for non-diabetics: what the data actually shows in 2026
 
-> What continuous glucose monitors (CGM) like Stelo and Lingo actually show in non-diabetics, what 'normal' glucose variability looks like, and when the data is genuinely useful vs. just anxiety-producing.
+> What continuous glucose monitors (CGM) like Stelo and Lingo actually show in non-diabetics, what 'normal' glucose variability looks like.
 
 Source: https://www.directcare.ai/blog/continuous-glucose-monitor-cgm-for-non-diabetics
 

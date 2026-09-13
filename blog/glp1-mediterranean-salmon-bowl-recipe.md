@@ -1,6 +1,6 @@
 # The 38-gram-protein Mediterranean salmon bowl every GLP-1 patient should bookmark
 
-> Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s — built for the smaller appetite a GLP-1 leaves you with.
+> Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s.
 
 Source: https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe
 

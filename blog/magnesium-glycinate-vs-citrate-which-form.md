@@ -1,6 +1,6 @@
 # Magnesium glycinate vs. citrate: how to pick the right magnesium form
 
-> Magnesium glycinate vs. citrate compared by a clinician: how each form works, what your labs say, side effects, and how to pick for sleep, constipation, or repletion.
+> Magnesium glycinate vs. citrate compared by a clinician: how each form works, what your labs say, side effects, and how to pick for sleep, constipation.
 
 Source: https://www.directcare.ai/blog/magnesium-glycinate-vs-citrate-which-form
 

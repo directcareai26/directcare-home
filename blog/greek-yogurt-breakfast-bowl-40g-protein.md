@@ -1,6 +1,6 @@
 # The 40-gram-protein Greek yogurt breakfast bowl that finally holds you to lunch
 
-> Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey — the bowl that replaces a smoothie.
+> Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey.
 
 Source: https://www.directcare.ai/blog/greek-yogurt-breakfast-bowl-40g-protein
 

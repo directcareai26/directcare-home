@@ -1,6 +1,6 @@
 # Plant Protein in Perimenopause: Lentil, Tofu, Tempeh
 
-> A clinician-built plant protein rotation for perimenopause using lentils, tofu, and tempeh — with real gram counts, recipes, and variations you'll actually cook.
+> A clinician-built plant protein rotation for perimenopause using lentils, tofu, and tempeh — with real gram counts, recipes.
 
 Source: https://www.directcare.ai/blog/plant-protein-perimenopause-lentil-tofu-tempeh
 

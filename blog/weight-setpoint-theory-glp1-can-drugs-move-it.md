@@ -1,6 +1,6 @@
 # Weight setpoint theory and GLP-1s: can these drugs actually move it downward?
 
-> What weight setpoint theory says about why diets rebound, the published evidence that GLP-1 drugs may actually shift the setpoint downward, and what that means for long-term treatment strategy.
+> What weight setpoint theory says about why diets rebound, the published evidence that GLP-1 drugs may actually shift the setpoint downward.
 
 Source: https://www.directcare.ai/blog/weight-setpoint-theory-glp1-can-drugs-move-it
 

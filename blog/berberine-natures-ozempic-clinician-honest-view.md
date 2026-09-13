@@ -1,6 +1,6 @@
 # Berberine isn't 'nature's Ozempic' — but it isn't nothing, either. A clinician's honest view
 
-> What berberine actually does for blood glucose, weight, and metabolic health — and why the 'nature's Ozempic' framing misses the mechanism. The clinician's view on dosing, safety, and where it fits.
+> What berberine actually does for blood glucose, weight, and metabolic health — and why the 'nature's Ozempic' framing misses the mechanism.
 
 Source: https://www.directcare.ai/blog/berberine-natures-ozempic-clinician-honest-view
 

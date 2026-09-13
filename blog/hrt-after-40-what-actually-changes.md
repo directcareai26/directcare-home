@@ -1,6 +1,6 @@
 # HRT after 40: what actually changes when estradiol and progesterone come back online
 
-> Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks, body composition and libido shift at 3-6 months.
+> Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks.
 
 Source: https://www.directcare.ai/blog/hrt-after-40-what-actually-changes
 

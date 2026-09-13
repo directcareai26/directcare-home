@@ -549,6 +549,91 @@
       "source": "/womens-hair-loss-thankyou/",
       "destination": "/thankyou?p=hairw",
       "permanent": false
+    },
+    {
+      "source": "/blog/5-minute-mobility-warm-up-reduces-injury-risk",
+      "destination": "/blog/5-minute-mobility-warmup-reduce-injury-risk",
+      "permanent": true
+    },
+    {
+      "source": "/blog/apob-vs-ldl-cholesterol-test-cardiologists",
+      "destination": "/blog/apob-vs-ldl-cholesterol-cardiologists-ask",
+      "permanent": true
+    },
+    {
+      "source": "/blog/creatine-for-women-cognition-bone-health",
+      "destination": "/blog/creatine-for-women-cognition-bone-longevity",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dutasteride-vs-finasteride-aggressive-hair-loss",
+      "destination": "/blog/dutasteride-vs-finasteride-aggressive-dht-blockade",
+      "permanent": true
+    },
+    {
+      "source": "/blog/ed-cardiovascular-warning-signal-labs",
+      "destination": "/blog/ed-cardiovascular-warning-signs-labs",
+      "permanent": true
+    },
+    {
+      "source": "/blog/estradiol-on-trt-aromatase-inhibitor",
+      "destination": "/blog/estradiol-on-trt-aromatase-inhibitor-when-needed",
+      "permanent": true
+    },
+    {
+      "source": "/blog/estradiol-patches-vs-gels-vs-pellets",
+      "destination": "/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill",
+      "permanent": true
+    },
+    {
+      "source": "/blog/fiber-on-glp1-25-35g-daily-appetite-suppression",
+      "destination": "/blog/fiber-on-glp1-25-35g-daily-appetite",
+      "permanent": true
+    },
+    {
+      "source": "/blog/glp1-maintenance-dosing-after-weight-loss",
+      "destination": "/blog/glp1-maintenance-protocol-after-weight-loss",
+      "permanent": true
+    },
+    {
+      "source": "/blog/glp-1-maintenance-dosing-avoid-rebound",
+      "destination": "/blog/glp1-maintenance-protocol-after-weight-loss",
+      "permanent": true
+    },
+    {
+      "source": "/blog/glp1-and-thyroid-what-to-monitor-when-to-stop",
+      "destination": "/blog/glp1-thyroid-monitoring-when-to-stop",
+      "permanent": true
+    },
+    {
+      "source": "/blog/grip-strength-longevity-3-exercises",
+      "destination": "/blog/grip-strength-longevity-predictor-three-exercises",
+      "permanent": true
+    },
+    {
+      "source": "/blog/micronized-progesterone-vs-progestins-breast-brain",
+      "destination": "/blog/oral-micronized-progesterone-vs-progestins",
+      "permanent": true
+    },
+    {
+      "source": "/blog/plant-protein-perimenopause-lentils-tofu-tempeh",
+      "destination": "/blog/plant-protein-perimenopause-lentil-tofu-tempeh",
+      "permanent": true
+    },
+    {
+      "source": "/blog/rucking-cardio-strength-training-benefits",
+      "destination": "/blog/rucking-cardio-strength-training-guide",
+      "permanent": true
+    },
+    {
+      "source": "/blog/testosterone-in-womens-hrt-protocols",
+      "destination": "/blog/testosterone-for-women-hrt-protocols",
+      "permanent": true
+    },
+    {
+      "source": "/blog/zone-2-cardio-adults-over-40",
+      "destination": "/blog/zone-2-cardio-over-40-how-to-measure",
+      "permanent": true
     }
   ],
   "rewrites": [

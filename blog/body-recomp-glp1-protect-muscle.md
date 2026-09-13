@@ -1,6 +1,6 @@
 # Body recomp on GLP-1s: how to lose fat without losing muscle
 
-> Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week, and a 10-15% calorie deficit (not 30%).
+> Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week.
 
 Source: https://www.directcare.ai/blog/body-recomp-glp1-protect-muscle
 

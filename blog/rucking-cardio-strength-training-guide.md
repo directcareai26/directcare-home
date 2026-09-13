@@ -1,6 +1,6 @@
 # Rucking: The Cardio That Builds Strength at the Same Time
 
-> Rucking blends cardio and strength training in one low-impact session. Here's how to program weight, distance, and progression — tuned to your fitness level.
+> Rucking blends cardio and strength training in one low-impact session. Here's how to program weight, distance, and progression.
 
 Source: https://www.directcare.ai/blog/rucking-cardio-strength-training-guide
 

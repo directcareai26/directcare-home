@@ -1,6 +1,6 @@
 # Patient Bill of Rights | DirectCare AI
 
-> DirectCare AI Patient Bill of Rights. Your rights to respectful care, privacy, informed decisions, access to records, and the ability to refuse treatment within our telehealth platform.
+> DirectCare AI Patient Bill of Rights. Your rights to respectful care, privacy, informed decisions, access to records, and the ability to refuse treatment.
 
 Source: https://www.directcare.ai/bill-of-rights
 

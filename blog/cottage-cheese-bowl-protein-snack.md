@@ -1,6 +1,6 @@
 # Cottage cheese bowls: the 30g-protein snack everyone forgot about
 
-> Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds — the snack that beats a protein bar nutritionally.
+> Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds.
 
 Source: https://www.directcare.ai/blog/cottage-cheese-bowl-protein-snack
 

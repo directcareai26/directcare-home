@@ -1,6 +1,6 @@
 # Vaginal estradiol for GSM: the most under-prescribed protocol in women's health
 
-> Why vaginal estradiol for genitourinary syndrome of menopause (GSM) is safer, more effective, and more under-prescribed than any other HRT protocol. The clinical case.
+> Why vaginal estradiol for genitourinary syndrome of menopause (GSM) is safer, more effective, and more under-prescribed than any other HRT protocol.
 
 Source: https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt
 

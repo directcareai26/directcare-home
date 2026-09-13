@@ -75,6 +75,10 @@ jobs:
       # The blog index builds its grid from posts.json at request time, so a new
       # post changes what readers see without changing blog/index.html. Its
       # dateModified is taken from the newest post, and only this step moves it.
+      - name: Rebuild blog index (all post cards in raw HTML)
+        if: steps.guard.outputs.already_posted == 'false'
+        run: python3 scripts/build_blog_index.py
+
       - name: Refresh page schema (dateModified)
         if: steps.guard.outputs.already_posted == 'false'
         run: python3 scripts/agent-files/build_page_schema.py

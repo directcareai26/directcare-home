@@ -1,6 +1,6 @@
 # TRT and sleep apnea: the bidirectional relationship most clinics miss
 
-> Why sleep apnea both causes low testosterone and is worsened by TRT in untreated patients, the screening questions every TRT consult should include, and the clinical sequence that resolves both.
+> Why sleep apnea both causes low testosterone and is worsened by TRT in untreated patients, the screening questions every TRT consult should include.
 
 Source: https://www.directcare.ai/blog/trt-and-sleep-apnea-the-bidirectional-relationship
 

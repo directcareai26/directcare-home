@@ -1,6 +1,6 @@
 # The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein
 
-> Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk. Blends in 3 minutes from a Sunday-night freezer prep.
+> Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk.
 
 Source: https://www.directcare.ai/blog/40g-protein-smoothie-three-minute-breakfast
 

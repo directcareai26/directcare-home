@@ -1,6 +1,6 @@
 # GLP-1s and Thyroid: What to Monitor and When to Stop
 
-> GLP-1s and thyroid health: which labs to monitor, what the medullary thyroid cancer warning really means, and when semaglutide or tirzepatide should be stopped.
+> GLP-1s and thyroid health: which labs to monitor, what the medullary thyroid cancer warning means, and when semaglutide or tirzepatide should be stopped.
 
 Source: https://www.directcare.ai/blog/glp1-thyroid-monitoring-when-to-stop
 

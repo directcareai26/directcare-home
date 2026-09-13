@@ -17,10 +17,10 @@
     "",
     "A post with no reviewer renders NO reviewer byline. That is the correct",
     "behaviour and the default. Never add an entry to 'reviews' for a review",
-    "that did not actually happen — the byline is a factual claim about a named",
+    "that did not actually happen \u2014 the byline is a factual claim about a named",
     "person on a specific date.",
     "",
-    "2026-09-13 policy change (DaChé, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date."
+    "2026-09-13 policy change (DaCh\u00e9, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date."
   ],
   "reviewers": {
     "tim-pepin": {
@@ -41,7 +41,7 @@
         "TRT",
         "Weight Loss"
       ],
-      "_note": "DaChé (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
+      "_note": "DaCh\u00e9 (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
       "role": "Clinical Reviewer (non-prescribing)"
     }
   },
@@ -73,21 +73,13 @@
     "Fitness": {
       "requiresPrescriber": false
     },
-    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaChé's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
+    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaCh\u00e9's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
   },
   "reviews": {
     "_comment": "slug -> { reviewer: <key>, date: YYYY-MM-DD }. Empty because no review has been recorded yet. Add an entry only when a named reviewer has actually read that post.",
     "sildenafil-vs-tadalafil-how-to-choose": {
       "reviewer": "tim-pepin",
       "date": "2026-09-12"
-    },
-    "fiber-on-glp1-25-35g-daily-appetite-suppression": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-11"
-    },
-    "5-minute-mobility-warm-up-reduces-injury-risk": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-10"
     },
     "trt-and-fertility-preserve-sperm-production": {
       "reviewer": "tim-pepin",
@@ -109,10 +101,6 @@
       "reviewer": "tim-pepin",
       "date": "2026-09-05"
     },
-    "estradiol-patches-vs-gels-vs-pellets": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-04"
-    },
     "20-minute-salmon-asparagus-omega-3-dinner": {
       "reviewer": "tim-pepin",
       "date": "2026-09-02"
@@ -121,17 +109,9 @@
       "reviewer": "tim-pepin",
       "date": "2026-09-01"
     },
-    "glp-1-maintenance-dosing-avoid-rebound": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-30"
-    },
     "oral-micronized-progesterone-vs-progestins": {
       "reviewer": "tim-pepin",
       "date": "2026-08-26"
-    },
-    "plant-protein-perimenopause-lentils-tofu-tempeh": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-24"
     },
     "two-lift-minimum-busy-week-strength-template": {
       "reviewer": "tim-pepin",
@@ -149,25 +129,9 @@
       "reviewer": "tim-pepin",
       "date": "2026-08-20"
     },
-    "apob-vs-ldl-cholesterol-test-cardiologists": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-19"
-    },
     "topical-vs-oral-finasteride-side-effects": {
       "reviewer": "tim-pepin",
       "date": "2026-08-18"
-    },
-    "testosterone-in-womens-hrt-protocols": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-17"
-    },
-    "ed-cardiovascular-warning-signal-labs": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-16"
-    },
-    "rucking-cardio-strength-training-benefits": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-14"
     },
     "hematocrit-on-trt-blood-donation-frequency": {
       "reviewer": "tim-pepin",
@@ -181,29 +145,9 @@
       "reviewer": "tim-pepin",
       "date": "2026-08-10"
     },
-    "dutasteride-vs-finasteride-aggressive-hair-loss": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-09"
-    },
     "protein-fiber-breakfast-template-busy-mornings": {
       "reviewer": "tim-pepin",
       "date": "2026-08-06"
-    },
-    "zone-2-cardio-adults-over-40": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-05"
-    },
-    "estradiol-on-trt-aromatase-inhibitor": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-04"
-    },
-    "glp1-and-thyroid-what-to-monitor-when-to-stop": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-03"
-    },
-    "creatine-for-women-cognition-bone-health": {
-      "reviewer": "tim-pepin",
-      "date": "2026-08-02"
     },
     "dutasteride-vs-finasteride-aggressive-dht-blockade": {
       "reviewer": "tim-pepin",
@@ -212,14 +156,6 @@
     "ed-cardiovascular-warning-signs-labs": {
       "reviewer": "tim-pepin",
       "date": "2026-07-29"
-    },
-    "grip-strength-longevity-3-exercises": {
-      "reviewer": "tim-pepin",
-      "date": "2026-07-27"
-    },
-    "glp1-maintenance-dosing-after-weight-loss": {
-      "reviewer": "tim-pepin",
-      "date": "2026-07-25"
     },
     "apob-vs-ldl-cholesterol-cardiologists-ask": {
       "reviewer": "tim-pepin",
@@ -524,10 +460,6 @@
     "greek-yogurt-breakfast-bowl-40g-protein": {
       "reviewer": "tim-pepin",
       "date": "2026-01-05"
-    },
-    "micronized-progesterone-vs-progestins-breast-brain": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
     }
   }
 }

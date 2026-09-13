@@ -1,6 +1,6 @@
 # Topical finasteride vs. oral: how to get scalp results with fewer side effects
 
-> Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure — and the side effects (libido, mood) it reduces.
+> Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure.
 
 Source: https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair
 

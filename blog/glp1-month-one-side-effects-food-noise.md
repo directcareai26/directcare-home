@@ -1,6 +1,6 @@
 # What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp
 
-> Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3, energy returns by week 4.
+> Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3.
 
 Source: https://www.directcare.ai/blog/glp1-month-one-side-effects-food-noise
 

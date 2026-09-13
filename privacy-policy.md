@@ -1,6 +1,6 @@
 # Privacy Policy | DirectCare AI
 
-> DirectCare AI Privacy Policy. How we collect, use, and disclose information about you when you use our telehealth platform, AI interactions, and remote patient monitoring services.
+> Privacy Policy. How we collect, use, and disclose information when you use our telehealth platform, AI interactions, and remote patient monitoring.
 
 Source: https://www.directcare.ai/privacy-policy
 

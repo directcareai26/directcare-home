@@ -1,6 +1,6 @@
 # Fiber: the nutrient most weight-loss patients underdose (and the fix)
 
-> Explains why most adults eat 12-15g fiber when the target is 30-40g — and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.
+> Explains why most adults eat 12-15g fiber when the target is 30-40g — and which foods (legumes, oats, chia, berries) move the needle fastest.
 
 Source: https://www.directcare.ai/blog/fiber-target-most-patients-underdose
 

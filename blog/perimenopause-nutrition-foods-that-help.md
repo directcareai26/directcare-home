@@ -1,6 +1,6 @@
 # What to eat during perimenopause: the 5 food categories that move symptoms
 
-> Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3), cruciferous vegetables (DIM).
+> Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3).
 
 Source: https://www.directcare.ai/blog/perimenopause-nutrition-foods-that-help
 

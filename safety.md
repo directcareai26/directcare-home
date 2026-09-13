@@ -1,6 +1,6 @@
 # Safety | DirectCare AI
 
-> Important safety information for GLP-1 medications (Zepbound, Ozempic, compounded semaglutide) and other DirectCare AI prescriptions. Warnings, side effects, and when to call your provider.
+> Important safety information for GLP-1 medications and other DirectCare AI prescriptions. Warnings, side effects, and when to call your provider.
 
 Source: https://www.directcare.ai/safety
 

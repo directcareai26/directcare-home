@@ -1,6 +1,6 @@
 # Compounded vs. branded GLP-1: the actual difference, and when one beats the other
 
-> What compounded semaglutide and tirzepatide actually are, how they compare to Wegovy and Zepbound, the regulatory situation in 2026, and when each route makes sense.
+> What compounded semaglutide and tirzepatide actually are, how they compare to Wegovy and Zepbound, the regulatory situation in 2026.
 
 Source: https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference
 

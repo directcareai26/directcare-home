@@ -1,6 +1,6 @@
 # Sildenafil vs. tadalafil: what each PDE5 inhibitor actually does differently
 
-> Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours — daily dosing changes the math.
+> Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours.
 
 Source: https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison
 

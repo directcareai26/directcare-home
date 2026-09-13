@@ -1,6 +1,6 @@
 # Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it
 
-> What heart rate variability (HRV) actually measures, why it matters more than resting heart rate for recovery, and the four daily levers (sleep, alcohol, training, breath) that move it most.
+> What heart rate variability (HRV) actually measures, why it matters more than resting heart rate for recovery, and the four daily levers that move it most.
 
 Source: https://www.directcare.ai/blog/hrv-heart-rate-variability-recovery-tracking
 

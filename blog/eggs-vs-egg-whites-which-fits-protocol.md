@@ -1,6 +1,6 @@
 # Eggs vs. egg whites: which one actually fits your protocol | DirectCare AI Blog
 
-> Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you
+> Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you're hitting 1g/lb protein on a calorie ceiling.
 
 Source: https://www.directcare.ai/blog/eggs-vs-egg-whites-which-fits-protocol
 

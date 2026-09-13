@@ -131,15 +131,27 @@ def sitemap_pages():
 
 
 def meta(doc, name):
-    m = re.search(r'<meta[^>]+name=["\']%s["\'][^>]*content=["\']([^"\']*)' % name, doc, re.I)
-    return _html.unescape(m.group(1)).strip() if m else ""
+    m = re.search(r'<meta[^>]+name=["\']%s["\'][^>]*content=(["\'])(.*?)\1' % name, doc, re.I)
+    return _html.unescape(m.group(2)).strip() if m else ""
 
+
+# Pages whose subject is a treatment, condition or symptom get schema.org/MedicalWebPage
+# (a WebPage subtype AI answer engines key on). Legal, about, faq and blog index stay WebPage.
+_MEDICAL_PREFIXES = (
+    "/weight-loss", "/mens-weight-loss", "/womens-weight-loss", "/surge-max", "/erectile-dysfunction",
+    "/testosterone-replacement-therapy", "/hormone-replacement-therapy", "/mens-hair-loss", "/womans-hair-loss",
+    "/blood-test", "/supplements", "/chronic-care", "/peptides", "/perimenopause", "/hrt-moms",
+    "/mens-health", "/womens-health", "/trt-executives", "/trt-firefighters", "/trt-former-athletes", "/trt-police-officers",
+)
+def _medical(path: str) -> bool:
+    p = "/" + path.strip("/")
+    return any(p == x or p.startswith(x + "/") for x in _MEDICAL_PREFIXES)
 
 def block_for(path, doc, date):
     title = re.search(r"<title[^>]*>(.*?)</title>", doc, re.S | re.I)
     node = {
         "@context": "https://schema.org",
-        "@type": "WebPage",
+        "@type": "MedicalWebPage" if _medical(path) else "WebPage",
         "@id": f"{BASE}{path}#webpage",
         "url": f"{BASE}{path}",
         "name": _html.unescape(_WS.sub(" ", title.group(1)).strip()) if title else path,

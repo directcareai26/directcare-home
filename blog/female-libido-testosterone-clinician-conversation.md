@@ -1,6 +1,6 @@
 # Female libido and testosterone: the conversation most clinicians skip | DirectCare AI Blog
 
-> Explains why women
+> Explains why women's testosterone crashes in the 40s and what to test: total testosterone, free testosterone, SHBG — and what a 0.5-1mg/day topical testosterone protocol does.
 
 Source: https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation
 

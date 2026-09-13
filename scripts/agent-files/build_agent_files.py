@@ -108,7 +108,7 @@ def _text(fragment: str) -> str:
 
 def _meta(doc: str, name: str) -> str:
     m = re.search(
-        r'<meta[^>]+(?:name|property)=["\']%s["\'][^>]*content=["\']([^"\']*)' % re.escape(name),
+        r'<meta[^>]+(?:name|property)=["\']%s["\'][^>]*content=(["\'])(.*?)\1' % re.escape(name),
         doc,
         re.I,
     )
@@ -119,7 +119,7 @@ def _meta(doc: str, name: str) -> str:
             doc,
             re.I,
         )
-    return _html.unescape(m.group(1)).strip() if m else ""
+    return _html.unescape(m.group(2)).strip() if m else ""
 
 
 def _body(doc: str) -> str:

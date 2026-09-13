@@ -1,4 +1,4 @@
-# DirectCare AI | GLP-1, HRT, TRT & Hair Loss — US Doctors Online
+# DirectCare AI | GLP-1, HRT, TRT & Hair Loss | US Doctors
 
 > Personalized telehealth for men & women. GLP-1, HRT, TRT, hair regrowth, sexual health & supplements. US-licensed doctors. No insurance needed.
 

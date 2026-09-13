@@ -1,4 +1,4 @@
-# Women's Health | HRT, Weight Loss, Hair Regrowth & Labs | DirectCare AI
+# Women's Health: HRT, Weight Loss, Hair, Labs | DirectCare AI
 
 > Personalized women's health from real clinicians. HRT, GLP-1 weight loss, hair regrowth, blood labs, and physician-formulated supplements.
 

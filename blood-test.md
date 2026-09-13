@@ -1,6 +1,6 @@
 # Blood Labs & Biomarker Testing | DirectCare AI
 
-> At-home blood labs and biomarker panels reviewed by US-licensed clinicians. Get hormones, metabolic health, inflammation, micronutrients, and full-body biomarkers tested. Plus a personalized, clinician-built plan and supplement protocol.
+> Blood labs reviewed by US-licensed clinicians: hormones, metabolic health, inflammation and micronutrients, plus a clinician-built supplement protocol.
 
 Source: https://www.directcare.ai/blood-test
 

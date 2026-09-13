@@ -1,4 +1,4 @@
-# Men's Health | TRT, Sexual Health, Hair Regrowth & Labs | DirectCare AI
+# Men's Health: TRT, Sexual Health, Hair, Labs | DirectCare AI
 
 > Personalized men's health from DirectCare AI. TRT, sexual health, hair loss, blood labs & supplements. Built around your bloodwork, shipped to your door.
 

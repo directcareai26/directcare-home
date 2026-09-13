@@ -1,4 +1,4 @@
-# Women's Hair Loss: Minoxidil & Spironolactone | DirectCare AI
+# Women's Hair Loss: Minoxidil, Spironolactone | DirectCare AI
 
 > Personalized hair regrowth for women — clinically dosed minoxidil, spironolactone, dutasteride and biotin, prescribed online by US-licensed clinicians.
 

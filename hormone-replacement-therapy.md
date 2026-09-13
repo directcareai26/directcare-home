@@ -1,6 +1,6 @@
 # Hormone Replacement Therapy (HRT) for Women, DirectCare AI
 
-> Menopause and perimenopause care online. Get personalized treatment for hot flashes, poor sleep, low energy, brain fog, mood changes, and low libido, from a licensed clinician, delivered to your door if appropriate.
+> Menopause and perimenopause care online. Personalized treatment for hot flashes, brain fog, mood changes and low libido from a licensed clinician.
 
 Source: https://www.directcare.ai/hormone-replacement-therapy
 

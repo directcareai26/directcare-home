@@ -1,4 +1,4 @@
-# Perimenopause Treatment, Feel Like Yourself Again, DirectCare AI
+# Perimenopause Treatment Online | DirectCare AI
 
 > Perimenopause treatment. Brain fog, exhaustion, mood swings, stubborn weight gain, sleepless nights, and low libido are not in your head — they are hormonal. Personalized, clinician-guided hormone care with labs, treatment, and ongoing support. See if you are a candidate in 2 minutes.
 

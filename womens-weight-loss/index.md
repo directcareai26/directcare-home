@@ -1,4 +1,4 @@
-# Weight Loss for Women — Compounded Tirzepatide | DirectCare AI
+# Weight Loss for Women: Compounded Tirzepatide | DirectCare AI
 
 > Compounded tirzepatide for women, prescribed online by US-licensed clinicians with a care coach who understands hormonal weight gain. From $269/mo.
 

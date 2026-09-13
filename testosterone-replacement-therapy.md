@@ -1,6 +1,6 @@
-# Testosterone Replacement Therapy (TRT) for Men, DirectCare AI
+# TRT for Men: Testosterone Replacement Therapy | DirectCare AI
 
-> TRT online with US-licensed clinicians. Personalized testosterone protocols, injectable, oral, and natural-pathway (enclomiphene), labs ordered, prescription shipped to your door. See if TRT is right for you in 2 minutes.
+> TRT online with US-licensed clinicians. Personalized testosterone protocols: injectable, oral, and natural-pathway (enclomiphene), with labs ordered.
 
 Source: https://www.directcare.ai/testosterone-replacement-therapy
 

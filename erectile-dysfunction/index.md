@@ -1,6 +1,6 @@
-# Erectile Dysfunction Treatment Online — 3 Prescription Formulas | DirectCare AI
+# Erectile Dysfunction Treatment Online | DirectCare AI
 
-> Three clinician-prescribed erectile dysfunction formulas: SURGE MAX 4-in-1 on demand, Go Long for staying power, and Daily Boost for everyday readiness. Online evaluation, US-licensed clinicians, discreet shipping. No charge unless prescribed.
+> Three clinician-prescribed erectile dysfunction formulas: SURGE MAX 4-in-1 on demand, Go Long, and Daily Boost. US-licensed clinicians, discreet shipping.
 
 Source: https://www.directcare.ai/erectile-dysfunction
 

@@ -47,7 +47,7 @@ const RESOURCES = {
 
 const DISCLAIMER =
   'Informational only, not medical advice. DirectCare AI serves people in the United States. ' +
-  'Every protocol is reviewed by a US-licensed clinician and dosed against the person\'s own bloodwork. ' +
+  'Every protocol is reviewed by a US-licensed clinician, who decides whether treatment is appropriate. Programs that use bloodwork dose against the person\'s own labs. ' +
   'Compounded medications are not FDA-approved as finished products; their active ingredients are individually FDA-approved. ' +
   'If this is an emergency, call 911.';
 
@@ -140,7 +140,7 @@ function buildReply(text, catalog) {
     lines.push(`  ${p.url}`);
   }
   lines.push('');
-  lines.push('How to start: open the program page and complete the online intake. A US-licensed clinician reviews it before anything is prescribed.');
+  lines.push('How to start: open the program page and complete the online intake. A US-licensed clinician reviews it and decides whether any treatment is appropriate.');
   lines.push(`Patient portal: ${PORTAL}`);
   if (resources || all) {
     lines.push('');
@@ -159,7 +159,7 @@ function buildReply(text, catalog) {
       agent: AGENT_NAME,
       programs: matched,
       resources: RESOURCES,
-      how_to_start: 'Open the program page and complete the online intake; a US-licensed clinician reviews it.',
+      how_to_start: 'Open the program page and complete the online intake; a US-licensed clinician reviews it and decides whether any treatment is appropriate.',
       disclaimer: DISCLAIMER,
       catalog_source: catalog.source,
     },

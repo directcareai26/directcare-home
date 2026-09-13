@@ -22,6 +22,12 @@ ok "running from the canonical checkout"
 STRAYS=$(find "$HOME" /private/tmp -name project.json -path '*/.vercel/*' \
           -not -path "$CANON/*" -not -path '*/node_modules/*' 2>/dev/null \
           | xargs grep -l '"projectName":"directcare-home"' 2>/dev/null || true)
+# A session scratchpad (vercel pull is run there to fetch env files) can never be a legitimate
+# deploy source. Delete such links instead of refusing; anything else still refuses. 2026-09-12.
+for s in $STRAYS; do case "$s" in /private/tmp/claude-*/*/scratchpad/*) rm -rf "$(dirname "$s")"; echo "  ${YEL}removed${OFF} throwaway link $s";; esac; done
+STRAYS=$(find "$HOME" /private/tmp -name project.json -path '*/.vercel/*' \
+          -not -path "$CANON/*" -not -path '*/node_modules/*' 2>/dev/null \
+          | xargs grep -l '"projectName":"directcare-home"' 2>/dev/null || true)
 [ -z "$STRAYS" ] || die "another checkout can deploy this project:
 $STRAYS
 Delete its .vercel directory before deploying."
@@ -31,10 +37,15 @@ ok "no stray deployable copies"
 BRANCH=$(git branch --show-current)
 [ "$BRANCH" = "main" ] || die "on '$BRANCH'. Production deploys from main only."
 git fetch origin --quiet
-BEHIND=$(git rev-list --count main..origin/main)
-[ "$BEHIND" = "0" ] || die "main is $BEHIND commits behind origin/main. Pull first."
 [ -z "$(git status --porcelain --untracked-files=no)" ] \
   || die "uncommitted changes. Commit or stash them — deploys ship committed state only."
+BEHIND=$(git rev-list --count main..origin/main)
+AHEAD=$(git rev-list --count origin/main..main)
+if [ "$BEHIND" != "0" ] && [ "$AHEAD" = "0" ]; then
+  # Only origin moved (the daily blog Action commits every day). Nothing local to lose: catch up.
+  git pull --ff-only --quiet origin main && ok "fast-forwarded main $BEHIND commit(s) to origin" && BEHIND=0
+fi
+[ "$BEHIND" = "0" ] || die "main is $BEHIND behind origin/main and carries $AHEAD local commit(s). Run: git pull --rebase origin main"
 ok "on main, level with origin, tree clean"
 
 # 4. the tree must actually contain the site --------------------------------
@@ -56,7 +67,12 @@ trap 'rm -rf "$STAGE"' EXIT
 git archive HEAD | tar -x -C "$STAGE"
 cp -r .vercel "$STAGE/.vercel"
 echo "  deploying $(git rev-parse --short HEAD) — $(find "$STAGE" -type f -not -path '*/.vercel/*' | wc -l | tr -d ' ') files"
-( cd "$STAGE" && vercel deploy --prod --yes )
+attempt=1
+until ( cd "$STAGE" && vercel deploy --prod --yes ); do
+  [ "$attempt" -ge 3 ] && die "vercel deploy failed $attempt times (see output above)"
+  echo "  ${YEL}retry${OFF} attempt $attempt failed — usually a transient TLS 'bad record mac' during upload; retrying in 15s"
+  sleep 15; attempt=$((attempt+1))
+done
 
 # 6. verify what actually went live -----------------------------------------
 echo "  verifying…"; sleep 6

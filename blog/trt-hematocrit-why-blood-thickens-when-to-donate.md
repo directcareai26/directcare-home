@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  TRT
 
  June 23, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-06-23
 
 ## TRT and hematocrit: why your blood thickens on testosterone, and when to donate
 

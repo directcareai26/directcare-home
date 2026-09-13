@@ -147,6 +147,15 @@ def _medical(path: str) -> bool:
     p = "/" + path.strip("/")
     return any(p == x or p.startswith(x + "/") for x in _MEDICAL_PREFIXES)
 
+def _posting_date(f) -> str:
+    """Date the file was first committed (its posting date), YYYY-MM-DD, or ''."""
+    try:
+        out = subprocess.run(["git", "log", "--diff-filter=A", "--follow", "--format=%as", "--", str(f)],
+                             capture_output=True, text=True, cwd=ROOT).stdout.split()
+        return out[-1] if out else ""
+    except Exception:
+        return ""
+
 def block_for(path, doc, date):
     title = re.search(r"<title[^>]*>(.*?)</title>", doc, re.S | re.I)
     node = {
@@ -167,6 +176,22 @@ def block_for(path, doc, date):
         # WebSite node an @id and this is worth adding back.
         "publisher": {"@id": f"{BASE}/#org"},
     }
+    if _medical(path):
+        # Clinical reviewer for every program page: DaChé (COO), 2026-09-13 — Dr. Tim Pepin is
+        # the clinical reviewer, not the prescriber, and confirmed he has reviewed all pages.
+        # Review date = the page's posting date (first commit that added the file).
+        node["reviewedBy"] = {
+            "@type": "Person", "@id": f"{BASE}/#dr-tim-pepin", "name": "Dr. Tim Pepin",
+            "honorificPrefix": "Dr.", "honorificSuffix": "D.C.", "jobTitle": "Clinical Advisor",
+            "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "Doctor of Chiropractic", "credentialCategory": "degree"},
+            "worksFor": {"@id": f"{BASE}/#org"},
+        }
+        rel = path.strip("/")
+        cands = [ROOT / "index.html"] if not rel else [ROOT / f"{rel}.html", ROOT / rel / "index.html"]
+        src = next((c for c in cands if c.is_file()), None)
+        posted = _posting_date(src) if src else ""
+        if posted:
+            node["lastReviewed"] = posted
     desc = meta(doc, "description")
     if desc:
         node["description"] = desc

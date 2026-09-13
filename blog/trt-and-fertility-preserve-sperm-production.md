@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  TRT
 
  September 9, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-09
 
 ## TRT and Fertility: Preserve Sperm Production on Testosterone
 

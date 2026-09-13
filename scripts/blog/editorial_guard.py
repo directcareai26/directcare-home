@@ -194,7 +194,7 @@ def byline_html(slug: str, reg: dict) -> str:
     if not who:
         return ""
     return (
-        '<span class="dot"></span><span class="reviewed">Medically reviewed by '
+        '<span class="dot"></span><span class="reviewed">Clinically reviewed by '
         f'<a href="{who["url"]}">{who["name"]}, {who["credential"]}</a> '
         f'on <time datetime="{entry["date"]}">{entry["date"]}</time></span>'
     )
@@ -212,6 +212,7 @@ def reviewer_schema(slug: str, reg: dict):
             "@type": "Person",
             "name": who["name"],
             "honorificSuffix": who["credential"],
+            "jobTitle": who.get("title", "Clinical Advisor"),
             "url": who["url"],
             "hasCredential": {
                 "@type": "EducationalOccupationalCredential",

@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Weight Loss
 
  August 30, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-08-30
 
 ## GLP-1 Maintenance Dosing: staying off without rebounding
 

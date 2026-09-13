@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Blood Labs
 
  August 19, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-08-19
 
 ## ApoB vs. LDL: the number that matters more
 

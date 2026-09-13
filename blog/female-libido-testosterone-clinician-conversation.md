@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Sexual Health
 
  May 6, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-05-06
 
 ## Female libido and testosterone: the conversation most clinicians skip
 

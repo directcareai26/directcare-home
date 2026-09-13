@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Nutrition
 
  September 2, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-02
 
 ## 20-Minute Salmon and Asparagus: Hit Your Omega-3 Target
 

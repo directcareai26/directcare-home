@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Nutrition
 
  May 30, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-05-30
 
 ## The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy
 

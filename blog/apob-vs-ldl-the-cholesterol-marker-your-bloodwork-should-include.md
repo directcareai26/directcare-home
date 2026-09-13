@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Blood Labs
 
  June 3, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-06-03
 
 ## ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)
 

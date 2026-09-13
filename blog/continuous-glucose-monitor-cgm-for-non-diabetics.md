@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Blood Labs
 
  June 11, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-06-11
 
 ## Continuous glucose monitors (CGM) for non-diabetics: what the data actually shows in 2026
 

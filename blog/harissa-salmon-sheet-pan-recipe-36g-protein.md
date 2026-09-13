@@ -11,6 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Nutrition
 
  June 6, 2026
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-06-06
 
 ## Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan
 

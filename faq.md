@@ -63,7 +63,9 @@ Help Center
  Why we're cash-pay, what programs cost, and how HSA/FSA works.
 
  Does DirectCare AI take insurance?
- No — DirectCare AI is cash-pay and does not require insurance or referrals. Many patients find the total monthly cost lower than the copays and lab fees they would pay going through insurance.
+ **Direct-to-patient programs** — weight loss, hormones, sexual health, hair regrowth, supplements and labs: No — DirectCare AI is cash-pay and does not require insurance or referrals. Many patients find the total monthly cost lower than the copays and lab fees they would pay going through insurance.
+
+ **Remote Patient Monitoring (RPM) & Chronic Care Management (CCM):** We accept most major insurance plans, including Medicare. After you fill out the form, our team verifies your benefits and walks you through any out-of-pocket costs before anything ships. Most Medicare patients pay $0 out of pocket.
 
  How much do programs cost?
  Pricing depends on the program and the protocol your clinician prescribes. The eligibility check and clinician review are always free — you only pay if you qualify and decide to start. Current pricing is shown on each program's page before you commit.

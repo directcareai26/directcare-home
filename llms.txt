@@ -19,6 +19,14 @@ DirectCare AI partners with US-licensed compounding pharmacies and clinical labs
 - [Blood Labs](https://www.directcare.ai/blood-test): Clinician-ordered 80+ biomarker panel with a plain-English roadmap, $196.
 - [Supplements](https://www.directcare.ai/supplements): Physician-formulated supplement protocols matched to bloodwork.
 
+- [Peptides](https://www.directcare.ai/peptides): Clinician-prescribed peptide protocols.
+- [Chronic Care Management & Remote Patient Monitoring](https://www.directcare.ai/chronic-care): Connected glucose, blood pressure and weight monitoring with a care team, for diabetes, hypertension and related conditions.
+
+## Payment
+
+- Direct-to-patient programs (weight loss, hormones, sexual health, hair regrowth, supplements, labs, peptides) are cash-pay: DirectCare AI does not accept or require insurance or referrals for them.
+- Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) are the only programs billed to insurance: most major plans including Medicare are accepted, benefits are verified before anything ships, and most Medicare patients pay $0 out of pocket.
+
 ## The Blog (editorial)
 
 - [The DirectCare AI Blog](https://www.directcare.ai/blog): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.

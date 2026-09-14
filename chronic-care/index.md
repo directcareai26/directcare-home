@@ -1,6 +1,6 @@
 # Remote Patient Monitoring & Chronic Care | DirectCare AI
 
-> Continuous glucose, blood pressure and weight monitoring with a real care team. RPM and CCM for diabetes, hypertension and more — covered by Medicare.
+> Continuous glucose, blood pressure and weight monitoring with a real care team. RPM and CCM for diabetes, hypertension and more — these programs are covered by Medicare.
 
 Source: https://www.directcare.ai/chronic-care
 
@@ -9,7 +9,7 @@ Remote Patient Monitoring · Chronic Care Management
 ## Remote patient monitoring & chronic care management,
  with real care.
 
- Continuous glucose monitoring, blood pressure, and weight tracking paired with a **real care team**. We help your provider spot patterns, catch changes early, and stay on track between appointments — covered by Medicare and most major insurance.
+ Continuous glucose monitoring, blood pressure, and weight tracking paired with a **real care team**. We help your provider spot patterns, catch changes early, and stay on track between appointments — this RPM and CCM program is covered by Medicare and most major insurance.
 
  Get my free Health Coach call →
  ~ 30 sec · Free · No commitment
@@ -187,7 +187,7 @@ Remote Patient Monitoring · Chronic Care Management
  Remote Patient Monitoring (RPM) is the device side — connected glucose monitors, blood pressure cuffs, and scales that send daily readings to your care team. Chronic Care Management (CCM) is the human side — monthly 1-on-1 calls with a coach who reviews your numbers, your medications, and your overall plan. Most patients are enrolled in both.
 
  Is this covered by insurance?
- We accept most major insurance plans, including Medicare. After you fill out the form, our team verifies your benefits and walks you through any out-of-pocket costs before anything ships. Most Medicare patients pay $0 out of pocket.
+ For this Remote Patient Monitoring and Chronic Care Management program, we accept most major insurance plans, including Medicare. After you fill out the form, our team verifies your benefits and walks you through any out-of-pocket costs before anything ships. Most Medicare patients pay $0 out of pocket.
 
  Which conditions does the program cover?
  Diabetes (Type 1 & Type 2), hypertension, obesity, congestive heart failure, COPD, asthma, kidney disease, and more. If you have two or more chronic conditions expected to last at least 12 months, you likely qualify.

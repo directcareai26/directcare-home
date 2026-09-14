@@ -20020,7 +20020,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Rule 4: Sequence: protein → fiber → carbs.
 
- There's good evidence , [highlighted by the Cleveland Clinic](https://health.clevelandclinic.org/how-to-lower-blood-sugar) and several controlled studies. That eating protein and fiber before simple carbs at the same meal flattens the post-meal glucose curve. On a GLP-1, where insulin sensitivity is one of the things the drug is trying to improve, food sequencing is a small lever that consistently helps.
+ There’s good evidence, [including a 2015 Diabetes Care study](https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745/) and several controlled studies, that eating protein and fiber before simple carbs at the same meal flattens the post-meal glucose curve. On a GLP-1, where insulin sensitivity is one of the things the drug is trying to improve, food sequencing is a small lever that consistently helps.
 
  In practice, this means: chicken before rice. Salad before pasta. Eggs before toast. You'll find that you fill up partway into the protein and fiber anyway, which naturally limits the simple-carb portion to a side note rather than the main event.
 
@@ -20039,7 +20039,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  We published a recipe today that hits all four rules in a single bowl: [the Mediterranean salmon bowl](https://www.directcare.ai/blog/glp1-mediterranean-salmon-bowl-recipe). 38 g of protein, 10 g of fiber, 1,500 mg of omega-3, and a built-in protein-first sequence. If you're looking for a default meal to repeat on the busiest days, that's a strong candidate.
 
  The best GLP-1 nutrition plan isn't restrictive. It's additive. Add the protein. Add the fiber. Add the water. The drug already removed the rest.
- Sources: [International Society of Sports Nutrition](https://pubmed.ncbi.nlm.nih.gov/28642676/) protein position stand; [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) fiber and nutrition guidance; [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/) nutrition library; [Cleveland Clinic](https://health.clevelandclinic.org/how-to-lower-blood-sugar) on food sequencing; [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/list-all/) factsheets.
+ Sources: [International Society of Sports Nutrition](https://pubmed.ncbi.nlm.nih.gov/28642676/) protein position stand; [Harvard T.H. Chan School of Public Health](https://nutritionsource.hsph.harvard.edu/) fiber and nutrition guidance; [Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/nutrition-and-healthy-eating/) nutrition library; [Shukla et al., Diabetes Care 2015](https://pmc.ncbi.nlm.nih.gov/articles/PMC4876745/) on food sequencing; [NIH Office of Dietary Supplements](https://ods.od.nih.gov/factsheets/list-all/) factsheets.
 
  Get the protocol that fits
 

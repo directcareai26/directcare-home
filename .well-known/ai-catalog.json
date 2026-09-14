@@ -19,8 +19,20 @@
       ]
     },
     {
+      "identifier": "urn:air:directcare.ai:server:mcp",
+      "displayName": "DirectCare AI MCP server",
+      "description": "Model Context Protocol server exposing three read-only tools: find_program, list_programs and get_resources. Same scope as the A2A agent \u2014 no medical advice, no patient records, cannot start an intake or place an order.",
+      "type": "application/mcp-server-card+json",
+      "url": "https://www.directcare.ai/.well-known/mcp/server-card.json",
+      "representativeQueries": [
+        "which DirectCare AI program treats low testosterone",
+        "find a DirectCare AI program for thinning hair",
+        "list every DirectCare AI telehealth program"
+      ]
+    },
+    {
       "identifier": "urn:air:directcare.ai:doc:llms-index",
-      "displayName": "llms.txt — curated site index",
+      "displayName": "llms.txt \u2014 curated site index",
       "description": "Short, hand-maintained index of DirectCare AI: what the company does, every program with its canonical URL, and pointers to the machine-readable editions of the site.",
       "type": "text/plain",
       "url": "https://www.directcare.ai/llms.txt",
@@ -32,7 +44,7 @@
     },
     {
       "identifier": "urn:air:directcare.ai:doc:llms-full",
-      "displayName": "llms-full.txt — full site text",
+      "displayName": "llms-full.txt \u2014 full site text",
       "description": "Every public page of www.directcare.ai as plain Markdown in a single file, so the whole catalogue can be read in one request instead of crawling 140 pages of HTML.",
       "type": "text/plain",
       "url": "https://www.directcare.ai/llms-full.txt",

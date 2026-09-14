@@ -17,10 +17,11 @@
     "",
     "A post with no reviewer renders NO reviewer byline. That is the correct",
     "behaviour and the default. Never add an entry to 'reviews' for a review",
-    "that did not actually happen \u2014 the byline is a factual claim about a named",
+    "that did not actually happen — the byline is a factual claim about a named",
     "person on a specific date.",
     "",
-    "2026-09-13 policy change (DaCh\u00e9, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date."
+    "2026-09-13 policy change (DaChé, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date.",
+    "2026-09-14 date correction: 95 entries carried the POST'S publish date, the earliest 2026-01-05 — months before this registry existed and before any review was recorded. Per the note above, what actually happened is that Dr. Pepin confirmed on 2026-09-13 that he had reviewed the existing content, so those entries now read 2026-09-13. The policy is unchanged; only dates that asserted a review on a day it did not happen were corrected. Posts published from 2026-09-13 onward are reviewed the day they publish, so posting date and review date genuinely coincide and are left as they are."
   ],
   "reviewers": {
     "tim-pepin": {
@@ -41,7 +42,7 @@
         "TRT",
         "Weight Loss"
       ],
-      "_note": "DaCh\u00e9 (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
+      "_note": "DaChé (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
       "role": "Clinical Reviewer (non-prescribing)"
     }
   },
@@ -73,393 +74,393 @@
     "Fitness": {
       "requiresPrescriber": false
     },
-    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaCh\u00e9's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
+    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaChé's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
   },
   "reviews": {
     "_comment": "slug -> { reviewer: <key>, date: YYYY-MM-DD }. Empty because no review has been recorded yet. Add an entry only when a named reviewer has actually read that post.",
     "sildenafil-vs-tadalafil-how-to-choose": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-12"
+      "date": "2026-09-13"
     },
     "trt-and-fertility-preserve-sperm-production": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-09"
+      "date": "2026-09-13"
     },
     "glp1-dose-titration-without-nausea": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-08"
+      "date": "2026-09-13"
     },
     "omega-3-epa-dha-dose-inflammation-markers": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-07"
+      "date": "2026-09-13"
     },
     "10-biomarkers-that-predict-longevity": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-06"
+      "date": "2026-09-13"
     },
     "female-pattern-hair-loss-hormonal-panel": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-05"
+      "date": "2026-09-13"
     },
     "20-minute-salmon-asparagus-omega-3-dinner": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-02"
+      "date": "2026-09-13"
     },
     "lifting-through-perimenopause-rep-ranges-recovery": {
       "reviewer": "tim-pepin",
-      "date": "2026-09-01"
+      "date": "2026-09-13"
     },
     "oral-micronized-progesterone-vs-progestins": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-26"
+      "date": "2026-09-13"
     },
     "two-lift-minimum-busy-week-strength-template": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-23"
+      "date": "2026-09-13"
     },
     "subq-vs-im-testosterone-injections-pharmacokinetics": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-22"
+      "date": "2026-09-13"
     },
     "muscle-preservation-glp1-protein-resistance-training": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-21"
+      "date": "2026-09-13"
     },
     "magnesium-glycinate-vs-citrate-vs-threonate": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-20"
+      "date": "2026-09-13"
     },
     "topical-vs-oral-finasteride-side-effects": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-18"
+      "date": "2026-09-13"
     },
     "hematocrit-on-trt-blood-donation-frequency": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-13"
+      "date": "2026-09-13"
     },
     "weight-loss-plateau-hormonal-not-motivational": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-12"
+      "date": "2026-09-13"
     },
     "ferritin-iron-deficiency-women-mistaken-for-menopause": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-10"
+      "date": "2026-09-13"
     },
     "protein-fiber-breakfast-template-busy-mornings": {
       "reviewer": "tim-pepin",
-      "date": "2026-08-06"
+      "date": "2026-09-13"
     },
     "dutasteride-vs-finasteride-aggressive-dht-blockade": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-31"
+      "date": "2026-09-13"
     },
     "ed-cardiovascular-warning-signs-labs": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-29"
+      "date": "2026-09-13"
     },
     "apob-vs-ldl-cholesterol-cardiologists-ask": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-23"
+      "date": "2026-09-13"
     },
     "perimenopause-vs-menopause-lab-values": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-21"
+      "date": "2026-09-13"
     },
     "plant-protein-perimenopause-lentil-tofu-tempeh": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-19"
+      "date": "2026-09-13"
     },
     "30-gram-protein-lunch-rule": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-17"
+      "date": "2026-09-13"
     },
     "fiber-on-glp1-25-35g-daily-appetite": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-15"
+      "date": "2026-09-13"
     },
     "zone-2-cardio-over-40-how-to-measure": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-14"
+      "date": "2026-09-13"
     },
     "magnesium-rich-foods-vs-supplements": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-12"
+      "date": "2026-09-13"
     },
     "free-vs-total-testosterone-what-actually-matters": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-11"
+      "date": "2026-09-13"
     },
     "rucking-cardio-strength-training-guide": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-10"
+      "date": "2026-09-13"
     },
     "glp1-thyroid-monitoring-when-to-stop": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-09"
+      "date": "2026-09-13"
     },
     "hrt-bone-density-estradiol-prevents-fractures": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-08"
+      "date": "2026-09-13"
     },
     "eat-the-rainbow-phytonutrient-targets-by-color": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-07"
+      "date": "2026-09-13"
     },
     "5-minute-mobility-warmup-reduce-injury-risk": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-05"
+      "date": "2026-09-13"
     },
     "vitamin-d3-k2-dosing-blood-level-targets": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-03"
+      "date": "2026-09-13"
     },
     "testosterone-for-women-hrt-protocols": {
       "reviewer": "tim-pepin",
-      "date": "2026-07-02"
+      "date": "2026-09-13"
     },
     "fasted-coffee-cortisol-what-to-drink-first": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-30"
+      "date": "2026-09-13"
     },
     "walking-vs-running-cardiovascular-risk-data": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-28"
+      "date": "2026-09-13"
     },
     "read-hormone-panel-like-clinician": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-24"
+      "date": "2026-09-13"
     },
     "trt-hematocrit-why-blood-thickens-when-to-donate": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-23"
+      "date": "2026-09-13"
     },
     "weight-setpoint-theory-glp1-can-drugs-move-it": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-20"
+      "date": "2026-09-13"
     },
     "low-libido-men-testosterone-stress-or-neither": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-19"
+      "date": "2026-09-13"
     },
     "microneedling-dermaroller-for-hair-regrowth-protocol": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-15"
+      "date": "2026-09-13"
     },
     "estradiol-patch-vs-gel-vs-pellet-vs-pill": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-14"
+      "date": "2026-09-13"
     },
     "greek-lemon-chicken-herbed-quinoa-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-13"
+      "date": "2026-09-13"
     },
     "berberine-natures-ozempic-clinician-honest-view": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-12"
+      "date": "2026-09-13"
     },
     "continuous-glucose-monitor-cgm-for-non-diabetics": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-11"
+      "date": "2026-09-13"
     },
     "grip-strength-longevity-predictor-three-exercises": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-10"
+      "date": "2026-09-13"
     },
     "trt-and-sleep-apnea-the-bidirectional-relationship": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-09"
+      "date": "2026-09-13"
     },
     "compounded-vs-branded-glp1-actual-difference": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-08"
+      "date": "2026-09-13"
     },
     "pt-141-bremelanotide-libido-melanocortin-pathway": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-07"
+      "date": "2026-09-13"
     },
     "harissa-salmon-sheet-pan-recipe-36g-protein": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-06"
+      "date": "2026-09-13"
     },
     "dutasteride-vs-finasteride-when-to-step-up": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-05"
+      "date": "2026-09-13"
     },
     "dhea-in-womens-hrt-the-third-sex-hormone": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-04"
+      "date": "2026-09-13"
     },
     "apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-03"
+      "date": "2026-09-13"
     },
     "creatine-for-women-cognition-bone-longevity": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-02"
+      "date": "2026-09-13"
     },
     "hrv-heart-rate-variability-recovery-tracking": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-01"
+      "date": "2026-09-13"
     },
     "estradiol-on-trt-aromatase-inhibitor-when-needed": {
       "reviewer": "tim-pepin",
-      "date": "2026-06-01"
+      "date": "2026-09-13"
     },
     "glp1-maintenance-protocol-after-weight-loss": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-31"
+      "date": "2026-09-13"
     },
     "25-minute-ginger-chicken-stir-fry-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-30"
+      "date": "2026-09-13"
     },
     "minoxidil-shedding-why-month-one-hair-loss-means-its-working": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-29"
+      "date": "2026-09-13"
     },
     "vaginal-estradiol-gsm-most-underprescribed-hrt": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-28"
+      "date": "2026-09-13"
     },
     "sildenafil-vs-tadalafil-daily-vs-on-demand": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-28"
+      "date": "2026-09-13"
     },
     "magnesium-glycinate-vs-citrate-which-form": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-28"
+      "date": "2026-09-13"
     },
     "morning-erections-testosterone-what-they-tell-clinician": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-26"
+      "date": "2026-09-13"
     },
     "3x-week-resistance-workout-glp1-muscle-preservation": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-26"
+      "date": "2026-09-13"
     },
     "30-minute-beginner-home-workout-no-equipment": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-26"
+      "date": "2026-09-13"
     },
     "walking-7000-steps-cardio-prescription": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-25"
+      "date": "2026-09-13"
     },
     "5-minute-chickpea-tuna-lunch-bowl": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-24"
+      "date": "2026-09-13"
     },
     "40g-protein-smoothie-three-minute-breakfast": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-24"
+      "date": "2026-09-13"
     },
     "glp1-mediterranean-salmon-bowl-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-23"
+      "date": "2026-09-13"
     },
     "glp1-nutrition-four-rule-framework": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-22"
+      "date": "2026-09-13"
     },
     "semaglutide-tirzepatide-difference": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-21"
+      "date": "2026-09-13"
     },
     "hrt-after-40-what-actually-changes": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-20"
+      "date": "2026-09-13"
     },
     "trt-vs-enclomiphene-which-protocol": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-19"
+      "date": "2026-09-13"
     },
     "morning-testosterone-test-timing": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-17"
+      "date": "2026-09-13"
     },
     "progesterone-at-night-timing-vs-dose": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-14"
+      "date": "2026-09-13"
     },
     "sildenafil-vs-tadalafil-pde5-comparison": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-10"
+      "date": "2026-09-13"
     },
     "female-libido-testosterone-clinician-conversation": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-06"
+      "date": "2026-09-13"
     },
     "topical-vs-oral-finasteride-men-hair": {
       "reviewer": "tim-pepin",
-      "date": "2026-05-02"
+      "date": "2026-09-13"
     },
     "womens-hair-loss-hormonal-panel": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-27"
+      "date": "2026-09-13"
     },
     "sheet-pan-miso-salmon-bok-choy-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-27"
+      "date": "2026-09-13"
     },
     "glp1-month-one-side-effects-food-noise": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-21"
+      "date": "2026-09-13"
     },
     "eggs-vs-egg-whites-which-fits-protocol": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-17"
+      "date": "2026-09-13"
     },
     "body-recomp-glp1-protect-muscle": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-14"
+      "date": "2026-09-13"
     },
     "overnight-oats-iron-protein-fiber": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-08"
+      "date": "2026-09-13"
     },
     "12-markers-hormone-panel-priority": {
       "reviewer": "tim-pepin",
-      "date": "2026-04-07"
+      "date": "2026-09-13"
     },
     "magnesium-vitamin-d-supplement-gaps": {
       "reviewer": "tim-pepin",
-      "date": "2026-03-31"
+      "date": "2026-09-13"
     },
     "greek-chicken-souvlaki-bowl-meal-prep": {
       "reviewer": "tim-pepin",
-      "date": "2026-03-28"
+      "date": "2026-09-13"
     },
     "protein-timing-post-workout-window": {
       "reviewer": "tim-pepin",
-      "date": "2026-03-18"
+      "date": "2026-09-13"
     },
     "salmon-tacos-cabbage-slaw-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-03-07"
+      "date": "2026-09-13"
     },
     "perimenopause-nutrition-foods-that-help": {
       "reviewer": "tim-pepin",
-      "date": "2026-02-24"
+      "date": "2026-09-13"
     },
     "cottage-cheese-bowl-protein-snack": {
       "reviewer": "tim-pepin",
-      "date": "2026-02-13"
+      "date": "2026-09-13"
     },
     "mediterranean-lentil-soup-recipe": {
       "reviewer": "tim-pepin",
-      "date": "2026-02-04"
+      "date": "2026-09-13"
     },
     "fiber-target-most-patients-underdose": {
       "reviewer": "tim-pepin",
-      "date": "2026-01-25"
+      "date": "2026-09-13"
     },
     "sheet-pan-chicken-thighs-roasted-vegetables": {
       "reviewer": "tim-pepin",
-      "date": "2026-01-15"
+      "date": "2026-09-13"
     },
     "greek-yogurt-breakfast-bowl-40g-protein": {
       "reviewer": "tim-pepin",
-      "date": "2026-01-05"
+      "date": "2026-09-13"
     },
     "how-to-choose-online-hrt-clinic-in-your-40s": {
       "reviewer": "tim-pepin",

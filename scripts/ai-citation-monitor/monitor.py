@@ -45,6 +45,7 @@ import argparse
 import csv
 import json
 import os
+import pathlib
 import re
 import sys
 import time
@@ -164,6 +165,22 @@ def call_anthropic(prompt: str) -> tuple[str, list[str] | None, str | None]:
         return "\n".join(text_parts), citations or None, None
     except Exception as e:
         return "", None, f"Anthropic error: {e}"
+
+
+def load_vault_env():
+    """Local runs: populate os.environ from the SandBox vault .env files when keys are not already set
+    (same convention as scripts/seo-daily/daily_report.py). CI passes secrets as env instead."""
+    vault = pathlib.Path(os.environ.get("DCA_VAULT", str(pathlib.Path.home() / "DirectCareAI-SandBox/tooling/.vault")))
+    for f in ("llm_providers.env", "openai.env", "anthropic.env"):
+        fp = vault / f
+        if not fp.exists():
+            continue
+        for line in fp.read_text().splitlines():
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 
 def parse_openai_responses(data: dict) -> tuple[str, list[str]]:
@@ -412,6 +429,7 @@ def render_markdown(runs: list[dict], today: str) -> str:
 
 
 def main() -> int:
+    load_vault_env()
     ap = argparse.ArgumentParser()
     ap.add_argument("--vertical", help="Only run prompts from this vertical (hrt, trt, weight_loss, etc.)")
     ap.add_argument("--engine", choices=list(ENGINES.keys()), help="Only query this engine")

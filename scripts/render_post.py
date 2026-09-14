@@ -322,6 +322,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         "{{TITLE_HTML}}": title_html,
         "{{HTML_TITLE}}": _escape_attr(html_title),
         "{{RELATED_HTML}}": related_posts_html(slug, category),
+        "{{ANSWER_FIRST}}": (f'<p class="answer-first">{_escape_attr(payload["answer_first"].strip())}</p>\n' if (payload.get("answer_first") or "").strip() else ""),
         "{{META_DESCRIPTION}}": _escape_attr(meta_description),
         "{{KEYWORDS}}": _escape_attr(keywords),
         "{{CATEGORY}}": _escape_attr(category),

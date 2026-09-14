@@ -442,7 +442,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/10-biomarkers-that-predict-longevity"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Blood Labs</div><h3>10 Biomarkers That Actually Predict Longevity</h3></div></a><a class="related-card" href="/blog/apob-vs-ldl-cholesterol-cardiologists-ask"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Progress%20%26%20Biomarkers.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Blood Labs</div><h3>ApoB vs. LDL: The Cholesterol Number That Matters More</h3></div></a><a class="related-card" href="/blog/read-hormone-panel-like-clinician"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Blood Labs</div><h3>How to Read Your Hormone Panel Like a Clinician</h3></div></a></div>
   </section>
 </div>
 
@@ -492,7 +492,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'ferritin-iron-deficiency-women-mistaken-for-menopause';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

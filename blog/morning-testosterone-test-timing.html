@@ -413,7 +413,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/trt-and-fertility-preserve-sperm-production"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>TRT and Fertility: Preserve Sperm Production on Testosterone</h3></div></a><a class="related-card" href="/blog/subq-vs-im-testosterone-injections-pharmacokinetics"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/%20Testosterone%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>Subcutaneous vs. IM Testosterone: What the PK Data Shows</h3></div></a><a class="related-card" href="/blog/hematocrit-on-trt-blood-donation-frequency"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Healthy%20confident%20man%20in%20his%20early%2040s%20smiling%20naturally%20outdoors%2C%20fit%20physique%2C%20ener%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>Hematocrit on TRT: When to Donate Blood and Why</h3></div></a></div>
   </section>
 </div>
 
@@ -463,7 +463,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'morning-testosterone-test-timing';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

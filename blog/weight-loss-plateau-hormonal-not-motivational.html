@@ -410,7 +410,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/glp1-dose-titration-without-nausea"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Weight Loss</div><h3>GLP-1 Dose Titration: How to Avoid a Month of Nausea</h3></div></a><a class="related-card" href="/blog/muscle-preservation-glp1-protein-resistance-training"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/GLP-1%20Nutrition.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Weight Loss</div><h3>Muscle Preservation on GLP-1s: Protein &amp; Training Rules</h3></div></a><a class="related-card" href="/blog/glp1-thyroid-monitoring-when-to-stop"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/the%20strength%20couple.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Weight Loss</div><h3>GLP-1s and Thyroid: What to Monitor and When to Stop</h3></div></a></div>
   </section>
 </div>
 
@@ -460,7 +460,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'weight-loss-plateau-hormonal-not-motivational';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

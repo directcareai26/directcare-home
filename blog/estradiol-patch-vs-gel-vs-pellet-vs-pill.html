@@ -471,7 +471,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/oral-micronized-progesterone-vs-progestins"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">HRT</div><h3>Micronized Progesterone vs. Progestins: Why It Matters</h3></div></a><a class="related-card" href="/blog/perimenopause-vs-menopause-lab-values"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Warm%20%26%20confident.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">HRT</div><h3>Perimenopause vs. Menopause: Lab Values and What They Mean</h3></div></a><a class="related-card" href="/blog/hrt-bone-density-estradiol-prevents-fractures"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Beautiful%20confident%20woman%20age%2050-60%20smiling%20outdoors%2C%20healthy%20glowing%20skin%2C%20natural%20e%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">HRT</div><h3>HRT and Bone Density: How Estradiol Prevents Fractures</h3></div></a></div>
   </section>
 </div>
 
@@ -521,7 +521,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'estradiol-patch-vs-gel-vs-pellet-vs-pill';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

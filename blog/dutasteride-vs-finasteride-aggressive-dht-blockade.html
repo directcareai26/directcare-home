@@ -403,7 +403,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/female-pattern-hair-loss-hormonal-panel"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Hair%20Regrowth%20%E2%80%94%20lifestyleImage.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Hair Regrowth</div><h3>Female Hair Loss: The Hormonal Panel to Run First</h3></div></a><a class="related-card" href="/blog/topical-vs-oral-finasteride-side-effects"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/woman%20tying%20hair%20up%20confidently.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Hair Regrowth</div><h3>Topical vs. Oral Finasteride: Matching Delivery to Tolerance</h3></div></a><a class="related-card" href="/blog/microneedling-dermaroller-for-hair-regrowth-protocol"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Hair Regrowth</div><h3>Microneedling for hair regrowth: how a dermaroller actually makes your topical protocol work better</h3></div></a></div>
   </section>
 </div>
 
@@ -453,7 +453,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'dutasteride-vs-finasteride-aggressive-dht-blockade';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

@@ -187,6 +187,19 @@ def pick_image(category: str, date_iso: str, slug: str) -> str:
 
 
 DEFAULT_TOPIC_BANK = [
+    # GEO angles 2026-09-14: shaped like the questions people ask AI assistants; each routes to a product page.
+    {"category": "TRT", "angle": "How to choose an online TRT clinic: the eight things a legitimate program must do before prescribing"},
+    {"category": "TRT", "angle": "What getting testosterone prescribed online actually involves: labs, the clinician visit, and follow-up monitoring"},
+    {"category": "HRT", "angle": "How to choose an online HRT clinic in your 40s: questions to ask about labs, estradiol options, and follow-up"},
+    {"category": "HRT", "angle": "What an online menopause visit covers: symptoms reviewed, labs ordered, and how prescriptions are decided"},
+    {"category": "Weight Loss", "angle": "How online GLP-1 prescriptions work: eligibility labs, what the clinician checks, and what the monthly visit includes"},
+    {"category": "Weight Loss", "angle": "Compounded semaglutide online: what to verify about the pharmacy, the clinician, and the follow-up before you sign up"},
+    {"category": "Sexual Health", "angle": "How to get ED medication prescribed online safely: the health questions a clinician must ask first"},
+    {"category": "Hair Regrowth", "angle": "How online hair-loss treatment works: the intake, the options a clinician considers, and what to expect month by month"},
+    {"category": "Blood Labs", "angle": "How to order your own blood tests online: what a clinician-ordered panel includes and how results are interpreted"},
+    {"category": "Blood Labs", "angle": "Which biomarkers a men's health panel should include and why each one is there"},
+    {"category": "Supplements", "angle": "How a clinician builds a supplement protocol from your labs instead of guessing"},
+    {"category": "Weight Loss", "angle": "Telehealth weight-loss programs compared by what they include: labs, clinician visits, medication, and follow-up"},
     {"category": "TRT", "angle": "How to read your free testosterone vs. total testosterone — and why one matters more than the other"},
     {"category": "TRT", "angle": "Estradiol on TRT: why some men need an aromatase inhibitor and most don't"},
     {"category": "TRT", "angle": "What hematocrit does on injectable testosterone and how often you should be donating blood"},

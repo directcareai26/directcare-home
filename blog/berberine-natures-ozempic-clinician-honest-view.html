@@ -447,7 +447,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/omega-3-epa-dha-dose-inflammation-markers"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Omega-3 EPA/DHA: The Dose That Moves Inflammation</h3></div></a><a class="related-card" href="/blog/magnesium-glycinate-vs-citrate-vs-threonate"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Magnesium Glycinate vs Citrate vs Threonate: How to Pick</h3></div></a><a class="related-card" href="/blog/vitamin-d3-k2-dosing-blood-level-targets"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Vitamin D3 + K2: Dosing, Targets, and Why You&#x27;re Low</h3></div></a></div>
   </section>
 </div>
 
@@ -497,7 +497,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = 'berberine-natures-ozempic-clinician-honest-view';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

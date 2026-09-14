@@ -258,6 +258,25 @@ def normalize_internal_links(html: str) -> str:
     return _INTERNAL_SLASH.sub(lambda m: f'href="{m.group(1)}{m.group(2)}', html)
 
 
+def related_posts_html(slug: str, category: str, n: int = 3) -> str:
+    """Three related posts (same category first) as raw HTML. The old client-side fetch() version
+    was invisible to crawlers and answer engines; server-rendering them gives every post real
+    internal links (the local models' #1 recurring finding). 2026-09-14."""
+    try:
+        posts = json.loads(MANIFEST_PATH.read_text(encoding="utf-8")).get("posts", [])
+    except Exception:
+        return ""
+    same = [p for p in posts if p.get("slug") != slug and p.get("category") == category]
+    other = [p for p in posts if p.get("slug") != slug and p.get("category") != category]
+    out = []
+    for p in (same + other)[:n]:
+        out.append(f'<a class="related-card" href="/blog/{p["slug"]}"><div class="related-card-image">'
+                   f'<img src="{_escape_attr(p.get("image", ""))}" alt="" loading="lazy" /></div>'
+                   f'<div class="related-card-body"><div class="related-card-meta">{_escape_attr(p.get("category", ""))}</div>'
+                   f'<h3>{_escape_attr(p.get("title", ""))}</h3></div></a>')
+    return "".join(out)
+
+
 def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     """Render one post. Returns (html, manifest_entry)."""
     required = ["slug", "title", "category", "deck", "body_markdown"]
@@ -302,6 +321,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
         "{{TITLE}}": _escape_attr(title),
         "{{TITLE_HTML}}": title_html,
         "{{HTML_TITLE}}": _escape_attr(html_title),
+        "{{RELATED_HTML}}": related_posts_html(slug, category),
         "{{META_DESCRIPTION}}": _escape_attr(meta_description),
         "{{KEYWORDS}}": _escape_attr(keywords),
         "{{CATEGORY}}": _escape_attr(category),

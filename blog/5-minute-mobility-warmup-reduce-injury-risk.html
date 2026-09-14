@@ -434,7 +434,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <section class="related-section">
     <h3>Keep reading</h3>
-    <div class="related-grid" id="related-grid"></div>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/lifting-through-perimenopause-rep-ranges-recovery"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Fitness</div><h3>Lifting Through Perimenopause: Rep Ranges &amp; Recovery Rules</h3></div></a><a class="related-card" href="/blog/two-lift-minimum-busy-week-strength-template"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Athletic%20woman%20performing%20kettlebell%20workout%20in%20bright%20modern%20fitness%20studio%2C%20natural%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Fitness</div><h3>The Two-Lift Minimum: Busy-Week Strength That Holds</h3></div></a><a class="related-card" href="/blog/zone-2-cardio-over-40-how-to-measure"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Ultra-realistic%20professional%20fitness%20photography%20of%20a%20strong%20athletic%20man%20performing%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Fitness</div><h3>Zone 2 Cardio Over 40: What It Is and How to Measure It</h3></div></a></div>
   </section>
 </div>
 
@@ -484,7 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   // Related posts: pull other recent posts from manifest, excluding this slug
   (function() {
     var grid = document.getElementById('related-grid');
-    if (!grid) return;
+    if (!grid || grid.children.length) return;
     var thisSlug = '5-minute-mobility-warmup-reduce-injury-risk';
     function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
     fetch('/blog/posts.json', { cache: 'no-store' })

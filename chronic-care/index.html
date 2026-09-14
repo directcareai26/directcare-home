@@ -1429,14 +1429,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     var STORAGE_TS = 'dcai_clickId_ts';
     var TTL_MS = 7 * 24 * 60 * 60 * 1000;
     var INCOMING_PARAMS = ['utm_clickId', 'utm_clickid', 'clickid', 'clickId', 'cid', 'aff_id', 'flex_id'];
-    var DCAI_HOSTS = [
-      'directcare.ai', 'www.directcare.ai',
-      'women.directcare.ai', 'mens.directcare.ai',
-      'directcare-home.vercel.app',
-      'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app',
-      'sexual-health-mocha.vercel.app', 'surge-max.vercel.app',
-      'business.tellescope.com', 'directcareai.portal.tellescope.com'
-    ];
+    var DCAI_HOSTS = ['directcare.ai', 'www.directcare.ai', 'women.directcare.ai', 'mens.directcare.ai', 'directcare-home.vercel.app', 'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app', 'sexual-health-mocha.vercel.app', 'surge-max.vercel.app'];
     function getURL(href) { try { return new URL(href, window.location.href); } catch (e) { return null; } }
     function readClickIdFromQuery() {
       var url = getURL(window.location.href);

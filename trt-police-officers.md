@@ -90,9 +90,9 @@ Earlier Than You Think
 
  Real doctors. Real support. We're here for every step.
 
-#### Track & Optimize Results
+#### Track & Optimize
 
- We monitor your progress and adjust for the best results.
+ We monitor your progress and adjust.
 
  Transparent pricing
 

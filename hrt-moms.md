@@ -93,7 +93,7 @@ Science-backed. Doctor-guided. Personalized care.
 
 #### Track & Optimize
 
- We monitor your progress and fine-tune your plan for the best results.
+ We monitor your progress and fine-tune your plan.
 
  Transparent pricing
 

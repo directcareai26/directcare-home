@@ -7,13 +7,9 @@ Source: https://www.directcare.ai/supplements
 ## Professional-grade supplements &
  online wellness plans.
 
- Your body deserves more than guesswork. Access professional-grade supplements and wellness essentials trusted by healthcare practitioners and backed by clinical research.
+ Your body deserves more than guesswork. Access professional-grade supplements and wellness essentials.
 
  [Create Your Free Account →](https://us.fullscript.com/welcome/directcareai/store-start)
-
- Clinically Trusted
-
- Quality Assured
 
  Reviewed by
  ![Fullscript logo]
@@ -22,52 +18,46 @@ Source: https://www.directcare.ai/supplements
  Men's Vitality·
  Heart Health·
  Hair Growth·
- GLP-1 Support·
  Menopause Support·
  Immune Support·
  Anti-Aging·
  General Wellness·
  Energy·
  Practitioner-Grade·
- Clinically Trusted·
- Fullscript Verified·
  Blood Sugar Support·
  Men's Vitality·
  Heart Health·
  Hair Growth·
- GLP-1 Support·
  Menopause Support·
  Immune Support·
  Anti-Aging·
  General Wellness·
  Energy·
  Practitioner-Grade·
- Clinically Trusted·
- Fullscript Verified·
 
  Curated Wellness Plans
 
 ### Professionally guided support for better health.
 
- Our curated wellness plans combine clinically trusted supplements and evidence-based protocols to support specific health goals. From energy and focus to metabolism, immune strength, and more.
+ Our curated wellness plans combine supplements to support specific health goals. From energy and focus to metabolism, immune strength, and more.
 
  [Blood Sugar Support
- Promote balanced blood sugar and healthy metabolism.
+ Promote healthy metabolism.
  Shop Now →](https://us.fullscript.com/plans/directcareai-blood-sugar-support)
 
  [Men's Vitality
- Support vitality, performance, and hormonal balance.
+ Support vitality and hormonal balance.
  Shop Now →](https://us.fullscript.com/plans/directcareai-mens-sexual-wellness)
 
  [Heart Health
- Support circulation and healthy blood pressure you can count on.
+ Support circulation and healthy blood pressure.
  Shop Now →](https://us.fullscript.com/plans/directcareai-heart-health)
 
  [Hair Growth
- Strengthen hair and scalp health for thicker, fuller results.
+ Strengthen hair and scalp health.
  Shop Now →](https://us.fullscript.com/plans/directcareai-hair-growth)
 
- [GLP-1 Support
+ [Muscle & Metabolism Support
  Maintain muscle, balance metabolism, and feel your best every day.
  Shop Now →](https://us.fullscript.com/plans/directcareai-glp-1-support)
 
@@ -91,41 +81,19 @@ Source: https://www.directcare.ai/supplements
  Boost focus, stamina, and endurance to power through your day.
  Shop Now →](https://us.fullscript.com/plans/directcareai-energy)
 
+ These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+
  Featured Products
-
-### Doctor-Recommended. Patient-Approved.
-
- Our most-loved formulas, trusted by thousands of patients who want real, measurable results.
 
  ![Couple embracing in a sunlit kitchen]
 
- ★★★★★ 4.9/5 (812+ reviews)
-
 #### Women's Balance Complete
 
- Restores calm, energy, and hormonal harmony. Formulated with clinically dosed adaptogens, magnesium glycinate, and B-complex to support women through every stage.
+ Formulated with adaptogens, magnesium glycinate, and B-complex to support women through every stage.
 
  [Shop Now →](https://directcareai.portal.tellescope.com/register?product=womens-balance-complete)
 
- All products are practitioner-grade, tested for purity, and shipped directly from Fullscript's verified pharmacy network.
-
- What patients say
-
-### Trusted by thousands.
-
- Real patients. Real outcomes. Reviewed and verified by US-licensed clinicians.
-
- I finally found a supplement plan that fits my life.
-
- , Karen, 54
-
- My doctor recommended DirectCare AI. It just works.
-
- , Michael, 38
-
- Being able to get blood labs through DirectCare AI has been stress free.
-
- , Brenda, 43
+ These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
 
  [Get Started →](https://directcareai.portal.tellescope.com/register)
 

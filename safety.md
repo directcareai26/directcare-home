@@ -42,7 +42,7 @@ Patient Safety
 
 ### For Full Details
 
- Visit the FDA's [MedWatch site](https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program) for comprehensive prescribing information or consult with your DirectCare AI provider for tailored guidance. Take control of your health with confidence. DirectCare AI ensures safe, effective care every step of the way.
+ Visit the FDA's [MedWatch site](https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program) for comprehensive prescribing information or consult with your DirectCare AI provider for tailored guidance.
 
 ### Our Safety Policy
 

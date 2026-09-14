@@ -94,9 +94,9 @@ Science-backed. Doctor-guided. Personalized care.
 
  Real women. Real doctors. We listen, adjust, and support you.
 
-#### Track & Optimize Results
+#### Track & Optimize
 
- We monitor your progress and fine-tune your plan for the best results.
+ We monitor your progress and fine-tune your plan.
 
  Transparent pricing
 

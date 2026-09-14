@@ -55,8 +55,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Liquid protein counts. A whey or casein shake with 30–40 g of protein is not a compromise — it's a tool. Two shakes a day plus two protein-forward meals is a legitimate strategy on a GLP-1.
 
- {callout: The rule that matters most} On a GLP-1, hit 1.6–2.2 g/kg goal body weight in protein daily and lift heavy 2–3x/week — or you will lose muscle you didn't need to lose.
-
 ### Resistance training: what actually changes body composition
 
  Cardio is fine for cardiovascular health. It does not preserve muscle in a deficit. Only resistance training does.

@@ -74,5 +74,8 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+# ARD capability catalogue — what this site offers a machine, and where.
+Agentmap: https://www.directcare.ai/.well-known/ai-catalog.json
+
 Sitemap: https://www.directcare.ai/sitemap.xml
 Sitemap: https://www.directcare.ai/image-sitemap.xml

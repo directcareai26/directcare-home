@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for a 5-minute pantry lunch bowl: canned chickpeas + tuna + olive oil + lemon. Hits 35g protein and 14g fiber with no stove or microwave.
 
+ This lunch bowl uses canned chickpeas, canned light tuna, olive oil, lemon, and simple pantry ingredients. It requires no cooking, takes five minutes to prepare, and delivers 35 grams of protein and 14 grams of fiber. The recipe includes diced cucumber, tomatoes, red onion, feta, olives, and herbs, all mixed with a dressing of olive oil, lemon juice, vinegar, and oregano.
+
  Most lunch failures aren't recipe failures. They're decision failures — the moment at 12:45 p.m. when you have nothing prepped, no plan, and a kitchen full of food that doesn't add up to a lunch.
 
  This bowl exists for exactly that moment. It uses five pantry staples, requires zero heat, takes 5 minutes start-to-finish, and lands at 35 grams of protein and 14 grams of fiber. If you're on a GLP-1, navigating a low-appetite day, or just sick of sad desk salads, this is the no-thinking-required version.

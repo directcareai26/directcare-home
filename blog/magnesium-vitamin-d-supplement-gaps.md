@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains the two most commonly under-dosed supplements: magnesium glycinate (300-400mg/day for sleep + recovery) and vitamin D3 (2,000-5,000 IU/day to hit 40-60 ng/mL).
 
+ Most patients are under-dosed on four key supplements: magnesium glycinate or threonate, vitamin D3 with K2, omega-3s with 2,000 to 3,000 mg of EPA and DHA daily, and a methylated B-complex. These are based on bloodwork and clinically meaningful doses, not marketing. Other supplements are added only when bloodwork shows a need.
+
  Most patients walk into our practice on either zero supplements or 18 supplements. Neither is right.
 
  The truth that rarely gets said in the supplement industry: most adults need **four specific supplements**, at clinically meaningful doses, picked up by bloodwork. Everything past that is either targeted (for a specific finding on the panel) or marketing.

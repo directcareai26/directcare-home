@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  GLP-1 medications drive real weight loss, but 25–40% of that loss can come from lean mass without a plan. Adequate protein and structured resistance training are what protect the muscle you'd otherwise burn along with the fat.
 
+ To preserve muscle while using GLP-1 medications like semaglutide or tirzepatide, aim for 1.6 to 2.2 grams of protein per kilogram of goal body weight each day, spread across 3 to 4 meals, with protein consumed first at each meal. Combine this with resistance training 2 to 3 times per week, focusing on full-body compound lifts performed to within 1–3 reps of failure, with 10 to 20 hard sets per muscle group weekly.
+
  GLP-1 receptor agonists like semaglutide and tirzepatide reliably produce 15–20%+ total body weight loss in trials like STEP-1 and SURMOUNT-1. What those headline numbers don't tell you: a meaningful fraction of that loss is lean mass, not fat.
 
  In the STEP-1 sub-study using DXA, roughly 39% of the total weight lost on semaglutide was lean mass. That's not unique to GLP-1s — any rapid caloric deficit does this — but the magnitude and duration of the deficit these drugs produce makes muscle preservation a real clinical priority, not a nice-to-have.

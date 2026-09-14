@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for sheet-pan chicken thighs with roasted vegetables: 30 minutes, 38g protein per serving, four-component meal prep with one tray.
 
+ This sheet-pan dinner combines chicken thighs and roasted root vegetables, ready in 30 minutes with four servings. Each serving provides about 40 grams of protein. The recipe uses boneless, skinless chicken thighs, potatoes, carrots, red onion, lemon, olive oil, and spices. It’s designed for easy meal prep with leftovers that reheat well.
+
  The most underrated kitchen technique for hormone and weight-loss patients isn't a recipe. It's the sheet pan. One piece of equipment, one trip to the oven, four servings of dinner with leftovers built in. The version below is the one we recommend most often: chicken thighs over root vegetables, in 30 minutes.
 
  Adapted loosely from [EatingWell's sheet-pan chicken thigh pattern](https://www.eatingwell.com/recipes/), with the protein math tightened.

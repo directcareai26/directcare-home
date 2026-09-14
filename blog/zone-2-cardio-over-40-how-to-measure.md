@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Zone 2 is the low-intensity aerobic zone where your mitochondria do their best work — roughly 60–70% of max heart rate, a pace you can hold a conversation at. For adults over 40, it's the single most efficient way to rebuild metabolic capacity without breaking down.
 
+ Zone 2 cardio for adults over 40 is low-intensity aerobic exercise performed at 60–70% of maximum heart rate, where you can speak full sentences without gasping. It improves mitochondrial health, fat oxidation, and cardiovascular resilience. This zone is measured using heart rate, lactate testing, or the talk test, and should make up about 80% of weekly cardio time.
+
  If you're over 40 and only have three or four hours a week to train, the research keeps pointing to the same conclusion: most of that time should be spent going slower than you think.
 
  Zone 2 cardio — the low-intensity aerobic pace where you can still hold a conversation — is the training zone that most directly improves mitochondrial density, fat oxidation, and long-term cardiovascular resilience. It's also the zone most adults skip because it feels too easy to matter.

@@ -15,6 +15,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene — and which bloodwork pattern fits each.
 
+ Testosterone replacement therapy (TRT) with injectable cypionate, oral testosterone undecanoate, and enclomiphene are three options for low testosterone. Injectable TRT is predictable and well-studied but requires injections and stops sperm production. Oral testosterone avoids needles but needs food for absorption and is more expensive. Enclomiphene boosts natural testosterone production, preserves fertility, and avoids exogenous testosterone, but only works if the pituitary is still signaling. The right choice depends on bloodwork, fertility goals, and lifestyle.
+
  If you've been told your testosterone is "low". Or you suspect it is, but every clinic wants to put you on a different protocol. You're not alone. The current testosterone-therapy landscape has three credible options, and they work in fundamentally different ways. None of them is "best" for everyone. The right one is the one whose mechanism matches your bloodwork, your goals, and your day-to-day life.
 
  Here's the clinician's-eye view of what each protocol does, who it fits, and what the trade-offs actually look like.

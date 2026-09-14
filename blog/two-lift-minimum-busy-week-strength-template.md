@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  When your week collapses, two compound lifts per session — three days a week — is enough to preserve strength and lean mass. Here's the template, the loading, and the science behind why less can still work.
 
+ Two compound lifts per session, done three times a week for 30 minutes, can maintain strength and muscle mass during busy periods. Use 75–82% of your 1RM or train at RPE 8–9. Rotate lower-body and upper-body lifts across the week. Add weight when all reps are completed with good form. Skip accessories and focus on quality tension. This approach preserves major muscle groups and neural patterns without requiring more time.
+
  You don't need six exercises per session to hold onto muscle. You need enough tension, enough frequency, and enough intent — and when the calendar breaks, two compound lifts per day is the honest floor.
 
  This is the template we give patients who are traveling, working 60-hour weeks, or coming off a hard training block and need to maintain rather than build. It's not glamorous. It works.

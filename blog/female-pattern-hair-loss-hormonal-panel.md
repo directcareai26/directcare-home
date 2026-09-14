@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Female-pattern hair loss is rarely just genetic — it's a signal from thyroid, iron, androgens, and estrogen working (or misfiring) together. Here are the exact labs a clinician should order before you touch minoxidil, spironolactone, or oral finasteride.
 
+ Female hair loss often stems from hormonal imbalances, not just genetics. Before starting treatment, clinicians should test thyroid function, iron levels, androgen levels, and estrogen status. Key tests include TSH, free T4, free T3, TPO antibodies, ferritin, total and free testosterone, DHEA-S, SHBG, prolactin, and vitamin D. These labs help identify underlying causes like thyroid issues, iron deficiency, or elevated androgens.
+
  Female-pattern hair loss (FPHL, or androgenetic alopecia in women) rarely shows up alone. By the time a woman notices a widening part, a thinner ponytail, or more scalp visible under bathroom lighting, there is usually a stack of contributing signals — thyroid drift, low iron stores, shifting androgens, perimenopausal estrogen decline, or a stress-driven telogen effluvium riding on top of true pattern loss.
 
  Treating FPHL without checking those inputs is how patients end up on 12 months of topical minoxidil with mediocre results and no idea why. A hormonal panel isn't a formality — it's the map.

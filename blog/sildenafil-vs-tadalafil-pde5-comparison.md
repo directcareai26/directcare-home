@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compares sildenafil (Viagra) vs. tadalafil (Cialis): sildenafil kicks in 30-60 min and lasts 4-6 hours, tadalafil takes 30-60 min and lasts 24-36 hours — daily dosing changes the math.
 
+ Sildenafil and tadalafil are both PDE5 inhibitors that help achieve erections by relaxing smooth muscle, but they differ in timing and duration. Sildenafil takes 30 to 60 minutes to work and lasts 4 to 6 hours, while tadalafil also takes 30 to 60 minutes but can last up to 36 hours. Sildenafil’s effectiveness can be delayed by heavy meals, but tadalafil is not affected by food. Tadalafil may cause more back or muscle aches, while sildenafil more commonly causes temporary visual changes.
+
  Sildenafil and tadalafil are the two most-prescribed PDE5 inhibitors in the world. They're often described as interchangeable. They're not.
 
  Both relax smooth muscle in the corpus cavernosum by blocking phosphodiesterase-5, which allows for stronger and longer erections in response to sexual stimulation. But the pharmacokinetics. Onset, peak, half-life. Are different enough that picking the right one is genuinely a lifestyle question, not a clinical coin flip.

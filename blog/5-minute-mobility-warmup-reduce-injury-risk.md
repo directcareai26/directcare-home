@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A focused five-minute mobility sequence before training measurably lowers acute injury risk and improves force output in the first working set. Here's the sequence, the science, and how to fit it in without eating your session.
 
+ A 5-minute dynamic mobility warm-up before workouts reduces acute injury risk and improves performance by raising muscle temperature, enhancing joint mobility, and priming key muscles. It includes light cardio, joint-specific movements, and activity-specific activation, all done in sequence without rest. This brief routine prepares the body for loading without causing fatigue, making it an effective, evidence-backed step before lifting, running, or conditioning.
+
  Most people skip the warm-up, or they replace it with a static hamstring stretch that does very little for the session ahead. That's a mistake — but the fix isn't a 20-minute foam-rolling ritual. Five focused minutes of dynamic mobility, done right, meaningfully lowers acute injury risk and improves the first few working sets.
 
  Below is the sequence we recommend, the evidence behind it, and how to adapt it for lifting, running, or conditioning days.

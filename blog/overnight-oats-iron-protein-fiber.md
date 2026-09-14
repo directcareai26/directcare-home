@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for 5-minute overnight oats with 28g protein, 10g fiber, and 4mg iron per jar: rolled oats, Greek yogurt, chia, pumpkin seeds, milk, fortified cereal.
 
+ This overnight oats recipe uses rolled oats, Greek yogurt, chia seeds, pumpkin seeds, milk, and a protein powder to deliver 28 grams of protein, 10 grams of fiber, and 4 milligrams of iron per jar. It takes five minutes to prepare the night before and is ready to eat in the morning. The ingredients include non-heme iron sources like oats, pumpkin seeds, and chia, which are absorbed more effectively when paired with vitamin C from berries.
+
  Overnight oats became a wellness-influencer cliché. The version most people make. A jar of oats, almond milk, and one strawberry. Clocks in around 6 grams of protein and barely moves the needle.
 
  Done right, the same vessel becomes a 28-gram-protein, 10-gram-fiber, 4-mg-iron breakfast that's ready before you've opened your eyes. Here's the version we recommend to patients with low ferritin, hair-loss panels, and protein targets.

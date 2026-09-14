@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Modern cardiology has shifted from LDL cholesterol to apolipoprotein B (ApoB) as the cleaner measure of cardiovascular risk. Most annual physicals still order the wrong test — and read it wrong when they do.
 
+ Apolipoprotein B (ApoB) measures the number of atherogenic lipoprotein particles in the blood, each containing one ApoB molecule, making it a more accurate predictor of cardiovascular risk than LDL cholesterol. Unlike LDL, which measures cholesterol content, ApoB directly counts the particles that cause artery damage. About one in four adults with normal LDL cholesterol have elevated ApoB, indicating higher risk that LDL alone misses. ApoB is recommended by major cardiology guidelines as a superior marker for risk assessment.
+
  If you've had a standard annual physical in the last 5 years, your doctor probably told you your cholesterol was "fine" based on an LDL number under 100 mg/dL. They almost certainly didn't measure your ApoB.
 
  That's a problem. Roughly 1 in 4 adults with normal LDL cholesterol have elevated ApoB — and elevated ApoB carries cardiovascular risk that the LDL number completely missed.

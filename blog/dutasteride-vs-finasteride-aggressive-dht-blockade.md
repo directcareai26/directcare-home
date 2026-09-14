@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Dutasteride blocks more DHT than finasteride and often regrows more hair — but the trade-offs are real. Here's when the stronger drug is the smarter call, and when it isn't.
 
+ Dutasteride blocks more DHT than finasteride by targeting two enzymes instead of one, leading to greater hair regrowth in some cases. It suppresses serum DHT by about 90% compared to finasteride’s 70%. However, dutasteride stays in the body much longer—its half-life is around five weeks—so side effects, if they occur, take months to resolve. This makes it a stronger but less reversible option than finasteride.
+
  Both finasteride and dutasteride shrink the hormone (DHT) that miniaturizes hair follicles in androgenetic alopecia. The difference is how much, and at what cost. Finasteride blocks one enzyme; dutasteride blocks two. That single mechanistic detail explains almost everything about why dutasteride works harder — and why it's not the right first move for most people.
 
 ### The mechanism, in plain English

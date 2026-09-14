@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Oral finasteride works systemically and has the deepest evidence base; topical finasteride delivers similar scalp DHT suppression with lower serum exposure. The right choice depends on how your body handles systemic 5-alpha reductase inhibition.
 
+ Topical finasteride reduces DHT in the scalp similarly to oral finasteride but with less impact on serum DHT levels. Both can improve hair count, but topical delivery lowers systemic exposure, potentially reducing side effects like sexual, mood, or cognitive changes linked to widespread DHT suppression.
+
  Finasteride is the most-studied oral medication for androgenetic alopecia, with more than two decades of data behind it. The trade-off has always been the same: it works because it suppresses dihydrotestosterone (DHT) systemically — and a minority of men report sexual, mood, or cognitive side effects from that systemic suppression.
 
  Topical finasteride is the newer answer to that trade-off. It's designed to hit the scalp where miniaturization happens while keeping serum DHT closer to baseline. Below is what the clinical data actually says, and how to think about matching route to tolerance.

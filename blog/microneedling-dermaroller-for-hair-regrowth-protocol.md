@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A $25 dermaroller, used correctly, roughly doubles the regrowth produced by topical minoxidil alone. The mechanism is real, the published evidence is solid, and most patients are doing it wrong.
 
+ Microneedling with a dermaroller enhances the effectiveness of topical minoxidil and finasteride by creating microchannels in the scalp that improve absorption. The procedure triggers wound-healing growth factors and activates the Wnt/β-catenin pathway, both of which stimulate hair follicle growth. Used once weekly with 1.5 mm needles, it significantly boosts results compared to topical treatment alone.
+
  If you're using topical minoxidil and not microneedling alongside it, you're probably leaving 30–50% of your potential regrowth on the table.
 
  That's the surprising finding from a now-solid body of trials going back to 2013: microneedling — using a roller or pen with tiny needles to gently puncture the scalp — meaningfully amplifies the effect of topical minoxidil. Used correctly, the combination is one of the highest-leverage interventions in hair regrowth medicine, costs about $25 in equipment, and adds 5 minutes to your weekly routine.

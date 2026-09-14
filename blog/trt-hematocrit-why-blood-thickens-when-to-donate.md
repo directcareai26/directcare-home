@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The most common lab change on injectable testosterone isn't your testosterone level — it's your hematocrit climbing. Left unmonitored it raises clot risk. Managed correctly, it's a non-issue. Here's the clinician's view.
 
+ Testosterone therapy increases red blood cell production, raising hematocrit and hemoglobin levels. This thickens the blood, increasing clot risk if levels exceed 52%. Most clinicians recommend action at 52–54%, including dose reduction, changing delivery method, or blood donation. Regular monitoring every 3–6 months is essential to manage this common effect safely.
+
  If you start injectable testosterone and check your bloodwork at week 8, the number most likely to have moved isn't your testosterone — it's your **hematocrit.**
 
  Testosterone stimulates red blood cell production. For most men this is a small, harmless rise. For a meaningful minority it climbs into a range that thickens the blood enough to raise clot risk. It's the single most common reason a TRT protocol needs adjustment, and it's almost entirely manageable once you understand it.

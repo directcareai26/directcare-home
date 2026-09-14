@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Salmon, cauliflower, chickpeas, harissa. One pan. 35 minutes. 36 grams of protein. The Saturday-night dinner that feels like more effort than it actually was.
 
+ This sheet-pan recipe combines salmon, cauliflower, and chickpeas roasted together at 425°F for 35 minutes. Each serving provides 36 grams of protein, 12 grams of fiber, and meets the omega-3 target with about 2,000 mg of EPA and DHA. The dish uses harissa paste, olive oil, cumin, smoked paprika, garlic, and lemon for flavor. It requires only one pan and one cooking temperature.
+
  Most sheet-pan recipes are forgiving but boring. This one is forgiving and good. The trick is that harissa — North African chile paste — does most of the work for you. It's spicy, smoky, garlicky, and brings instant complexity to anything it touches.
 
  One pan, 35 minutes, 36 grams of protein per plate. The Saturday-night dinner that feels like more effort than it actually was.

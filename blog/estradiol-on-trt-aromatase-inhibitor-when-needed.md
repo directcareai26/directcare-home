@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most men on testosterone therapy don't need anastrozole — and over-suppression of estradiol causes more symptoms than the high estradiol clinics were trying to fix. The clinical case for restraint.
 
+ Most men on testosterone replacement therapy do not need an aromatase inhibitor, as elevated estradiol levels alone without symptoms do not require treatment. Routine use of these drugs is not supported by clinical guidelines and can cause harm, including low libido, joint pain, and mood changes. Aromatase inhibitors should only be considered when symptoms like gynecomastia, fluid retention, or mood issues occur alongside high estradiol, and even then, dose adjustments or lifestyle changes should be tried first.
+
  If you've been on TRT and your clinic prescribed anastrozole (Arimidex) at the same time as your testosterone — without a specific reason tied to your bloodwork — you're in the majority. You're also probably on a protocol the published literature doesn't support.
 
  Estradiol management on TRT has become one of the most over-treated parts of men's hormone therapy. The case for restraint, what the bloodwork actually shows, and when an aromatase inhibitor is genuinely needed — here's the clinical view.

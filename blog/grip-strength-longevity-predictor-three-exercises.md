@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Grip strength is one of the cleanest biomarkers of all-cause mortality in adults. The Lancet's PURE study, with 140,000 participants across 17 countries, found it outperforms blood pressure as a predictor. The good news: it's also one of the easiest things to train.
 
+ Grip strength is a strong predictor of how long you'll live, outperforming blood pressure in large studies. It reflects overall muscle mass, nerve function, and physical activity levels. Simple exercises like farmer’s carries, dead hangs, and heavy rows build grip strength efficiently. Tracking grip every three months helps monitor progress and overall health.
+
  If you had to pick one single physical metric to predict how long an adult will live — better than blood pressure, better than resting heart rate, better than most blood tests — you might be surprised to learn the strongest contender is **how hard you can squeeze a dynamometer with one hand.**
 
  Grip strength is one of the most validated biomarkers in longevity research. It's quick to measure, doesn't require advanced equipment, and produces remarkably consistent predictive results across populations.

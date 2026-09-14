@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Same active ingredient. Same mechanism. Often a fraction of the cost. The real differences between compounded semaglutide/tirzepatide and the branded Wegovy/Zepbound versions are mostly about supply, dose flexibility, and oversight — not whether the drug works.
 
+ Compounded semaglutide and tirzepatide contain the same active ingredients as branded Wegovy and Zepbound, working the same way in the body. The main differences are in cost, dosing flexibility, and regulatory oversight. Compounded versions are often cheaper and allow for finer dose adjustments, while branded versions come in fixed doses and are FDA-approved. Both are available in 2026 under specific conditions, with compounded versions requiring a clinician’s prescription and oversight.
+
  The patient question we get more than any other on weight-loss intake: "Is compounded semaglutide actually the same drug as Wegovy?"
 
  Short answer: the **active ingredient is identical** — same molecule, same mechanism, same downstream effects. The differences are in everything around the active ingredient — the carrier, the production source, the dosing flexibility, the cost, and the regulatory pathway. Some of those differences matter clinically. Most don't.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Glycinate calms and helps sleep, citrate moves the bowels, and threonate targets the brain. Pick by the symptom you're actually trying to fix, not by the label with the loudest marketing.
 
+ Magnesium glycinate helps with sleep, anxiety, and muscle tension. Magnesium citrate relieves constipation by drawing water into the bowels and is effective for general magnesium repletion. Magnesium L-threonate is designed to support brain function and may help with cognitive issues like brain fog.
+
  Magnesium is one of the few supplements where the form matters more than the milligrams on the label. Two capsules with identical "400 mg magnesium" can do completely different things in your body — one will help you fall asleep, another will send you to the bathroom, and a third might nudge your working memory.
 
  Roughly half of U.S. adults don't hit the RDA for magnesium from diet alone (Rosanoff et al., Nutrition Reviews, 2012), so supplementation is reasonable for a lot of people. The question is which salt to buy. Here's the clinician's-eye breakdown of the three forms that actually matter: **glycinate, citrate, and L-threonate**.

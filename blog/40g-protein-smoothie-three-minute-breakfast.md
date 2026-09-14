@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk. Blends in 3 minutes from a Sunday-night freezer prep.
 
+ A 40-gram-protein smoothie made with whey, Greek yogurt, frozen banana, peanut butter, oats, and milk takes three minutes to blend and tastes like a milkshake. The frozen banana provides thickness and sweetness, while a pinch of salt enhances flavor. Half the protein comes from fast-digesting whey, and half from slow-digesting yogurt and milk, supporting muscle protein synthesis. The recipe includes 10 grams of fiber and can be prepped in advance for quick weekday mornings.
+
  Most protein smoothies taste like protein. They have that chalky, faintly-medicinal aftertaste that makes you remember why you stopped drinking them in 2014.
 
  This one doesn't. The trick is a small ratio change. Less protein powder, more food-based protein, and one ingredient (frozen banana) that does more flavor work than any other variable. The result is 40 grams of protein, 10 grams of fiber, and a glass that tastes like a milkshake.

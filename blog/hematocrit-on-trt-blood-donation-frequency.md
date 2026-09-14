@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Injectable testosterone reliably pushes hematocrit up, and for some men it crosses the threshold where blood viscosity becomes a real cardiovascular concern. Here's what the number actually means, when to donate, and how often.
 
+ Injectable testosterone raises hematocrit by stimulating red blood cell production, often increasing it 3–5 percentage points within a year. Most clinicians recommend intervention when hematocrit exceeds 54%, typically through blood donation or dose adjustments. Donating whole blood can lower hematocrit by about 3 points, helping maintain safe blood viscosity.
+
  If you're on injectable testosterone long enough, your hematocrit will climb. That's not a side effect — it's a predictable pharmacologic response, and the question isn't whether it happens but how high it goes and what you do about it.
 
  Most men on standard TRT doses see hematocrit rise 3–5 percentage points within the first 6–12 months. A meaningful minority cross 52%, which is where most clinicians start paying real attention. This article walks through why injectables push the number harder than gels, what the threshold actually represents, and how often donating blood keeps you in a safe range.

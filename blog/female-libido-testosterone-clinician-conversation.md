@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains why women's testosterone crashes in the 40s and what to test: total testosterone, free testosterone, SHBG — and what a 0.5-1mg/day topical testosterone protocol does.
 
+ Women’s testosterone levels typically decline starting in their 40s, dropping to about half of what they were by early middle age and further by the 50s. This drop often goes undetected because standard primary-care testing rarely includes testosterone assessment. Low testosterone can contribute to reduced libido, fatigue, and changes in muscle and vaginal tissue, even when other hormone levels appear normal.
+
  If you're a woman in your 40s or 50s and you've quietly noticed that desire is just… not what it was, here's what you almost never hear in a primary-care visit:
 
  **Your testosterone is probably low. And no one is testing it.**

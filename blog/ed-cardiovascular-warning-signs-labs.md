@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Erectile dysfunction often shows up 3-5 years before a cardiac event because penile arteries clog first. The right blood panel can tell you whether ED is a plumbing problem, a hormone problem, or an early warning about your heart.
 
+ Erectile dysfunction can signal early cardiovascular disease because penile arteries, being smaller, show signs of blockage before larger coronary arteries. Key lab tests that confirm this include ApoB, hs-CRP, HbA1c, fasting insulin, and testosterone levels. These markers reveal vascular, metabolic, and hormonal issues underlying ED, helping distinguish between symptom relief and actual disease prevention.
+
  Erectile dysfunction is not just a bedroom problem. In men over 40, new-onset ED is one of the earliest clinical signals of endothelial dysfunction — the same process that eventually narrows coronary arteries. The literature is consistent: ED often precedes a cardiac event by roughly **3 to 5 years** ([Montorsi et al., European Urology 2003](https://pubmed.ncbi.nlm.nih.gov/14644114/); [Vlachopoulos et al., Circulation: Cardiovascular Quality and Outcomes 2013](https://pubmed.ncbi.nlm.nih.gov/23287048/)).
 
  That's not a scare tactic. It's anatomy. And it means the workup for ED should look a lot more like a cardiology workup than most men expect.

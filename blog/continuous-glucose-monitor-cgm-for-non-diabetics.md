@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Over-the-counter CGM access changed the metabolic conversation. The question shifted from 'should I get one' to 'is the data actually useful, or is it making me anxious about meals that were fine?' Here's the clinician's view.
 
+ In 2026, continuous glucose monitors (CGM) for non-diabetics show interstitial glucose levels every 1–15 minutes, revealing normal glucose patterns like fasting levels of 70–95 mg/dL and post-meal spikes up to 160+ mg/dL that return to baseline within 90–120 minutes. Healthy adults typically spend 85–95% of the day in the 70–140 mg/dL range. CGM data helps identify individual responses to food, eating order, walking after meals, sleep, and stress, but is not a replacement for blood tests like HbA1c, fasting insulin, or HOMA-IR.
+
  In 2024 the FDA cleared the first over-the-counter continuous glucose monitor (CGM) — Dexcom's Stelo — for non-diabetic adults. Abbott's Lingo and the older Levels Health-style subscription platforms followed. By 2026, CGMs are widely available without a prescription, costing $50–100/month, and a substantial number of metabolically healthy adults have worn one for at least a 2-week trial.
 
  The question has shifted. It used to be "should non-diabetics use CGMs?" Now it's "now that we have all this data, what does it actually mean — and is the anxiety it produces worth the insights?"

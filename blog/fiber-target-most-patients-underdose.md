@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains why most adults eat 12-15g fiber when the target is 30-40g — and which foods (legumes, oats, chia, berries) move the needle fastest without supplementing.
 
+ Most adults consume only 12 to 15 grams of fiber daily, far below the recommended 25 to 35 grams. On weight-loss or hormone therapies like GLP-1 or HRT, low fiber intake can cause constipation, hunger, and inflammation. Foods like beans, oats, chia seeds, berries, and cruciferous vegetables are highly effective at increasing fiber intake. A balanced mix of soluble and insoluble fiber from whole foods can help meet daily targets without supplements.
+
  Of all the nutrition variables we track in DirectCare AI patients, fiber is the one most consistently missed. Patients with strong protein habits, decent hydration, and good sleep still walk in eating 12 to 14 grams of fiber per day. The published target is 25 to 35.
 
  The gap doesn't feel like much. Its consequences are loud. Constipation, midday hunger that wasn't fixed by the GLP-1, post-meal glucose spikes, and the systemic inflammation markers we'd rather see trending down.

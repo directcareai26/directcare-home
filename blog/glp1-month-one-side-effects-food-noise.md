@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Walks through week-by-week expectations on the first month of a GLP-1: nausea and food-noise drop in week 1-2, fatigue peaks week 2-3, energy returns by week 4.
 
+ During the first month of a GLP-1, nausea and food noise typically decrease in weeks 1 to 2, while fatigue peaks in weeks 2 to 3 and improves by week 4. Most people experience mild nausea, fullness after meals, and reduced hunger. Weight loss of 2 to 4 pounds is common by week 3. The dose usually increases at the end of week 4, which may bring mild side effects again.
+
  The first month on a GLP-1 is not what most people expect. The marketing photos show the result. The first 30 days are a different animal. Manageable for most, surprising for almost everyone.
 
  Here's the clinician's-eye view of what's normal, what's worth a message to your care team, and what makes the difference between a patient who quits in week 3 and a patient who quietly hits month 18.

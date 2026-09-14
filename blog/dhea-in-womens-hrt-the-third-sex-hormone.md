@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Estradiol gets the headlines. Progesterone gets the prescription. DHEA — the adrenal precursor that drives roughly half of a woman's sex hormone production by her 50s — almost never gets mentioned. Here's why it should.
 
+ DHEA is a hormone made by the adrenal glands that serves as a precursor to estrogen and testosterone in women. After menopause, when ovarian hormone production stops, DHEA becomes the primary source of sex hormones. Levels decline significantly with age, dropping to about 20% of peak levels by age 70. Low DHEA-S levels are linked to symptoms like fatigue, low libido, and vaginal tissue thinning. Testing DHEA-S helps determine if supplementation is needed.
+
  Most women on HRT are on two medications: an estradiol patch (or gel) and oral micronized progesterone. Some are also on a small dose of testosterone. Almost none are on DHEA.
 
  That gap exists less because DHEA isn't useful and more because most providers were never trained to think about it. DHEA — dehydroepiandrosterone — is the adrenal hormone that serves as the precursor to a substantial fraction of a woman's sex hormone production, especially after menopause. By age 70, DHEA-S levels are typically 20% of where they were at age 25. The downstream effect on sex hormone availability is real.

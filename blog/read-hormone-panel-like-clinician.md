@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Your hormone panel is a snapshot of how your endocrine system is actually behaving — not how you feel about it. This guide walks through every marker on a standard male and female panel, what the numbers mean, and where the cutoffs actually sit.
 
+ A hormone panel reveals how your endocrine system is functioning by measuring key markers like testosterone, estradiol, SHBG, LH, FSH, thyroid hormones, cortisol, and prolactin. Total testosterone alone doesn’t show the full picture—free testosterone, calculated using SHBG and albumin, reflects what your tissues actually receive. Estradiol, often overlooked in men, supports bone health and libido. LH and FSH indicate whether low sex hormones stem from testicular or brain issues. Thyroid and cortisol levels influence energy and metabolism. Prolactin, when elevated, may signal a pituitary tumor. All results must be interpreted together, with timing and context, to understand true hormonal health.
+
  A hormone panel is one of the few lab orders where the numbers in range don't always mean the system is working. Two men can both have a total testosterone of 450 ng/dL — one feels fine, the other has the libido and energy of a houseplant. The difference is almost always in the markers nobody bothered to order, or the ratios nobody bothered to calculate.
 
  This is a clinician's-eye walkthrough of every marker on a comprehensive hormone panel: what it measures, what the reference range hides, and what the result should make you ask next.

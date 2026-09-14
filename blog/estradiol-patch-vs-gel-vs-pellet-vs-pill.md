@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Same molecule, four delivery systems, four very different real-world experiences. Cardiovascular risk, dose stability, convenience, and cost vary substantially between them. The clinician's-eye view on which fits which patient.
 
+ Estradiol delivery methods differ in how they affect the body, especially regarding cardiovascular safety, dose stability, convenience, and cost. Transdermal options—patch, gel, and pellet—bypass the liver, reducing clotting risk and providing steadier hormone levels. Oral estradiol passes through the liver, increasing certain risks. Patches and gels offer regular dosing with good control, pellets provide long-term delivery but lack dose adjustability, and pills are low-cost but less ideal for those with cardiovascular concerns.
+
  Estradiol is estradiol. Once it's in your bloodstream, your tissues don't care how it got there.
 
  Getting it there, however, is where the four delivery methods diverge. Each one produces a different pharmacokinetic curve, a different cardiovascular risk profile, a different daily user experience, and a different cost — even though the molecule is identical.

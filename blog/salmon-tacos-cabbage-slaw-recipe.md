@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for 20-minute salmon tacos with cabbage slaw: 32g protein per serving, omega-3 target, the lime-yogurt sauce that makes salmon work in a taco.
 
+ Pan-seared salmon tacos with cabbage slaw deliver 32 grams of protein and 1,500 milligrams of omega-3s per serving, made in 30 minutes using simple ingredients like olive oil, chili powder, lime juice, Greek yogurt, and corn tortillas. The recipe includes a quick slaw with cabbage, red onion, cilantro, and lime, plus a lime-yogurt sauce. Salmon is cooked 3 to 4 minutes per side until flaky, then served with avocado and warm tortillas.
+
  Mexican-style fish tacos are usually battered, fried, and clocking in around 700 calories with the wrong macros. This version flips that: pan-seared salmon, a quick cabbage slaw with real acid, lime crema, and two warm corn tortillas. Same satisfaction, completely different nutrition.
 
  32 g of protein, 1,500 mg of omega-3, ready in 30 minutes.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Perimenopause raises your protein needs while estrogen decline quietly erodes muscle and bone. A weekly rotation of lentils, tofu, and tempeh can hit those needs without the saturated fat load of a red-meat-heavy plate.
 
+ During perimenopause, protein needs increase to 1.2–1.6 g/kg/day to support muscle and bone health. A rotation of lentils, tofu, and tempeh provides high-quality plant protein, with lentils offering fiber and iron, tofu delivering calcium and a neutral flavor, and tempeh supplying protein and beneficial fermentation byproducts. Together, they help meet daily protein goals.
+
  Perimenopause is a protein problem before it's anything else. As estradiol swings and then declines through the late 40s and early 50s, women lose about 0.6% of lean mass per year on average, and anabolic resistance — the muscle's blunted response to a given dose of protein — quietly rises ([Bauer et al., JAMDA 2013](https://pubmed.ncbi.nlm.nih.gov/23867520/)). The fix isn't exotic. It's more protein per meal, more often, from sources that don't drag saturated fat and LDL along for the ride.
 
  That's where a plant-forward rotation earns its keep. Lentils, tofu, and tempeh cover different protein densities, different textures, and different price points — and together they make hitting 100–120 g of daily protein feel routine instead of grim.

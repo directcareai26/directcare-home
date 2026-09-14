@@ -482,7 +482,7 @@ Return a JSON object with this exact schema:
 {{
   "slug": "kebab-case-slug-50-chars-max",
   "title": "Full title, 50-65 chars",
-  "answer_first": "40-60 words that directly answer the question the title poses, using ONLY facts stated in body_markdown — no new numbers, doses, drug names or claims; no first person; no marketing",
+  "answer_first": "40-60 words that directly answer the question the title poses, using ONLY facts stated in body_markdown. Carry every qualifier from the source (population, \"usually\"/\"on average\", \"may\"/\"can\"); never add a superlative (\"best\", \"safest\", \"most effective\") that is not already in the body; no second-person medication instructions; no guarantee verbs; no new numbers, doses or drug names; no first person; no marketing",
   "title_html": "Title with one <em>italic phrase</em> wrapped in em tags",
   "deck": "2-sentence deck that answers the search intent.",
   "meta_description": "140-158 char meta description; 120-155 characters, hard maximum 155",

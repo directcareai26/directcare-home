@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  "Eat the rainbow" isn't a slogan — it's a shorthand for hitting different phytonutrient families that each do specific work in the body. Here's what each color actually delivers, and how much of it you need to move a biomarker.
 
+ Eating the rainbow means choosing colorful fruits and vegetables to target specific phytonutrients: red foods like tomatoes provide lycopene, orange and yellow produce offer provitamin A carotenoids, greens deliver folate and glucosinolates, blue and purple berries supply anthocyanins, and white foods like garlic and mushrooms contribute organosulfur compounds and beta-glucans. Each color supports distinct health markers, with daily intake of about 800 grams across all colors recommended.
+
  "Eat the rainbow" gets repeated so often it's lost its meaning. But underneath the slogan is a real clinical point: different plant pigments correspond to different phytonutrient families, and those families do measurably different things — from lowering LDL oxidation to improving endothelial function to upregulating detox enzymes.
 
  This is the plain-English version, with the actual compounds, the biomarkers they touch, and rough daily targets pulled from the literature.

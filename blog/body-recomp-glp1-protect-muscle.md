@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains how to lose fat without losing muscle on GLP-1s: 1g protein per pound goal weight, resistance training 3x/week, and a 10-15% calorie deficit (not 30%).
 
+ To lose fat without losing muscle on GLP-1s, aim for 1 gram of protein per pound of goal body weight each day, focus on resistance training three times a week using compound movements, and maintain a 10-15% calorie deficit. This approach helps preserve lean mass, supports metabolic health, and reduces the risk of weight regain after stopping the medication.
+
  Here's a number that doesn't make it into the marketing for GLP-1 weight-loss drugs: in the STEP-1 and SURMOUNT-1 trials, **25 to 40 percent of the weight lost** by participants was lean mass, not fat. For some patients it was even higher.
 
  Lean-mass loss isn't unique to GLP-1s , any calorie deficit will produce some. But the magnitude of loss on these drugs makes the risk material. A patient who loses 40 pounds and 15 of them are muscle ends up smaller but metabolically worse off, with weaker bones, lower resting metabolic rate, and a body that will rebound weight faster the moment they stop the medication.

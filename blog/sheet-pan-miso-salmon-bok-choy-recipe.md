@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for sheet-pan miso-glazed salmon with charred bok choy and brown rice: 25 minutes, 35g protein, omega-3 target hit in one pan.
 
+ This sheet-pan dinner combines 5 oz of salmon with bok choy and brown rice, cooked together in 25 minutes. The salmon is glazed with miso paste, mirin, soy sauce, rice vinegar, ginger, garlic, and sesame oil. The dish delivers about 35 grams of protein and meets the omega-3 target per serving. It requires only one sheet pan and a broiler.
+
  Miso-glazed salmon is one of those restaurant dishes that looks complicated and isn't. The glaze is four ingredients and a stir. The salmon and bok choy share a sheet pan. The whole thing is on the table in 25 minutes.
 
  Pattern adapted from the classic Nobu-style miso black cod, which [Bon Appétit covered](https://www.bonappetit.com/) and home cooks have iterated on for years. We swapped cod for salmon (more accessible, better omega-3 profile) and tightened the marinade time.

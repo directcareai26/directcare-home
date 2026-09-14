@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE — no equipment.
 
+ This 30-minute beginner home workout includes three rounds of eight bodyweight exercises: bodyweight squats, incline push-ups, reverse lunges, glute bridges, wall sits, dead bugs, standing marches, and forearm or knee planks. It requires no equipment, takes 30 minutes total, and is designed for adults who haven’t trained consistently in six months or more.
+
  Most beginner workout plans fail for the same reason: they ask you to do too much, in too many sessions, with equipment you don't own. This one doesn't. It's three rounds, eight bodyweight exercises, thirty minutes start-to-finish, and the only thing you need is a patch of floor about the size of a yoga mat.
 
  We point patients toward this routine in the first month of a GLP-1, TRT, or HRT protocol. Not because it's the only workout that works — it's not — but because it's the one most people will actually do three times a week without quitting. And consistency beats intensity every time when you're starting out.

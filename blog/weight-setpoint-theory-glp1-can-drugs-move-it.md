@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Every diet that's ever failed has a name in metabolism research: rebound to setpoint. GLP-1s are the first class of drugs with serious published evidence they may actually reset that setpoint — and the implication for long-term treatment is the part nobody's talking about.
 
+ GLP-1 drugs may lower the body’s weight setpoint, the range it defends through hunger and metabolism changes. Unlike diets, which trigger rebound by raising hunger and slowing metabolism, GLP-1s appear to reset this system. Evidence shows sustained weight loss without the same metabolic adaptation, and some patients maintain results after tapering. However, most still need ongoing treatment to hold the loss, suggesting the setpoint shifts partially but not permanently for everyone.
+
  If you've ever lost meaningful weight on a diet and watched it come back over the following 18 months, you've experienced the most reproducible finding in obesity medicine: **rebound to setpoint.**
 
  Setpoint theory says your body defends a particular weight range with the same vigor it defends body temperature. Push below it through caloric restriction and the body responds — slowing metabolism, raising hunger, lowering energy expenditure — until you regain. This explains why 80–90% of conventional diets fail at the 2-year mark.

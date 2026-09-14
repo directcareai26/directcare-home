@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for a 30-minute Mediterranean lentil soup: 22g protein, 16g fiber per bowl, six pantry ingredients, the kind of weeknight dinner that hits 1,000+ recipes on Pinterest.
 
+ This Mediterranean lentil soup delivers 22 grams of protein and 18 grams of fiber per bowl, made with six pantry ingredients in 30 minutes. It uses brown or French green lentils, diced tomatoes, carrots, celery, garlic, olive oil, and spices, then finishes with spinach or kale and lemon juice. The soup freezes well for up to six weeks and reheats easily from frozen.
+
  If you're trying to hit a 30-gram-fiber day on a GLP-1, a perimenopause protocol, or a heart-health overhaul, lentil soup is the single highest-leverage dinner in your repertoire. One bowl delivers 22 grams of protein and 18 grams of fiber. More than most omnivore meals.
 
  And it freezes for six weeks. That last part matters more than the rest combined.

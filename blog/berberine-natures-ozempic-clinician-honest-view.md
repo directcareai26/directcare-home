@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  TikTok says berberine is a natural GLP-1. It isn't. But it does meaningfully lower blood glucose and modestly improve metabolic markers in some patients. Here's the honest version — what it actually does, what it doesn't, and where it fits.
 
+ Berberine lowers blood glucose and modestly improves insulin sensitivity by activating AMPK, similar to metformin, but it does not reduce appetite or slow digestion like GLP-1 drugs. It has shown comparable HbA1c reductions to metformin in some studies, modestly lowers triglycerides and LDL, and may help with prediabetes, PCOS, or as a complement to other treatments. It is not a substitute for GLP-1 medications.
+
  If you've spent any time on health TikTok in the last 18 months, you've seen the claim: berberine is "nature's Ozempic." The framing usually arrives with before/after photos and a $40 supplement affiliate link.
 
  The framing is wrong. Berberine and semaglutide work through completely different mechanisms, produce very different magnitudes of effect, and address different clinical problems.

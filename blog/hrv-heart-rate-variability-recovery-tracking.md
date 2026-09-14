@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Resting heart rate is the simple metric. HRV is the smarter one. Why this overnight number is the cleanest measure of your nervous system's recovery state — and the four levers that move it most.
 
+ Heart rate variability (HRV) measures the variation in time between heartbeats and reflects your nervous system’s recovery state. Higher HRV indicates better recovery and parasympathetic tone, while lower HRV suggests stress, poor sleep, or overtraining. It’s more sensitive than resting heart rate for daily recovery tracking. The four main lifestyle factors that influence HRV are sleep, alcohol, training load, and breath work.
+
  If you've owned a Whoop, Oura ring, Garmin watch, or Apple Watch in the last few years, you've probably noticed it constantly pushing a metric you didn't ask about: **HRV**, or heart rate variability.
 
  Most users glance at it, see a number between 20 and 100, and have no idea whether that's good, bad, or actionable. Some users get obsessed and start training around it. The truth is in between — HRV is one of the most useful daily numbers in adult health, but only if you know what it actually measures and which levers move it.

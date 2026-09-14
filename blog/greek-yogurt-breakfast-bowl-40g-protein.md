@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for a 5-minute Greek yogurt breakfast bowl with 40g protein: full-fat Greek yogurt, whey, berries, walnuts, chia, honey — the bowl that replaces a smoothie.
 
+ A Greek yogurt breakfast bowl made with one cup of plain non-fat Greek yogurt and two tablespoons of whey protein isolate provides about 40 grams of protein. Topping it with berries, chia seeds, walnuts, and a touch of honey completes the meal. This combination delivers high protein and fiber with minimal effort, taking just five minutes to prepare.
+
  If your morning currently looks like coffee and a bagel, you're starting the day with about 10 grams of protein, a glucose spike, and a 10:30 a.m. hunger crash. None of that is doing your hormones, your weight, or your training any favors.
 
  The fix is the most boring meal in the world, executed correctly: a Greek yogurt bowl. The trick is doing it with enough protein to actually count. Here's the version we recommend to patients on HRT, TRT, and GLP-1 protocols. Because all three benefit from a protein-front-loaded morning.

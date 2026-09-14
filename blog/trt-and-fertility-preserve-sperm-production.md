@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Exogenous testosterone shuts down the signal that tells your testes to make sperm, and for many men that shutdown is reversible — but not all. Here's how to protect fertility before, during, and after TRT.
 
+ Testosterone replacement therapy can stop sperm production by reducing signals from the brain that stimulate the testes. However, fertility can be preserved by using hCG alongside testosterone, which helps maintain intratesticular testosterone levels. Clomiphene or enclomiphene may also support sperm production in men with secondary hypogonadism. Sperm banking before starting therapy is another option.
+
  The uncomfortable truth about testosterone replacement therapy is that it's an effective male contraceptive. Not officially — the WHO trials in the 1990s never made it to market — but the mechanism is real, and any man starting TRT should understand it before the first injection.
 
  The good news: with the right protocol, most men can stay on testosterone and preserve sperm production. The better news: even men who didn't plan ahead often recover fertility after stopping. But "most" and "often" are not "always," and that distinction matters if a biological child is anywhere on your roadmap.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Finasteride is the gold-standard hair-loss drug. Dutasteride is the more aggressive cousin — same mechanism, more enzyme suppression, better regrowth results in the patients who don't respond fully to finasteride. The clinical case for stepping up.
 
+ Men who don’t see sufficient hair regrowth or continue losing hair after 12 months on finasteride may benefit from switching to dutasteride, which blocks more of the enzyme that converts testosterone to DHT. It’s more effective at increasing hair count and thickness, especially in the crown, and may help those who plateau or relapse after an initial response. It’s also considered for men with aggressive early-onset hair loss or strong family history of severe baldness.
+
  If finasteride were universally effective, dutasteride wouldn't have a market. It does. About 30% of men on finasteride see slower-than-expected results or continued progression at month 12 — and many of those men respond meaningfully when switched to dutasteride.
 
  Both drugs work through the same mechanism. The difference is how much enzyme each one shuts down, and in some patients that difference is exactly what's needed.

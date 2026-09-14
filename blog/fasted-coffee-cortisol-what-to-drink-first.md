@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Drinking coffee the moment you wake up stacks caffeine on top of your natural cortisol peak, which can leave you wired, then flat by mid-morning. A small amount of water, electrolytes, and protein in the first 30–60 minutes blunts that stress response and makes your coffee work better, not less.
 
+ Drinking coffee on an empty stomach right after waking can amplify your body’s natural cortisol peak, leading to a crash later in the morning. Instead, start with water and electrolytes, followed by protein within 30–60 minutes. This helps stabilize your cortisol curve and makes caffeine more effective. Wait 60–90 minutes after waking to drink coffee, which supports steadier energy and better sleep.
+
  If your morning runs on black coffee before anything else, you're not broken — you're just fighting your own biology. The cortisol awakening response (CAR) peaks roughly 30–45 minutes after you open your eyes, and caffeine on top of that peak can amplify the very stress signal you're trying to outrun with espresso.
 
  This isn't an anti-coffee article. Coffee is one of the most studied, most defensible daily habits in nutrition science. But when you drink it, and what you drink before it, changes how your nervous system handles the rest of the day.

@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Outlines the three-day-per-week resistance training protocol that preserves muscle during GLP-1 weight loss: six compound lifts, 6-12 reps, two work sets each.
 
+ Doing resistance training three times a week with six compound lifts—such as squats, deadlifts, presses, and rows—helps preserve muscle during GLP-1 weight loss. Each session includes two work sets of 6–12 reps, focusing on full-body movements that recruit large muscle groups. This routine, lasting about 45 minutes, is the minimum effective dose to maintain strength and lean mass while losing fat.
+
  On a GLP-1, the scale moves whether you train or not. The question is what comes off the scale.
 
  In the SURMOUNT-1 trial, lean mass accounted for [roughly 25–40 percent of total weight lost](https://pubmed.ncbi.nlm.nih.gov/35658024/) in patients on tirzepatide. The STEP trials showed similar numbers for semaglutide. That's a meaningful problem — muscle is what runs your resting metabolism, supports your joints, and keeps you functional through your 50s, 60s, and 70s.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Low testosterone makes sleep apnea worse. Untreated sleep apnea drives testosterone down. Patients can spend years on testosterone protocols that aren't working — because the actual root cause is upstream in the airway.
 
+ Low testosterone and sleep apnea are linked in a cycle where untreated sleep apnea lowers testosterone by disrupting deep sleep and increasing stress hormones, while testosterone replacement therapy can worsen sleep apnea by thickening blood and affecting airway function. Screening for sleep apnea before starting TRT is essential, as treating the sleep disorder often improves testosterone levels and avoids unnecessary therapy.
+
  About 20% of men diagnosed with low testosterone in their 40s and 50s have undiagnosed obstructive sleep apnea (OSA) driving the problem. Closer to 30–40% among men with low testosterone and significant central obesity.
 
  Most testosterone clinics don't ask. The patient gets put on TRT. Symptoms improve modestly. The sleep apnea — which was the upstream cause of the low T in the first place — quietly continues, and in some patients gets worse on TRT.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Testosterone is a legitimate part of women's hormone physiology, yet most menopause clinics still don't prescribe it. Here's what the evidence actually says — and what a thorough protocol looks like.
 
+ Testosterone is a natural hormone in women, produced in the ovaries and adrenal glands, and levels decline significantly with age, especially after menopause. Evidence supports its use for postmenopausal women with low sexual desire, when estrogen therapy alone doesn’t fully address symptoms. Proper dosing aims to restore testosterone to the upper end of the premenopausal range, using transdermal delivery and accurate lab testing to avoid side effects.
+
  By the time a woman reaches her mid-40s, her circulating testosterone is roughly half what it was in her 20s. That decline is quiet, gradual, and — in most menopause clinics — completely ignored. Estrogen and progesterone get the attention. Testosterone gets a shrug.
 
  That's a problem, because the data on testosterone in women is more mature than most patients realize. There is an international consensus statement, randomized trials, and a defined therapeutic window. What there isn't, in the United States, is an FDA-approved female testosterone product — which is the real reason most clinics don't offer it.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  One pan, 25 minutes, 38 grams of protein per plate. A clinician-built weeknight dinner that scales for one or feeds a family of four — no specialty ingredients required.
 
+ This ginger chicken stir-fry cooks in 25 minutes using one pan and delivers 38g of protein per serving. It uses boneless chicken thighs, fresh ginger and garlic, broccoli, bell pepper, snap peas, and simple pantry staples. The recipe serves two generously or four with rice, and includes options to swap in shrimp, tofu, or salmon.
+
  If your default weeknight dinner has slid into "whatever's quickest" — which usually means takeout, pasta, or a sad piece of chicken next to a frozen vegetable — this is the recipe to anchor your Monday-through-Thursday rotation.
 
  One pan. Twenty-five minutes. Thirty-eight grams of protein. Real ingredients you already have in the kitchen. The flavor depth comes from one move most home cooks skip: aggressive ginger and garlic.

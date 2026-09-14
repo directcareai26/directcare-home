@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most annual physicals check a basic metabolic panel and call it a day. The markers that actually forecast how long — and how well — you live are usually not on that requisition.
 
+ Ten biomarkers that predict longevity include ApoB, lipoprotein(a), hs-CRP, HbA1c, fasting insulin, GGT, homocysteine, vitamin D, uric acid, and cystatin C-based eGFR. These markers assess cardiovascular risk, metabolic health, inflammation, and organ function more accurately than standard annual labs. They reveal risks not captured by routine tests, helping forecast long-term health outcomes.
+
  A standard annual physical usually runs a CBC, a basic metabolic panel, a standard lipid panel, and — if you push — a TSH and an HbA1c. That covers acute disease reasonably well. It is a surprisingly poor forecast of the two things that kill most adults: atherosclerotic cardiovascular disease and metabolic dysfunction.
 
  The biomarkers below are the ones with the strongest outcome data for all-cause and cardiovascular mortality. Some are cheap. Some your PCP will happily add if you ask. A few you will almost certainly have to request by name.

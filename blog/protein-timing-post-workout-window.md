@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains why the 'anabolic window' is mostly a myth: total daily protein matters far more than post-workout timing as long as you hit 1g/lb goal weight across 4 meals.
 
+ The 30-minute post-workout window is largely a myth. Research shows that total daily protein intake matters more than timing, as long as you consume 1 gram of protein per pound of body weight across 3 to 5 meals. The actual window is 4 to 6 hours after exercise, with diminishing returns if total daily protein is adequate.
+
  The "30-minute anabolic window" entered fitness mythology in the 1990s and refuses to leave. The shaker bottle on the way out of the gym became part of the ritual, and the gym-bro consensus settled on "if you don't drink it within 30 minutes, you've wasted the session."
 
  The actual literature is more nuanced. The window exists. It's just bigger than 30 minutes, and the variable that matters most isn't when you eat the protein. It's whether you hit the daily total with a few well-distributed meals around your training.

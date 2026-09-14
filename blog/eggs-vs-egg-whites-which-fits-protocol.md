@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Compares whole eggs vs. egg whites: whole eggs win for choline, B12, and selenium; whites win when you're hitting 1g/lb protein on a calorie ceiling.
 
+ Whole eggs provide choline, B12, selenium, and healthy fats not found in egg whites, making them more nutritious overall. Egg whites offer more protein per calorie, which is beneficial when strictly limiting calories or targeting high protein intake. For most people, whole eggs are preferable unless managing elevated LDL cholesterol or needing maximum protein density on a calorie ceiling.
+
  If you grew up in the 1990s, you grew up afraid of egg yolks. Two decades of dietary cholesterol messaging sent egg-white omelets into restaurant menus and yolks into the trash.
 
  The data has since walked most of that back. Whole eggs are not the dietary villain we treated them as, and for most patients they're a strictly better breakfast than egg whites alone. But "most" isn't "all". And there are specific protocols where egg whites still earn their spot.

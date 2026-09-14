@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Low libido in men is usually one of three things: low testosterone, chronic stress and poor sleep, or a third bucket most clinics miss — medications, relationship dynamics, and metabolic disease. This guide walks through how to tell them apart before you decide on a protocol.
 
+ Low libido in men is often not caused by low testosterone. It can stem from chronic stress, poor sleep, medications like SSRIs or finasteride, metabolic issues such as diabetes or obesity, elevated prolactin, or relationship dynamics. Even with normal testosterone levels, factors like sleep deprivation, alcohol use, or vascular problems can reduce desire. A proper evaluation requires checking hormone levels, medication history, sleep patterns, and overall health to identify the true cause.
+
  Most men who walk into a clinic asking about libido already have a theory: it's my testosterone. Sometimes they're right. Often they're not — and the wrong theory leads to the wrong protocol.
 
  Libido is a downstream signal. It reflects hormones, yes, but also sleep architecture, dopamine tone, vascular health, relationship context, and whatever medications you've been on for the last six months. Sorting which lever actually moved is the entire job.

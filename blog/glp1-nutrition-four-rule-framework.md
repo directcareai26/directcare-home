@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Outlines the 4-rule eating framework for GLP-1 patients: 1g protein per pound goal weight, fiber > 25g/day, hydration > 80oz, no liquid calories.
 
+ To stay full and fueled on a GLP-1, follow four rules: eat 1 gram of protein per pound of goal body weight each day, consume more than 25 grams of fiber from whole foods, drink over 80 ounces of water daily, and avoid liquid calories. Prioritize protein and fiber at meals before carbs to support muscle, digestion, and satiety.
+
  Most of the GLP-1 advice circulating right now is variations on "eat less." That's not the problem on these drugs. The problem is that your appetite has already been turned down. And now the small amount of food you do eat has to do four jobs at once: protect your muscle, keep you full, support gut transit, and avoid making you feel awful.
 
  Here's the four-rule framework we use with DirectCare AI patients on semaglutide and tirzepatide, with the published basis behind each rule.

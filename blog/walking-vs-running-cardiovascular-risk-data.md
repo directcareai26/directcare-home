@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Walking and running, when matched for total energy expenditure, deliver remarkably similar reductions in cardiovascular risk. The real differentiator isn't pace — it's whether you accumulate enough weekly minutes to move the needle.
 
+ Walking and running provide similar heart health benefits when matched for total energy expenditure. Studies show comparable reductions in cardiovascular risk, blood pressure, cholesterol, and diabetes when both activities burn the same number of calories. The key factor is accumulating enough weekly minutes, not the type of exercise. Brisk walking and running both improve heart health when done consistently over time.
+
  The internet loves a winner. Runners insist their sport is the gold standard for heart health; walkers point to longevity studies and say they've been right all along. The literature is less dramatic than either camp would like.
 
  When you match walking and running for total energy expenditure — same calories burned, same weeks of training — the cardiovascular benefits converge. Below is what the actual data says, what it doesn't, and how to choose the modality that will keep you compliant for the next 20 years.

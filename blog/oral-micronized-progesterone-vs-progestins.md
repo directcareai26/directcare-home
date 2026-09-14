@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Oral micronized progesterone and synthetic progestins are not interchangeable — they diverge on breast cancer signal, sleep, and neurosteroid activity. Here's what the evidence actually says.
 
+ Oral micronized progesterone and synthetic progestins are not the same. Micronized progesterone, the body’s natural hormone, has a more favorable profile for breast cancer risk, brain and sleep health, and cardiovascular effects compared to synthetic progestins like medroxyprogesterone acetate. It produces allopregnanolone, a neurosteroid that supports sleep and calmness, while progestins do not. Micronized progesterone is the preferred first-line option for most women on estrogen therapy who need endometrial protection.
+
  If you're on estrogen therapy and still have a uterus, you need a progestogen. That part isn't controversial. What is controversial — and clinically important — is **which** progestogen, because oral micronized progesterone (the molecule your ovaries actually made) and synthetic progestins like medroxyprogesterone acetate (MPA) or norethindrone behave differently in breast tissue, brain tissue, and the vascular wall.
 
  This matters because the WHI trial that scared a generation of women off HRT in 2002 used MPA, not progesterone. The distinction was buried for years. It shouldn't be.

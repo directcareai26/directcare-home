@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  GLP-1 medications slow gastric emptying and blunt appetite, but without 25-35g of daily fiber, patients hit constipation, energy crashes, and rebound hunger. Here's how to build fiber into a GLP-1 protocol so the appetite suppression actually lasts.
 
+ On a GLP-1 medication, consuming 25-35 grams of fiber daily from whole foods helps maintain steady appetite control, prevents constipation, and stabilizes energy levels. Without enough fiber, appetite suppression fades, leading to rebound hunger and energy crashes.
+
  If you're on semaglutide or tirzepatide and feeling great for three days, then bloated, constipated, and weirdly ravenous by day five — the issue is almost never the medication. It's the fiber gap.
 
  GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing ([Maselli & Camilleri, 2021](https://pubmed.ncbi.nlm.nih.gov/33397631/)). That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.

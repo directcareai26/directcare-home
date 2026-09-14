@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Subcutaneous testosterone injections produce steadier serum levels and fewer peaks than intramuscular dosing in head-to-head pharmacokinetic studies. For most men on weekly or twice-weekly TRT, subQ is easier, less painful, and clinically equivalent — but IM still has a role.
 
+ Subcutaneous testosterone injections produce steadier serum levels than intramuscular injections, with lower peaks and similar troughs at the same weekly dose. The smoother curve is linked to less pain, easier self-administration, and reduced side effects like mood swings and water retention.
+
  If you've been on TRT for more than about ten minutes, someone has told you that intramuscular injections are the "real" way to do it and subcutaneous shots are for beginners. The pharmacokinetic literature does not agree.
 
  Over the last decade, several head-to-head studies have measured serum testosterone, estradiol, hematocrit, and patient-reported outcomes across both routes. The pattern is consistent: subcutaneous injection of testosterone cypionate or enanthate produces slightly lower peaks, similar troughs, and a smoother curve than the same dose given intramuscularly. For most patients, that translates to fewer symptoms of the peak-and-crash cycle — mood swings, water retention, and estradiol spikes.

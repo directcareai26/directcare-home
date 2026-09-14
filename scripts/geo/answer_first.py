@@ -49,9 +49,17 @@ Article:
 \"\"\"{body}\"\"\"
 
 Write ONE paragraph of 40-60 words that directly answers the question the title implies, in plain language, using ONLY
-facts that appear in the article. Rules: no new numbers, doses, drug names, statistics or claims that are not in the
-article; no marketing language; no first person; no "in this article"; no bullet points; no headings. Output the
-paragraph only.""")
+facts that appear in the article. Rules:
+1. CARRY EVERY QUALIFIER from the source sentence — population ("adults over 40", "men with metabolic syndrome"),
+   frequency ("usually", "often", "on average", "in most people"), and certainty ("may", "can", "evidence suggests",
+   "not confirmed"). Never turn an association into a cause, or a typical case into a universal one.
+2. NEVER introduce a superlative or ranking word ("best", "safest", "most effective", "most evidence-backed",
+   "gold standard") unless that exact word appears in the article about that exact thing.
+3. NO second-person medication instructions ("stop the medication if…", "reduce your dose", "you should take").
+   Describe what the article says clinicians or the evidence indicate, not what the reader should do.
+4. No guarantee verbs ("ensures", "proven", "guarantees"). No new numbers, doses, drug names or statistics.
+5. No marketing language, no first person, no "in this article", no bullet points, no headings.
+Output the paragraph only.""")
 
 
 def audit(title, body, para):
@@ -78,6 +86,16 @@ def positive_control():
     v = verdict(audit("Creatine basics", body, bad))
     if v != "UNSUPPORTED":
         print("!! UNDELIVERED: auditor accepted a deliberately false paragraph; aborting"); sys.exit(2)
+    # Second control: the compliance gate rejected 9 of 11 drafts for hedge-stripping and superlative injection,
+    # which medgemma's entity/number-level fidelity check passes. Prove the modality control catches it. 2026-09-14.
+    hedged = "Evidence suggests creatine may help some adults over 40; benefits in younger adults are less clear."
+    stripped = "Creatine is the best supplement and it improves strength in everyone who takes it."
+    v2 = verdict(audit("Creatine basics", hedged, stripped))
+    if v2 != "UNSUPPORTED":
+        print("!! WARNING: the fidelity auditor does not catch hedge-stripping/superlatives on its own — "
+              "the compliance gate is the only backstop for modality. Continuing (drafting rules updated).")
+    else:
+        print("modality control ok: auditor rejects a hedge-stripped superlative")
     print("positive control ok: auditor rejects an unsupported paragraph")
 
 

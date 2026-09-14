@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3), cruciferous vegetables (DIM).
 
+ During perimenopause, focus on five food categories to help manage symptoms: phytoestrogen-rich foods like soy and flax, which may reduce hot flashes; fatty fish and seeds high in omega-3s to lower inflammation; high-quality protein spread across meals to support muscle; calcium and vitamin D sources like yogurt and sardines for bone health; and fiber-dense, blood-sugar-stabilizing carbs such as oats, beans, and whole grains to support metabolism and weight management.
+
  Most of the perimenopause nutrition content online is either useless ("eat clean!") or wrong ("this herbal blend cures hot flashes"). The actual literature on food and the perimenopausal transition is narrower than either suggests. And it points to a small number of categories that consistently help.
 
  Here are the 5, with the published basis behind each. None of this replaces a clinical conversation about whether HRT is right for you. But as adjuncts to a thoughtful protocol, they meaningfully move the dial.

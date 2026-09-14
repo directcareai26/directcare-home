@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most weight-loss plateaus aren't a failure of discipline — they're a predictable hormonal adaptation to caloric restriction. Here's what actually changes in your body, and what to do about it.
 
+ A weight-loss plateau is often caused by hormonal changes, not lack of willpower. When you lose weight, leptin drops, lowering your metabolic rate and increasing hunger. Thyroid hormone levels fall, cortisol may rise due to stress or poor sleep, and hunger and satiety hormones shift, making further loss harder. These changes reduce energy expenditure and defend stored fat, even if you’re still eating less than before.
+
  You were losing weight. Then, somewhere between week 8 and week 16, the scale stopped moving. You didn't change what you were doing — if anything, you tightened it up. And still, nothing.
 
  The internet's answer is usually some version of try harder. The endocrinology answer is different, and more useful: your body has recalibrated its hormones to defend a higher body weight, and no amount of extra effort at the same intake will override that without a strategy change.

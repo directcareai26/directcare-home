@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for a 30-minute sheet-pan Mediterranean salmon bowl with 38g protein, 10g fiber, and 2.4g omega-3s — built for the smaller appetite a GLP-1 leaves you with.
 
+ This Mediterranean salmon bowl delivers 38 grams of protein, 10 grams of fiber, and 2.4 grams of omega-3s in a 30-minute sheet-pan meal. It features wild salmon, chickpeas, quinoa, broccoli, tomatoes, cucumber, and Greek yogurt, all roasted together with olive oil and lemon. The recipe is designed for people on GLP-1 medications who need nutrient-dense meals that support muscle preservation and satiety.
+
  If you're on semaglutide or tirzepatide, you already know the problem: your appetite has been dialed down to a whisper, and whatever you do eat needs to do the work of several normal meals. That's where this bowl earns its keep.
 
  It's protein-forward (38 g), fiber-dense (10 g), packed with omega-3s, and built around foods your gut will still tolerate on a GLP-1. The base is adapted from a Mediterranean salmon-bowl pattern popularized by [The Mediterranean Dish](https://www.themediterraneandish.com/salmon-rice-bowl/). We tightened the protein math for telehealth patients on appetite-suppressing protocols.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A single 6-ounce serving of wild sockeye salmon delivers roughly 1.5–2 g of EPA+DHA — enough to meet most clinical omega-3 targets in one meal. Here's the 20-minute sheet-pan version, plus what the numbers on your plate actually do inside your body.
 
+ A 6-ounce serving of wild sockeye or farmed Atlantic salmon provides 1.5 to 2 grams of EPA+DHA, meeting most clinical omega-3 targets in one meal. This recipe uses a sheet-pan method to cook salmon and asparagus in 20 minutes. The omega-3s in salmon help improve the Omega-3 Index, lower triglycerides, and reduce inflammation markers over time.
+
  Most "healthy salmon dinners" online are written for photos, not for physiology. The question worth asking isn't whether salmon is good for you — it's whether the portion you're eating actually delivers the EPA+DHA dose associated with clinical benefit.
 
  This recipe is built backward from that number. Twenty minutes, one sheet pan, and a portion sized to move the needle on the omega-3 index most cardiology guidelines care about.

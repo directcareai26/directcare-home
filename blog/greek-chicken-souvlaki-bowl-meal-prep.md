@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Recipe for meal-prep Greek chicken souvlaki bowls: 4 servings, 35g protein each, marinated chicken thighs, lemon-oregano dressing, tzatziki, cucumber-tomato salad.
 
+ Greek chicken souvlaki bowls are made by marinating chicken thighs, cooking them with rice or quinoa, and assembling with chickpeas, cucumbers, tomatoes, olives, and feta. The tzatziki and spinach are added fresh each day. This meal prep provides 38 grams of protein per serving and can be prepared in one afternoon for five lunches.
+
  If you're going to spend one afternoon a week cooking lunches in advance, here's the version with the best return on the investment: Greek chicken souvlaki bowls. The marinade does the flavor work, the grill (or pan) does the protein work, and the assembly is a 90-second job each morning for five days.
 
  38 g of protein, 8 g of fiber, Mediterranean-diet-aligned, $8 per serving.

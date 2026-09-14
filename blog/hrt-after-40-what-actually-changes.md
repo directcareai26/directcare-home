@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains what happens month-by-month on HRT after 40: hot flashes ease in 2-4 weeks, sleep and mood improve at 4-8 weeks, body composition and libido shift at 3-6 months.
 
+ When estradiol and progesterone are restored through HRT after 40, hot flashes typically ease within 2 to 4 weeks, sleep and mood improve between 4 to 8 weeks, and changes in libido, joint comfort, skin, and mental clarity become noticeable by months 2 to 3. Body composition and energy levels may shift within 3 to 6 months, with ongoing adjustments based on bloodwork to maintain balance.
+
  If you're somewhere between 40 and 55 and you've started Googling phrases like "why am I so tired" or "is this perimenopause," the answer is almost certainly yes. And the answer is also more nuanced than the internet wants to admit.
 
  Hormone replacement therapy (HRT) in your 40s is not the same as HRT at 55. The bloodwork is different, the symptoms are different, and the protocol that fits you depends on which transition you're actually in. Here's what we typically see when a woman starts HRT. And what's realistic to expect.

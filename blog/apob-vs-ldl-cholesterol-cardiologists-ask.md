@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  LDL-C measures the cholesterol carried inside particles; ApoB counts the particles themselves. When the two disagree, ApoB is the better predictor of cardiovascular risk — and it's the number most standard panels still leave off.
 
+ ApoB measures the number of atherogenic particles in the blood, while LDL-C estimates the cholesterol inside those particles. ApoB is a more accurate predictor of heart disease risk because it counts the actual particles that can build plaque in arteries. When LDL-C and ApoB disagree, ApoB is the better guide for assessing risk and guiding treatment.
+
  If you've ever had a lipid panel come back with an LDL of 110 mg/dL and been told you're "basically fine," you may have been handed an incomplete picture. LDL-cholesterol (LDL-C) is a concentration — the total cholesterol cargo riding inside a family of particles. ApoB is a count — one apolipoprotein B molecule per atherogenic particle, no exceptions. Cardiologists increasingly treat ApoB as the sharper tool, and the guidelines are catching up.
 
  This is the number worth understanding before your next physical.

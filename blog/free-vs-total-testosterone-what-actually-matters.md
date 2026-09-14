@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Total testosterone is the headline number on your lab report, but free testosterone is what your tissues can actually use. Here's how to read both — and why the ratio between them often tells the real story.
 
+ Total testosterone measures all testosterone in the blood, but most is bound and inactive. Free testosterone, which is unbound, is the portion that actually affects the body. SHBG, a protein made by the liver, determines how much testosterone is free. A normal total testosterone level can still result in low free testosterone if SHBG is high, making free testosterone the better indicator of how you feel.
+
  If you've ever stared at a testosterone lab result and wondered why your total number looks "normal" but you still feel flat, you're reading the wrong line. Total testosterone is a headcount. Free testosterone is who actually showed up for work.
 
  Here's how to read both numbers — and the third one, SHBG, that quietly decides which of the two matters more for you.

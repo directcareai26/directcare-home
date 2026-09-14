@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Fatigue, hair shedding, brain fog, and cold hands in a woman over 40 get labeled perimenopause by default — but low ferritin causes the same picture and is missed because standard CBCs come back "normal." Here's how to read the right iron markers and what the numbers actually mean.
 
+ Low ferritin in women can cause symptoms like fatigue, hair loss, brain fog, and cold hands that are often mistaken for perimenopause. A normal hemoglobin level does not rule out iron deficiency, as ferritin measures iron stores before anemia develops. Ferritin under 30 ng/mL indicates deficiency, even with normal CBC results.
+
  A 44-year-old woman walks in with fatigue that coffee no longer touches, hair coming out in the shower, cold hands, restless legs at night, and a heart rate that seems to race up the stairs. The near-universal read is perimenopause. Sometimes it is. Very often, it's iron deficiency — and the CBC her primary care ordered came back "normal" because her hemoglobin hasn't dropped yet.
 
  This is the most under-recognized lab pattern in women's health, and it hides behind a single number most panels don't include by default: **ferritin**.

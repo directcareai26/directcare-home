@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure — and the side effects (libido, mood) it reduces.
 
+ Topical finasteride delivers hair-regrowth results similar to oral finasteride while reducing systemic exposure by about 80%. It lowers DHT in the scalp where it matters, with much less impact on blood DHT levels. It is applied daily to the scalp and used in combination with other treatments like minoxidil.
+
  Oral finasteride is the most-studied hair-loss medication in the world. It works. Slowing or reversing androgenetic alopecia in roughly 80 to 90 percent of men who take it consistently. Multiple trials, decades of follow-up, the works.
 
  It also produces side effects in a small but consistent percentage of users: libido changes, mood shifts, occasional erectile changes. Most resolve, some don't, and the existence of post-finasteride syndrome (whether or not you accept it as a defined entity) has made plenty of men hesitant to start the drug at all.

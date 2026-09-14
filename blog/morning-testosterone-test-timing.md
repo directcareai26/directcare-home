@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains why testosterone must be tested before 10am: levels can drop 25-30% from 7am to noon, enough to flip a normal reading into a low-T diagnosis or vice versa.
 
+ Testosterone levels peak in the morning and drop significantly by noon, with declines of 25-30% possible between 7 a.m. and 12 p.m. Testing before 10 a.m. is recommended because levels measured later in the day may appear low due to natural circadian rhythms, potentially leading to incorrect diagnoses. A valid baseline requires testing between 7 a.m. and 10 a.m. after an overnight fast, on two separate occasions.
+
  Testosterone is not a steady-state hormone. In healthy men, total testosterone can fluctuate by **30 to 50 percent** between sunrise and dinner, and the curve isn't subtle. It's a clean morning peak that drifts down through the day, with the lowest values typically showing up between 4 p.m. and bedtime.
 
  That matters because almost every clinical guideline. The Endocrine Society, the AUA, the European Association of Urology. Agrees on one thing: **a valid baseline testosterone draw happens between 7 a.m. and 10 a.m., after an overnight fast, on two separate occasions.**

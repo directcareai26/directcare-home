@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Chicken thighs, lemon, garlic, oregano. Herbed quinoa cooked in the same pan. 38 grams of protein, 9 grams of fiber, 30 minutes start to plate. The Saturday-night dinner you'll actually want to repeat on Tuesday.
 
+ This one-skillet Greek lemon chicken with herbed quinoa cooks in 30 minutes and delivers 38 grams of protein and 9 grams of fiber per serving. Chicken thighs are browned, then quinoa is cooked in the same pan with lemon, garlic, oregano, and broth, absorbing the flavorful pan drippings. The dish is finished with fresh parsley and feta, and can be scaled for one or four people.
+
  Some recipes earn a slot in your weekly rotation because they're impressive. This one earns a slot because you'll actually make it on a Tuesday at 7 PM when you're tired and slightly cranky.
 
  One skillet. Thirty minutes. Real Greek flavors that come from one move most home cooks skip: aggressive lemon and a serious amount of oregano. Thirty-eight grams of protein, nine grams of fiber, and quinoa that absorbs all the flavor from the chicken pan rather than getting cooked separately in plain water.

@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most GLP-1 nausea isn't caused by the drug — it's caused by escalating the dose faster than your gut can adapt. Here's how to titrate semaglutide or tirzepatide so you actually stay on the medication long enough to lose the weight.
 
+ Nausea from GLP-1 drugs often results from increasing the dose too quickly before the gut adapts. The body needs time to adjust to slower stomach emptying, which is a key part of how these drugs work. Waiting longer at each dose—especially when appetite is still suppressed and symptoms are absent—helps avoid prolonged nausea. Stepping up only when appetite returns and symptoms have resolved leads to better tolerance and sustained use.
+
  The single biggest reason people quit GLP-1s isn't cost, and it isn't plateau — it's the first eight weeks. They escalate on the manufacturer's default schedule, spend three weeks nauseated, and decide the drug isn't for them.
 
  It didn't have to go that way. Titration is a dial, not a fixed staircase. Below is the clinical logic for stepping semaglutide or tirzepatide up in a way that respects your gut, your appetite signaling, and the actual pharmacokinetics of the molecule.

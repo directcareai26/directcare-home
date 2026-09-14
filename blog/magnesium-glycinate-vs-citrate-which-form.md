@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Both forms deliver real magnesium with very different downstream behavior. How a clinician decides between glycinate and citrate, based on what your labs say.
 
+ Magnesium glycinate and citrate are both well-absorbed forms of magnesium that work differently in the body. Glycinate is gentle on the gut and supports sleep and relaxation, while citrate is efficient at raising serum magnesium and has a mild laxative effect. The choice depends on your symptoms: glycinate is better for sleep and sensitive digestion, citrate for constipation and quick repletion. Your lab results, especially RBC magnesium and vitamin D, help guide the choice.
+
  Walk down any supplement aisle and you'll find a dozen forms of magnesium on the shelf. Glycinate, citrate, oxide, malate, threonate, taurate, chloride. The labels all promise a slightly different benefit. The pricing is wildly different. The actual research on which form does what is a lot narrower than the marketing makes it sound.
 
  For most adults, the real decision lives between two of them: magnesium glycinate and magnesium citrate. Both are well-absorbed, well-studied, and widely available. They just do different things in your body. Picking the right one usually comes down to why you're supplementing in the first place — and what your labs actually look like.

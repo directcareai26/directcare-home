@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Rucking — walking with a weighted pack — is a low-impact way to hit cardio and load-bearing strength targets in the same session. For most adults, it's easier on joints than running and more metabolically demanding than a flat walk.
 
+ Rucking combines cardio and strength training by walking with a weighted backpack, offering a low-impact alternative to running that boosts heart rate and builds muscle in the back, glutes, and legs. It’s effective for improving aerobic capacity, preserving muscle, and supporting bone health without high joint stress.
+
  Rucking is walking with a weighted backpack. That's it. The military has used it as a conditioning tool for decades, and in the last few years it's quietly become one of the most efficient training modalities for adults who want to build aerobic capacity, preserve muscle, and protect bone density — without the joint cost of running.
 
  Here's the clinical case for it, and how to program it without hurting yourself.

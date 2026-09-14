@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Estradiol is the single most powerful signal your skeleton has for keeping bone. When it drops at menopause, bone loss accelerates for roughly a decade — and the fractures that follow often show up 20 to 30 years later.
 
+ Estradiol helps maintain bone density by slowing bone breakdown and supporting bone formation. When levels drop during menopause, bone loss accelerates, especially in the first decade after periods stop. Hormone replacement therapy with estradiol, started early in menopause, preserves bone and reduces fractures in the spine, hip, and wrist. The benefit is strongest when treatment begins within 10 years of menopause or before age 60.
+
  Bone looks static on an X-ray, but it's actually one of the most metabolically active tissues in the body. Osteoclasts break it down, osteoblasts rebuild it, and estradiol is the referee keeping that cycle balanced. When estradiol falls at menopause, the referee walks off the field — and resorption outpaces formation for years before you feel a thing.
 
  The fracture doesn't happen in your 50s. It happens in your 70s, when a hip gives out stepping off a curb. But the bone you lose to write that story is lost decades earlier, in the perimenopausal window most women are told to just wait out.

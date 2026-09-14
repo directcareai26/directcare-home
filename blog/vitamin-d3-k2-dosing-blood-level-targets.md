@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most adults who supplement vitamin D still land below the optimal 40–60 ng/mL range on a 25-hydroxy blood test. Here's how to dose D3, why K2 belongs in the stack, and what your labs should actually read.
 
+ Most adults remain deficient despite supplementing due to underdosing, poor absorption without fat, higher body fat, limited sun exposure, or gut issues. D3 raises 25-hydroxyvitamin D by about 10 ng/mL per 1,000 IU daily, but absorption drops without fat. Target levels of 40–60 ng/mL require consistent dosing with fat. Retesting after 10–12 weeks is essential to confirm progress.
+
  Roughly 40% of U.S. adults are vitamin D deficient by the conservative 20 ng/mL cutoff, and closer to 70% fall below the functional 40 ng/mL target many clinicians use ([Forrest & Stuhldreher, 2011](https://pubmed.ncbi.nlm.nih.gov/21310306/)). What surprises patients is how many of them are already taking vitamin D and still show up low on labs. The reason is almost always some combination of underdosing, poor absorption, and skipping the cofactor — vitamin K2 — that tells calcium where to go once D3 has pulled it into the bloodstream.
 
  This is the plain-English version of how to dose D3, why K2 belongs in the same capsule, and what number you should actually be chasing on your next 25-hydroxy vitamin D panel.

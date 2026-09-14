@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Perimenopause and menopause look similar on the outside but read very differently on a lab panel. Understanding which hormones swing, which crash, and which stay steady is the key to matching therapy to the phase you're actually in.
 
+ Perimenopause shows erratic hormone levels with fluctuating FSH, estradiol, and low progesterone, especially in the luteal phase, while menopause features consistently high FSH and low, stable estradiol after 12 consecutive months without a period. These patterns reflect hormonal chaos in perimenopause versus hormonal absence in menopause, guiding different treatment approaches.
+
  The clinical mistake we see most often in women's hormone care isn't overtreatment or undertreatment — it's mistreatment. A woman in early perimenopause gets handed the same protocol as a woman five years post-menopause, and the results are predictable: breakthrough bleeding, mood swings, or symptoms that never quite resolve.
 
  The two phases are not the same disease. They're not even the same physiology. And the lab values, if you know what to look for, will tell you which one you're in.

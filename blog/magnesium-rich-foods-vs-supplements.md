@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most adults fall short of the 320–420 mg daily magnesium target, but a few deliberate food swaps close the gap for many people. Supplements earn their place when intake, absorption, or medications tip the balance — here's how to tell which camp you're in.
 
+ Most adults don’t get enough magnesium from food alone, but for many, simple diet changes like adding pumpkin seeds, spinach, black beans, and dark chocolate can meet daily needs. Supplements are needed when medications like PPIs or diuretics, conditions like diabetes or IBD, or frequent alcohol use increase loss or reduce absorption. Food is often enough if the diet includes nuts, seeds, legumes, leafy greens, and whole grains regularly.
+
  Magnesium runs more than 300 enzymatic reactions in the body — muscle contraction, nerve signaling, glucose handling, blood pressure regulation, and the ATP cycle itself all depend on it. And yet national intake data from NHANES suggests roughly half of U.S. adults consume less than the Estimated Average Requirement each day.
 
  That gap has made magnesium the darling of the supplement aisle. But for a meaningful slice of people, three or four food changes close the deficit without a pill. This is the honest breakdown of when food is enough, and when it isn't.

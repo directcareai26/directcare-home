@@ -19,6 +19,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin — and what each finding means.
 
+ Female-pattern hair loss stems from multiple hormonal and nutritional factors beyond male-pattern baldness. Key markers include ferritin (target >70 ng/mL), thyroid function (TSH, free T3/T4), androgens (testosterone, DHEA-S), estradiol levels, and prolactin. Low ferritin, thyroid imbalances, elevated androgens, perimenopausal estradiol drops, and stress-related telogen effluvium are all significant contributors. A comprehensive panel identifies the true drivers behind hair thinning.
+
  If a woman walks into a dermatology visit complaining about hair loss and walks out with a single bottle of 5% minoxidil and no bloodwork, she got the partial answer.
 
  Female-pattern hair loss is real, common (roughly 40 percent of women have meaningful hair thinning by 50), and almost never has a single cause. Treating it like a topical-only problem misses the half of the protocol that actually moves the needle.

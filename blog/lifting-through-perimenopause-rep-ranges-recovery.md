@@ -17,6 +17,8 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Perimenopause changes how you recover, not whether you should lift heavy. The training that holds up prioritizes lower-rep strength work, protein timing, and longer between-session recovery than you needed at 35.
 
+ Lifting through perimenopause requires adjusting rep ranges and recovery. Focus on heavy strength work (3–6 reps) and hypertrophy (6–12 reps) for muscle and bone health, limiting high-rep accessory work. Train three days per week with 72 hours between intense sessions for the same muscle group. Prioritize protein intake of 1.6–2.2 g/kg daily, distributed across meals, and ensure adequate sleep to support recovery.
+
  If you've been lifting for years and suddenly the same program leaves you flat, sore for four days, and stalled on the bar — you're not imagining it. Perimenopause shifts the physiology underneath your training, and the fix isn't to train less. It's to train heavier in shorter doses, eat more protein, and stop pretending you recover like you did at 32.
 
  Here's the program logic that holds up in the literature, and what to actually put on the whiteboard Monday morning.

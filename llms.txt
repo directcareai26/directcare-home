@@ -4,6 +4,10 @@
 
 DirectCare AI partners with US-licensed compounding pharmacies and clinical labs to deliver compounded medications (semaglutide, tirzepatide, testosterone, estradiol, progesterone, finasteride, minoxidil, tadalafil, sildenafil) and an 80+ biomarker hormone & longevity panel. Compounded medications are not FDA-approved as finished products; their active ingredients are individually FDA-approved.
 
+## Related sites (same company)
+- Corporate site for providers, health systems, employers and remote patient monitoring / chronic care management partners: https://corporate.directcare.ai/ (its own llms.txt: https://corporate.directcare.ai/llms.txt)
+- The former domain directcareai.com now permanently redirects to corporate.directcare.ai; it is not a separate company or site.
+
 ## Products
 
 - [Testosterone Replacement Therapy (TRT)](https://www.directcare.ai/testosterone-replacement-therapy): Injectable testosterone cypionate, oral testosterone undecanoate, and natural-pathway enclomiphene protocols, dose-titrated to bloodwork.

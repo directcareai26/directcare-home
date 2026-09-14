@@ -1,0 +1,42 @@
+{
+  "serverInfo": {
+    "name": "directcare-ai",
+    "title": "DirectCare AI",
+    "version": "1.0.0",
+    "description": "Read-only program directory for DirectCare AI, a US-only direct-to-patient telehealth service. Maps a health goal, symptom or medication to the matching program and its canonical page. Gives no medical advice, holds no patient records, and cannot start an intake or place an order. Treatment is decided by a US-licensed clinician after an intake the person completes themselves.",
+    "websiteUrl": "https://www.directcare.ai",
+    "documentationUrl": "https://www.directcare.ai/llms.txt"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://www.directcare.ai/api/mcp"
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false
+  },
+  "protocolVersions": ["2025-06-18", "2025-03-26", "2024-11-05"],
+  "authentication": {
+    "required": false,
+    "note": "No authentication. Everything this server returns is already public on www.directcare.ai, so there is nothing to protect and no OAuth metadata is published."
+  },
+  "tools": [
+    {
+      "name": "find_program",
+      "description": "Given a health goal, symptom or medication name, return the matching DirectCare AI program(s) with the canonical page URL and how a person starts."
+    },
+    {
+      "name": "list_programs",
+      "description": "Return every DirectCare AI program with its canonical page URL and one-line description, read live from the site's own llms.txt."
+    },
+    {
+      "name": "get_resources",
+      "description": "Return the machine-readable editions of www.directcare.ai: llms.txt, the whole site as Markdown, the blog manifest, the sitemap, the Markdown twin convention and the content-usage policy."
+    }
+  ],
+  "privacy": {
+    "personalDataAccepted": false,
+    "note": "Do not send personal or health information to these tools. It is not needed, not used, and not stored."
+  }
+}

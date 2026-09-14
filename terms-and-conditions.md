@@ -116,7 +116,7 @@ Legal
 
 - have compatible internet access, software, and device capabilities.
 
- Meeting these eligibility requirements does not guarantee that any particular service will be available to you or appropriate for you. Access to healthcare-related services may depend on provider judgment, licensing limitations, state-by-state availability, medical appropriateness, and other requirements.
+ Meeting these eligibility requirements does not guarantee that any particular service will be available to you or appropriate for you. Access to healthcare-related services may depend on provider judgment, licensing limitations, state-by-state availability, medical appropriateness, and other requirements. Services are available in all 50 states and Washington D.C. Medication and product availability varies based on clinical appropriateness, applicable federal and state laws, or other regulatory requirements. Not all therapies are available in all states. Availability is subject to change.
 
 ### V. Availability
 

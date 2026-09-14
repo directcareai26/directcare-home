@@ -266,16 +266,6 @@
       "permanent": true
     },
     {
-      "source": "/contact",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/contact/",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
       "source": "/minoxidil-finasteride-biotin",
       "destination": "/mens-hair-loss",
       "permanent": true
@@ -388,16 +378,6 @@
     {
       "source": "/privacy/",
       "destination": "/privacy-policy",
-      "permanent": true
-    },
-    {
-      "source": "/contact-us",
-      "destination": "/about",
-      "permanent": true
-    },
-    {
-      "source": "/contact-us/",
-      "destination": "/about",
       "permanent": true
     },
     {
@@ -633,6 +613,11 @@
     {
       "source": "/blog/zone-2-cardio-adults-over-40",
       "destination": "/blog/zone-2-cardio-over-40-how-to-measure",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact",
       "permanent": true
     }
   ],

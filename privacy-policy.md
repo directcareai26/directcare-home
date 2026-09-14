@@ -182,7 +182,7 @@ Legal
 
 #### 1. Healthcare Providers & Clinical Partners
 
- Including OpenLoop and associated licensed providers to deliver care.
+ Including OpenLoop and associated licensed providers to deliver care, and the US-licensed pharmacies that dispense prescriptions written for you. Our pharmacy partners are named on our [contact page](https://www.directcare.ai/contact).
 
 #### 2. Service Providers
 

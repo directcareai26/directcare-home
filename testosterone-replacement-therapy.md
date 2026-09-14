@@ -50,7 +50,7 @@ Provider Network
  8.1k reviews
 
  **50 States**
- Nationwide access to quality care
+ Nationwide care where state law permits
 
  **24/7 Support**
  Real help when you need it

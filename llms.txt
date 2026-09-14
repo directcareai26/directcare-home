@@ -27,6 +27,14 @@ DirectCare AI partners with US-licensed compounding pharmacies and clinical labs
 - Direct-to-patient programs (weight loss, hormones, sexual health, hair regrowth, supplements, labs, peptides) are cash-pay: DirectCare AI does not accept or require insurance or referrals for them.
 - Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) are the only programs billed to insurance: most major plans including Medicare are accepted, benefits are verified before anything ships, and most Medicare patients pay $0 out of pocket.
 
+## Pharmacy partners
+
+DirectCare AI does not manufacture or compound medications. Prescriptions are filled by US-licensed pharmacies, including Red Rock Compounding Pharmacy (St. George, UT), Health Warehouse (Florence, KY), Precision Medicine (Bellmore, NY) and Triad Rx (Daphne, AL). Which pharmacy fills a prescription depends on the medication and the prescribing clinician's order. Full details: https://www.directcare.ai/contact
+
+## Availability
+
+- Services are available in all 50 states and Washington D.C. Medication and product availability varies based on clinical appropriateness, applicable federal and state laws, or other regulatory requirements. Not all therapies are available in all states. Availability is subject to change.
+
 ## The Blog (editorial)
 
 - [The DirectCare AI Blog](https://www.directcare.ai/blog): Plain-English breakdowns of the science behind hormone therapy, weight loss, sexual health, hair regrowth, blood labs, and supplements. Updated daily with clinician-written posts.

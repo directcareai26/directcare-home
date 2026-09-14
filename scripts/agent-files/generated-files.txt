@@ -106,6 +106,7 @@ blog/zone-2-cardio-over-40-how-to-measure.md
 blood-test.md
 ccpa.md
 chronic-care/index.md
+contact.md
 erectile-dysfunction/index.md
 faq.md
 hormone-replacement-therapy/hot-flashes-and-night-sweats.md

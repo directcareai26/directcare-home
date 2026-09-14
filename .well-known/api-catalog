@@ -1,0 +1,21 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://www.directcare.ai/api/a2a",
+      "links": [
+        {
+          "rel": "service-desc",
+          "href": "https://www.directcare.ai/.well-known/agent-card.json",
+          "type": "application/json",
+          "title": "A2A agent card — transport, protocol version, skills and input/output modes for this endpoint"
+        },
+        {
+          "rel": "service-doc",
+          "href": "https://www.directcare.ai/llms.txt",
+          "type": "text/plain",
+          "title": "DirectCare AI site index — what the programs are and where their canonical pages live"
+        }
+      ]
+    }
+  ]
+}

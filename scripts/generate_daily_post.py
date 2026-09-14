@@ -344,7 +344,7 @@ def angle_already_covered(angle: str) -> bool:
     return False
 
 
-def near_duplicate_of_existing(slug: str, title: str) -> list[str]:
+def near_duplicate_of_existing(slug: str, title: str, category: str = "") -> list[str]:
     """Final guard on the GENERATED post: block it when its slug or title is a near-copy of a
     live post. The angle-level heuristic runs before the model writes; this runs after, on
     what would actually be published. Added 2026-09-13 after a crawl found 16 duplicate pairs
@@ -356,7 +356,10 @@ def near_duplicate_of_existing(slug: str, title: str) -> list[str]:
     for p in manifest_posts():
         ts = difflib.SequenceMatcher(None, norm(title), norm(p.get("title", ""))).ratio()
         ss = difflib.SequenceMatcher(None, slug, p.get("slug", "")).ratio()
-        if ts >= 0.75 or ss >= 0.8:
+        same_cat = (p.get("category") or "") == category
+        # Parallel program guides legitimately share a shape ("How to choose an online HRT/TRT clinic"):
+        # across categories only a near-identical title/slug counts as a duplicate. 2026-09-14.
+        if (ts >= 0.75 or ss >= 0.8) if same_cat else (ts >= 0.92 or ss >= 0.92):
             out.append(f"near-duplicate of existing post /blog/{p.get('slug')} "
                        f"(title similarity {ts:.2f}, slug similarity {ss:.2f})")
     return out
@@ -482,7 +485,7 @@ Return a JSON object with this exact schema:
   "answer_first": "40-60 words that directly answer the question the title poses, using ONLY facts stated in body_markdown — no new numbers, doses, drug names or claims; no first person; no marketing",
   "title_html": "Title with one <em>italic phrase</em> wrapped in em tags",
   "deck": "2-sentence deck that answers the search intent.",
-  "meta_description": "140-158 char meta description.",
+  "meta_description": "140-158 char meta description; 120-155 characters, hard maximum 155",
   "excerpt": "1-2 sentence card excerpt, max 240 chars.",
   "keywords": ["primary keyword", "secondary keyword", "long-tail keyword", "..."],
   "references": [
@@ -596,7 +599,7 @@ def main() -> int:
         guard.check_references(payload.get("references"), topic["category"])
         + guard.check_reviewer(payload.get("slug", ""), topic["category"], registry)
     )
-    problems += near_duplicate_of_existing(payload.get("slug", ""), payload.get("title", ""))
+    problems += near_duplicate_of_existing(payload.get("slug", ""), payload.get("title", ""), topic["category"])
     if problems:
         print(f"[generate_daily_post] BLOCKED — {payload.get('slug','?')} "
               f"({topic['category']}) fails editorial policy:", file=sys.stderr)

@@ -240,6 +240,9 @@ def call_openai(prompt: str) -> tuple[str, list[str] | None, str | None]:
                 "model": "gpt-4o",
                 "input": prompt,
                 "tools": [{"type": "web_search_preview"}],
+                # Without this the model answers 19/35 prompts from memory: no sources, and a row that is not
+                # comparable with the engines that always search. Forcing the hosted tool fixed it. 2026-09-14.
+                "tool_choice": {"type": "web_search_preview"},
             },
             timeout=120,
         )
@@ -349,6 +352,19 @@ def run(args) -> int:
 
     # ----- Write outputs -----
     json_path = RESULTS_DIR / f"{today}.json"
+    # Merge, never clobber: `--engine openai` used to overwrite the whole day's file with just that engine's rows,
+    # silently destroying the other three. Keep same-day rows from engines this run did not touch. 2026-09-14.
+    if json_path.exists():
+        try:
+            prior = json.loads(json_path.read_text())
+            ran = {r["engine"] for r in runs}
+            kept = [r for r in prior if r.get("engine") not in ran]
+            if kept:
+                print(f"merging with {len(kept)} existing row(s) from {sorted({r['engine'] for r in kept})}")
+            runs = kept + runs
+        except Exception as e:  # noqa: BLE001
+            print(f"!! WARNING: could not merge prior results ({e}); writing this run only")
+    runs.sort(key=lambda r: (r.get("vertical", ""), r.get("prompt", ""), r.get("engine", "")))
     json_path.write_text(json.dumps(runs, indent=2))
     print(f"\nWrote {json_path}")
 
@@ -358,6 +374,21 @@ def run(args) -> int:
 
     # Append history CSV
     csv_path = RESULTS_DIR / "history.csv"
+    # Re-running an engine for a day used to append a second row for every prompt, double-counting it in trends.
+    # Drop this run's (date, engine) rows before appending. 2026-09-14.
+    if csv_path.exists():
+        try:
+            existing = list(csv.reader(csv_path.open()))
+            if existing:
+                head, body = existing[0], existing[1:]
+                pairs = {(r["date"], r["engine"]) for r in runs}
+                kept = [r for r in body if len(r) > 1 and (r[0], r[1]) not in pairs]
+                if len(kept) != len(body):
+                    with csv_path.open("w", newline="") as f:
+                        w = csv.writer(f); w.writerow(head); w.writerows(kept)
+                    print(f"history.csv: replaced {len(body) - len(kept)} row(s) for {sorted(pairs)}")
+        except Exception as e:  # noqa: BLE001
+            print(f"!! WARNING: could not de-duplicate history.csv ({e})")
     is_new = not csv_path.exists()
     with csv_path.open("a", newline="") as f:
         w = csv.writer(f)

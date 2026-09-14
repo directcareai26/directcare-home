@@ -79,7 +79,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Storage note: frozen berries retain anthocyanin content essentially equal to fresh. Buy frozen wild blueberries — they have roughly 2x the anthocyanin content of cultivated.
 
- {callout: The clinical bottom line} You don't need every color every day — but you need most colors most days, at roughly 800 g total, with cruciferous and berries as the two non-negotiables.
+ **The clinical bottom line**You don't need every color every day — but you need most colors most days, at roughly 800 g total, with cruciferous and berries as the two non-negotiables.
 
 ### White and brown: the category people forget
 

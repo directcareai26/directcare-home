@@ -30,7 +30,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Eight grams of fiber is roughly a third of the daily 25–35g target, and — more practically — it's the dose that noticeably slows gastric emptying and flattens the glucose curve after breakfast. Most Americans get about 15g of fiber a day, which is why energy crashes at 10 a.m. feel normal. They aren't.
 
  A breakfast that hits both numbers is doing two jobs at once: preserving lean mass and stabilizing appetite for the next four hours.
- {callout: The template} Protein anchor (30g+) + fiber source (8g+) + optional fat and flavor. Everything else — sweet, savory, hot, cold — is a rotation, not a rule.
+ **The template**Protein anchor (30g+) + fiber source (8g+) + optional fat and flavor. Everything else — sweet, savory, hot, cold — is a rotation, not a rule.
 
 ### Rotation 1: Greek yogurt bowl — the two-minute default
 

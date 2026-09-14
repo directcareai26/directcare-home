@@ -83,7 +83,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's it. Five minutes, no equipment beyond a light band if you have one.
 
- {callout: The takeaway} A dynamic warm-up that hits general temperature, joint mobility, and movement-specific priming — in that order — is one of the highest-ROI five minutes in your training week.
+ **The takeaway**A dynamic warm-up that hits general temperature, joint mobility, and movement-specific priming — in that order — is one of the highest-ROI five minutes in your training week.
 
 ### How hard should the warm-up feel?
 

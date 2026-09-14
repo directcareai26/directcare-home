@@ -43,7 +43,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A workable week: lentils twice, tofu twice, tempeh twice, one flex day. That structure alone gets most women to 90+ g of plant protein daily before you add Greek yogurt, eggs, or a scoop of whey to breakfast.
 
- {callout: The takeaway} Perimenopause raises the protein floor to roughly 1.2–1.6 g/kg/day — and a lentil, tofu, and tempeh rotation makes that math work without leaning on saturated fat.
+ **The takeaway**Perimenopause raises the protein floor to roughly 1.2–1.6 g/kg/day — and a lentil, tofu, and tempeh rotation makes that math work without leaning on saturated fat.
 
 ### Recipe 1: Red lentil dal with spinach (weeknight anchor)
 

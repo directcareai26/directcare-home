@@ -89,7 +89,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Between lifting days: walk daily, one optional Zone 2 cardio session (30–45 min), and one session of something you enjoy — yoga, pickleball, hiking. Skip the fasted HIIT phase; it's not doing what you were told it would.
 
- {callout: The one rule} If you can't recover well enough to add 2.5–5 lb to a main lift every 2–3 weeks, you're doing too much volume, not too little.
+ **The one rule**If you can't recover well enough to add 2.5–5 lb to a main lift every 2–3 weeks, you're doing too much volume, not too little.
 
 ### Progression rules when the linear gains stop
 

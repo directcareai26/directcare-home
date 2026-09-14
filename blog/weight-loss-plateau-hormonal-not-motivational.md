@@ -60,7 +60,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Endogenous GLP-1 (your body's natural satiety hormone) drops during weight loss. Ghrelin, the hunger hormone, rises — and stays elevated for at least a year after weight loss in most studies (Sumithran et al., NEJM 2011). This is the biological reason maintenance feels harder than losing.
 
  A plateau is your endocrine system doing exactly what it evolved to do. The fix isn't more willpower — it's changing the inputs so the signaling changes.
- {callout: The core idea} A weight-loss plateau is not evidence that you've failed. It's evidence that your body has successfully defended itself against further loss — and breaking through requires changing the hormonal signal, not just eating less.
+ **The core idea**A weight-loss plateau is not evidence that you've failed. It's evidence that your body has successfully defended itself against further loss — and breaking through requires changing the hormonal signal, not just eating less.
 
 ### What actually breaks a plateau
 

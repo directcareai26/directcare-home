@@ -77,7 +77,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Titration plan.** Both drugs have published escalation schedules — semaglutide starts at 0.25 mg weekly and steps up roughly every four weeks; tirzepatide starts at 2.5 mg weekly with a similar cadence. Titration is not aggressive by design. Going faster to chase results is how people end up with intractable nausea and quit the drug entirely.
 
- {callout: The most important takeaway} A good online GLP-1 program is defined less by how fast it can send a prescription and more by how carefully it screens, titrates, and follows up.
+ **The most important takeaway**A good online GLP-1 program is defined less by how fast it can send a prescription and more by how carefully it screens, titrates, and follows up.
 
 ### Step 4: The monthly visit — what it should actually cover
 

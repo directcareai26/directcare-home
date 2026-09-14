@@ -71,7 +71,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **3. Then coffee — ideally 60–90 minutes after waking.** By this point, your endogenous cortisol peak is past its highest point, and caffeine acts as a useful nudge rather than an amplifier. You also get more perceived benefit from the same dose, because you're not already maxed out.
 
- {callout: The takeaway} Coffee isn't the problem — coffee on an empty stomach during your natural cortisol peak is. Push it 60–90 minutes later, behind water, electrolytes, and protein.
+ **The takeaway**Coffee isn't the problem — coffee on an empty stomach during your natural cortisol peak is. Push it 60–90 minutes later, behind water, electrolytes, and protein.
 
 ### What about black coffee for fasting or weight loss?
 

@@ -69,7 +69,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The physiological target is the same: improve mitochondrial density, fat oxidation, and stroke volume without generating the cortisol and joint load of harder efforts. The modality is whatever puts you in that heart-rate range and lets you stay there for 30–60 minutes.
 
- {callout: The takeaway} Walking and running produce comparable cardiovascular risk reduction when matched for energy expenditure — the better choice is whichever one you'll do consistently for the next decade.
+ **The takeaway**Walking and running produce comparable cardiovascular risk reduction when matched for energy expenditure — the better choice is whichever one you'll do consistently for the next decade.
 
 ### A practical weekly template
 

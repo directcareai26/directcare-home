@@ -61,7 +61,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  An ultrasound is not standard pre-treatment, but any palpable neck mass, persistent hoarseness, or dysphagia before or during treatment warrants imaging — full stop.
 
- {callout: The takeaway} The boxed MTC warning matters most as a screening question at intake, not as an ongoing lab you chase every month. What actually shifts during treatment is TSH and levothyroxine absorption — and those are the numbers to watch.
+ **The takeaway**The boxed MTC warning matters most as a screening question at intake, not as an ongoing lab you chase every month. What actually shifts during treatment is TSH and levothyroxine absorption — and those are the numbers to watch.
 
 ### What actually changes on treatment — tuned to your numbers
 

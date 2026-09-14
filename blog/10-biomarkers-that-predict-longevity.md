@@ -55,7 +55,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Think of it as an integrated marker of oxidative stress and metabolic burden. Optimal is generally Elevated homocysteine is associated with cardiovascular events, cognitive decline, and cerebral atrophy. Supplementation with B12, folate, and B6 lowers homocysteine reliably; whether that lowers hard endpoints is more contested. But the marker itself is a useful readout of B-vitamin status and methylation.
 
- Aim for {callout: The takeaway} A "normal" annual physical can miss elevated Lp(a), rising ApoB, early hyperinsulinemia, and low-grade inflammation — the exact processes that quietly build the disease you will eventually be diagnosed with.
+ Aim for **The takeaway**A "normal" annual physical can miss elevated Lp(a), rising ApoB, early hyperinsulinemia, and low-grade inflammation — the exact processes that quietly build the disease you will eventually be diagnosed with.
 
 ### 8. Vitamin D (25-OH) — the modifiable one everyone under-tests
 

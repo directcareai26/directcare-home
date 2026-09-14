@@ -73,7 +73,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Retest at 10–12 weeks. Adjust. Retest again in a year. This is the whole protocol.
 
- {callout: The single most important line} Take D3 with fat, pair it with K2, and retest at 10–12 weeks — a bottle of D3 without a follow-up lab is a guess.
+ **The single most important line**Take D3 with fat, pair it with K2, and retest at 10–12 weeks — a bottle of D3 without a follow-up lab is a guess.
 
 ### Why K2 belongs in the same capsule
 

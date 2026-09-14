@@ -63,7 +63,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  So when someone tells you 'tadalafil is stronger,' what they usually mean is 'tadalafil gave me a longer window and I liked that better.' Both work. Neither is a magic bullet.
 
- {callout: The real choice} Sildenafil rewards planning and gives you a clean 4–6 hour window; tadalafil trades a slightly slower onset for up to 36 hours of coverage or the option of daily dosing — pick based on how you want sex to fit your life, not on which is 'stronger.'
+ **The real choice**Sildenafil rewards planning and gives you a clean 4–6 hour window; tadalafil trades a slightly slower onset for up to 36 hours of coverage or the option of daily dosing — pick based on how you want sex to fit your life, not on which is 'stronger.'
 
 ### Who should probably pick sildenafil
 

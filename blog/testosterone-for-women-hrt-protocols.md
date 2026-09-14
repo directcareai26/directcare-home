@@ -77,7 +77,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The goal of therapy is to restore testosterone into the **upper end of the premenopausal physiologic range** — not above it. Supraphysiologic dosing is where the side effects (acne, hair changes, voice changes, virilization) live, and those changes can be slow to reverse.
 
- {callout: The takeaway} Testosterone therapy in women has the strongest evidence for postmenopausal HSDD, works best when dosed to restore — not exceed — the premenopausal physiologic range, and requires the right assay to monitor safely.
+ **The takeaway**Testosterone therapy in women has the strongest evidence for postmenopausal HSDD, works best when dosed to restore — not exceed — the premenopausal physiologic range, and requires the right assay to monitor safely.
 
 ### Dosing and delivery — the standard published ranges
 

@@ -69,7 +69,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Protein first at every meal. You will eat less than you think — get the 100–140 g of daily protein in before the appetite window closes.
 
- {callout: The core principle} You are titrating to the lowest effective dose that still drives weight loss — not to the highest dose you can tolerate. More drug is not more results once appetite is already suppressed.
+ **The core principle**You are titrating to the lowest effective dose that still drives weight loss — not to the highest dose you can tolerate. More drug is not more results once appetite is already suppressed.
 
 ### What to do when nausea shows up anyway
 

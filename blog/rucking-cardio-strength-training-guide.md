@@ -53,7 +53,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Cap most recreational ruckers at **one-third of body weight**. Beyond that, the injury risk (stress fractures, disc compression, plantar fasciitis) climbs faster than the fitness return.
 
- {callout: The rule that keeps you healthy} Add either distance or weight in a given week — never both. Progressive overload works; simultaneous overload injures.
+ **The rule that keeps you healthy**Add either distance or weight in a given week — never both. Progressive overload works; simultaneous overload injures.
 
 ### The warm-up you actually need
 

@@ -278,6 +278,16 @@ def related_posts_html(slug: str, category: str, n: int = 3) -> str:
     return "".join(out)
 
 
+_CALLOUT = re.compile(r"<p>\s*\{callout:\s*([^}]*?)\s*\}\s*(.*?)</p>", re.S)
+
+
+def render_callouts(html: str) -> str:
+    """Render the writer's {callout: Title} marker. Before 2026-09-14 the raw token shipped to production on
+    42 posts because nothing consumed it — a template placeholder visible to readers and answer engines."""
+    html = _CALLOUT.sub(lambda m: f'<p class="post-callout"><strong>{m.group(1)}</strong>{m.group(2)}</p>', html)
+    return re.sub(r"\{callout:\s*([^}]*?)\s*\}\s*", lambda m: f"<strong>{m.group(1)}</strong> ", html)
+
+
 def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     """Render one post. Returns (html, manifest_entry)."""
     required = ["slug", "title", "category", "deck", "body_markdown"]
@@ -342,7 +352,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     }
     for k, v in replacements.items():
         template = template.replace(k, v)
-    template = normalize_internal_links(template)
+    template = render_callouts(normalize_internal_links(template))
 
     manifest_entry = {
         "slug": slug,

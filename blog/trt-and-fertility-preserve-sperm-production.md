@@ -63,7 +63,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  hCG doesn't restore FSH, so it's not a complete substitute for the natural signal — but for maintaining spermatogenesis in men on testosterone, it's the best-studied adjunct available. It also tends to preserve testicular volume, which many men care about for reasons beyond fertility.
 
- {callout: The one thing to remember} If future fertility matters at all, add hCG from day one of TRT or bank sperm first — recovering suppressed spermatogenesis after the fact is slower, less certain, and more expensive than preventing the shutdown.
+ **The one thing to remember**If future fertility matters at all, add hCG from day one of TRT or bank sperm first — recovering suppressed spermatogenesis after the fact is slower, less certain, and more expensive than preventing the shutdown.
 
 ### Option 3: Clomiphene or enclomiphene instead of testosterone
 

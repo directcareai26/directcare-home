@@ -44,7 +44,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  A fair read: micronized progesterone is not risk-free, but the risk curve is meaningfully flatter than MPA's, especially in the first five years.
 
  The WHI didn't indict progesterone. It indicted medroxyprogesterone acetate. We spent 20 years conflating the two.
- {callout: The key takeaway} If a woman on estrogen HRT needs endometrial protection, oral micronized progesterone has a more favorable breast and cardiovascular profile than MPA in the available data — and it's the default first-line choice for most women without a specific reason to use a synthetic progestin.
+ **The key takeaway**If a woman on estrogen HRT needs endometrial protection, oral micronized progesterone has a more favorable breast and cardiovascular profile than MPA in the available data — and it's the default first-line choice for most women without a specific reason to use a synthetic progestin.
 
 ### Brain and sleep: the quiet advantage
 

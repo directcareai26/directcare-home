@@ -75,7 +75,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Total warm-up: about 7 minutes. Session total including warm-up: 28–35 minutes.
 
- {callout: The single takeaway} Maintenance is not a lesser goal — it is the goal that lets you show up for the next block. Two hard compound lifts, three times a week, at RPE 8, will hold your strength and lean mass through almost any bad month.
+ **The single takeaway**Maintenance is not a lesser goal — it is the goal that lets you show up for the next block. Two hard compound lifts, three times a week, at RPE 8, will hold your strength and lean mass through almost any bad month.
 
 ### Progression rules — because maintenance still drifts
 

@@ -495,6 +495,21 @@ Return a JSON object with this exact schema:
 }}
 
 Generate the post now. Output JSON only — no prose before or after.
+
+
+HARD PROHIBITIONS (a violation is a failed post, not a style note):
+- NEVER invent or include a testimonial, a quote attributed to a patient, a review, a star rating, a review count,
+  "trusted by N patients", or any endorsement. There is no consent-backed review pipeline, so any such content is
+  fabricated. Those slots stay empty. (Three fabricated testimonials reached production and were removed 2026-09-14.)
+- NEVER add a superlative or ranking word ("best", "safest", "most effective", "#1", "most evidence-backed") that is
+  not already in the source material about that exact thing.
+- NEVER strip a qualifier from a claim: carry the population ("adults over 40"), the frequency ("usually", "on
+  average") and the certainty ("may", "evidence suggests") through into your sentence.
+- NEVER write a second-person medical directive ("stop the medication if", "reduce your dose", "you should take",
+  "lift heavy 2-3x/week"). Describe what the evidence or a clinician indicates instead.
+- NEVER use a guarantee verb ("ensures", "guarantees", "proven") or promise an outcome ("you will lose weight",
+  "for the best results").
+- Callouts use exactly {callout: Short Title} at the start of a paragraph. Do not invent other template tokens.
 """
 
 

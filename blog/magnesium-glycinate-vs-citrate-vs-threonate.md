@@ -81,7 +81,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Reality check:** Threonate costs 3–5x more than glycinate or citrate, and per capsule it contains less elemental magnesium (the threonate molecule is heavy). You're paying for CNS delivery, not total-body repletion. If you also have restless sleep or constipation, threonate won't fix those — you'd stack it with glycinate at night, or just start with glycinate and see if the cognitive symptoms improve anyway (many do, because poor sleep is the brain fog).
 
- {callout: The 10-second rule} Pick by symptom: **glycinate for sleep and anxiety, citrate for constipation, threonate for cognition.** If you're not sure, start with glycinate — it's the most broadly useful and the least likely to cause side effects.
+ **The 10-second rule**Pick by symptom: **glycinate for sleep and anxiety, citrate for constipation, threonate for cognition.** If you're not sure, start with glycinate — it's the most broadly useful and the least likely to cause side effects.
 
 ### What about the other forms?
 

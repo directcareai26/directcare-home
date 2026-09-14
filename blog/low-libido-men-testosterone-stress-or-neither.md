@@ -74,7 +74,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  This bucket doesn't get fixed with a prescription. It gets fixed with sleep, training load adjustment, and — uncomfortably often — less alcohol.
 
- {callout: The clinical bottom line} If your testosterone is in range and your libido is low, the answer is almost never more testosterone — it's usually sleep, an SSRI, prolactin, or a metabolic problem hiding in plain sight.
+ **The clinical bottom line**If your testosterone is in range and your libido is low, the answer is almost never more testosterone — it's usually sleep, an SSRI, prolactin, or a metabolic problem hiding in plain sight.
 
 ### When it's neither — the bucket most clinics skip
 

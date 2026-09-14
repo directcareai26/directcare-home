@@ -49,7 +49,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Guidelines recommend a **baseline hematocrit** before starting, plus a **baseline PSA and digital rectal exam in men over 40** (or younger with risk factors) to establish a reference point before therapy potentially nudges PSA upward. Estradiol is worth having as a baseline too, because a subset of men aromatize aggressively and develop symptoms — nipple tenderness, water retention, mood swings — that are easier to interpret against a known starting number.
 
- {callout: The eight-point checklist} A legitimate online TRT clinic confirms the diagnosis with two morning draws, ties it to symptoms, works up the cause, checks baseline hematocrit and PSA, screens for contraindications, uses a state-licensed prescriber, titrates dose to response, and monitors on a real schedule. Anything less is marketing.
+ **The eight-point checklist**A legitimate online TRT clinic confirms the diagnosis with two morning draws, ties it to symptoms, works up the cause, checks baseline hematocrit and PSA, screens for contraindications, uses a state-licensed prescriber, titrates dose to response, and monitors on a real schedule. Anything less is marketing.
 
 ### 5. They screen for contraindications and red flags
 

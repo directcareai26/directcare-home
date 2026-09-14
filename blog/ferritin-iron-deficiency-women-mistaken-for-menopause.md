@@ -89,7 +89,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  So a woman with a ferritin of 22, hemoglobin of 13.1, and "normal" labs is not normal. She's iron-depleted, and it explains her symptoms.
 
- {callout: The one thing to remember} A ferritin under 30 ng/mL in a symptomatic woman is iron deficiency, even if her hemoglobin is normal and her CBC didn't flag.
+ **The one thing to remember**A ferritin under 30 ng/mL in a symptomatic woman is iron deficiency, even if her hemoglobin is normal and her CBC didn't flag.
 
 ### Why women in the perimenopause window are the highest-risk group
 

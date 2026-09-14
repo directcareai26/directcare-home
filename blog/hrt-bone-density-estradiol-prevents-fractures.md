@@ -54,7 +54,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Later analyses clarified something important: the fracture benefit held regardless of baseline fracture risk. Women who were not osteoporotic at entry still fractured less on HRT. This is prevention, not just treatment.
 
  Estradiol is the only intervention that both preserves bone density and, when started in the menopausal window, reduces fractures across the entire skeleton — spine, hip, and wrist.
- {callout: The window matters} Starting estradiol within 10 years of menopause, or before age 60, is where the bone benefit is strongest and the risk profile is most favorable — a principle now called the "timing hypothesis."
+ **The window matters**Starting estradiol within 10 years of menopause, or before age 60, is where the bone benefit is strongest and the risk profile is most favorable — a principle now called the "timing hypothesis."
 
 ### Is HRT better than a bisphosphonate for bone?
 

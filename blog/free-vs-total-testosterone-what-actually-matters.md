@@ -71,7 +71,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Low-SHBG man:** Total T 380 ng/dL (borderline low), SHBG 12 nmol/L (low), free T 95 pg/mL (fine). His total looks worse than he feels, and the real conversation is about metabolic health, not TRT.
 
- {callout: The takeaway} If you only order total testosterone, you're reading one page of a three-page report — and it's not the important page.
+ **The takeaway**If you only order total testosterone, you're reading one page of a three-page report — and it's not the important page.
 
 ### How to read your own results without spiraling
 

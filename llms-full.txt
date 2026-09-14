@@ -10251,7 +10251,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A prescriber who doesn't ask about onset, context, and morning erections is treating a symptom without a diagnosis.
 
- {callout: The load-bearing question} A safe online ED visit is one where the clinician has ruled out nitrates, screened for cardiovascular disease, reviewed your full medication list, and understood the pattern of your ED — before choosing a molecule and a starting dose.
+ **The load-bearing question**A safe online ED visit is one where the clinician has ruled out nitrates, screened for cardiovascular disease, reviewed your full medication list, and understood the pattern of your ED — before choosing a molecule and a starting dose.
 
 ### The hormone and metabolic questions — because ED is often the messenger
 
@@ -10353,7 +10353,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Guidelines recommend a **baseline hematocrit** before starting, plus a **baseline PSA and digital rectal exam in men over 40** (or younger with risk factors) to establish a reference point before therapy potentially nudges PSA upward. Estradiol is worth having as a baseline too, because a subset of men aromatize aggressively and develop symptoms — nipple tenderness, water retention, mood swings — that are easier to interpret against a known starting number.
 
- {callout: The eight-point checklist} A legitimate online TRT clinic confirms the diagnosis with two morning draws, ties it to symptoms, works up the cause, checks baseline hematocrit and PSA, screens for contraindications, uses a state-licensed prescriber, titrates dose to response, and monitors on a real schedule. Anything less is marketing.
+ **The eight-point checklist**A legitimate online TRT clinic confirms the diagnosis with two morning draws, ties it to symptoms, works up the cause, checks baseline hematocrit and PSA, screens for contraindications, uses a state-licensed prescriber, titrates dose to response, and monitors on a real schedule. Anything less is marketing.
 
 ### 5. They screen for contraindications and red flags
 
@@ -10460,7 +10460,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A good clinic will explain that these results shape the choice and dose of therapy, not whether you "qualify." A clinic that promises hormones before any workup, or one that gates every prescription on a rigid panel, are both red flags in opposite directions. You want clinical judgment, not a vending machine and not a bureaucracy.
 
- {callout: The one question that filters most clinics} Ask what estradiol routes they offer and why they'd pick one over another for a woman in her 40s with migraines or a family history of clots — if they can't answer specifically, they're not the clinic for you.
+ **The one question that filters most clinics**Ask what estradiol routes they offer and why they'd pick one over another for a woman in her 40s with migraines or a family history of clots — if they can't answer specifically, they're not the clinic for you.
 
 ### Which estradiol options do they offer?
 
@@ -10616,7 +10616,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Titration plan.** Both drugs have published escalation schedules — semaglutide starts at 0.25 mg weekly and steps up roughly every four weeks; tirzepatide starts at 2.5 mg weekly with a similar cadence. Titration is not aggressive by design. Going faster to chase results is how people end up with intractable nausea and quit the drug entirely.
 
- {callout: The most important takeaway} A good online GLP-1 program is defined less by how fast it can send a prescription and more by how carefully it screens, titrates, and follows up.
+ **The most important takeaway**A good online GLP-1 program is defined less by how fast it can send a prescription and more by how carefully it screens, titrates, and follows up.
 
 ### Step 4: The monthly visit — what it should actually cover
 
@@ -10748,7 +10748,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  So when someone tells you 'tadalafil is stronger,' what they usually mean is 'tadalafil gave me a longer window and I liked that better.' Both work. Neither is a magic bullet.
 
- {callout: The real choice} Sildenafil rewards planning and gives you a clean 4–6 hour window; tadalafil trades a slightly slower onset for up to 36 hours of coverage or the option of daily dosing — pick based on how you want sex to fit your life, not on which is 'stronger.'
+ **The real choice**Sildenafil rewards planning and gives you a clean 4–6 hour window; tadalafil trades a slightly slower onset for up to 36 hours of coverage or the option of daily dosing — pick based on how you want sex to fit your life, not on which is 'stronger.'
 
 ### Who should probably pick sildenafil
 
@@ -10880,7 +10880,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  hCG doesn't restore FSH, so it's not a complete substitute for the natural signal — but for maintaining spermatogenesis in men on testosterone, it's the best-studied adjunct available. It also tends to preserve testicular volume, which many men care about for reasons beyond fertility.
 
- {callout: The one thing to remember} If future fertility matters at all, add hCG from day one of TRT or bank sperm first — recovering suppressed spermatogenesis after the fact is slower, less certain, and more expensive than preventing the shutdown.
+ **The one thing to remember**If future fertility matters at all, add hCG from day one of TRT or bank sperm first — recovering suppressed spermatogenesis after the fact is slower, less certain, and more expensive than preventing the shutdown.
 
 ### Option 3: Clomiphene or enclomiphene instead of testosterone
 
@@ -11020,7 +11020,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Protein first at every meal. You will eat less than you think — get the 100–140 g of daily protein in before the appetite window closes.
 
- {callout: The core principle} You are titrating to the lowest effective dose that still drives weight loss — not to the highest dose you can tolerate. More drug is not more results once appetite is already suppressed.
+ **The core principle**You are titrating to the lowest effective dose that still drives weight loss — not to the highest dose you can tolerate. More drug is not more results once appetite is already suppressed.
 
 ### What to do when nausea shows up anyway
 
@@ -11138,7 +11138,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Split the dose. Two or three servings with meals containing fat improves absorption meaningfully compared to a single fasted dose, and reduces the fishy reflux most people complain about.
 
- {callout: The number that matters} Read the back of the label for "EPA" and "DHA" in milligrams — not the front-of-bottle "fish oil" number. If those two numbers don't add up to at least 1,000 mg per serving, you'll be swallowing a lot of softgels to hit an anti-inflammatory dose.
+ **The number that matters**Read the back of the label for "EPA" and "DHA" in milligrams — not the front-of-bottle "fish oil" number. If those two numbers don't add up to at least 1,000 mg per serving, you'll be swallowing a lot of softgels to hit an anti-inflammatory dose.
 
 ### EPA vs. DHA: does the ratio matter?
 
@@ -11276,7 +11276,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Think of it as an integrated marker of oxidative stress and metabolic burden. Optimal is generally Elevated homocysteine is associated with cardiovascular events, cognitive decline, and cerebral atrophy. Supplementation with B12, folate, and B6 lowers homocysteine reliably; whether that lowers hard endpoints is more contested. But the marker itself is a useful readout of B-vitamin status and methylation.
 
- Aim for {callout: The takeaway} A "normal" annual physical can miss elevated Lp(a), rising ApoB, early hyperinsulinemia, and low-grade inflammation — the exact processes that quietly build the disease you will eventually be diagnosed with.
+ Aim for **The takeaway**A "normal" annual physical can miss elevated Lp(a), rising ApoB, early hyperinsulinemia, and low-grade inflammation — the exact processes that quietly build the disease you will eventually be diagnosed with.
 
 ### 8. Vitamin D (25-OH) — the modifiable one everyone under-tests
 
@@ -11398,7 +11398,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Comprehensive metabolic panel — baseline liver and kidney function matter if spironolactone or oral minoxidil is on the table.
 
- {callout: The takeaway} Ferritin, TSH with free T4/T3, free testosterone with SHBG, DHEA-S, prolactin, and vitamin D form the minimum viable panel for female-pattern hair loss — anything less and you're guessing which driver you're treating.
+ **The takeaway**Ferritin, TSH with free T4/T3, free testosterone with SHBG, DHEA-S, prolactin, and vitamin D form the minimum viable panel for female-pattern hair loss — anything less and you're guessing which driver you're treating.
 
 ### How to read the results (tuned to your numbers)
 
@@ -11548,7 +11548,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Fiber: 4 g
 
- {callout: The number that matters} One 6-oz serving of fatty salmon delivers 1.5–2 g EPA+DHA — roughly two days' worth of the AHA prevention target in a single meal.
+ **The number that matters**One 6-oz serving of fatty salmon delivers 1.5–2 g EPA+DHA — roughly two days' worth of the AHA prevention target in a single meal.
 
 ### What actually changes on your labs
 
@@ -11696,7 +11696,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Between lifting days: walk daily, one optional Zone 2 cardio session (30–45 min), and one session of something you enjoy — yoga, pickleball, hiking. Skip the fasted HIIT phase; it's not doing what you were told it would.
 
- {callout: The one rule} If you can't recover well enough to add 2.5–5 lb to a main lift every 2–3 weeks, you're doing too much volume, not too little.
+ **The one rule**If you can't recover well enough to add 2.5–5 lb to a main lift every 2–3 weeks, you're doing too much volume, not too little.
 
 ### Progression rules when the linear gains stop
 
@@ -11805,7 +11805,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  A fair read: micronized progesterone is not risk-free, but the risk curve is meaningfully flatter than MPA's, especially in the first five years.
 
  The WHI didn't indict progesterone. It indicted medroxyprogesterone acetate. We spent 20 years conflating the two.
- {callout: The key takeaway} If a woman on estrogen HRT needs endometrial protection, oral micronized progesterone has a more favorable breast and cardiovascular profile than MPA in the available data — and it's the default first-line choice for most women without a specific reason to use a synthetic progestin.
+ **The key takeaway**If a woman on estrogen HRT needs endometrial protection, oral micronized progesterone has a more favorable breast and cardiovascular profile than MPA in the available data — and it's the default first-line choice for most women without a specific reason to use a synthetic progestin.
 
 ### Brain and sleep: the quiet advantage
 
@@ -11957,7 +11957,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Total warm-up: about 7 minutes. Session total including warm-up: 28–35 minutes.
 
- {callout: The single takeaway} Maintenance is not a lesser goal — it is the goal that lets you show up for the next block. Two hard compound lifts, three times a week, at RPE 8, will hold your strength and lean mass through almost any bad month.
+ **The single takeaway**Maintenance is not a lesser goal — it is the goal that lets you show up for the next block. Two hard compound lifts, three times a week, at RPE 8, will hold your strength and lean mass through almost any bad month.
 
 ### Progression rules — because maintenance still drifts
 
@@ -12087,7 +12087,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's not a guarantee — genetics, sleep apnea, hydration, and baseline red cell mass all matter — but the mechanism is coherent with the PK data.
 
- {callout: The clinical bottom line} At the same weekly dose, subcutaneous testosterone typically produces a flatter curve, lower peak estradiol, and often lower hematocrit than intramuscular — with equivalent trough levels and symptom control.
+ **The clinical bottom line**At the same weekly dose, subcutaneous testosterone typically produces a flatter curve, lower peak estradiol, and often lower hematocrit than intramuscular — with equivalent trough levels and symptom control.
 
 ### Does subQ actually work as well symptomatically?
 
@@ -12397,7 +12397,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Reality check:** Threonate costs 3–5x more than glycinate or citrate, and per capsule it contains less elemental magnesium (the threonate molecule is heavy). You're paying for CNS delivery, not total-body repletion. If you also have restless sleep or constipation, threonate won't fix those — you'd stack it with glycinate at night, or just start with glycinate and see if the cognitive symptoms improve anyway (many do, because poor sleep is the brain fog).
 
- {callout: The 10-second rule} Pick by symptom: **glycinate for sleep and anxiety, citrate for constipation, threonate for cognition.** If you're not sure, start with glycinate — it's the most broadly useful and the least likely to cause side effects.
+ **The 10-second rule**Pick by symptom: **glycinate for sleep and anxiety, citrate for constipation, threonate for cognition.** If you're not sure, start with glycinate — it's the most broadly useful and the least likely to cause side effects.
 
 ### What about the other forms?
 
@@ -12524,7 +12524,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you have no history of sexual dysfunction, no mood disorder that concerns you, and want the most-studied option, oral is a reasonable starting point.
 
- {callout: The core trade-off} Oral finasteride has the deepest efficacy data and easiest compliance; topical finasteride offers comparable scalp results with roughly half the systemic DHT suppression — choose based on how much systemic exposure you want to accept.
+ **The core trade-off**Oral finasteride has the deepest efficacy data and easiest compliance; topical finasteride offers comparable scalp results with roughly half the systemic DHT suppression — choose based on how much systemic exposure you want to accept.
 
 ### Who tends to do better on topical
 
@@ -12660,7 +12660,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For men who need frequent phlebotomy, ferritin becomes the marker to watch. If ferritin drops below 30 ng/mL, you're heading into functional iron deficiency and need to space donations further apart or supplement.
 
- {callout: The takeaway} Most men on injectable TRT will need to donate blood at some point — but the goal is a stable hematocrit under 54%, not aggressive over-donation that tanks your ferritin and makes you feel worse than the high hematocrit did.
+ **The takeaway**Most men on injectable TRT will need to donate blood at some point — but the goal is a stable hematocrit under 54%, not aggressive over-donation that tanks your ferritin and makes you feel worse than the high hematocrit did.
 
 ### Can you donate as a regular Red Cross donor, or do you need therapeutic phlebotomy? — the eligibility question
 
@@ -12775,7 +12775,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Endogenous GLP-1 (your body's natural satiety hormone) drops during weight loss. Ghrelin, the hunger hormone, rises — and stays elevated for at least a year after weight loss in most studies (Sumithran et al., NEJM 2011). This is the biological reason maintenance feels harder than losing.
 
  A plateau is your endocrine system doing exactly what it evolved to do. The fix isn't more willpower — it's changing the inputs so the signaling changes.
- {callout: The core idea} A weight-loss plateau is not evidence that you've failed. It's evidence that your body has successfully defended itself against further loss — and breaking through requires changing the hormonal signal, not just eating less.
+ **The core idea**A weight-loss plateau is not evidence that you've failed. It's evidence that your body has successfully defended itself against further loss — and breaking through requires changing the hormonal signal, not just eating less.
 
 ### What actually breaks a plateau
 
@@ -12925,7 +12925,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  So a woman with a ferritin of 22, hemoglobin of 13.1, and "normal" labs is not normal. She's iron-depleted, and it explains her symptoms.
 
- {callout: The one thing to remember} A ferritin under 30 ng/mL in a symptomatic woman is iron deficiency, even if her hemoglobin is normal and her CBC didn't flag.
+ **The one thing to remember**A ferritin under 30 ng/mL in a symptomatic woman is iron deficiency, even if her hemoglobin is normal and her CBC didn't flag.
 
 ### Why women in the perimenopause window are the highest-risk group
 
@@ -13036,7 +13036,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Eight grams of fiber is roughly a third of the daily 25–35g target, and — more practically — it's the dose that noticeably slows gastric emptying and flattens the glucose curve after breakfast. Most Americans get about 15g of fiber a day, which is why energy crashes at 10 a.m. feel normal. They aren't.
 
  A breakfast that hits both numbers is doing two jobs at once: preserving lean mass and stabilizing appetite for the next four hours.
- {callout: The template} Protein anchor (30g+) + fiber source (8g+) + optional fat and flavor. Everything else — sweet, savory, hot, cold — is a rotation, not a rule.
+ **The template**Protein anchor (30g+) + fiber source (8g+) + optional fat and flavor. Everything else — sweet, savory, hot, cold — is a rotation, not a rule.
 
 ### Rotation 1: Greek yogurt bowl — the two-minute default
 
@@ -13224,7 +13224,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Dutasteride is not FDA-approved for hair loss in the United States (it is approved in South Korea and Japan for this indication). U.S. prescribing for androgenetic alopecia is off-label but well-supported by literature.
 
- {callout: The core trade-off} Dutasteride offers more DHT suppression and more regrowth than finasteride — but its 5-week half-life means side effects, if they occur, take longer to resolve. It's a tool for the right patient, not a default upgrade.
+ **The core trade-off**Dutasteride offers more DHT suppression and more regrowth than finasteride — but its 5-week half-life means side effects, if they occur, take longer to resolve. It's a tool for the right patient, not a default upgrade.
 
 ### What the numbers actually show
 
@@ -13340,7 +13340,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Vitamin D — deficiency correlates with ED severity in observational studies, though causality is debated.
 
- {callout: The single most important takeaway} New-onset ED in a man over 40 should be treated as a cardiovascular screening event, not just a sexual health complaint — because the penile arteries reveal endothelial disease years before the coronaries do.
+ **The single most important takeaway**New-onset ED in a man over 40 should be treated as a cardiovascular screening event, not just a sexual health complaint — because the penile arteries reveal endothelial disease years before the coronaries do.
 
 ### What the numbers usually reveal — and what actually changes
 
@@ -13436,7 +13436,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  When the numbers disagree, ApoB wins on prognostic value. The 2021 European Society of Cardiology guidelines now list ApoB as an acceptable — and in some cases preferred — primary target for lipid-lowering therapy, particularly in patients with high triglycerides, diabetes, obesity, or very low LDL-C.
 
- {callout: The takeaway} If your LDL-C looks acceptable but you have insulin resistance, high triglycerides, or a family history of early heart disease, an ApoB measurement can reclassify your risk in either direction — and change what you should actually do about it.
+ **The takeaway**If your LDL-C looks acceptable but you have insulin resistance, high triglycerides, or a family history of early heart disease, an ApoB measurement can reclassify your risk in either direction — and change what you should actually do about it.
 
 ### What the ApoB numbers mean — tuned to your risk tier
 
@@ -13600,7 +13600,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  This is why simply "adding estrogen" to a perimenopausal woman can backfire. If her ovaries surge the following week, she's now stacked on top of a physiologic estradiol peak, and the symptoms she came in for (breast tenderness, migraine, heavy bleeding) get worse.
 
- {callout: The clinical takeaway} Perimenopause is a problem of hormonal chaos and often progesterone insufficiency; menopause is a problem of hormonal absence. The treatment logic follows from that distinction.
+ **The clinical takeaway**Perimenopause is a problem of hormonal chaos and often progesterone insufficiency; menopause is a problem of hormonal absence. The treatment logic follows from that distinction.
 
 ### What each phase actually calls for
 
@@ -13710,7 +13710,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A workable week: lentils twice, tofu twice, tempeh twice, one flex day. That structure alone gets most women to 90+ g of plant protein daily before you add Greek yogurt, eggs, or a scoop of whey to breakfast.
 
- {callout: The takeaway} Perimenopause raises the protein floor to roughly 1.2–1.6 g/kg/day — and a lentil, tofu, and tempeh rotation makes that math work without leaning on saturated fat.
+ **The takeaway**Perimenopause raises the protein floor to roughly 1.2–1.6 g/kg/day — and a lentil, tofu, and tempeh rotation makes that math work without leaning on saturated fat.
 
 ### Recipe 1: Red lentil dal with spinach (weeknight anchor)
 
@@ -13916,7 +13916,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Notice that plant-forward lunches usually need a stack (legume + dairy, or legume + egg) to reach the leucine threshold. That's fine — it's a construction problem, not a values problem.
 
- {callout: The rule} If your lunch has less than 30 grams of protein, it isn't lunch — it's a snack you're calling lunch, and your evening appetite will send you the bill.
+ **The rule**If your lunch has less than 30 grams of protein, it isn't lunch — it's a snack you're calling lunch, and your evening appetite will send you the bill.
 
 ### Four 10-minute lunch templates that clear 30 g
 
@@ -14078,7 +14078,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's 41g, which gives you buffer. Most patients hit closer to 30g when portions shrink on-medication, which is exactly the target.
 
- {callout: The core rule} On a GLP-1, every meal should contain at least one fiber-dense anchor food — beans, berries, oats, chia, avocado, or a cruciferous vegetable — before you decide what protein to add.
+ **The core rule**On a GLP-1, every meal should contain at least one fiber-dense anchor food — beans, berries, oats, chia, avocado, or a cruciferous vegetable — before you decide what protein to add.
 
 ### What about fiber supplements ?
 
@@ -14246,7 +14246,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  For an adult over 40, the practical stakes are metabolic: better fat oxidation means better fasting glucose, better triglycerides, and better body composition — often before the scale moves.
 
  If you only have four hours a week to train, three of them should probably be at a pace that feels almost boring.
- {callout: The rule of thumb} Most adults over 40 should spend roughly 80% of their weekly cardio in Zone 2 and 20% at higher intensities. This is the classic polarized model — and it's what the endurance literature keeps validating.
+ **The rule of thumb**Most adults over 40 should spend roughly 80% of their weekly cardio in Zone 2 and 20% at higher intensities. This is the classic polarized model — and it's what the endurance literature keeps validating.
 
 ### How to measure your Zone 2, three ways that actually work
 
@@ -14410,7 +14410,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Alcohol accelerates urinary magnesium loss. So do loop diuretics (furosemide), thiazides, and proton pump inhibitors used chronically. GI conditions — Crohn's, celiac, chronic diarrhea — cut absorption. Type 2 diabetes drives magnesium out through the kidneys.
 
- {callout: The rule of thumb} If your diet already includes nuts, seeds, legumes, leafy greens, and whole grains most days, food can almost certainly get you to the RDA. If it doesn't — or if a medication or condition is pulling magnesium out faster than you can eat it — a supplement is the pragmatic answer.
+ **The rule of thumb**If your diet already includes nuts, seeds, legumes, leafy greens, and whole grains most days, food can almost certainly get you to the RDA. If it doesn't — or if a medication or condition is pulling magnesium out faster than you can eat it — a supplement is the pragmatic answer.
 
 ### When a supplement is the smarter move
 
@@ -14568,7 +14568,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **Low-SHBG man:** Total T 380 ng/dL (borderline low), SHBG 12 nmol/L (low), free T 95 pg/mL (fine). His total looks worse than he feels, and the real conversation is about metabolic health, not TRT.
 
- {callout: The takeaway} If you only order total testosterone, you're reading one page of a three-page report — and it's not the important page.
+ **The takeaway**If you only order total testosterone, you're reading one page of a three-page report — and it's not the important page.
 
 ### How to read your own results without spiraling
 
@@ -14712,7 +14712,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Cap most recreational ruckers at **one-third of body weight**. Beyond that, the injury risk (stress fractures, disc compression, plantar fasciitis) climbs faster than the fitness return.
 
- {callout: The rule that keeps you healthy} Add either distance or weight in a given week — never both. Progressive overload works; simultaneous overload injures.
+ **The rule that keeps you healthy**Add either distance or weight in a given week — never both. Progressive overload works; simultaneous overload injures.
 
 ### The warm-up you actually need
 
@@ -14899,7 +14899,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  An ultrasound is not standard pre-treatment, but any palpable neck mass, persistent hoarseness, or dysphagia before or during treatment warrants imaging — full stop.
 
- {callout: The takeaway} The boxed MTC warning matters most as a screening question at intake, not as an ongoing lab you chase every month. What actually shifts during treatment is TSH and levothyroxine absorption — and those are the numbers to watch.
+ **The takeaway**The boxed MTC warning matters most as a screening question at intake, not as an ongoing lab you chase every month. What actually shifts during treatment is TSH and levothyroxine absorption — and those are the numbers to watch.
 
 ### What actually changes on treatment — tuned to your numbers
 
@@ -15032,7 +15032,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Later analyses clarified something important: the fracture benefit held regardless of baseline fracture risk. Women who were not osteoporotic at entry still fractured less on HRT. This is prevention, not just treatment.
 
  Estradiol is the only intervention that both preserves bone density and, when started in the menopausal window, reduces fractures across the entire skeleton — spine, hip, and wrist.
- {callout: The window matters} Starting estradiol within 10 years of menopause, or before age 60, is where the bone benefit is strongest and the risk profile is most favorable — a principle now called the "timing hypothesis."
+ **The window matters**Starting estradiol within 10 years of menopause, or before age 60, is where the bone benefit is strongest and the risk profile is most favorable — a principle now called the "timing hypothesis."
 
 ### Is HRT better than a bisphosphonate for bone?
 
@@ -15180,7 +15180,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Storage note: frozen berries retain anthocyanin content essentially equal to fresh. Buy frozen wild blueberries — they have roughly 2x the anthocyanin content of cultivated.
 
- {callout: The clinical bottom line} You don't need every color every day — but you need most colors most days, at roughly 800 g total, with cruciferous and berries as the two non-negotiables.
+ **The clinical bottom line**You don't need every color every day — but you need most colors most days, at roughly 800 g total, with cruciferous and berries as the two non-negotiables.
 
 ### White and brown: the category people forget
 
@@ -15318,7 +15318,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's it. Five minutes, no equipment beyond a light band if you have one.
 
- {callout: The takeaway} A dynamic warm-up that hits general temperature, joint mobility, and movement-specific priming — in that order — is one of the highest-ROI five minutes in your training week.
+ **The takeaway**A dynamic warm-up that hits general temperature, joint mobility, and movement-specific priming — in that order — is one of the highest-ROI five minutes in your training week.
 
 ### How hard should the warm-up feel?
 
@@ -15454,7 +15454,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Retest at 10–12 weeks. Adjust. Retest again in a year. This is the whole protocol.
 
- {callout: The single most important line} Take D3 with fat, pair it with K2, and retest at 10–12 weeks — a bottle of D3 without a follow-up lab is a guess.
+ **The single most important line**Take D3 with fat, pair it with K2, and retest at 10–12 weeks — a bottle of D3 without a follow-up lab is a guess.
 
 ### Why K2 belongs in the same capsule
 
@@ -15612,7 +15612,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The goal of therapy is to restore testosterone into the **upper end of the premenopausal physiologic range** — not above it. Supraphysiologic dosing is where the side effects (acne, hair changes, voice changes, virilization) live, and those changes can be slow to reverse.
 
- {callout: The takeaway} Testosterone therapy in women has the strongest evidence for postmenopausal HSDD, works best when dosed to restore — not exceed — the premenopausal physiologic range, and requires the right assay to monitor safely.
+ **The takeaway**Testosterone therapy in women has the strongest evidence for postmenopausal HSDD, works best when dosed to restore — not exceed — the premenopausal physiologic range, and requires the right assay to monitor safely.
 
 ### Dosing and delivery — the standard published ranges
 
@@ -15740,7 +15740,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **3. Then coffee — ideally 60–90 minutes after waking.** By this point, your endogenous cortisol peak is past its highest point, and caffeine acts as a useful nudge rather than an amplifier. You also get more perceived benefit from the same dose, because you're not already maxed out.
 
- {callout: The takeaway} Coffee isn't the problem — coffee on an empty stomach during your natural cortisol peak is. Push it 60–90 minutes later, behind water, electrolytes, and protein.
+ **The takeaway**Coffee isn't the problem — coffee on an empty stomach during your natural cortisol peak is. Push it 60–90 minutes later, behind water, electrolytes, and protein.
 
 ### What about black coffee for fasting or weight loss?
 
@@ -15882,7 +15882,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The physiological target is the same: improve mitochondrial density, fat oxidation, and stroke volume without generating the cortisol and joint load of harder efforts. The modality is whatever puts you in that heart-rate range and lets you stay there for 30–60 minutes.
 
- {callout: The takeaway} Walking and running produce comparable cardiovascular risk reduction when matched for energy expenditure — the better choice is whichever one you'll do consistently for the next decade.
+ **The takeaway**Walking and running produce comparable cardiovascular risk reduction when matched for energy expenditure — the better choice is whichever one you'll do consistently for the next decade.
 
 ### A practical weekly template
 
@@ -16034,7 +16034,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For women, LH and FSH only make sense in the context of cycle day or menopausal status. FSH >25 mIU/mL on day 3 of the cycle is suggestive of diminished ovarian reserve; FSH >30 mIU/mL with absent periods supports menopause.
 
- {callout: The clinician's shortcut} A complete hormone read needs at minimum: total T, free T (calculated), SHBG, estradiol (sensitive), LH, FSH, TSH, free T4, and a morning cortisol. Anything less and you're guessing.
+ **The clinician's shortcut**A complete hormone read needs at minimum: total T, free T (calculated), SHBG, estradiol (sensitive), LH, FSH, TSH, free T4, and a morning cortisol. Anything less and you're guessing.
 
 ### Prolactin — the marker that catches what nobody looks for
 
@@ -16450,7 +16450,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  This bucket doesn't get fixed with a prescription. It gets fixed with sleep, training load adjustment, and — uncomfortably often — less alcohol.
 
- {callout: The clinical bottom line} If your testosterone is in range and your libido is low, the answer is almost never more testosterone — it's usually sleep, an SSRI, prolactin, or a metabolic problem hiding in plain sight.
+ **The clinical bottom line**If your testosterone is in range and your libido is low, the answer is almost never more testosterone — it's usually sleep, an SSRI, prolactin, or a metabolic problem hiding in plain sight.
 
 ### When it's neither — the bucket most clinics skip
 

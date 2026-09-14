@@ -55,7 +55,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Dutasteride is not FDA-approved for hair loss in the United States (it is approved in South Korea and Japan for this indication). U.S. prescribing for androgenetic alopecia is off-label but well-supported by literature.
 
- {callout: The core trade-off} Dutasteride offers more DHT suppression and more regrowth than finasteride — but its 5-week half-life means side effects, if they occur, take longer to resolve. It's a tool for the right patient, not a default upgrade.
+ **The core trade-off**Dutasteride offers more DHT suppression and more regrowth than finasteride — but its 5-week half-life means side effects, if they occur, take longer to resolve. It's a tool for the right patient, not a default upgrade.
 
 ### What the numbers actually show
 

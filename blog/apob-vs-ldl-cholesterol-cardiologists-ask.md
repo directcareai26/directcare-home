@@ -49,7 +49,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  When the numbers disagree, ApoB wins on prognostic value. The 2021 European Society of Cardiology guidelines now list ApoB as an acceptable — and in some cases preferred — primary target for lipid-lowering therapy, particularly in patients with high triglycerides, diabetes, obesity, or very low LDL-C.
 
- {callout: The takeaway} If your LDL-C looks acceptable but you have insulin resistance, high triglycerides, or a family history of early heart disease, an ApoB measurement can reclassify your risk in either direction — and change what you should actually do about it.
+ **The takeaway**If your LDL-C looks acceptable but you have insulin resistance, high triglycerides, or a family history of early heart disease, an ApoB measurement can reclassify your risk in either direction — and change what you should actually do about it.
 
 ### What the ApoB numbers mean — tuned to your risk tier
 

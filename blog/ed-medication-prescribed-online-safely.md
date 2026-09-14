@@ -69,7 +69,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A prescriber who doesn't ask about onset, context, and morning erections is treating a symptom without a diagnosis.
 
- {callout: The load-bearing question} A safe online ED visit is one where the clinician has ruled out nitrates, screened for cardiovascular disease, reviewed your full medication list, and understood the pattern of your ED — before choosing a molecule and a starting dose.
+ **The load-bearing question**A safe online ED visit is one where the clinician has ruled out nitrates, screened for cardiovascular disease, reviewed your full medication list, and understood the pattern of your ED — before choosing a molecule and a starting dose.
 
 ### The hormone and metabolic questions — because ED is often the messenger
 

@@ -75,7 +75,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Alcohol accelerates urinary magnesium loss. So do loop diuretics (furosemide), thiazides, and proton pump inhibitors used chronically. GI conditions — Crohn's, celiac, chronic diarrhea — cut absorption. Type 2 diabetes drives magnesium out through the kidneys.
 
- {callout: The rule of thumb} If your diet already includes nuts, seeds, legumes, leafy greens, and whole grains most days, food can almost certainly get you to the RDA. If it doesn't — or if a medication or condition is pulling magnesium out faster than you can eat it — a supplement is the pragmatic answer.
+ **The rule of thumb**If your diet already includes nuts, seeds, legumes, leafy greens, and whole grains most days, food can almost certainly get you to the RDA. If it doesn't — or if a medication or condition is pulling magnesium out faster than you can eat it — a supplement is the pragmatic answer.
 
 ### When a supplement is the smarter move
 

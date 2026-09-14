@@ -61,7 +61,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's not a guarantee — genetics, sleep apnea, hydration, and baseline red cell mass all matter — but the mechanism is coherent with the PK data.
 
- {callout: The clinical bottom line} At the same weekly dose, subcutaneous testosterone typically produces a flatter curve, lower peak estradiol, and often lower hematocrit than intramuscular — with equivalent trough levels and symptom control.
+ **The clinical bottom line**At the same weekly dose, subcutaneous testosterone typically produces a flatter curve, lower peak estradiol, and often lower hematocrit than intramuscular — with equivalent trough levels and symptom control.
 
 ### Does subQ actually work as well symptomatically?
 

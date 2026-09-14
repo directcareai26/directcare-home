@@ -65,7 +65,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Vitamin D — deficiency correlates with ED severity in observational studies, though causality is debated.
 
- {callout: The single most important takeaway} New-onset ED in a man over 40 should be treated as a cardiovascular screening event, not just a sexual health complaint — because the penile arteries reveal endothelial disease years before the coronaries do.
+ **The single most important takeaway**New-onset ED in a man over 40 should be treated as a cardiovascular screening event, not just a sexual health complaint — because the penile arteries reveal endothelial disease years before the coronaries do.
 
 ### What the numbers usually reveal — and what actually changes
 

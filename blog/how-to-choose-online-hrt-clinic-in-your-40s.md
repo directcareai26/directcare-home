@@ -47,7 +47,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A good clinic will explain that these results shape the choice and dose of therapy, not whether you "qualify." A clinic that promises hormones before any workup, or one that gates every prescription on a rigid panel, are both red flags in opposite directions. You want clinical judgment, not a vending machine and not a bureaucracy.
 
- {callout: The one question that filters most clinics} Ask what estradiol routes they offer and why they'd pick one over another for a woman in her 40s with migraines or a family history of clots — if they can't answer specifically, they're not the clinic for you.
+ **The one question that filters most clinics**Ask what estradiol routes they offer and why they'd pick one over another for a woman in her 40s with migraines or a family history of clots — if they can't answer specifically, they're not the clinic for you.
 
 ### Which estradiol options do they offer?
 

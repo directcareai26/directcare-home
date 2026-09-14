@@ -64,7 +64,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you have no history of sexual dysfunction, no mood disorder that concerns you, and want the most-studied option, oral is a reasonable starting point.
 
- {callout: The core trade-off} Oral finasteride has the deepest efficacy data and easiest compliance; topical finasteride offers comparable scalp results with roughly half the systemic DHT suppression — choose based on how much systemic exposure you want to accept.
+ **The core trade-off**Oral finasteride has the deepest efficacy data and easiest compliance; topical finasteride offers comparable scalp results with roughly half the systemic DHT suppression — choose based on how much systemic exposure you want to accept.
 
 ### Who tends to do better on topical
 

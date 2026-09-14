@@ -54,7 +54,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  For an adult over 40, the practical stakes are metabolic: better fat oxidation means better fasting glucose, better triglycerides, and better body composition — often before the scale moves.
 
  If you only have four hours a week to train, three of them should probably be at a pace that feels almost boring.
- {callout: The rule of thumb} Most adults over 40 should spend roughly 80% of their weekly cardio in Zone 2 and 20% at higher intensities. This is the classic polarized model — and it's what the endurance literature keeps validating.
+ **The rule of thumb**Most adults over 40 should spend roughly 80% of their weekly cardio in Zone 2 and 20% at higher intensities. This is the classic polarized model — and it's what the endurance literature keeps validating.
 
 ### How to measure your Zone 2, three ways that actually work
 

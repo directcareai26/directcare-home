@@ -65,7 +65,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Notice that plant-forward lunches usually need a stack (legume + dairy, or legume + egg) to reach the leucine threshold. That's fine — it's a construction problem, not a values problem.
 
- {callout: The rule} If your lunch has less than 30 grams of protein, it isn't lunch — it's a snack you're calling lunch, and your evening appetite will send you the bill.
+ **The rule**If your lunch has less than 30 grams of protein, it isn't lunch — it's a snack you're calling lunch, and your evening appetite will send you the bill.
 
 ### Four 10-minute lunch templates that clear 30 g
 

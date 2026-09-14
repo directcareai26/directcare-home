@@ -55,7 +55,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  This is why simply "adding estrogen" to a perimenopausal woman can backfire. If her ovaries surge the following week, she's now stacked on top of a physiologic estradiol peak, and the symptoms she came in for (breast tenderness, migraine, heavy bleeding) get worse.
 
- {callout: The clinical takeaway} Perimenopause is a problem of hormonal chaos and often progesterone insufficiency; menopause is a problem of hormonal absence. The treatment logic follows from that distinction.
+ **The clinical takeaway**Perimenopause is a problem of hormonal chaos and often progesterone insufficiency; menopause is a problem of hormonal absence. The treatment logic follows from that distinction.
 
 ### What each phase actually calls for
 

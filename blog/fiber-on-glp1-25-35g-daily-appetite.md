@@ -61,7 +61,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's 41g, which gives you buffer. Most patients hit closer to 30g when portions shrink on-medication, which is exactly the target.
 
- {callout: The core rule} On a GLP-1, every meal should contain at least one fiber-dense anchor food — beans, berries, oats, chia, avocado, or a cruciferous vegetable — before you decide what protein to add.
+ **The core rule**On a GLP-1, every meal should contain at least one fiber-dense anchor food — beans, berries, oats, chia, avocado, or a cruciferous vegetable — before you decide what protein to add.
 
 ### What about fiber supplements ?
 

@@ -63,7 +63,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For men who need frequent phlebotomy, ferritin becomes the marker to watch. If ferritin drops below 30 ng/mL, you're heading into functional iron deficiency and need to space donations further apart or supplement.
 
- {callout: The takeaway} Most men on injectable TRT will need to donate blood at some point — but the goal is a stable hematocrit under 54%, not aggressive over-donation that tanks your ferritin and makes you feel worse than the high hematocrit did.
+ **The takeaway**Most men on injectable TRT will need to donate blood at some point — but the goal is a stable hematocrit under 54%, not aggressive over-donation that tanks your ferritin and makes you feel worse than the high hematocrit did.
 
 ### Can you donate as a regular Red Cross donor, or do you need therapeutic phlebotomy? — the eligibility question
 

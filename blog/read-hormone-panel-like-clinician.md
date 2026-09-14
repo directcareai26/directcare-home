@@ -69,7 +69,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  For women, LH and FSH only make sense in the context of cycle day or menopausal status. FSH >25 mIU/mL on day 3 of the cycle is suggestive of diminished ovarian reserve; FSH >30 mIU/mL with absent periods supports menopause.
 
- {callout: The clinician's shortcut} A complete hormone read needs at minimum: total T, free T (calculated), SHBG, estradiol (sensitive), LH, FSH, TSH, free T4, and a morning cortisol. Anything less and you're guessing.
+ **The clinician's shortcut**A complete hormone read needs at minimum: total T, free T (calculated), SHBG, estradiol (sensitive), LH, FSH, TSH, free T4, and a morning cortisol. Anything less and you're guessing.
 
 ### Prolactin — the marker that catches what nobody looks for
 

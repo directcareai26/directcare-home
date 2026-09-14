@@ -61,7 +61,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Split the dose. Two or three servings with meals containing fat improves absorption meaningfully compared to a single fasted dose, and reduces the fishy reflux most people complain about.
 
- {callout: The number that matters} Read the back of the label for "EPA" and "DHA" in milligrams — not the front-of-bottle "fish oil" number. If those two numbers don't add up to at least 1,000 mg per serving, you'll be swallowing a lot of softgels to hit an anti-inflammatory dose.
+ **The number that matters**Read the back of the label for "EPA" and "DHA" in milligrams — not the front-of-bottle "fish oil" number. If those two numbers don't add up to at least 1,000 mg per serving, you'll be swallowing a lot of softgels to hit an anti-inflammatory dose.
 
 ### EPA vs. DHA: does the ratio matter?
 

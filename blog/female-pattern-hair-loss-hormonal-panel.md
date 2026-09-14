@@ -77,7 +77,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Comprehensive metabolic panel — baseline liver and kidney function matter if spironolactone or oral minoxidil is on the table.
 
- {callout: The takeaway} Ferritin, TSH with free T4/T3, free testosterone with SHBG, DHEA-S, prolactin, and vitamin D form the minimum viable panel for female-pattern hair loss — anything less and you're guessing which driver you're treating.
+ **The takeaway**Ferritin, TSH with free T4/T3, free testosterone with SHBG, DHEA-S, prolactin, and vitamin D form the minimum viable panel for female-pattern hair loss — anything less and you're guessing which driver you're treating.
 
 ### How to read the results (tuned to your numbers)
 

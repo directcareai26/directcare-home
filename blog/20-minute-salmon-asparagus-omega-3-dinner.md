@@ -85,7 +85,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Fiber: 4 g
 
- {callout: The number that matters} One 6-oz serving of fatty salmon delivers 1.5–2 g EPA+DHA — roughly two days' worth of the AHA prevention target in a single meal.
+ **The number that matters**One 6-oz serving of fatty salmon delivers 1.5–2 g EPA+DHA — roughly two days' worth of the AHA prevention target in a single meal.
 
 ### What actually changes on your labs
 

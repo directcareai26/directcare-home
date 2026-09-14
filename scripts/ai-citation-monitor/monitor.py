@@ -109,7 +109,7 @@ def parse_mentions(text: str, brand_terms: list[str], competitors: list[str]) ->
 def call_perplexity(prompt: str) -> tuple[str, list[str] | None, str | None]:
     key = os.getenv("PERPLEXITY_API_KEY")
     if not key:
-        return "", None, "PERPLEXITY_API_KEY not set"
+        return _openrouter(prompt, "perplexity/sonar")
     try:
         r = requests.post(
             "https://api.perplexity.ai/chat/completions",
@@ -166,6 +166,51 @@ def call_anthropic(prompt: str) -> tuple[str, list[str] | None, str | None]:
         return "", None, f"Anthropic error: {e}"
 
 
+def parse_openai_responses(data: dict) -> tuple[str, list[str]]:
+    """Responses API JSON: the answer is output[].content[] items of type 'output_text' (field 'text');
+    sources are their 'annotations' of type 'url_citation'. The raw JSON has NO 'output_text' key —
+    reading it returned '' for every prompt since May (a silent no-op). 2026-09-14."""
+    text_parts, cites = [], []
+    for item in data.get("output", []) or []:
+        for c in item.get("content", []) or []:
+            if c.get("type") == "output_text":
+                text_parts.append(c.get("text") or "")
+                for a in c.get("annotations", []) or []:
+                    if a.get("type") == "url_citation" and a.get("url"):
+                        cites.append(a["url"])
+    if not text_parts and isinstance(data.get("output_text"), str):
+        text_parts.append(data["output_text"])
+    return "\n".join(text_parts), cites
+
+
+def _openrouter(prompt: str, model: str, web: bool = False) -> tuple[str, list[str] | None, str | None]:
+    """Same engine through OpenRouter when the native key is absent (Perplexity + Gemini had errored on
+    every weekly run). Perplexity sonar models return 'citations'; other models get OpenRouter's web
+    plugin and return url_citation annotations."""
+    key = os.getenv("OPENROUTER_API_KEY")
+    if not key:
+        return "", None, f"{model}: neither native key nor OPENROUTER_API_KEY set"
+    body = {"model": model, "messages": [{"role": "user", "content": prompt}]}
+    if web:
+        body["plugins"] = [{"id": "web"}]
+    try:
+        r = requests.post("https://openrouter.ai/api/v1/chat/completions",
+                          headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json",
+                                   "HTTP-Referer": "https://www.directcare.ai", "X-Title": "DCA AI citation monitor"},
+                          json=body, timeout=120)
+        r.raise_for_status()
+        data = r.json()
+        msg = data["choices"][0]["message"]
+        cites = list(data.get("citations") or [])
+        for a in msg.get("annotations") or []:
+            u = (a.get("url_citation") or {}).get("url")
+            if u:
+                cites.append(u)
+        return msg.get("content") or "", (cites or None), None
+    except Exception as e:
+        return "", None, f"OpenRouter {model} error: {e}"
+
+
 def call_openai(prompt: str) -> tuple[str, list[str] | None, str | None]:
     key = os.getenv("OPENAI_API_KEY")
     if not key:
@@ -183,12 +228,7 @@ def call_openai(prompt: str) -> tuple[str, list[str] | None, str | None]:
         )
         r.raise_for_status()
         data = r.json()
-        text = data.get("output_text", "")
-        citations = []
-        for item in data.get("output", []):
-            for cit in (item.get("citations") or []):
-                if cit.get("url"):
-                    citations.append(cit["url"])
+        text, citations = parse_openai_responses(data)
         return text, citations or None, None
     except Exception as e:
         return "", None, f"OpenAI error: {e}"
@@ -197,7 +237,7 @@ def call_openai(prompt: str) -> tuple[str, list[str] | None, str | None]:
 def call_gemini(prompt: str) -> tuple[str, list[str] | None, str | None]:
     key = os.getenv("GEMINI_API_KEY")
     if not key:
-        return "", None, "GEMINI_API_KEY not set"
+        return _openrouter(prompt, "google/gemini-2.5-flash", web=True)
     try:
         r = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={key}",
@@ -251,13 +291,9 @@ def run(args) -> int:
     engines_to_use = [args.engine] if args.engine else list(ENGINES.keys())
 
     # Sanity check: any keys available?
-    available = [e for e in engines_to_use if ENGINES[e].__name__.replace("call_", "").upper() + "_API_KEY" in os.environ
-                 or {
-                     "perplexity": "PERPLEXITY_API_KEY",
-                     "anthropic": "ANTHROPIC_API_KEY",
-                     "openai": "OPENAI_API_KEY",
-                     "gemini": "GEMINI_API_KEY",
-                 }[e] in os.environ]
+    _native = {"perplexity": "PERPLEXITY_API_KEY", "anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY", "gemini": "GEMINI_API_KEY"}
+    available = [e for e in engines_to_use if _native.get(e, "") in os.environ
+                 or (e in ("perplexity", "gemini") and "OPENROUTER_API_KEY" in os.environ)]
     print(f"Engines requested: {engines_to_use}")
     print(f"Engines with API keys: {available}")
     if not available and not args.dry_run:

@@ -4,7 +4,7 @@
 
 Source: https://www.directcare.ai/trt-executives
 
-Science-backed. Doctor-guided. Personalized care.
+Science-backed. Clinician-guided. Personalized care.
 
  ![Man at a kitchen counter holding a small medication bottle]
 
@@ -84,9 +84,9 @@ Science-backed. Doctor-guided. Personalized care.
 
  Bioidentical TRT plans tailored to your body and goals.
 
-#### Ongoing Doctor Support
+#### Ongoing Clinician Support
 
- Real doctors. Real support. We're with you every step.
+ Real licensed clinicians. Real support. We're with you every step.
 
 #### Track & Optimize Results
 
@@ -150,7 +150,7 @@ Science-backed. Doctor-guided. Personalized care.
 
  — The DirectCare AI Medical Team
 
- **Doctor-Led Care**You Can Trust
+ **Clinician-Led Care**You Can Trust
 
  **Privacy**Protected
 

@@ -4,7 +4,7 @@
 
 Source: https://www.directcare.ai/trt-former-athletes
 
-Science-backed. Doctor-guided. Personalized care.
+Science-backed. Clinician-guided. Personalized care.
 
  ![Man in a tank top resting a hand on a barbell in a gym]
 
@@ -82,7 +82,7 @@ Treatment Plan
 #### Ongoing Doctor
 Support
 
- Real doctors. Real support. Every step of the way.
+ Real licensed clinicians. Real support. Every step of the way.
 
 #### Track & Optimize
 Your Results
@@ -142,7 +142,7 @@ Your Results
 
  [Take the Assessment →](https://www.directcare.ai/testosterone-replacement-therapy/start)
 
- **Doctor-Led Care**You Can Trust
+ **Clinician-Led Care**You Can Trust
 
  **Privacy**Protected
 

@@ -46,7 +46,7 @@ Patient Safety
 
 ### Our Safety Policy
 
- Our goal is to provide safe, efficient, and reliable healthcare services that empower you to take control of your health.
+ Our goal is to provide efficient and reliable healthcare services that empower you to take control of your health.
 
 ### Contact Us
 

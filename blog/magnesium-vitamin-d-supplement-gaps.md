@@ -107,7 +107,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Stop guessing
 
-#### Physician-formulated supplement protocols.
+#### Clinician-formulated supplement protocols.
 
  DirectCare AI builds supplement stacks around your actual bloodwork. Magnesium, vitamin D, omega-3, B-complex, and the targeted additions your panel calls for.
 

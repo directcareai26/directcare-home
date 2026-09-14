@@ -4,7 +4,7 @@
 
 Source: https://www.directcare.ai/trt-police-officers
 
-Science-backed. Doctor-guided. Personalized care.
+Science-backed. Clinician-guided. Personalized care.
 
  ![Police officer on duty]
 
@@ -86,9 +86,9 @@ Earlier Than You Think
 
  Custom TRT plans tailored to your body and goals.
 
-#### Ongoing Doctor Support
+#### Ongoing Clinician Support
 
- Real doctors. Real support. We're here for every step.
+ Real licensed clinicians. Real support. We're here for every step.
 
 #### Track & Optimize
 
@@ -152,7 +152,7 @@ Earlier Than You Think
 
  — The DirectCare AI Medical Team
 
- **Doctor-Led Care**You Can Trust
+ **Clinician-Led Care**You Can Trust
 
  **Privacy**Protected
 

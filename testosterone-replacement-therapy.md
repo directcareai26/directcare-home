@@ -169,7 +169,7 @@ Provider Network
 
  What to expect
 
-### Real gains,
+### Real change,
  on a real timeline.
 
  Every man responds at his own pace. Here's what most patients notice and when, based on published testosterone-therapy guidelines and our clinical experience.
@@ -188,9 +188,9 @@ Provider Network
  2
  Weeks 6 to 12 · Optimization
 
-##### Libido, mood, performance, body comp
+##### Libido, mood, performance, body composition
 
- Libido and morning erections return. Mood stabilizes. Gym sessions translate into visible muscle and strength gains, and fat loss accelerates. Your clinician fine-tunes the dose at the 12-week bloodwork check-in to land you in your optimal range.
+ Libido and morning erections return. Mood stabilizes. Training translates into visible changes in muscle and strength, and body composition shifts. Your clinician fine-tunes the dose at the 12-week bloodwork check-in to land you in your optimal range.
 
  Restored libido
  Steadier mood
@@ -205,7 +205,7 @@ Provider Network
  You settle into your titrated dose. Total and free T stay in range. Body composition keeps trending the right direction. Refills auto-arrive. Message your clinician anytime, and re-titrate when sleep, stress, weight, or training load changes.
 
  Stable dosing
- Body comp gains
+ Body composition
  Auto-refills
 
  Why DirectCare AI

@@ -131,7 +131,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Build your stack with intent.
 
-#### Physician-formulated supplement protocols.
+#### Clinician-formulated supplement protocols.
 
  DirectCare AI clinicians curate supplement protocols matched to your actual bloodwork — not a generic multivitamin.
 

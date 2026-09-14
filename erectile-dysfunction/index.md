@@ -21,7 +21,7 @@ Erectile Dysfunction Treatment
  SURGE MAX 10-pack **$179**
 
  **LegitScript Certified**
- Verified safe telehealth
+ LegitScript-certified telehealth
 
  **HIPAA Compliant**
  Encrypted & private

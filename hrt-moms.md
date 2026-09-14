@@ -4,7 +4,7 @@
 
 Source: https://www.directcare.ai/hrt-moms
 
-Science-backed. Doctor-guided. Personalized care.
+Science-backed. Clinician-guided. Personalized care.
 
 ## HRT for moms: perimenopause care online, from licensed clinicians.
 
@@ -87,9 +87,9 @@ Science-backed. Doctor-guided. Personalized care.
 
  Bioidentical hormones and root-cause support tailored to you.
 
-#### Ongoing Doctor Support
+#### Ongoing Clinician Support
 
- Real women. Real doctors. We listen, adjust, and support you.
+ Real women. Real licensed clinicians. We listen, adjust, and support you.
 
 #### Track & Optimize
 
@@ -152,7 +152,7 @@ Science-backed. Doctor-guided. Personalized care.
 
  — The DirectCare AI Women's Health Team
 
- **Doctor-Led Care**You Can Trust
+ **Clinician-Led Care**You Can Trust
 
  **Privacy**Protected
 

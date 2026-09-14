@@ -31,7 +31,7 @@ Help Center
  HRT, TRT, weight loss, sexual health, hair, supplements, and labs — and how each plan is built around you.
 
  What programs does DirectCare AI offer?
- We offer hormone replacement therapy (HRT) for women, testosterone replacement therapy (TRT) for men, compounded GLP-1 weight loss (semaglutide and tirzepatide), sexual health, hair regrowth for men and women, physician-formulated supplements, and comprehensive blood-lab panels.
+ We offer hormone replacement therapy (HRT) for women, testosterone replacement therapy (TRT) for men, compounded GLP-1 weight loss (semaglutide and tirzepatide), sexual health, hair regrowth for men and women, clinician-formulated supplements, and comprehensive blood-lab panels.
 
  How is treatment personalized to me?
  Every plan starts with your real information — your intake, your symptoms and history, and (where relevant) your bloodwork. A US-licensed clinician reviews it and builds a protocol around your numbers, rather than routing you to a one-size-fits-all template.

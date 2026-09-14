@@ -150,7 +150,7 @@ Source: https://www.directcare.ai/lifestyle
  From $59 /mo](https://www.directcare.ai/mens-hair-loss)
  [Daily edge
  Supplements
- Nitric-oxide, energy & recovery stacks. Physician-formulated, pharmaceutical-grade.
+ Nitric-oxide, energy & recovery stacks. Clinician-formulated, pharmaceutical-grade.
  Member pricing](https://www.directcare.ai/supplements)
 
  Built for privacy

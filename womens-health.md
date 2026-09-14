@@ -1,6 +1,6 @@
 # Women's Health: HRT, Weight Loss, Hair, Labs | DirectCare AI
 
-> Personalized women's health from real clinicians. HRT, GLP-1 weight loss, hair regrowth, blood labs, and physician-formulated supplements.
+> Personalized women's health from real clinicians. HRT, GLP-1 weight loss, hair regrowth, blood labs, and clinician-formulated supplements.
 
 Source: https://www.directcare.ai/womens-health
 
@@ -173,7 +173,7 @@ Source: https://www.directcare.ai/womens-health
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering safe, patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
 
  Integrative Health
  Preventive Care
@@ -197,7 +197,7 @@ Source: https://www.directcare.ai/womens-health
  Does hair regrowth treatment actually work for women?
  Yes, when matched to the underlying cause. Our female-pattern protocols combine topical and oral options. Minoxidil, spironolactone (for androgen-driven loss), topical dutasteride, tretinoin, fluocinolone, and biotin support. Most women see new growth at 4 to 6 months. Severe shedding (telogen effluvium) usually resolves once the upstream hormonal trigger is corrected.
 
- Are your supplements physician-formulated?
+ Are your supplements clinician-formulated?
  Yes. Through our Fullscript partnership, your clinician builds a personalized supplement stack based on your blood panel results. Brands are practitioner-grade (Thorne, Pure Encapsulations, Designs for Health, etc.), not consumer drugstore quality. You see exactly which biomarker each supplement is targeting.
 
  Is HRT safe?

@@ -29,7 +29,7 @@ Peptide Therapy · Coming Soon
 
  **Built around your labs**Not a one-size protocol
 
- **LegitScript Certified**Verified safe telehealth
+ **LegitScript Certified**LegitScript-certified telehealth
 
  **HIPAA Compliant**Encrypted & private
 
@@ -51,7 +51,7 @@ Peptide Therapy · Coming Soon
 
  Growth Hormone Support
 
-#### Strength, sleep & body comp
+#### Strength, sleep & body composition
 
  Stimulate your body's own growth hormone release. Lean muscle, deeper sleep, faster recovery. A targeted alternative to direct HGH.
 
@@ -135,7 +135,7 @@ appropriate if you're…
 
  Every peptide protocol is selected by a clinician. Not pulled off a Reddit thread or a gym forum.
 
-- Pursuing a specific outcome Recovery, sleep, body comp, libido, skin, longevity
+- Pursuing a specific outcome Recovery, sleep, body composition, libido, skin, longevity
 
 - Willing to do bloodwork when needed Some protocols require baseline labs; others don't
 

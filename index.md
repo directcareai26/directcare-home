@@ -1,4 +1,4 @@
-# DirectCare AI | GLP-1, HRT, TRT & Hair Loss | US Doctors
+# DirectCare AI | GLP-1, HRT, TRT & Hair Loss | US-Licensed Clinicians
 
 > Personalized telehealth for men & women. GLP-1, HRT, TRT, hair regrowth, sexual health & supplements. US-licensed doctors. No insurance needed.
 
@@ -44,7 +44,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  [Wellness
 
  Supplements
- Physician-formulated stacks via Fullscript](https://www.directcare.ai/supplements)
+ Clinician-formulated stacks via Fullscript](https://www.directcare.ai/supplements)
 
 ### Testosterone, tailored to your numbers.
 
@@ -86,7 +86,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering safe, patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
 
  Integrative Health
  Preventive Care

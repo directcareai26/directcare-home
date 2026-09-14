@@ -19,7 +19,7 @@ Source: https://www.directcare.ai/blood-test
  ·
  save $1,000+ vs à la carte
 
- **LegitScript Certified**Verified safe telehealth
+ **LegitScript Certified**LegitScript-certified telehealth
 
  **HIPAA Compliant**Encrypted & private
 
@@ -360,7 +360,7 @@ Source: https://www.directcare.ai/blood-test
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering safe, patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
 
  Integrative Health
  Preventive Care

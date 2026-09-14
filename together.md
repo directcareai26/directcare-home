@@ -166,7 +166,7 @@ Source: https://www.directcare.ai/together
  From $196 one-time](https://www.directcare.ai/blood-test)
  [Whole family
  Supplements
- Physician-formulated stacks via Fullscript. Pharmaceutical-grade brands.
+ Clinician-formulated stacks via Fullscript. Pharmaceutical-grade brands.
  Member pricing](https://www.directcare.ai/supplements)
 
  Couples questions

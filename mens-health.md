@@ -50,7 +50,7 @@ Source: https://www.directcare.ai/mens-health
  Provider prescribed.
  Learn more](https://www.directcare.ai/blood-test)
  [Supplements
- Physician-formulated stacks via Fullscript. Recommended by your clinician.
+ Clinician-formulated stacks via Fullscript. Recommended by your clinician.
  Clinician recommended.
  Learn more](https://www.directcare.ai/supplements)
 
@@ -98,7 +98,7 @@ Source: https://www.directcare.ai/mens-health
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering safe, patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
 
  Integrative Health
  Preventive Care

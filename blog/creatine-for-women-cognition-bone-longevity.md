@@ -126,7 +126,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Build the right stack
 
-#### Physician-formulated supplement protocols.
+#### Clinician-formulated supplement protocols.
 
  DirectCare AI builds supplement stacks around your actual bloodwork — including evidence-based additions like creatine that most clinics never bring up.
 

@@ -13,9 +13,12 @@ Usage: python3 scripts/geo/answer_first.py [--limit N] [--out FILE]
 Ollama HTTP on the DGX (never SSH; the DGX is a service). Positive control: a deliberately wrong draft must be
 rejected by the auditor before any real post is processed, else the run aborts as UNDELIVERED.
 """
-import argparse, glob, json, os, re, sys, time, urllib.request
+import argparse, functools, glob, json, os, re, sys, time, urllib.request
+print = functools.partial(print, flush=True)   # background runs: show progress as it happens
 OLLAMA = os.environ.get("DGX_OLLAMA", "http://100.88.129.123:11434")
-DRAFT_MODEL, AUDIT_MODEL = "gemma3:27b", "medgemma:27b"
+# gemma3:27b is monopolised by the optimizer's long web-page-rank generations (Ollama serialises per model);
+# qwen3-30b-instruct is idle and strong at faithful summarisation. Audit stays on medgemma.
+DRAFT_MODEL, AUDIT_MODEL = "qwen3:30b-a3b-instruct-2507-q8_0", "medgemma:27b"
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 

@@ -38,4 +38,5 @@ jobs:
           git config user.email "bot@directcare.ai"
           git add scripts/ai-citation-monitor/results
           git diff --cached --quiet || git commit -m "AI citation report $(date -u +%Y-%m-%d) [skip ci]"
+          git pull --rebase --autostash origin main || true
           git push

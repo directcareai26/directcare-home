@@ -134,7 +134,7 @@ def call_perplexity(prompt: str) -> tuple[str, list[str] | None, str | None]:
 def call_anthropic(prompt: str) -> tuple[str, list[str] | None, str | None]:
     key = os.getenv("ANTHROPIC_API_KEY")
     if not key:
-        return "", None, "ANTHROPIC_API_KEY not set"
+        return _openrouter(prompt, "anthropic/claude-sonnet-4.5", web=True)
     try:
         r = requests.post(
             "https://api.anthropic.com/v1/messages",
@@ -310,7 +310,7 @@ def run(args) -> int:
     # Sanity check: any keys available?
     _native = {"perplexity": "PERPLEXITY_API_KEY", "anthropic": "ANTHROPIC_API_KEY", "openai": "OPENAI_API_KEY", "gemini": "GEMINI_API_KEY"}
     available = [e for e in engines_to_use if _native.get(e, "") in os.environ
-                 or (e in ("perplexity", "gemini") and "OPENROUTER_API_KEY" in os.environ)]
+                 or (e in ("perplexity", "gemini", "anthropic") and "OPENROUTER_API_KEY" in os.environ)]
     print(f"Engines requested: {engines_to_use}")
     print(f"Engines with API keys: {available}")
     if not available and not args.dry_run:

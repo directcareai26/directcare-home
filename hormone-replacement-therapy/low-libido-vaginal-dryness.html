@@ -96,6 +96,13 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 </script>
 <!-- End Roku Pixel -->
 
+<!-- Global Privacy Control — honored, as promised in our CCPA notice. When the browser sends the GPC
+     signal, the advertising pixels are stubbed out before they can initialize, so no identifiers are shared. -->
+<script>(function(){try{var gpc=(navigator.globalPrivacyControl===true)||(document.cookie.indexOf('dca_gpc=1')>-1);
+if(!gpc)return;window.__dcaGPC=true;
+var noop=function(){};noop.queue=[];noop.push=noop;noop.loaded=true;noop.version='2.0';noop.callMethod=null;
+window.fbq=window._fbq=noop;window.pintrk=noop;window.pintrk.queue=[];
+window.dcaSuppressAds=true;}catch(e){}})();</script>
 <!-- Meta Pixel Code (lazy-loaded) -->
 <script>
 (function(){

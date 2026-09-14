@@ -19,6 +19,36 @@
 
 const crypto = require('crypto');
 
+// Health-data firewall for outbound ad relays. Pinterest's Ad Data Terms bar sending Ad Data that relates to a
+// medical condition, and from 2026-11-14 that becomes an explicit "health information" warranty with an audit right.
+// Our condition-named URLs and program labels would otherwise carry exactly that, so: the event URL is reduced to
+// origin + path with the query string dropped, any condition-named path is replaced by a neutral token, and
+// custom_data is passed through a value allow-list rather than forwarded wholesale. 2026-09-14.
+const CONDITION_PATH = /(testosterone|trt|hormone|hrt|menopause|perimenopause|erectile|sexual|surge-max|semaglutide|tirzepatide|glp-?1|weight-loss|hair-loss|hair|peptide|libido|fertility|chronic-care|blood-test)/i;
+const CD_ALLOW = new Set(['value', 'currency', 'order_id', 'num_items', 'order_quantity']);
+
+function safeEventUrl(raw) {
+  try {
+    const u = new URL(raw);
+    const path = CONDITION_PATH.test(u.pathname) ? '/p' : u.pathname;
+    return u.origin + path;               // query string and condition-bearing path dropped
+  } catch (e) {
+    return undefined;
+  }
+}
+
+function safeCustomData(cd) {
+  const out = {};
+  if (!cd || typeof cd !== 'object') return out;
+  for (const k of Object.keys(cd)) {
+    if (!CD_ALLOW.has(k)) continue;       // drops program, pillar, content_name, search_string, etc.
+    const v = cd[k];
+    if (typeof v === 'number' || typeof v === 'string') out[k] = v;
+  }
+  return out;
+}
+
+
 const HEX64 = /^[a-f0-9]{64}$/i;
 
 // Pinterest requires SHA-256 of the normalized value. Normalize emails (trim + lowercase);
@@ -89,11 +119,10 @@ module.exports = async (req, res) => {
       ? body.event_time
       : Math.floor(Date.now() / 1000),
     user_data,
-    custom_data: body.custom_data && typeof body.custom_data === 'object'
-      ? body.custom_data
-      : {},
+    custom_data: safeCustomData(body.custom_data),
   };
-  if (body.event_url) event.event_source_url = body.event_url;
+  const cleanUrl = safeEventUrl(body.event_url);
+  if (cleanUrl) event.event_source_url = cleanUrl;
 
   try {
     const r = await fetch(

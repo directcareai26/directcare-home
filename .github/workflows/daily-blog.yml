@@ -104,23 +104,12 @@ jobs:
         if: steps.guard.outputs.already_posted == 'false'
         run: python3 scripts/agent-files/build_agent_files.py
 
-      - name: Commit and push
+      - name: Commit and push (conflict-proof merge onto the latest origin)
         if: steps.guard.outputs.already_posted == 'false'
         run: |
           git config user.name  "DirectCare Blog Bot"
           git config user.email "directcareai@gmail.com"
-          git add blog/ sitemap.xml scripts/used_topics.json
-          git add -A '*.md' llms-full.txt scripts/agent-files/generated-files.txt
-          # Pull in any work pushed since checkout, then push our new post.
-          git pull --rebase --autostash origin main || true
-          NEW_SLUG=$(python3 -c "import json; print(json.load(open('blog/posts.json'))['posts'][0]['slug'])")
-          NEW_TITLE=$(python3 -c "import json; print(json.load(open('blog/posts.json'))['posts'][0]['title'])")
-          git commit -m "blog: ${NEW_TITLE}" -m "Auto-published by the daily-blog GitHub Action." || {
-            echo "Nothing to commit — exiting cleanly."; exit 0;
-          }
-          git push origin main
-          echo "Published: $NEW_SLUG"
-          echo "deployed_slug=$NEW_SLUG" >> "$GITHUB_OUTPUT"
+          python3 scripts/blog/publish_merge.py
         id: push
 
       - name: IndexNow — tell Bing-fed engines what changed

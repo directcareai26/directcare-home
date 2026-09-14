@@ -49,6 +49,7 @@ blog/harissa-salmon-sheet-pan-recipe-36g-protein.md
 blog/hematocrit-on-trt-blood-donation-frequency.md
 blog/how-online-glp1-prescriptions-work.md
 blog/how-to-choose-online-hrt-clinic-in-your-40s.md
+blog/how-to-choose-online-trt-clinic-eight-checks.md
 blog/hrt-after-40-what-actually-changes.md
 blog/hrt-bone-density-estradiol-prevents-fractures.md
 blog/hrv-heart-rate-variability-recovery-tracking.md

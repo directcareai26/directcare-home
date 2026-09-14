@@ -11,7 +11,7 @@ export const config = {
   matcher: ['/((?!api|unavailable|_next|favicon|robots.txt|sitemap.xml|llms.txt|.*\\.).*)'],
 };
 
-const BOTS = /googlebot|bingbot|duckduckbot|applebot|slurp|gptbot|chatgpt|oai-searchbot|claudebot|claude-web|anthropic|ccbot|perplexitybot|baiduspider|yandex|facebookexternalhit|twitterbot|linkedinbot|pinterest|bingpreview|petalbot|amazonbot/i;
+const BOTS = /googlebot|google-extended|bingbot|bingpreview|duckduckbot|duckassistbot|applebot|slurp|gptbot|chatgpt|oai-searchbot|claudebot|claude-searchbot|claude-user|claude-web|anthropic|ccbot|perplexitybot|perplexity-user|amazonbot|meta-externalagent|meta-externalfetcher|facebookexternalhit|twitterbot|linkedinbot|pinterest|bytespider|cohere-ai|mistralai|youbot|timpibot|omgili|petalbot|baiduspider|yandex|ia_archiver/i;
 
 // q-value of one media type in an Accept header; 0 when it is not listed.
 function q(accept, type) {

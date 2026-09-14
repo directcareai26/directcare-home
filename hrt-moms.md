@@ -173,7 +173,6 @@ Provider Network
  ★★★★★
 
  4.6k reviews
- Ratings for OpenLoop, the licensed clinician network that delivers DirectCare AI care
 
  ★Trustpilot
 

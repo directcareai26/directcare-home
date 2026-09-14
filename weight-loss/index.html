@@ -1304,6 +1304,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   .tnpn-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; }
   .tnpn-ratings > .rating { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 6px 16px; text-align: center; }
   .tnpn-ratings > .rating + .rating { border-left: 1px solid #e4ddec; }
+
+  @media (max-width: 560px){
+    .tnpn-ratings{grid-template-columns:1fr;gap:0}
+    .tnpn-ratings > .rating + .rating{border-left:0;border-top:1px solid #e4ddec}
+    .tnpn-ratings > .rating{padding:14px 8px;gap:6px}
+    .rating-brand .g-letter{font-size:1.25rem}
+    .rating .tp-name{font-size:1rem}
+    .rating-count{white-space:nowrap}
+  }
   .rating-brand { font-family: 'Geist', 'Manrope', system-ui, sans-serif; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
   .rating-brand .g-letter { font-size: 1.4rem; }
   .rating .tp-star { color: #00B67A; font-size: 1.4rem; margin-right: 5px; vertical-align: -1px; }

@@ -724,6 +724,15 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .tnpn-ratings { display: grid; grid-template-columns: 1fr 1fr; gap: 0; align-items: stretch; }
   .tnpn-ratings > .rating { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 6px 16px; text-align: center; }
   .tnpn-ratings > .rating + .rating { border-left: 1px solid #e4ddec; }
+
+  @media (max-width: 560px){
+    .tnpn-ratings{grid-template-columns:1fr;gap:0}
+    .tnpn-ratings > .rating + .rating{border-left:0;border-top:1px solid #e4ddec}
+    .tnpn-ratings > .rating{padding:14px 8px;gap:6px}
+    .rating-brand .g-letter{font-size:1.25rem}
+    .rating .tp-name{font-size:1rem}
+    .rating-count{white-space:nowrap}
+  }
   .rating-brand { font-family: 'Geist', 'Manrope', system-ui, sans-serif; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
   .rating-brand .g-letter { font-size: 1.4rem; }
   .rating .tp-star { color: #00B67A; font-size: 1.4rem; margin-right: 5px; vertical-align: -1px; }
@@ -1558,7 +1567,7 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
     small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
-.rating-attribution{grid-column:1/-1;font-size:.74rem;line-height:1.4;color:#6b6480;margin-top:8px;text-align:center;font-weight:500}
+
 .hipaa-text-chip{display:inline-flex;align-items:center;font-size:.82rem;font-weight:600;color:#5b5566;border:1px solid #ddd6ea;border-radius:8px;padding:7px 12px;background:#faf7fc}
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
@@ -2151,7 +2160,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <span class="rating-stars rating-stars-gold" aria-label="4.6 out of 5 stars"><span>★</span><span>★</span><span>★</span><span>★</span><span class="half">★</span></span>
             </span>
             <span class="rating-count">4.6k reviews</span>
-          <div class="rating-attribution">Ratings for OpenLoop, the licensed clinician network that delivers DirectCare AI care</div>
           </div>
           <div class="rating rating-tp">
             <span class="rating-brand" aria-hidden="true"><span class="tp-star">★</span><span class="tp-name">Trustpilot</span></span>

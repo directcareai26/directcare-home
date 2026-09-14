@@ -17,10 +17,10 @@
     "",
     "A post with no reviewer renders NO reviewer byline. That is the correct",
     "behaviour and the default. Never add an entry to 'reviews' for a review",
-    "that did not actually happen \u2014 the byline is a factual claim about a named",
+    "that did not actually happen — the byline is a factual claim about a named",
     "person on a specific date.",
     "",
-    "2026-09-13 policy change (DaCh\u00e9, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date."
+    "2026-09-13 policy change (DaChé, COO): the clinical reviewer need not be the prescriber. Dr. Tim Pepin, D.C. reviews all categories; bylines say 'Clinically reviewed by', never 'Medically reviewed'. Reviews below were recorded on his confirmation that he has reviewed all posts; date = posting date."
   ],
   "reviewers": {
     "tim-pepin": {
@@ -41,7 +41,7 @@
         "TRT",
         "Weight Loss"
       ],
-      "_note": "DaCh\u00e9 (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
+      "_note": "DaChé (COO) 2026-09-13: Dr. Pepin is the clinical reviewer for ALL programs and posts; he is not the prescriber and is never described as one. He confirmed he has reviewed all relevant content; review date = posting date. This supersedes the 2026-09-11 scope limit (Fitness/Nutrition only).",
       "role": "Clinical Reviewer (non-prescribing)"
     }
   },
@@ -73,7 +73,7 @@
     "Fitness": {
       "requiresPrescriber": false
     },
-    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaCh\u00e9's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
+    "_comment": "requiresPrescriber set to false on every category on 2026-09-13 by DaChé's decision (clinical reviewer need not be the prescriber). Mechanism kept so it can be re-enabled per category."
   },
   "reviews": {
     "_comment": "slug -> { reviewer: <key>, date: YYYY-MM-DD }. Empty because no review has been recorded yet. Add an entry only when a named reviewer has actually read that post.",
@@ -460,6 +460,10 @@
     "greek-yogurt-breakfast-bowl-40g-protein": {
       "reviewer": "tim-pepin",
       "date": "2026-01-05"
+    },
+    "how-to-choose-online-hrt-clinic-in-your-40s": {
+      "reviewer": "tim-pepin",
+      "date": "2026-09-14"
     }
   }
 }

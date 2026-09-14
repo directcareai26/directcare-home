@@ -74,8 +74,12 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-# ARD capability catalogue — what this site offers a machine, and where.
-Agentmap: https://www.directcare.ai/.well-known/ai-catalog.json
+# ARD capability catalogue: /.well-known/ai-catalog.json
+# NOT declared here as `Agentmap:` — Lighthouse rejects it as an unknown
+# directive and marks the whole file invalid, which costs 8 SEO points and
+# shows "robots.txt is not valid" in Search Console. The catalogue is still
+# discoverable three other ways: the file itself, <link rel="ai-catalog">
+# on every page, and the _catalog._agents TXT record.
 
 Sitemap: https://www.directcare.ai/sitemap.xml
 Sitemap: https://www.directcare.ai/image-sitemap.xml

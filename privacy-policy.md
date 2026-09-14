@@ -92,7 +92,7 @@ Legal
 
 - Communications with care teams or AI systems
 
- Health information may constitute Protected Health Information (PHI) and is governed by our Notice of Privacy Practices.
+ Health information may constitute Protected Health Information (PHI) and is governed by our Notice of Privacy Practices. Care is delivered by licensed clinicians through the OpenLoop Health provider network; see [OpenLoop Health's Notice of Privacy Practices](https://openloophealth.com/notice-of-privacy-practices) and its [Telehealth Consent](https://openloophealth.com/telehealth-consent).
 
 #### 3. Device and Usage Data
 

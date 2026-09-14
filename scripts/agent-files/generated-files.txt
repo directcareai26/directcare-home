@@ -125,6 +125,7 @@ mens-weight-loss/index.md
 peptides.md
 perimenopause.md
 privacy-policy.md
+refund-policy.md
 safety.md
 supplements.md
 surge-max/index.md

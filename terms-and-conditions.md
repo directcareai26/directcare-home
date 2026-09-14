@@ -413,3 +413,18 @@ Legal
  888-298-6718
 
  **Footer Disclosure.** DirectCare AI is a technology and administrative platform that may facilitate access to independent licensed healthcare providers and related healthcare services. DirectCare AI does not itself provide medical care, pharmacy services, or emergency services. Payment does not guarantee that a prescription will be written, dispensed, or covered by insurance. Any medical services are provided by independent healthcare providers. Information on the Platform is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+
+### Pharmacy Partners
+
+ DirectCare AI does not manufacture or compound medications. Prescriptions written through the Platform are dispensed by US-licensed pharmacies, including:
+
+- Red Rock Compounding Pharmacy — 1240 East 100 South, Suite 220, St. George, UT 84790 — 435-703-2900 — [www.redrockhomepharmacy.com](https://www.redrockhomepharmacy.com)
+- Health Warehouse — 7107 Industrial Rd, Florence, KY 41042 — 800-748-7001 — [www.healthwarehouse.com](https://www.healthwarehouse.com)
+- Precision Medicine — 2657 Merrick Road, Bellmore, NY 11710 — 516-833-6262 — [precisionmeds.com](https://precisionmeds.com)
+- Triad Rx — 26258 Pollard Road, Daphne, AL 36526 — 251-380-7630 — [www.triadrx.us](https://www.triadrx.us)
+
+ Which pharmacy fills a given prescription depends on the medication prescribed and the prescribing clinician's order. Listing a pharmacy here is not an endorsement, and this list may change. Please do not contact these pharmacies directly about your DirectCare AI order — message your care team in your patient portal or call 888-298-6718.
+
+### State Coverage
+
+ Services are available in all 50 states and Washington D.C. Medication and product availability varies based on clinical appropriateness, applicable federal and state laws, or other regulatory requirements. Not all therapies are available in all states. Availability is subject to change.

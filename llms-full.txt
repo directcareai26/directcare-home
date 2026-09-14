@@ -4,13 +4,14 @@
 > can read the whole site in one request. Generated from sitemap.xml; see
 > llms.txt for the short curated index.
 
-Pages: 139
+Pages: 140
 
 ## Contents
 
 - [DirectCare AI | GLP-1, HRT, TRT & Hair Loss | US Doctors](https://www.directcare.ai/)
 - [Hormone Replacement Therapy (HRT) for Women, DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy)
 - [Contact DirectCare AI — Phone, Address & Pharmacy Partners](https://www.directcare.ai/contact)
+- [Cancellation & Refund Policy | DirectCare AI](https://www.directcare.ai/refund-policy)
 - [TRT for Men: Testosterone Replacement Therapy | DirectCare AI](https://www.directcare.ai/testosterone-replacement-therapy)
 - [GLP-1 Weight Loss Online — Tirzepatide | DirectCare AI](https://www.directcare.ai/weight-loss)
 - [ED Treatment Online — Surge Max 4-in-1 | DirectCare AI](https://www.directcare.ai/surge-max)
@@ -707,6 +708,70 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 ### Policies
 
  [Terms & Conditions](https://www.directcare.ai/terms-and-conditions) · [Privacy Policy](https://www.directcare.ai/privacy-policy) · [Safety](https://www.directcare.ai/safety) · [CCPA Notice](https://www.directcare.ai/ccpa) · [Medical Consent](https://www.directcare.ai/medical-consent) · [Patient Bill of Rights](https://www.directcare.ai/bill-of-rights) · [FAQ](https://www.directcare.ai/faq)
+
+
+---
+
+# Cancellation & Refund Policy | DirectCare AI
+
+> How to cancel a DirectCare AI subscription, the 72-hour notice window, and when a refund is issued.
+
+Source: https://www.directcare.ai/refund-policy
+
+Free clinician consult · US-licensed providers · Shipped to your door —
+ [Get started](https://www.directcare.ai/womens-health)
+
+## Subscription Services Cancellation and Refund Policy
+
+ Last Updated: June 15, 2026
+
+### Subscription Services
+
+ Your membership in the subscription program ("Subscription Service") begins once you have completed the intake form and paid for the first month of the Subscription Services.
+
+ Please note if you are disqualified by our healthcare provider for a medical reason you will receive a full refund.
+
+ The Subscription Services include access to healthcare providers, medications where appropriate, and online support.
+
+ There is no guarantee of results or effectiveness of any treatment or care plan provided to you as part of your participation or use of the Subscription Services.
+
+ This Refund Policy is incorporated into our [Terms and Conditions](https://www.directcare.ai/terms-and-conditions) which govern the Subscription Services.
+
+### Cancellation Policy
+
+ You may cancel your Subscription Service at any time for any reason. To cancel your Subscription Services, please contact customer support at contact@directcareai.com or 888-298-6718 and request a cancellation or through your online account/patient portal (if applicable).
+
+ To ensure a smooth process, we require your cancellation request to be received at least 72 hours prior to your next billing date. If prior notice is not received in this window, your subscription will be charged in accordance with the then-current billing cycle, and the cancellation will take effect on the subsequent billing cycle.
+
+ After cancellation, you will continue to receive the Subscription Services through the end of the then-current billing cycle.
+
+ Please see our Refund Policy below to determine if you are eligible for a refund for your canceled Subscription Service.
+
+### Refund Policy
+
+ If your Subscription Service is cancelled by notifying patient support at contact@directcareai.com or 888-298-6718 within the first 72 hours of your Subscription term and you have not received any Subscription Services, you will be issued a full refund.
+
+ If your Subscription Service is cancelled due to disqualification by our healthcare provider, you will be issued a refund for your Subscription Service charges following the disqualification.
+
+ If your Subscription Service is charged monthly, YOU WILL NOT BE ISSUED A REFUND UPON CANCELLATION FOR THE MONTH IN WHICH THE CANCELLATION OCCURRED OR FOR ANY PRIOR MONTHS.
+
+ If your Subscription Service is charged 2 or more months at a time, you will be issued a refund for the months for which no medication was shipped to you.
+
+ Other than as outlined above, IN NO EVENT WILL YOU BE ISSUED A REFUND UPON CANCELLATION OF THE SUBSCRIPTION SERVICES.
+
+ Federal law generally prohibits the return of prescription medications to pharmacies for refund or reuse once they have been ordered for a patient. This policy ensures that all medications are handled and dispensed with utmost care and compliance.
+
+ **Damaged or incorrect items:** Please inspect your items immediately upon receipt. If any of the items appears to be damaged or incorrect, please immediately contact customer service. Damaged items may be replaced by the pharmacy upon receipt of evidence of damage. Incorrect items will be replaced by the pharmacy.
+
+### Subscription Services FAQs
+
+#### What is included in my Subscription Services price?
+
+ Your Subscription Services represents a single price for the subscription purchased. This may include consultations both live and via electronic form submissions and reviews by a healthcare provider for medications that are fulfilled through a pharmacy, lab services, or other health care services for which we collect payments, 24/7 patient support line, and other services to support your medical journey.
+
+#### What if my healthcare provider determines I am no longer eligible for the Subscription Services?
+
+ If your healthcare provider determines you are no longer eligible for the Subscription Services, your subscription will be canceled, and a refund may be issued. If you have questions or concerns about an eligibility-initiated cancellation, please contact our patient support at contact@directcareai.com or 888-298-6718.
 
 
 ---
@@ -9178,7 +9243,7 @@ Legal
 
 - Communications with care teams or AI systems
 
- Health information may constitute Protected Health Information (PHI) and is governed by our Notice of Privacy Practices.
+ Health information may constitute Protected Health Information (PHI) and is governed by our Notice of Privacy Practices. Care is delivered by licensed clinicians through the OpenLoop Health provider network; see [OpenLoop Health's Notice of Privacy Practices](https://openloophealth.com/notice-of-privacy-practices) and its [Telehealth Consent](https://openloophealth.com/telehealth-consent).
 
 #### 3. Device and Usage Data
 
@@ -9808,6 +9873,21 @@ Legal
  888-298-6718
 
  **Footer Disclosure.** DirectCare AI is a technology and administrative platform that may facilitate access to independent licensed healthcare providers and related healthcare services. DirectCare AI does not itself provide medical care, pharmacy services, or emergency services. Payment does not guarantee that a prescription will be written, dispensed, or covered by insurance. Any medical services are provided by independent healthcare providers. Information on the Platform is for informational purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+
+### Pharmacy Partners
+
+ DirectCare AI does not manufacture or compound medications. Prescriptions written through the Platform are dispensed by US-licensed pharmacies, including:
+
+- Red Rock Compounding Pharmacy — 1240 East 100 South, Suite 220, St. George, UT 84790 — 435-703-2900 — [www.redrockhomepharmacy.com](https://www.redrockhomepharmacy.com)
+- Health Warehouse — 7107 Industrial Rd, Florence, KY 41042 — 800-748-7001 — [www.healthwarehouse.com](https://www.healthwarehouse.com)
+- Precision Medicine — 2657 Merrick Road, Bellmore, NY 11710 — 516-833-6262 — [precisionmeds.com](https://precisionmeds.com)
+- Triad Rx — 26258 Pollard Road, Daphne, AL 36526 — 251-380-7630 — [www.triadrx.us](https://www.triadrx.us)
+
+ Which pharmacy fills a given prescription depends on the medication prescribed and the prescribing clinician's order. Listing a pharmacy here is not an endorsement, and this list may change. Please do not contact these pharmacies directly about your DirectCare AI order — message your care team in your patient portal or call 888-298-6718.
+
+### State Coverage
+
+ Services are available in all 50 states and Washington D.C. Medication and product availability varies based on clinical appropriateness, applicable federal and state laws, or other regulatory requirements. Not all therapies are available in all states. Availability is subject to change.
 
 
 ---

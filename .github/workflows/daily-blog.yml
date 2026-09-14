@@ -18,6 +18,14 @@ on:
         description: "Override post date (YYYY-MM-DD). Leave blank for today."
         required: false
         default: ""
+      category:
+        description: "Force a category (TRT, HRT, Weight Loss, Sexual Health, Hair Regrowth, Blood Labs, Supplements, Nutrition, Fitness). Requires angle."
+        required: false
+        default: ""
+      angle:
+        description: "Force a specific angle (topic sentence). With category, publishes even if a post already exists today."
+        required: false
+        default: ""
 
 # Prevent two runs colliding if a manual trigger overlaps the scheduled one
 concurrency:
@@ -50,7 +58,10 @@ jobs:
           TODAY="${{ github.event.inputs.target_date }}"
           if [ -z "$TODAY" ]; then TODAY=$(TZ="America/New_York" date +%Y-%m-%d); fi
           echo "today=$TODAY" >> "$GITHUB_OUTPUT"
-          if python3 -c "
+          if [ -n "${{ github.event.inputs.angle }}" ]; then
+            echo "already_posted=false" >> "$GITHUB_OUTPUT"
+            echo "Forced angle supplied — generating regardless of today's post."
+          elif python3 -c "
           import json, sys
           posts = json.load(open('blog/posts.json'))['posts']
           sys.exit(0 if any(p.get('date') == '$TODAY' for p in posts) else 1)
@@ -66,8 +77,14 @@ jobs:
         if: steps.guard.outputs.already_posted == 'false'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE_CATEGORY: ${{ github.event.inputs.category }}
+          FORCE_ANGLE: ${{ github.event.inputs.angle }}
         run: |
-          python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}"
+          if [ -n "$FORCE_ANGLE" ]; then
+            python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}" --category "$FORCE_CATEGORY" --angle "$FORCE_ANGLE"
+          else
+            python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}"
+          fi
 
       # A new post changes the sitemap, so the Markdown twins and llms-full.txt
       # are stale the moment it lands. Regenerating here keeps the machine-readable

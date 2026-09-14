@@ -1,4 +1,4 @@
-# PT-141 (bremelanotide): the libido peptide that works through the brain, not blood flow
+# PT-141 (Bremelanotide): The Libido Peptide Explained
 
 > What PT-141 (bremelanotide) is, how the melanocortin pathway differs from PDE5 inhibitors, who it fits.
 

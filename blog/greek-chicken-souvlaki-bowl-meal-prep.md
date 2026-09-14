@@ -1,4 +1,4 @@
-# Greek chicken souvlaki bowl: the meal-prep base that holds a whole week
+# Greek Chicken Souvlaki Bowl: A Week of Meal Prep
 
 > Recipe for meal-prep Greek chicken souvlaki bowls: 4 servings, 35g protein each, marinated chicken thighs, lemon-oregano dressing, tzatziki.
 

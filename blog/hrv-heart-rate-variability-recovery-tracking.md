@@ -1,4 +1,4 @@
-# Heart rate variability (HRV): the recovery number worth tracking, and the lifestyle changes that move it
+# HRV: The Recovery Number Worth Tracking
 
 > What heart rate variability (HRV) actually measures, why it matters more than resting heart rate for recovery, and the four daily levers that move it most.
 

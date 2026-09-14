@@ -1,4 +1,4 @@
-# The 5-minute overnight oats that hit your iron, protein, and fiber targets
+# 5-Minute Overnight Oats: Iron, Protein and Fiber
 
 > Recipe for 5-minute overnight oats with 28g protein, 10g fiber, and 4mg iron per jar: rolled oats, Greek yogurt, chia, pumpkin seeds, milk.
 

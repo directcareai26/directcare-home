@@ -1,4 +1,4 @@
-# GLP-1 maintenance after weight loss: how to stay off without rebounding
+# GLP-1 Maintenance: Staying Off Without Rebounding
 
 > How to maintain weight loss after stopping a GLP-1: the dose-tapering, protein, training, and monitoring framework that prevents the average ~2/3 rebound published in STEP-4.
 

@@ -1,4 +1,4 @@
-# Estradiol on TRT: when men need an aromatase inhibitor and most don't
+# Estradiol on TRT: When an Aromatase Inhibitor Helps
 
 > When elevated estradiol on TRT actually warrants an aromatase inhibitor (anastrozole) — and the wider clinical evidence that most men on TRT don't need one and are harmed by routine prescription.
 

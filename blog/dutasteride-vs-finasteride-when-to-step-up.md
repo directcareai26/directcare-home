@@ -1,4 +1,4 @@
-# Dutasteride vs. finasteride: when men should consider the more aggressive 5-alpha reductase blocker
+# Dutasteride vs. Finasteride: When to Step Up
 
 > When men should consider dutasteride over finasteride for hair loss: dosing, side-effect profile, head-to-head trial data.
 

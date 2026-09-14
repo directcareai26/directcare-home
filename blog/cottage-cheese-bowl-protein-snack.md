@@ -1,4 +1,4 @@
-# Cottage cheese bowls: the 30g-protein snack everyone forgot about
+# Cottage Cheese Bowls: A 30g-Protein Snack
 
 > Recipe for a 5-minute cottage cheese bowl with 28g protein: full-fat cottage cheese, berries, walnuts, honey, hemp seeds.
 

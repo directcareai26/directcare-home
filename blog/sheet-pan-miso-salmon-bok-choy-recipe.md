@@ -1,4 +1,4 @@
-# Sheet-pan miso-glazed salmon with bok choy: a 25-minute, 35g-protein dinner
+# Sheet-Pan Miso Salmon and Bok Choy: 35g Protein
 
 > Recipe for sheet-pan miso-glazed salmon with charred bok choy and brown rice: 25 minutes, 35g protein, omega-3 target hit in one pan.
 

@@ -1,4 +1,4 @@
-# Women's hair loss isn't just male-pattern in pink: the hormonal panel that actually matters
+# Women's Hair Loss: The Hormonal Panel That Matters
 
 > Explains the hormonal panel for female-pattern hair loss: ferritin (>70 target), TSH, free T3/T4, total testosterone, DHEA-S, estradiol, prolactin.
 

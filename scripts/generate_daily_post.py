@@ -463,7 +463,8 @@ PROMPT_TEMPLATE = """You are a senior medical writer for DirectCare AI, an AI-po
   literature.
 
 ## SEO requirements
-- Title is 50–65 characters, includes the primary keyword naturally.
+- Title is 50–65 characters, includes the primary keyword naturally. This is the H1 and may be a full sentence.
+- `seo_title` is the <title> tag: MAX 60 characters. Google truncates past that, so anything longer is wasted. It is NOT the headline — lead with the keyword and drop the tail.
 - Meta description is 140–158 characters, includes primary + secondary keyword, ends with implicit value promise.
 - The first paragraph (the deck) answers the search intent in 2 sentences before the article expands.
 - Use H2s that are scannable questions or claims a reader would Google.
@@ -482,6 +483,7 @@ Return a JSON object with this exact schema:
 {{
   "slug": "kebab-case-slug-50-chars-max",
   "title": "Full title, 50-65 chars",
+  "seo_title": "Short <title> for search results, MAX 60 chars and ideally under 50. Lead with the primary keyword; drop the editorial tail the headline can keep. Never introduce a claim the article does not make, and never make a claim stronger by shortening it.",
   "answer_first": "40-60 words that directly answer the question the title poses, using ONLY facts stated in body_markdown. Carry every qualifier from the source (population, \"usually\"/\"on average\", \"may\"/\"can\"); never add a superlative (\"best\", \"safest\", \"most effective\") that is not already in the body; no second-person medication instructions; no guarantee verbs; no new numbers, doses or drug names; no first person; no marketing",
   "title_html": "Title with one <em>italic phrase</em> wrapped in em tags",
   "deck": "2-sentence deck that answers the search intent.",

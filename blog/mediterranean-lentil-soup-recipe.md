@@ -1,4 +1,4 @@
-# Mediterranean lentil soup: 22g protein, 18g fiber per bowl, freezer-friendly
+# Mediterranean Lentil Soup: 22g Protein, 18g Fiber
 
 > Recipe for a 30-minute Mediterranean lentil soup: 22g protein, 16g fiber per bowl, six pantry ingredients.
 

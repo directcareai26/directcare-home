@@ -1,4 +1,4 @@
-# Greek lemon chicken with herbed quinoa: 38g protein, 30 minutes, one skillet
+# Greek Lemon Chicken and Herbed Quinoa: 38g Protein
 
 > A 30-minute Greek lemon chicken thigh recipe with herbed quinoa. 38g protein, 9g fiber, one skillet. Clinician-built weekend dinner that scales for one or four.
 

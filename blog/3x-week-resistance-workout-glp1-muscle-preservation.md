@@ -1,4 +1,4 @@
-# The 3x-per-week resistance workout that preserves muscle on a GLP-1
+# 3x-Week Resistance Workout to Keep Muscle on a GLP-1
 
 > Outlines the three-day-per-week resistance training protocol that preserves muscle during GLP-1 weight loss.
 

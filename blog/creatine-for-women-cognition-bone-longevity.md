@@ -1,4 +1,4 @@
-# Creatine monohydrate for women: the cognitive, bone, and longevity case (it's not just for the gym)
+# Creatine for Women: Cognition, Bone and Longevity
 
 > Why creatine monohydrate is the most evidence-backed supplement for women's cognition, bone density, and healthy aging — not just muscle.
 

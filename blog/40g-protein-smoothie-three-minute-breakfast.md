@@ -1,4 +1,4 @@
-# The 40-gram-protein smoothie: a 3-minute breakfast that doesn't taste like protein
+# 40g Protein Smoothie: A 3-Minute Breakfast
 
 > Recipe for a 40g-protein breakfast smoothie: whey, Greek yogurt, frozen banana, peanut butter, oats, milk.
 

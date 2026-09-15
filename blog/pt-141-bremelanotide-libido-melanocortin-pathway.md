@@ -110,7 +110,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  PT-141 is the cleanest example we have of a sexual-health drug that addresses the brain side of the equation rather than the vascular side. It's not for every patient — for most ED, PDE5 inhibitors remain the right starting point. But for the meaningful subset of patients whose challenge is upstream desire, it's frequently the missing piece.
 
  PDE5 medication amplifies an arousal signal you're already generating. PT-141 generates the signal. Match the medication to which part of the circuit is actually the bottleneck.
- Sources: [FDA prescribing information for Vyleesi (bremelanotide)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf); [phase 3 RECONNECT trials for bremelanotide in women](https://pubmed.ncbi.nlm.nih.gov/31599839/); [review of melanocortin pathway in sexual function](https://pubmed.ncbi.nlm.nih.gov/23899859/).
+ Sources: [FDA prescribing information for Vyleesi (bremelanotide)](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/210557s000lbl.pdf).
 
  Skip the awkward conversation
 

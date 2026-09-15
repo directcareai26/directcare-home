@@ -150,7 +150,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing), and [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed) for the broader TRT workup picture.
 
  The low-T diagnosis that gets missed most often isn't a low-T problem. It's a sleep problem causing a low-T result. Fix the airway, recheck the numbers, then decide.
- Sources: [STOP-BANG questionnaire validation in OSA screening](https://pubmed.ncbi.nlm.nih.gov/20210429/); [systematic review on OSA and testosterone](https://pubmed.ncbi.nlm.nih.gov/30903777/); [CPAP and testosterone restoration trials](https://pubmed.ncbi.nlm.nih.gov/24001036/).
 
  Get the full workup
 

@@ -45,11 +45,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Several controlled trials have compared the two directly:
 
-- A landmark [2006 trial in JAAD](https://pubmed.ncbi.nlm.nih.gov/16635664/) compared dutasteride 2.5 mg/day to finasteride 5 mg/day over 24 weeks. Dutasteride produced superior hair count improvements at every measured time point.
+- Comparisons of dutasteride 2.5 mg/day against finasteride 5 mg/day over 24 weeks have reported greater hair-count improvement with dutasteride. Note these are higher doses than the standard hair-loss doses.
 
-- A [2014 South Korean trial](https://pubmed.ncbi.nlm.nih.gov/24612477/) compared dutasteride 0.5 mg/day to finasteride 1 mg/day (the standard hair-loss doses). Dutasteride showed significantly better outcomes on hair count, hair width, and global photographic assessment at 6 months.
+- Head-to-head trials of dutasteride 0.5 mg/day against finasteride 1 mg/day (the standard hair-loss doses) have favoured dutasteride on hair count, hair width and global photographic assessment at six months.
 
-- A [2017 systematic review](https://pubmed.ncbi.nlm.nih.gov/28233889/) covering multiple RCTs concluded dutasteride is more effective than finasteride for androgenetic alopecia.
+- Systematic reviews of the randomised evidence have concluded dutasteride is more effective than finasteride for androgenetic alopecia.
 
  The clean clinical pattern
 
@@ -136,7 +136,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) post for the topical-vs-systemic decision, and the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post for what to expect on the minoxidil side of the protocol.
 
  Finasteride works for most men. For the rest, dutasteride is the cleaner version of the same conversation — same mechanism, more suppression, real regrowth when finasteride alone isn't enough.
- Sources: [JAAD 2006 head-to-head trial](https://pubmed.ncbi.nlm.nih.gov/16635664/); [Korean trial of dutasteride 0.5 mg vs finasteride 1 mg](https://pubmed.ncbi.nlm.nih.gov/24612477/); [2017 systematic review on dutasteride for AGA](https://pubmed.ncbi.nlm.nih.gov/28233889/).
+ Sources:.
 
  Get the protocol that works
 

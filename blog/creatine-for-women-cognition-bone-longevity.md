@@ -33,7 +33,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The cognitive case.
 
- Multiple controlled trials and a [2024 Cochrane-style systematic review](https://pubmed.ncbi.nlm.nih.gov/37879417/) have looked at creatine and cognition. The headline findings:
+ Controlled trials have looked at creatine and cognition. The recurring findings:
 
 - Memory: creatine supplementation produces small but consistent improvements in short-term memory tasks across healthy adults, with larger effects in older adults and in vegetarians/vegans (who have lower baseline creatine).
 
@@ -122,7 +122,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  If you're a woman over 35 — and especially over 50 — there's a strong evidence-based case for it being in your daily routine, regardless of whether you ever set foot in a gym.
 
  Three to five grams of monohydrate, taken with breakfast or any meal, every day. The whole protocol is one paragraph long. The published data behind it spans 30 years and several thousand patients.
- Sources: [Cochrane-style systematic review on creatine and cognition, 2024](https://pubmed.ncbi.nlm.nih.gov/37879417/); [International Society of Sports Nutrition position stand on creatine](https://pubmed.ncbi.nlm.nih.gov/28615996/); [systematic review on creatine in postmenopausal women](https://pubmed.ncbi.nlm.nih.gov/34822722/).
+ Sources: [International Society of Sports Nutrition position stand on creatine](https://pubmed.ncbi.nlm.nih.gov/28615996/).
 
  Build the right stack
 

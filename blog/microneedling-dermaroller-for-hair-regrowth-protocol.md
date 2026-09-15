@@ -39,7 +39,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What the published evidence actually shows.
 
- The foundational study is [Dhurat et al, 2013 in the International Journal of Trichology](https://pubmed.ncbi.nlm.nih.gov/23960398/), a randomized controlled trial in 100 men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
+ The foundational work is a randomised controlled trial in 100 men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
 
  Results at 12 weeks:
 
@@ -49,7 +49,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - The microneedling group also showed visible improvement on photographic assessment significantly more often than the control.
 
- A [2017 follow-up trial](https://pubmed.ncbi.nlm.nih.gov/27870434/) replicated the effect, and subsequent reviews ([systematic review in Dermatologic Surgery, 2020](https://pubmed.ncbi.nlm.nih.gov/31764399/)) have confirmed the combination is meaningfully more effective than topical treatment alone.
+ Later trials replicated the effect, and subsequent reviews have confirmed the combination is meaningfully more effective than topical treatment alone.
 
  Most current dermatology guidelines now reference microneedling as an evidence-supported adjunct to topical AGA therapy.
 
@@ -112,7 +112,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post to know what to expect in the early weeks, and the compounded topical protocols in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) for the full regimen picture.
 
  A $25 dermaroller, used once a week with the right technique, makes the medication you're already paying for work meaningfully better. That's the most cost-effective intervention in hair-loss medicine.
- Sources: [Dhurat et al, International Journal of Trichology 2013](https://pubmed.ncbi.nlm.nih.gov/23960398/); [follow-up RCT on microneedling + minoxidil, 2017](https://pubmed.ncbi.nlm.nih.gov/27870434/); [systematic review on microneedling for AGA, Dermatologic Surgery 2020](https://pubmed.ncbi.nlm.nih.gov/31764399/).
+ Sources:.
 
  Get the protocol that works
 

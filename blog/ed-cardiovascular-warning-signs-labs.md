@@ -19,7 +19,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Erectile dysfunction can signal early cardiovascular disease because penile arteries, being smaller, show signs of blockage before larger coronary arteries. Key lab tests that confirm this include ApoB, hs-CRP, HbA1c, fasting insulin, and testosterone levels. These markers reveal vascular, metabolic, and hormonal issues underlying ED, helping distinguish between symptom relief and actual disease prevention.
 
- Erectile dysfunction is not just a bedroom problem. In men over 40, new-onset ED is one of the earliest clinical signals of endothelial dysfunction — the same process that eventually narrows coronary arteries. The literature is consistent: ED often precedes a cardiac event by roughly **3 to 5 years** ([Montorsi et al., European Urology 2003](https://pubmed.ncbi.nlm.nih.gov/14644114/); [Vlachopoulos et al., Circulation: Cardiovascular Quality and Outcomes 2013](https://pubmed.ncbi.nlm.nih.gov/23287048/)).
+ Erectile dysfunction is not just a bedroom problem. In men over 40, new-onset ED is one of the earliest clinical signals of endothelial dysfunction — the same process that eventually narrows coronary arteries. The literature is consistent: ED often precedes a cardiac event by roughly **3 to 5 years**.
 
  That's not a scare tactic. It's anatomy. And it means the workup for ED should look a lot more like a cardiology workup than most men expect.
 
@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Atherosclerosis is a systemic disease. When plaque and endothelial dysfunction begin narrowing arteries throughout the body, the smallest vessels lose functional flow first. That's why a man can have a completely "normal" resting EKG and still notice softer, less reliable erections — the penis is the canary in the coal mine.
 
- This is called the **artery size hypothesis**, and it's been validated across multiple cohorts. Men with ED have roughly a **1.4-1.6x higher risk of major adverse cardiovascular events** compared to men without ED, independent of traditional risk factors ([Dong et al., JACC 2011](https://pubmed.ncbi.nlm.nih.gov/21903058/)).
+ This is called the **artery size hypothesis**, and it's been validated across multiple cohorts. Men with ED have roughly a **1.4-1.6x higher risk of major adverse cardiovascular events** compared to men without ED, independent of traditional risk factors.
 
  If a 45-year-old man walks in with new ED and a "clean" cholesterol panel, that panel probably isn't clean enough. It's measuring the wrong things.
 
@@ -39,7 +39,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 #### Vascular and metabolic
 
-- ApoB — a direct count of atherogenic particles. More predictive of cardiovascular risk than LDL-C alone ([Sniderman et al., JAMA Cardiology 2019](https://pubmed.ncbi.nlm.nih.gov/31462874/)).
+- ApoB — a direct count of atherogenic particles. More predictive of cardiovascular risk than LDL-C alone.
 
 - Lp(a) — a once-in-a-lifetime genetic marker. Elevated Lp(a) roughly doubles cardiovascular risk and is often missed on standard panels.
 
@@ -79,7 +79,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What treatment looks like when you actually know the phenotype
 
- PDE5 inhibitors like sildenafil and tadalafil work by amplifying nitric oxide signaling in the cavernosal smooth muscle. They work well in most men — response rates in trials run **60-80%** ([Goldstein et al., NEJM 1998](https://pubmed.ncbi.nlm.nih.gov/9599252/)) — but they're symptomatic therapy. They don't fix the underlying endothelial dysfunction.
+ PDE5 inhibitors like sildenafil and tadalafil work by amplifying nitric oxide signaling in the cavernosal smooth muscle. They work well in most men — response rates in trials run **60-80%** — but they're symptomatic therapy. They don't fix the underlying endothelial dysfunction.
 
  The interventions that actually move the underlying disease:
 

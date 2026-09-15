@@ -111,7 +111,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Yuan J, Zhang R, Yang Z, et al. Comparative effectiveness and safety of oral phosphodiesterase type 5 inhibitors for erectile dysfunction: a systematic review and network meta-analysis. European Urology. 2013;63(5):902-912. [Source](https://pubmed.ncbi.nlm.nih.gov/23395275/)
 
-- Porst H, Giuliano F, Glina S, et al. Evaluation of the efficacy and safety of once-a-day dosing of tadalafil 5mg and 10mg in the treatment of erectile dysfunction: results of a multicenter, randomized, double-blind, placebo-controlled trial. European Urology. 2006;50(2):351-359. [Source](https://pubmed.ncbi.nlm.nih.gov/16766115/)
+- Porst H, Giuliano F, Glina S, et al. Evaluation of the efficacy and safety of once-a-day dosing of tadalafil 5mg and 10mg in the treatment of erectile dysfunction: results of a multicenter, randomized, double-blind, placebo-controlled trial. European Urology. 2006;50(2):351-359. [Source](https://pubmed.ncbi.nlm.nih.gov/16766116/)
 
 - U.S. Food and Drug Administration. Viagra (sildenafil citrate) prescribing information. [Source](https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020895s039s042lbl.pdf)
 

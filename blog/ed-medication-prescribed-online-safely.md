@@ -105,7 +105,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Bhasin S, Brito JP, Cunningham GR, et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://academic.oup.com/jcem/article/103/5/1715/4939465)
 
-- Kloner RA, Hutter AM, Emmick JT, et al. Cardiovascular safety update of tadalafil: retrospective analysis of data from placebo-controlled and open-label clinical trials. J Am Coll Cardiol. 2003. [Source](https://pubmed.ncbi.nlm.nih.gov/14522494/)
+- Kloner RA, Hutter AM, Emmick JT, et al. Cardiovascular safety update of tadalafil: retrospective analysis of data from placebo-controlled and open-label clinical trials. Am J Cardiol. 2006. [Source](https://pubmed.ncbi.nlm.nih.gov/16765134/)
 
  Get your edge back.
 

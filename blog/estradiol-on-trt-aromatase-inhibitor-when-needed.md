@@ -122,7 +122,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  If you're on TRT and you've felt worse since the addition of anastrozole, that's the conversation worth having with your clinician. Pair this with [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol) and [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing) for the full diagnostic picture.
 
  The right testosterone protocol is the one that improves your bloodwork and your life. If you're feeling worse on TRT than off it, the medication you should suspect first isn't the testosterone.
- Sources: [Endocrine Society 2018 testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [American Urological Association 2018 testosterone deficiency guideline](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline); [position statements on sensitive estradiol assay in men](https://pubmed.ncbi.nlm.nih.gov/24684464/).
+ Sources: [Endocrine Society 2018 testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [American Urological Association 2018 testosterone deficiency guideline](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline).
 
  Get the right protocol
 

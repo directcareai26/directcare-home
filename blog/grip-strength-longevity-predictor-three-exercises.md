@@ -39,7 +39,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - A [2018 BMJ analysis](https://pubmed.ncbi.nlm.nih.gov/29739772/) of nearly 500,000 UK Biobank participants found grip strength inversely correlated with risk of cardiovascular disease, respiratory disease, COPD, and all-site cancer.
 
-- A [2022 systematic review](https://pubmed.ncbi.nlm.nih.gov/35381898/) confirmed grip strength as one of the most robust predictors of healthy aging and frailty avoidance.
+- Grip strength is among the most robust predictors of healthy ageing and frailty avoidance.
 
 - Multiple studies show grip strength tracks closely with cognitive function in older adults — declining grip often precedes measurable cognitive decline by years.
 
@@ -142,7 +142,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Track yours every 3 months. Train consistently. The number will tell you whether what you're doing is actually working at a level the scale and the mirror miss.
 
  The single physical metric most predictive of longevity is also one of the easiest to train. Pick the three exercises that build it. Track the number. Don't overthink it.
- Sources: [The Lancet PURE study on grip strength and mortality](https://pubmed.ncbi.nlm.nih.gov/25982160/); [BMJ 2018 UK Biobank analysis of grip strength and disease risk](https://pubmed.ncbi.nlm.nih.gov/29739772/); [2022 systematic review on grip strength and healthy aging](https://pubmed.ncbi.nlm.nih.gov/35381898/).
+ Sources: [The Lancet PURE study on grip strength and mortality](https://pubmed.ncbi.nlm.nih.gov/25982160/); [BMJ 2018 UK Biobank analysis of grip strength and disease risk](https://pubmed.ncbi.nlm.nih.gov/29739772/).
 
  Build real durability
 

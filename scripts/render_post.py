@@ -391,7 +391,13 @@ def record_review(slug: str, date_iso: str, reviewer: str = STANDING_REVIEWER) -
     reviews = reg.setdefault("reviews", {})
     if isinstance(reviews.get(slug), dict):
         return False
-    reviews[slug] = {"reviewer": reviewer, "date": date_iso}
+    # Never stamp a review date in the past. The convention is "review date =
+    # posting date", which is true for a post published and reviewed the same
+    # day — the only way this function is used. But a post carrying a backdated
+    # `date` would otherwise assert a review on a day it did not happen, which
+    # is exactly what had to be corrected across 96 entries on 2026-09-14.
+    today = dt.date.today().isoformat()
+    reviews[slug] = {"reviewer": reviewer, "date": min(date_iso, today) if date_iso > today else today}
     REVIEWERS_PATH.write_text(json.dumps(reg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return True
 

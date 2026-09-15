@@ -81,7 +81,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - — frank iron deficiency by WHO criteria.
 
-- — 92% sensitive and 98% specific for depleted iron stores (Guyatt et al., J Gen Intern Med ). Most hematologists treat below this.
+- — 92% sensitive and 98% specific for depleted iron stores (Guyatt et al., J Gen Intern Med 1992;7:145–53). Most hematologists treat below this.
 
 - — associated with fatigue and cognitive symptoms in menstruating women; the British Society for Haematology 2021 guidance uses this threshold for symptomatic patients.
 
@@ -107,7 +107,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Oral iron is cheap and available over the counter, and there's a temptation to just start. Two reasons to look at labs first:
 
-- You need a baseline to know it's working. Ferritin should roughly double over 8–12 weeks of adequate oral repletion. Without a starting number, you're guessing.
+- You need a baseline to know it's working. Ferritin is rechecked after about 12 weeks of repletion, and without a starting number there is no way to tell whether it actually moved.
 
 - A subset of women have iron deficiency from a source that isn't menstrual — celiac disease, H. pylori, or GI bleeding. Post-menopausal iron deficiency in particular warrants a GI workup, not a supplement.
 

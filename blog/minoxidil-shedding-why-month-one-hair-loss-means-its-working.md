@@ -53,7 +53,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Baseline shedding: 50–100 hairs/day. Most people don't notice it.
 
-- Minoxidil-induced shedding: typically 150–400 hairs/day for 2–6 weeks. Visible on the pillow, in the shower, in the brush. Sometimes feels alarming.
+- Minoxidil-induced shedding: a temporary increase above your baseline, typically for a few weeks. Visible on the pillow, in the shower, in the brush. Sometimes feels alarming.
 
 - Pathologic shedding: 500+ hairs/day for more than 8 weeks, or accompanied by patchy bald spots, scalp inflammation, or systemic symptoms (fatigue, weight changes, menstrual irregularities). This warrants stopping and checking labs.
 

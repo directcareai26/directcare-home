@@ -73,7 +73,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **3. Nausea and vomiting can disrupt oral thyroid meds.** Especially during dose escalation, if you're vomiting your morning levothyroxine, you're not absorbing it. This is a practical monitoring issue, not a pharmacologic one.
 
- If you take levothyroxine and start a GLP-1, recheck TSH at 6–8 weeks after each dose escalation, not at your usual 6–12 month interval.
+ If you take levothyroxine and start a GLP-1, ask your clinician whether your TSH should be rechecked sooner than your usual interval as your dose changes.
 
 ### Monitoring cadence that actually makes sense
 

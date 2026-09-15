@@ -239,10 +239,10 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
  Our blog
 
@@ -2894,10 +2894,10 @@ Source: https://www.directcare.ai/blood-test
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
 ### Everything you'd ask a clinician.
 
@@ -3036,10 +3036,10 @@ Source: https://www.directcare.ai/supplements
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
 
 ---
@@ -4442,10 +4442,10 @@ Source: https://www.directcare.ai/mens-health
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
 
 ---
@@ -4625,10 +4625,10 @@ Source: https://www.directcare.ai/womens-health
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
 ### Common questions.
 
@@ -12266,7 +12266,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The general population guideline of 0.8 g/kg is a floor for sedentary adults, not a target for someone in a sustained deficit trying to preserve lean mass.
 
- The evidence-based target during active weight loss is **1.6–2.2 g/kg of goal body weight per day**, per a 2018 meta-analysis in the British Journal of Sports Medicine (Morton et al.) and follow-up work by Longland, Phillips, and others.
+ A commonly cited target during active weight loss is **roughly 1.2–1.6 g/kg of goal body weight per day**, per a 2018 meta-analysis in the British Journal of Sports Medicine (Morton et al.) and follow-up work by Longland, Phillips, and others.
 
  Practical translation for a 200 lb (91 kg) adult with a goal weight of 170 lb (77 kg):
 
@@ -12685,11 +12685,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Injectable testosterone reliably pushes hematocrit up, and for some men it crosses the threshold where blood viscosity becomes a real cardiovascular concern. Here's what the number actually means, when to donate, and how often.
 
- Injectable testosterone raises hematocrit by stimulating red blood cell production, often increasing it 3–5 percentage points within a year. Most clinicians recommend intervention when hematocrit exceeds 54%, typically through blood donation or dose adjustments. Donating whole blood can lower hematocrit by about 3 points, helping maintain safe blood viscosity.
+ Injectable testosterone raises hematocrit by stimulating red blood cell production, and it can rise meaningfully over the first year. Most clinicians recommend intervention when hematocrit exceeds 54%, typically through blood donation or dose adjustments. Donating whole blood can lower hematocrit by about 3 points, helping maintain safe blood viscosity.
 
  If you're on injectable testosterone long enough, your hematocrit will climb. That's not a side effect — it's a predictable pharmacologic response, and the question isn't whether it happens but how high it goes and what you do about it.
 
- Most men on standard TRT doses see hematocrit rise 3–5 percentage points within the first 6–12 months. A meaningful minority cross 52%, which is where most clinicians start paying real attention. This article walks through why injectables push the number harder than gels, what the threshold actually represents, and how often donating blood keeps you in a safe range.
+ Most men on standard TRT doses see hematocrit rise over the first 6–12 months. A meaningful minority cross 52%, which is where most clinicians start paying real attention. This article walks through why injectables push the number harder than gels, what the threshold actually represents, and how often donating blood keeps you in a safe range.
 
 ### Why injectable testosterone raises hematocrit — the mechanism in plain English
 
@@ -13004,7 +13004,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Three things converge in the late 30s to early 50s:
 
- 1. **Heavier, more erratic periods.** As cycles shorten and ovulation becomes inconsistent, menorrhagia is common. A single heavy cycle can lose 60–80 mg of iron, roughly a month of dietary intake. 2. **Lower absorption.** Gastric acid production declines with age, and PPIs (used by a huge share of this cohort) further impair non-heme iron absorption. 3. **Higher demands and lower intake.** Many women in this decade have reduced red meat intake and increased training load — both increase net iron drain.
+ 1. **Heavier, more erratic periods.** As cycles shorten and ovulation becomes inconsistent, menorrhagia is common. Heavy cycles can lose enough iron to outpace what diet replaces. 2. **Lower absorption.** Gastric acid production declines with age, and PPIs (used by a huge share of this cohort) further impair non-heme iron absorption. 3. **Higher demands and lower intake.** Many women in this decade have reduced red meat intake and increased training load — both increase net iron drain.
 
  Then menstruation stops. Iron losses drop dramatically, and stores slowly rebuild. This is why the same woman who felt terrible at 47 often feels notably better at 54, and why the whole picture gets misattributed to "hormones settling." Some of it was hormones. A lot of it was iron.
 
@@ -13269,7 +13269,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  In the pivotal comparison trial (Olsen et al., J Am Acad Dermatol 2006), 0.5 mg dutasteride daily suppressed serum DHT by roughly **90%**, versus about **70%** for 5 mg finasteride. Scalp DHT — the number that actually matters for follicles — dropped further on dutasteride as well.
 
- More blockade, more regrowth. In a 24-week head-to-head, dutasteride 0.5 mg produced meaningfully greater hair count and width improvements than finasteride 1 mg (Harcha et al., J Am Acad Dermatol 2014). A 2019 network meta-analysis (Gupta & Charrette, J Dermatolog Treat) ranked dutasteride 0.5 mg as the most effective oral monotherapy for male pattern hair loss.
+ More blockade, more regrowth. In a 24-week head-to-head, dutasteride 0.5 mg produced meaningfully greater hair count and width improvements than finasteride 1 mg (Harcha et al., J Am Acad Dermatol 2014). A 2014 network meta-analysis (Gupta & Charrette, J Dermatolog Treat) ranked dutasteride 0.5 mg as the most effective oral monotherapy for male pattern hair loss.
 
 ### Why stronger isn't always smarter
 
@@ -13487,7 +13487,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The problem: two people can have identical LDL-C values and very different particle counts. One person might carry their cholesterol in a smaller number of large, cholesterol-rich particles. Another might carry the same total in a much larger number of small, cholesterol-poor particles. Same LDL-C. Very different arterial wall exposure.
 
- LDL-C also loses accuracy when triglycerides are elevated (above ~200 mg/dL), in people with metabolic syndrome, type 2 diabetes, or on a very low-carb diet — precisely the populations where risk assessment matters most.
+ LDL-C also loses accuracy when triglycerides are elevated (above ~175 mg/dL), in people with metabolic syndrome, type 2 diabetes, or on a very low-carb diet — precisely the populations where risk assessment matters most.
 
 ### What ApoB measures — one particle, one count
 
@@ -14982,7 +14982,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **3. Nausea and vomiting can disrupt oral thyroid meds.** Especially during dose escalation, if you're vomiting your morning levothyroxine, you're not absorbing it. This is a practical monitoring issue, not a pharmacologic one.
 
- If you take levothyroxine and start a GLP-1, recheck TSH at 6–8 weeks after each dose escalation, not at your usual 6–12 month interval.
+ If you take levothyroxine and start a GLP-1, ask your clinician whether your TSH should be rechecked sooner than your usual interval as your dose changes.
 
 ### Monitoring cadence that actually makes sense
 
@@ -19306,7 +19306,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Baseline shedding: 50–100 hairs/day. Most people don't notice it.
 
-- Minoxidil-induced shedding: typically 150–400 hairs/day for 2–6 weeks. Visible on the pillow, in the shower, in the brush. Sometimes feels alarming.
+- Minoxidil-induced shedding: a temporary increase above your baseline, typically for a few weeks. Visible on the pillow, in the shower, in the brush. Sometimes feels alarming.
 
 - Pathologic shedding: 500+ hairs/day for more than 8 weeks, or accompanied by patchy bald spots, scalp inflammation, or systemic symptoms (fatigue, weight changes, menstrual irregularities). This warrants stopping and checking labs.
 
@@ -21556,7 +21556,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What "normal" actually looks like.
 
- A typical female total testosterone reference range is 15 to 70 ng/dL. The lab will flag anything outside that. But many labs use a single range for women aged 20 to 80, which is biologically meaningless. A 28-year-old at 50 ng/dL and a 55-year-old at 20 ng/dL both fall inside "normal," while the older woman is, functionally, deficient.
+ A typical female total testosterone reference range is roughly 15 to 46 ng/dL at age 30, declining with age. The lab will flag anything outside that. But many labs use a single range for women aged 20 to 80, which is biologically meaningless. A 28-year-old at 50 ng/dL and a 55-year-old at 20 ng/dL both fall inside "normal," while the older woman is, functionally, deficient.
 
  For women who choose to run a DirectCare AI hormone panel, the targets worth aiming for are:
 
@@ -21617,7 +21617,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 # Topical vs. Oral Finasteride for Hair Loss
 
-> Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure.
+> Explains how topical finasteride delivers oral-finasteride hair-regrowth results with far lower systemic exposure.
 
 Source: https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair
 
@@ -21634,7 +21634,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Oral finasteride works. And produces side effects in a small but real percentage of men. Topical finasteride changes that math by concentrating the drug where you want it and minimizing systemic exposure.
 
- Explains how topical finasteride delivers oral-finasteride hair-regrowth results with ~80% less systemic exposure — and the side effects (libido, mood) it reduces.
+ Explains how topical finasteride delivers oral-finasteride hair-regrowth results with far lower systemic exposure — and the side effects (libido, mood) it reduces.
 
  Topical finasteride delivers hair-regrowth results similar to oral finasteride while reducing systemic exposure by about 80%. It lowers DHT in the scalp where it matters, with much less impact on blood DHT levels. It is applied daily to the scalp and used in combination with other treatments like minoxidil.
 
@@ -22509,7 +22509,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The hormone block.
 
- **1. Total testosterone.** The headline hormone. We want morning, fasting values. For men: typical young-adult range is 600 to 900 ng/dL. For women: 25 to 60 ng/dL.
+ **1. Total testosterone.** The headline hormone. We want morning, fasting values. For men: the CDC-harmonized reference interval in healthy non-obese men aged 19–39 is 264–916 ng/dL, with a median near 531. For women: 25 to 60 ng/dL.
 
  **2. Free testosterone.** What's actually available to your tissues. Often more clinically useful than total.
 

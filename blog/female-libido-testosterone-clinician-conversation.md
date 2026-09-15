@@ -31,7 +31,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What "normal" actually looks like.
 
- A typical female total testosterone reference range is 15 to 70 ng/dL. The lab will flag anything outside that. But many labs use a single range for women aged 20 to 80, which is biologically meaningless. A 28-year-old at 50 ng/dL and a 55-year-old at 20 ng/dL both fall inside "normal," while the older woman is, functionally, deficient.
+ A typical female total testosterone reference range is roughly 15 to 46 ng/dL at age 30, declining with age. The lab will flag anything outside that. But many labs use a single range for women aged 20 to 80, which is biologically meaningless. A 28-year-old at 50 ng/dL and a 55-year-old at 20 ng/dL both fall inside "normal," while the older woman is, functionally, deficient.
 
  For women who choose to run a DirectCare AI hormone panel, the targets worth aiming for are:
 

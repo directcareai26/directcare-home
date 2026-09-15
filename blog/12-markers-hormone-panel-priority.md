@@ -25,7 +25,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The hormone block.
 
- **1. Total testosterone.** The headline hormone. We want morning, fasting values. For men: typical young-adult range is 600 to 900 ng/dL. For women: 25 to 60 ng/dL.
+ **1. Total testosterone.** The headline hormone. We want morning, fasting values. For men: the CDC-harmonized reference interval in healthy non-obese men aged 19–39 is 264–916 ng/dL, with a median near 531. For women: 25 to 60 ng/dL.
 
  **2. Free testosterone.** What's actually available to your tissues. Often more clinically useful than total.
 

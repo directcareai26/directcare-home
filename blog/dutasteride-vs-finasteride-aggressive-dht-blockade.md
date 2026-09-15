@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  In the pivotal comparison trial (Olsen et al., J Am Acad Dermatol 2006), 0.5 mg dutasteride daily suppressed serum DHT by roughly **90%**, versus about **70%** for 5 mg finasteride. Scalp DHT — the number that actually matters for follicles — dropped further on dutasteride as well.
 
- More blockade, more regrowth. In a 24-week head-to-head, dutasteride 0.5 mg produced meaningfully greater hair count and width improvements than finasteride 1 mg (Harcha et al., J Am Acad Dermatol 2014). A 2019 network meta-analysis (Gupta & Charrette, J Dermatolog Treat) ranked dutasteride 0.5 mg as the most effective oral monotherapy for male pattern hair loss.
+ More blockade, more regrowth. In a 24-week head-to-head, dutasteride 0.5 mg produced meaningfully greater hair count and width improvements than finasteride 1 mg (Harcha et al., J Am Acad Dermatol 2014). A 2014 network meta-analysis (Gupta & Charrette, J Dermatolog Treat) ranked dutasteride 0.5 mg as the most effective oral monotherapy for male pattern hair loss.
 
 ### Why stronger isn't always smarter
 

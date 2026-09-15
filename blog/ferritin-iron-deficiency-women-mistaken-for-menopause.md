@@ -97,7 +97,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Three things converge in the late 30s to early 50s:
 
- 1. **Heavier, more erratic periods.** As cycles shorten and ovulation becomes inconsistent, menorrhagia is common. A single heavy cycle can lose 60–80 mg of iron, roughly a month of dietary intake. 2. **Lower absorption.** Gastric acid production declines with age, and PPIs (used by a huge share of this cohort) further impair non-heme iron absorption. 3. **Higher demands and lower intake.** Many women in this decade have reduced red meat intake and increased training load — both increase net iron drain.
+ 1. **Heavier, more erratic periods.** As cycles shorten and ovulation becomes inconsistent, menorrhagia is common. Heavy cycles can lose enough iron to outpace what diet replaces. 2. **Lower absorption.** Gastric acid production declines with age, and PPIs (used by a huge share of this cohort) further impair non-heme iron absorption. 3. **Higher demands and lower intake.** Many women in this decade have reduced red meat intake and increased training load — both increase net iron drain.
 
  Then menstruation stops. Iron losses drop dramatically, and stores slowly rebuild. This is why the same woman who felt terrible at 47 often feels notably better at 54, and why the whole picture gets misattributed to "hormones settling." Some of it was hormones. A lot of it was iron.
 

@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The problem: two people can have identical LDL-C values and very different particle counts. One person might carry their cholesterol in a smaller number of large, cholesterol-rich particles. Another might carry the same total in a much larger number of small, cholesterol-poor particles. Same LDL-C. Very different arterial wall exposure.
 
- LDL-C also loses accuracy when triglycerides are elevated (above ~200 mg/dL), in people with metabolic syndrome, type 2 diabetes, or on a very low-carb diet — precisely the populations where risk assessment matters most.
+ LDL-C also loses accuracy when triglycerides are elevated (above ~175 mg/dL), in people with metabolic syndrome, type 2 diabetes, or on a very low-carb diet — precisely the populations where risk assessment matters most.
 
 ### What ApoB measures — one particle, one count
 

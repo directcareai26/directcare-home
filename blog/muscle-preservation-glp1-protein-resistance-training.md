@@ -37,7 +37,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The general population guideline of 0.8 g/kg is a floor for sedentary adults, not a target for someone in a sustained deficit trying to preserve lean mass.
 
- The evidence-based target during active weight loss is **1.6–2.2 g/kg of goal body weight per day**, per a 2018 meta-analysis in the British Journal of Sports Medicine (Morton et al.) and follow-up work by Longland, Phillips, and others.
+ A commonly cited target during active weight loss is **roughly 1.2–1.6 g/kg of goal body weight per day**, per a 2018 meta-analysis in the British Journal of Sports Medicine (Morton et al.) and follow-up work by Longland, Phillips, and others.
 
  Practical translation for a 200 lb (91 kg) adult with a goal weight of 170 lb (77 kg):
 

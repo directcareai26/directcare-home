@@ -86,10 +86,10 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Clinical Advisor & Director of Integrative Health
 
- DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on wellness programs, preventive health initiatives, and care protocols. Helping ensure our services reflect current evidence-based best practices.
+ DirectCare AI is supported by experienced healthcare professionals dedicated to delivering patient-centered care. Dr. Pepin provides clinical guidance on our wellness, movement and general nutrition programs. Prescription treatment protocols are directed by our US-licensed prescribing clinicians.
 
- Integrative Health
- Preventive Care
+ Musculoskeletal Health
+ Wellness & Recovery
 
  Our blog
 

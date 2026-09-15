@@ -1,4 +1,4 @@
-# The 4-rule food framework for staying full and fueled on a GLP-1
+# The 4-Rule Food Framework for GLP-1 Nutrition
 
 > Outlines the 4-rule eating framework for GLP-1 patients: 1g protein per pound goal weight, fiber > 25g/day, hydration > 80oz, no liquid calories.
 

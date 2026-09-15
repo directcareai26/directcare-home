@@ -304,7 +304,14 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     # <title> carries the brand suffix only when the whole tag stays within 60 characters (the
     # crawler/SERP title budget); longer post titles stand alone. og:title and the Article
     # headline always use the bare title. 2026-09-13.
-    html_title = f"{title} | DirectCare AI" if len(title) + len(" | DirectCare AI") <= 60 else title
+    # The <title> is decoupled from the headline on purpose. An H1 can be a full
+    # descriptive sentence; a <title> over ~60 characters is truncated in search
+    # results, so the end of it is wasted. `seo_title` carries the short form
+    # when the payload has one; without it we fall back to the headline, which
+    # is how 53 posts ended up with titles of up to 104 characters.
+    seo_title = (payload.get("seo_title") or "").strip()
+    base = seo_title or title
+    html_title = f"{base} | DirectCare AI" if len(base) + len(" | DirectCare AI") <= 60 else base
     # Optional title_html lets the author wrap part of the title in <em>...</em>.
     title_html = payload.get("title_html") or _html.escape(title)
     category = payload["category"].strip()
@@ -331,6 +338,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     replacements = {
         "{{SLUG}}": slug,
         "{{TITLE}}": _escape_attr(title),
+        "{{OG_TITLE}}": _escape_attr(base),
         "{{TITLE_HTML}}": title_html,
         "{{HTML_TITLE}}": _escape_attr(html_title),
         "{{RELATED_HTML}}": related_posts_html(slug, category),

@@ -1,4 +1,4 @@
-# Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working
+# Minoxidil Shedding: Why Month One Sheds
 
 > Why minoxidil causes increased hair shedding in weeks 2–6 of treatment, how to tell normal shed from a problem.
 

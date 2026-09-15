@@ -1,4 +1,4 @@
-# Magnesium, vitamin D, and the four supplement gaps almost every patient has
+# Magnesium, Vitamin D and 4 Common Supplement Gaps
 
 > Explains the two most commonly under-dosed supplements: magnesium glycinate (300-400mg/day for sleep + recovery) and vitamin D3 (2,000-5,000 IU/day to hit 40-60 ng/mL).
 

@@ -1,4 +1,4 @@
-# Protein timing: does the 30-minute post-workout window actually matter?
+# Protein Timing: Does the 30-Minute Window Matter?
 
 > Explains why the 'anabolic window' is mostly a myth: total daily protein matters far more than post-workout timing as long as you hit 1g/lb goal weight across 4 meals.
 

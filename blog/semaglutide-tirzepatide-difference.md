@@ -1,4 +1,4 @@
-# Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs
+# Semaglutide vs. Tirzepatide: How to Pick a GLP-1
 
 > Compares semaglutide vs. tirzepatide for weight loss: tirzepatide hits two receptors (GIP + GLP-1) and drops 15-22% body weight vs 12-15% for semaglutide.
 

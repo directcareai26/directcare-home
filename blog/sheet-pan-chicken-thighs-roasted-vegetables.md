@@ -1,4 +1,4 @@
-# Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner
+# Sheet-Pan Chicken Thighs: 40g Protein in 30 Minutes
 
 > Recipe for sheet-pan chicken thighs with roasted vegetables: 30 minutes, 38g protein per serving, four-component meal prep with one tray.
 

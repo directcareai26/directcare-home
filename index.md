@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/
 
 Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours free →](https://therxcard.net/ZW6727/en/home)
 
-## Online telehealth for weight loss, hormones, sexual health & hair,
+## Online telehealth for weight loss , hormones, sexual health & hair,
  on your terms.
 
  [For women

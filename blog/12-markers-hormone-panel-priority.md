@@ -1,4 +1,4 @@
-# The 12 markers we actually look at first on a DirectCare AI hormone panel
+# The 12 Hormone Panel Markers We Check First
 
 > Lists the 12 biomarkers a clinician opens first on a hormone panel: total/free testosterone, SHBG, estradiol, DHEA-S, LH, FSH, TSH, free T3/T4.
 

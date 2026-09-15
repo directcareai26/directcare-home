@@ -1,4 +1,4 @@
-# Sheet-pan harissa salmon with cauliflower and chickpeas: 36g protein, 35 minutes, one pan
+# Sheet-Pan Harissa Salmon: 36g Protein in 35 Minutes
 
 > A 35-minute sheet-pan harissa salmon recipe with cauliflower and chickpeas. 36g protein, 12g fiber, omega-3 target met.
 

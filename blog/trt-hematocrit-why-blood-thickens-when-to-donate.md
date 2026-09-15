@@ -1,4 +1,4 @@
-# TRT and hematocrit: why your blood thickens on testosterone, and when to donate
+# TRT and Hematocrit: When to Donate Blood
 
 > Why testosterone therapy raises hematocrit and hemoglobin, what level is too high, and the monitoring schedule every TRT patient should be on.
 

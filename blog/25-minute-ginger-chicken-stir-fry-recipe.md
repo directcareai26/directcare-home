@@ -1,4 +1,4 @@
-# The 25-minute ginger chicken stir-fry: 38g protein, one pan, weeknight-easy
+# 25-Minute Ginger Chicken Stir-Fry: 38g Protein
 
 > A 25-minute ginger chicken stir-fry recipe with 38g protein, 9g fiber, and three variations. One-pan, weeknight-easy, scales for one or four.
 

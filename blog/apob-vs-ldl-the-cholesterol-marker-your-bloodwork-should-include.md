@@ -1,4 +1,4 @@
-# ApoB vs. LDL cholesterol: the marker your bloodwork should include (and probably doesn't)
+# ApoB vs. LDL: The Marker Your Bloodwork Should Include
 
 > Why apolipoprotein B (ApoB) outperforms LDL cholesterol for cardiovascular risk prediction, what numbers to target.
 

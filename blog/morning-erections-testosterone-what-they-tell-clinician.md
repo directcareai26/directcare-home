@@ -1,4 +1,4 @@
-# Morning erections and testosterone: what nocturnal tumescence actually tells your clinician
+# Morning Erections and Testosterone: What They Signal
 
 > Explains why morning erections are a free clinical signal for low testosterone, vascular health, and sleep quality.
 

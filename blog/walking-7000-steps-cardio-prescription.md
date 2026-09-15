@@ -1,4 +1,4 @@
-# The 7,000-step rule: why walking is the underrated cardio prescription
+# The 7,000-Step Rule: Walking as Cardio
 
 > Explains why 7,000 daily steps is the most evidence-backed cardio target for adults — and why higher counts show diminishing returns in the published literature.
 

@@ -1,4 +1,4 @@
-# The 5-minute chickpea-and-tuna lunch bowl: 35g protein, no cooking required
+# 5-Minute Chickpea and Tuna Bowl: 35g Protein
 
 > Recipe for a 5-minute pantry lunch bowl: canned chickpeas + tuna + olive oil + lemon. Hits 35g protein and 14g fiber with no stove or microwave.
 

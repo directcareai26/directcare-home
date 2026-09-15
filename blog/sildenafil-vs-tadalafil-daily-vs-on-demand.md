@@ -1,4 +1,4 @@
-# Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms
+# Daily Tadalafil vs. On-Demand Dosing
 
 > When daily low-dose tadalafil (2.5-5 mg) actually outperforms on-demand sildenafil or tadalafil — and the BPH and endothelial benefits that come with continuous PDE5 dosing.
 

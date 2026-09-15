@@ -1,4 +1,4 @@
-# Grip strength predicts how long you'll live — and the 3 exercises that actually build it
+# Grip Strength and Longevity: 3 Exercises That Build It
 
 > Why grip strength is one of the strongest predictors of longevity, what the PURE study and other research actually showed.
 

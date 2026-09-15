@@ -1,4 +1,4 @@
-# The 30-minute beginner home workout: a full-body routine that needs zero equipment
+# 30-Minute Beginner Home Workout, No Equipment
 
 > Walks through a 30-minute beginner home workout: three rounds of eight bodyweight moves (squats, push-ups, glute bridges, lunges, planks) paced by RPE.
 

@@ -1,4 +1,4 @@
-# TRT vs. enclomiphene: which testosterone protocol is right for you?
+# TRT vs. Enclomiphene: Which Protocol Fits?
 
 > Compares the three testosterone protocols: injectable testosterone cypionate, oral testosterone undecanoate, and enclomiphene.
 

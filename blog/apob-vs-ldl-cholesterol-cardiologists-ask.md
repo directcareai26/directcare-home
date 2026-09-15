@@ -137,6 +137,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Medication decisions here benefit from a clinician reviewing your full context — symptoms, family history, other risk factors, and labs when you've run them. A number on a page doesn't prescribe itself.
 
+### What about Lp(a) ?
+
+ Lp(a) is a separate, largely genetically determined risk factor, and it is worth testing once. It does not change meaningfully across a lifetime — get the number, then factor it into decisions from there.
+
+ Elevated Lp(a) raises lifetime cardiovascular risk, and the response is not to lower Lp(a) directly — no widely available drug does that yet. It is to be more aggressive about every other modifiable risk factor, ApoB included.
+
 ### The bottom line — ask for the count, not just the concentration
 
  LDL-C isn't wrong. It's just incomplete. In an era where a single blood draw can give you a particle count that outperforms the calculated estimate your grandparents relied on, there's no strong reason to stay in the dark.

@@ -85,6 +85,14 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Stable but unsatisfying result — hair loss has stopped, but no meaningful regrowth. For some patients dutasteride converts a stabilization response to a regrowth response.
 
+### Why stronger isn't always smarter
+
+ Dutasteride's half-life is around **five weeks**. Finasteride's is **six to eight hours**. If you develop a side effect on finasteride, stopping clears the drug within days. On dutasteride, the same decision plays out over months.
+
+ The sexual and mood side-effect profile is broadly similar between the two in controlled trials. The difference is not how likely a problem is — it is how quickly you can undo it.
+
+ That is the honest trade-off: dutasteride offers more regrowth, and its pharmacokinetics give you less room to course-correct. It is a reason to start with finasteride unless there is a specific argument not to.
+
 ### Side-effect profile.
 
  Both drugs share the same potential side effects, with dutasteride producing them slightly more often given its more complete DHT suppression:

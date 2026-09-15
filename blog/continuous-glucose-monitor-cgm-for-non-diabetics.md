@@ -133,7 +133,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're curious, a 2-week trial run is reasonable. The pattern recognition is most useful in the first 14 days; continuous use beyond that has diminishing returns for most people.
 
- Pair with the broader metabolic context in the [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [ApoB vs. LDL conversation](https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include) — CGM data without those is incomplete.
+ Pair with the broader metabolic context in the [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [ApoB vs. LDL conversation](https://www.directcare.ai/blog/apob-vs-ldl-cholesterol-cardiologists-ask) — CGM data without those is incomplete.
 
  The CGM revolution is real. The most useful version of it lives in a 2-week trial paired with a real metabolic blood panel — not in years of obsessive number-watching without context.
  Sources: [FDA clearance announcement for Dexcom Stelo OTC CGM](https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor); [International Diabetes Federation consensus on CGM time-in-range targets](https://pubmed.ncbi.nlm.nih.gov/31177185/).

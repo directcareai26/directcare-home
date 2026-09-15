@@ -25,7 +25,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Quick refresher on the molecules
 
- We covered the full sildenafil-vs-tadalafil comparison in [a previous post](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison). The short version:
+ We covered the full sildenafil-vs-tadalafil comparison in [a previous post](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand). The short version:
 
 - Sildenafil: onset 30–60 min, peak ~1 hour, duration 4–6 hours. Sensitive to food. Best as a planned-encounter drug.
 
@@ -106,6 +106,28 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - How you respond to a 1-month trial of low-dose daily — most patients can switch protocols if it doesn't fit
 
  If you're starting from scratch, a typical first protocol is **2.5 mg daily for 4 weeks**, then move to 5 mg if tolerated and symptoms warrant. Most men land on 5 mg daily as the long-term dose.
+
+### Side-effect differences worth knowing
+
+ Both share the PDE5 side-effect family — headache, flushing, nasal congestion, mild GI upset, occasional visual changes. Two differences are worth knowing before you pick:
+
+- Tadalafil more commonly causes back or muscle aches, related to its longer half-life and PDE-11 cross-reactivity. It usually settles with continued use.
+
+- Sildenafil more commonly causes a transient blue tint to vision, from PDE-6 cross-reactivity in the retina. Temporary and not dangerous, but real.
+
+### The safety guardrails that apply to both
+
+ A few absolutes worth internalising:
+
+- Nitrates are a hard contraindication. If you take nitroglycerin for chest pain — or might ever need it acutely — PDE5 inhibitors are off the table. The combined blood-pressure drop can be dangerous.
+
+- Alpha-blockers (often prescribed for BPH or blood pressure) require careful timing and dose adjustment. That is a clinician conversation, not a guess.
+
+- Priapism — an erection lasting more than four hours — is rare but a real emergency. Go to an emergency room.
+
+- Sudden vision or hearing loss after dosing is rare and requires immediate evaluation.
+
+ And a piece of context most articles skip: ED is often the earliest visible sign of vascular disease. The endothelial dysfunction that shows up here usually shows up elsewhere later, which is why a new ED complaint is worth a cardiovascular look rather than just a prescription.
 
 ### What daily PDE5 won't fix
 

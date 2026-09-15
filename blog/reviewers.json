@@ -78,10 +78,6 @@
   },
   "reviews": {
     "_comment": "slug -> { reviewer: <key>, date: YYYY-MM-DD }. Empty because no review has been recorded yet. Add an entry only when a named reviewer has actually read that post.",
-    "sildenafil-vs-tadalafil-how-to-choose": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
-    },
     "trt-and-fertility-preserve-sperm-production": {
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
@@ -147,10 +143,6 @@
       "date": "2026-09-13"
     },
     "protein-fiber-breakfast-template-busy-mornings": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
-    },
-    "dutasteride-vs-finasteride-aggressive-dht-blockade": {
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
     },
@@ -230,10 +222,6 @@
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
     },
-    "trt-hematocrit-why-blood-thickens-when-to-donate": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
-    },
     "weight-setpoint-theory-glp1-can-drugs-move-it": {
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
@@ -287,10 +275,6 @@
       "date": "2026-09-13"
     },
     "dhea-in-womens-hrt-the-third-sex-hormone": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
-    },
-    "apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include": {
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
     },
@@ -375,10 +359,6 @@
       "date": "2026-09-13"
     },
     "progesterone-at-night-timing-vs-dose": {
-      "reviewer": "tim-pepin",
-      "date": "2026-09-13"
-    },
-    "sildenafil-vs-tadalafil-pde5-comparison": {
       "reviewer": "tim-pepin",
       "date": "2026-09-13"
     },

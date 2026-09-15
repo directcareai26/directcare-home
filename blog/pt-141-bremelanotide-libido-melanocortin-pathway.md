@@ -103,7 +103,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **With HRT (including testosterone for women):** estradiol + testosterone for women addresses much of the perimenopausal libido drop. PT-141 is the addition when HRT alone hasn't fully addressed desire.
 
- Pair this with [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison), [daily low-dose tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation) post for the full sexual-health landscape.
+ Pair this with [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand), [daily low-dose tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation) post for the full sexual-health landscape.
 
 ### The bottom line.
 

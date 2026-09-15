@@ -13,7 +13,6 @@ blog/40g-protein-smoothie-three-minute-breakfast.md
 blog/5-minute-chickpea-tuna-lunch-bowl.md
 blog/5-minute-mobility-warmup-reduce-injury-risk.md
 blog/apob-vs-ldl-cholesterol-cardiologists-ask.md
-blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include.md
 blog/berberine-natures-ozempic-clinician-honest-view.md
 blog/body-recomp-glp1-protect-muscle.md
 blog/compounded-vs-branded-glp1-actual-difference.md
@@ -21,7 +20,6 @@ blog/continuous-glucose-monitor-cgm-for-non-diabetics.md
 blog/cottage-cheese-bowl-protein-snack.md
 blog/creatine-for-women-cognition-bone-longevity.md
 blog/dhea-in-womens-hrt-the-third-sex-hormone.md
-blog/dutasteride-vs-finasteride-aggressive-dht-blockade.md
 blog/dutasteride-vs-finasteride-when-to-step-up.md
 blog/eat-the-rainbow-phytonutrient-targets-by-color.md
 blog/ed-cardiovascular-warning-signs-labs.md
@@ -83,15 +81,12 @@ blog/semaglutide-tirzepatide-difference.md
 blog/sheet-pan-chicken-thighs-roasted-vegetables.md
 blog/sheet-pan-miso-salmon-bok-choy-recipe.md
 blog/sildenafil-vs-tadalafil-daily-vs-on-demand.md
-blog/sildenafil-vs-tadalafil-how-to-choose.md
-blog/sildenafil-vs-tadalafil-pde5-comparison.md
 blog/subq-vs-im-testosterone-injections-pharmacokinetics.md
 blog/testosterone-for-women-hrt-protocols.md
 blog/topical-vs-oral-finasteride-men-hair.md
 blog/topical-vs-oral-finasteride-side-effects.md
 blog/trt-and-fertility-preserve-sperm-production.md
 blog/trt-and-sleep-apnea-the-bidirectional-relationship.md
-blog/trt-hematocrit-why-blood-thickens-when-to-donate.md
 blog/trt-vs-enclomiphene-which-protocol.md
 blog/two-lift-minimum-busy-week-strength-template.md
 blog/vaginal-estradiol-gsm-most-underprescribed-hrt.md

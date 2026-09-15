@@ -89,7 +89,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What about PDE5 inhibitors?
 
- Sildenafil and tadalafil (covered in [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-pde5-comparison)) work mechanically downstream of the upstream problem. They can absolutely help — but starting one without identifying the underlying cause means you're treating a symptom that may also be a warning sign for something else.
+ Sildenafil and tadalafil (covered in [sildenafil vs. tadalafil](https://www.directcare.ai/blog/sildenafil-vs-tadalafil-daily-vs-on-demand)) work mechanically downstream of the upstream problem. They can absolutely help — but starting one without identifying the underlying cause means you're treating a symptom that may also be a warning sign for something else.
 
  The clean sequence: identify why NPT dropped first, address that, then add a PDE5 if symptoms warrant after the cause is being treated.
 

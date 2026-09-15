@@ -100,6 +100,18 @@
         "what is DirectCare AI's AI training policy",
         "which crawlers does directcare.ai allow"
       ]
+    },
+    {
+      "identifier": "urn:air:directcare.ai:doc:auth",
+      "displayName": "Authentication posture (auth.md)",
+      "description": "States that this service has no authentication, no registration and no protected resources, and that no credentials should be sent. Published so an agent does not have to infer that from a 404.",
+      "type": "text/markdown",
+      "url": "https://www.directcare.ai/auth.md",
+      "representativeQueries": [
+        "how do I authenticate with DirectCare AI",
+        "does DirectCare AI require an API key",
+        "how does an agent register with DirectCare AI"
+      ]
     }
   ]
 }

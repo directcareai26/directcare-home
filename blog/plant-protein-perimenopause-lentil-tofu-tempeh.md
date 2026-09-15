@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Current expert consensus for women over 40 lands closer to **1.2–1.6 g/kg/day**, with roughly **30–40 g of protein per meal** to overcome anabolic resistance and trigger muscle protein synthesis ([Traylor et al., Advances in Nutrition 2018](https://pubmed.ncbi.nlm.nih.gov/29635313/)). For a 145-lb (66 kg) woman, that's about **80–105 g/day**, ideally split across three or four meals — not backloaded into a chicken breast at dinner.
 
- Plant proteins get unfairly dismissed here. Yes, most are lower in leucine gram-for-gram than whey or chicken. But soy protein (tofu, tempeh, edamame, soy milk) matches animal protein for muscle protein synthesis when total dose is adequate ([Messina et al., Journal of Nutrition 2018](https://pubmed.ncbi.nlm.nih.gov/29401254/)). Lentils fall a bit short on methionine, which is exactly why we rotate them with soy — the amino acid gaps close.
+ Plant proteins get unfairly dismissed here. Yes, most are lower in leucine gram-for-gram than whey or chicken. But soy protein (tofu, tempeh, edamame, soy milk) matches animal protein for muscle protein synthesis when total dose is adequate. Lentils fall a bit short on methionine, which is exactly why we rotate them with soy — the amino acid gaps close.
 
 ### The rotation, in plain English
 

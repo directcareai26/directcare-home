@@ -35,6 +35,34 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Magnesium oxide, the cheapest and most common form on drugstore shelves, is roughly 4% bioavailable in some studies (Firoz & Graber, Magnesium Research, 2001). You're paying for a rock that mostly passes through you. The three forms below are meaningfully better absorbed — and each has a specific job.
 
+### Why most people are running low in the first place
+
+ Magnesium deficiency is one of the most common micronutrient gaps in adults, and it is mostly invisible on a standard panel. Serum magnesium — the test a primary care office usually runs — reflects only a small fraction of total body stores.
+
+ Common drivers a clinician will ask about:
+
+- Modern diet. Refined grains, low leafy-green intake and depleted agricultural soils push typical intake below the RDA.
+
+- Chronic stress. Sustained sympathetic activity uses magnesium faster than a rested state does.
+
+- Medications. Proton-pump inhibitors, certain diuretics and long-term antibiotic use interfere with absorption or accelerate loss.
+
+- GLP-1 therapy. Reduced food volume during weight-loss treatment quietly lowers micronutrient intake, and magnesium is among the first to slip.
+
+- Alcohol. Even modest intake increases urinary magnesium loss.
+
+### What your labs should actually tell you
+
+ If you want a real picture of magnesium status, the panel matters more than the supplement choice. Three data points a clinician may discuss:
+
+- Serum magnesium. Cheap, common and a blunt instrument. A normal serum number does not rule out depletion.
+
+- RBC magnesium. Measures intracellular stores and is more useful for catching low-grade deficiency before symptoms become loud.
+
+- Vitamin D (25-OH). Magnesium and vitamin D move together — low D often accompanies a low-magnesium problem, and supplementing one without the other is a familiar dead end.
+
+ Supplementing magnesium without a panel is reasonable for short-term symptom support. Supplementing for months without ever checking RBC magnesium and vitamin D is how people stay stuck.
+
 ### Magnesium glycinate: for sleep, anxiety, and muscle tension
 
  Glycinate (also sold as bisglycinate) is magnesium bound to glycine, an inhibitory neurotransmitter in its own right. That pairing is why glycinate is the default recommendation for anyone whose primary complaint is:
@@ -134,6 +162,10 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Schuster J et al. Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial. Nat Sci Sleep. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40918053/)
 
 - Lopresti AL et al. The effects of magnesium L-threonate (Magtein(®)) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial. Front Nutr. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/41601871/)
+
+- Nielsen FH et al. Magnesium supplementation improves indicators of low magnesium status and inflammatory stress in adults older than 51 years with poor quality sleep. Magnes Res. 2010. [Source](https://pubmed.ncbi.nlm.nih.gov/21199787/)
+
+- Magnesium: Fact Sheet for Health Professionals. NIH Office of Dietary Supplements. [Source](https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/)
 
  Build your stack with intent.
 

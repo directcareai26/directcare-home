@@ -27,7 +27,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What's actually happening overnight.
 
- A healthy adult man has **3 to 5 spontaneous erections per night**, each lasting 25 to 35 minutes, tightly timed to REM sleep cycles. This phenomenon — nocturnal penile tumescence (NPT) — was first formally described in [sleep-lab studies in the 1970s and 80s](https://pubmed.ncbi.nlm.nih.gov/2316664/) and has been a standard urology diagnostic ever since.
+ A healthy adult man has **3 to 5 spontaneous erections per night**, each lasting 25 to 35 minutes, tightly timed to REM sleep cycles. This phenomenon — nocturnal penile tumescence (NPT) — was first formally described in sleep-laboratory work in the 1970s and 80s and has been a standard urology diagnostic ever since.
 
  The mechanism: during REM sleep, the parasympathetic nervous system dominates and the sympathetic suppression of cavernosal smooth muscle drops. Blood flows freely into the corpus cavernosum. The result is an erection that has nothing to do with arousal and everything to do with your vascular, neurologic, and endocrine systems all working correctly.
 
@@ -114,7 +114,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Limited to older men. A 32-year-old who's gone from most-mornings to never over 6 months has a clinical signal worth taking seriously — possibly more so than a 65-year-old with the same change.
 
  The cleanest free diagnostic in men's health happens before you open your eyes. Pay attention to the trend. If it's quietly disappeared, that's the conversation to have with a clinician — and the bloodwork to actually run.
- Sources: [Journal of Sexual Medicine on hypogonadism and NPT](https://pubmed.ncbi.nlm.nih.gov/19473464/); [European Association of Urology sexual & reproductive health guidelines](https://uroweb.org/guidelines/sexual-and-reproductive-health); [Massachusetts Male Aging Study](https://pubmed.ncbi.nlm.nih.gov/8254833/); [foundational NPT literature](https://pubmed.ncbi.nlm.nih.gov/2316664/).
+ Sources: [Journal of Sexual Medicine on hypogonadism and NPT](https://pubmed.ncbi.nlm.nih.gov/19473464/); [European Association of Urology sexual & reproductive health guidelines](https://uroweb.org/guidelines/sexual-and-reproductive-health); [Massachusetts Male Aging Study](https://pubmed.ncbi.nlm.nih.gov/8254833/).
 
  Get a real workup
 

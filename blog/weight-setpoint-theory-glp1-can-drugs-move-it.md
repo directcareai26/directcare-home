@@ -122,7 +122,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with [GLP-1 maintenance after weight loss](https://www.directcare.ai/blog/glp1-maintenance-protocol-after-weight-loss), [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference), and [semaglutide vs. tirzepatide](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference) for the full strategic picture.
 
  Conventional dieting fights the setpoint and loses. GLP-1s appear to move the setpoint — at least partially, for most patients. The right question isn't how to stay on a diet forever; it's whether the drugs that may reset the underlying biology should be part of a long-term plan.
- Sources: [Sumithran et al, NEJM 2011 on long-term hormonal adaptation after weight loss](https://pubmed.ncbi.nlm.nih.gov/22029981/); [metabolic adaptation research from the Biggest Loser follow-up study](https://pubmed.ncbi.nlm.nih.gov/27136388/); [STEP-4 trial on semaglutide discontinuation](https://pubmed.ncbi.nlm.nih.gov/33755728/); [review on GLP-1 receptor mechanisms in central nervous system](https://pubmed.ncbi.nlm.nih.gov/33564099/).
+ Sources: [Sumithran et al, NEJM 2011 on long-term hormonal adaptation after weight loss](https://pubmed.ncbi.nlm.nih.gov/22029981/); [metabolic adaptation research from the Biggest Loser follow-up study](https://pubmed.ncbi.nlm.nih.gov/27136388/); [STEP-4 trial on semaglutide discontinuation](https://pubmed.ncbi.nlm.nih.gov/33755728/).
 
  Build a real long-term plan
 

@@ -27,7 +27,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What GSM actually is.
 
- Genitourinary syndrome of menopause was formally named in 2014 by the [International Society for the Study of Women's Sexual Health and NAMS](https://pubmed.ncbi.nlm.nih.gov/24735103/), replacing the older terms "vaginal atrophy" and "atrophic vaginitis." The rename mattered because the old terms only captured part of what was happening.
+ Genitourinary syndrome of menopause was formally named in 2014 by the International Society for the Study of Women's Sexual Health and NAMS, replacing the older terms "vaginal atrophy" and "atrophic vaginitis." The rename mattered because the old terms only captured part of what was happening.
 
  GSM covers a cluster of symptoms driven by the loss of estradiol's effect on tissues that have estrogen receptors:
 
@@ -55,7 +55,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  How minimal? The leading published studies show that women on low-dose vaginal estradiol (10 mcg tablets twice weekly, for example) have serum estradiol levels essentially indistinguishable from postmenopausal baseline — well within the range a clinician would expect without any therapy at all.
 
- The clinical effect is dramatic. Tissue thickness, vaginal pH, local blood flow, and patient-reported symptoms all improve meaningfully within 2–4 weeks, with continued improvement out to 12 weeks. The [North American Menopause Society 2020 position statement on GSM](https://pubmed.ncbi.nlm.nih.gov/32852454/) gives vaginal estradiol the strongest possible recommendation — "first-line therapy" for GSM symptoms not adequately controlled by non-hormonal moisturizers.
+ The clinical effect is dramatic. Tissue thickness, vaginal pH, local blood flow, and patient-reported symptoms all improve meaningfully within 2–4 weeks, with continued improvement out to 12 weeks. The North American Menopause Society position statement on GSM gives vaginal estradiol the strongest possible recommendation — "first-line therapy" for GSM symptoms not adequately controlled by non-hormonal moisturizers.
 
  The key safety point
 
@@ -130,7 +130,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with the full HRT picture in [HRT after 40: what actually changes](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes) and [progesterone at night](https://www.directcare.ai/blog/progesterone-at-night-timing-vs-dose) for the systemic side of the conversation.
 
  Half of postmenopausal women have these symptoms. Seven percent are on the treatment that fixes them. The single biggest under-served opportunity in women's health is a 30-second prescription away.
- Sources: [International Society for the Study of Women's Sexual Health & NAMS 2014 GSM definition](https://pubmed.ncbi.nlm.nih.gov/24735103/); [NAMS 2020 position statement on GSM](https://pubmed.ncbi.nlm.nih.gov/32852454/); [ACOG Committee Opinion on vaginal estrogen in women with breast cancer history](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2016/03/the-use-of-vaginal-estrogen-in-women-with-a-history-of-estrogen-dependent-breast-cancer).
+ Sources: [ACOG Committee Opinion on vaginal estrogen in women with breast cancer history](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2016/03/the-use-of-vaginal-estrogen-in-women-with-a-history-of-estrogen-dependent-breast-cancer).
 
  Ready to feel like yourself again?
 

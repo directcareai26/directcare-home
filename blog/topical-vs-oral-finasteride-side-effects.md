@@ -33,7 +33,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What the oral data actually shows
 
- Oral finasteride 1 mg has the strongest long-term evidence in hair medicine. The pivotal five-year study in men aged 18–41 showed hair count increases versus placebo maintained through year five, with 90% of treated men showing no further visible loss ([Kaufman et al., Eur J Dermatol, 2002](https://pubmed.ncbi.nlm.nih.gov/11872413/)).
+ Oral finasteride 1 mg has the strongest long-term evidence in hair medicine. The pivotal five-year study in men aged 18–41 showed hair count increases versus placebo maintained through year five, with 90% of treated men showing no further visible loss.
 
  Side-effect rates in the original trials were modest: decreased libido in ~1.8%, erectile dysfunction in ~1.3%, ejaculation disorder in ~1.2%, versus roughly 1% for each in placebo. Real-world reporting is higher and more variable, and a subset of patients describe persistent symptoms after discontinuation — a phenomenon still debated in the literature but taken seriously by clinicians.
 

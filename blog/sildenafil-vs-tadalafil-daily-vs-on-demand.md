@@ -53,13 +53,13 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 #### 2. BPH and lower urinary tract symptoms (LUTS)
 
- If you're a man over 45–50 who has both ED and the early signs of benign prostatic hyperplasia (BPH) — frequent urination, weaker stream, getting up at night — daily tadalafil treats both. Tadalafil 5 mg daily has separate FDA approval for BPH (since 2011), and the [combined ED + BPH indication](https://pubmed.ncbi.nlm.nih.gov/21459432/) is one of the cleanest two-for-one prescriptions in men's health.
+ If you're a man over 45–50 who has both ED and the early signs of benign prostatic hyperplasia (BPH) — frequent urination, weaker stream, getting up at night — daily tadalafil treats both. Tadalafil 5 mg daily has separate FDA approval for BPH (since 2011), and the combined ED + BPH indication is one of the cleanest two-for-one prescriptions in men's health.
 
  Most as-needed protocols don't move BPH symptoms because the drug isn't present consistently enough. Daily 5 mg does — patients typically notice the urinary improvement within 4–8 weeks.
 
 #### 3. Endothelial function
 
- This is the underrated argument. PDE5 inhibitors work by amplifying nitric oxide signaling in vascular smooth muscle — and the same mechanism that produces an erection also improves vascular function more broadly. Multiple studies — including a [meta-analysis in the International Journal of Impotence Research](https://pubmed.ncbi.nlm.nih.gov/29242605/) — have shown daily tadalafil improves flow-mediated dilation (a cardiovascular health marker) in ED patients with metabolic syndrome.
+ This is the underrated argument. PDE5 inhibitors work by amplifying nitric oxide signaling in vascular smooth muscle — and the same mechanism that produces an erection also improves vascular function more broadly. Studies have reported that daily tadalafil improves flow-mediated dilation (a cardiovascular health marker) in ED patients with metabolic syndrome.
 
  It's not a cardiovascular drug — and shouldn't be prescribed as one — but the chronic-dosing arm of these studies consistently outperforms the as-needed arm on vascular endpoints. For a patient with both ED and elevated cardiovascular risk, that's a real consideration.
 
@@ -118,7 +118,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Psychological factors. Performance anxiety, relationship dynamics, and depression all interact with ED in ways no medication on its own will resolve.
 
  Daily low-dose tadalafil is the closest thing PDE5 medication has to a baseline-restoration protocol. For the right patient — over 45, ED plus some LUTS, prioritizing spontaneity, willing to take a pill every day — it's frequently the cleanest answer.
- Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline); [combined ED+BPH tadalafil indication studies](https://pubmed.ncbi.nlm.nih.gov/21459432/); [International Journal of Impotence Research meta-analysis on daily tadalafil and endothelial function](https://pubmed.ncbi.nlm.nih.gov/29242605/); [FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
+ Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline); [FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
 
  Pick the right protocol
 

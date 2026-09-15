@@ -37,7 +37,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What 'normal' glucose actually looks like in healthy non-diabetics.
 
- This is the part the data has clarified, and it's genuinely interesting. Studies of CGM data in metabolically healthy adults — including [Hall et al's seminal 2018 study](https://pubmed.ncbi.nlm.nih.gov/30040842/) and follow-up work — show:
+ This is the part the data has clarified, and it's genuinely interesting. Studies of CGM data in metabolically healthy adults show:
 
 - Fasting glucose: typically 70–95 mg/dL
 
@@ -136,7 +136,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the broader metabolic context in the [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [ApoB vs. LDL conversation](https://www.directcare.ai/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include) — CGM data without those is incomplete.
 
  The CGM revolution is real. The most useful version of it lives in a 2-week trial paired with a real metabolic blood panel — not in years of obsessive number-watching without context.
- Sources: [Hall et al, Glucotypes in healthy adults, PLOS Biology 2018](https://pubmed.ncbi.nlm.nih.gov/30040842/); [FDA clearance announcement for Dexcom Stelo OTC CGM](https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor); [International Diabetes Federation consensus on CGM time-in-range targets](https://pubmed.ncbi.nlm.nih.gov/31177185/).
+ Sources: [FDA clearance announcement for Dexcom Stelo OTC CGM](https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor); [International Diabetes Federation consensus on CGM time-in-range targets](https://pubmed.ncbi.nlm.nih.gov/31177185/).
 
  See your real numbers
 

@@ -158,7 +158,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  That's the entire useful version of HRV tracking. Anything more sophisticated is for athletes and elite-recovery nerds.
 
  HRV isn't a fitness score. It's a recovery readout. The patients who use it well treat it like a daily check engine light — most days nothing's wrong, but when the light comes on, it usually points to something the rest of the data missed.
- Sources: [HRV norms by age in healthy adults — Frontiers in Public Health](https://www.frontiersin.org/articles/10.3389/fpubh.2017.00258/full); [Stanford research on slow breathing and HRV](https://pubmed.ncbi.nlm.nih.gov/30444068/); [Whoop's published research on HRV and alcohol/sleep](https://www.whoop.com/thelocker/heart-rate-variability-and-alcohol/).
+ Sources: [HRV norms by age in healthy adults — Frontiers in Public Health](https://www.frontiersin.org/articles/10.3389/fpubh.2017.00258/full); [Whoop's published research on HRV and alcohol/sleep](https://www.whoop.com/thelocker/heart-rate-variability-and-alcohol/).
 
  Track what actually matters
 

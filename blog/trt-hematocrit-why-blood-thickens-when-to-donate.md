@@ -136,7 +136,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with [estradiol on TRT](https://www.directcare.ai/blog/estradiol-on-trt-aromatase-inhibitor-when-needed), [morning testosterone testing](https://www.directcare.ai/blog/morning-testosterone-test-timing), and [TRT vs. enclomiphene](https://www.directcare.ai/blog/trt-vs-enclomiphene-which-protocol) for the complete TRT monitoring picture.
 
  The most-watched number on a testosterone protocol isn't your testosterone — it's your hematocrit. Know it, track the trend, and donate blood when it climbs. That's the whole management strategy in one sentence.
- Sources: [Endocrine Society testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [review of testosterone-induced erythrocytosis](https://pubmed.ncbi.nlm.nih.gov/29178226/); [American Urological Association testosterone deficiency guideline on hematocrit monitoring](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline).
+ Sources: [Endocrine Society testosterone therapy clinical practice guideline](https://academic.oup.com/jcem/article/103/5/1715/4939465); [American Urological Association testosterone deficiency guideline on hematocrit monitoring](https://www.auanet.org/guidelines-and-quality/guidelines/testosterone-deficiency-guideline).
 
  Get monitored properly
 

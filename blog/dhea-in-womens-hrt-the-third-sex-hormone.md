@@ -116,7 +116,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with the broader HRT picture in [HRT after 40](https://www.directcare.ai/blog/hrt-after-40-what-actually-changes), the GSM case in [vaginal estradiol for GSM](https://www.directcare.ai/blog/vaginal-estradiol-gsm-most-underprescribed-hrt), and the [female libido + testosterone](https://www.directcare.ai/blog/female-libido-testosterone-clinician-conversation) conversation that often runs in parallel.
 
  Most women's HRT protocols are two hormones. The patients who feel best are often on three — sometimes four. DHEA is the one most providers forget to test for.
- Sources: [Endocrine Society DHEA position statement](https://academic.oup.com/jcem/article/96/6/1655/2833822); [Cochrane review on DHEA in postmenopausal women](https://pubmed.ncbi.nlm.nih.gov/26282153/); [FDA prescribing information for vaginal prasterone](https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/208470s000lbl.pdf).
+ Sources: [Endocrine Society DHEA position statement](https://academic.oup.com/jcem/article/96/6/1655/2833822); [FDA prescribing information for vaginal prasterone](https://www.accessdata.fda.gov/drugsatfda_docs/label/2016/208470s000lbl.pdf).
 
  Get the complete picture
 

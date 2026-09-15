@@ -58,7 +58,6 @@ blog/index.md
 blog/lifting-through-perimenopause-rep-ranges-recovery.md
 blog/low-libido-men-testosterone-stress-or-neither.md
 blog/magnesium-glycinate-vs-citrate-vs-threonate.md
-blog/magnesium-glycinate-vs-citrate-which-form.md
 blog/magnesium-rich-foods-vs-supplements.md
 blog/magnesium-vitamin-d-supplement-gaps.md
 blog/mediterranean-lentil-soup-recipe.md

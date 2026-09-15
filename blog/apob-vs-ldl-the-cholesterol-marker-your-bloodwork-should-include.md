@@ -57,11 +57,11 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Three of the most cited findings:
 
-- A [2019 meta-analysis in the Journal of the American College of Cardiology](https://pubmed.ncbi.nlm.nih.gov/31104754/) found that ApoB outperformed LDL cholesterol in predicting cardiovascular events when the two measurements disagreed.
+- Where ApoB and LDL cholesterol disagree, ApoB has been the better predictor of cardiovascular events.
 
 - The [INTERHEART study](https://pubmed.ncbi.nlm.nih.gov/15364185/), one of the largest case-control studies on cardiovascular risk factors, identified the ApoB-to-ApoA1 ratio as the single strongest lipid predictor of myocardial infarction across populations.
 
-- Multiple prospective trials, including the [Copenhagen General Population Study](https://pubmed.ncbi.nlm.nih.gov/33301936/), have shown that ApoB carries cardiovascular risk independent of LDL cholesterol — meaning even patients with "normal" LDL but elevated ApoB have measurably higher event rates.
+- Prospective cohort data indicate that ApoB carries cardiovascular risk independent of LDL cholesterol — meaning even patients with "normal" LDL but elevated ApoB have measurably higher event rates.
 
 ### What your ApoB number should actually be.
 
@@ -130,7 +130,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair this with the broader [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity) and the [12 markers we look at first](https://www.directcare.ai/blog/12-markers-hormone-panel-priority) for the full panel-based picture.
 
  The right cardiovascular bloodwork is one test deeper than the standard panel. The marker that catches the disagreement between cholesterol content and particle count is the one worth running.
- Sources: [JACC 2019 meta-analysis on ApoB vs. LDL for cardiovascular risk](https://pubmed.ncbi.nlm.nih.gov/31104754/); [INTERHEART study](https://pubmed.ncbi.nlm.nih.gov/15364185/); [Copenhagen General Population Study on ApoB](https://pubmed.ncbi.nlm.nih.gov/33301936/); [American Heart Association guideline on advanced lipid testing](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625).
+ Sources: [INTERHEART study](https://pubmed.ncbi.nlm.nih.gov/15364185/); [American Heart Association guideline on advanced lipid testing](https://www.ahajournals.org/doi/10.1161/CIR.0000000000000625).
 
  See your real numbers
 

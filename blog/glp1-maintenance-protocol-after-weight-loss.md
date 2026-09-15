@@ -109,7 +109,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Most patients who lose meaningful weight on a GLP-1 will benefit from staying on some reduced dose for an extended period, paired with the habits that hold the result independently. The cleanest framework is to plan that maintenance phase before you start, not after you stop.
 
  Quit cold turkey at goal weight and you're betting against published data. Build the maintenance protocol into the plan from the start and the rebound math reverses.
- Sources: [STEP-4 trial in JAMA, 2021](https://pubmed.ncbi.nlm.nih.gov/33755728/); [SURMOUNT extension data on tirzepatide discontinuation](https://pubmed.ncbi.nlm.nih.gov/38219860/); [International Society of Sports Nutrition position stand on protein](https://pubmed.ncbi.nlm.nih.gov/28642676/).
+ Sources: [STEP-4 trial in JAMA, 2021](https://pubmed.ncbi.nlm.nih.gov/33755728/); [International Society of Sports Nutrition position stand on protein](https://pubmed.ncbi.nlm.nih.gov/28642676/).
 
  Plan the back end
 

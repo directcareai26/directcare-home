@@ -67,9 +67,9 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Berberine has been studied in moderate-sized trials, mostly in Type 2 diabetes:
 
-- A [2008 trial in Metabolism](https://pubmed.ncbi.nlm.nih.gov/18374395/) compared berberine 500 mg three times daily to metformin 500 mg three times daily over 3 months in T2D patients. Both arms showed comparable HbA1c reductions (~0.9–1.0 percentage points). Berberine also reduced fasting plasma glucose and triglycerides comparably to metformin.
+- A [2008 trial in Metabolism](https://pubmed.ncbi.nlm.nih.gov/18442638/) compared berberine 500 mg three times daily against metformin over three months in type 2 diabetes and reported comparable HbA1c reductions. This was a small, short trial in one population — it is not the basis for substituting berberine for prescribed metformin, and no supplement is FDA-approved to treat diabetes.
 
-- A [2012 meta-analysis in Evidence-Based Complementary and Alternative Medicine](https://pubmed.ncbi.nlm.nih.gov/22962556/) pooled multiple RCTs and concluded berberine had similar efficacy to oral hypoglycemic agents for T2D.
+- Pooled analyses of randomised trials have reported berberine performing comparably to oral hypoglycaemic agents in type 2 diabetes. This is not a basis for substituting it for prescribed medication.
 
 - For weight loss specifically , the data is much weaker. Most studies show modest weight loss (1–5 lb over 3 months) — orders of magnitude smaller than the 15–25% body-weight loss seen in GLP-1 trials.
 
@@ -146,7 +146,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the broader supplement framework in [the 4 supplement gaps almost every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps), the metabolic context in [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity), and the GLP-1 conversation in [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference).
 
  Berberine isn't a substitute for a GLP-1. It's a different drug solving a different part of the metabolic problem. The right patient for it isn't the one who wants to lose 40 pounds — it's the one who's trying to nudge prediabetes back to normal without a prescription.
- Sources: [Metabolism 2008 trial of berberine vs. metformin in T2D](https://pubmed.ncbi.nlm.nih.gov/18374395/); [Evidence-Based Complementary and Alternative Medicine 2012 meta-analysis](https://pubmed.ncbi.nlm.nih.gov/22962556/); [Cochrane-style review of berberine for cardiovascular risk factors](https://pubmed.ncbi.nlm.nih.gov/26122295/).
 
  Get the real metabolic protocol
 

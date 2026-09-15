@@ -21,7 +21,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on semaglutide or tirzepatide and feeling great for three days, then bloated, constipated, and weirdly ravenous by day five — the issue is almost never the medication. It's the fiber gap.
 
- GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing ([Maselli & Camilleri, 2021](https://pubmed.ncbi.nlm.nih.gov/33397631/)). That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
+ GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing ([Maselli & Camilleri, 2021](https://pubmed.ncbi.nlm.nih.gov/32077010/)). That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
 
  The fix is unsexy and specific: 25-35 grams of fiber per day, mostly from food, spread across meals.
 
@@ -29,7 +29,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Most patients assume that because a GLP-1 is doing the appetite work, food composition matters less. The opposite is true.
 
- GLP-1s amplify the satiety signal of every meal — but that signal depends on **what the meal contains**. Fiber (especially viscous soluble fiber like beta-glucan from oats, or psyllium) increases the release of endogenous GLP-1 and PYY from the gut ([Weickert & Pfeiffer, 2018](https://pubmed.ncbi.nlm.nih.gov/29868916/)). You're essentially stacking your body's own satiety hormones on top of the medication.
+ GLP-1s amplify the satiety signal of every meal — but that signal depends on **what the meal contains**. Fiber (especially viscous soluble fiber like beta-glucan from oats, or psyllium) increases the release of endogenous GLP-1 and PYY from the gut. You're essentially stacking your body's own satiety hormones on top of the medication.
 
  Skip fiber, and you get the drug's effect alone — which fades faster between doses and leaves you white-knuckling the last 48 hours before the next injection.
 
@@ -43,7 +43,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Energy crashes mid-afternoon. Refined carbs without fiber spike and drop glucose faster; the GLP-1 doesn't fully offset this.
 
-- Muscle loss risk climbs. Low-fiber diets tend to be low-protein diets too, and inadequate protein on a GLP-1 is the fastest way to lose lean mass instead of fat ([Prado et al., 2022](https://pubmed.ncbi.nlm.nih.gov/35228498/)).
+- Muscle loss risk climbs. Low-fiber diets tend to be low-protein diets too, and inadequate protein on a GLP-1 is the fastest way to lose lean mass instead of fat.
 
  The fiber number isn't arbitrary. The Institute of Medicine sets adequate intake at 25g/day for women and 38g/day for men. On a GLP-1, we aim for the middle of that range because total food volume is lower — you have to make each bite denser.
 

@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Weight Loss
 
  April 14, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-04-14
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Body recomp on GLP-1s: how to lose fat without losing muscle
 

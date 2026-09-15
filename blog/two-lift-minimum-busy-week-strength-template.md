@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Fitness
 
  August 23, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-08-23
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## The Two-Lift Minimum: Busy-Week Strength That Holds
 

@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Fitness
 
  May 26, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-05-26
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## The 3x-per-week resistance workout that preserves muscle on a GLP-1
 

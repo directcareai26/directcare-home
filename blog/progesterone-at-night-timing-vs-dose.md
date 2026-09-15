@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  HRT
 
  May 14, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-05-14
+ Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Progesterone at night: why timing matters more than dose for menopause sleep
 

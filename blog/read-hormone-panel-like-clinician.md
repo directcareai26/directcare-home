@@ -104,6 +104,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're considering hormone therapy, the labs worth having in front of a clinician before a serious protocol are the ones above — drawn in the morning, on the right assay, and read as a system rather than a single line item. That's the difference between treating a number and treating a person.
 
+### References
+
+- Travison TG et al. Harmonized Reference Ranges for Circulating Testosterone Levels in Men of Four Cohort Studies in the United States and Europe. J Clin Endocrinol Metab. 2017. [Source](https://pubmed.ncbi.nlm.nih.gov/28324103/)
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
  Know your real numbers.
 
 #### Real labs. Plain-English plan.

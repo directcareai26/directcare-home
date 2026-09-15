@@ -11007,6 +11007,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Have the conversation before the first injection. Bank sperm if you're uncertain. Add hCG if you want to stay fertile on therapy. Consider clomiphene if your hypogonadism is secondary and you want to skip exogenous testosterone entirely. The plan should be built around your numbers and your life, not a template.
 
+### References
+
+- Hsieh TC et al. Concomitant intramuscular human chorionic gonadotropin preserves spermatogenesis in men undergoing testosterone replacement therapy. J Urol. 2013. [Source](https://pubmed.ncbi.nlm.nih.gov/23260550/)
+
+- Coviello AD et al. Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression. J Clin Endocrinol Metab. 2005. [Source](https://pubmed.ncbi.nlm.nih.gov/15713727/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.
@@ -11132,6 +11138,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Titrate to effect, not to schedule. Hold at any dose that's still working. Step up only when appetite returns and you've had a symptom-free week. Take the shot at night, eat protein first, and skip the fried food for a few days after any increase.
 
  Done this way, most patients get through the full escalation with a few mildly uncomfortable days rather than a lost month.
+
+### References
+
+- Semaglutide (WEGOVY) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5e548d0-cc79-4c34-a3f5-e20a5b8b6564)
+
+- Tirzepatide (ZEPBOUND) prescribing information. US FDA label via DailyMed. [Source](https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b)
 
  Ready to start?
 
@@ -11277,6 +11289,10 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A single 1,000 mg softgel of generic fish oil isn't going to change your labs. Reading the actual EPA and DHA numbers on the back of the bottle is the first step; verifying with an Omega-3 Index or a repeat lipid panel is the second.
 
+### References
+
+- Omega-3 Fatty Acids: Fact Sheet for Health Professionals. NIH Office of Dietary Supplements. [Source](https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/)
+
  Build your stack with intent.
 
 #### Clinician-formulated supplement protocols.
@@ -11376,6 +11392,16 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Interpretation matters more than collection. "Normal" on a lab report means "within two standard deviations of the reference population" — a population that includes plenty of people on the path to disease. Optimal ranges are tighter than normal ranges, and the difference is where longevity work actually happens.
 
  If you want a workup that goes beyond the standard physical, the panel worth having covers ApoB, Lp(a) (once), a full lipid panel, hs-CRP, HbA1c, fasting insulin, comprehensive metabolic panel with GGT and uric acid, 25-OH vitamin D, homocysteine, and cystatin C. That is roughly 10 additional data points beyond a typical annual draw — and it is the difference between screening for disease and forecasting it.
+
+### References
+
+- Kronenberg F et al. Lipoprotein(a) in atherosclerotic cardiovascular disease and aortic stenosis: a European Atherosclerosis Society consensus statement. Eur Heart J. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/36036785/)
+
+- Koschinsky ML et al. A focused update to the 2019 NLA scientific statement on use of lipoprotein(a) in clinical practice. J Clin Lipidol. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38565461/)
+
+- Ridker PM A Test in Context: High-Sensitivity C-Reactive Protein. J Am Coll Cardiol. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/26868696/)
+
+- Bassuk SS et al. High-sensitivity C-reactive protein: clinical importance. Curr Probl Cardiol. 2004. [Source](https://pubmed.ncbi.nlm.nih.gov/15258556/)
 
  Know your real numbers.
 
@@ -11518,6 +11544,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Female-pattern hair loss deserves the same diagnostic rigor as any other hormonally-mediated condition. A clinician who prescribes for hair without at minimum a thyroid, iron, androgen, and vitamin D picture in front of them is treating an average patient — not you.
 
  The labs worth having before a serious protocol are not exotic, not expensive, and not optional if you want the plan to actually match the biology. Real labs, plain-English plan — that's the whole point.
+
+### References
+
+- Carmina E et al. Female Pattern Hair Loss and Androgen Excess: A Report From the Multidisciplinary Androgen Excess and PCOS Committee. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/30785992/)
+
+- Müller Ramos P et al. Female-pattern hair loss: therapeutic update. An Bras Dermatol. 2023. [Source](https://pubmed.ncbi.nlm.nih.gov/37003900/)
 
  Keep what you have. Grow what you've lost.
 
@@ -12214,6 +12246,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  What matters is that the decision is made with real data: your trough levels, your estradiol, your hematocrit, and how you actually feel between injections. Not internet dogma about which needle is more legitimate.
 
+### References
+
+- Wilson DM et al. Pharmacokinetics, safety, and patient acceptability of subcutaneous versus intramuscular testosterone injection for gender-affirming therapy: A pilot study. Am J Health Syst Pharm. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29367424/)
+
+- Kaminetsky J et al. Pharmacokinetic Profile of Subcutaneous Testosterone Enanthate Delivered via a Novel, Prefilled Single-Use Autoinjector: A Phase II Study. Sex Med. 2015. [Source](https://pubmed.ncbi.nlm.nih.gov/26797061/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.
@@ -12372,6 +12410,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Do those two things and the fat loss the medication drives becomes the body composition change you actually wanted.
 
+### References
+
+- Locatelli JC et al. Incretin-Based Weight Loss Pharmacotherapy: Can Resistance Exercise Optimize Changes in Body Composition?. Diabetes Care. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38687506/)
+
+- Eisa N et al. Lean Mass Changes With Incretin Therapy Versus Lifestyle Intervention: A Systematic Review and Meta-Analysis of Randomised Controlled Trials. Diabetes Obes Metab. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/41877354/)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.
@@ -12515,6 +12559,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Three forms, three jobs. Glycinate is the workhorse — start there if you're unsure, especially if sleep is part of the picture. Citrate is the tool for constipation and general repletion in people with normal-to-slow gut motility. Threonate is the specialist — pricier, targeted at cognition, and worth trying only after you've addressed the basics (sleep, iron, thyroid, B12).
 
  If you're stacking supplements without a clear symptom target, you're guessing. Match the form to the problem, give it a month, and adjust from there.
+
+### References
+
+- Schuster J et al. Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial. Nat Sci Sleep. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40918053/)
+
+- Lopresti AL et al. The effects of magnesium L-threonate (Magtein(®)) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial. Front Nutr. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/41601871/)
 
  Build your stack with intent.
 
@@ -12891,6 +12941,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  The plateau isn't a verdict on your character. It's a signal that the tools that got you here won't get you further, and that the next move is a strategic one — different macros, different training, better sleep, better data, or a conversation about whether medication is a reasonable adjunct given your history.
 
  Willpower is a finite resource. Hormones are a system. Work with the system.
+
+### References
+
+- Müller MJ et al. Adaptive thermogenesis with weight loss in humans. Obesity (Silver Spring). 2013. [Source](https://pubmed.ncbi.nlm.nih.gov/23404923/)
+
+- Müller MJ et al. Changes in Energy Expenditure with Weight Gain and Weight Loss in Humans. Curr Obes Rep. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/27739007/)
 
  Ready to start?
 
@@ -13331,6 +13387,14 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The drug is a tool. The plan is the treatment.
 
+### References
+
+- Olsen EA et al. The importance of dual 5alpha-reductase inhibition in the treatment of male pattern hair loss: results of a randomized placebo-controlled study of dutasteride versus finasteride. J Am Acad Dermatol. 2006. [Source](https://pubmed.ncbi.nlm.nih.gov/17110217/)
+
+- Gubelin Harcha W et al. A randomized, active- and placebo-controlled study of the efficacy and safety of different doses of dutasteride versus placebo and finasteride in the treatment of male subjects with androgenetic alopecia. J Am Acad Dermatol. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/24411083/)
+
+- Gupta AK et al. The efficacy and safety of 5α-reductase inhibitors in androgenetic alopecia: a network meta-analysis and benefit-risk assessment of finasteride and dutasteride. J Dermatolog Treat. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/23768246/)
+
  Keep what you have. Grow what you've lost.
 
 #### Hair regrowth protocols, by your clinician.
@@ -13600,6 +13664,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  LDL-C isn't wrong. It's just incomplete. In an era where a single blood draw can give you a particle count that outperforms the calculated estimate your grandparents relied on, there's no strong reason to stay in the dark.
 
  If you're building a cardiovascular baseline — especially alongside decisions about hormones, GLP-1 therapy, or a serious training program — ApoB is the number worth putting on the requisition. It's the one cardiologists have quietly been steering toward for a decade.
+
+### References
+
+- Langlois MR et al. Quantifying Atherogenic Lipoproteins: Current and Future Challenges in the Era of Personalized Medicine and Very Low Concentrations of LDL Cholesterol. A Consensus Statement from EAS and EFLM. Clin Chem. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29760220/)
+
+- Witt C et al. Discordance between serum cholesterol concentration and atherogenic lipoprotein particle number in people with metabolic disease: A systematic review. Diabetes Obes Metab. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40091449/)
 
  Know your real numbers.
 
@@ -14715,6 +14785,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Goldman AL et al. A Reappraisal of Testosterone's Binding in Circulation. Endocr Rev . 2017.
 
+### References
+
+- Travison TG et al. Harmonized Reference Ranges for Circulating Testosterone Levels in Men of Four Cohort Studies in the United States and Europe. J Clin Endocrinol Metab. 2017. [Source](https://pubmed.ncbi.nlm.nih.gov/28324103/)
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.
@@ -15156,6 +15232,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Bone loss at menopause is fast, silent, and expensive to reverse later. Estradiol is the physiological signal that keeps the demolition-and-construction cycle balanced, and replacing it in the menopausal window is one of the few interventions with strong fracture-reduction evidence over decades.
 
  The fracture you prevent in your 50s is the hip you keep in your 70s. That's the trade the science actually supports — no miracle claims required.
+
+### References
+
+- Cauley JA et al. Effects of estrogen plus progestin on risk of fracture and bone mineral density: the Women's Health Initiative randomized trial. JAMA. 2003. [Source](https://pubmed.ncbi.nlm.nih.gov/14519707/)
+
+- Lorentzon M et al. Menopausal hormone therapy reduces the risk of fracture regardless of falls risk or baseline FRAX probability-results from the Women's Health Initiative hormone therapy trials. Osteoporos Int. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/35833956/)
 
  Ready to feel like yourself again?
 
@@ -15725,6 +15807,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That line is where the benefit lives. Cross it, and the therapy stops being replacement and starts being something else.
 
+### References
+
+- Davis SR et al. Global Consensus Position Statement on the Use of Testosterone Therapy for Women. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/31498871/)
+
+- Parish SJ et al. International Society for the Study of Women's Sexual Health Clinical Practice Guideline for the Use of Systemic Testosterone for Hypoactive Sexual Desire Disorder in Women. Climacteric. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/33792440/)
+
  Ready to feel like yourself again?
 
 #### Hormone therapy, built around your bloodwork.
@@ -16139,6 +16227,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  A 38-year-old with total T of 380, SHBG of 65, free T of 6 ng/dL, E2 of 18, and a TSH of 3.8 isn't "normal" — he's got a high-SHBG profile with borderline low free T and suboptimal thyroid, and he probably feels exactly as bad as that picture suggests. The total T number alone would have gotten him dismissed.
 
  If you're considering hormone therapy, the labs worth having in front of a clinician before a serious protocol are the ones above — drawn in the morning, on the right assay, and read as a system rather than a single line item. That's the difference between treating a number and treating a person.
+
+### References
+
+- Travison TG et al. Harmonized Reference Ranges for Circulating Testosterone Levels in Men of Four Cohort Studies in the United States and Europe. J Clin Endocrinol Metab. 2017. [Source](https://pubmed.ncbi.nlm.nih.gov/28324103/)
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
 
  Know your real numbers.
 
@@ -16566,6 +16660,16 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Low libido is a signal, not a diagnosis. About a third of the men who ask us about testosterone turn out to need it. The rest need a different conversation — about sleep, an SSRI, a prolactin level, or a metabolic problem that's been quietly running the show.
 
  The right next step isn't a prescription. It's a clear timeline, an honest medication list, and a set of labs that can tell you which bucket you're actually in.
+
+### References
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
+- Liu PY A Clinical Perspective of Sleep and Andrological Health: Assessment, Treatment Considerations, and Future Research. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/31042277/)
+
+- Santi D et al. The chronic alcohol consumption influences the gonadal axis in men: Results from a meta-analysis. Andrology. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/37705506/)
+
+- Smith SJ et al. The effects of alcohol on testosterone synthesis in men: a review. Expert Rev Endocrinol Metab. 2023. [Source](https://pubmed.ncbi.nlm.nih.gov/36880700/)
 
  Get your edge back.
 
@@ -19370,6 +19474,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The shed isn't the protocol failing. It's the follicles waking up. Stay on the regimen for 6 months before you judge it — the clinical trial designers knew what they were doing.
 
+### References
+
+- Nohria A et al. Combating "dread shed": The impact of overlapping topical and oral minoxidil on temporary hair shedding during oral minoxidil initiation. JAAD Int. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38707927/)
+
+- Kanti V et al. Evidence-based (S3) guideline for the treatment of androgenetic alopecia in women and in men - short version. J Eur Acad Dermatol Venereol. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29178529/)
+
  Stay on the protocol
 
 #### Hair regrowth, by your clinician.
@@ -19785,6 +19895,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Magnesium glycinate and magnesium citrate are both excellent. They're not interchangeable. Glycinate is the calm, gut-friendly, sleep-and-anxiety form that's easy to take every night. Citrate is the more absorbable-into-the-bloodstream, mild-laxative, every-other-day form that's also useful when constipation is part of the picture.
 
  If you're not sure which one fits, the more useful starting place is: what does my RBC magnesium look like, what other deficiencies am I carrying, and what is this supplement actually supposed to do for me? Your clinician can build the answer around your bloodwork.
+
+### References
+
+- Nielsen FH et al. Magnesium supplementation improves indicators of low magnesium status and inflammatory stress in adults older than 51 years with poor quality sleep. Magnes Res. 2010. [Source](https://pubmed.ncbi.nlm.nih.gov/21199787/)
+
+- Magnesium: Fact Sheet for Health Professionals. NIH Office of Dietary Supplements. [Source](https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/)
 
  Related program
 
@@ -20987,6 +21103,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Tirzepatide is, on average, the more powerful drug. But "more powerful" doesn't equal "better for you." The right protocol is the one your clinician picks after looking at your bloodwork. Not the one that trended on social media this month.
  If you're considering a GLP-1, the conversation worth having is: what do my labs actually say, and which mechanism matches them? That's a much more useful starting point than the brand name.
 
+### References
+
+- Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity. N Engl J Med. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40353578/)
+
+- Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity (SURMOUNT-5). N Engl J Med. 2025. [Source](https://www.nejm.org/doi/10.1056/NEJMoa2416394)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.
@@ -21230,6 +21352,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The single biggest predictor of a good outcome on any testosterone protocol is whether your clinician is willing to adjust the dose to your actual bloodwork. Not just hand you a fixed prescription and disappear.
 
+### References
+
+- Wiehle RD et al. Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial comparing topical testosterone. Fertil Steril. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/25044085/)
+
+- Kim ED et al. Oral enclomiphene citrate raises testosterone and preserves sperm counts in obese hypogonadal men, unlike topical testosterone: restoration instead of replacement. BJU Int. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/26496621/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.
@@ -21328,6 +21456,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right TRT decision starts with the right number. The right number starts with the right hour.
 
+### References
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
+- Corona G et al. EAU Guidelines on Sexual and Reproductive Health: A Summary of the 2026 Recommendations for Measurement and Biochemical Confirmation of Hypogonadism. Eur Urol Focus. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/42177105/)
+
  Get a baseline you can trust
 
 #### Testosterone therapy, tuned to real numbers.
@@ -21413,6 +21547,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - You feel calmer but still wake at 3 a.m.. The timing may need to shift later.
 
  The goal is the same in every case: progesterone working with your circadian rhythm, not against it. When it's dialed in, the body remembers how to sleep again.
+
+### References
+
+- Arafat ES et al. Sedative and hypnotic effects of oral administration of micronized progesterone may be mediated through its metabolites. Am J Obstet Gynecol. 1988. [Source](https://pubmed.ncbi.nlm.nih.gov/3189454/)
+
+- Maxson WS et al. Bioavailability of oral micronized progesterone. Fertil Steril. 1985. [Source](https://pubmed.ncbi.nlm.nih.gov/4054341/)
 
  Ready to sleep through the night again?
 
@@ -21510,6 +21650,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right ED medication isn't the one that worked for your friend. It's the one whose timing, duration, and food rules match your actual life.
 
+### References
+
+- Sildenafil (VIAGRA) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1af7b6a-378e-4337-858f-85a926eec102)
+
+- Tadalafil (CIALIS) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=78509a43-a907-4359-9022-f38c4f765880)
+
  Skip the awkward conversation
 
 #### Surge Max: PDE5 protocols, prescribed online.
@@ -21601,6 +21747,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Testosterone for women is not a magic libido pill, not a weight-loss drug, and not a substitute for addressing the other 80 percent of why intimacy changes in midlife (stress, sleep, relationship dynamics, vaginal-tissue health). It's one lever among several, and the patients who do best are the ones whose clinician treats it as part of a complete protocol. Estradiol, progesterone, testosterone, thyroid, and the basics.
 
  If you've felt yourself disappear over the last few years and your bloodwork "looks normal," ask the question your clinician didn't: what's my testosterone? It may be the answer hiding in plain sight.
+
+### References
+
+- Parish SJ et al. International Society for the Study of Women's Sexual Health Clinical Practice Guideline for the Use of Systemic Testosterone for Hypoactive Sexual Desire Disorder in Women. Climacteric. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/33792440/)
+
+- Braunstein GD et al. Testosterone reference ranges in normally cycling healthy premenopausal women. J Sex Med. 2011. [Source](https://pubmed.ncbi.nlm.nih.gov/21771278/)
 
  Get the full picture
 
@@ -21699,6 +21851,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Patients who can't be consistent with daily application. Oral may be more practical.
 
  The right hair-loss protocol is the one you'll actually use for ten years. For a lot of men, that's the topical.
+
+### References
+
+- Piraccini BM et al. Efficacy and safety of topical finasteride spray solution for male androgenetic alopecia: a phase III, randomized, controlled clinical trial. J Eur Acad Dermatol Venereol. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/34634163/)
+
+- Caserini M et al. A novel finasteride 0.25% topical solution for androgenetic alopecia: pharmacokinetics and effects on plasma androgen levels in healthy male volunteers. Int J Clin Pharmacol Ther. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/25074865/)
 
  Keep the hair you have
 
@@ -21799,6 +21957,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Run a generic protocol without bloodwork.
 
  Women's hair loss is multifactorial. The right protocol is multifactorial too. If your clinician is only handing you a bottle of minoxidil, you're getting one piece of a four-piece puzzle.
+
+### References
+
+- Shrivastava SB Diffuse hair loss in an adult female: approach to diagnosis and management. Indian J Dermatol Venereol Leprol. 2009. [Source](https://pubmed.ncbi.nlm.nih.gov/19172026/)
+
+- Turlier V et al. Assessment of the effects of a hair lotion in women with acute telogen effluvium: a randomized controlled study. J Eur Acad Dermatol Venereol. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/34668237/)
 
  Treat the cause, not the symptom
 
@@ -22321,6 +22485,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Bloodwork . HbA1c, lipids, liver enzymes, ferritin.
 
  The before/after photo is the easy part. The body composition behind the photo is what determines whether you keep the result.
+
+### References
+
+- Eisa N et al. Lean Mass Changes With Incretin Therapy Versus Lifestyle Intervention: A Systematic Review and Meta-Analysis of Randomised Controlled Trials. Diabetes Obes Metab. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/41877354/)
+
+- Mechanick JI et al. Strategies for minimizing muscle loss during use of incretin-mimetic drugs for treatment of obesity. Obes Rev. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/39295512/)
 
  Lose fat, keep your shape
 

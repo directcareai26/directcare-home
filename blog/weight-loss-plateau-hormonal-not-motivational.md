@@ -106,6 +106,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Willpower is a finite resource. Hormones are a system. Work with the system.
 
+### References
+
+- Müller MJ et al. Adaptive thermogenesis with weight loss in humans. Obesity (Silver Spring). 2013. [Source](https://pubmed.ncbi.nlm.nih.gov/23404923/)
+
+- Müller MJ et al. Changes in Energy Expenditure with Weight Gain and Weight Loss in Humans. Curr Obes Rep. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/27739007/)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.

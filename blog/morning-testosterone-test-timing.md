@@ -83,6 +83,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right TRT decision starts with the right number. The right number starts with the right hour.
 
+### References
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
+- Corona G et al. EAU Guidelines on Sexual and Reproductive Health: A Summary of the 2026 Recommendations for Measurement and Biochemical Confirmation of Hypogonadism. Eur Urol Focus. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/42177105/)
+
  Get a baseline you can trust
 
 #### Testosterone therapy, tuned to real numbers.

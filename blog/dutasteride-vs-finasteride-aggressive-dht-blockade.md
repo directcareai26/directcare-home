@@ -91,6 +91,14 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The drug is a tool. The plan is the treatment.
 
+### References
+
+- Olsen EA et al. The importance of dual 5alpha-reductase inhibition in the treatment of male pattern hair loss: results of a randomized placebo-controlled study of dutasteride versus finasteride. J Am Acad Dermatol. 2006. [Source](https://pubmed.ncbi.nlm.nih.gov/17110217/)
+
+- Gubelin Harcha W et al. A randomized, active- and placebo-controlled study of the efficacy and safety of different doses of dutasteride versus placebo and finasteride in the treatment of male subjects with androgenetic alopecia. J Am Acad Dermatol. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/24411083/)
+
+- Gupta AK et al. The efficacy and safety of 5α-reductase inhibitors in androgenetic alopecia: a network meta-analysis and benefit-risk assessment of finasteride and dutasteride. J Dermatolog Treat. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/23768246/)
+
  Keep what you have. Grow what you've lost.
 
 #### Hair regrowth protocols, by your clinician.

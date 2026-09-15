@@ -71,6 +71,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The goal is the same in every case: progesterone working with your circadian rhythm, not against it. When it's dialed in, the body remembers how to sleep again.
 
+### References
+
+- Arafat ES et al. Sedative and hypnotic effects of oral administration of micronized progesterone may be mediated through its metabolites. Am J Obstet Gynecol. 1988. [Source](https://pubmed.ncbi.nlm.nih.gov/3189454/)
+
+- Maxson WS et al. Bioavailability of oral micronized progesterone. Fertil Steril. 1985. [Source](https://pubmed.ncbi.nlm.nih.gov/4054341/)
+
  Ready to sleep through the night again?
 
 #### HRT, built around your bloodwork. And your bedtime.

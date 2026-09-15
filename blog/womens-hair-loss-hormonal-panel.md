@@ -85,6 +85,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Women's hair loss is multifactorial. The right protocol is multifactorial too. If your clinician is only handing you a bottle of minoxidil, you're getting one piece of a four-piece puzzle.
 
+### References
+
+- Shrivastava SB Diffuse hair loss in an adult female: approach to diagnosis and management. Indian J Dermatol Venereol Leprol. 2009. [Source](https://pubmed.ncbi.nlm.nih.gov/19172026/)
+
+- Turlier V et al. Assessment of the effects of a hair lotion in women with acute telogen effluvium: a randomized controlled study. J Eur Acad Dermatol Venereol. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/34668237/)
+
  Treat the cause, not the symptom
 
 #### Women's hair regrowth, built around your panel.

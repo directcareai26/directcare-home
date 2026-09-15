@@ -102,6 +102,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Tirzepatide is, on average, the more powerful drug. But "more powerful" doesn't equal "better for you." The right protocol is the one your clinician picks after looking at your bloodwork. Not the one that trended on social media this month.
  If you're considering a GLP-1, the conversation worth having is: what do my labs actually say, and which mechanism matches them? That's a much more useful starting point than the brand name.
 
+### References
+
+- Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity. N Engl J Med. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40353578/)
+
+- Aronne LJ et al. Tirzepatide as Compared with Semaglutide for the Treatment of Obesity (SURMOUNT-5). N Engl J Med. 2025. [Source](https://www.nejm.org/doi/10.1056/NEJMoa2416394)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.

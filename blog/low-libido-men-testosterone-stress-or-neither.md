@@ -120,6 +120,16 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right next step isn't a prescription. It's a clear timeline, an honest medication list, and a set of labs that can tell you which bucket you're actually in.
 
+### References
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
+- Liu PY A Clinical Perspective of Sleep and Andrological Health: Assessment, Treatment Considerations, and Future Research. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/31042277/)
+
+- Santi D et al. The chronic alcohol consumption influences the gonadal axis in men: Results from a meta-analysis. Andrology. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/37705506/)
+
+- Smith SJ et al. The effects of alcohol on testosterone synthesis in men: a review. Expert Rev Endocrinol Metab. 2023. [Source](https://pubmed.ncbi.nlm.nih.gov/36880700/)
+
  Get your edge back.
 
 #### Sexual health, prescribed and discreet.

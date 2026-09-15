@@ -117,6 +117,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  What matters is that the decision is made with real data: your trough levels, your estradiol, your hematocrit, and how you actually feel between injections. Not internet dogma about which needle is more legitimate.
 
+### References
+
+- Wilson DM et al. Pharmacokinetics, safety, and patient acceptability of subcutaneous versus intramuscular testosterone injection for gender-affirming therapy: A pilot study. Am J Health Syst Pharm. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29367424/)
+
+- Kaminetsky J et al. Pharmacokinetic Profile of Subcutaneous Testosterone Enanthate Delivered via a Novel, Prefilled Single-Use Autoinjector: A Phase II Study. Sex Med. 2015. [Source](https://pubmed.ncbi.nlm.nih.gov/26797061/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.

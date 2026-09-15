@@ -119,6 +119,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Have the conversation before the first injection. Bank sperm if you're uncertain. Add hCG if you want to stay fertile on therapy. Consider clomiphene if your hypogonadism is secondary and you want to skip exogenous testosterone entirely. The plan should be built around your numbers and your life, not a template.
 
+### References
+
+- Hsieh TC et al. Concomitant intramuscular human chorionic gonadotropin preserves spermatogenesis in men undergoing testosterone replacement therapy. J Urol. 2013. [Source](https://pubmed.ncbi.nlm.nih.gov/23260550/)
+
+- Coviello AD et al. Low-dose human chorionic gonadotropin maintains intratesticular testosterone in normal men with testosterone-induced gonadotropin suppression. J Clin Endocrinol Metab. 2005. [Source](https://pubmed.ncbi.nlm.nih.gov/15713727/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.

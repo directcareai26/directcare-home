@@ -143,6 +143,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Do those two things and the fat loss the medication drives becomes the body composition change you actually wanted.
 
+### References
+
+- Locatelli JC et al. Incretin-Based Weight Loss Pharmacotherapy: Can Resistance Exercise Optimize Changes in Body Composition?. Diabetes Care. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38687506/)
+
+- Eisa N et al. Lean Mass Changes With Incretin Therapy Versus Lifestyle Intervention: A Systematic Review and Meta-Analysis of Randomised Controlled Trials. Diabetes Obes Metab. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/41877354/)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.

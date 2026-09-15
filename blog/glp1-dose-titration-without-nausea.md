@@ -111,6 +111,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Done this way, most patients get through the full escalation with a few mildly uncomfortable days rather than a lost month.
 
+### References
+
+- Semaglutide (WEGOVY) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f5e548d0-cc79-4c34-a3f5-e20a5b8b6564)
+
+- Tirzepatide (ZEPBOUND) prescribing information. US FDA label via DailyMed. [Source](https://www.dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=487cd7e7-434c-4925-99fa-aa80b1cc776b)
+
  Ready to start?
 
 #### Sustainable weight loss, built around your labs.

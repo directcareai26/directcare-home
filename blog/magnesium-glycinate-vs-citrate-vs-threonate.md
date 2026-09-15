@@ -129,6 +129,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're stacking supplements without a clear symptom target, you're guessing. Match the form to the problem, give it a month, and adjust from there.
 
+### References
+
+- Schuster J et al. Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial. Nat Sci Sleep. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40918053/)
+
+- Lopresti AL et al. The effects of magnesium L-threonate (Magtein(®)) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial. Front Nutr. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/41601871/)
+
  Build your stack with intent.
 
 #### Clinician-formulated supplement protocols.

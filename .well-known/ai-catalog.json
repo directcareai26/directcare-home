@@ -31,6 +31,18 @@
       ]
     },
     {
+      "identifier": "urn:air:directcare.ai:doc:skills",
+      "displayName": "Agent skills index",
+      "description": "Agent Skills Discovery index for three read-only skills: how to find a DirectCare AI programme, how to read the site's machine-readable editions, and the safety boundaries of every agent surface here.",
+      "type": "application/json",
+      "url": "https://www.directcare.ai/.well-known/agent-skills/index.json",
+      "representativeQueries": [
+        "how should an agent use DirectCare AI",
+        "what can the DirectCare AI agent tools do",
+        "DirectCare AI agent safety boundaries"
+      ]
+    },
+    {
       "identifier": "urn:air:directcare.ai:doc:llms-index",
       "displayName": "llms.txt \u2014 curated site index",
       "description": "Short, hand-maintained index of DirectCare AI: what the company does, every program with its canonical URL, and pointers to the machine-readable editions of the site.",

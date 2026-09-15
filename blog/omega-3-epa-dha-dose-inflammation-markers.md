@@ -129,6 +129,10 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  A single 1,000 mg softgel of generic fish oil isn't going to change your labs. Reading the actual EPA and DHA numbers on the back of the bottle is the first step; verifying with an Omega-3 Index or a repeat lipid panel is the second.
 
+### References
+
+- Omega-3 Fatty Acids: Fact Sheet for Health Professionals. NIH Office of Dietary Supplements. [Source](https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/)
+
  Build your stack with intent.
 
 #### Clinician-formulated supplement protocols.

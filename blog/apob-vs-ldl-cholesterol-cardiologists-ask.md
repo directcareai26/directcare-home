@@ -143,6 +143,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're building a cardiovascular baseline — especially alongside decisions about hormones, GLP-1 therapy, or a serious training program — ApoB is the number worth putting on the requisition. It's the one cardiologists have quietly been steering toward for a decade.
 
+### References
+
+- Langlois MR et al. Quantifying Atherogenic Lipoproteins: Current and Future Challenges in the Era of Personalized Medicine and Very Low Concentrations of LDL Cholesterol. A Consensus Statement from EAS and EFLM. Clin Chem. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29760220/)
+
+- Witt C et al. Discordance between serum cholesterol concentration and atherogenic lipoprotein particle number in people with metabolic disease: A systematic review. Diabetes Obes Metab. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/40091449/)
+
  Know your real numbers.
 
 #### Real labs. Plain-English plan.

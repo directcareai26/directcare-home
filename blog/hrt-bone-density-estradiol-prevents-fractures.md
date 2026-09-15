@@ -108,6 +108,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The fracture you prevent in your 50s is the hip you keep in your 70s. That's the trade the science actually supports — no miracle claims required.
 
+### References
+
+- Cauley JA et al. Effects of estrogen plus progestin on risk of fracture and bone mineral density: the Women's Health Initiative randomized trial. JAMA. 2003. [Source](https://pubmed.ncbi.nlm.nih.gov/14519707/)
+
+- Lorentzon M et al. Menopausal hormone therapy reduces the risk of fracture regardless of falls risk or baseline FRAX probability-results from the Women's Health Initiative hormone therapy trials. Osteoporos Int. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/35833956/)
+
  Ready to feel like yourself again?
 
 #### Hormone therapy, built around your bloodwork.

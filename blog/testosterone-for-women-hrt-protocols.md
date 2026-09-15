@@ -119,6 +119,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That line is where the benefit lives. Cross it, and the therapy stops being replacement and starts being something else.
 
+### References
+
+- Davis SR et al. Global Consensus Position Statement on the Use of Testosterone Therapy for Women. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/31498871/)
+
+- Parish SJ et al. International Society for the Study of Women's Sexual Health Clinical Practice Guideline for the Use of Systemic Testosterone for Hypoactive Sexual Desire Disorder in Women. Climacteric. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/33792440/)
+
  Ready to feel like yourself again?
 
 #### Hormone therapy, built around your bloodwork.

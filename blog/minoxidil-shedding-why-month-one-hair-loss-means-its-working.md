@@ -117,6 +117,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The shed isn't the protocol failing. It's the follicles waking up. Stay on the regimen for 6 months before you judge it — the clinical trial designers knew what they were doing.
 
+### References
+
+- Nohria A et al. Combating "dread shed": The impact of overlapping topical and oral minoxidil on temporary hair shedding during oral minoxidil initiation. JAAD Int. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38707927/)
+
+- Kanti V et al. Evidence-based (S3) guideline for the treatment of androgenetic alopecia in women and in men - short version. J Eur Acad Dermatol Venereol. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29178529/)
+
  Stay on the protocol
 
 #### Hair regrowth, by your clinician.

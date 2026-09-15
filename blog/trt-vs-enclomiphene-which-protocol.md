@@ -109,6 +109,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The single biggest predictor of a good outcome on any testosterone protocol is whether your clinician is willing to adjust the dose to your actual bloodwork. Not just hand you a fixed prescription and disappear.
 
+### References
+
+- Wiehle RD et al. Enclomiphene citrate stimulates testosterone production while preventing oligospermia: a randomized phase II clinical trial comparing topical testosterone. Fertil Steril. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/25044085/)
+
+- Kim ED et al. Oral enclomiphene citrate raises testosterone and preserves sperm counts in obese hypogonadal men, unlike topical testosterone: restoration instead of replacement. BJU Int. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/26496621/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.

@@ -147,6 +147,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - Goldman AL et al. A Reappraisal of Testosterone's Binding in Circulation. Endocr Rev . 2017.
 
+### References
+
+- Travison TG et al. Harmonized Reference Ranges for Circulating Testosterone Levels in Men of Four Cohort Studies in the United States and Europe. J Clin Endocrinol Metab. 2017. [Source](https://pubmed.ncbi.nlm.nih.gov/28324103/)
+
+- Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018. [Source](https://pubmed.ncbi.nlm.nih.gov/29562364/)
+
  Ready to find your protocol?
 
 #### Testosterone therapy, tuned to your levels.

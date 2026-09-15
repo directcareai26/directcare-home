@@ -101,6 +101,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The before/after photo is the easy part. The body composition behind the photo is what determines whether you keep the result.
 
+### References
+
+- Eisa N et al. Lean Mass Changes With Incretin Therapy Versus Lifestyle Intervention: A Systematic Review and Meta-Analysis of Randomised Controlled Trials. Diabetes Obes Metab. 2026. [Source](https://pubmed.ncbi.nlm.nih.gov/41877354/)
+
+- Mechanick JI et al. Strategies for minimizing muscle loss during use of incretin-mimetic drugs for treatment of obesity. Obes Rev. 2025. [Source](https://pubmed.ncbi.nlm.nih.gov/39295512/)
+
  Lose fat, keep your shape
 
 #### Compounded GLP-1, optimized for body recomp.

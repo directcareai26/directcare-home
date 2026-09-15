@@ -85,6 +85,16 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you want a workup that goes beyond the standard physical, the panel worth having covers ApoB, Lp(a) (once), a full lipid panel, hs-CRP, HbA1c, fasting insulin, comprehensive metabolic panel with GGT and uric acid, 25-OH vitamin D, homocysteine, and cystatin C. That is roughly 10 additional data points beyond a typical annual draw — and it is the difference between screening for disease and forecasting it.
 
+### References
+
+- Kronenberg F et al. Lipoprotein(a) in atherosclerotic cardiovascular disease and aortic stenosis: a European Atherosclerosis Society consensus statement. Eur Heart J. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/36036785/)
+
+- Koschinsky ML et al. A focused update to the 2019 NLA scientific statement on use of lipoprotein(a) in clinical practice. J Clin Lipidol. 2024. [Source](https://pubmed.ncbi.nlm.nih.gov/38565461/)
+
+- Ridker PM A Test in Context: High-Sensitivity C-Reactive Protein. J Am Coll Cardiol. 2016. [Source](https://pubmed.ncbi.nlm.nih.gov/26868696/)
+
+- Bassuk SS et al. High-sensitivity C-reactive protein: clinical importance. Curr Probl Cardiol. 2004. [Source](https://pubmed.ncbi.nlm.nih.gov/15258556/)
+
  Know your real numbers.
 
 #### Real labs. Plain-English plan.

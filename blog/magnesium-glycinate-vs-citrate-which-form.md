@@ -119,6 +119,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're not sure which one fits, the more useful starting place is: what does my RBC magnesium look like, what other deficiencies am I carrying, and what is this supplement actually supposed to do for me? Your clinician can build the answer around your bloodwork.
 
+### References
+
+- Nielsen FH et al. Magnesium supplementation improves indicators of low magnesium status and inflammatory stress in adults older than 51 years with poor quality sleep. Magnes Res. 2010. [Source](https://pubmed.ncbi.nlm.nih.gov/21199787/)
+
+- Magnesium: Fact Sheet for Health Professionals. NIH Office of Dietary Supplements. [Source](https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/)
+
  Related program
 
 #### Build your supplement protocol with a clinician.

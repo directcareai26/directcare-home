@@ -77,6 +77,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you've felt yourself disappear over the last few years and your bloodwork "looks normal," ask the question your clinician didn't: what's my testosterone? It may be the answer hiding in plain sight.
 
+### References
+
+- Parish SJ et al. International Society for the Study of Women's Sexual Health Clinical Practice Guideline for the Use of Systemic Testosterone for Hypoactive Sexual Desire Disorder in Women. Climacteric. 2021. [Source](https://pubmed.ncbi.nlm.nih.gov/33792440/)
+
+- Braunstein GD et al. Testosterone reference ranges in normally cycling healthy premenopausal women. J Sex Med. 2011. [Source](https://pubmed.ncbi.nlm.nih.gov/21771278/)
+
  Get the full picture
 
 #### Hormone therapy that actually includes testosterone.

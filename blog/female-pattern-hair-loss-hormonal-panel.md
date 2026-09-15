@@ -127,6 +127,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The labs worth having before a serious protocol are not exotic, not expensive, and not optional if you want the plan to actually match the biology. Real labs, plain-English plan — that's the whole point.
 
+### References
+
+- Carmina E et al. Female Pattern Hair Loss and Androgen Excess: A Report From the Multidisciplinary Androgen Excess and PCOS Committee. J Clin Endocrinol Metab. 2019. [Source](https://pubmed.ncbi.nlm.nih.gov/30785992/)
+
+- Müller Ramos P et al. Female-pattern hair loss: therapeutic update. An Bras Dermatol. 2023. [Source](https://pubmed.ncbi.nlm.nih.gov/37003900/)
+
  Keep what you have. Grow what you've lost.
 
 #### Hair regrowth protocols, by your clinician.

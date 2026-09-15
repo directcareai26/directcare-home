@@ -81,6 +81,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right ED medication isn't the one that worked for your friend. It's the one whose timing, duration, and food rules match your actual life.
 
+### References
+
+- Sildenafil (VIAGRA) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=e1af7b6a-378e-4337-858f-85a926eec102)
+
+- Tadalafil (CIALIS) prescribing information. US FDA label via DailyMed. [Source](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=78509a43-a907-4359-9022-f38c4f765880)
+
  Skip the awkward conversation
 
 #### Surge Max: PDE5 protocols, prescribed online.

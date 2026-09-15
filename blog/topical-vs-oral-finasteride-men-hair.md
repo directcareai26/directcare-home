@@ -83,6 +83,12 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  The right hair-loss protocol is the one you'll actually use for ten years. For a lot of men, that's the topical.
 
+### References
+
+- Piraccini BM et al. Efficacy and safety of topical finasteride spray solution for male androgenetic alopecia: a phase III, randomized, controlled clinical trial. J Eur Acad Dermatol Venereol. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/34634163/)
+
+- Caserini M et al. A novel finasteride 0.25% topical solution for androgenetic alopecia: pharmacokinetics and effects on plasma androgen levels in healthy male volunteers. Int J Clin Pharmacol Ther. 2014. [Source](https://pubmed.ncbi.nlm.nih.gov/25074865/)
+
  Keep the hair you have
 
 #### Men's hair regrowth, compounded for results.

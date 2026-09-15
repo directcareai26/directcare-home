@@ -100,6 +100,10 @@ jobs:
         if: steps.guard.outputs.already_posted == 'false'
         run: python3 scripts/agent-files/build_page_schema.py
 
+      - name: Rebuild the agent skills index
+        if: steps.guard.outputs.already_posted == 'false'
+        run: python3 scripts/agent-files/build_skills_index.py
+
       - name: Rebuild agent-readable files
         if: steps.guard.outputs.already_posted == 'false'
         run: python3 scripts/agent-files/build_agent_files.py

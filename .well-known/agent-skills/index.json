@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "find-a-program",
+      "type": "skill-md",
+      "description": "Map a health goal, symptom or medication name to the DirectCare AI programme that covers it, and return the canonical page a person should start from.",
+      "url": "https://www.directcare.ai/.well-known/agent-skills/find-a-program/SKILL.md",
+      "digest": "sha256:6ff0dd468cdcc101497eefb884c407d79a608f4abf467bca5808091faa574999"
+    },
+    {
+      "name": "read-the-site",
+      "type": "skill-md",
+      "description": "Read www.directcare.ai efficiently as a machine \u2014 the whole site as Markdown, per-page Markdown twins, the blog manifest, and the content-usage policy.",
+      "url": "https://www.directcare.ai/.well-known/agent-skills/read-the-site/SKILL.md",
+      "digest": "sha256:048b245a5e935fc7ef4db916a7eefbb85410de67f6ec939006c246672b2f6ae2"
+    },
+    {
+      "name": "safe-use",
+      "type": "skill-md",
+      "description": "What DirectCare AI's agent surfaces will and will not do, and what never to send them. Read this before calling any of them.",
+      "url": "https://www.directcare.ai/.well-known/agent-skills/safe-use/SKILL.md",
+      "digest": "sha256:a2930dcc66ecbdc4ba7130eff3ff0ccc567a942d702d15cd4ca1bb34c602c819"
+    }
+  ]
+}

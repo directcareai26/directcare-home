@@ -21,7 +21,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on semaglutide or tirzepatide and feeling great for three days, then bloated, constipated, and weirdly ravenous by day five — the issue is almost never the medication. It's the fiber gap.
 
- GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing. That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
+ GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing ([Maselli & Camilleri, 2021](https://pubmed.ncbi.nlm.nih.gov/32077010/)). That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
 
  The fix is unsexy and specific: 25-35 grams of fiber per day, mostly from food, spread across meals.
 

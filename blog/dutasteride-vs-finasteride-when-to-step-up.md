@@ -45,7 +45,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Several controlled trials have compared the two directly:
 
-- Comparisons of dutasteride 2.5 mg/day against finasteride 5 mg/day over 24 weeks have reported greater hair-count improvement with dutasteride. Note these are higher doses than the standard hair-loss doses.
+- A [2006 trial in the Journal of the American Academy of Dermatology](https://pubmed.ncbi.nlm.nih.gov/17110217/) compared dutasteride 2.5 mg/day against finasteride 5 mg/day over 24 weeks and found greater hair-count improvement with dutasteride. Both arms used doses above the standard hair-loss doses, so the result does not transfer directly to dutasteride 0.5 mg or finasteride 1 mg. Dutasteride is not FDA-approved for hair loss in the United States.
 
 - Head-to-head trials of dutasteride 0.5 mg/day against finasteride 1 mg/day (the standard hair-loss doses) have favoured dutasteride on hair count, hair width and global photographic assessment at six months.
 
@@ -136,7 +136,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) post for the topical-vs-systemic decision, and the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post for what to expect on the minoxidil side of the protocol.
 
  Finasteride works for most men. For the rest, dutasteride is the cleaner version of the same conversation — same mechanism, more suppression, real regrowth when finasteride alone isn't enough.
- Sources:.
 
  Get the protocol that works
 

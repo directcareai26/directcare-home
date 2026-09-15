@@ -118,7 +118,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Psychological factors. Performance anxiety, relationship dynamics, and depression all interact with ED in ways no medication on its own will resolve.
 
  Daily low-dose tadalafil is the closest thing PDE5 medication has to a baseline-restoration protocol. For the right patient — over 45, ED plus some LUTS, prioritizing spontaneity, willing to take a pill every day — it's frequently the cleanest answer.
- Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline)[FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
+ Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline); [FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
 
  Pick the right protocol
 

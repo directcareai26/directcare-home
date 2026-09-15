@@ -55,7 +55,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The screening tool every TRT consult should include.
 
- The **STOP-BANG questionnaire** is the standard fast screen for OSA. Each "yes" is one point:
+ The **STOP-BANG questionnaire** ([Chung et al, Anesthesiology 2008](https://pubmed.ncbi.nlm.nih.gov/18431116/)) is the standard fast screen for OSA. Each "yes" is one point:
 
 - S noring loud enough to be heard through a closed door?
 

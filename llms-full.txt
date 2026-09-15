@@ -14221,7 +14221,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  If you're on semaglutide or tirzepatide and feeling great for three days, then bloated, constipated, and weirdly ravenous by day five — the issue is almost never the medication. It's the fiber gap.
 
- GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing. That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
+ GLP-1 receptor agonists slow gastric emptying by roughly 30-70% depending on dose and timing ([Maselli & Camilleri, 2021](https://pubmed.ncbi.nlm.nih.gov/32077010/)). That's the mechanism doing most of the appetite work. But slower gastric transit plus a low-fiber, low-residue diet — which is what most people default to when nauseous — is a recipe for constipation, poor satiety signaling, and blunted results by week 8.
 
  The fix is unsexy and specific: 25-35 grams of fiber per day, mostly from food, spread across meals.
 
@@ -16767,7 +16767,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What the published evidence actually shows.
 
- The foundational work is a randomised controlled trial in 100 men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
+ The foundational work is [Dhurat et al, 2013, International Journal of Trichology](https://pubmed.ncbi.nlm.nih.gov/23960389/), a randomised evaluator-blinded trial in men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
 
  Results at 12 weeks:
 
@@ -16840,7 +16840,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post to know what to expect in the early weeks, and the compounded topical protocols in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) for the full regimen picture.
 
  A $25 dermaroller, used once a week with the right technique, makes the medication you're already paying for work meaningfully better. That's the most cost-effective intervention in hair-loss medicine.
- Sources:.
 
  Get the protocol that works
 
@@ -17264,7 +17263,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Berberine has been studied in moderate-sized trials, mostly in Type 2 diabetes:
 
-- Small randomised trials have compared berberine 500 mg three times daily against metformin over about three months in type 2 diabetes and reported comparable HbA1c reductions. These are small studies, and berberine is not a substitute for prescribed metformin.
+- A [2008 trial in Metabolism](https://pubmed.ncbi.nlm.nih.gov/18442638/) compared berberine 500 mg three times daily against metformin over three months in type 2 diabetes and reported comparable HbA1c reductions. This was a small, short trial in one population — it is not the basis for substituting berberine for prescribed metformin, and no supplement is FDA-approved to treat diabetes.
 
 - Pooled analyses of randomised trials have reported berberine performing comparably to oral hypoglycaemic agents in type 2 diabetes. This is not a basis for substituting it for prescribed medication.
 
@@ -17343,7 +17342,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the broader supplement framework in [the 4 supplement gaps almost every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps), the metabolic context in [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity), and the GLP-1 conversation in [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference).
 
  Berberine isn't a substitute for a GLP-1. It's a different drug solving a different part of the metabolic problem. The right patient for it isn't the one who wants to lose 40 pounds — it's the one who's trying to nudge prediabetes back to normal without a prescription.
- Sources:.
 
  Get the real metabolic protocol
 
@@ -17727,7 +17725,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### The screening tool every TRT consult should include.
 
- The **STOP-BANG questionnaire** is the standard fast screen for OSA. Each "yes" is one point:
+ The **STOP-BANG questionnaire** ([Chung et al, Anesthesiology 2008](https://pubmed.ncbi.nlm.nih.gov/18431116/)) is the standard fast screen for OSA. Each "yes" is one point:
 
 - S noring loud enough to be heard through a closed door?
 
@@ -18286,7 +18284,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Several controlled trials have compared the two directly:
 
-- Comparisons of dutasteride 2.5 mg/day against finasteride 5 mg/day over 24 weeks have reported greater hair-count improvement with dutasteride. Note these are higher doses than the standard hair-loss doses.
+- A [2006 trial in the Journal of the American Academy of Dermatology](https://pubmed.ncbi.nlm.nih.gov/17110217/) compared dutasteride 2.5 mg/day against finasteride 5 mg/day over 24 weeks and found greater hair-count improvement with dutasteride. Both arms used doses above the standard hair-loss doses, so the result does not transfer directly to dutasteride 0.5 mg or finasteride 1 mg. Dutasteride is not FDA-approved for hair loss in the United States.
 
 - Head-to-head trials of dutasteride 0.5 mg/day against finasteride 1 mg/day (the standard hair-loss doses) have favoured dutasteride on hair count, hair width and global photographic assessment at six months.
 
@@ -18377,7 +18375,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) post for the topical-vs-systemic decision, and the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post for what to expect on the minoxidil side of the protocol.
 
  Finasteride works for most men. For the rest, dutasteride is the cleaner version of the same conversation — same mechanism, more suppression, real regrowth when finasteride alone isn't enough.
- Sources:.
 
  Get the protocol that works
 
@@ -19801,7 +19798,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - Psychological factors. Performance anxiety, relationship dynamics, and depression all interact with ED in ways no medication on its own will resolve.
 
  Daily low-dose tadalafil is the closest thing PDE5 medication has to a baseline-restoration protocol. For the right patient — over 45, ED plus some LUTS, prioritizing spontaneity, willing to take a pill every day — it's frequently the cleanest answer.
- Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline)[FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
+ Sources: [American Urological Association 2018 ED guidelines](https://www.auanet.org/guidelines-and-quality/guidelines/erectile-dysfunction-(ed)-guideline); [FDA prescribing information for tadalafil for once-daily use](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/021368s019lbl.pdf).
 
  Pick the right protocol
 

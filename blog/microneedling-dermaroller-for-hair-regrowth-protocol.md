@@ -39,7 +39,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What the published evidence actually shows.
 
- The foundational work is a randomised controlled trial in 100 men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
+ The foundational work is [Dhurat et al, 2013, International Journal of Trichology](https://pubmed.ncbi.nlm.nih.gov/23960389/), a randomised evaluator-blinded trial in men with androgenetic alopecia. Half used topical 5% minoxidil daily; half used minoxidil daily plus weekly microneedling.
 
  Results at 12 weeks:
 
@@ -112,7 +112,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the [minoxidil shedding](https://www.directcare.ai/blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working) post to know what to expect in the early weeks, and the compounded topical protocols in [topical vs. oral finasteride](https://www.directcare.ai/blog/topical-vs-oral-finasteride-men-hair) for the full regimen picture.
 
  A $25 dermaroller, used once a week with the right technique, makes the medication you're already paying for work meaningfully better. That's the most cost-effective intervention in hair-loss medicine.
- Sources:.
 
  Get the protocol that works
 

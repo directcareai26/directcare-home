@@ -67,7 +67,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Berberine has been studied in moderate-sized trials, mostly in Type 2 diabetes:
 
-- Small randomised trials have compared berberine 500 mg three times daily against metformin over about three months in type 2 diabetes and reported comparable HbA1c reductions. These are small studies, and berberine is not a substitute for prescribed metformin.
+- A [2008 trial in Metabolism](https://pubmed.ncbi.nlm.nih.gov/18442638/) compared berberine 500 mg three times daily against metformin over three months in type 2 diabetes and reported comparable HbA1c reductions. This was a small, short trial in one population — it is not the basis for substituting berberine for prescribed metformin, and no supplement is FDA-approved to treat diabetes.
 
 - Pooled analyses of randomised trials have reported berberine performing comparably to oral hypoglycaemic agents in type 2 diabetes. This is not a basis for substituting it for prescribed medication.
 
@@ -146,7 +146,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Pair with the broader supplement framework in [the 4 supplement gaps almost every patient has](https://www.directcare.ai/blog/magnesium-vitamin-d-supplement-gaps), the metabolic context in [10 biomarkers that predict longevity](https://www.directcare.ai/blog/10-biomarkers-that-predict-longevity), and the GLP-1 conversation in [compounded vs. branded GLP-1](https://www.directcare.ai/blog/compounded-vs-branded-glp1-actual-difference).
 
  Berberine isn't a substitute for a GLP-1. It's a different drug solving a different part of the metabolic problem. The right patient for it isn't the one who wants to lose 40 pounds — it's the one who's trying to nudge prediabetes back to normal without a prescription.
- Sources:.
 
  Get the real metabolic protocol
 

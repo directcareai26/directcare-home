@@ -196,6 +196,48 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
   d.addEventListener('visibilitychange', function () { if (d.visibilityState === 'hidden') flushPending(); });
   w.addEventListener('pagehide', flushPending);
 
+
+  // An ALLOW-LIST, not a rename table.
+  //
+  // The first version of this mapped Meta names to what TikTok's docs call
+  // standard events -- Lead -> SubmitForm, Purchase -> CompletePayment. Watching
+  // the wire showed that is pointless: ttq.track('SubmitForm', ...) arrives at
+  // analytics.tiktok.com as {"event":"Lead"}, and 'CompletePayment' arrives as
+  // {"event":"Purchase"}. TikTok's SDK normalises to its own taxonomy, which
+  // uses the same names Meta does. A rename table here would be dead code that
+  // reads as though it does something.
+  //
+  // What this list DOES do is filter. An event not on it is never sent, so a
+  // typo or an internal event name cannot reach TikTok as an unrecognised custom
+  // event that no campaign can optimise against.
+  var TT_ALLOWED = {
+    Lead: 1, Purchase: 1, CompleteRegistration: 1, InitiateCheckout: 1,
+    AddToCart: 1, AddPaymentInfo: 1, Subscribe: 1, Contact: 1,
+    ViewContent: 1, Search: 1
+    // PageView is deliberately absent: ttq.page() already reports it at load,
+    // and passing it here would double-count every page.
+  };
+
+  var TIKTOK_ADVANCED_MATCHING = false;
+
+  function trackTikTok(eventName, custom, eventId) {
+    if (!TT_ALLOWED[eventName]) return;      // not an event we send to TikTok
+    // Meta still receives opt-out events flagged `opt_out` so they are measured
+    // but excluded from delivery. ttq.track() has no equivalent field, so the
+    // honest equivalent is not to send at all.
+    if (w.dcaOptOut === true) return;
+    var props = {};
+    // value and currency only. content_name and content_category name the
+    // PRODUCT, and the relay's allow-list already strips them from the Meta
+    // server copy precisely so a treatment name never leaves the browser.
+    // TikTok gets the same treatment.
+    if (custom && typeof custom.value !== 'undefined') props.value = custom.value;
+    if (custom && custom.currency) props.currency = custom.currency;
+    try {
+      w.ttq && w.ttq.track(eventName, props, { event_id: eventId });
+    } catch (e) {}
+  }
+
   function track(eventName, customData, presetId) {
     var eventId = presetId || uuid();
     // set window.dcaOptOut = true (consent banner, DNT, an unsubscribed user)
@@ -203,6 +245,7 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     var optOut = w.dcaOptOut === true;
     var custom = customData || {};
     try { w.fbq && w.fbq('track', eventName, custom, { eventID: eventId }); } catch (e) {}
+    trackTikTok(eventName, custom, eventId);
     postWhenReady({
       event_name: eventName,
       event_id: eventId,                       // same id both sides => Meta dedupes

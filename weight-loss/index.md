@@ -68,7 +68,7 @@ You get a Care Coach.
 
 - Clinician-titrated dosing
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - Injection supplies included
 
@@ -88,7 +88,7 @@ You get a Care Coach.
 
 - Clinician-titrated dosing
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - All injection supplies included
 
@@ -111,7 +111,7 @@ You get a Care Coach.
 
 - Full titration arc included
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - All injection supplies included
 
@@ -133,7 +133,7 @@ You get a Care Coach.
 
 - Full titration + maintenance arc
 
-- Bi-weekly 1:1 Care Coaching all year
+- Monthly 1:1 Care Coaching all year — more often on request
 
 - All injection supplies included
 
@@ -277,7 +277,7 @@ from intake to your door.
  GLP-1s carry a labeled warning for pancreatitis. The actual incidence in clinical trials was low (0.2-0.4% per year) but slightly higher than placebo. Symptoms of pancreatitis (severe abdominal pain radiating to back, persistent vomiting) require immediate medical attention. People with prior pancreatitis history are screened out at intake.
 
  What's included in the monthly price?
- Compounded medication shipped from a US-licensed pharmacy, ongoing clinician messaging through the patient portal, weekly check-ins with a Care Coach (Certified Medical Assistant), dose adjustments at no extra cost, and refills. Bloodwork is separate ($196 once).
+ Compounded medication shipped from a US-licensed pharmacy, ongoing clinician messaging through the patient portal, monthly check-ins with a Care Coach (Certified Medical Assistant), with additional sessions on request, dose adjustments at no extra cost, and refills. Bloodwork is separate ($196 once).
 
  How long does shipping take?
  After clinician approval (24-48 hours from intake submission), medication ships within 3-5 business days from the partner compounding pharmacy. Each shipment contains a 4-week supply with all syringes and alcohol pads included.
@@ -286,6 +286,6 @@ from intake to your door.
  Yes, and you should. Resistance training preserves muscle mass during weight loss, and cardiovascular exercise supports the metabolic benefits. Start gradually since nausea/fatigue can be present in weeks 1-4. By week 5-6, most patients tolerate normal training volume.
 
  From $269/mo
- Compounded tirzepatide + bi-weekly Care Coaching
+ Compounded tirzepatide + monthly Care Coaching
 
  [Get Started →](https://www.directcare.ai/weight-loss/start)

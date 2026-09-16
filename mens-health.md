@@ -90,7 +90,7 @@ Source: https://www.directcare.ai/mens-health
 
  Medications are compounded in the USA at licensed pharmacies and shipped discreetly. Adjust your dose anytime via the patient portal.
 
- ![Dr. Tim Pepin, D.C., Clinical Advisor]
+ ![Dr. Tim Pepin, Clinical Advisor]
 
  Clinical leadership
 

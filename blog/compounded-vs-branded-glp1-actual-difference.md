@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Weight Loss
 
  June 8, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Compounded vs. branded GLP-1: the actual difference, and when one beats the other
 

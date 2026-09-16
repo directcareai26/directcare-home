@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Nutrition
 
  January 15, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Sheet-pan chicken thighs with roasted root vegetables: a 30-minute, 40g-protein dinner
 

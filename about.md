@@ -109,7 +109,7 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 - Coverage: DirectCare AI operates in the United States and serves patients nationwide where state law permits.
 - Labs: blood test panels from $196, up to 80 biomarkers.
 - Programs and starting prices: HRT from $59/mo; GLP-1 weight loss from $269/mo; men's hair regrowth from $59/month.
-- Clinical leadership: Dr. Tim Pepin, D.C., Clinical Advisor.
+- Clinical leadership: Dr. Tim Pepin, Clinical Advisor.
 
  Compounded medications: DirectCare AI offers compounded medications prescribed by a US-licensed clinician based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality.
 

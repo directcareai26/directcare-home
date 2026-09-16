@@ -97,7 +97,7 @@ Source: https://www.directcare.ai/supplements
 
  [Get Started →](https://directcareai.portal.tellescope.com/register)
 
- ![Dr. Tim Pepin, D.C., Clinical Advisor]
+ ![Dr. Tim Pepin, Clinical Advisor]
 
  Clinical leadership
 

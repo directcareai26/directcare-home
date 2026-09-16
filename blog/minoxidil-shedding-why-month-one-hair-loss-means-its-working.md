@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Hair Regrowth
 
  May 29, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Minoxidil shedding: why temporary hair loss in month one usually means the protocol is working
 

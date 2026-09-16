@@ -15,7 +15,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## Ferritin in Women: the deficiency mistaken for menopause
 
- Fatigue, hair shedding, brain fog, and cold hands in a woman over 40 get labeled perimenopause by default — but low ferritin causes the same picture and is missed because standard CBCs come back "normal." Here's how to read the right iron markers and what the numbers actually mean.
+ Fatigue, [hair shedding](https://www.directcare.ai/womans-hair-loss), brain fog, and cold hands in a woman over 40 get labeled perimenopause by default — but low ferritin causes the same picture and is missed because standard CBCs come back "normal." Here's how to read the right iron markers and what the numbers actually mean.
 
  Low ferritin in women can cause symptoms like fatigue, hair loss, brain fog, and cold hands that are often mistaken for perimenopause. A normal hemoglobin level does not rule out iron deficiency, as ferritin measures iron stores before anemia develops. Ferritin under 30 ng/mL indicates deficiency, even with normal CBC results.
 
@@ -137,7 +137,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  because both can be true
 
- Nothing above rules out perimenopause. Estradiol variability causes real symptoms — vasomotor changes, sleep disruption, mood shifts, genitourinary changes — and those deserve their own workup and, when appropriate, treatment.
+ Nothing above rules out perimenopause. Estradiol variability causes real symptoms — vasomotor changes, [sleep disruption](https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping), mood shifts, genitourinary changes — and those deserve their own workup and, when appropriate, treatment.
 
  The point is sequencing. Check iron first, because it's cheaper, faster, and if it's the answer, you don't need a hormone conversation at all. If ferritin is repleted to 70+ and symptoms persist, then the perimenopause workup — FSH, estradiol, and a symptom-driven history — becomes the next honest step.
 

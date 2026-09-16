@@ -634,6 +634,17 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .25s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
   .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
+
+  /* Related guides — navigational only; existing article titles, no clinical copy. */
+  .faq-related { margin: 22px 0 0; }
+  .faq-related h3 { font-size: 0.82rem; letter-spacing: 0.10em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  .faq-related ul { list-style: none; margin: 0; padding: 0; }
+  .faq-related li { margin: 0 0 9px; line-height: 1.45; }
+  .faq-related a { color: var(--brand-deep, var(--brand)); text-decoration: none;
+    border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  .faq-related a:hover, .faq-related a:focus-visible { border-bottom-color: currentColor; }
+
   .faq-body strong { color: var(--ink); }
 
   /* ============== FOOTER ============== */
@@ -1593,6 +1604,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <span class="eyebrow"><span class="dot"></span> Common questions</span>
         <h2>Everything you'd ask a <span class="accent">clinician.</span></h2>
         <p>Honest answers, before you start. Six of the questions we hear most. And what our team would tell you on a call.</p>
+        <nav class="faq-related" aria-label="Related guides">
+          <h3>Related guides</h3>
+          <ul>
+            <li><a href="/blog/sildenafil-vs-tadalafil-daily-vs-on-demand">Daily low-dose tadalafil vs. on-demand: when continuous dosing actually outperforms</a></li>
+            <li><a href="/blog/ed-cardiovascular-warning-signs-labs">ED as a Cardiovascular Warning: The Labs That Confirm It</a></li>
+            <li><a href="/blog/ed-medication-prescribed-online-safely">How to Get ED Medication Prescribed Online safely and honestly</a></li>
+          </ul>
+        </nav>
+
       </aside>
       <div class="faq-grid">
       <details class="faq" open>

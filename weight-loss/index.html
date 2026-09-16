@@ -626,6 +626,17 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
   .faq .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
+
+  /* Related guides — navigational only; existing article titles, no clinical copy. */
+  .faq-related { margin: 22px 0 0; }
+  .faq-related h3 { font-size: 0.82rem; letter-spacing: 0.10em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  .faq-related ul { list-style: none; margin: 0; padding: 0; }
+  .faq-related li { margin: 0 0 9px; line-height: 1.45; }
+  .faq-related a { color: var(--brand-deep, var(--brand)); text-decoration: none;
+    border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  .faq-related a:hover, .faq-related a:focus-visible { border-bottom-color: currentColor; }
+
   .faq-body strong { color: var(--ink); }
 
   /* ============== FINAL CTA (DARK) ============== */
@@ -1478,6 +1489,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <p>Take the 2-minute eligibility check. A US-licensed clinician will review and follow up, no charge if you don't qualify.</p>
           <a href="/weight-loss/start" class="btn btn-primary">Start free evaluation →</a>
         </div>
+        <nav class="faq-related" aria-label="Related guides">
+          <h3>Related guides</h3>
+          <ul>
+            <li><a href="/blog/semaglutide-tirzepatide-difference">Semaglutide vs. tirzepatide: how to pick a GLP-1 based on your labs</a></li>
+            <li><a href="/blog/glp1-dose-titration-without-nausea">GLP-1 Dose Titration: how to avoid a month of nausea</a></li>
+            <li><a href="/blog/glp1-month-one-side-effects-food-noise">What to expect on month one of a GLP-1: side effects, food noise, and the dose ramp</a></li>
+            <li><a href="/blog/muscle-preservation-glp1-protein-resistance-training">Muscle Preservation on GLP-1s: Protein &amp; Training Rules</a></li>
+            <li><a href="/blog/glp1-maintenance-protocol-after-weight-loss">GLP-1 maintenance after weight loss: how to stay off without rebounding</a></li>
+          </ul>
+        </nav>
+
       </aside>
 
       <div class="faq-grid">

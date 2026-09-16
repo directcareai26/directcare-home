@@ -691,6 +691,17 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .faq summary::after { content: "+"; font-size: 1.5rem; color: var(--brand); font-weight: 400; transition: transform .2s ease; }
   .faq[open] summary::after { content: "−"; }
   .faq-body { padding: 0 28px 24px; color: var(--muted); font-size: 0.98rem; line-height: 1.7; }
+
+  /* Related guides — navigational only; existing article titles, no clinical copy. */
+  .faq-related { margin: 22px 0 0; }
+  .faq-related h3 { font-size: 0.82rem; letter-spacing: 0.10em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  .faq-related ul { list-style: none; margin: 0; padding: 0; }
+  .faq-related li { margin: 0 0 9px; line-height: 1.45; }
+  .faq-related a { color: var(--brand-deep, var(--brand)); text-decoration: none;
+    border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  .faq-related a:hover, .faq-related a:focus-visible { border-bottom-color: currentColor; }
+
   .faq-body strong { color: var(--ink); }
 
   /* ============== FINAL CTA ============== */
@@ -1884,6 +1895,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <h2 style="margin-top:18px;">A part that's quieter under bathroom light.</h2>
       <p style="margin-top:14px; max-width: 600px; margin-left: auto; margin-right: auto;"><strong style="color:var(--ink)">Density along the part</strong>, fine new hairs filling the gap, scalp showing through less.</p>
     </div>
+        <nav class="faq-related" aria-label="Related guides">
+          <h3>Related guides</h3>
+          <ul>
+            <li><a href="/blog/female-pattern-hair-loss-hormonal-panel">Female Hair Loss: the hormonal panel to run first</a></li>
+            <li><a href="/blog/ferritin-iron-deficiency-women-mistaken-for-menopause">Ferritin in Women: the deficiency mistaken for menopause</a></li>
+          </ul>
+        </nav>
+
     <div class="scalp-split">
       <div class="scalp-card">
         <img src="/optimized/hair-part-close-up-light-skin-800.webp" alt="Close-up of healthy hair part with new baby hairs" width="1024" height="1024" srcset="/optimized/hair-part-close-up-light-skin-400.webp 400w, /optimized/hair-part-close-up-light-skin-800.webp 800w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">

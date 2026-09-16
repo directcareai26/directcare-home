@@ -8,9 +8,12 @@
  * normalised customer-information parameters, and event de-duplication between
  * the browser pixel and the Conversions API.
  *
- * PRIVACY: this file never sends a condition, product, page title or URL path
- * that would reveal what someone is being treated for. Matching parameters
- * identify a PERSON; they must not describe their health. See COMPLIANCE below.
+ * PRIVACY: matching parameters identify a PERSON and must never describe their
+ * health -- no condition, product or page title is ever passed as customer data.
+ * The page URL is a separate matter and IS sent: Meta receives
+ * origin+pathname as event_source_url, and TikTok's ttq.page() reports the
+ * page. On this site the path names the condition, so treat that as disclosed
+ * to both vendors. See COMPLIANCE below.
  */
 (function (w, d) {
   'use strict';
@@ -239,7 +242,64 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     w.dcaQueue = { push: function (args) { try { track.apply(null, args); } catch (e) {} return 1; } };
     if (q && q.length) for (var i = 0; i < q.length; i++) w.dcaQueue.push(q[i]);
   }
-  function boot() { initPixels(); drainQueue(); }
+
+  // ---------------------------------------------------------------- tiktok
+  // Loaded here rather than pasted into 131 <head> blocks: this file is already
+  // on every page (131/131), it is version-controlled, and a pixel that lives in
+  // one reviewable place can be scoped or pulled in a single edit. GTM was the
+  // alternative and reaches only 124 pages.
+  //
+  // WHAT THIS SENDS. ttq.page() reports the page URL, and on this site the path
+  // IS the condition -- /testosterone-replacement-therapy, /perimenopause,
+  // /womens-hair-loss. That is the same category of data event_source_url
+  // already sends to Meta, so TikTok is one more recipient rather than a new
+  // kind of exposure. It is still worth a compliance read: the FTC has acted
+  // against telehealth companies for exactly this sharing.
+  //
+  // No customer-information parameters are passed. identify() is deliberately
+  // not called -- matching a PERSON to TikTok is a separate decision from
+  // counting a pageview, and it is not this file's to make.
+  var TIKTOK_ID = 'DALCA3JC77UES97566D0';
+
+  function ensureTtq() {
+    if (w.ttq) return w.ttq;
+    w.TiktokAnalyticsObject = 'ttq';
+    var ttq = w.ttq = w.ttq || [];
+    ttq.methods = ['page','track','identify','instances','debug','on','off','once',
+      'ready','alias','group','enableCookie','disableCookie','holdConsent',
+      'revokeConsent','grantConsent'];
+    ttq.setAndDefer = function (o, m) {
+      o[m] = function () { o.push([m].concat(Array.prototype.slice.call(arguments, 0))); };
+    };
+    for (var i = 0; i < ttq.methods.length; i++) ttq.setAndDefer(ttq, ttq.methods[i]);
+    ttq.instance = function (id) {
+      var e = ttq._i[id] || [];
+      for (var n = 0; n < ttq.methods.length; n++) ttq.setAndDefer(e, ttq.methods[n]);
+      return e;
+    };
+    ttq.load = function (id, opts) {
+      var url = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+      ttq._i = ttq._i || {}; ttq._i[id] = []; ttq._i[id]._u = url;
+      ttq._t = ttq._t || {}; ttq._t[id] = +new Date();
+      ttq._o = ttq._o || {}; ttq._o[id] = opts || {};
+      var s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true;
+      s.src = url + '?sdkid=' + id + '&lib=ttq';
+      var f = d.getElementsByTagName('script')[0];
+      f.parentNode.insertBefore(s, f);
+    };
+    return ttq;
+  }
+
+  function initTikTok() {
+    try {
+      var ttq = ensureTtq();
+      ttq.load(TIKTOK_ID);
+      ttq.page();
+    } catch (e) {}   // a broken pixel must never take PageView down with it
+  }
+
+  function boot() { initPixels(); initTikTok(); drainQueue(); }
 
   clickId();                                   // capture fbclid on the landing hit
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', boot);

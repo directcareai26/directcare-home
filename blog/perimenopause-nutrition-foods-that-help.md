@@ -15,7 +15,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## What to eat during perimenopause: the 5 food categories that move symptoms
 
- Hot flashes, sleep disruption, and the recomp that won't recomp aren't separate problems. A clinician's guide to the 5 food categories with published support during the perimenopausal transition.
+ [Hot flashes](https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats), sleep disruption, and the recomp that won't recomp aren't separate problems. A clinician's guide to the 5 food categories with published support during the perimenopausal transition.
 
  Lists the foods most useful in perimenopause: flax (1-2 tbsp/day for lignans), soy (15-25g protein/day for isoflavones), fatty fish (omega-3), cruciferous vegetables (DIM).
 

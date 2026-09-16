@@ -27,7 +27,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Why this matters (especially for women).
 
- **Iron deficiency** is the single most common reversible cause of hair loss, fatigue, and brain fog in women. And most cases sit just below the radar of a routine CBC because ferritin (the actual iron-storage marker) isn't always pulled.
+ **Iron deficiency** is the single most common reversible cause of [hair loss](https://www.directcare.ai/womans-hair-loss), fatigue, and brain fog in women. And most cases sit just below the radar of a routine CBC because ferritin (the actual iron-storage marker) isn't always pulled.
 
  When ferritin is low, the food fix is **non-heme iron sources at consistent daily intake.** Oats, pumpkin seeds, and chia are three of the better-absorbed non-heme sources, and they all live in this jar.
 

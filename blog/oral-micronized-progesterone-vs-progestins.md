@@ -58,7 +58,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  MPA appears to partially counteract estrogen's favorable effects on HDL and endothelial function. Micronized progesterone, in trials like PEPI, was more metabolically neutral. Drospirenone has a mild anti-mineralocorticoid effect (mild diuretic behavior) that can be useful in women who retain water on estrogen. Norethindrone has weak androgenic activity that some women feel as skin or mood changes.
 
- None of this makes progestins "bad." It makes them **different tools** with different profiles. A woman with heavy bleeding on cyclic HRT may do better on a levonorgestrel IUD for local endometrial control. A woman with primary insomnia and anxiety may do dramatically better on oral micronized progesterone at bedtime.
+ None of this makes progestins "bad." It makes them **different tools** with different profiles. A woman with heavy bleeding on cyclic HRT may do better on a levonorgestrel IUD for local endometrial control. A woman with primary [insomnia](https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping) and anxiety may do dramatically better on oral micronized progesterone at bedtime.
 
 ### Cyclic vs. continuous — the dosing question
 

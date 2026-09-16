@@ -19,7 +19,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  PT-141 (bremelanotide) is a synthetic peptide that works in the brain by activating melanocortin receptors, specifically MC3 and MC4, to boost sexual desire. Unlike PDE5 inhibitors, which improve blood flow after arousal is already present, PT-141 targets the brain’s signal for arousal itself. It is FDA-approved for premenopausal women with low sexual desire and used off-label in men when desire is the main issue. It does not replace hormone therapy or fix psychological or relationship problems.
 
- If sildenafil and tadalafil work for you, you don't need to read this post. PDE5 inhibitors are the right answer for most patients with primarily mechanical erectile dysfunction. They're effective, well-studied, and widely available.
+ If sildenafil and tadalafil work for you, you don't need to read this post. PDE5 inhibitors are the right answer for most patients with primarily [mechanical erectile dysfunction](https://www.directcare.ai/erectile-dysfunction). They're effective, well-studied, and widely available.
 
  But PDE5 inhibitors only fix one part of the sexual-response system: the **blood-flow response** to an upstream signal. They don't generate desire. They don't drive arousal at the level of the brain. For patients whose challenge is the upstream signal itself — "the equipment works fine when I want it; the wanting just isn't happening" — PDE5 medication doesn't address the actual problem.
 

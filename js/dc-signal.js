@@ -213,12 +213,67 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
   var TT_ALLOWED = {
     Lead: 1, Purchase: 1, CompleteRegistration: 1, InitiateCheckout: 1,
     AddToCart: 1, AddPaymentInfo: 1, Subscribe: 1, Contact: 1,
-    ViewContent: 1, Search: 1
+    ViewContent: 1, Search: 1, AddToWishlist: 1, PlaceAnOrder: 1,
+    ClickButton: 1, Download: 1
     // PageView is deliberately absent: ttq.page() already reports it at load,
     // and passing it here would double-count every page.
   };
 
-  var TIKTOK_ADVANCED_MATCHING = false;
+  // ------------------------------------------------- tiktok advanced matching
+  //
+  // TIKTOK DOES NOT HASH FOR YOU. Meta's pixel takes plain normalised values and
+  // hashes them in the browser -- that is why matchParams() passes plaintext and
+  // why the comment above it says so. ttq.identify() expects values that are
+  // ALREADY SHA-256 hashed. Handing it stored() directly would put plaintext
+  // email addresses and phone numbers on the wire to TikTok.
+  //
+  // Same normalised input as Meta, so both platforms hash the identical string,
+  // then hashed here with Web Crypto before anything leaves the page.
+  function sha256(str) {
+    try {
+      if (!w.crypto || !w.crypto.subtle) return Promise.resolve(null);  // insecure context
+      var bytes = new TextEncoder().encode(String(str));
+      return w.crypto.subtle.digest('SHA-256', bytes).then(function (buf) {
+        var b = new Uint8Array(buf), out = '';
+        for (var i = 0; i < b.length; i++) out += ('0' + b[i].toString(16)).slice(-2);
+        return out;
+      }).catch(function () { return null; });
+    } catch (e) { return Promise.resolve(null); }
+  }
+
+  // ttq.identify() is sticky: call it once and later events carry the match, so
+  // this runs when identity changes rather than per event -- the pattern
+  // TikTok's own docs show ("add this before event code").
+  var ttIdentified = false;
+  function identifyTikTok() {
+    if (w.dcaOptOut === true) return;
+    var s = stored();
+    Promise.all([
+      s.em ? sha256(s.em) : Promise.resolve(null),
+      s.ph ? sha256(s.ph) : Promise.resolve(null),
+      sha256(externalId())
+    ]).then(function (h) {
+      var payload = {};
+      if (h[0]) payload.email = h[0];
+      if (h[1]) payload.phone_number = h[1];
+      if (h[2]) payload.external_id = h[2];
+      if (!Object.keys(payload).length) return;
+      try { w.ttq && w.ttq.identify(payload); ttIdentified = true; } catch (e) {}
+    });
+  }
+
+  // TikTok's `contents` array.
+  function ttContents(custom) {
+    if (!custom) return null;
+    var id = custom.content_id ||
+             (custom.content_ids && custom.content_ids[0]) ||
+             custom.content_category;
+    if (!id && !custom.content_name) return null;
+    var c = { content_id: String(id || custom.content_name),
+              content_type: custom.content_type || 'product' };
+    if (custom.content_name) c.content_name = custom.content_name;
+    return [c];
+  }
 
   function trackTikTok(eventName, custom, eventId) {
     if (!TT_ALLOWED[eventName]) return;      // not an event we send to TikTok
@@ -226,13 +281,18 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     // but excluded from delivery. ttq.track() has no equivalent field, so the
     // honest equivalent is not to send at all.
     if (w.dcaOptOut === true) return;
+    if (!ttIdentified) identifyTikTok();      // sticky; cheap to attempt again
     var props = {};
-    // value and currency only. content_name and content_category name the
-    // PRODUCT, and the relay's allow-list already strips them from the Meta
-    // server copy precisely so a treatment name never leaves the browser.
-    // TikTok gets the same treatment.
+    // content_name names the PRODUCT, and on this site the product names the
+    // treatment. Meta's browser pixel already receives it -- verified on the
+    // wire, cd[content_name]=Surge Max 90-day -- so withholding it from TikTok
+    // alone bought an inconsistency rather than protection. Both browser pixels
+    // carry it now; neither SERVER copy does, which is the line that matters.
+    var contents = ttContents(custom);
+    if (contents) props.contents = contents;
     if (custom && typeof custom.value !== 'undefined') props.value = custom.value;
     if (custom && custom.currency) props.currency = custom.currency;
+    if (custom && custom.search_string) props.search_string = custom.search_string;
     try {
       w.ttq && w.ttq.track(eventName, props, { event_id: eventId });
     } catch (e) {}
@@ -267,6 +327,7 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
   w.dcaIdentify = function (data) {
     remember(normalise(data));
     initPixels();                              // re-init so later events carry the match
+    ttIdentified = false; identifyTikTok();    // re-hash and re-identify for TikTok
     return true;
   };
   w.dcaTrack = track;
@@ -342,7 +403,7 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     } catch (e) {}   // a broken pixel must never take PageView down with it
   }
 
-  function boot() { initPixels(); initTikTok(); drainQueue(); }
+  function boot() { initPixels(); initTikTok(); identifyTikTok(); drainQueue(); }
 
   clickId();                                   // capture fbclid on the landing hit
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', boot);

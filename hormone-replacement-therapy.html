@@ -598,6 +598,17 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .faq[open] summary::after { content: "−"; }
   .faq .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
 
+  /* Related guides — navigational only; existing article titles, no clinical copy. */
+  .faq-related { margin: 22px 0 0; }
+  .faq-related h3 { font-size: 0.82rem; letter-spacing: 0.10em; text-transform: uppercase;
+    color: var(--muted); font-weight: 700; margin: 0 0 10px; }
+  .faq-related ul { list-style: none; margin: 0; padding: 0; }
+  .faq-related li { margin: 0 0 9px; line-height: 1.45; }
+  .faq-related a { color: var(--brand-deep, var(--brand)); text-decoration: none;
+    border-bottom: 1px solid var(--line); font-size: 0.95rem; }
+  .faq-related a:hover, .faq-related a:focus-visible { border-bottom-color: currentColor; }
+
+
   /* FINAL CTA */
   .final-cta { position: relative; background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
   @keyframes aurora-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
@@ -2211,6 +2222,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <span class="eyebrow"><span class="dot"></span> Frequently Asked</span>
       <h2>Still have <span class="accent">questions?</span></h2>
       <p>Short, direct answers, from intake to side effects. Have one we missed? Message a clinician once you're inside.</p>
+        <nav class="faq-related" aria-label="Related guides">
+          <h3>Related guides</h3>
+          <ul>
+            <li><a href="/blog/perimenopause-vs-menopause-lab-values">Perimenopause vs. Menopause: Lab Values and what they mean</a></li>
+            <li><a href="/blog/estradiol-patch-vs-gel-vs-pellet-vs-pill">Estradiol delivery: patch, gel, pellet, or pill? How a clinician actually decides</a></li>
+            <li><a href="/blog/oral-micronized-progesterone-vs-progestins">Micronized Progesterone vs. Progestins: why it matters</a></li>
+            <li><a href="/blog/vaginal-estradiol-gsm-most-underprescribed-hrt">Vaginal estradiol for GSM: the most under-prescribed protocol in women&#x27;s health</a></li>
+            <li><a href="/blog/hrt-after-40-what-actually-changes">HRT after 40: what actually changes when estradiol and progesterone come back online</a></li>
+          </ul>
+        </nav>
+
       </aside>
 
       <div class="faq-grid">

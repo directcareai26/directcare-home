@@ -67,10 +67,22 @@ RESULTS_DIR.mkdir(exist_ok=True)
 
 # ---------------------------- Brand parsing -------------------------------
 
-def parse_mentions(text: str, brand_terms: list[str], competitors: list[str]) -> dict:
-    """Return {brand_hits, competitor_hits, position} for a single response."""
+def parse_mentions(text: str, brand_terms: list[str], competitors: list[str],
+                   prompt: str = "") -> dict:
+    """Return {brand_hits, competitor_hits, position} for a single response.
+
+    A mention only counts as AI *visibility* when the engine raised the brand on its
+    own. If the prompt already names DirectCare AI ("Is DirectCare AI legitimate?"),
+    the answer naturally repeats it, and counting that inflates the metric to a
+    constant. Every run from 2026-05-25 to 2026-09-14 reported exactly 20/140 (14%)
+    — all 20 from the 5 branded prompts x 4 engines, and 0 earned mentions on the
+    120 non-brand prompts. `earned_mention` is the honest number to trend.
+    """
     if not text:
-        return {"brand_hits": 0, "competitors": {}, "position": None, "first_mention_idx": None}
+        return {"brand_hits": 0, "competitors": {}, "position": None,
+                "first_mention_idx": None, "prompt_is_branded": False,
+                "earned_mention": False}
+    prompt_is_branded = any(t.lower() in (prompt or "").lower() for t in brand_terms)
     lower = text.lower()
     brand_hits = 0
     first_idx = None
@@ -101,6 +113,9 @@ def parse_mentions(text: str, brand_terms: list[str], competitors: list[str]) ->
         "competitors": competitor_hits,
         "position": position,
         "first_mention_idx": first_idx,
+        # True only when the prompt did NOT name the brand and the engine did.
+        "prompt_is_branded": prompt_is_branded,
+        "earned_mention": bool(brand_hits) and not prompt_is_branded,
     }
 
 
@@ -329,7 +344,7 @@ def run(args) -> int:
                 continue
             print(f"  → {engine:<11}  {vertical:<14}  {prompt[:60]}...")
             text, citations, err = ENGINES[engine](prompt)
-            mentions = parse_mentions(text, brand_terms, competitors)
+            mentions = parse_mentions(text, brand_terms, competitors, prompt)
             cit_has_dcai = bool(citations and any("directcare.ai" in c.lower() for c in citations))
             runs.append({
                 "date": today,

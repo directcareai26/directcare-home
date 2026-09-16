@@ -87,7 +87,7 @@ You get a Care Coach.
 
 - Clinician-titrated dosing
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - Injection supplies included
 
@@ -107,7 +107,7 @@ You get a Care Coach.
 
 - Clinician-titrated dosing
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - All injection supplies included
 
@@ -130,7 +130,7 @@ You get a Care Coach.
 
 - Full titration arc included
 
-- Bi-weekly 1:1 Care Coaching
+- Monthly 1:1 Care Coaching — more often on request
 
 - All injection supplies included
 
@@ -152,7 +152,7 @@ You get a Care Coach.
 
 - Full titration + maintenance arc
 
-- Bi-weekly 1:1 Care Coaching all year
+- Monthly 1:1 Care Coaching all year — more often on request
 
 - All injection supplies included
 
@@ -327,6 +327,6 @@ Provider Network
  Treatment is only available where state law permits and only after evaluation by a US-licensed clinician. We can prescribe in most US states; your eligibility is confirmed during the free evaluation.
 
  From $269/mo
- Compounded tirzepatide + bi-weekly Care Coaching
+ Compounded tirzepatide + monthly Care Coaching
 
  [Get Started →](https://www.directcare.ai/weight-loss/start)

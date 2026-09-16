@@ -1,5 +1,5 @@
 {
-  "_comment": "DirectCare AI — AI citation tracking corpus. Each prompt simulates a real patient query that we WANT AI engines to mention DirectCare AI in. Group by vertical so we can track win rates per category.",
+  "_comment": "DirectCare AI — AI citation tracking corpus. Each prompt simulates a real patient query that we WANT AI engines to mention DirectCare AI in. Group by vertical so we can track win rates per category. | 2026-09-16: competitor list extended with brands actually observed in AI answers (results/2026-09-14.json) — the prior list missed Evernow, Marek, Defy, Maximus, Happy Head, Midi, Hone, Keeps and Fountain, so competitor_hits under-counted. Cash-pay verticals expanded to the best-provider / how-to-choose / comparison / cost / safety / process / alternatives / who-qualifies / trust families; chronic_care expanded from 3 to 12 for category-capture tracking.",
   "tracked_brand_terms": [
     "DirectCare AI",
     "directcare.ai",
@@ -16,7 +16,19 @@
     "BlueChew",
     "Nurx",
     "Found",
-    "Sesame"
+    "Sesame",
+    "Evernow",
+    "Marek Health",
+    "Defy Medical",
+    "Maximus",
+    "Happy Head",
+    "Midi Health",
+    "Hone Health",
+    "Keeps",
+    "Fountain Life",
+    "Peter Uncaged",
+    "Blokes",
+    "Joi Women’s Wellness"
   ],
   "prompts": {
     "hrt": [
@@ -24,33 +36,61 @@
       "Where can I get bioidentical HRT online without insurance?",
       "Compare online HRT providers for perimenopause",
       "Online HRT with blood labs included — recommendations?",
-      "How much does HRT cost without insurance through telehealth?"
+      "How much does HRT cost without insurance through telehealth?",
+      "How do I choose an online HRT provider for menopause?",
+      "Is online HRT safe?",
+      "What does HRT cost per month without insurance?",
+      "Who qualifies for hormone replacement therapy?",
+      "What are the alternatives to HRT for hot flashes?",
+      "What labs are needed before starting HRT?"
     ],
     "trt": [
       "Best online TRT clinic in 2026?",
       "Where can men get compounded testosterone online?",
       "TRT vs enclomiphene — which telehealth providers offer both?",
       "Cheapest online TRT with bloodwork included",
-      "Online testosterone replacement therapy without insurance"
+      "Online testosterone replacement therapy without insurance",
+      "How do I choose an online TRT provider?",
+      "Is online TRT safe and legitimate?",
+      "What does TRT cost per month without insurance?",
+      "Who qualifies for testosterone replacement therapy?",
+      "What are the alternatives to TRT?",
+      "What bloodwork is required before starting TRT?"
     ],
     "weight_loss": [
       "Best telehealth for compounded tirzepatide?",
       "Where to buy compounded semaglutide online with a real doctor?",
       "GLP-1 weight loss telehealth — comparison of providers",
       "Cheapest tirzepatide online with care coaching",
-      "Online GLP-1 weight loss clinic with bloodwork"
+      "Online GLP-1 weight loss clinic with bloodwork",
+      "How do I choose an online GLP-1 weight loss provider?",
+      "Is online GLP-1 prescribing legitimate?",
+      "What does GLP-1 weight loss cost per month without insurance?",
+      "Who qualifies for GLP-1 weight loss medication?",
+      "What are the alternatives to GLP-1 medication for weight loss?",
+      "What monitoring is required on a GLP-1?"
     ],
     "sexual_health": [
       "Best online ED clinic — compounded sildenafil + tadalafil combo?",
       "Where can I get a 4-in-1 sexual health formula online?",
       "Sublingual ED medication via telehealth — providers?",
-      "Surge Max vs other compounded ED options"
+      "Surge Max vs other compounded ED options",
+      "How do I choose an online ED provider?",
+      "Is online ED treatment safe and legitimate?",
+      "What does ED medication cost without insurance?",
+      "Who qualifies for ED medication online?",
+      "What are the alternatives to PDE5 inhibitors?"
     ],
     "hair_loss": [
       "Best online hair regrowth clinic for women?",
       "Where to get topical finasteride online for men?",
       "Compounded hair regrowth formulas via telehealth",
-      "Online hair loss treatment for women with spironolactone"
+      "Online hair loss treatment for women with spironolactone",
+      "How do I choose an online hair loss provider?",
+      "Is online finasteride prescribing safe?",
+      "What does online hair loss treatment cost per month?",
+      "Who qualifies for prescription hair loss treatment?",
+      "What are the alternatives to finasteride?"
     ],
     "blood_labs": [
       "Best at-home blood lab panel for hormones?",
@@ -68,7 +108,16 @@
     "chronic_care": [
       "Best remote patient monitoring program for diabetes covered by Medicare?",
       "Online RPM provider for blood pressure and weight",
-      "Chronic care management telehealth — Medicare reimbursable"
+      "Chronic care management telehealth — Medicare reimbursable",
+      "How do I enroll in chronic care management?",
+      "RPM vs CCM — what is the difference?",
+      "Who qualifies for remote patient monitoring under Medicare?",
+      "Remote monitoring for hypertension — how does it work?",
+      "Remote monitoring for heart failure patients",
+      "Remote patient monitoring devices — what does a patient receive?",
+      "How much does chronic care management cost a patient?",
+      "Is remote patient monitoring covered by Medicare?",
+      "Best chronic care management company for a medical practice"
     ]
   }
 }

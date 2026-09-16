@@ -83,8 +83,8 @@ form button:hover{transform:translateY(-2px)}
 
       <div class="formlabel">Want to know when we expand? Join the list:</div>
       <form id="waitForm" onsubmit="return notify(event)">
-        <input type="text" name="first_name" placeholder="First name (optional)" autocomplete="given-name" />
-        <input type="email" name="email" placeholder="you@email.com" required />
+        <input type="text" name="first_name" placeholder="First name (optional)" autocomplete="given-name" aria-label="First name" />
+        <input type="email" name="email" placeholder="you@email.com" required aria-label="Email address" />
         <input type="hidden" name="country" id="fCountry" />
         <input type="hidden" name="region" id="fRegion" />
         <button type="submit">Notify me</button>

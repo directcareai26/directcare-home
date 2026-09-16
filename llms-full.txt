@@ -4,19 +4,25 @@
 > can read the whole site in one request. Generated from sitemap.xml; see
 > llms.txt for the short curated index.
 
-Pages: 134
+Pages: 140
 
 ## Contents
 
 - [DirectCare AI | GLP-1, HRT, TRT & Hair Loss | US-Licensed Clinicians](https://www.directcare.ai/)
 - [Hormone Replacement Therapy (HRT) for Women, DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy)
+- [Start Your HRT Evaluation · DirectCare AI](https://www.directcare.ai/hormone-replacement-therapy/start)
 - [Contact DirectCare AI — Phone, Address & Pharmacy Partners](https://www.directcare.ai/contact)
 - [Cancellation & Refund Policy | DirectCare AI](https://www.directcare.ai/refund-policy)
 - [TRT for Men: Testosterone Replacement Therapy | DirectCare AI](https://www.directcare.ai/testosterone-replacement-therapy)
+- [Start Your TRT Evaluation · DirectCare AI](https://www.directcare.ai/testosterone-replacement-therapy/start)
 - [GLP-1 Weight Loss Online — Tirzepatide | DirectCare AI](https://www.directcare.ai/weight-loss)
+- [Start Your Weight Loss Evaluation · DirectCare AI](https://www.directcare.ai/weight-loss/start)
 - [ED Treatment Online — Surge Max 4-in-1 | DirectCare AI](https://www.directcare.ai/surge-max)
+- [Start Your ED Evaluation · DirectCare AI](https://www.directcare.ai/surge-max/start)
 - [Men's Hair Loss: Finasteride & Minoxidil | DirectCare AI](https://www.directcare.ai/mens-hair-loss)
+- [Start Your Men's Hair Loss Evaluation · DirectCare AI](https://www.directcare.ai/mens-hair-loss/start)
 - [Women's Hair Loss: Minoxidil, Spironolactone | DirectCare AI](https://www.directcare.ai/womans-hair-loss)
+- [Start Your Women's Hair Loss Evaluation · DirectCare AI](https://www.directcare.ai/womans-hair-loss/start)
 - [Blood Labs & Biomarker Testing | DirectCare AI](https://www.directcare.ai/blood-test)
 - [Supplements & Wellness Plans | DirectCare AI](https://www.directcare.ai/supplements)
 - [Remote Patient Monitoring & Chronic Care | DirectCare AI](https://www.directcare.ai/chronic-care)
@@ -652,6 +658,29 @@ Provider Network
 
 ---
 
+# Start Your HRT Evaluation · DirectCare AI
+
+> Private, clinician-reviewed hormone replacement therapy (HRT) evaluation for women. Personalized care, delivered discreetly.
+
+Source: https://www.directcare.ai/hormone-replacement-therapy/start
+
+Hormone Health · HRT for Women
+
+## Hormone care, personalized .
+
+ A private hormone evaluation reviewed by **US-licensed clinicians**. If appropriate, personalized therapy shipped discreetly.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
+
+
+---
+
 # Contact DirectCare AI — Phone, Address & Pharmacy Partners
 
 > Contact DirectCare AI: phone, email, mailing address, our US-licensed pharmacy partners, and where our services are available.
@@ -1125,6 +1154,29 @@ Provider Network
 
 ---
 
+# Start Your TRT Evaluation · DirectCare AI
+
+> Private, clinician-reviewed testosterone (TRT) evaluation. Lab work when appropriate. No in-person visit required.
+
+Source: https://www.directcare.ai/testosterone-replacement-therapy/start
+
+Hormone Health · Testosterone (TRT)
+
+## Feel like yourself again.
+
+ A private evaluation for symptoms of low testosterone — reviewed by **US-licensed clinicians**. Lab work when appropriate. No in-person visit.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
+
+
+---
+
 # GLP-1 Weight Loss Online — Tirzepatide | DirectCare AI
 
 > Lose weight with compounded tirzepatide, prescribed online by US-licensed clinicians and paired with 1:1 care coaching. From $269/mo. No insurance needed.
@@ -1416,6 +1468,29 @@ from intake to your door.
  Compounded tirzepatide + monthly Care Coaching
 
  [Get Started →](https://www.directcare.ai/weight-loss/start)
+
+
+---
+
+# Start Your Weight Loss Evaluation · DirectCare AI
+
+> Private, clinician-reviewed weight loss evaluation. GLP-1 and metabolic care if appropriate, delivered discreetly.
+
+Source: https://www.directcare.ai/weight-loss/start
+
+Metabolic Health · Weight
+
+## A healthier weight, guided by clinicians.
+
+ A private evaluation reviewed by **US-licensed clinicians**. If appropriate, GLP-1 and metabolic care, delivered discreetly.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
 
 
 ---
@@ -1776,6 +1851,29 @@ Your treatment shouldn't either.
  No charge if you don't qualify
 
  [Get Started →](https://www.directcare.ai/surge-max/start)
+
+
+---
+
+# Start Your ED Evaluation · DirectCare AI
+
+> Private, clinician-reviewed erectile dysfunction (ED) evaluation. No video visit. Discreet, free shipping.
+
+Source: https://www.directcare.ai/surge-max/start
+
+Sexual Health · Erectile Dysfunction
+
+## Get back to confident.
+
+ A private, 3-minute evaluation — reviewed by **US-licensed clinicians**. No video visit. Discreet, free shipping.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
 
 
 ---
@@ -2174,6 +2272,29 @@ almost never works.
 
 ---
 
+# Start Your Men's Hair Loss Evaluation · DirectCare AI
+
+> Private, clinician-reviewed men's hair loss evaluation. Proven treatments, delivered discreetly.
+
+Source: https://www.directcare.ai/mens-hair-loss/start
+
+Hair · Men
+
+## Get ahead of hair loss.
+
+ A private, clinician-reviewed evaluation for men's hair loss. If appropriate, treatment ships free in discreet packaging.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
+
+
+---
+
 # Women's Hair Loss: Minoxidil, Spironolactone | DirectCare AI
 
 > Personalized hair regrowth for women — minoxidil, spironolactone, dutasteride and biotin, prescribed online by US-licensed clinicians.
@@ -2524,6 +2645,29 @@ Grow It Back.
  No charge if you don't qualify
 
  [Find My Protocol →](https://www.directcare.ai/womans-hair-loss/start)
+
+
+---
+
+# Start Your Women's Hair Loss Evaluation · DirectCare AI
+
+> Private, clinician-reviewed women's hair loss evaluation. Personalized treatment, delivered discreetly.
+
+Source: https://www.directcare.ai/womans-hair-loss/start
+
+Hair · Women
+
+## Support fuller-looking hair.
+
+ A private, clinician-reviewed evaluation for women's hair loss. If appropriate, personalized treatment ships discreetly.
+
+ 🔒
+ Secure & confidential intake
+ HIPAA
+
+ Loading your secure intake…
+
+ Prescription treatment requires an online evaluation and approval by a licensed clinician. Not everyone qualifies, and individual results vary. This page is for educational purposes and is not medical advice.
 
 
 ---

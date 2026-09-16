@@ -547,7 +547,7 @@
     },
     {
       "source": "/blog/dutasteride-vs-finasteride-aggressive-hair-loss",
-      "destination": "/blog/dutasteride-vs-finasteride-aggressive-dht-blockade",
+      "destination": "/blog/dutasteride-vs-finasteride-when-to-step-up",
       "permanent": true
     },
     {
@@ -623,6 +623,31 @@
     {
       "source": "/blog/magnesium-glycinate-vs-citrate-which-form",
       "destination": "/blog/magnesium-glycinate-vs-citrate-vs-threonate",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sildenafil-vs-tadalafil-pde5-comparison",
+      "destination": "/blog/sildenafil-vs-tadalafil-daily-vs-on-demand",
+      "permanent": true
+    },
+    {
+      "source": "/blog/sildenafil-vs-tadalafil-how-to-choose",
+      "destination": "/blog/sildenafil-vs-tadalafil-daily-vs-on-demand",
+      "permanent": true
+    },
+    {
+      "source": "/blog/dutasteride-vs-finasteride-aggressive-dht-blockade",
+      "destination": "/blog/dutasteride-vs-finasteride-when-to-step-up",
+      "permanent": true
+    },
+    {
+      "source": "/blog/trt-hematocrit-why-blood-thickens-when-to-donate",
+      "destination": "/blog/hematocrit-on-trt-blood-donation-frequency",
+      "permanent": true
+    },
+    {
+      "source": "/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include",
+      "destination": "/blog/apob-vs-ldl-cholesterol-cardiologists-ask",
       "permanent": true
     }
   ],

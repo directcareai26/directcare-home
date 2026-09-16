@@ -59,6 +59,18 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     return v;
   }
 
+  // ttclid is TikTok's fbclid. Same rule: capture it on the landing hit or it is
+  // gone. _ttp is written by TikTok's own SDK, so it is only read, never set.
+  function ttClickId() {
+    var existing = getCookie('_ttclid');
+    if (existing) return existing;
+    var m = location.search.match(/[?&]ttclid=([^&]+)/);
+    if (!m) return null;
+    var v = decodeURIComponent(m[1]);
+    setCookie('_ttclid', v, 90);
+    return v;
+  }
+
   // ---------------------------------------------- normalisation (Meta spec)
   var N = {
     em: function (v) { return String(v).trim().toLowerCase(); },
@@ -167,6 +179,58 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
       } else {
         fetch('/api/meta-capi', { method: 'POST', headers: { 'Content-Type': 'application/json' },
                                   body: body, keepalive: true }).catch(function () {});
+      }
+    } catch (e) {}
+  }
+
+  // The TikTok server copy. Sent separately from the Meta one and to its own
+  // endpoint: these are different vendors with different outage modes, and the
+  // Meta relay carries revenue reporting today. One must not be able to break
+  // the other.
+  //
+  // Identity goes out PLAIN here and is hashed server-side, exactly as the Meta
+  // relay does it -- the browser pixel hashes its own copy separately. Both
+  // hashes are taken over the same normalised string, so they agree.
+  //
+  // _ttp is written by TikTok's SDK when it loads, and ViewContent fires at boot
+  // -- before that. The Meta half of this file already learned this lesson with
+  // _fbp (server PageView carried it on 7.8% of hits until it waited), so the
+  // same wait applies here rather than shipping the same gap twice.
+  function postTikTok(eventName, custom, eventId) {
+    if (!TT_ALLOWED[eventName]) return;
+    if (w.dcaOptOut === true) return;
+    if (!getCookie('_ttp')) {
+      var tries = 0;
+      var poll = setInterval(function () {
+        if (getCookie('_ttp') || ++tries >= 60) {   // 6s, past the SDK's own load
+          clearInterval(poll);
+          sendTikTok(eventName, custom, eventId);
+        }
+      }, 100);
+      return;
+    }
+    sendTikTok(eventName, custom, eventId);
+  }
+
+  function sendTikTok(eventName, custom, eventId) {
+    try {
+      var body = JSON.stringify({
+        event_name: eventName,
+        event_id: eventId,
+        event_source_url: location.origin + location.pathname,
+        referrer_url: (d.referrer || '').split('?')[0] || undefined,
+        custom_data: custom || {},
+        user_data: Object.assign({}, stored(), {
+          external_id: externalId(),
+          ttp: getCookie('_ttp') || null,
+          ttclid: ttClickId() || null
+        })
+      });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/tiktok-capi', new Blob([body], { type: 'application/json' }));
+      } else {
+        fetch('/api/tiktok-capi', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+                                    body: body, keepalive: true }).catch(function () {});
       }
     } catch (e) {}
   }
@@ -306,6 +370,7 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     var custom = customData || {};
     try { w.fbq && w.fbq('track', eventName, custom, { eventID: eventId }); } catch (e) {}
     trackTikTok(eventName, custom, eventId);
+    postTikTok(eventName, custom, eventId);
     postWhenReady({
       event_name: eventName,
       event_id: eventId,                       // same id both sides => Meta dedupes
@@ -403,9 +468,47 @@ var PIXELS = ['1068250912518605', '1567193354573862'];
     } catch (e) {}   // a broken pixel must never take PageView down with it
   }
 
-  function boot() { initPixels(); initTikTok(); identifyTikTok(); drainQueue(); }
+  // ------------------------------------------------------- ViewContent
+  // TikTok's guidance for ViewContent is "pages important to your business".
+  // Here that is the programme pages, and it is the third event they ask for --
+  // Lead and Purchase are the only other two this site genuinely fires, and
+  // inventing a fourth we do not actually observe would be worse than sending
+  // three we do.
+  //
+  // Driven from a path map rather than a call pasted into each page, so adding
+  // a programme is one line here instead of an edit to another HTML file.
+  //
+  // This discloses nothing ttq.page() has not already sent: the URL on these
+  // pages names the programme either way. What it adds is structure TikTok can
+  // optimise against.
+  var PROGRAMS = {
+    '/testosterone-replacement-therapy': ['trt', 'Testosterone Replacement Therapy'],
+    '/hormone-replacement-therapy':      ['hrt', 'Hormone Replacement Therapy'],
+    '/perimenopause':                    ['perimenopause', 'Perimenopause'],
+    '/mens-health':                      ['mens-health', "Men's Health"],
+    '/womens-health':                    ['womens-health', "Women's Health"],
+    '/peptides':                         ['peptides', 'Peptide Therapy'],
+    '/blood-test':                       ['blood-labs', 'Blood Labs'],
+    '/weight-loss':                      ['weight-loss', 'Weight Loss'],
+    '/womens-weight-loss':               ['womens-weight-loss', "Women's Weight Loss"],
+    '/womans-hair-loss':                 ['womens-hair-loss', "Women's Hair Loss"],
+    '/chronic-care':                     ['chronic-care', 'Chronic Care'],
+    '/surge-max':                        ['surge-max', 'Surge Max']
+  };
+
+  function viewContent() {
+    // trailing slash and .html both reach the same page on this host
+    var path = location.pathname.replace(/\/index\.html$/, '').replace(/\.html$/, '')
+                                .replace(/\/$/, '') || '/';
+    var prog = PROGRAMS[path];
+    if (!prog) return;
+    track('ViewContent', { content_id: prog[0], content_type: 'product', content_name: prog[1] });
+  }
+
+  function boot() { initPixels(); initTikTok(); identifyTikTok(); drainQueue(); viewContent(); }
 
   clickId();                                   // capture fbclid on the landing hit
+  ttClickId();                                 // and ttclid, same reason
   if (d.readyState === 'loading') d.addEventListener('DOMContentLoaded', boot);
   else boot();
 

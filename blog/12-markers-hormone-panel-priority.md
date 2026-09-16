@@ -53,7 +53,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  **10. Vitamin D (25-OH).** Almost everyone is deficient. Target 50 to 80 ng/mL. Under 30 affects bone, mood, immune function, and hormone receptor sensitivity.
 
- **11. Ferritin.** Iron stores. Critical for women (drives hair loss, fatigue) and underweighted in men (low ferritin can mask hidden bleeding). We want it 50 to 150.
+ **11. Ferritin.** Iron stores. Critical for women (drives [hair loss](https://www.directcare.ai/womans-hair-loss), fatigue) and underweighted in men (low ferritin can mask hidden bleeding). We want it 50 to 150.
 
  **12. hs-CRP.** High-sensitivity C-reactive protein. The cleanest single marker of systemic inflammation. Under 1.0 is ideal. Over 3.0 is a flag. And inflammation undermines almost every protocol we'd prescribe.
 

@@ -47,7 +47,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### Why the same symptom means different things in each phase
 
- Hot flashes, sleep disruption, mood changes, and brain fog show up in both windows. But the mechanism differs.
+ [Hot flashes](https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats), sleep disruption, mood changes, and brain fog show up in both windows. But the mechanism differs.
 
  In perimenopause, symptoms are often driven by **rapid estradiol swings** — the brain reacts more to the delta than the absolute number. A woman with an estradiol of 180 pg/mL can still flash if she was at 380 last week.
 

@@ -15,7 +15,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## How to Get ED Medication Prescribed Online safely and honestly
 
- Online ED care is legitimate when the clinician asks the right questions — and dangerous when they don't. Here are the health questions a prescriber should cover before a PDE5 inhibitor ever reaches your door.
+ [Online ED care](https://www.directcare.ai/erectile-dysfunction) is legitimate when the clinician asks the right questions — and dangerous when they don't. Here are the health questions a prescriber should cover before a PDE5 inhibitor ever reaches your door.
 
  Getting ED medication prescribed online safely means a clinician screens for cardiovascular disease, reviews your full medication list for nitrate and alpha-blocker interactions, asks about diabetes, low testosterone symptoms, and mental health, and confirms the erectile dysfunction pattern itself before choosing a PDE5 inhibitor and starting dose.
 

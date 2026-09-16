@@ -352,7 +352,7 @@ Source: https://www.directcare.ai/blood-test
 
  [Order My Panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
 
- ![Dr. Tim Pepin, D.C., Clinical Advisor]
+ ![Dr. Tim Pepin, Clinical Advisor]
 
  Clinical leadership
 

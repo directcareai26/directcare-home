@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Hair Regrowth
 
  June 5, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-09-13
 
 ## Dutasteride vs. finasteride: when men should consider the more aggressive 5-alpha reductase blocker
 

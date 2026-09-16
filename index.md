@@ -78,7 +78,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  ![DirectCare AI Prescription Savings Card]
 
- ![Dr. Tim Pepin, D.C., Clinical Advisor]
+ ![Dr. Tim Pepin, Clinical Advisor]
 
  Clinical leadership
 

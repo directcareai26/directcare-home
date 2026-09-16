@@ -165,7 +165,7 @@ Source: https://www.directcare.ai/womens-health
 
  Hair Regrowth · 5 months
 
- ![Dr. Tim Pepin, D.C., Clinical Advisor]
+ ![Dr. Tim Pepin, Clinical Advisor]
 
  Clinical leadership
 

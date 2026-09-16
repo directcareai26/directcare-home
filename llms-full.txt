@@ -677,6 +677,8 @@ Free clinician consult · US-licensed providers · Shipped to your door —
 
 - Privacy requests privacy@directcareai.com
 
+- Press & media pr@directcareai.com
+
 - Certification DirectCare AI is LegitScript-certified and HIPAA-compliant. You can verify our LegitScript certification at [legitscript.com](https://www.legitscript.com/websites/?checker_keywords=directcare.ai).
 
  **Email and web forms are not secure channels** — please do not include personal health information in an email or form; use your patient portal for anything about your care.

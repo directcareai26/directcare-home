@@ -4,3 +4,4 @@ scripts/question-mining/
 content-queue/
 .github/workflows/daily-question-mining.yml
 blog/_post-template.html
+scripts/lp/

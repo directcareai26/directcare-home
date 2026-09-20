@@ -1,3 +1,8 @@
+# ⚠️  STALE — DO NOT RUN WITHOUT RECONCILING FIRST (checked 2026-09-19).
+# The generated pages in ~/directcare-home/surge/f1..f5 have been edited DIRECTLY since
+# this file last changed (Ahrefs analytics tag 09-14, brand tokens 09-16). Running this
+# script overwrites those edits and reverts the pages to the generator's older output.
+# Reconcile the on-disk HTML back into these functions before regenerating.
 # -*- coding: utf-8 -*-
 import json, pathlib, sys
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
@@ -9,7 +14,7 @@ IMG = "/optimized/%s-1200.webp"
 
 QUIZ_STEPS = [
   {"k":"goal",   "q":"What do you want to fix first?",            "a":["Getting hard","Staying hard","Both"]},
-  {"k":"tried",  "q":"Have you tried Viagra or Cialis before?",   "a":["Yes, they worked","Yes, they didn't","Never tried"]},
+  {"k":"tried",  "q":"Have you tried ED tablets before?",   "a":["Yes, they worked","Yes, they didn't","Never tried"]},
   {"k":"matters","q":"What matters most to you?",                 "a":["Works fast","Lasts through the weekend","Nothing to swallow","Discreet delivery"]},
   {"k":"setting","q":"Would you rather handle this without a waiting room?", "a":["Yes","Doesn't matter"]},
 ]
@@ -44,14 +49,14 @@ def trust_row(plum=False):
 
 # ---------------------------------------------------------------- f1 quiz-first
 def f1():
-    s  = head("Surge Max — see if you qualify", "Four medications in one liquid dose. Free evaluation, reviewed by a US-licensed clinician.", "f1")
+    s  = head("Surge Max — see if you qualify", "Four active ingredients in one liquid dose. Free evaluation, reviewed by a US-licensed clinician.", "f1")
     s += '<div class="bar">100% online &middot; free rush shipping &middot; plain packaging</div>'
     s += f'<header class="nav"><div class="wrap"><img src="{LOGO_D}" alt="DirectCare AI"></div></header>'
     s += f"""<section data-hero class="hero">
       <img class="heroimg" src="{IMG % 'the-strength-couple'}" alt="" fetchpriority="high">
       <div class="wrap inner"><div class="grid2">
         <div>
-          <h1>Four medications.<br>One liquid dose.<br>Ninety seconds.</h1>
+          <h1>Four active ingredients.<br>One liquid dose.<br>Ninety seconds.</h1>
           <p class="lede">SURGE MAX is a rapid-absorb liquid &mdash; no pill to swallow, no waiting around for it
             to work. A US-licensed clinician reviews your evaluation within 24 hours.</p>
           <div class="card" style="display:flex;gap:16px;align-items:center;margin:18px 0 0">
@@ -59,7 +64,7 @@ def f1():
               style="width:92px;height:112px;object-fit:cover;border-radius:12px" loading="lazy">
             <div><b style="font-size:17px">SURGE MAX 10-pack</b>
               <div style="color:#6d28d9;font-weight:700">$179 &middot; $17.90 a dose</div>
-              <div class="tiny">Sildenafil 40 &middot; Tadalafil 11 &middot; Vardenafil 7.5 &middot; Apomorphine 2</div></div>
+              <div class="tiny">Four active ingredients &middot; rapid-absorb sublingual &middot; clinician-prescribed</div></div>
           </div>
         </div>
         <div id="quizTop" style="margin-top:22px">{hero_cta()}</div>
@@ -135,14 +140,14 @@ def f2():
 
 # ---------------------------------------------------------------- f3 product drop
 def f3():
-    s  = head("Surge Max — the 4-in-1 liquid", "Four medications in one dose. Absorbs in about 90 seconds.", "f3", dark=True)
+    s  = head("Surge Max — the 4-in-1 liquid", "Four active ingredients in one dose. Absorbs in about 90 seconds.", "f3", dark=True)
     s += f'<header class="nav ink"><div class="wrap"><img src="{LOGO_W}" alt="DirectCare AI"></div></header>'
     s += f"""<section data-hero class="ink"><div class="wrap split">
       <div class="hero-img" style="background:#241432"><img src="{IMG % 'surge-max-vial-dark'}" alt="SURGE MAX single-dose vial" style="aspect-ratio:1/1" fetchpriority="high"></div>
       <div>
         <p style="color:#f3c969;font-weight:800;letter-spacing:.18em;font-size:12px;margin:0 0 12px">THE 4-IN-1 LIQUID</p>
-        <h1 style="color:#fff">Four medications.<br>One dose.<br>Ninety seconds.</h1>
-        <p style="color:#a495b2">Sildenafil 40 &middot; Tadalafil 11 &middot; Vardenafil 7.5 &middot; Apomorphine 2</p>
+        <h1 style="color:#fff">Four active ingredients.<br>One dose.<br>Ninety seconds.</h1>
+        <p style="color:#a495b2">Four active ingredients &middot; one rapid-absorb dose &middot; clinician-prescribed</p>
         <div style="display:flex;gap:14px;align-items:center;margin:20px 0">
           <span class="price" style="color:#fff">$179</span>
           <span class="tiny" style="font-size:14px;color:#a495b2">10-pack &middot; $17.90 a dose<br>Clinician review + free shipping included</span>
@@ -216,7 +221,7 @@ def f5():
             ("&ldquo;Is this legitimate?&rdquo;",
              "LegitScript-certified, US-licensed clinicians, compounded by a licensed US pharmacy. Not a supplement, not a grey-market site."),
             ("&ldquo;Why not just the usual pill?&rdquo;",
-             "One dose covers four medications and absorbs in about 90 seconds instead of waiting on a tablet to work.")]
+             "One dose covers four active ingredients and absorbs in about 90 seconds instead of waiting on a tablet to work.")]
     cards = "".join(f'<div class="card"><h3>{q}</h3><p class="tiny">{a}</p></div>' for q, a in objs)
     s  = head("Surge Max — if a clinician says no, you don't pay", "LegitScript certified, US-licensed clinicians, licensed US pharmacy.", "f5")
     s += f'<header class="nav"><div class="wrap"><img src="{LOGO_D}" alt="DirectCare AI"></div></header>'

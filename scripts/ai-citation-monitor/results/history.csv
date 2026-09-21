@@ -2379,3 +2379,291 @@ date,engine,vertical,prompt,brand_hits,position,cited_in_sources,top_competitor,
 2026-09-14,gemini,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
 2026-09-14,openai,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,Ro,
 2026-09-14,perplexity,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,blood_labs,Best at-home blood lab panel for hormones?,0,,False,Ro,
+2026-09-21,gemini,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,blood_labs,Best at-home blood lab panel for hormones?,0,,False,Ro,
+2026-09-21,perplexity,blood_labs,Best at-home blood lab panel for hormones?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,Ro,
+2026-09-21,gemini,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,Ro,
+2026-09-21,perplexity,blood_labs,Online clinic that interprets blood labs and prescribes hormones,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,Ro,
+2026-09-21,gemini,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,Ro,
+2026-09-21,perplexity,blood_labs,Telehealth that orders comprehensive bloodwork without insurance,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,Ro,
+2026-09-21,gemini,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,Ro,
+2026-09-21,perplexity,blood_labs,Where to get an 80+ biomarker panel online?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Best chronic care management company for a medical practice,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Best chronic care management company for a medical practice,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Best chronic care management company for a medical practice,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Best chronic care management company for a medical practice,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Best remote patient monitoring program for diabetes covered by Medicare?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Chronic care management telehealth — Medicare reimbursable,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,How do I enroll in chronic care management?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,How do I enroll in chronic care management?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,How do I enroll in chronic care management?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,How do I enroll in chronic care management?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,How much does chronic care management cost a patient?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,How much does chronic care management cost a patient?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,How much does chronic care management cost a patient?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,How much does chronic care management cost a patient?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Is remote patient monitoring covered by Medicare?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Is remote patient monitoring covered by Medicare?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Is remote patient monitoring covered by Medicare?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Is remote patient monitoring covered by Medicare?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Online RPM provider for blood pressure and weight,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Online RPM provider for blood pressure and weight,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Online RPM provider for blood pressure and weight,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,RPM vs CCM — what is the difference?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,RPM vs CCM — what is the difference?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,RPM vs CCM — what is the difference?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,RPM vs CCM — what is the difference?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Remote monitoring for heart failure patients,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Remote monitoring for heart failure patients,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Remote monitoring for heart failure patients,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Remote monitoring for heart failure patients,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Remote monitoring for hypertension — how does it work?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Remote monitoring for hypertension — how does it work?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Remote monitoring for hypertension — how does it work?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Remote monitoring for hypertension — how does it work?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Remote patient monitoring devices — what does a patient receive?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Remote patient monitoring devices — what does a patient receive?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Remote patient monitoring devices — what does a patient receive?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Remote patient monitoring devices — what does a patient receive?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,chronic_care,Who qualifies for remote patient monitoring under Medicare?,0,,False,Ro,
+2026-09-21,gemini,chronic_care,Who qualifies for remote patient monitoring under Medicare?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,chronic_care,Who qualifies for remote patient monitoring under Medicare?,0,,False,Ro,
+2026-09-21,perplexity,chronic_care,Who qualifies for remote patient monitoring under Medicare?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,general_brand,DirectCare AI reviews — is it worth it?,12,,True,Ro,
+2026-09-21,gemini,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,general_brand,DirectCare AI reviews — is it worth it?,18,,True,Ro,
+2026-09-21,perplexity,general_brand,DirectCare AI reviews — is it worth it?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,general_brand,Does DirectCare AI accept insurance?,4,,True,Ro,
+2026-09-21,gemini,general_brand,Does DirectCare AI accept insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,general_brand,Does DirectCare AI accept insurance?,15,,True,Ro,
+2026-09-21,perplexity,general_brand,Does DirectCare AI accept insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,general_brand,Is DirectCare AI a legitimate telehealth platform?,8,,True,Ro,
+2026-09-21,gemini,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,general_brand,Is DirectCare AI a legitimate telehealth platform?,26,,True,Ro,
+2026-09-21,perplexity,general_brand,Is DirectCare AI a legitimate telehealth platform?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,general_brand,What is DirectCare AI?,8,,True,Ro,
+2026-09-21,gemini,general_brand,What is DirectCare AI?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,general_brand,What is DirectCare AI?,30,,True,Ro,
+2026-09-21,perplexity,general_brand,What is DirectCare AI?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,general_brand,Where is DirectCare AI based?,2,,False,,
+2026-09-21,gemini,general_brand,Where is DirectCare AI based?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,general_brand,Where is DirectCare AI based?,9,,True,Ro,
+2026-09-21,perplexity,general_brand,Where is DirectCare AI based?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Best online hair regrowth clinic for women?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Best online hair regrowth clinic for women?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Best online hair regrowth clinic for women?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Best online hair regrowth clinic for women?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Compounded hair regrowth formulas via telehealth,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,How do I choose an online hair loss provider?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,How do I choose an online hair loss provider?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,How do I choose an online hair loss provider?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,How do I choose an online hair loss provider?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Is online finasteride prescribing safe?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Is online finasteride prescribing safe?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Is online finasteride prescribing safe?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Is online finasteride prescribing safe?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Online hair loss treatment for women with spironolactone,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,What are the alternatives to finasteride?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,What are the alternatives to finasteride?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,What are the alternatives to finasteride?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,What are the alternatives to finasteride?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,What does online hair loss treatment cost per month?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,What does online hair loss treatment cost per month?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,What does online hair loss treatment cost per month?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,What does online hair loss treatment cost per month?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Where to get topical finasteride online for men?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Where to get topical finasteride online for men?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Where to get topical finasteride online for men?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Where to get topical finasteride online for men?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hair_loss,Who qualifies for prescription hair loss treatment?,0,,False,Ro,
+2026-09-21,gemini,hair_loss,Who qualifies for prescription hair loss treatment?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hair_loss,Who qualifies for prescription hair loss treatment?,0,,False,Ro,
+2026-09-21,perplexity,hair_loss,Who qualifies for prescription hair loss treatment?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,Compare online HRT providers for perimenopause,0,,False,Ro,
+2026-09-21,gemini,hrt,Compare online HRT providers for perimenopause,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,Compare online HRT providers for perimenopause,0,,False,Ro,
+2026-09-21,perplexity,hrt,Compare online HRT providers for perimenopause,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,How do I choose an online HRT provider for menopause?,0,,False,Ro,
+2026-09-21,gemini,hrt,How do I choose an online HRT provider for menopause?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,How do I choose an online HRT provider for menopause?,0,,False,Ro,
+2026-09-21,perplexity,hrt,How do I choose an online HRT provider for menopause?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,How much does HRT cost without insurance through telehealth?,0,,False,Ro,
+2026-09-21,gemini,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,How much does HRT cost without insurance through telehealth?,0,,False,Ro,
+2026-09-21,perplexity,hrt,How much does HRT cost without insurance through telehealth?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,Is online HRT safe?,0,,False,Ro,
+2026-09-21,gemini,hrt,Is online HRT safe?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,Is online HRT safe?,0,,False,Ro,
+2026-09-21,perplexity,hrt,Is online HRT safe?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,Online HRT with blood labs included — recommendations?,0,,False,Ro,
+2026-09-21,gemini,hrt,Online HRT with blood labs included — recommendations?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,Online HRT with blood labs included — recommendations?,0,,False,Ro,
+2026-09-21,perplexity,hrt,Online HRT with blood labs included — recommendations?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,What are the alternatives to HRT for hot flashes?,0,,False,Ro,
+2026-09-21,gemini,hrt,What are the alternatives to HRT for hot flashes?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,What are the alternatives to HRT for hot flashes?,0,,False,Ro,
+2026-09-21,perplexity,hrt,What are the alternatives to HRT for hot flashes?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,What does HRT cost per month without insurance?,0,,False,Ro,
+2026-09-21,gemini,hrt,What does HRT cost per month without insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,What does HRT cost per month without insurance?,0,,False,Ro,
+2026-09-21,perplexity,hrt,What does HRT cost per month without insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,Ro,
+2026-09-21,gemini,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,Ro,
+2026-09-21,perplexity,hrt,What is the best online HRT clinic for women in their 40s?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,What labs are needed before starting HRT?,0,,False,Ro,
+2026-09-21,gemini,hrt,What labs are needed before starting HRT?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,What labs are needed before starting HRT?,0,,False,Ro,
+2026-09-21,perplexity,hrt,What labs are needed before starting HRT?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,Ro,
+2026-09-21,gemini,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,Ro,
+2026-09-21,perplexity,hrt,Where can I get bioidentical HRT online without insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,hrt,Who qualifies for hormone replacement therapy?,0,,False,Ro,
+2026-09-21,gemini,hrt,Who qualifies for hormone replacement therapy?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,hrt,Who qualifies for hormone replacement therapy?,0,,False,Ro,
+2026-09-21,perplexity,hrt,Who qualifies for hormone replacement therapy?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Best online ED clinic — compounded sildenafil + tadalafil combo?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,How do I choose an online ED provider?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,How do I choose an online ED provider?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,How do I choose an online ED provider?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,How do I choose an online ED provider?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Is online ED treatment safe and legitimate?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Is online ED treatment safe and legitimate?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Is online ED treatment safe and legitimate?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Is online ED treatment safe and legitimate?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Sublingual ED medication via telehealth — providers?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Surge Max vs other compounded ED options,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Surge Max vs other compounded ED options,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Surge Max vs other compounded ED options,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Surge Max vs other compounded ED options,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,What are the alternatives to PDE5 inhibitors?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,What are the alternatives to PDE5 inhibitors?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,What are the alternatives to PDE5 inhibitors?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,What are the alternatives to PDE5 inhibitors?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,What does ED medication cost without insurance?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,What does ED medication cost without insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,What does ED medication cost without insurance?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,What does ED medication cost without insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Where can I get a 4-in-1 sexual health formula online?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,sexual_health,Who qualifies for ED medication online?,0,,False,Ro,
+2026-09-21,gemini,sexual_health,Who qualifies for ED medication online?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,sexual_health,Who qualifies for ED medication online?,0,,False,Ro,
+2026-09-21,perplexity,sexual_health,Who qualifies for ED medication online?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Best online TRT clinic in 2026?,0,,False,Ro,
+2026-09-21,gemini,trt,Best online TRT clinic in 2026?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Best online TRT clinic in 2026?,0,,False,Ro,
+2026-09-21,perplexity,trt,Best online TRT clinic in 2026?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Cheapest online TRT with bloodwork included,0,,False,Ro,
+2026-09-21,gemini,trt,Cheapest online TRT with bloodwork included,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Cheapest online TRT with bloodwork included,0,,False,Ro,
+2026-09-21,perplexity,trt,Cheapest online TRT with bloodwork included,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,How do I choose an online TRT provider?,0,,False,Ro,
+2026-09-21,gemini,trt,How do I choose an online TRT provider?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,How do I choose an online TRT provider?,0,,False,Ro,
+2026-09-21,perplexity,trt,How do I choose an online TRT provider?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Is online TRT safe and legitimate?,0,,False,Ro,
+2026-09-21,gemini,trt,Is online TRT safe and legitimate?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Is online TRT safe and legitimate?,0,,False,Ro,
+2026-09-21,perplexity,trt,Is online TRT safe and legitimate?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Online testosterone replacement therapy without insurance,0,,False,Ro,
+2026-09-21,gemini,trt,Online testosterone replacement therapy without insurance,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Online testosterone replacement therapy without insurance,0,,False,Ro,
+2026-09-21,perplexity,trt,Online testosterone replacement therapy without insurance,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,Ro,
+2026-09-21,gemini,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,Ro,
+2026-09-21,perplexity,trt,TRT vs enclomiphene — which telehealth providers offer both?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,What are the alternatives to TRT?,0,,False,Ro,
+2026-09-21,gemini,trt,What are the alternatives to TRT?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,What are the alternatives to TRT?,0,,False,Ro,
+2026-09-21,perplexity,trt,What are the alternatives to TRT?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,What bloodwork is required before starting TRT?,0,,False,Ro,
+2026-09-21,gemini,trt,What bloodwork is required before starting TRT?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,What bloodwork is required before starting TRT?,0,,False,Ro,
+2026-09-21,perplexity,trt,What bloodwork is required before starting TRT?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,What does TRT cost per month without insurance?,0,,False,Ro,
+2026-09-21,gemini,trt,What does TRT cost per month without insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,What does TRT cost per month without insurance?,0,,False,Ro,
+2026-09-21,perplexity,trt,What does TRT cost per month without insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Where can men get compounded testosterone online?,0,,False,Ro,
+2026-09-21,gemini,trt,Where can men get compounded testosterone online?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Where can men get compounded testosterone online?,0,,False,Ro,
+2026-09-21,perplexity,trt,Where can men get compounded testosterone online?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,trt,Who qualifies for testosterone replacement therapy?,0,,False,Ro,
+2026-09-21,gemini,trt,Who qualifies for testosterone replacement therapy?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,trt,Who qualifies for testosterone replacement therapy?,0,,False,Ro,
+2026-09-21,perplexity,trt,Who qualifies for testosterone replacement therapy?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Best telehealth for compounded tirzepatide?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Cheapest tirzepatide online with care coaching,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,Ro,
+2026-09-21,gemini,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,GLP-1 weight loss telehealth — comparison of providers,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,How do I choose an online GLP-1 weight loss provider?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,How do I choose an online GLP-1 weight loss provider?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,How do I choose an online GLP-1 weight loss provider?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,How do I choose an online GLP-1 weight loss provider?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Is online GLP-1 prescribing legitimate?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Is online GLP-1 prescribing legitimate?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Is online GLP-1 prescribing legitimate?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Is online GLP-1 prescribing legitimate?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Online GLP-1 weight loss clinic with bloodwork,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,What are the alternatives to GLP-1 medication for weight loss?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,What are the alternatives to GLP-1 medication for weight loss?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,What are the alternatives to GLP-1 medication for weight loss?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,What are the alternatives to GLP-1 medication for weight loss?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,What does GLP-1 weight loss cost per month without insurance?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,What does GLP-1 weight loss cost per month without insurance?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,What does GLP-1 weight loss cost per month without insurance?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,What does GLP-1 weight loss cost per month without insurance?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,What monitoring is required on a GLP-1?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,What monitoring is required on a GLP-1?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,What monitoring is required on a GLP-1?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,What monitoring is required on a GLP-1?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Where to buy compounded semaglutide online with a real doctor?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,anthropic,weight_loss,Who qualifies for GLP-1 weight loss medication?,0,,False,Ro,
+2026-09-21,gemini,weight_loss,Who qualifies for GLP-1 weight loss medication?,0,,False,,google/gemini-2.5-flash: neither native key nor OPENROUTER_API_KEY set
+2026-09-21,openai,weight_loss,Who qualifies for GLP-1 weight loss medication?,0,,False,Ro,
+2026-09-21,perplexity,weight_loss,Who qualifies for GLP-1 weight loss medication?,0,,False,,perplexity/sonar: neither native key nor OPENROUTER_API_KEY set

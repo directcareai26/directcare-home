@@ -574,7 +574,16 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .oly-strip { background: var(--dark); color: #E9D9F2; text-align: center;
     font-size: 0.78rem; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
     padding: 10px 16px; }
-  .oly-hero .eyebrow { color: #E9D9F2; }
+  /* Scrim between photo and copy. Sits above .hero-bg (z-index 0) and below .container,
+     so contrast no longer depends on which frame of the image is behind a given line. */
+  .oly-hero::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(180deg, rgba(13,8,18,0.62) 0%, rgba(13,8,18,0.78) 58%, rgba(13,8,18,0.90) 100%); }
+  .oly-hero > .container { position: relative; z-index: 2; }
+  .oly-hero .hero-bg { opacity: 0.85; }
+  .oly-hero .eyebrow { color: #F0E4F8; font-weight: 800; letter-spacing: 0.14em; }
+  /* Solid white, not 80-88% -- these were the lines that went unreadable. */
+  .oly-hero .lead, .oly-hero p.lead { color: #fff; }
+  .oly-hero .hero-trust { color: #fff; font-weight: 600; }
   .oly-hero .lead { color: rgba(255,255,255,0.90); max-width: 56ch; font-size: 1.1rem;
     margin: 0 auto 8px; }
   .oly-hero h1 { max-width: 20ch; margin-left: auto; margin-right: auto; }

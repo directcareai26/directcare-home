@@ -568,43 +568,88 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 </style>
 
 <style>
-  /* ---- /olympia page-local additions -------------------------------------
-     Everything above is the site's shared system. These rules add only what
-     this page needs: the audience fork, the code card and the payout table. */
+  /* ---- /olympia page-local additions --------------------------------------
+     Everything above is the site's shared design system, lifted intact. These
+     rules add only what this page needs on top of it. */
+
   .oly-strip { background: var(--dark); color: #E9D9F2; text-align: center;
     font-size: 0.78rem; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
     padding: 10px 16px; }
-  /* Scrim between photo and copy. Sits above .hero-bg (z-index 0) and below .container,
-     so contrast no longer depends on which frame of the image is behind a given line. */
+
+  /* --- hero ---------------------------------------------------------------
+     A scrim between the photo and the copy. Without it, text contrast depends
+     on whichever frame of the image sits behind a given line -- which is how
+     the trust row and the disclaimer ended up unreadable. */
   .oly-hero::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
-    background: linear-gradient(180deg, rgba(13,8,18,0.62) 0%, rgba(13,8,18,0.78) 58%, rgba(13,8,18,0.90) 100%); }
+    background: linear-gradient(180deg, rgba(13,8,18,0.60) 0%, rgba(13,8,18,0.76) 58%, rgba(13,8,18,0.90) 100%); }
   .oly-hero > .container { position: relative; z-index: 2; }
   .oly-hero .hero-bg { opacity: 0.85; }
   .oly-hero .eyebrow { color: #F0E4F8; font-weight: 800; letter-spacing: 0.14em; }
-  /* Solid white, not 80-88% -- these were the lines that went unreadable. */
-  .oly-hero .lead, .oly-hero p.lead { color: #fff; }
-  .oly-hero .hero-trust { color: #fff; font-weight: 600; }
-  .oly-hero .lead { color: rgba(255,255,255,0.90); max-width: 56ch; font-size: 1.1rem;
-    margin: 0 auto 8px; }
   .oly-hero h1 { max-width: 20ch; margin-left: auto; margin-right: auto; }
+  /* Solid white, not 80-88%. These are the lines that were reported unreadable. */
+  .oly-hero .lead, .oly-hero p.lead { color: #fff; max-width: 56ch; margin: 20px auto 8px; }
+  .oly-hero .hero-trust { color: #fff; font-weight: 600; }
 
+  /* The one line that must always be legible, so it gets its own opaque backing
+     rather than relying on the scrim. */
+  .oly-hero-note { max-width: 640px; margin: clamp(24px,3.5vw,34px) auto 0; padding: 15px 19px;
+    font-size: 0.94rem; line-height: 1.55; color: #fff; text-align: left;
+    background: rgba(13,8,18,0.88); border: 1px solid rgba(255,255,255,0.24);
+    border-left: 4px solid #d185ff; border-radius: var(--radius); }
 
-  /* The code is what you receive, not the headline — so it sits after the
-     programs and after "what happens next", never in the hero. */
-  .oly-code { background: var(--soft); border: 1px solid var(--lavender-100);
-    border-radius: var(--radius-lg); padding: clamp(26px, 4vw, 38px); text-align: center; }
-  .oly-code-k { font-size: 0.76rem; font-weight: 800; letter-spacing: 0.12em;
-    text-transform: uppercase; color: var(--brand-deep); }
-  .oly-code-v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: clamp(2rem, 6vw, 2.9rem); font-weight: 800; letter-spacing: 0.08em;
-    color: var(--brand-text); margin: 10px 0 6px; }
-  .oly-code-terms { font-size: 0.92rem; color: var(--muted); max-width: 52ch;
-    margin: 0 auto; line-height: 1.6; }
+  /* --- offer badge --------------------------------------------------------
+     Cream, deliberately NOT var(--dark): the hero above is already dark, and a
+     dark band under a dark hero merges into one block with the badge buried in
+     it. A bright field makes the badge its own object. */
+  .oly-codebar { background: var(--bg); border-bottom: 1px solid var(--line);
+    padding: clamp(30px,4.5vw,46px) 0; text-align: center; }
+  .oly-badge { display: inline-flex; flex-direction: column; align-items: center; gap: 3px;
+    position: relative; overflow: hidden; cursor: pointer; isolation: isolate;
+    font-family: inherit; text-align: center;
+    padding: 18px clamp(30px,7.5vw,58px); border: 0; border-radius: 999px;
+    background: linear-gradient(105deg, #b87b10 0%, #d99b1f 26%, #ffe08a 50%, #d99b1f 74%, #b87b10 100%);
+    background-size: 220% 100%; color: #1a0f24;
+    box-shadow: 0 12px 38px -8px rgba(217,155,31,0.70), 0 0 0 2px rgba(26,15,36,0.92),
+                0 0 0 1px rgba(255,236,180,0.6) inset;
+    animation: olyShine 3.4s linear infinite, olyPulse 2.6s ease-in-out infinite;
+    transition: transform .13s ease; }
+  .oly-badge:hover { transform: translateY(-1px); }
+  .oly-badge:active { transform: translateY(1px); }
+  .oly-badge:focus-visible { outline: 3px solid var(--brand); outline-offset: 4px; }
+  @keyframes olyShine { to { background-position: -220% 0; } }
+  @keyframes olyPulse {
+    0%,100% { box-shadow: 0 12px 38px -8px rgba(217,155,31,0.55), 0 0 0 2px rgba(26,15,36,0.92), 0 0 0 1px rgba(255,236,180,0.6) inset; }
+    50%     { box-shadow: 0 16px 50px -6px rgba(255,224,138,0.90), 0 0 0 2px rgba(26,15,36,0.92), 0 0 0 1px rgba(255,244,205,0.85) inset; }
+  }
+  .oly-badge-k { font-size: 0.74rem; font-weight: 800; letter-spacing: 0.13em;
+    text-transform: uppercase; opacity: 0.88; }
+  .oly-badge-v { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800;
+    font-size: clamp(1.9rem, 8vw, 2.8rem); letter-spacing: 0.10em; line-height: 1.1; }
+  .oly-badge-hint { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em;
+    text-transform: uppercase; opacity: 0.70; }
+  .oly-badge[data-copied="1"] { animation: none;
+    background: linear-gradient(105deg, #0b6f37 0%, #16a84f 50%, #2bb866 100%); color: #fff; }
 
-    white-space: nowrap; }
+  /* Terms travel with the badge. A loud offer whose material terms live
+     elsewhere on the page is the FTC problem; the animation is not. */
+  .oly-codeterms { max-width: 60ch; margin: 18px auto 0; font-size: 0.88rem; line-height: 1.6;
+    color: var(--muted); }
 
-  /* Compliance copy is body text on this page, not fine print: this audience is
-     the one most likely to read a performance claim into a hormone programme. */
+  /* Vestibular safety. The badge keeps all of its colour and contrast when
+     motion is off, so nothing about the offer is carried by movement alone. */
+  @media (prefers-reduced-motion: reduce) {
+    .oly-badge { animation: none; background-position: 50% 0; }
+    .oly-badge:hover, .oly-badge:active { transform: none; }
+  }
+
+  @media (max-width: 720px) {
+    .oly-hero .hero-bg { opacity: 0.55; }
+    .oly-hero-note { font-size: 0.9rem; padding: 13px 15px; }
+  }
+
+  /* --- compliance block ---------------------------------------------------
+     Body text, not fine print: this audience is the one most likely to read a
+     performance claim into a hormone programme. */
   .oly-disclosure { background: #fff; border: 1px solid var(--line);
     border-left: 4px solid var(--brand); border-radius: var(--radius);
     padding: 22px 24px; font-size: 0.95rem; line-height: 1.65; color: var(--muted); }

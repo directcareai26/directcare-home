@@ -223,3 +223,41 @@ Consequences:
 - M3/M4 (affiliate payout display + disclosure duties) NO LONGER APPLY to /olympia.
 
 **Remaining build is one page, one editing pass.** No new API route, no GHL wiring, no /partner.
+
+---
+
+# STATUS: BUILT, COMMITTED, PUSHED — `ef93909` (2026-09-22)
+
+**Most of this document is now HISTORY, not instructions.** Read this section first.
+
+DONE and verified on the committed artifact:
+- `/olympia` consumer-only page shipped to `origin/main`. Recruitment removed entirely
+  (B5 eliminated, not waived). B1, B2, B4, M1, M2, M5, M6, M7, m1–m4 all applied.
+- Acceptance criteria measured green: perf disclaimer ×2 with first instance at L744 ABOVE
+  first card at L794; "not FDA-approved" ×5 with 3 inside card subs; nested `<a>` = 0;
+  `/peptides` links = 0; fee claims = 0; testimonials = 0; HTML parses with 0 issues;
+  all internal links, assets and anchors resolve; `predeploy_check.py` passes.
+- `olympia-copy.txt` deleted; `olympia/index.html` is the canonical artifact.
+
+NOT DONE — still genuinely open:
+- **NOT DEPLOYED.** `/olympia` is still 404 live. See deploy note below.
+- **Counsel:** referral-commission structure (B6, against the partner program wherever it
+  lives — NOT against this page); patient-relationship disclaimer (M8); entity framing (M9/V12).
+- **Dr. Pepin:** written answers on TRT labs protocol, weight-loss compounded status, women's
+  HRT compounded/off-label, Surge Max formulation. Card copy was written conservatively so it
+  holds either way, but the answers should be on file.
+- **DaChé:** mixed-cart behaviour of the "blood panels and supplements excluded" rule; Sept 30
+  expiry vs actual event dates.
+- **Separate ticket, does NOT block:** "free evaluation" appears in 48 files sitewide and
+  "free consultation" in 3. `/olympia` makes no fee claim. Route to `dca-risk-compliance`.
+- **`/partner` deliberately NOT built** (flyers dropped; booth app serves coaches).
+  `PARTNER-COPY-DRAFT.md` holds compliant wording if it is ever needed.
+
+## To deploy
+`~/directcare-home` is the ONLY checkout `scripts/deploy.sh` accepts, and it is on branch
+`feat/tiktok-pixel` with 203 modified tracked files — another actor's uncommitted work, left
+untouched. Once its owner has cleared or stashed it:
+
+    cd ~/directcare-home && git checkout main && git pull --ff-only origin main && bash scripts/deploy.sh
+
+Then verify: `curl -s -o /dev/null -w "%{http_code}" -L https://www.directcare.ai/olympia`  → expect 200

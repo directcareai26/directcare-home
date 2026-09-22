@@ -574,11 +574,10 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .oly-strip { background: var(--dark); color: #E9D9F2; text-align: center;
     font-size: 0.78rem; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
     padding: 10px 16px; }
-  .oly-hero { background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 55%, var(--brand-deep) 100%);
-    color: #fff; padding: clamp(44px, 7vw, 84px) 0 clamp(40px, 6vw, 70px); }
-  .oly-hero h1 { color: #fff; max-width: 17ch; margin: 14px 0 18px; }
-  .oly-hero .lead { color: rgba(255,255,255,0.90); max-width: 56ch; font-size: 1.1rem; margin: 0 0 8px; }
   .oly-hero .eyebrow { color: #E9D9F2; }
+  .oly-hero .lead { color: rgba(255,255,255,0.90); max-width: 56ch; font-size: 1.1rem;
+    margin: 0 auto 8px; }
+  .oly-hero h1 { max-width: 20ch; margin-left: auto; margin-right: auto; }
 
 
   /* The code is what you receive, not the headline — so it sits after the
@@ -699,10 +698,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="oly-strip">Olympia Weekend &middot; Las Vegas</div>
 
-<header class="oly-hero">
+<header class="hero oly-hero">
+  <img class="hero-bg" src="/optimized/dance-embrace-800.webp" alt="" width="928" height="1152" srcset="/optimized/dance-embrace-400.webp 400w, /optimized/dance-embrace-800.webp 800w, /optimized/dance-embrace-1200.webp 1200w, /optimized/dance-embrace-1600.webp 1600w" sizes="100vw" decoding="async" loading="eager" fetchpriority="high">
   <div class="container">
-    <p class="eyebrow">Your access page</p>
-    <h1>Your Olympia access, ready when you are.</h1>
+    <p class="eyebrow">Olympia Weekend &middot; Las Vegas</p>
+    <h1>Your Olympia access, <span class="accent">ready when you are.</span></h1>
     <p class="lead">Private, cash-pay telehealth. You complete a short intake, a clinician licensed
       in your state reviews it, and anything prescribed ships to your door.</p>
     <div class="hero-trust">
@@ -710,12 +710,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="hero-trust-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Cash-pay &mdash; we don&rsquo;t bill insurance</div>
       <div class="hero-trust-item"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Shipped to your door</div>
     </div>
+    <div class="hero-cta-row" style="margin-top: 28px;">
+      <a class="btn btn-on-dark btn-primary-xl" style="background: linear-gradient(135deg, #5cf3c1 0%, #10b981 48%, #059669 100%); color: #fff; border: 1px solid transparent; box-shadow: 0 10px 28px -6px rgba(16,185,129,0.45);" href="#programs">Start my visit &rarr;</a>
+    </div>
     <p class="oly-hero-note"><b>Not for athletic or performance enhancement.</b> Every program here
       is prescribed only for a clinical indication. DirectCare AI does not prescribe for physique,
       competition or athletic performance.</p>
-    <div class="final-cta-row" style="margin-top: 26px;">
-      <a class="btn btn-primary btn-primary-xl" href="#programs">Start my visit</a>
-    </div>
   </div>
 </header>
 

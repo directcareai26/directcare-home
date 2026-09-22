@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="p:domain_verify" content="404f1d1f6b0fa0aafffa1f66b07ea055"/>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+<!-- Global Privacy Control — honored, as promised in our CCPA notice. When the browser sends the GPC
+     signal, the advertising pixels are stubbed out before they can initialize, so no identifiers are shared. -->
+<script>(function(){try{var gpc=(navigator.globalPrivacyControl===true)||(document.cookie.indexOf('dca_gpc=1')>-1);
+if(!gpc)return;window.__dcaGPC=true;
+var noop=function(){};noop.queue=[];noop.push=noop;noop.loaded=true;noop.version='2.0';noop.callMethod=null;
+window.fbq=window._fbq=noop;window.pintrk=noop;window.pintrk.queue=[];
+window.dcaSuppressAds=true;}catch(e){}})();</script>
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
+
+  // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1" alt=""
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1" alt=""
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#af4bed" />
+<title>DirectCare AI &mdash; Partner Program</title>
+<meta name="description" content="Refer your audience to DirectCare AI and earn a commission on completed enrollments. Cash-pay telehealth with licensed clinician evaluation.">
+
+<link rel="canonical" href="https://www.directcare.ai/partner">
+<meta name="robots" content="noindex,follow">
+<link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/json" />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="DirectCare AI" />
+<meta property="og:title" content="DirectCare AI &mdash; Partner Program" />
+<meta property="og:description" content="Refer your audience to DirectCare AI and earn a commission on completed enrollments. Cash-pay telehealth with licensed clinician evaluation." />
+<meta property="og:url" content="https://www.directcare.ai/partner" />
+<meta property="og:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/virtual%20clinician%20consult.png" />
+<meta property="og:image:width" content="928" />
+<meta property="og:image:height" content="1152" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@directcareai" />
+<meta name="twitter:creator" content="@directcareai" />
+<meta name="twitter:image" content="https://crsurakhmbalgxim.public.blob.vercel-storage.com/virtual%20clinician%20consult.png" />
+<meta name="twitter:title" content="DirectCare AI &mdash; Partner Program" />
+<meta name="twitter:description" content="Refer your audience to DirectCare AI and earn a commission on completed enrollments. Cash-pay telehealth with licensed clinician evaluation." />
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","name":"DirectCare AI","url":"https://www.directcare.ai","logo":"https://www.directcare.ai/logo-color.png","sameAs":["https://corporate.directcare.ai/","https://www.facebook.com/61577140438558","https://www.instagram.com/directcareai","https://twitter.com/directcareai","https://www.tiktok.com/@directcareai","https://www.youtube.com/@directcareai"],"areaServed":"United States","medicalSpecialty":["Endocrinology","MensHealth","PrimaryCare"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact@directcareai.com","areaServed":"US","availableLanguage":"en"},"address":{"@type":"PostalAddress","streetAddress":"30 N Gould St, Ste N","addressLocality":"Sheridan","addressRegion":"WY","postalCode":"82801","addressCountry":"US"}}</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+
+<style>
+  :root {
+    --bg: #faf6f0;
+    --soft: #fbf5fe;
+    --soft-2: #f4eefb;
+    --lavender-100: #E9D9F2;
+    --ink: #281A31;
+    --muted: #3d3247;
+    --line: rgba(40,26,49,0.08);
+    --brand: #853FAC;
+    --brand-deep: #9043bf;
+    --brand-darker: #762ba4;
+    --brand-text: #44215A;
+    --dark: #1a0f24;
+    --radius: 18px;
+    --radius-lg: 28px;
+    --radius-xl: 40px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Geist', system-ui, sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  h1, h2, h3, h4, h5 { font-family: 'Geist', sans-serif; font-weight: 800; letter-spacing: -0.025em; margin: 0; line-height: 1.05; color: var(--ink); }
+  h1 { font-size: clamp(2.0rem, 5.6vw, 4.2rem); text-wrap: balance; overflow-wrap: break-word; hyphens: auto; }
+  h2 { font-size: clamp(1.9rem, 3.6vw, 2.8rem); }
+  h3 { font-size: clamp(1.15rem, 1.8vw, 1.45rem); }
+  p { margin: 0; color: var(--muted); }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .section { padding: clamp(28px, 4vw, 56px) 0; position: relative; }
+  .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
+  .h-italic { font-style: italic; font-weight: 700; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; display: inline-block; padding-right: 0.22em; margin-right: -0.06em; }
+  .eyebrow { display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; border-radius: 999px; background: rgba(175,75,237,0.10); color: var(--brand-deep); font-weight: 700; font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(175,75,237,0.20); }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
+  .eyebrow.on-dark { background: rgba(255,255,255,0.10); color: #f7e8ff; border-color: rgba(255,255,255,0.20); }
+
+  /* NAV */
+  .nav { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(12px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--lavender-100); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
+  .nav-logo img { height: 40px; width: auto; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-link { font-size: 1.05rem; color: rgba(40,26,49,0.85); font-weight: 600; padding: 6px 0; transition: color .15s ease; cursor: pointer; }
+  .nav-link:hover { color: var(--brand); }
+  .nav-dropdown { position: relative; }
+  .nav-menu { position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%) translateY(-6px); min-width: 220px; background: white; border: 1px solid var(--lavender-100); border-radius: 14px; padding: 10px 0; opacity: 0; pointer-events: none; transition: opacity .15s ease, transform .15s ease; box-shadow: 0 18px 50px -10px rgba(118,43,164,0.18); }
+  .nav-dropdown:hover .nav-menu, .nav-dropdown:focus-within .nav-menu { opacity: 1; pointer-events: auto; transform: translateX(-50%) translateY(0); }
+  .nav-menu a { display: block; padding: 8px 18px; font-size: 1rem; color: var(--ink); font-weight: 600;}
+  .nav-menu a:hover { background: var(--soft); color: var(--brand-darker); }
+  .nav-right { display: flex; gap: 12px; align-items: center; }
+  .portal-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand-deep); transition: background .15s ease; gap: 8px; }
+  .portal-btn:hover { background: var(--lavender-100); }
+  .portal-btn .login-label { display: none; font-size: 0.86rem; font-weight: 600; }
+  .mobile-toggle { display: none; height: 40px; width: 40px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  @media (max-width: 980px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: inline-flex; margin-left: -10px; }
+    .portal-btn { width: auto; padding: 0 14px; border-radius: 999px; background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; border-color: transparent; }
+    .portal-btn .login-label { display: inline; }
+  }
+  .mobile-drawer { position: fixed; top: 68px; left: 0; right: 0; bottom: 0; background: white; z-index: 49; padding: 24px 24px 120px; display: none; overflow-y: auto; flex-direction: column; gap: 4px; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a { display: block; padding: 14px 8px; border-bottom: 1px solid var(--lavender-100); font-size: 1.2rem; color: var(--ink); font-weight: 600; }
+  .mobile-drawer details summary { padding: 14px 8px; cursor: pointer; font-size: 1.3rem; font-weight: 700; color: var(--ink); list-style: none; }
+  .mobile-drawer details summary::after { content: "▾"; float: right; opacity: 0.6; }
+  .mobile-drawer details a { padding-left: 22px; font-weight: 600; font-size: 1.1rem; color: var(--ink); }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 28px; border-radius: 999px; font-weight: 700; font-size: 1rem; transition: transform .15s ease, box-shadow .2s ease, background .2s ease; cursor: pointer; border: none; text-decoration: none; font-family: 'Geist', sans-serif; }
+  .btn-primary { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-darker) 100%); color: white; box-shadow: 0 12px 32px -6px rgba(175,75,237,0.50); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 40px -6px rgba(144,67,191,0.60); }
+  .btn-primary-xl { padding: 18px 32px; font-size: 1.05rem; }
+  .btn-on-dark { background: white; color: var(--brand-darker); }
+  .btn-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
+
+  /* HERO */
+  .hero { position: relative; min-height: 64vh; display: flex; align-items: center; overflow: hidden; isolation: isolate; padding: 80px 0; background: var(--dark); color: white; }
+  @media (max-width: 720px) { .hero { padding: 28px 0; min-height: 0; } .hero h1 { margin-top: 16px; } .hero p.lead { margin: 18px auto 24px; font-size: 1rem; } .hero-trust { margin-top: 24px; gap: 12px 22px; } }
+  .hero img.hero-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0.62; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,15,36,0.45) 0%, rgba(26,15,36,0.65) 60%, rgba(118,43,164,0.82) 100%); z-index: 1; }
+  .hero .container { position: relative; z-index: 2; max-width: 940px; text-align: center; }
+  .hero h1 { color: white; margin-top: 22px; line-height: 1.14; padding-bottom: 0.08em; }
+  .hero h1 .accent { background: linear-gradient(135deg, #f7c2ff 0%, #d185ff 60%, #ffffff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; font-style: italic; display: inline-block; padding: 0 0.22em 0.12em 0; margin-right: -0.08em; }
+  .hero p.lead { font-size: clamp(1.05rem, 1.4vw, 1.22rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.88); }
+  .hero-cta-row { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+  .hero-trust { display: flex; gap: 20px 30px; flex-wrap: wrap; justify-content: center; margin-top: 32px; font-size: 0.86rem; color: rgba(255,255,255,0.80); }
+  .hero-trust-item { display: inline-flex; align-items: center; gap: 8px; }
+  .hero-trust-item svg { color: #d185ff; flex-shrink: 0; }
+
+  /* INTRO BAND */
+  .intro-band { text-align: center; max-width: 760px; margin: 0 auto; }
+  .intro-band h2 { margin-bottom: 16px; }
+  .intro-band p { font-size: 1.08rem; line-height: 1.6; }
+
+  /* PRODUCT GRID */
+  .grid-head { text-align: center; max-width: 760px; margin: 0 auto 44px; }
+  .grid-head h2 { margin-bottom: 14px; }
+  .dark-grid { background: #0d0714; padding: clamp(44px, 6vw, 76px) 0; }
+  .dark-grid .grid-head h2 { color: #f5f1fa; }
+  .dark-grid .grid-head p { color: #b4a7c6; font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+  .dark-grid .h-italic { background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 80%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  @media (max-width: 980px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } }
+  @media (max-width: 640px) { .product-grid { grid-template-columns: 1fr; gap: 16px; } }
+  .product-card { display: flex; flex-direction: column; background: #170d21; border: 1px solid rgba(175,75,237,0.16); border-radius: var(--radius-lg); overflow: hidden; text-decoration: none; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+  .product-card:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.42); box-shadow: 0 22px 44px -16px rgba(175,75,237,0.28); }
+  @media (prefers-reduced-motion: reduce) { .product-card, .product-card:hover { transition: none; transform: none; } }
+  .product-card-media { position: relative; aspect-ratio: 16 / 11; overflow: hidden; }
+  .product-card-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .product-card-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(13,7,20,0.55) 100%); }
+  .product-card-icon { position: absolute; left: 18px; bottom: 14px; z-index: 2; width: 54px; height: 54px; border-radius: 50%; background: rgba(13,7,20,0.55); border: 1.5px solid rgba(201,140,244,0.55); backdrop-filter: blur(6px); display: grid; place-items: center; color: #c98cf4; }
+  .product-card-body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 24px; flex: 1; }
+  .product-card-title { color: #f5f1fa; font-size: 1.4rem; font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; }
+  .product-card-sub { color: #b4a7c6; font-size: 0.95rem; line-height: 1.5; }
+  .product-card-checks { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+  .product-card-checks li { display: flex; align-items: center; gap: 9px; color: #f5f1fa; font-size: 0.95rem; font-weight: 600; }
+  .product-card-checks svg { flex: none; color: #c98cf4; }
+  .product-card-rx { color: #8d7da1; font-size: 0.83rem; font-weight: 600; margin-top: auto; padding-top: 4px; }
+  .product-card-link { display: inline-flex; align-items: center; gap: 8px; color: #c98cf4; font-weight: 700; font-size: 0.98rem; }
+  .product-card:hover .product-card-link { color: #ddb6ff; }
+  .product-card-link svg { transition: transform .2s ease; }
+  .product-card:hover .product-card-link svg { transform: translateX(3px); }
+  .trust-bar { margin-top: clamp(30px, 4.5vw, 46px); background: #170d21; border: 1px solid rgba(175,75,237,0.16); border-radius: var(--radius-lg); display: grid; grid-template-columns: repeat(4, 1fr); }
+  .trust-item { display: flex; gap: 14px; align-items: flex-start; padding: 24px 26px; border-left: 1px solid rgba(175,75,237,0.12); }
+  .trust-item:first-child { border-left: none; }
+  .trust-item svg { flex: none; color: #c98cf4; margin-top: 2px; }
+  .trust-item h3 { color: #f5f1fa; font-size: 0.98rem; font-weight: 800; line-height: 1.25; margin: 0; }
+  .trust-item p { color: #b4a7c6; font-size: 0.85rem; margin: 4px 0 0; line-height: 1.4; }
+  @media (max-width: 980px) {
+    .trust-bar { grid-template-columns: repeat(2, 1fr); }
+    .trust-item:nth-child(3) { border-left: none; }
+    .trust-item:nth-child(n+3) { border-top: 1px solid rgba(175,75,237,0.12); }
+  }
+  @media (max-width: 640px) {
+    .trust-bar { grid-template-columns: 1fr; }
+    .trust-item { border-left: none; padding: 18px 22px; }
+    .trust-item:nth-child(n+2) { border-top: 1px solid rgba(175,75,237,0.12); }
+  }
+
+  /* CLINICAL ADVISOR */
+  .clinical-advisor { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-xl); padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px); display: grid; grid-template-columns: 200px 1fr; gap: clamp(28px, 4vw, 48px); align-items: center; position: relative; overflow: hidden; isolation: isolate; box-shadow: 0 18px 50px -16px rgba(118,43,164,0.16); }
+  .clinical-advisor::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 80% at 0% 50%, rgba(175,75,237,0.06), transparent 60%); z-index: 0; pointer-events: none; }
+  .clinical-advisor > * { position: relative; z-index: 1; }
+  @media (max-width: 720px) { .clinical-advisor { grid-template-columns: 1fr; text-align: center; } }
+  .clinical-advisor-photo { width: 100%; aspect-ratio: 1 / 1; max-width: 200px; border-radius: 50%; overflow: hidden; box-shadow: 0 16px 40px rgba(118, 43, 164, 0.22), 0 0 0 6px white, 0 0 0 7px var(--lavender-100); justify-self: center; }
+  .clinical-advisor-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 18%; }
+  .clinical-advisor-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 10px; }
+  .clinical-advisor-name { font-family: 'Geist', sans-serif; font-size: clamp(1.6rem, 2.6vw, 2.1rem); line-height: 1.1; color: var(--ink); margin-bottom: 4px; }
+  .clinical-advisor-name em { font-style: italic; color: var(--brand-deep); font-weight: 400; }
+  .clinical-advisor-role { font-size: 0.92rem; font-weight: 500; color: var(--ink); opacity: 0.7; margin-bottom: 16px; }
+  .clinical-advisor-bio { font-size: 1rem; line-height: 1.6; color: var(--ink); opacity: 0.85; max-width: 56ch; }
+  @media (max-width: 720px) { .clinical-advisor-bio { margin-left: auto; margin-right: auto; } }
+  .clinical-advisor-credentials { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  @media (max-width: 720px) { .clinical-advisor-credentials { justify-content: center; } }
+  .clinical-advisor-credentials span { font-size: 0.72rem; font-weight: 600; color: var(--brand-deep); background: rgba(175,75,237,0.08); border: 1px solid rgba(175,75,237,0.18); padding: 5px 11px; border-radius: 999px; letter-spacing: 0.02em; }
+
+  /* HOW IT WORKS */
+  .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 36px; }
+  @media (max-width: 820px) { .how-grid { grid-template-columns: 1fr; } }
+  .how-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 32px 28px; }
+  .how-card .how-num { font-family: 'Geist', sans-serif; font-size: 3.2rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 14px; }
+  .how-card h3 { font-size: 1.2rem; margin-bottom: 8px; }
+  .how-card p { font-size: 0.95rem; line-height: 1.55; }
+
+  /* FINAL CTA */
+  .final-cta { position: relative; background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 50%, var(--brand-deep) 100%); color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 90px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; }
+  .final-cta::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(255,255,255,0.18), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(255,255,255,0.10), transparent 60%); pointer-events: none; }
+  .final-cta > * { position: relative; z-index: 2; }
+  .final-cta h2 { color: white; max-width: 760px; margin: 22px auto 18px; }
+  .final-cta p { color: rgba(255,255,255,0.88); max-width: 620px; margin: 0 auto 32px; font-size: 1.08rem; }
+  .final-cta-row { display: inline-flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+
+  /* FOOTER */
+  footer { background: var(--soft); border-top: 1px solid var(--lavender-100); padding: 60px 0 28px; }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 18px; }
+  .foot-brand p { font-size: 0.92rem; line-height: 1.6; max-width: 360px; }
+  .foot-col h2 { font-family: 'Geist', sans-serif; font-size: 0.82rem; font-weight: 800; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px; }
+  .foot-col-legal { padding-top: 14px; }
+  .foot-col-legal a { font-size: 0.74rem !important; color: var(--muted) !important; padding: 4px 0 !important; font-weight: 400 !important; opacity: 0.78; transition: opacity .15s ease, color .15s ease; }
+  .foot-col-legal a:hover { opacity: 1; color: var(--brand) !important; }
+  .foot-col a { display: block; font-size: 0.92rem; color: rgba(40,26,49,0.75); padding: 5px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--lavender-100); font-size: 0.82rem; color: var(--muted); }
+  .legal-disclaimer { margin-top: 22px; font-size: 0.76rem; color: var(--muted); line-height: 1.55; }
+  .legal-disclaimer strong { color: rgba(91,77,101,0.95); }
+  .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+  .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
+  .social-row a:hover { background: var(--brand); color: white; transform: translateY(-2px); }
+
+  /* Dropdown hover-bridge fix — keep .nav-dropdown:hover true when the cursor crosses the gap to .nav-menu */
+  .nav-dropdown { position: relative; }
+  .nav-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -8px; right: -8px;
+    height: 18px;
+    pointer-events: auto;
+  }
+  .nav-dropdown:not(:hover):not(:focus-within)::after { pointer-events: none; }
+  .nav-menu { top: calc(100% + 12px) !important; }
+
+  /* SITE-WIDE MOBILE PARITY (matches home page) — tight gutters everywhere */
+  @media (max-width: 720px) {
+    .container, .container-px { padding-left: 12px !important; padding-right: 12px !important; }
+    .top-strip { padding-left: 12px !important; padding-right: 12px !important; font-size: 0.76rem !important; }
+    .nav-inner { padding-left: 12px !important; padding-right: 12px !important; }
+    footer .container, footer .container-px { padding-left: 14px !important; padding-right: 14px !important; }
+  }
+
+  /* ============================================================
+     MEN'S DARK FOOTER — matches the deep-purple page palette
+     ============================================================ */
+  footer {
+    background: linear-gradient(180deg, #221a32 0%, #1b1428 100%) !important;
+    border-top: 1px solid rgba(216,180,254,0.18) !important;
+    color: rgba(255,255,255,0.78) !important;
+  }
+  footer h4, footer h2 { color: #ffffff !important; }
+  footer p { color: rgba(255,255,255,0.78) !important; }
+  footer a { color: rgba(255,255,255,0.82) !important; transition: color .15s ease; }
+  footer a:hover { color: #d8b4fe !important; }
+  footer .foot-col a,
+  footer .foot-col-legal a { color: rgba(255,255,255,0.78) !important; }
+  footer .foot-col a:hover,
+  footer .foot-col-legal a:hover { color: #d8b4fe !important; }
+  footer .social-row a {
+    background: rgba(255,255,255,0.06) !important;
+    border-color: rgba(255,255,255,0.12) !important;
+    color: rgba(255,255,255,0.82) !important;
+  }
+  footer .social-row a:hover {
+    background: rgba(216,180,254,0.16) !important;
+    border-color: rgba(216,180,254,0.40) !important;
+    color: #ffffff !important;
+  }
+  footer .legal {
+    color: rgba(255,255,255,0.55) !important;
+    border-top-color: rgba(255,255,255,0.10) !important;
+  }
+  footer .footer-trust { border-bottom-color: rgba(255,255,255,0.10) !important; }
+  /* Dividers between footer rows (if any) */
+  footer hr, footer .foot-divider {
+    border-color: rgba(255,255,255,0.10) !important;
+    background: rgba(255,255,255,0.10) !important;
+  }
+
+
+  /* Canonical .nav-login styles (matches home page) */
+  .nav-login {
+    font-size: 0.88rem; font-weight: 600; color: var(--ink, #241432);
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 9px 16px; border-radius: 999px;
+    transition: background .2s ease, color .2s ease;
+  }
+  .nav-login:hover { background: var(--bg-2, #f4eee5); color: var(--brand-deep, #762ba4); }
+  .nav-login svg { width: 14px; height: 14px; flex-shrink: 0; }
+  @media (max-width: 820px) {
+    .nav-login {
+      background: linear-gradient(135deg, var(--brand, #af4bed) 0%, var(--brand-darker, #44215A) 100%);
+      color: white;
+      padding: 8px 14px;
+      font-size: 0.82rem;
+      box-shadow: 0 6px 14px -4px rgba(118,43,164,0.40);
+    }
+    .nav-login:hover { background: linear-gradient(135deg, var(--brand, #af4bed) 0%, var(--brand-darker, #44215A) 100%); color: white; }
+    .mobile-toggle { margin-left: -10px; }
+  }
+
+  /* Canonical nav breakpoint — matches home page (820px). Subpages
+     previously hid nav-links at 980px which made tablets show the
+     hamburger while the home was still showing desktop nav. */
+  @media (min-width: 821px) and (max-width: 980px) {
+    .nav-links { display: flex !important; }
+    .mobile-toggle { display: none !important; }
+  }
+  @media (max-width: 820px) {
+    .nav-links { display: none !important; }
+    .mobile-toggle { display: inline-flex !important; }
+  }
+
+  /* Mobile hamburger icon — force size + color so it's visible
+     (was rendering at SVG default 300x150 + clipping to nothing) */
+  .mobile-toggle {
+    color: var(--ink, #241432) !important;
+    background: var(--bg-2, #f4eee5) !important;
+    border: 1px solid var(--line, rgba(36,20,50,0.10)) !important;
+  }
+  .mobile-toggle svg {
+    width: 22px !important;
+    height: 22px !important;
+    stroke: currentColor !important;
+    display: block !important;
+  }
+  /* Mobile drawer — fit content, not full screen */
+  .mobile-drawer {
+    bottom: auto !important;
+    max-height: calc(100vh - 64px);
+    overflow-y: auto;
+    padding-bottom: 32px !important;
+    box-shadow: 0 24px 60px -16px rgba(36,20,50,0.30);
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+  }
+
+  /* ==========================================================
+     DEEP PURPLE THEME — replace lavender .section.soft + footer
+     with the same dark-purple wash used on the men's weight
+     loss / TRT / Surge Max pages.
+     ========================================================== */
+  .section.soft {
+    background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%) !important;
+    color: #f7e8ff;
+  }
+  .section.soft h2,
+  .section.soft h3,
+  .section.soft .intro-band h2,
+  .section.soft .grid-head h2 { color: #ffffff; }
+  .section.soft p { color: rgba(247,232,255,0.82); }
+  .section.soft .h-italic {
+    background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 60%, #c88bff 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+  /* HOW IT WORKS cards on dark — glass treatment */
+  .section.soft .how-card {
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.14) !important;
+    backdrop-filter: blur(10px);
+  }
+  .section.soft .how-card h3 { color: #ffffff; }
+  .section.soft .how-card p { color: rgba(247,232,255,0.80); }
+  .section.soft .how-card .how-num {
+    background: linear-gradient(135deg, #d8a8ff 0%, #af4bed 100%) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+
+  /* FOOTER — deep purple */
+  footer {
+    background: linear-gradient(180deg, #1a0f24 0%, #2a1a3c 100%) !important;
+    border-top: 1px solid rgba(255,255,255,0.10) !important;
+    color: rgba(247,232,255,0.82);
+  }
+  footer .foot-brand p { color: rgba(247,232,255,0.78); }
+  footer .foot-col h2 { color: #ffffff !important; }
+  footer .foot-col a { color: rgba(247,232,255,0.78) !important; }
+  footer .foot-col a:hover { color: #d8a8ff !important; }
+  footer .foot-col-legal a { color: rgba(247,232,255,0.60) !important; }
+  footer .foot-col-legal a:hover { color: #d8a8ff !important; }
+  footer .legal {
+    border-top: 1px solid rgba(255,255,255,0.10) !important;
+    color: rgba(247,232,255,0.70);
+  }
+  footer .legal-disclaimer { color: rgba(247,232,255,0.62); }
+  footer .legal-disclaimer strong { color: rgba(255,255,255,0.86); }
+  footer .social-row a {
+    background: rgba(255,255,255,0.08) !important;
+    border: 1px solid rgba(255,255,255,0.16) !important;
+    color: #d8a8ff !important;
+  }
+  footer .social-row a:hover {
+    background: #af4bed !important;
+    color: #ffffff !important;
+  }
+
+  .hero-answer { display: block; max-width: 760px; margin: 18px auto 0; padding: 14px 18px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.14); border-radius: 14px; backdrop-filter: blur(8px); font-size: 0.95rem; line-height: 1.55; color: rgba(255,255,255,0.92); text-align: left; }
+  .hero-answer.on-light { background: rgba(36,20,50,0.04); border-color: rgba(36,20,50,0.10); color: var(--ink); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
+.hipaa-text-chip{display:inline-flex;align-items:center;font-size:.82rem;font-weight:600;color:#5b5566;border:1px solid #ddd6ea;border-radius:8px;padding:7px 12px;background:#faf7fc}
+</style>
+
+<style>
+  /* ---- /partner page-local additions ---------------------------------------
+     Everything above is the site's shared design system, lifted intact. These
+     rules add only what this page needs on top of it. */
+
+  .pt-strip { background: var(--dark); color: #E9D9F2; text-align: center;
+    font-size: 0.78rem; font-weight: 700; letter-spacing: 0.10em; text-transform: uppercase;
+    padding: 10px 16px; }
+
+  /* --- hero ---------------------------------------------------------------
+     Same scrim treatment /olympia needed: without it, text contrast depends on
+     whichever frame of the photo sits behind a given line. */
+  .pt-hero::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    background: linear-gradient(180deg, rgba(13,8,18,0.62) 0%, rgba(13,8,18,0.78) 58%, rgba(13,8,18,0.92) 100%); }
+  .pt-hero > .container { position: relative; z-index: 2; }
+  .pt-hero .hero-bg { opacity: 0.80; }
+  .pt-hero .eyebrow { color: #F0E4F8; font-weight: 800; letter-spacing: 0.14em; }
+  .pt-hero h1 { max-width: 18ch; margin-left: auto; margin-right: auto; }
+  .pt-hero .lead, .pt-hero p.lead { color: #fff; max-width: 54ch; margin: 20px auto 8px; }
+
+  /* The performance line gets its own opaque backing rather than relying on the
+     scrim, and it sits in the hero so it renders ABOVE the payout table -- the
+     first thing on this page a coach acts on. */
+  .pt-hero-note { max-width: 640px; margin: clamp(22px,3.2vw,32px) auto 0; padding: 15px 19px;
+    font-size: 0.94rem; line-height: 1.55; color: #fff; text-align: left;
+    background: rgba(13,8,18,0.88); border: 1px solid rgba(255,255,255,0.24);
+    border-left: 4px solid #d185ff; border-radius: var(--radius); }
+  .pt-hero-note b { color: #fff; }
+
+  /* --- payout table -------------------------------------------------------- */
+  .pt-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--line); border-radius: var(--radius); background: #fff; }
+  table.pt-table { width: 100%; border-collapse: collapse; min-width: 480px; }
+  .pt-table th, .pt-table td { padding: 14px 18px; text-align: left; font-size: 0.95rem;
+    border-bottom: 1px solid var(--line); }
+  .pt-table thead th { background: var(--bg); font-size: 0.74rem; font-weight: 800;
+    letter-spacing: 0.10em; text-transform: uppercase; color: var(--muted); }
+  .pt-table tbody tr:last-child td { border-bottom: 0; }
+  .pt-table td.pt-amt { font-weight: 800; color: var(--ink); white-space: nowrap; }
+  .pt-table td .pt-sub { display: block; font-size: 0.82rem; font-weight: 500; color: var(--muted); }
+
+  /* "Most referrals earn less, and many earn nothing" is the sentence doing the
+     FTC work. It is body text next to the numbers, never fine print below them. */
+  .pt-earnings { margin: 16px 0 0; padding: 16px 18px; font-size: 0.92rem; line-height: 1.6;
+    color: var(--muted); background: #fff; border: 1px solid var(--line);
+    border-left: 4px solid var(--brand); border-radius: var(--radius); }
+  .pt-earnings b { color: var(--ink); }
+
+  /* --- steps --------------------------------------------------------------- */
+  .pt-steps { display: grid; gap: 18px; grid-template-columns: repeat(3, 1fr); margin-top: 8px; }
+  .pt-step { background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 22px 22px 24px; }
+  .pt-step-n { display: inline-flex; align-items: center; justify-content: center;
+    width: 30px; height: 30px; border-radius: 999px; background: var(--brand); color: #fff;
+    font-size: 0.85rem; font-weight: 800; margin-bottom: 12px; }
+  .pt-step h3 { margin: 0 0 8px; font-size: 1.04rem; font-weight: 700; color: var(--ink); }
+  .pt-step p { margin: 0; font-size: 0.93rem; line-height: 1.6; color: var(--muted); }
+  @media (max-width: 800px) { .pt-steps { grid-template-columns: 1fr; } }
+
+  /* --- rules --------------------------------------------------------------- */
+  .pt-rules { display: grid; gap: 14px; }
+  .pt-rule { background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 18px 20px; }
+  .pt-rule h3 { margin: 0 0 6px; font-size: 1rem; font-weight: 700; color: var(--ink); }
+  .pt-rule p { margin: 0; font-size: 0.93rem; line-height: 1.62; color: var(--muted); }
+
+  /* --- apply form ---------------------------------------------------------- */
+  .pt-form-card { max-width: 560px; margin: 0 auto; background: #fff;
+    border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(22px,4vw,32px); }
+  .pt-field { margin-bottom: 16px; }
+  .pt-field label { display: block; font-size: 0.86rem; font-weight: 700; color: var(--ink);
+    margin-bottom: 6px; }
+  .pt-field input[type=text], .pt-field input[type=email], .pt-field input[type=tel] {
+    width: 100%; box-sizing: border-box; font: inherit; font-size: 1rem;
+    padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--bg); color: var(--ink); }
+  .pt-field input:focus { outline: 3px solid color-mix(in srgb, var(--brand) 35%, transparent);
+    outline-offset: 1px; border-color: var(--brand); }
+  .pt-field input[aria-invalid="true"] { border-color: #c02626; background: #fff6f6; }
+  .pt-row { display: grid; gap: 14px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 560px) { .pt-row { grid-template-columns: 1fr; } }
+  .pt-err { display: none; margin: 6px 0 0; font-size: 0.84rem; font-weight: 600; color: #c02626; }
+  .pt-err.on { display: block; }
+  .pt-consent { display: flex; gap: 11px; align-items: flex-start; margin: 4px 0 18px;
+    font-size: 0.86rem; line-height: 1.55; color: var(--muted); }
+  .pt-consent input { margin-top: 3px; width: 18px; height: 18px; flex: 0 0 auto; accent-color: var(--brand); }
+  .pt-submit { width: 100%; }
+  .pt-note { margin: 14px 0 0; font-size: 0.82rem; line-height: 1.55; color: var(--muted); text-align: center; }
+
+  /* --- handoff ------------------------------------------------------------- */
+  .pt-done { display: none; text-align: center; }
+  .pt-done.on { display: block; }
+  .pt-form.off { display: none; }
+  .pt-done h3 { margin: 0 0 10px; font-size: 1.25rem; font-weight: 800; color: var(--ink); }
+  .pt-done p { margin: 0 0 20px; font-size: 0.97rem; line-height: 1.65; color: var(--muted); }
+  .pt-check { width: 52px; height: 52px; margin: 0 auto 16px; border-radius: 999px;
+    background: #0b6f37; display: flex; align-items: center; justify-content: center; }
+  .pt-check svg { width: 26px; height: 26px; stroke: #fff; stroke-width: 3; fill: none;
+    stroke-linecap: round; stroke-linejoin: round; }
+
+  /* --- self-purchase ------------------------------------------------------- */
+  .pt-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
+  .pt-links a { display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--line); background: #fff; color: var(--ink);
+    font-size: 0.9rem; font-weight: 600; text-decoration: none; }
+  .pt-links a:hover { border-color: var(--brand); color: var(--brand); }
+
+  /* --- compliance block ----------------------------------------------------
+     Body text, not fine print: this audience is the one most likely to read a
+     performance claim into a hormone programme. */
+  .pt-disclosure { background: #fff; border: 1px solid var(--line);
+    border-left: 4px solid var(--brand); border-radius: var(--radius);
+    padding: 22px 24px; font-size: 0.95rem; line-height: 1.65; color: var(--muted); }
+  .pt-disclosure b { color: var(--ink); }
+  .pt-disclosure p { margin: 0 0 12px; }
+  .pt-disclosure p:last-child { margin-bottom: 0; }
+
+  /* --- cards on the dark band ----------------------------------------------
+     `.section.soft` is NOT light on this site: a deep-purple theme block later in
+     the shared stylesheet overrides it to #1a0f24 with color:#f7e8ff. A white card
+     dropped in there inherits that light text onto a white background -- which is
+     exactly what the first render of this page did to the payout table, where the
+     program names came out lavender-on-white. Cards that stay on the dark band get
+     the site's own glass treatment instead, matching .how-card on the product pages.
+     Everything that stays a white card now lives on a plain `.section`. */
+  .section.soft .pt-step,
+  .section.soft .pt-rule { background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.14); backdrop-filter: blur(10px); }
+  .section.soft .pt-step h3,
+  .section.soft .pt-rule h3 { color: #fff; }
+  .section.soft .pt-step p,
+  .section.soft .pt-rule p,
+  .section.soft .grid-head p { color: rgba(247,232,255,0.84); }
+
+  @media (max-width: 720px) { .pt-hero .hero-bg { opacity: 0.52; }
+    .pt-hero-note { font-size: 0.9rem; padding: 13px 15px; } }
+</style>
+
+<!-- FlexOffers AdvertiserMax click tracking -->
+<script>
+  !function(){var e=window.AdvertiserMaxTrack=window.AdvertiserMaxTrack||[];if(e.invoked)window.console&&console.error&&console.error("FlexOffers library was included more than once.");else{e.invoked=!0,e.methods=["init","getClick","track"],e.factory=function(r){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(r),e.push(t),e}};for(var r=0;r<e.methods.length;r++){var t=e.methods[r];e[t]=e.factory(t)}e.init=function(r){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://advertisermax.flexoffers.com/vendors/advertisermax/advertisermax.tracking.lib.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),e.advertiserId=r}}}();
+  AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
+  AdvertiserMaxTrack.getClick();
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.directcare.ai/"},{"@type":"ListItem","position":2,"name":"Partner Program"}]}</script>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
+  <script src="/js/dc-webmcp.js?v=20260914" defer></script>
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="/logo-color.png" alt="DirectCare AI logo" />
+    </a>
+    <div class="nav-links">
+      <div class="nav-dropdown">
+        <a class="nav-link has-arrow" href="/womens-health">Women's Health</a>
+        <div class="nav-menu">
+          <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/hrt-moms">HRT for Moms</a>
+        <a href="/perimenopause">Perimenopause</a>
+          <a href="/womens-weight-loss">Weight Loss (GLP-1)</a>
+          <a href="/womans-hair-loss">Hair Regrowth</a>
+          <a href="/supplements">Supplements</a>
+          <a href="/blood-test">Blood Labs</a>
+          <a class="view-all" href="/womens-health">View all →</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a class="nav-link has-arrow" href="/mens-health">Men's Health</a>
+        <div class="nav-menu">
+          <a href="/surge-max">Sexual Health</a>
+          <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+        <a href="/trt-executives">TRT for Executives</a>
+        <a href="/trt-firefighters">TRT for Firefighters</a>
+        <a href="/trt-police-officers">TRT for Police Officers</a>
+        <a href="/trt-former-athletes">TRT for Former Athletes</a>
+          <a href="/mens-weight-loss">Weight Loss (GLP-1)</a>
+          <a href="/mens-hair-loss">Hair Regrowth</a>
+          <a href="/supplements">Supplements</a>
+          <a href="/blood-test">Blood Labs</a>
+          <a class="view-all" href="/mens-health">View all →</a>
+        </div>
+      </div>
+      <a class="nav-link" href="/supplements">Supplements</a>
+      <a class="nav-link" href="/blood-test">Blood Labs</a>
+    </div>
+    <div class="nav-right">
+      <a class="nav-login" href="https://directcareai.portal.tellescope.com/" aria-label="Patient portal · Log in">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        Log in
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open menu">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+  <details open><summary>Women's Health</summary>
+    <a href="/hormone-replacement-therapy">HRT</a>
+    <a href="/womens-weight-loss">Weight Loss (GLP-1)</a>
+    <a href="/womans-hair-loss">Hair Regrowth</a>
+    <a href="/supplements">Supplements</a>
+    <a href="/blood-test">Blood Labs</a>
+    <a href="/womens-health">View all →</a>
+  </details>
+  <details><summary>Men's Health</summary>
+    <a href="/surge-max">Sexual Health</a>
+    <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+    <a href="/mens-weight-loss">Weight Loss (GLP-1)</a>
+    <a href="/mens-hair-loss">Hair Regrowth</a>
+    <a href="/supplements">Supplements</a>
+    <a href="/blood-test">Blood Labs</a>
+    <a href="/mens-health">View all →</a>
+  </details>
+  <a href="/supplements">Supplements</a>
+  <a href="/blood-test">Blood Labs</a>
+  <a class="drawer-portal" href="https://directcareai.portal.tellescope.com/">Log in / Patient portal</a>
+</div>
+
+<div class="pt-strip">DirectCare AI Partner Program</div>
+
+<header class="hero pt-hero">
+  <img class="hero-bg" src="/optimized/dance-embrace-800.webp" alt="" width="928" height="1152" srcset="/optimized/dance-embrace-400.webp 400w, /optimized/dance-embrace-800.webp 800w, /optimized/dance-embrace-1200.webp 1200w, /optimized/dance-embrace-1600.webp 1600w" sizes="100vw" decoding="async" loading="eager" fetchpriority="high">
+  <div class="container">
+    <p class="eyebrow">Partner Program</p>
+    <h1>The DirectCare AI <span class="accent">partner program</span></h1>
+    <p class="lead">Share DirectCare AI with your audience. When someone who used your link
+      enrolls in a program, you earn a commission.</p>
+    <div class="hero-cta-row">
+      <a class="btn btn-primary btn-primary-xl" href="#apply">Become a partner</a>
+    </div>
+    <div class="pt-hero-note">
+      <b>DirectCare AI programs are prescribed for clinical indications only and are not for
+      athletic or performance enhancement.</b> Treatment decisions are made by licensed
+      clinicians following evaluation, and not everyone qualifies.
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-head"><h2>What you earn</h2></div>
+    <div class="pt-table-wrap">
+      <table class="pt-table">
+        <thead><tr><th scope="col">Program</th><th scope="col">Commission</th></tr></thead>
+        <tbody>
+        <tr><td>Medical Weight Loss <span class="pt-sub">GLP-1</span></td><td class="pt-amt">$75<span class="pt-sub">per month, up to $225 total per referred patient</span></td></tr>
+        <tr><td>Men&rsquo;s Hormone Therapy <span class="pt-sub">TRT</span></td><td class="pt-amt">$45<span class="pt-sub">per month, up to $135 total per referred patient</span></td></tr>
+        <tr><td>Sexual Health / ED</td><td class="pt-amt">$30<span class="pt-sub">per month, up to $90 total per referred patient</span></td></tr>
+        <tr><td>Women&rsquo;s Hormone Therapy <span class="pt-sub">HRT</span></td><td class="pt-amt">$30<span class="pt-sub">one time per referred patient</span></td></tr>
+        <tr><td>Hair Loss <span class="pt-sub">men &amp; women</span></td><td class="pt-amt">$10<span class="pt-sub">per month, up to $30 total per referred patient</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="pt-earnings">Commissions are paid only on qualified, completed enrollments, and
+      stop when a patient&rsquo;s enrollment ends. <b>The amounts above are the maximum you can
+      earn per referred patient &mdash; most referrals earn less, and many earn nothing.</b>
+      These figures are not a guarantee of earnings and are not a projection of what you will
+      make.</p>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="grid-head"><h2>How it works</h2></div>
+    <div class="pt-steps">
+      <div class="pt-step"><div class="pt-step-n">1</div><h3>Tell us who you are</h3><p>Your details and your gym or business. About 30 seconds &mdash; this is how we know the referrals are yours.</p></div>
+      <div class="pt-step"><div class="pt-step-n">2</div><h3>Create your FlexOffers account</h3><p>We hand you straight to the signup. FlexOffers runs the tracking and pays you &mdash; you get a referral link and a payout dashboard.</p></div>
+      <div class="pt-step"><div class="pt-step-n">3</div><h3>Share your link and get paid</h3><p>Share it with your audience. You earn for as long as a referred patient stays enrolled, up to the cap for that program.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="apply">
+  <div class="container">
+    <div class="grid-head">
+      <h2>Apply to become a partner</h2>
+      <p>We take your details first so we can match your referrals to you, then hand you to
+        FlexOffers to finish the signup.</p>
+    </div>
+    <div class="pt-form-card">
+      <form class="pt-form" id="pt-form" novalidate>
+        <div class="pt-row">
+          <div class="pt-field">
+            <label for="pt-first">First name</label>
+            <input type="text" id="pt-first" name="firstName" autocomplete="given-name" required>
+            <p class="pt-err" id="err-first"></p>
+          </div>
+          <div class="pt-field">
+            <label for="pt-last">Last name</label>
+            <input type="text" id="pt-last" name="lastName" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="pt-field">
+          <label for="pt-email">Email</label>
+          <input type="email" id="pt-email" name="email" autocomplete="email" required>
+          <p class="pt-err" id="err-email"></p>
+        </div>
+        <div class="pt-field">
+          <label for="pt-phone">Mobile number</label>
+          <input type="tel" id="pt-phone" name="phone" autocomplete="tel" required>
+          <p class="pt-err" id="err-phone"></p>
+        </div>
+        <div class="pt-row">
+          <div class="pt-field">
+            <label for="pt-business">Gym, studio or business</label>
+            <input type="text" id="pt-business" name="business" autocomplete="organization" required>
+            <p class="pt-err" id="err-business"></p>
+          </div>
+          <div class="pt-field">
+            <label for="pt-city">City</label>
+            <input type="text" id="pt-city" name="city" autocomplete="address-level2">
+          </div>
+        </div>
+        <label class="pt-consent">
+          <input type="checkbox" id="pt-consent" name="consent">
+          <span>Text and email me about the DirectCare AI partner program. Message and data
+            rates may apply; reply STOP to opt out. See our
+            <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Use</a>.</span>
+        </label>
+        <p class="pt-err" id="err-consent"></p>
+        <button type="submit" class="btn btn-primary btn-primary-xl pt-submit" id="pt-submit">
+          Continue to FlexOffers</button>
+        <p class="pt-note" id="pt-status"></p>
+      </form>
+
+      <div class="pt-done" id="pt-done">
+        <div class="pt-check"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <h3>You&rsquo;re on the list.</h3>
+        <p>Last step: create your FlexOffers account. FlexOffers runs the tracking and pays
+          you &mdash; your referral link is issued there.</p>
+        <a class="btn btn-primary btn-primary-xl" id="pt-flex" href="#" target="_blank" rel="noopener noreferrer">
+          Create my FlexOffers account</a>
+        <p class="pt-note">Opens FlexOffers in a new tab. If it doesn&rsquo;t open, email
+          <a href="mailto:partner@directcareai.com">partner@directcareai.com</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <div class="grid-head">
+      <h2>Partner rules</h2>
+      <p>These are conditions of the program, not suggestions. Partners who do not follow them
+        are removed from the program and forfeit unpaid commissions.</p>
+    </div>
+    <div class="pt-rules">
+      <div class="pt-rule"><h3>You must disclose that you are paid.</h3><p>Every time you promote DirectCare AI &mdash; in the same post, video, message or conversation, before the link &mdash; say clearly that you earn a commission on referrals. &ldquo;#ad&rdquo;, &ldquo;paid partner&rdquo;, or &ldquo;I get paid if you sign up&rdquo; all work. This is required by the FTC and it is a condition of the program.</p></div>
+      <div class="pt-rule"><h3>You are not a clinician and must not act like one.</h3><p>You may not give medical advice, interpret anyone&rsquo;s labs or symptoms, recommend a specific medication or dose, tell anyone they qualify for a program, or suggest anyone stop or change a treatment.</p></div>
+      <div class="pt-rule"><h3>Never promise a result.</h3><p>Do not claim or imply any outcome &mdash; weight lost, hormone levels, hair regrown, or performance of any kind.</p></div>
+      <div class="pt-rule"><h3>Never position DirectCare AI as a performance aid.</h3><p>DirectCare AI programs are prescribed only for clinical indications. You may not present any program as a physique, competition or athletic-performance product, or imply it is an alternative to anything used for those purposes.</p></div>
+      <div class="pt-rule"><h3>Do not target individuals by health condition.</h3><p>Promote to your audience generally. Do not single out a specific person because you believe they have a medical condition.</p></div>
+      <div class="pt-rule"><h3>Do not speak for DirectCare AI.</h3><p>You are an independent partner, not an employee, agent or representative, and you cannot make commitments on our behalf.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-head"><h2>Clinician independence</h2></div>
+    <div class="pt-disclosure">
+      <p>Referral commissions have no bearing on clinical decisions. Clinicians evaluate every
+        patient independently and prescribe only what is clinically appropriate for that person.
+        Partners are paid for marketing, not for any treatment decision, and a partner&rsquo;s
+        commission never changes what a clinician recommends. <b>Not everyone who starts an
+        evaluation qualifies for treatment.</b></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-head">
+      <h2>If you want to try it yourself</h2>
+      <p>Partner commissions are for referrals. If you want to start a program yourself, use the
+        program pages like any other patient.</p>
+    </div>
+    <div class="pt-links">
+        <a href="/mens-weight-loss">Weight loss</a>
+        <a href="/testosterone-replacement-therapy">Men&rsquo;s hormones</a>
+        <a href="/hormone-replacement-therapy">Women&rsquo;s hormones</a>
+        <a href="/surge-max">Sexual health</a>
+        <a href="/mens-hair-loss">Hair loss</a>
+        <a href="/blood-test">Blood labs</a>
+    </div>
+    <p class="pt-earnings" style="margin-top:22px">Attendee code <b>OLYMPIA26</b> &mdash; 20% off
+      your first order, through September&nbsp;30,&nbsp;2026. New patients only, one use per
+      customer. Blood panels and supplements excluded. Enter it at checkout.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="pt-disclosure">
+      <p>Treatment decisions are made by licensed clinicians following evaluation; not everyone
+        qualifies. DirectCare AI programs are prescribed for clinical indications only and are
+        <b>not for athletic or performance enhancement</b>. Cash-pay only; we do not bill
+        insurance. DirectCare AI is not a replacement for your primary care provider.</p>
+      <p>DirectCare AI is a d/b/a of Meta Digital Developers LLC (Wyoming). See our
+        <a href="/privacy">Privacy Policy</a> and <a href="/terms">Terms of Use</a>.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="/logo-color.png" alt="DirectCare AI logo" />
+        <p>DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+        <div class="social-row" aria-label="Follow DirectCare AI">
+          <a href="https://www.facebook.com/61577140438558/about/?_rdr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.87v-6.98H7.9V12h2.5V9.8c0-2.46 1.46-3.82 3.7-3.82 1.07 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54V12h2.72l-.43 2.89h-2.29v6.98A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://www.instagram.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg></a>
+          <a href="https://twitter.com/directcareai" target="_blank" rel="noopener noreferrer" aria-label="X / Twitter"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2H21l-6.523 7.452L22.5 22h-6.84l-4.97-6.456L4.9 22H2.14l6.978-7.973L1.5 2h7.005l4.5 5.94L18.244 2zm-1.197 18.18h1.598L7.05 3.74H5.328L17.047 20.18z"/></svg></a>
+          <a href="https://www.tiktok.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5.8 20.1a6.34 6.34 0 0 0 10.86-4.43V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1.84-.39z"/></svg></a>
+          <a href="https://www.youtube.com/@directcareai" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.6-.46-5.33a2.78 2.78 0 0 0-1.96-1.97C18.84 4.25 12 4.25 12 4.25s-6.84 0-8.58.45a2.78 2.78 0 0 0-1.96 1.97C1 8.4 1 12 1 12s0 3.6.46 5.33a2.78 2.78 0 0 0 1.96 1.97c1.74.45 8.58.45 8.58.45s6.84 0 8.58-.45a2.78 2.78 0 0 0 1.96-1.97C23 15.6 23 12 23 12zM9.75 15.27V8.73L15.5 12l-5.75 3.27z"/></svg></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h2>For men</h2>
+        <a href="/testosterone-replacement-therapy">TRT</a>
+        <a href="/surge-max">Sexual Health</a>
+        <a href="/mens-hair-loss">Hair Regrowth</a>
+        <a href="/mens-weight-loss">Weight Loss</a>
+        <a href="/supplements">Supplements</a>
+      </div>
+      <div class="foot-col">
+        <h2>For women</h2>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/womens-weight-loss">Weight Loss</a>
+        <a href="/womans-hair-loss">Hair Regrowth</a>
+        <a href="/blood-test">Blood Labs</a>
+        <a href="/chronic-care">Chronic Care</a>
+        <a href="/womens-health">View all →</a>
+      </div>
+      <div class="foot-col foot-col-legal">
+        <a href="/about">About</a>
+        <a href="/faq">FAQ</a>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/ccpa">CCPA</a>
+        <a href="/bill-of-rights">Bill of Rights</a>
+      </div>
+    </div>
+    <div class="footer-trust" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px 28px; padding: 36px 0 8px;">
+      <a href="https://www.legitscript.com/websites/?checker_keywords=directcare.ai" target="_blank" rel="noopener noreferrer" title="Verify LegitScript Approval for www.directcare.ai" style="display: inline-block;">
+        <img src="https://static.legitscript.com/seals/42494781.png" alt="Verify LegitScript Approval for www.directcare.ai" width="73" height="79" style="display: block;" />
+      </a>
+      <span class="hipaa-text-chip">HIPAA Compliant</span>
+      <a href="https://apps.apple.com/us/app/directcareai/id6744840922" target="_blank" rel="noopener noreferrer">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" style="display: block; height: 48px; width: auto;" />
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.directcareai.app" target="_blank" rel="noopener noreferrer">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" style="display: block; height: 64px; width: auto;" />
+      </a>
+      <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer" title="DirectCare Pharmacy Card" style="display: inline-block;">
+        <img src="/optimized/front-800.webp" alt="DirectCare AI Prescription Savings Card" style="display: block; height: 72px; width: auto;" width="1225" height="700" srcset="/optimized/front-400.webp 400w, /optimized/front-800.webp 800w, /optimized/front-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
+      </a>
+    </div>
+    <div class="legal">
+      <div>&copy; 2026 DirectCare AI. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · LegitScript Certified</div>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Disclaimer:</strong> DirectCare AI is a patient management platform supporting independent physicians. Payment does not guarantee prescribing or dispensing of any medication. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality.
+      <p style="margin-top:10px">Services are available in all 50 states and Washington D.C. Medication and product availability varies based on clinical appropriateness, applicable federal and state laws, or other regulatory requirements. Not all therapies are available in all states. Availability is subject to change.</p>
+    </div>
+    <div class="legal-disclaimer">
+      <strong>Partner pharmacies &amp; image disclaimer:</strong> DirectCare AI does not manufacture or compound medications. We partner with multiple US-licensed compounding pharmacies; the medication you receive. Including its packaging, label, vial shape, and color. May differ from the imagery shown. All product, model, and lifestyle imagery is for illustrative purposes only; models depicted are not actual patients.
+    </div>
+  </div>
+</footer>
+
+<script>
+  /* Mobile drawer */
+  (function() {
+    var t = document.getElementById('mobile-toggle');
+    var d = document.getElementById('mobile-drawer');
+    if (!t || !d) return;
+    t.addEventListener('click', function() { d.classList.toggle('open'); });
+    d.addEventListener('click', function(e) { if (e.target.tagName === 'A') d.classList.remove('open'); });
+  })();
+
+  /* Affiliate click-ID capture + propagation */
+  (function() {
+    var STORAGE_KEY = 'dcai_clickId', STORAGE_TS = 'dcai_clickId_ts';
+    var TTL_MS = 7 * 24 * 60 * 60 * 1000;
+    var INCOMING = ['utm_clickId','utm_clickid','clickid','clickId','cid','aff_id','flex_id'];
+    var HOSTS = ['directcare.ai', 'www.directcare.ai', 'directcare-home.vercel.app', 'mens-hair-loss.vercel.app', 'womens-hair-loss.vercel.app', 'sexual-health-mocha.vercel.app', 'directcare-weight-loss.vercel.app', 'chronic-care-azure.vercel.app', 'business.tellescope.com', 'directcareai.portal.tellescope.com'];
+    function U(h){try{return new URL(h, window.location.href);}catch(e){return null;}}
+    function fromQuery(){var u=U(window.location.href);if(!u)return null;for(var i=0;i<INCOMING.length;i++){var v=u.searchParams.get(INCOMING[i]);if(v)return v;}return null;}
+    function save(id){try{sessionStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_KEY,id);localStorage.setItem(STORAGE_TS,String(Date.now()));}catch(e){}}
+    function load(){try{var s=sessionStorage.getItem(STORAGE_KEY);if(s)return s;var l=localStorage.getItem(STORAGE_KEY);var ts=parseInt(localStorage.getItem(STORAGE_TS)||'0',10);if(l&&Date.now()-ts<TTL_MS){sessionStorage.setItem(STORAGE_KEY,l);return l;}if(l){localStorage.removeItem(STORAGE_KEY);localStorage.removeItem(STORAGE_TS);}}catch(e){}return null;}
+    var cid=fromQuery();if(cid)save(cid);else cid=load();if(!cid)return;
+    function rewriteAll(){document.querySelectorAll('a[href]').forEach(function(a){var raw=a.getAttribute('href');if(!raw||raw.charAt(0)==='#'||raw.indexOf('mailto:')===0||raw.indexOf('tel:')===0||raw.indexOf('javascript:')===0)return;var u=U(a.href);if(!u||HOSTS.indexOf(u.hostname)===-1)return;if(!u.searchParams.has('utm_clickId')){u.searchParams.set('utm_clickId',cid);a.href=u.toString();}});}
+    rewriteAll();
+    if('MutationObserver' in window){var mo=new MutationObserver(rewriteAll);mo.observe(document.body,{childList:true,subtree:true});setTimeout(function(){mo.disconnect();},4000);}
+  })();
+</script>
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="/start"]');
+    if (a) {
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
+<script>
+  /* Tap-to-copy on the offer badge. Nothing here is tracked: per the compliance review,
+     no outbound-click or program-level events may be added to this page. */
+  (function () {
+    var b = document.querySelector('.oly-badge');
+    if (!b) return;
+    var hint = b.querySelector('.oly-badge-hint');
+    var timer;
+    function done() {
+      b.setAttribute('data-copied', '1');
+      if (hint) hint.textContent = hint.getAttribute('data-done');
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        b.removeAttribute('data-copied');
+        if (hint) hint.textContent = hint.getAttribute('data-idle');
+      }, 2200);
+    }
+    b.addEventListener('click', function () {
+      var code = b.getAttribute('data-code');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, fallback);
+      } else { fallback(); }
+      function fallback() {
+        /* Older iOS Safari and any non-secure context land here. */
+        try {
+          var t = document.createElement('textarea');
+          t.value = code; t.setAttribute('readonly', '');
+          t.style.position = 'absolute'; t.style.left = '-9999px';
+          document.body.appendChild(t); t.select();
+          document.execCommand('copy'); document.body.removeChild(t);
+          done();
+        } catch (e) { /* the code is on screen either way */ }
+      }
+    });
+  })();
+</script>
+
+<script>
+/* /partner capture -> FlexOffers handoff.
+   Capture runs BEFORE the handoff on purpose: linking straight out loses every
+   applicant who abandons the FlexOffers signup, and those are the ones worth a
+   follow-up. The beacon that fires on tap-through records only that they REACHED
+   the signup -- never that they completed it. */
+(function () {
+  var FLEXOFFERS =
+    'https://publisherprobeta.flexoffers.com/signup/accountInfo?aid=242050&SRCCODE=ADVPRO';
+  /* The "beta" subdomain is not a mistake: FlexOffers redirects the non-beta host
+     back here, and only this path lands on the signup form rather than a login. */
+
+  var form = document.getElementById('pt-form');
+  if (!form) return;
+  var done = document.getElementById('pt-done');
+  var status = document.getElementById('pt-status');
+  var submit = document.getElementById('pt-submit');
+  var flex = document.getElementById('pt-flex');
+  var contactId = null, email = '';
+
+  var F = {
+    first:    document.getElementById('pt-first'),
+    email:    document.getElementById('pt-email'),
+    phone:    document.getElementById('pt-phone'),
+    business: document.getElementById('pt-business'),
+    consent:  document.getElementById('pt-consent')
+  };
+
+  function digits(s) { return String(s || '').replace(/\D/g, ''); }
+  function emailOk(s) { return /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s); }
+  function phoneOk(s) { var d = digits(s); return d.length === 10 || (d.length === 11 && d[0] === '1'); }
+
+  function setErr(key, el, msg) {
+    var p = document.getElementById('err-' + key);
+    if (p) { p.textContent = msg || ''; p.classList.toggle('on', !!msg); }
+    if (el && el.setAttribute) {
+      if (msg) el.setAttribute('aria-invalid', 'true');
+      else el.removeAttribute('aria-invalid');
+    }
+    return !msg;
+  }
+
+  /* Live formatting, but only forward -- reformatting while someone deletes
+     fights the caret. */
+  F.phone.addEventListener('input', function () {
+    var d = digits(this.value).slice(0, 10);
+    if (d.length > 6) this.value = '(' + d.slice(0,3) + ') ' + d.slice(3,6) + '-' + d.slice(6);
+    else if (d.length > 3) this.value = '(' + d.slice(0,3) + ') ' + d.slice(3);
+    else if (d.length) this.value = d;
+  });
+
+  function validate() {
+    var ok = true;
+    ok = setErr('first', F.first, F.first.value.trim() ? '' : 'We need a first name.') && ok;
+    ok = setErr('email', F.email, emailOk(F.email.value.trim()) ? ''
+          : 'Enter a valid email \u2014 your payouts are tied to it.') && ok;
+    ok = setErr('phone', F.phone, phoneOk(F.phone.value) ? '' : 'Enter a valid mobile number.') && ok;
+    ok = setErr('business', F.business, F.business.value.trim() ? ''
+          : 'Gym, studio or business name \u2014 or your own if you train solo.') && ok;
+    ok = setErr('consent', null, F.consent.checked ? ''
+          : 'Please tick the box so we can send your partner details.') && ok;
+    return ok;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!validate()) {
+      var bad = form.querySelector('[aria-invalid="true"]');
+      if (bad) bad.focus({ preventScroll: false });
+      return;
+    }
+    submit.disabled = true;
+    status.textContent = 'One moment\u2026';
+    email = F.email.value.trim().toLowerCase();
+
+    fetch('/api/partner-lead', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        firstName: F.first.value.trim(),
+        lastName:  document.getElementById('pt-last').value.trim(),
+        email:     email,
+        phone:     digits(F.phone.value),
+        business:  F.business.value.trim(),
+        city:      document.getElementById('pt-city').value.trim(),
+        consent:   true
+      })
+    }).then(function (r) { return r.json().catch(function () { return {}; }); })
+      .then(function (out) {
+        if (!out || !out.ok) throw new Error('capture failed');
+        contactId = out.contactId || null;
+        flex.setAttribute('href', FLEXOFFERS);
+        form.classList.add('off');
+        done.classList.add('on');
+        done.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      })
+      .catch(function () {
+        /* Never strand someone on a failed capture -- they came here to sign up.
+           Let them through to FlexOffers and say plainly that we did not save them. */
+        submit.disabled = false;
+        status.innerHTML = 'We couldn\u2019t save your details just now. You can still ' +
+          '<a href="' + FLEXOFFERS + '" target="_blank" rel="noopener noreferrer">continue to ' +
+          'FlexOffers</a>, or email <a href="mailto:partner@directcareai.com">' +
+          'partner@directcareai.com</a>.';
+      });
+  });
+
+  /* Records that they OPENED the FlexOffers signup -- not that they finished it.
+     Presence-only by design: there is deliberately no opposite tag, because GHL
+     adds tags and never removes them. */
+  flex.addEventListener('click', function () {
+    if (!email) return;
+    var body = JSON.stringify({ action: 'reached-flexoffers', email: email, contactId: contactId });
+    try {
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/partner-lead', new Blob([body], { type: 'application/json' }));
+      } else {
+        fetch('/api/partner-lead', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: body, keepalive: true
+        });
+      }
+    } catch (_) {}
+  });
+})();
+</script>
+
+</body>
+</html>

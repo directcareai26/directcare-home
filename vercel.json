@@ -659,6 +659,21 @@
       "source": "/blog/apob-vs-ldl-the-cholesterol-marker-your-bloodwork-should-include",
       "destination": "/blog/apob-vs-ldl-cholesterol-cardiologists-ask",
       "permanent": true
+    },
+    {
+      "source": "/partners",
+      "destination": "/partner",
+      "permanent": false
+    },
+    {
+      "source": "/affiliate",
+      "destination": "/partner",
+      "permanent": false
+    },
+    {
+      "source": "/affiliates",
+      "destination": "/partner",
+      "permanent": false
     }
   ],
   "rewrites": [

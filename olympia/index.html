@@ -721,8 +721,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="oly-codebar">
   <div class="container">
-    Code <b>OLYMPIA26</b> &mdash; 20% off your first order. Good through September&nbsp;30,&nbsp;2026.
-    New patients, one use per customer. Blood panels and supplements excluded. Enter it at checkout.
+    <button class="oly-badge" type="button" data-code="OLYMPIA26"
+            aria-label="Copy discount code OLYMPIA26 to your clipboard">
+      <span class="oly-badge-k">20% off your first order</span>
+      <span class="oly-badge-v" aria-hidden="true">OLYMPIA26</span>
+      <span class="oly-badge-hint" data-idle="Tap to copy" data-done="Copied">Tap to copy</span>
+    </button>
+    <p class="oly-codeterms">Good through September&nbsp;30,&nbsp;2026. New patients, one use per
+      customer. Blood panels and supplements excluded. Enter it at checkout.</p>
   </div>
 </div>
 
@@ -976,6 +982,42 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }, { passive: true });
 })();
+</script>
+<script>
+  /* Tap-to-copy on the offer badge. Nothing here is tracked: per the compliance review,
+     no outbound-click or program-level events may be added to this page. */
+  (function () {
+    var b = document.querySelector('.oly-badge');
+    if (!b) return;
+    var hint = b.querySelector('.oly-badge-hint');
+    var timer;
+    function done() {
+      b.setAttribute('data-copied', '1');
+      if (hint) hint.textContent = hint.getAttribute('data-done');
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        b.removeAttribute('data-copied');
+        if (hint) hint.textContent = hint.getAttribute('data-idle');
+      }, 2200);
+    }
+    b.addEventListener('click', function () {
+      var code = b.getAttribute('data-code');
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(code).then(done, fallback);
+      } else { fallback(); }
+      function fallback() {
+        /* Older iOS Safari and any non-secure context land here. */
+        try {
+          var t = document.createElement('textarea');
+          t.value = code; t.setAttribute('readonly', '');
+          t.style.position = 'absolute'; t.style.left = '-9999px';
+          document.body.appendChild(t); t.select();
+          document.execCommand('copy'); document.body.removeChild(t);
+          done();
+        } catch (e) { /* the code is on screen either way */ }
+      }
+    });
+  })();
 </script>
 </body>
 </html>

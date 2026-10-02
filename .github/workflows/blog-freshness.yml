@@ -1,0 +1,25 @@
+name: Blog Freshness
+
+# Alerts Slack (and fails red) when the newest LIVE blog post is more than 2 days
+# old. Added after the daily post failed silently for 18 days (2026-09-15 → 10-02).
+# Runs once a day, well after the daily post's 12:00 UTC slot — GitHub has been
+# starting that job 4–6 hours late — so one alert per day while stale.
+
+on:
+  schedule:
+    - cron: "0 22 * * *"   # 22:00 UTC = 6 PM EDT / 5 PM EST
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check newest live post
+        env:
+          SITE_HEALTH_WEBHOOK: ${{ secrets.SITE_HEALTH_WEBHOOK }}
+        run: python scripts/site-health/blog_freshness.py

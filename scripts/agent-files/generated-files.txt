@@ -20,6 +20,7 @@ blog/compounded-vs-branded-glp1-actual-difference.md
 blog/continuous-glucose-monitor-cgm-for-non-diabetics.md
 blog/cottage-cheese-bowl-protein-snack.md
 blog/creatine-for-women-cognition-bone-longevity.md
+blog/deload-weeks-planned-rest-strength-gains.md
 blog/dhea-in-womens-hrt-the-third-sex-hormone.md
 blog/dutasteride-vs-finasteride-when-to-step-up.md
 blog/eat-the-rainbow-phytonutrient-targets-by-color.md

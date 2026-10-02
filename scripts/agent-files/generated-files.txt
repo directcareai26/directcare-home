@@ -79,6 +79,7 @@ blog/overnight-oats-iron-protein-fiber.md
 blog/perimenopause-nutrition-foods-that-help.md
 blog/perimenopause-vs-menopause-lab-values.md
 blog/plant-protein-perimenopause-lentil-tofu-tempeh.md
+blog/post-meal-walk-blood-sugar-glucose-response.md
 blog/progesterone-at-night-timing-vs-dose.md
 blog/protein-fiber-breakfast-template-busy-mornings.md
 blog/protein-timing-post-workout-window.md

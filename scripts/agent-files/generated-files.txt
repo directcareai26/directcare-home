@@ -90,6 +90,7 @@ blog/read-hormone-panel-like-clinician.md
 blog/rucking-cardio-strength-training-guide.md
 blog/salmon-tacos-cabbage-slaw-recipe.md
 blog/semaglutide-tirzepatide-difference.md
+blog/shbg-explained-free-testosterone-binding-protein.md
 blog/sheet-pan-chicken-thighs-roasted-vegetables.md
 blog/sheet-pan-miso-salmon-bok-choy-recipe.md
 blog/sildenafil-vs-tadalafil-daily-vs-on-demand.md

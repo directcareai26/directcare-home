@@ -511,7 +511,7 @@ HARD PROHIBITIONS (a violation is a failed post, not a style note):
   "lift heavy 2-3x/week"). Describe what the evidence or a clinician indicates instead.
 - NEVER use a guarantee verb ("ensures", "guarantees", "proven") or promise an outcome ("you will lose weight",
   "for the best results").
-- Callouts use exactly {callout: Short Title} at the start of a paragraph. Do not invent other template tokens.
+- Callouts use exactly {{callout: Short Title}} at the start of a paragraph. Do not invent other template tokens.
 """
 
 

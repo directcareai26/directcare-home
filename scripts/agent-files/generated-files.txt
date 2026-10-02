@@ -36,6 +36,7 @@ blog/female-pattern-hair-loss-hormonal-panel.md
 blog/ferritin-iron-deficiency-women-mistaken-for-menopause.md
 blog/fiber-on-glp1-25-35g-daily-appetite.md
 blog/fiber-target-most-patients-underdose.md
+blog/foods-that-lower-ldl-cholesterol-swaps.md
 blog/free-vs-total-testosterone-what-actually-matters.md
 blog/glp1-dose-titration-without-nausea.md
 blog/glp1-maintenance-protocol-after-weight-loss.md

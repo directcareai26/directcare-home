@@ -100,6 +100,7 @@ blog/trt-and-sleep-apnea-the-bidirectional-relationship.md
 blog/trt-vs-enclomiphene-which-protocol.md
 blog/two-lift-minimum-busy-week-strength-template.md
 blog/vaginal-estradiol-gsm-most-underprescribed-hrt.md
+blog/vitamin-b12-folate-deficiency-labs-guide.md
 blog/vitamin-d3-k2-dosing-blood-level-targets.md
 blog/walking-7000-steps-cardio-prescription.md
 blog/walking-vs-running-cardiovascular-risk-data.md

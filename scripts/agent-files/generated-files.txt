@@ -77,6 +77,7 @@ blog/online-menopause-visit-what-to-expect.md
 blog/oral-micronized-progesterone-vs-progestins.md
 blog/order-blood-tests-online-clinician-panel-guide.md
 blog/overnight-oats-iron-protein-fiber.md
+blog/performance-anxiety-vs-physical-ed.md
 blog/perimenopause-nutrition-foods-that-help.md
 blog/perimenopause-vs-menopause-lab-values.md
 blog/plant-protein-perimenopause-lentil-tofu-tempeh.md

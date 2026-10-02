@@ -80,6 +80,7 @@ blog/plant-protein-perimenopause-lentil-tofu-tempeh.md
 blog/progesterone-at-night-timing-vs-dose.md
 blog/protein-fiber-breakfast-template-busy-mornings.md
 blog/protein-timing-post-workout-window.md
+blog/psa-prostate-monitoring-testosterone-therapy.md
 blog/pt-141-bremelanotide-libido-melanocortin-pathway.md
 blog/read-hormone-panel-like-clinician.md
 blog/rucking-cardio-strength-training-guide.md

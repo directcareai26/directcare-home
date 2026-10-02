@@ -65,6 +65,7 @@ blog/morning-erections-testosterone-what-they-tell-clinician.md
 blog/morning-testosterone-test-timing.md
 blog/muscle-preservation-glp1-protein-resistance-training.md
 blog/omega-3-epa-dha-dose-inflammation-markers.md
+blog/online-hair-loss-treatment-what-to-expect.md
 blog/oral-micronized-progesterone-vs-progestins.md
 blog/overnight-oats-iron-protein-fiber.md
 blog/perimenopause-nutrition-foods-that-help.md
@@ -106,7 +107,6 @@ faq.md
 hormone-replacement-therapy/hot-flashes-and-night-sweats.md
 hormone-replacement-therapy/low-libido-vaginal-dryness.md
 hormone-replacement-therapy/mood-anxiety-brain-fog.md
-hormone-replacement-therapy/start/index.md
 hormone-replacement-therapy/trouble-sleeping.md
 hormone-replacement-therapy/weight-gain-energy-crashes.md
 hormone-replacement-therapy.md
@@ -115,7 +115,6 @@ index.md
 lifestyle.md
 medical-consent.md
 mens-hair-loss/index.md
-mens-hair-loss/start/index.md
 mens-health.md
 mens-weight-loss/index.md
 peptides.md
@@ -125,9 +124,7 @@ refund-policy.md
 safety.md
 supplements.md
 surge-max/index.md
-surge-max/start/index.md
 terms-and-conditions.md
-testosterone-replacement-therapy/start/index.md
 testosterone-replacement-therapy.md
 together.md
 trt-executives.md
@@ -135,8 +132,6 @@ trt-firefighters.md
 trt-former-athletes.md
 trt-police-officers.md
 weight-loss/index.md
-weight-loss/start/index.md
 womans-hair-loss/index.md
-womans-hair-loss/start/index.md
 womens-health.md
 womens-weight-loss/index.md

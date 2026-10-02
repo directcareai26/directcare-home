@@ -4,13 +4,7 @@
 
 Source: https://www.directcare.ai/bill-of-rights
 
-Medical Consent
-
-### Telehealth Informed Consent
-
- Last Updated: January 9, 2025
-
- Legal
+Legal
 
 ## Patient Bill of Rights
 

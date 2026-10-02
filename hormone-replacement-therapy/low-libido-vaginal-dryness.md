@@ -24,9 +24,9 @@ Menopause symptoms · Treated online
 
  report low desire causing personal distress
 
- 80–90%
+ 1st-line
 
- of dryness cases improve with low-dose vaginal estrogen
+ therapy for moderate-to-severe GSM (Menopause Society)
 
  4–12 wks
 
@@ -152,7 +152,7 @@ Menopause symptoms · Treated online
 
 - Safe in many cancer-survivor populations after specialist input
 
- Typical effect: 80–90% improvement
+ Typical effect: Menopause Society first-line for moderate-to-severe GSM
 
 #### 3 · Testosterone for women
 

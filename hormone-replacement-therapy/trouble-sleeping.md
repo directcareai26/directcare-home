@@ -138,7 +138,7 @@ Menopause symptoms · Treated online
 
 - CBT-I if available — the most effective non-drug option
 
- Typical effect: 10–20% improvement
+ Typical effect: ~4.5-point drop in insomnia severity (11-RCT meta-analysis)
 
 #### 2 · Hormone Replacement Therapy
 
@@ -152,7 +152,7 @@ Menopause symptoms · Treated online
 
 - Most women rebuild deep sleep within 4–6 weeks
 
- Typical effect: up to 60% fewer wake episodes
+ Typical effect: better sleep efficiency in randomized trials; most benefit when night sweats drive the waking
 
 #### 3 · Non-hormonal Rx
 

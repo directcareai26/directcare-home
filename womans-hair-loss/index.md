@@ -6,7 +6,7 @@ Source: https://www.directcare.ai/womans-hair-loss
 
 ## Women's hair loss treatment online: minoxidil & spironolactone.
 
- Personalized topical and oral protocols built for women, Minoxidil, Spironolactone, Dutasteride topical, Tretinoin, Fluocinolone, Biotin, **prescribed by a US-licensed clinician, compounded in the USA, shipped discreetly.**
+ Personalized topical and oral protocols built for women, Minoxidil, Spironolactone, Dutasteride topical, Tretinoin, Fluocinolone, Biotin, **prescribed by a US-licensed clinician, compounded in the USA, shipped discreetly.** Spironolactone is prescribed **off-label** for hair loss, at clinician discretion after a medical review — not all patients qualify.
 
  [See If You Qualify →](https://www.directcare.ai/womans-hair-loss/start)
  See the Protocols

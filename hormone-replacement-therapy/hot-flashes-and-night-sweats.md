@@ -8,7 +8,7 @@ Menopause symptoms · Treated online
 
 ## Hot flashes & night sweats: menopause treatment online.
 
- You're not imagining it, and you don't have to ride it out. **Up to 75% of women** experience vasomotor symptoms during the menopause transition, and HRT relieves them by **up to 90%**. Talk to a US-licensed clinician online and get a personalized plan, delivered to your door if appropriate.
+ You're not imagining it, and you don't have to ride it out. **Up to 75% of women** experience vasomotor symptoms during the menopause transition, and HRT can relieve them by **up to 90%**, per the Menopause Society. Talk to a US-licensed clinician online and get a personalized plan, delivered to your door if appropriate.
 
  [See if treatment is right for you →](https://www.directcare.ai/hormone-replacement-therapy/start)
  ~ 2 min · Free · No obligation
@@ -26,7 +26,7 @@ Menopause symptoms · Treated online
 
  90%
 
- average reduction in hot flashes on estrogen-based HRT
+ average reduction in hot flashes on estrogen-based HRT (Menopause Society)
 
  2–6 wks
 
@@ -156,7 +156,7 @@ Menopause symptoms · Treated online
 
 - Testosterone added when libido and energy are also flat
 
- Typical effect: up to 90% reduction in hot flashes
+ Typical effect: up to 90% reduction in hot flashes (Menopause Society)
 
 #### 3 · Non-hormonal Rx
 

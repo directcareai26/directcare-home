@@ -84,6 +84,7 @@ blog/sheet-pan-chicken-thighs-roasted-vegetables.md
 blog/sheet-pan-miso-salmon-bok-choy-recipe.md
 blog/sildenafil-vs-tadalafil-daily-vs-on-demand.md
 blog/subq-vs-im-testosterone-injections-pharmacokinetics.md
+blog/supplement-protocol-from-labs-not-guessing.md
 blog/testosterone-for-women-hrt-protocols.md
 blog/topical-vs-oral-finasteride-men-hair.md
 blog/topical-vs-oral-finasteride-side-effects.md

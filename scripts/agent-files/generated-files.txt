@@ -59,6 +59,7 @@ blog/magnesium-glycinate-vs-citrate-vs-threonate.md
 blog/magnesium-rich-foods-vs-supplements.md
 blog/magnesium-vitamin-d-supplement-gaps.md
 blog/mediterranean-lentil-soup-recipe.md
+blog/mens-health-blood-panel-biomarkers.md
 blog/microneedling-dermaroller-for-hair-regrowth-protocol.md
 blog/minoxidil-shedding-why-month-one-hair-loss-means-its-working.md
 blog/morning-erections-testosterone-what-they-tell-clinician.md

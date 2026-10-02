@@ -2603,9 +2603,130 @@ Source: https://www.directcare.ai/blood-test
 
  $346one-time
 
- 80 biomarkers — full female hormones, thyroid, metabolic & bone.
+ 80 biomarkers — full female hormones, testosterone, thyroid & metabolic.
 
  À la carte: ~$2,200 · You save ~$1,850
+ [Order Women's →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
+
+#### What's in each panel
+
+ The markers people order labs for, panel by panel. Open any panel for its full biomarker list.
+
+##### Essential Panel · $196
+
+ 70 biomarkers
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart & inflammation Full lipid panel, plus hsCRP and homocysteine (only in Essential)
+
+- Fatigue & nutrients Vitamin D, B12, folate (RBC), iron, ferritin
+
+- Thyroid screen TSH
+
+- Also included Liver, kidney, uric acid and a full CBC with differential
+
+ See all 70 biomarkers
+
+**Cardiovascular (8)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated), hsCRP, Homocysteine
+
+**Metabolic (4)**
+ HbA1c, Insulin, Glucose, Uric Acid
+
+**Nutrients (7)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)
+
+**Hormones (1)**
+ TSH
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
+ [Order Essential →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=)
+
+##### Men's Health Panel · $296
+
+ 75 biomarkers
+
+- Testosterone & libido Total, free and bioavailable testosterone, SHBG, DHT, DHEA
+
+- Thyroid & stress TSH, Free T3, Free T4, morning cortisol
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart Full lipid panel
+
+- Fatigue & nutrients Vitamin D, B12, iron, ferritin
+
+ See all 75 biomarkers
+
+**Hormones (10)**
+ TSH, Free T4, Free T3, Cortisol (AM), Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, DHEA (unconjugated)
+
+**Cardiovascular (6)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)
+
+**Metabolic (3)**
+ HbA1c, Insulin, Glucose
+
+**Nutrients (6)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
+ [Order Men's →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=)
+
+##### Women's Health Panel · $346
+
+ 80 biomarkers
+
+- Cycle, perimenopause & menopause Estradiol, progesterone, FSH, LH
+
+- Testosterone & libido Total, free and bioavailable testosterone, SHBG, DHT, DHEA
+
+- Thyroid & stress TSH, Free T3, Free T4, morning cortisol
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart & nutrients Full lipid panel, vitamin D, B12, folate (RBC), iron, ferritin
+
+ See all 80 biomarkers
+
+**Hormones (14)**
+ TSH, Free T4, Free T3, Cortisol (AM), Estradiol, Progesterone, Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, FSH, LH, DHEA (unconjugated)
+
+**Cardiovascular (6)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)
+
+**Metabolic (3)**
+ HbA1c, Insulin, Glucose
+
+**Nutrients (7)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
  [Order Women's →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
 
  Not sure which fits? Compare everything included in each panel ↓
@@ -2676,15 +2797,15 @@ Source: https://www.directcare.ai/blood-test
 
 ### Eight systems. One full-body picture.
 
- From thyroid to testosterone, glucose to inflammation, vitamin D to iron stores. Every panel covers the biomarkers that drive how you feel, perform, and age.
+ From thyroid to testosterone, glucose to inflammation, vitamin D to iron stores. Every panel covers metabolic health, cholesterol, nutrients, liver, kidney and a full CBC. The Men's and Women's panels add the hormone systems; Essential adds inflammation and heart-risk markers.
 
 ##### Sex Hormones
 
- Total / free / bioavailable testosterone, estradiol, progesterone, FSH, LH, DHEA, DHT, SHBG.
+ Total / free / bioavailable testosterone, DHEA, DHT, SHBG (Men's & Women's). Plus estradiol, progesterone, FSH, LH (Women's).
 
 ##### Thyroid
 
- TSH, Free T3, Free T4. Your full thyroid picture, not just TSH.
+ TSH in every panel. Men's & Women's add Free T3 and Free T4 for the full thyroid picture.
 
 ##### Metabolic Health
 
@@ -2696,11 +2817,11 @@ Source: https://www.directcare.ai/blood-test
 
 ##### Vitamins & Iron
 
- Vitamin D (25-OH), Vitamin B12, Folate (RBC), Ferritin, Iron, TIBC, % Saturation.
+ Vitamin D (25-OH), Vitamin B12, Ferritin, Iron, TIBC, % Saturation. Plus Folate (RBC) in Essential & Women's.
 
 ##### Stress & Inflammation
 
- Cortisol (AM), hsCRP (Essential), Ferritin. Chronic stress & inflammation markers.
+ Cortisol (AM) in Men's & Women's. hsCRP and homocysteine in Essential. Ferritin in every panel.
 
 ##### Liver & Kidney
 
@@ -2710,8 +2831,8 @@ Source: https://www.directcare.ai/blood-test
 
  Full white & red cell differential, platelets, hemoglobin, hematocrit, MCV, MCH, RDW, MPV.
 
- Test All 8 Systems →
- One draw covers everything · From $196 · Clinician-interpreted
+ See What Each Panel Covers →
+ One draw per panel · Panels from $196 · Clinician-interpreted
 
 ### What your annual physical doesn't tell you.
 
@@ -2743,7 +2864,7 @@ Source: https://www.directcare.ai/blood-test
 
  Thyroid. TSH plus Free T3 & Free T4
 
- ✓All three
+ ✓Men's & Women's (TSH in Essential)
 
  △TSH only
 
@@ -2842,7 +2963,7 @@ Source: https://www.directcare.ai/blood-test
  À la carte at a typical lab + clinician: ~$1,200
  You save ~$1,000
 
-- 70 biomarkers . Full CBC, CMP, thyroid, lipid, insulin, hsCRP & homocysteine
+- 70 biomarkers . Full CBC, CMP, lipids, insulin & HbA1c, thyroid screen (TSH), hsCRP & homocysteine
 
 - Permanent access to your chart
 
@@ -2883,7 +3004,7 @@ Source: https://www.directcare.ai/blood-test
 
  $346one-time
 
- Hormones, thyroid, metabolic & bone-health focused
+ Built around female hormones, thyroid & metabolic health
 
  À la carte at a typical lab + clinician: ~$2,200
  You save ~$1,850
@@ -2899,6 +3020,23 @@ Source: https://www.directcare.ai/blood-test
 - Lifestyle & nutrition recommendations
 
  [Order My Panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
+
+### Other panels we offer.
+
+ Want something more focused, or more in-depth? These three are also available through our Fullscript store.
+
+ [Comprehensive Hormone Panel $429.99
+ 88 biomarkers · Best value
+ A hormone panel covering sex hormones, thyroid, adrenal function and metabolic markers.
+ View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=)
+ [Core Women's Health Panel $149.99
+ 67 biomarkers · New
+ Foundational hormone testing that measures key reproductive hormones.
+ View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=)
+ [Core Health Panel $150
+ 63 biomarkers · New
+ Builds on a basic health check with vitamin B12 testing.
+ View panel →](https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=)
 
  ![Dr. Tim Pepin, Clinical Advisor]
 

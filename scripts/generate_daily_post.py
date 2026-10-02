@@ -30,6 +30,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 BLOG_DIR = REPO_ROOT / "blog"
 MANIFEST_PATH = BLOG_DIR / "posts.json"
 TOPIC_BANK_PATH = Path(__file__).resolve().parent / "topic_bank.json"
+# Bank angles to burn per run when the generated post duplicates an existing one.
+MAX_DUPLICATE_RETRIES = 3
 # Ledger of bank angles the generator has already consumed. Keyed on the exact
 # bank angle string so an angle is never re-picked even if its generated slug
 # varies day to day (the bug that produced two "grip strength" posts).
@@ -252,6 +254,56 @@ DEFAULT_TOPIC_BANK = [
     {"category": "Fitness", "angle": "Lifting through perimenopause: the rep ranges and recovery rules that hold up"},
     {"category": "Fitness", "angle": "Rucking: the under-rated cardio that builds strength at the same time"},
     {"category": "Fitness", "angle": "Heart rate variability (HRV) — what the number means and when to act on it"},
+    # Refill 2026-10-02: bank was down to one usable angle after the 09-15 → 10-02 backfill.
+    {"category": "Blood Labs", "angle": "Fasting insulin: the early insulin-resistance marker a standard annual physical usually skips"},
+    {"category": "Blood Labs", "angle": "Hemoglobin A1c explained: what your three-month blood sugar average can and cannot tell you"},
+    {"category": "Blood Labs", "angle": "Full thyroid testing: why TSH alone can look normal while Free T3 and Free T4 tell a different story"},
+    {"category": "Blood Labs", "angle": "How to prepare for a blood draw: fasting, hydration, timing, and the supplements to pause beforehand"},
+    {"category": "Blood Labs", "angle": "Reading a CBC with differential: what white cell, red cell, and platelet counts reveal about everyday health"},
+    {"category": "Blood Labs", "angle": "Kidney function on a metabolic panel: what eGFR, creatinine, and BUN mean for people who lift or eat high protein"},
+    {"category": "Blood Labs", "angle": "Liver enzymes ALT and AST: common reasons they run high and when a clinician re-tests"},
+    {"category": "Blood Labs", "angle": "How often should you repeat bloodwork? A practical retesting schedule for tracking change over time"},
+    {"category": "Blood Labs", "angle": "Uric acid beyond gout: what an elevated level can signal about metabolic health"},
+    {"category": "TRT", "angle": "SHBG explained: the binding protein that decides how much of your testosterone is actually usable"},
+    {"category": "TRT", "angle": "The first 90 days on testosterone therapy: which changes come early, which take months, and what gets monitored"},
+    {"category": "TRT", "angle": "Weight, waist size, and testosterone: how body fat and male hormone levels influence each other"},
+    {"category": "TRT", "angle": "PSA and prostate monitoring on testosterone therapy: what the evidence says and how often to check"},
+    {"category": "HRT", "angle": "Hot flashes that start before your period stops: what perimenopause testing can and cannot confirm"},
+    {"category": "HRT", "angle": "Hormone therapy and heart health: what the timing hypothesis means for women starting in their 40s and 50s"},
+    {"category": "HRT", "angle": "Brain fog in perimenopause: the hormonal, thyroid, and iron causes worth ruling out"},
+    {"category": "HRT", "angle": "Menopause and weight gain around the middle: why it happens and what actually helps"},
+    {"category": "HRT", "angle": "Coming off hormone therapy: tapering, symptom return, and how to decide when the time is right"},
+    {"category": "Weight Loss", "angle": "Which labs to get before starting a medical weight-loss program, and why each one matters"},
+    {"category": "Weight Loss", "angle": "Hair shedding during rapid weight loss: why it happens and the nutrition gaps to check"},
+    {"category": "Weight Loss", "angle": "Measuring progress beyond the scale: waist, body composition, and labs that show real change"},
+    {"category": "Weight Loss", "angle": "Gallbladder health during fast weight loss: the warning signs and how to lower the risk"},
+    {"category": "Weight Loss", "angle": "Constipation on appetite-suppressing medication: the fluid, fiber, and movement fixes that work"},
+    {"category": "Sexual Health", "angle": "Performance anxiety versus physical ED: how clinicians separate the two causes"},
+    {"category": "Sexual Health", "angle": "Blood sugar and erections: why erectile changes can be an early sign of insulin resistance"},
+    {"category": "Sexual Health", "angle": "Sleep, alcohol, and sexual function: the everyday habits that quietly undermine performance"},
+    {"category": "Sexual Health", "angle": "Talking to a partner about ED treatment: a practical guide to an awkward conversation"},
+    {"category": "Sexual Health", "angle": "Pelvic floor training for men: what the evidence shows for erectile function and control"},
+    {"category": "Sexual Health", "angle": "Low desire in women after 40: the hormonal, relationship, and medication factors to review"},
+    {"category": "Hair Regrowth", "angle": "Telogen effluvium versus pattern hair loss: how to tell sudden shedding from gradual thinning"},
+    {"category": "Hair Regrowth", "angle": "Iron, vitamin D, and thyroid: the blood tests worth running before treating thinning hair"},
+    {"category": "Hair Regrowth", "angle": "Postpartum hair loss: the timeline, what is normal, and when to get checked"},
+    {"category": "Hair Regrowth", "angle": "Tracking hair regrowth at home: how to take consistent photos that show real progress"},
+    {"category": "Hair Regrowth", "angle": "Scalp health basics: dandruff, inflammation, and how scalp conditions affect regrowth results"},
+    {"category": "Supplements", "angle": "Third-party testing for supplements: what USP and NSF seals mean and why they matter"},
+    {"category": "Supplements", "angle": "Iron supplements done right: dosing every other day, absorption tips, and when to retest ferritin"},
+    {"category": "Supplements", "angle": "Vitamin B12 and folate: who runs low, the symptoms, and how lab results guide supplementing"},
+    {"category": "Supplements", "angle": "Supplements that can skew your lab results, and how long to stop them before testing"},
+    {"category": "Supplements", "angle": "Electrolytes explained: sodium, potassium, and magnesium for people who train or sweat heavily"},
+    {"category": "Supplements", "angle": "Fiber supplements compared: psyllium, inulin, and methylcellulose for digestion and cholesterol"},
+    {"category": "Nutrition", "angle": "Iron-rich meals for women: pairing plant and animal sources with vitamin C for better absorption"},
+    {"category": "Nutrition", "angle": "Eating for healthy cholesterol: the foods that lower LDL and the swaps that matter most"},
+    {"category": "Nutrition", "angle": "High-protein snacks under 200 calories: twelve options that actually keep you full"},
+    {"category": "Nutrition", "angle": "Sodium and blood pressure: reading labels and cutting the hidden salt in everyday foods"},
+    {"category": "Fitness", "angle": "VO2 max as a longevity marker: what it is and a simple plan to raise yours"},
+    {"category": "Fitness", "angle": "Balance training after 40: five exercises that lower fall risk later in life"},
+    {"category": "Fitness", "angle": "Exercise and blood sugar: how a ten-minute walk after meals changes glucose response"},
+    {"category": "Fitness", "angle": "Deload weeks: why planned rest improves strength gains and how to schedule them"},
+    {"category": "Fitness", "angle": "Training with joint pain: how to keep lifting around sore knees, shoulders, and backs"}
 ]
 
 
@@ -592,36 +644,50 @@ def main() -> int:
     today = dt.date.fromisoformat(args.date) if args.date else dt.date.today()
     date_label = today.strftime("%B %-d, %Y")
 
-    if args.category and args.angle:
-        topic = {"category": args.category, "angle": args.angle}
-    else:
-        topic = pick_topic(today)
-
-    print(f"[generate_daily_post] {today} — {topic['category']}: {topic['angle']}", file=sys.stderr)
-
-    payload = call_claude(topic, date_label)
-    payload["date"] = today.isoformat()
-    payload["dateLabel"] = date_label
-    payload = merge_product_metadata(payload, topic["category"])
-
-    # Editorial gate. Runs BEFORE the post is written, and before the angle is
-    # burned from the ledger, so a rejected post costs nothing and the topic can
-    # be retried. Enforced here rather than in the workflow because this script
-    # is also invoked by launchd on the publishing Mac, which the workflow does
-    # not gate.
+    forced = bool(args.category and args.angle)
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "blog"))
     import editorial_guard as guard
     registry = guard.load_registry()
-    problems = (
-        guard.check_references(payload.get("references"), topic["category"])
-        + guard.check_reviewer(payload.get("slug", ""), topic["category"], registry)
-    )
-    problems += near_duplicate_of_existing(payload.get("slug", ""), payload.get("title", ""), topic["category"])
-    if problems:
+
+    # A near-duplicate block is deterministic: the same bank angle is picked and
+    # blocked again on every run until it is consumed. 2026-09-20 → 10-01 the
+    # generator wedged on one HRT angle the site already covered, 10 runs in a
+    # row. So a duplicate-only block burns the angle and tries the next one in
+    # the same run. Any other block (citations, reviewer) still stops the run.
+    for attempt in range(1, MAX_DUPLICATE_RETRIES + 2):
+        topic = {"category": args.category, "angle": args.angle} if forced else pick_topic(today)
+        # An already-burned angle means pick_topic fell through to its bank-exhausted
+        # fallback; consuming it again changes nothing, so a retry would just repeat it.
+        exhausted = topic["angle"] in load_used_angles()
+        print(f"[generate_daily_post] {today} — {topic['category']}: {topic['angle']}", file=sys.stderr)
+
+        payload = call_claude(topic, date_label)
+        payload["date"] = today.isoformat()
+        payload["dateLabel"] = date_label
+        payload = merge_product_metadata(payload, topic["category"])
+
+        # Editorial gate. Runs BEFORE the post is written, and before the angle is
+        # burned from the ledger, so a rejected post costs nothing and the topic can
+        # be retried. Enforced here rather than in the workflow because this script
+        # is also invoked by launchd on the publishing Mac, which the workflow does
+        # not gate.
+        policy = (
+            guard.check_references(payload.get("references"), topic["category"])
+            + guard.check_reviewer(payload.get("slug", ""), topic["category"], registry)
+        )
+        dupes = near_duplicate_of_existing(payload.get("slug", ""), payload.get("title", ""), topic["category"])
+        problems = policy + dupes
+        if not problems:
+            break
         print(f"[generate_daily_post] BLOCKED — {payload.get('slug','?')} "
               f"({topic['category']}) fails editorial policy:", file=sys.stderr)
         for pr in problems:
             print("  - " + pr, file=sys.stderr)
+        if dupes and not policy and not forced and not exhausted and attempt <= MAX_DUPLICATE_RETRIES:
+            record_used_angle(topic["angle"])
+            print(f"  Angle already covered by the site — consumed; trying the next one "
+                  f"(attempt {attempt + 1}).", file=sys.stderr)
+            continue
         print("  Nothing was written and the angle was not consumed.", file=sys.stderr)
         return 1
 
@@ -634,7 +700,7 @@ def main() -> int:
     # Burn the angle in the ledger ONLY after a successful write, so a failed
     # generation (network blip) doesn't permanently consume the topic. Skip
     # when the angle was forced via --angle (manual one-off, not from the bank).
-    if not (args.category and args.angle):
+    if not forced:
         record_used_angle(topic["angle"])
 
     print(json.dumps({"ok": True, "path": str(path.relative_to(REPO_ROOT)), "slug": payload["slug"], "title": payload["title"]}, indent=2))

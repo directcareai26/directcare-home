@@ -179,8 +179,8 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Inter:ital,wght@1,600;1,700;1,800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Inter:ital,wght@1,600;1,700;1,800&display=swap"></noscript>
 
 <style>
   :root {
@@ -625,8 +625,10 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .bt-hero .container { max-width: 1312px; }
   .bt-hero-grid { display: grid; grid-template-columns: minmax(0, 600px) minmax(0, 560px); justify-content: space-between; column-gap: 48px; align-items: start; }
   .bt-hero-copy { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
-  .bt-hero h1 { font-size: clamp(2.5rem, 4.2vw, 3.75rem); line-height: 1.05; letter-spacing: -0.025em; color: var(--plum); font-weight: 800; }
+  .bt-hero h1 { font-size: clamp(2.5rem, 4vw, 3.55rem); line-height: 1.05; letter-spacing: -0.025em; color: var(--plum); font-weight: 800; }
   .bt-hero h1 .h-italic { font-weight: 800; color: var(--brand); }
+  .h-italic { font-family: 'Inter', 'Geist', system-ui, sans-serif; font-style: italic; }
+  @media (min-width: 900px) { .bt-hero h1 .keep-line { white-space: nowrap; } }
   .bt-hero-sub { font-size: 1.25rem; line-height: 28px; color: var(--text-2); max-width: 600px; }
   .bt-goals-q { font-weight: 700; font-size: 0.875rem; line-height: 20px; color: var(--plum); margin-bottom: 12px; }
   .bt-goals { display: grid; grid-template-columns: repeat(2, minmax(0, 280px)); gap: 12px; max-width: 572px; padding: 6px 0 8px; }
@@ -1057,7 +1059,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="bt-hero-grid">
       <div class="bt-hero-copy">
-        <h1 class="rise d1">Understand your health signals. <span class="h-italic">Know what to do next.</span></h1>
+        <h1 class="rise d1">Understand your health signals. <span class="h-italic">Know <span class="keep-line">what to do next.</span></span></h1>
         <p class="bt-hero-sub rise d2">Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.</p>
         <div class="rise d3">
           <p class="bt-goals-q">What brings you here? Tap a goal to jump to the right panel.</p>

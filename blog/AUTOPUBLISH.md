@@ -175,7 +175,7 @@ closest product:
 | Sexual Health | `https://www.directcare.ai/surge-max` | `Start a personalized sexual-health protocol.` |
 | Hair Regrowth (men) | `https://www.directcare.ai/mens-hair-loss` | `Start the men's hair regrowth protocol.` |
 | Hair Regrowth (women) | `https://www.directcare.ai/womans-hair-loss` | `Start the women's hair regrowth protocol.` |
-| Blood Labs | `https://www.directcare.ai/blood-test` | `Run the full 70–80 biomarker panel.` |
+| Blood Labs | `https://www.directcare.ai/blood-test` | `Choose a 63–88 biomarker panel.` |
 | Supplements | `https://www.directcare.ai/supplements` | `Build your supplement protocol with a clinician.` |
 
 ---

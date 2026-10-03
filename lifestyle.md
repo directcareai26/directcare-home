@@ -142,7 +142,7 @@ Source: https://www.directcare.ai/lifestyle
  From $269 /mo](https://www.directcare.ai/weight-loss)
  [Know your numbers
  Sexual-Health Blood Labs
- 70–80 biomarker panel + hormone & sexual-health screening, with clinician interpretation.
+ 63–88 biomarker panels + hormone & sexual-health screening, with clinician interpretation.
  From $196 one-time](https://www.directcare.ai/blood-test)
  [Him · Look
  Hair Regrowth (Men)
@@ -226,7 +226,7 @@ Source: https://www.directcare.ai/lifestyle
  Absolutely. Low drive, dryness, or arousal that lags behind the moment are common and treatable. Options include low-dose testosterone for women, bioidentical hormone balancing, and PT-141 for desire on demand. All clinician-prescribed and tuned to her labs.
 
  Should we get tested before we play?
- Knowing your numbers is smart in the lifestyle. Our blood panels cover 70–80 biomarkers including hormones and sexual-health markers, with clinician interpretation and a personalized plan. We're a wellness platform. For comprehensive STI screening, your clinician can advise on the right testing and timing.
+ Knowing your numbers is smart in the lifestyle. Our blood panels cover 63 to 88 biomarkers including hormones and sexual-health markers, with clinician interpretation and a personalized plan. We're a wellness platform. For comprehensive STI screening, your clinician can advise on the right testing and timing.
 
  Do I need insurance, or a referral?
  Neither. DirectCare AI is cash-pay and fully online. No insurance, no referral, no waiting rooms. You only pay if a clinician approves your protocol and you decide to start.

@@ -162,7 +162,7 @@ Source: https://www.directcare.ai/together
  From $59 /mo](https://www.directcare.ai/womans-hair-loss)
  [Either partner
  Blood Labs
- 70–80 biomarker panel + clinician interpretation + personalized plan.
+ 63–88 biomarker panels + clinician interpretation + personalized plan.
  From $196 one-time](https://www.directcare.ai/blood-test)
  [Whole family
  Supplements

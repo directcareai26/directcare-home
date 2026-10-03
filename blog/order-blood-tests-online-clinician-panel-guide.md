@@ -25,7 +25,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ### What "clinician-ordered" actually means in plain English
 
- When you order a panel online, a licensed physician in your state signs the requisition. That signature is what the lab (Quest, Labcorp, or a regional equivalent) requires to run the tests. It is not a diagnosis, and it is not a treatment plan — it is the legal order that unlocks the draw.
+ When you order a panel online, a licensed physician in your state signs the requisition. That signature is what the lab (for DirectCare AI panels, Quest Diagnostics) requires to run the tests. It is not a diagnosis, and it is not a treatment plan — it is the legal order that unlocks the draw.
 
  The second half of "clinician-ordered" is the review. A good platform routes your results back to a clinician who flags what is out of range, what is in range but trending wrong, and what warrants a follow-up conversation. Without that second step, you are essentially buying a PDF.
 

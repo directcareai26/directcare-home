@@ -2622,10 +2622,6 @@ Source: https://www.directcare.ai/blood-test
  How it works ↓
  Or compare all panels ↓
 
- Pick your panel and check out with just your basic info. Then walk into a nearby Quest location for your draw — your clinician-signed lab order is waiting in your portal.
-
- Main panels from $196  ·  No membership  ·  No insurance required  ·  Results in 3–5 days
-
  No diagnosis or prescription is guaranteed. Every order is reviewed for clinical appropriateness.
 
  ![Results dashboard with lab results, a wellness plan, and a biomarker drill-down]

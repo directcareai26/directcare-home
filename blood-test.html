@@ -221,6 +221,8 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   /* Italic-emphasis pattern: bold sans + italic accent phrase */
   .h-italic { font-style: italic; font-weight: 700; color: var(--brand-deep); letter-spacing: -0.02em; }
   h1 .h-italic { background: linear-gradient(135deg, #af4bed 0%, #762ba4 70%, #44215A 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  /* italic glyphs overhang their box; pad the line-end word so background-clip:text paints the overhang */
+  h1 .h-italic .ov { padding-right: .14em; }
   .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 64px); }
   .section { padding: clamp(64px, 9vw, 120px) 0; position: relative; }
   .section.soft { background: linear-gradient(180deg, var(--soft) 0%, #ffffff 100%); }
@@ -1059,7 +1061,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="bt-hero-grid">
       <div class="bt-hero-copy">
-        <h1 class="rise d1">Understand your health signals. <span class="h-italic">Know <span class="keep-line">what to do next.</span></span></h1>
+        <h1 class="rise d1">Understand your health signals. <span class="h-italic"><span class="ov">Know</span> <span class="keep-line">what to do next.</span></span></h1>
         <p class="bt-hero-sub rise d2">Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.</p>
         <div class="rise d3">
           <p class="bt-goals-q">What brings you here? Tap a goal to jump to the right panel.</p>
@@ -1235,7 +1237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <hr>
         <ul class="groups">
           <li><strong>Energy, weight &amp; blood sugar</strong>HbA1c, fasting insulin, glucose</li>
-          <li><strong>Heart &amp; inflammation</strong>Full lipid panel, plus hsCRP and homocysteine (only in Essential)</li>
+          <li><strong>Heart &amp; inflammation</strong>Full lipid panel, plus hsCRP and homocysteine (not in Men's or Women's)</li>
           <li><strong>Fatigue &amp; nutrients</strong>Vitamin D, B12, folate (RBC), iron, ferritin</li>
           <li><strong>Thyroid screen</strong>TSH</li>
           <li><strong>Also included</strong>Liver, kidney, uric acid and a full CBC with differential</li>

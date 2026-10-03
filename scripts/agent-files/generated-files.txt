@@ -28,6 +28,7 @@ blog/eat-the-rainbow-phytonutrient-targets-by-color.md
 blog/ed-cardiovascular-warning-signs-labs.md
 blog/ed-medication-prescribed-online-safely.md
 blog/eggs-vs-egg-whites-which-fits-protocol.md
+blog/electrolytes-sodium-potassium-magnesium-athletes.md
 blog/estradiol-on-trt-aromatase-inhibitor-when-needed.md
 blog/estradiol-patch-vs-gel-vs-pellet-vs-pill.md
 blog/fasted-coffee-cortisol-what-to-drink-first.md

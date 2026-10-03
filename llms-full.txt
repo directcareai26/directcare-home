@@ -2552,28 +2552,108 @@ Grow It Back.
 
 Source: https://www.directcare.ai/blood-test
 
-## Blood tests online: biomarker panels
- ordered by licensed clinicians.
+## Understand your health signals. Know what to do next.
 
- Up to **80 clinician-ordered biomarkers**, a plain-English interpretation, and a personalized supplement & lifestyle protocol. Built around the numbers that drive how you feel, perform, and age.
+ Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.
 
- See Panels & Pricing →
+ What brings you here? Tap a goal to jump to the right panel.
+
+ Choose My Panel →
+ How it works ↓
+
+ Pick your panel and check out with just your basic info. Then walk into a nearby Quest location for your draw — your clinician-signed lab order is waiting in your portal.
+
+ Main panels from $196  ·  No membership  ·  No insurance required  ·  Results in 3–5 days
+
+ No diagnosis or prescription is guaranteed. Every order is reviewed for clinical appropriateness.
+
+ ![Results dashboard with lab results, a wellness plan, and a biomarker drill-down]
+ **A clinician reads every result**Plain-English notes + your next steps
+
+ ✓ LegitScript certified✓ HIPAA compliant✓ CLIA-certified labs✓ 2,000+ draw sites✓ Results in 3–5 days
+
+ **63–88**biomarkers · 6 panels
+
+ **3–5 days**from draw to results
+
+ **2,000+**Quest walk-in locations
+
+ **$196**main panels from · no membership
+
+### See exactly what you'll get.
+
+ Not just numbers. Every result comes with clinician notes on what it may mean and what to discuss next.
+
+ ![Portal home screen with daily guidance and follow-up lab booking]
+ YOUR PORTAL — ILLUSTRATIVE
+
+ Example insights from a report
+
+ 1Worth a conversation
+
+#### Ferritin at the low end of range
+
+ lowoptimal rangehigh
+
+ Low iron stores can go along with tiredness. Your notes say what to discuss with your clinician and when to retest.
+
+ B12
+ 2Read together
+
+#### HbA1c + fasting insulin, read together
+
+ HbA1c+Fasting insulin
+
+ How your body handles blood sugar over time — not just one glucose number.
+
+ TSHVit D
+ 3Read as a set
+
+#### Total & free testosterone with SHBG
+
+ Total T+Free T+SHBG
+
+ Read as a set, with plain-English context on what the combination may mean.
+
+ ![Dr. Tim Pepin, D.C.]
+
+ **Dr. Tim Pepin, D.C. — Clinical Advisor & Director of Integrative Health**
+ Lab orders are clinician-signed and every result is reviewed by US-licensed clinicians. Drawn at Quest Diagnostics (CLIA-certified) · LegitScript certified · HIPAA compliant.
+
  How it works
 
- Panels from
- **$196**
- ·
- up to 80 biomarkers
- ·
- save $1,000+ vs à la carte
+### Three steps to clear answers.
 
- **LegitScript Certified**LegitScript-certified telehealth
+ 123
 
- **HIPAA Compliant**Encrypted & private
+- 1 ⏱ About 2 minutes
 
- **Results in 3 to 5 days**CLIA-certified labs
+ Men's Health Panel $296 Full name Email Date of birth Complete checkout →
 
- **2,000+ draw sites**Nationwide access
+ ⏱  About 2 minutes
+
+#### Choose your panel & check out
+
+ Just your basic info — no long questionnaire. Your clinician-signed lab order lands in your portal.
+
+- 2 📍 This week, on your schedule
+ ![Phone screens showing a lab location map and appointment details]
+ 📍  This week, on your schedule
+
+#### Walk into Quest
+
+ Pick from 2,000+ Quest Diagnostics locations near home or work and bring your requisition.
+
+- 3 ✓ Results in 3–5 days
+ ![Lab results and plan screens in the portal]
+ ✓  Results in 3–5 days
+
+#### Get results + your plan
+
+ Plain-English clinician notes on every marker and clear next steps, right in your portal.
+
+ Choose My Panel →
+ Main panels from $196 · No membership · No insurance required
 
 ### Pick your panel. Order in 60 seconds.
 
@@ -2586,6 +2666,40 @@ Source: https://www.directcare.ai/blood-test
  70 biomarkers — the annual baseline everyone should have.
 
  À la carte: ~$1,200 · You save ~$1,000
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart & inflammation Full lipid panel, plus hsCRP and homocysteine (only in Essential)
+
+- Fatigue & nutrients Vitamin D, B12, folate (RBC), iron, ferritin
+
+- Thyroid screen TSH
+
+- Also included Liver, kidney, uric acid and a full CBC with differential
+
+ See all 70 biomarkers
+
+**Cardiovascular (8)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated), hsCRP, Homocysteine
+
+**Metabolic (4)**
+ HbA1c, Insulin, Glucose, Uric Acid
+
+**Nutrients (7)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)
+
+**Hormones (1)**
+ TSH
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
  [Order Essential →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=)
 
  Most Popular
@@ -2597,125 +2711,192 @@ Source: https://www.directcare.ai/blood-test
  75 biomarkers — full testosterone, thyroid, metabolic & cardio.
 
  À la carte: ~$1,800 · You save ~$1,500
+
+- Testosterone & libido Total, free and bioavailable testosterone, SHBG, DHT, DHEA
+
+- Thyroid & stress TSH, Free T3, Free T4, morning cortisol
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart Full lipid panel
+
+- Fatigue & nutrients Vitamin D, B12, iron, ferritin
+
+ See all 75 biomarkers
+
+**Hormones (10)**
+ TSH, Free T4, Free T3, Cortisol (AM), Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, DHEA (unconjugated)
+
+**Cardiovascular (6)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)
+
+**Metabolic (3)**
+ HbA1c, Insulin, Glucose
+
+**Nutrients (6)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
  [Order Men's →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=)
 
 #### Women's Health Panel
 
  $346one-time
 
- 80 biomarkers — full female hormones, thyroid, metabolic & bone.
+ 80 biomarkers — full female hormones, testosterone, thyroid & metabolic.
 
  À la carte: ~$2,200 · You save ~$1,850
+
+- Cycle, perimenopause & menopause Estradiol, progesterone, FSH, LH
+
+- Testosterone & libido Total, free and bioavailable testosterone, SHBG, DHT, DHEA
+
+- Thyroid & stress TSH, Free T3, Free T4, morning cortisol
+
+- Energy, weight & blood sugar HbA1c, fasting insulin, glucose
+
+- Heart & nutrients Full lipid panel, vitamin D, B12, folate (RBC), iron, ferritin
+
+ See all 80 biomarkers
+
+**Hormones (14)**
+ TSH, Free T4, Free T3, Cortisol (AM), Estradiol, Progesterone, Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, FSH, LH, DHEA (unconjugated)
+
+**Cardiovascular (6)**
+ Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)
+
+**Metabolic (3)**
+ HbA1c, Insulin, Glucose
+
+**Nutrients (7)**
+ Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)
+
+**Kidneys (9)**
+ Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium
+
+**Liver (8)**
+ Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein
+
+**Blood / CBC (33)**
+ RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC
+
  [Order Women's →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
 
  Not sure which fits? Compare everything included in each panel ↓
 
-### Your Bloodwork,
- Made for You.
+ **Also available:** Comprehensive Hormone · 88   ·   Core Women’s · 67   ·   Core Health · 63 See other panels →
 
- With DirectCare AI and Fullscript, your care continues long after results land. Each panel comes with clear steps you can follow day-by-day, so you build momentum at your own pace.
+### What we test, by what you care about.
 
- 01
+ Every panel covers a full CBC, kidney and liver function. Here is what each goal looks at — and which panels include it.
 
-#### Easy, step-by-step support from your care team
+#### Energy, weight & blood sugar
 
- A US-licensed clinician reads every result, flags what matters, and builds a roadmap you can actually follow. No medical jargon required.
+ HbA1c, fasting insulin, glucose (+ uric acid in Essential)
 
- 02
+- HbA1c — Your average blood sugar over about 3 months.
 
-#### Nutrition, movement, and supplement plans built for your goals
+- Fasting insulin — How hard your body works to keep glucose steady.
 
- Targeted protocols based on **your** biomarkers. Sleep, energy, recovery, hormones, weight. Pharmaceutical-grade supplements shipped through Fullscript.
+- Glucose — A single-moment blood sugar snapshot.
 
- 03
+- Uric acid — Often tracked alongside metabolic health (Essential).
 
-#### Simple progress tracking so you can see your growth over time
+ Read together, these can help explain energy dips and weight changes — your clinician notes say what to discuss next.
 
- Retest at 90 or 180 days. Compare every number side-by-side and watch your trends move. Visible proof your plan is working.
+ All 3 panels
+ ＋What's included
 
- Real progress happens **between visits**. Your plan keeps you connected, informed, and motivated.
+#### Hormones & libido
+
+ Total, free & bioavailable testosterone, SHBG, DHT, DHEA. Women’s adds estradiol, progesterone, FSH, LH
+
+- Total, free & bioavailable testosterone — How much is made, and how much your body can actually use.
+
+- SHBG — The protein that binds testosterone and affects how much is free.
+
+- DHT & DHEA — Related hormones read alongside testosterone.
+
+- Estradiol, progesterone, FSH & LH — Key cycle and menopause hormones (Women's).
+
+ Hormones are read as a set, not one number in isolation.
+
+ Men's & Women's
+ ＋What's included
+
+#### Thyroid & stress
+
+ TSH in every panel. Free T3, Free T4 and morning cortisol in Men’s & Women’s
+
+- TSH — The signal your brain sends your thyroid (every panel).
+
+- Free T3 & Free T4 — The active thyroid hormones (Men's & Women's).
+
+- Morning cortisol — A snapshot of your main stress hormone (Men's & Women's).
+
+ Together these can help explain tiredness, weight changes and feeling run-down.
+
+ TSH: all · full thyroid: M & W
+ ＋What's included
+
+#### Heart
+
+ Full lipid panel in every panel. hsCRP and homocysteine in Essential
+
+- Full lipid panel — Total, LDL, HDL and non-HDL cholesterol, triglycerides and ratios (every panel).
+
+- hsCRP — A marker of low-grade inflammation (Essential).
+
+- Homocysteine — An amino acid tracked for heart health (Essential).
+
+ Helps you track heart-health markers over time with your clinician.
+
+ All 3 · inflammation: Essential
+ ＋What's included
+
+#### Fatigue & nutrients
+
+ Vitamin D, B12, iron, ferritin, TIBC, iron saturation. Folate (RBC) in Essential & Women’s
+
+- Vitamin D & B12 — Common gaps that can go along with low energy.
+
+- Iron, ferritin, TIBC & saturation — Your iron stores and how well iron moves around your body.
+
+- Folate (RBC) — Included in Essential & Women's.
+
+ Spot common nutrient gaps that can sit behind fatigue.
+
+ All 3 panels
+ ＋What's included
+
+#### Everyday baseline
+
+ Kidney (9), liver (8) and a full blood count with differential (33)
+
+- Kidney (9) — Creatinine, eGFR, BUN and electrolytes.
+
+- Liver (8) — ALT, AST, ALP, albumin and bilirubin.
+
+- Full blood count (33) — Red cells, white cells and platelets.
+
+ The everyday baseline every panel includes.
+
+ All 3 panels
+ ＋What's included
 
  Choose My Panel →
- Panels from $196 · Results in 3–5 days · 2,000+ draw sites nationwide
-
-### How it actually works.
-
- Four simple steps. Zero waiting rooms. A complete picture of what's happening inside your body. And exactly what to do about it.
-
- 01Book your lab
-
-#### Pick a panel and book your draw in minutes.
-
- Complete a 3-minute intake. We send a clinician-signed lab order to your portal and you walk into one of **2,000+ partner draw sites** (Quest, Labcorp). No appointment needed at most. Prefer to stay home? Mobile phlebotomy available in most metros.
-
- ![Phone screens showing lab-draw booking with a map and appointment details]
-
- 02Plain-English results
-
-#### See every biomarker , actually explained.
-
- Every marker is translated into plain English with reference ranges, optimal targets, and a clinician note on what each number means for your health. Drill into any biomarker. Like Apolipoprotein B. To see context, trend, and the next step.
-
- ![Results dashboard with Lab Results, Wellness Plan, and a biomarker drill-down for Apolipoprotein B]
-
- 03Personalized plan
-
-#### A clinician builds a plan around your numbers.
-
- A US-licensed clinician reviews every result, flags what matters, and writes you a targeted protocol. Nutrition, movement, pharmaceutical-grade supplements via Fullscript, and (if indicated) medication. All designed around your wellness score and out-of-range markers.
-
- ![Clinician with a stethoscope viewing a patient wellness score and lab results screen]
-
- 04Track & retest
-
-#### Follow the plan. See your numbers move.
-
- Daily guidance in the portal, async clinician messaging, and side-by-side retest tracking at 90 or 180 days. Book your follow-up draw in one tap and watch every marker improve over time. Visible proof your plan is working.
-
- ![Portal home screen with daily guidance and one-tap follow-up lab booking]
-
-### Eight systems. One full-body picture.
-
- From thyroid to testosterone, glucose to inflammation, vitamin D to iron stores. Every panel covers the biomarkers that drive how you feel, perform, and age.
-
-##### Sex Hormones
-
- Total / free / bioavailable testosterone, estradiol, progesterone, FSH, LH, DHEA, DHT, SHBG.
-
-##### Thyroid
-
- TSH, Free T3, Free T4. Your full thyroid picture, not just TSH.
-
-##### Metabolic Health
-
- Glucose, fasting insulin, HbA1c. The full insulin-resistance picture, not just glucose.
-
-##### Cardiovascular
-
- Total / HDL / LDL / Non-HDL cholesterol, triglycerides, ratios. Plus hsCRP & homocysteine (Essential).
-
-##### Vitamins & Iron
-
- Vitamin D (25-OH), Vitamin B12, Folate (RBC), Ferritin, Iron, TIBC, % Saturation.
-
-##### Stress & Inflammation
-
- Cortisol (AM), hsCRP (Essential), Ferritin. Chronic stress & inflammation markers.
-
-##### Liver & Kidney
-
- ALT, AST, ALP, total bilirubin, albumin, total protein, BUN, creatinine, eGFR.
-
-##### CBC w/ Differential
-
- Full white & red cell differential, platelets, hemoglobin, hematocrit, MCV, MCH, RDW, MPV.
-
- Test All 8 Systems →
- One draw covers everything · From $196 · Clinician-interpreted
 
 ### What your annual physical doesn't tell you.
 
- Most primary-care annuals stop at ~30 basic markers. Every DirectCare AI panel runs 70 to 80 biomarkers and a clinician writes you a plain-English plan you can actually follow.
+ Most primary-care annuals stop at ~30 basic markers. Our six panels run 63 to 88 biomarkers and a clinician writes you a plain-English plan you can actually follow.
 
  Biomarker / Feature
 
@@ -2723,27 +2904,9 @@ Source: https://www.directcare.ai/blood-test
 
  What you usually getStandard Annual Checkup
 
- Complete Blood Count (CBC w/ Differential)
-
- ✓Full panel
-
- ✓Standard
-
- Comprehensive Metabolic Panel (CMP)
-
- ✓14 markers
-
- ✓Standard
-
- Lipid Panel (Total, HDL, LDL, Non-HDL, Triglycerides, ratios)
-
- ✓All ratios
-
- △Basic only
-
  Thyroid. TSH plus Free T3 & Free T4
 
- ✓All three
+ ✓Men's & Women's (TSH in Essential)
 
  △TSH only
 
@@ -2771,12 +2934,6 @@ Source: https://www.directcare.ai/blood-test
 
  ✗Almost never
 
- Female reproductive hormones. Estradiol, Progesterone, FSH, LH
-
- ✓Women's Panel
-
- ✗Almost never
-
  hsCRP (chronic inflammation) + Homocysteine (cardio risk)
 
  ✓Essential Panel
@@ -2788,6 +2945,36 @@ Source: https://www.directcare.ai/blood-test
  ✓Every result
 
  ✗Values dumped, no narrative
+
+ Results turnaround
+
+ ✓3 to 5 days
+
+ △1 to 3 weeks
+
+ Complete Blood Count (CBC w/ Differential)
+
+ ✓Full panel
+
+ ✓Standard
+
+ Comprehensive Metabolic Panel (CMP)
+
+ ✓14 markers
+
+ ✓Standard
+
+ Lipid Panel (Total, HDL, LDL, Non-HDL, Triglycerides, ratios)
+
+ ✓All ratios
+
+ △Basic only
+
+ Female reproductive hormones. Estradiol, Progesterone, FSH, LH
+
+ ✓Women's Panel
+
+ ✗Almost never
 
  Personalized supplement protocol (Fullscript)
 
@@ -2807,12 +2994,6 @@ Source: https://www.directcare.ai/blood-test
 
  ✗You manage it
 
- Results turnaround
-
- ✓3 to 5 days
-
- △1 to 3 weeks
-
  Insurance & appointment friction
 
  ✓Flat rate, no copay
@@ -2823,82 +3004,52 @@ Source: https://www.directcare.ai/blood-test
  △ Partial / variable
  ✗ Not included
 
+ See full comparison (all 16 rows) →
+
  See the panel built for you →
 
-### Ready to see your numbers?
+ Book your draw
 
- Choose the panel that fits your goals. Every plan includes clinician interpretation, a personalized supplement protocol, lifestyle recommendations, and permanent access to your results.
+### Walk in near home or work.
 
- À la carte at a typical lab + clinician, this is **$1,200–$2,200+**. At DirectCare AI: **$196–$346**.
+ Choose from 2,000+ Quest Diagnostics locations, book a time, and bring the requisition from your portal.
 
- Plan One
+- ✓ Book online in minutes
 
-#### Essential Panel
+- ✓ Requisition and prep checklist in your portal
 
- $196one-time
+- ✓ Results in 3–5 days
 
- Best for an annual baseline check-in
+ ![Phone screens showing a lab location map and appointment details]
 
- À la carte at a typical lab + clinician: ~$1,200
- You save ~$1,000
+### Other panels we offer.
 
-- 70 biomarkers . Full CBC, CMP, thyroid, lipid, insulin, hsCRP & homocysteine
+ Want something more focused, or more in-depth? These three are also available through our Fullscript store.
 
-- Permanent access to your chart
+ [BEST VALUE $429.99
+ 88 biomarkers
+ Comprehensive Hormone Panel
 
-- Clinician interpretation of every result
+ Our most in-depth hormone panel.
+ WHAT'S INSIDE
+ Sex hormones Thyroid Adrenal Metabolic
+ View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=)
+ [NEW $149.99
+ 67 biomarkers
+ Core Women's Health Panel
 
-- Personalized supplement list (Fullscript)
+ Foundational hormone testing for women.
+ WHAT'S INSIDE
+ Key reproductive hormones
+ View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=)
+ [NEW $150
+ 63 biomarkers
+ Core Health Panel
 
-- Lifestyle & nutrition recommendations
-
- [Order My Panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=)
-
- Plan Two
-
-#### Men's Health Panel
-
- $296one-time
-
- Built around testosterone, metabolic & cardiovascular health
-
- À la carte at a typical lab + clinician: ~$1,800
- You save ~$1,500
-
-- 75 biomarkers . Full hormone panel (testosterone, DHEA, DHT, cortisol, SHBG), Free T3 & Free T4
-
-- Permanent access to your chart
-
-- Detailed clinician interpretation of every result
-
-- Personalized supplement protocol
-
-- Lifestyle & training recommendations
-
- [Order My Panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=)
-
- Plan Three
-
-#### Women's Health Panel
-
- $346one-time
-
- Hormones, thyroid, metabolic & bone-health focused
-
- À la carte at a typical lab + clinician: ~$2,200
- You save ~$1,850
-
-- 80 biomarkers . Full female hormones (estradiol, progesterone, FSH, LH, DHEA, cortisol, SHBG), Free T3 & Free T4
-
-- Permanent access to your chart
-
-- Detailed clinician interpretation of every result
-
-- Personalized supplement protocol
-
-- Lifestyle & nutrition recommendations
-
- [Order My Panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
+ A basic health check, plus vitamin B12.
+ WHAT'S INSIDE
+ Basic health check Vitamin B12
+ View panel →](https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=)
 
  ![Dr. Tim Pepin, Clinical Advisor]
 
@@ -2918,7 +3069,7 @@ Source: https://www.directcare.ai/blood-test
  Honest answers about labs, results, and what happens next. Have a question we missed? Message a clinician once you're inside.
 
  Where do I get my blood drawn?
- After you complete your intake, we'll send a clinician-signed lab order to your portal. Walk into any of 2,000+ partner draw sites near you (Quest, Labcorp, and partner networks). No appointment needed at most locations. Prefer to stay home? Mobile phlebotomy is available in most metros for a small add-on fee.
+ After checkout, your clinician-signed lab order appears in your portal. Walk into any of 2,000+ Quest Diagnostics locations near you — most don't need an appointment, or you can book a time online.
 
  How fast do I get results?
  Most panels come back from the lab in 3 to 5 business days. As soon as they're in, a clinician reviews every marker, writes your interpretation, and pushes your personalized plan to your portal. Typically within 1 to 2 business days of results landing.
@@ -2935,8 +3086,15 @@ Source: https://www.directcare.ai/blood-test
  Are these supplements pharmaceutical-grade?
  Yes. We dispense through Fullscript. The same dispensary used by tens of thousands of clinical practices. Which gives you direct access to physician-grade brands at member pricing. Every recommendation is tied to a marker on your lab, not a guess.
 
+### Understand your health signals. Know what to do next.
+
+ Main panels from $196 · No membership · No insurance required · Results in 3–5 days
+
+ Choose My Panel →
+ No diagnosis or prescription is guaranteed. Every order is reviewed for clinical appropriateness.
+
  $196 Essential · $296 Men's · $346 Women's
- Up to 80 biomarkers · Results in 3–5 days
+ Main panels: 70, 75 or 80 biomarkers · Results in 3–5 days
 
  Choose My Panel →
 

@@ -291,159 +291,6 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .btn-ghost:hover { background: rgba(40,26,49,0.08); }
   .btn-light-on-dark { background: white; color: var(--brand-darker); }
   .btn-light-on-dark:hover { background: #fbf5fe; transform: translateY(-2px); }
-
-  /* HERO — full-bleed dark, video-style (swap .hero-bg-image for <video> when available) */
-  .hero { position: relative; overflow: hidden; min-height: 88vh; display: flex; align-items: center; isolation: isolate; padding: 100px 0 80px; background: var(--dark); }
-  .hero-bg-image, .hero-bg-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; filter: saturate(1.05) contrast(1.05); pointer-events: none; }
-  .hero-bg-image { opacity: 0.55; }
-  .hero-bg-video { opacity: 0; transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1); }
-  .hero-bg-video.is-playing { opacity: 0.55; }
-  @keyframes ken-burns { 0% { transform: scale(1.06) translate(0, 0); } 100% { transform: scale(1.18) translate(-1.5%, -2%); } }
-  .hero-bg-image { animation: ken-burns 22s ease-in-out infinite alternate; transform-origin: center center; }
-  .hero-bg-overlay { position: absolute; inset: 0; z-index: 1; pointer-events: none; background:
-    linear-gradient(180deg, rgba(26,15,36,0.50) 0%, rgba(26,15,36,0.72) 60%, rgba(26,15,36,0.96) 100%),
-    radial-gradient(ellipse 60% 50% at 70% 10%, rgba(175,75,237,0.32), transparent 60%),
-    radial-gradient(ellipse 55% 55% at 15% 80%, rgba(118,43,164,0.30), transparent 60%); }
-  .hero-bg-fade { position: absolute; left: 0; right: 0; bottom: -1px; height: 120px; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); }
-  .hero-inner { position: relative; z-index: 3; text-align: center; max-width: 920px; margin: 0 auto; color: white; }
-  .hero-inner h1 { color: white; margin-top: 22px; }
-  .hero-inner h1 .accent { background: linear-gradient(135deg, #e6b6ff 0%, #af4bed 50%, #d185ff 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .hero-sub { font-size: clamp(1.05rem, 1.45vw, 1.25rem); max-width: 640px; margin: 24px auto 32px; color: rgba(255,255,255,0.86); line-height: 1.55; }
-  .hero-sub strong { color: white; font-weight: 700; }
-  .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: center; }
-  /* Lock both hero CTAs to identical width so the pair looks balanced regardless of label length */
-  .hero-cta-row .btn { min-width: 240px; justify-content: center; }
-  .btn-ghost-light { background: rgba(255,255,255,0.10); color: white; border: 1px solid rgba(255,255,255,0.28); backdrop-filter: blur(8px); }
-  .btn-ghost-light:hover { background: rgba(255,255,255,0.18); transform: translateY(-2px); }
-  @media (max-width: 760px) {
-    .hero { min-height: 80vh; padding: 80px 0 60px; }
-    .hero-inner h1 { margin-top: 18px; }
-    .hero-cta-row .btn { min-width: 220px; }
-  }
-  @media (max-width: 420px) {
-    /* On narrow phones the buttons stack and stretch full width for a cleaner read */
-    .hero-cta-row { flex-direction: column; align-items: stretch; gap: 12px; }
-    .hero-cta-row .btn { min-width: 0; width: 100%; }
-  }
-
-  /* TRUST BAR */
-  .trust-seal-bar { padding: 28px 0; background: white; border-bottom: 1px solid var(--lavender-100); }
-  .trust-seal-inner { display: flex; gap: 14px 40px; flex-wrap: wrap; justify-content: center; align-items: center; }
-  .seal { display: inline-flex; align-items: center; gap: 12px; color: var(--ink); }
-  .seal-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--soft); border: 1px solid var(--lavender-100); color: var(--brand); }
-  .seal-text { display: flex; flex-direction: column; line-height: 1.2; }
-  .seal-text strong { font-family: 'Geist', 'Manrope', sans-serif; font-size: 0.86rem; font-weight: 800; color: var(--ink); letter-spacing: -0.01em; }
-  .seal-text span { font-size: 0.74rem; color: var(--muted); font-weight: 500; }
-  @media (max-width: 760px) {
-    /* Lock to a 2x2 grid on every phone width so seals never wrap unevenly */
-    .trust-seal-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 14px; justify-content: stretch; align-items: center; }
-    .seal { display: flex; align-items: center; gap: 10px; min-width: 0; width: 100%; }
-    .seal-icon { width: 34px; height: 34px; flex-shrink: 0; }
-    .seal-text { min-width: 0; flex: 1; }
-    .seal-text strong { font-size: 0.78rem; line-height: 1.15; overflow-wrap: break-word; }
-    .seal-text span { font-size: 0.68rem; line-height: 1.2; overflow-wrap: break-word; }
-  }
-  /* Tighter pass for iPhone SE / Mini-class screens (<= 380px) */
-  @media (max-width: 380px) {
-    .trust-seal-bar { padding: 20px 0; }
-    .trust-seal-inner { gap: 14px 10px; }
-    .seal { gap: 8px; }
-    .seal-icon { width: 30px; height: 30px; }
-    .seal-icon svg { width: 16px; height: 16px; }
-    .seal-text strong { font-size: 0.72rem; }
-    .seal-text span { font-size: 0.62rem; }
-  }
-
-  /* JOURNEY (3 numbered cards) */
-  .journey-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
-  @media (max-width: 900px) { .journey-grid { grid-template-columns: 1fr; } }
-  .journey-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; position: relative; transition: transform .2s ease, box-shadow .2s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.08); }
-  .journey-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-soft); }
-  .journey-card.elev { background: linear-gradient(160deg, var(--soft) 0%, white 100%); border-color: rgba(175,75,237,0.30); transform: translateY(-12px); box-shadow: var(--shadow-soft); }
-  @media (max-width: 900px) { .journey-card.elev { transform: none; } }
-  .journey-num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3.5rem; font-weight: 900; line-height: 1; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 18px; }
-  .journey-card h3 { font-size: 1.3rem; margin-bottom: 12px; }
-  .journey-card p { font-size: 0.98rem; }
-  .journey-note { max-width: 720px; margin: 36px auto 0; padding: 18px 26px; background: white; border: 1px solid var(--lavender-100); border-radius: 999px; text-align: center; color: var(--muted); font-size: 0.96rem; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
-  .journey-note strong { color: var(--ink); }
-
-  /* HOW IT WORKS — alternating step rows, each paired with a portal screenshot */
-  .pe-steps-v2 { display: flex; flex-direction: column; gap: clamp(48px, 6vw, 96px); }
-  .pe-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
-  .pe-row:nth-child(even) .pe-row-visual { order: -1; }
-  @media (max-width: 900px) {
-    .pe-row { grid-template-columns: 1fr; gap: 28px; }
-    .pe-row:nth-child(even) .pe-row-visual { order: 0; }
-  }
-  .pe-row-visual { position: relative; aspect-ratio: 4/3; border-radius: var(--radius-xl); padding: clamp(20px, 4vw, 56px); display: flex; align-items: center; justify-content: center; overflow: hidden; background: linear-gradient(160deg, var(--soft) 0%, var(--lavender-100) 100%); box-shadow: var(--shadow-soft); }
-  .pe-row-visual::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 25% 25%, rgba(255,255,255,0.55), transparent 60%), radial-gradient(ellipse 50% 50% at 80% 80%, rgba(175,75,237,0.18), transparent 60%); pointer-events: none; z-index: 0; }
-  .pe-row-visual img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; filter: drop-shadow(0 28px 50px rgba(40,26,49,0.25)); position: relative; z-index: 1; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
-  .pe-row:hover .pe-row-visual img { transform: scale(1.025) translateY(-2px); }
-  /* Mobile: let card grow to the image's natural shape so screenshots are large enough to read */
-  @media (max-width: 900px) {
-    .pe-row-visual { aspect-ratio: auto; padding: 18px; overflow: visible; border-radius: var(--radius-lg); }
-    .pe-row-visual img { width: 100%; height: auto; max-height: none; filter: drop-shadow(0 18px 32px rgba(40,26,49,0.22)); }
-  }
-  .pe-row-text { padding: 0; }
-  .pe-step-badge { display: inline-flex; align-items: center; gap: 10px; padding: 8px 14px; background: rgba(175,75,237,0.10); border: 1px solid rgba(175,75,237,0.22); border-radius: 999px; margin-bottom: 18px; }
-  .pe-step-badge .num { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 0.9rem; background: linear-gradient(135deg, var(--brand), var(--brand-darker)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-  .pe-step-badge .lbl { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand-deep); }
-  .pe-row-text h3 { font-size: clamp(1.4rem, 2.4vw, 1.85rem); margin-bottom: 14px; line-height: 1.15; }
-  .pe-row-text p { font-size: 1.02rem; line-height: 1.6; max-width: 480px; }
-  .pe-row-text p em { color: var(--brand-deep); font-style: italic; font-weight: 600; }
-
-  /* PRICING (3 plans) */
-  .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
-  @media (max-width: 980px) { .price-grid { grid-template-columns: 1fr; } }
-  .price-card { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); padding: 36px 32px; display: flex; flex-direction: column; position: relative; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; box-shadow: 0 8px 24px -12px rgba(118,43,164,0.10); }
-  .price-card:hover { transform: translateY(-6px); border-color: rgba(175,75,237,0.35); box-shadow: var(--shadow-soft); }
-  .price-card.featured { background: linear-gradient(160deg, var(--soft) 0%, white 70%); border-color: rgba(175,75,237,0.40); box-shadow: var(--shadow-soft); }
-  .price-card.featured::before { content: "Most popular"; position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: var(--brand); color: white; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; padding: 6px 16px; border-radius: 999px; box-shadow: 0 8px 18px -6px rgba(175,75,237,0.55); white-space: nowrap; }
-  .price-tag { display: inline-flex; align-items: center; gap: 8px; font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.16em; color: var(--brand-deep); }
-  .price-tag .dot-mini { width: 6px; height: 6px; border-radius: 50%; background: var(--brand); }
-  .price-card h3 { font-size: 1.55rem; margin: 14px 0 18px; }
-  .price-amt { display: flex; align-items: baseline; gap: 6px; margin-bottom: 6px; }
-  .price-amt .num { font-family: 'Geist', 'Manrope', sans-serif; font-size: 3rem; font-weight: 900; line-height: 1; color: var(--ink); letter-spacing: -0.03em; }
-  .price-amt .per { font-size: 0.88rem; color: var(--muted); font-weight: 600; }
-  .price-amt .num small { font-size: 1.4rem; font-weight: 800; color: var(--muted); }
-  .price-foot { font-size: 0.84rem; color: var(--muted); margin-bottom: 18px; }
-  .price-reframe { margin: 0 0 22px; padding: 12px 14px; background: rgba(20,152,58,0.08); border: 1px solid rgba(20,152,58,0.22); border-radius: 12px; display: flex; flex-direction: column; gap: 2px; }
-  .reframe-was { font-size: 0.80rem; color: var(--muted); line-height: 1.35; }
-  .reframe-was s { color: rgba(91,77,101,0.75); }
-  .reframe-save { font-size: 0.92rem; font-weight: 800; color: var(--green); font-family: 'Geist', 'Manrope', sans-serif; letter-spacing: -0.01em; }
-  .price-list { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
-  .price-list li { display: flex; gap: 12px; align-items: flex-start; font-size: 0.96rem; color: var(--ink); line-height: 1.5; }
-  .price-list li svg { flex-shrink: 0; color: var(--green); margin-top: 3px; }
-  .price-list li strong { font-weight: 700; }
-  .price-card .btn { width: 100%; }
-
-  /* DR PEPIN */
-  .doctor-card { position: relative; background: linear-gradient(135deg, var(--brand-darker) 0%, var(--brand) 55%, var(--brand-deep) 100%); border-radius: var(--radius-xl); overflow: hidden; color: white; padding: 0; box-shadow: var(--shadow-lg); }
-  .doctor-card::before { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 50% at 15% 25%, rgba(255,255,255,0.18), transparent 60%), radial-gradient(ellipse 50% 50% at 90% 80%, rgba(255,255,255,0.12), transparent 60%); pointer-events: none; }
-  .doctor-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.15fr 1fr; gap: 0; align-items: stretch; }
-  @media (max-width: 900px) { .doctor-grid { grid-template-columns: 1fr; } }
-  .doctor-copy { padding: clamp(40px, 5vw, 64px) clamp(28px, 5vw, 64px); }
-  .doctor-copy .eyebrow { background: rgba(255,255,255,0.14); color: #f7e8ff; border-color: rgba(255,255,255,0.22); }
-  .doctor-copy h2 { color: white; margin-top: 18px; font-size: clamp(2rem, 3.6vw, 2.8rem); }
-  .doctor-copy .role { display: block; margin-top: 8px; font-size: 1.05rem; color: rgba(255,255,255,0.86); font-weight: 600; }
-  .doctor-copy p { color: rgba(255,255,255,0.88); font-size: 1.02rem; margin: 22px 0 32px; max-width: 540px; }
-  .doctor-credentials { display: flex; gap: 22px; flex-wrap: wrap; margin: 0 0 32px; font-size: 0.86rem; color: rgba(255,255,255,0.82); }
-  .doctor-credentials span { display: inline-flex; align-items: center; gap: 8px; }
-  .doctor-credentials svg { color: #f7e8ff; }
-  .doctor-visual { position: relative; min-height: 360px; }
-  .doctor-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-  .doctor-visual::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, rgba(76,34,124,0.45) 100%); pointer-events: none; }
-
-  /* BIOMARKER GROUPS */
-  .biomarker-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-  @media (max-width: 980px) { .biomarker-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 540px) { .biomarker-grid { grid-template-columns: 1fr; } }
-  .biomarker-cat { background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius); padding: 22px 22px 20px; transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease; }
-  .biomarker-cat:hover { transform: translateY(-3px); border-color: rgba(175,75,237,0.35); box-shadow: 0 18px 36px -18px rgba(118,43,164,0.20); }
-  .biomarker-cat .ico { width: 38px; height: 38px; border-radius: 10px; background: var(--soft); color: var(--brand-deep); display: grid; place-items: center; margin-bottom: 14px; }
-  .biomarker-cat h4 { font-family: 'Geist', 'Manrope', sans-serif; font-size: 1.02rem; font-weight: 800; color: var(--ink); margin: 0 0 6px; }
-  .biomarker-cat p { font-size: 0.85rem; color: var(--muted); line-height: 1.45; }
-
   /* COMPARISON TABLE */
   .compare-wrap { max-width: 1080px; margin: 0 auto; background: white; border: 1px solid var(--lavender-100); border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 18px 50px -22px rgba(118,43,164,0.16); }
   .compare-head { display: grid; grid-template-columns: 1.45fr 1fr 1fr; background: linear-gradient(180deg, var(--soft) 0%, white 100%); border-bottom: 1px solid var(--lavender-100); }
@@ -523,32 +370,6 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   .faq summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--brand); font-weight: 400; transition: transform .2s ease; flex-shrink: 0; padding-top: 2px; }
   .faq[open] summary::after { content: "−"; }
   .faq .faq-body { padding: 0 20px 18px; color: var(--muted); font-size: 0.88rem; line-height: 1.55; }
-
-  /* FINAL CTA */
-  .final-cta { position: relative; background: linear-gradient(135deg, #4a1071 0%, #762ba4 30%, #af4bed 60%, #9043bf 100%); background-size: 280% 280%; animation: aurora-shift 14s ease-in-out infinite; color: white; border-radius: var(--radius-xl); padding: clamp(48px, 8vw, 96px) clamp(28px, 6vw, 80px); text-align: center; overflow: hidden; isolation: isolate; }
-  @keyframes aurora-shift { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
-  .final-cta-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; opacity: 0; mix-blend-mode: luminosity; filter: saturate(1.05) contrast(1.05); pointer-events: none; transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1); }
-  .final-cta-video.is-playing { opacity: 0.45; }
-  .final-cta::before { content: ""; position: absolute; inset: 0; background:
-      linear-gradient(180deg, rgba(74,16,113,0.55) 0%, rgba(118,43,164,0.45) 50%, rgba(74,16,113,0.65) 100%),
-      radial-gradient(ellipse 50% 50% at 20% 30%, rgba(231,176,255,0.40), transparent 60%),
-      radial-gradient(ellipse 50% 50% at 80% 70%, rgba(208,133,255,0.30), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 50% 100%, rgba(118,43,164,0.50), transparent 60%);
-    pointer-events: none; z-index: 1; }
-  .final-cta > *:not(.final-cta-video) { position: relative; z-index: 2; }
-  .final-cta h2 { color: white; max-width: 760px; margin: 22px auto 24px; }
-  .final-cta p { color: rgba(255,255,255,0.90); max-width: 620px; margin: 0 auto 36px; font-size: 1.1rem; }
-  .final-cta .subscribe-row { display: flex; gap: 10px; width: 100%; max-width: 480px; margin: 28px auto 0; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.22); padding: 6px 6px 6px 18px; border-radius: 999px; backdrop-filter: blur(8px); align-items: center; }
-  .final-cta .subscribe-row input { flex: 1 1 0; min-width: 0; background: transparent; border: none; outline: none; color: white; font-size: 1rem; font-family: inherit; padding: 0; }
-  .final-cta .subscribe-row input::placeholder { color: rgba(255,255,255,0.65); }
-  .final-cta .subscribe-row button { flex-shrink: 0; background: white; color: var(--brand-darker); border: none; border-radius: 999px; padding: 12px 22px; font-weight: 700; font-size: 0.96rem; cursor: pointer; font-family: inherit; transition: transform .15s ease, background .2s ease; white-space: nowrap; }
-  .final-cta .subscribe-row button:hover { background: #fbf5fe; transform: translateY(-1px); }
-  @media (max-width: 480px) {
-    .final-cta .subscribe-row { flex-direction: column; padding: 14px; border-radius: 24px; gap: 12px; }
-    .final-cta .subscribe-row input { width: 100%; text-align: center; }
-    .final-cta .subscribe-row button { width: 100%; padding: 14px 22px; }
-  }
-
   /* FOOTER */
   .social-row { display: flex; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
   .social-row a { width: 36px; height: 36px; border-radius: 50%; background: var(--soft); border: 1px solid var(--lavender-100); display: grid; place-items: center; color: var(--brand-deep); transition: transform .15s ease, background .15s ease, color .15s ease; }
@@ -590,7 +411,6 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   @media (prefers-reduced-motion: reduce) {
     .orb.a, .orb.b, .final-cta { animation: none !important; }
   }
-
   /* Mobile login pill — match home page nav treatment */
   .portal-btn { gap: 8px; }
   .portal-btn .login-label { display: none; font-size: 0.86rem; font-weight: 600; line-height: 1; }
@@ -741,63 +561,11 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
     border-bottom-left-radius: 22px;
     border-bottom-right-radius: 22px;
   }
-
-  /* AEO answer block — citable sentence right after the first H1 so
-     ChatGPT/Perplexity/Gemini can lift a complete answer from above-fold */
-  .aeo-answer {
-    display: block;
-    max-width: 760px;
-    margin: 14px auto 0;
-    padding: 12px 16px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.16);
-    border-radius: 12px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    font-size: 0.92rem;
-    line-height: 1.55;
-    color: rgba(255,255,255,0.92);
-    text-align: left;
-  }
-  /* When hero has a light bg (no overlay), switch to dark text variant */
-  .hero:not([class*="dark"]):not([class*="video"]) .aeo-answer,
-  body:not(:has(.hero-bg-video)) .aeo-answer {
-    background: rgba(36,20,50,0.04);
-    border-color: rgba(36,20,50,0.10);
-    color: var(--ink, #281A31);
-  }
-
   /* Mobile legibility: raise the floor on small text (≤720px) */
   @media (max-width: 720px) {
     p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
     small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
   }
-
-  /* ============================================================
-     ABOVE-THE-FOLD CONVERSION LAYER (2026-07 CTA/pricing lift)
-     ============================================================ */
-  /* Hero price chip */
-  .hero-price-chip { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 22px; padding: 10px 20px; border-radius: 999px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(8px); color: rgba(255,255,255,0.85); font-size: 0.95rem; }
-  .hero-price-chip strong { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.35rem; color: white; }
-
-  /* Quick panel picker (compact pricing strip under the trust bar) */
-  .quick-panels-head { text-align: center; max-width: 680px; margin: 0 auto 28px; }
-  .quick-panels-head p { margin-top: 12px; font-size: 1.02rem; }
-  .quick-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  @media (max-width: 860px) { .quick-panels { grid-template-columns: 1fr; } }
-  .quick-panel { display: flex; flex-direction: column; gap: 6px; background: white; border: 1px solid var(--lavender-100, #E9D9F2); border-radius: 18px; padding: 24px 22px; box-shadow: 0 8px 24px -10px rgba(118,43,164,0.10); transition: transform .18s ease, box-shadow .2s ease, border-color .2s ease; }
-  .quick-panel:hover { transform: translateY(-4px); border-color: rgba(175,75,237,0.4); box-shadow: 0 18px 44px -14px rgba(118,43,164,0.28); }
-  .quick-panel.featured { border-color: var(--brand, #af4bed); box-shadow: 0 18px 44px -14px rgba(175,75,237,0.35); position: relative; }
-  .quick-panel .qp-badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--brand, #af4bed); color: white; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; white-space: nowrap; }
-  .quick-panel h3 { font-size: 1.08rem; }
-  .quick-panel .qp-price { font-family: 'Geist', 'Manrope', sans-serif; font-weight: 900; font-size: 1.9rem; line-height: 1; color: var(--ink, #281A31); }
-  .quick-panel .qp-price small { font-size: 0.72rem; font-weight: 600; color: var(--muted, #3d3247); margin-left: 4px; }
-  .quick-panel .qp-sub { font-size: 0.86rem; color: var(--muted, #3d3247); min-height: 2.6em; }
-  .quick-panel .qp-save { font-size: 0.78rem; font-weight: 700; color: #059669; }
-  .quick-panel .btn { margin-top: 10px; width: 100%; padding: 13px 18px; font-size: 0.92rem; }
-  .quick-panels-foot { text-align: center; margin-top: 18px; font-size: 0.9rem; color: var(--muted, #3d3247); }
-  .quick-panels-foot a { color: var(--brand-deep, #762ba4); font-weight: 700; }
-
   /* Mid-page CTA band */
   .mid-cta { text-align: center; margin-top: 40px; }
   .mid-cta .cta-assure { margin-top: 14px; font-size: 0.88rem; color: var(--muted, #3d3247); }
@@ -819,6 +587,362 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   }
   body.sticky-active footer { padding-bottom: 100px; }
 .hipaa-text-chip{display:inline-flex;align-items:center;box-sizing:border-box;height:48px;font-size:.95rem;font-weight:600;letter-spacing:.01em;color:#fff;border:1px solid #a6a6a6;border-radius:8px;padding:0 16px;background:#000;white-space:nowrap}
+
+  /* ============================================================
+     /blood-test REDESIGN (Figma ddtx6gPgMG9fWkxAzwlEJg, page "04 Redesign",
+     desktop 34:3 / mobile 38:2) — shipped 2026-10-02
+     ============================================================ */
+  :root {
+    --plum: #241432;
+    --plum-2: #3B1B52;
+    --text-2: #6B5F76;
+    --lav: #F8F2FB;
+    --lav-2: #E9D9F2;
+    --green-a: #3CC26B;
+    --green-b: #0E7A3B;
+    --card-shadow: 0 2px 6px rgba(91,42,120,0.06), 0 18px 40px -6px rgba(91,42,120,0.16);
+  }
+  body { background: #FAF6F0; }
+  .bt-main { overflow-x: clip; background: linear-gradient(180deg, #F7F0FB 0px, #FBF8FC 900px, #FAF6F0 1500px); }
+  .bt-main .faq-section { background: transparent; }
+  .bt-wt { background: linear-gradient(180deg, rgba(248,242,251,0) 0%, #F8F2FB 25%, #F8F2FB 75%, rgba(248,242,251,0) 100%); }
+  .bt-head.h48 h2 { font-size: clamp(2rem, 3.4vw, 3rem); }
+  .bt-head.h48 { max-width: 920px; }
+  .bt-sec { padding: 96px 0; position: relative; }
+  .bt-sec.tight-top { padding-top: 48px; }
+  .bt-head { text-align: center; max-width: 820px; margin: 0 auto 48px; }
+  .bt-head h2 { margin-top: 0; font-size: clamp(2rem, 3.4vw, 3.4rem); line-height: 1.05; letter-spacing: -0.025em; color: var(--ink); }
+  .bt-head p { margin-top: 18px; font-size: clamp(1rem, 1.3vw, 1.19rem); line-height: 1.45; color: var(--text-2); }
+  .bt-eyebrow { display: block; font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--brand); }
+  .h-italic { color: var(--brand); }
+  .bt-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: var(--brand); color: #fff; font-weight: 600; font-size: 1.125rem; line-height: 25px; padding: 18px 34px; border-radius: 999px; box-shadow: 0 12px 30px -8px rgba(133,63,172,0.4); transition: transform .15s ease, box-shadow .2s ease, background .2s ease; }
+  .bt-btn:hover { background: #7a3a9e; transform: translateY(-2px); box-shadow: 0 16px 34px -8px rgba(133,63,172,0.5); }
+  .bt-green-line { font-weight: 700; font-size: 0.9375rem; line-height: 21px; color: var(--green-b); }
+  .bt-fine { font-size: 0.8125rem; line-height: 18px; color: var(--text-2); opacity: .85; }
+
+  /* ---------- 01 HERO ---------- */
+  .bt-hero { padding: 80px 0 40px; }
+  .bt-hero .container { max-width: 1312px; }
+  .bt-hero-grid { display: grid; grid-template-columns: minmax(0, 600px) minmax(0, 560px); justify-content: space-between; column-gap: 48px; align-items: start; }
+  .bt-hero-copy { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+  .bt-hero h1 { font-size: clamp(2.5rem, 4.2vw, 3.75rem); line-height: 1.05; letter-spacing: -0.025em; color: var(--plum); font-weight: 800; }
+  .bt-hero h1 .h-italic { font-weight: 800; color: var(--brand); }
+  .bt-hero-sub { font-size: 1.25rem; line-height: 28px; color: var(--text-2); max-width: 600px; }
+  .bt-goals-q { font-weight: 700; font-size: 0.875rem; line-height: 20px; color: var(--plum); margin-bottom: 12px; }
+  .bt-goals { display: grid; grid-template-columns: repeat(2, minmax(0, 280px)); gap: 12px; max-width: 572px; padding: 6px 0 8px; }
+  .bt-goal { display: flex; align-items: center; gap: 12px; padding: 12px 14px 12px 12px; background: #fff; border: 1px solid var(--tile-bd); border-radius: 18px; box-shadow: 0 10px 24px -4px rgba(91,42,120,0.13); transition: transform .18s ease, box-shadow .2s ease; min-width: 0; }
+  .bt-goal:hover, .bt-goal:focus-visible { transform: translateY(-2px); box-shadow: 0 16px 30px -6px rgba(91,42,120,0.2); }
+  .bt-goal .gi { flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; background: var(--tile-grad); box-shadow: 0 4px 10px var(--tile-glow); color: #fff; }
+  .bt-goal .gt { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; line-height: 1.3; }
+  .bt-goal .gt strong { font-size: 0.97rem; font-weight: 700; color: #24142F; }
+  .bt-goal .gt span { font-size: 0.78rem; font-weight: 500; color: #6B5C75; }
+  .bt-goal .ga { font-weight: 900; font-size: 1.125rem; color: var(--tile-arrow); flex-shrink: 0; }
+  .g-energy { --tile-bd: rgba(245,181,68,0.3); --tile-grad: linear-gradient(135deg, #F5B544 0%, #E8893A 71%); --tile-glow: rgba(232,137,58,0.35); --tile-arrow: #E8893A; }
+  .g-weight { --tile-bd: rgba(240,122,140,0.3); --tile-grad: linear-gradient(135deg, #F07A8C 0%, #C2459A 71%); --tile-glow: rgba(194,69,154,0.35); --tile-arrow: #C2459A; }
+  .g-hormone { --tile-bd: rgba(164,95,200,0.3); --tile-grad: linear-gradient(135deg, #A45FC8 0%, #853FAC 71%); --tile-glow: rgba(133,63,172,0.35); --tile-arrow: #853FAC; }
+  .g-base { --tile-bd: rgba(60,197,110,0.3); --tile-grad: linear-gradient(135deg, #3CC56E 0%, #1E8F84 71%); --tile-glow: rgba(30,143,132,0.35); --tile-arrow: #1E8F84; }
+  .bt-hero-ctas { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+  .bt-link { font-weight: 600; font-size: 1.0625rem; color: var(--brand); }
+  .bt-link:hover { text-decoration: underline; }
+  .bt-hero-notes { display: flex; flex-direction: column; gap: 8px; }
+  .bt-hero-notes .flow { font-weight: 500; font-size: 0.9375rem; line-height: 21px; color: var(--text-2); max-width: 560px; }
+  .bt-hero-visual { position: relative; aspect-ratio: 560 / 600; border-radius: 40px; overflow: hidden; background: linear-gradient(133deg, #FBF5FE 0%, #E9D9F2 71%); box-shadow: 0 24px 60px -18px rgba(118,43,164,0.22); }
+  .bt-hero-visual img { position: absolute; left: 7.14%; top: 10%; width: 85.7%; height: 68.8%; object-fit: contain; }
+  .bt-hero-visual .cap { position: absolute; left: 7.14%; bottom: 6.5%; background: #fff; border-radius: 16px; padding: 12px 18px 12px 16px; box-shadow: 0 8px 24px -6px rgba(0,0,0,0.12); display: flex; flex-direction: column; gap: 2px; }
+  .bt-hero-visual .cap strong { font-size: 0.9375rem; line-height: 21px; color: var(--plum); }
+  .bt-hero-visual .cap span { font-size: 0.8125rem; line-height: 18px; color: var(--text-2); }
+  .bt-trust { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 28px; font-weight: 500; font-size: 0.875rem; line-height: 20px; color: var(--text-2); }
+  @media (max-width: 980px) {
+    .bt-hero { padding: 48px 0 24px; }
+    .bt-hero-grid { grid-template-columns: 1fr; row-gap: 32px; }
+    .bt-hero-visual { max-width: 560px; width: 100%; }
+  }
+  @media (max-width: 720px) {
+    .bt-hero h1 { font-size: 2.42rem; line-height: 1.05; }
+    .bt-hero-sub { font-size: 1.125rem; line-height: 26px; }
+    .bt-goals { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .bt-goal { flex-direction: column; align-items: flex-start; padding: 16px 14px; gap: 10px; }
+    .bt-goal .ga { display: none; }
+    .bt-goal .gt strong { font-size: 0.97rem; }
+    .bt-hero-ctas .bt-btn { width: 100%; }
+    .bt-hero-ctas .bt-link { display: none; }
+    .bt-hero-visual { aspect-ratio: 350 / 320; border-radius: 32px; }
+    .bt-hero-visual img { left: 4%; top: 6%; width: 92%; height: 86%; }
+    .bt-hero-visual .cap { display: none; }
+    .bt-trust { gap: 6px 16px; font-size: 0.8125rem; }
+  }
+
+  /* ---------- 02 NUMBERS STRIP ---------- */
+  .bt-numbers { position: relative; overflow: hidden; display: flex; align-items: stretch; padding: 34px 12px; border-radius: 32px; border: 1px solid rgba(133,63,172,0.35); background: linear-gradient(90deg, #24142F 0%, #3B1B52 100%); box-shadow: 0 24px 60px -20px rgba(118,43,164,0.25); isolation: isolate; }
+  .bt-numbers::before, .bt-numbers::after { content: ""; position: absolute; border-radius: 50%; z-index: -1; pointer-events: none; filter: blur(60px); }
+  .bt-numbers::before { width: 320px; height: 320px; left: -60px; top: -120px; background: rgba(164,95,200,0.32); }
+  .bt-numbers::after { width: 300px; height: 300px; left: 72%; top: 40px; background: rgba(164,95,200,0.3); }
+  .bt-stat { flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: 16px; padding: 0 28px; }
+  .bt-stat + .bt-stat { border-left: 1px solid rgba(255,255,255,0.12); }
+  .bt-stat .si { flex-shrink: 0; width: 48px; height: 48px; border-radius: 14.4px; display: grid; place-items: center; background: linear-gradient(135deg, #A45FC8 0%, #853FAC 71%); box-shadow: inset 0 1px 0 rgba(255,255,255,0.25); color: #fff; }
+  .bt-stat .sv { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .bt-stat .sv strong { font-weight: 900; font-size: 2.375rem; line-height: 1.15; letter-spacing: -0.02em; color: #fff; white-space: nowrap; }
+  .bt-stat .sv span { font-weight: 500; font-size: 0.875rem; line-height: 1.3; color: #E6B6FF; }
+  @media (max-width: 1180px) { .bt-stat { padding: 0 18px; gap: 12px; } .bt-stat .sv strong { font-size: 2rem; } }
+  @media (max-width: 900px) {
+    .bt-numbers { display: grid; grid-template-columns: 1fr 1fr; padding: 8px; }
+    .bt-stat { flex-direction: column; align-items: flex-start; gap: 12px; padding: 24px 16px 22px; }
+    .bt-stat + .bt-stat { border-left: 0; }
+    .bt-stat:nth-child(even) { border-left: 1px solid rgba(255,255,255,0.12); }
+    .bt-stat:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,0.12); }
+    .bt-stat .sv strong { font-size: 1.85rem; }
+  }
+
+  /* ---------- 03 WHAT YOU GET + DOCTOR BAR + HOW IT WORKS ---------- */
+  .bt-get { display: flex; align-items: center; justify-content: center; gap: 48px; }
+  .bt-portal { position: relative; flex: 0 1 520px; aspect-ratio: 520 / 480; border-radius: 36px; overflow: hidden; background: linear-gradient(137deg, #FBF5FE 0%, #E9D9F2 71%); }
+  .bt-portal img { position: absolute; left: 5.8%; top: 14.6%; width: 88.5%; height: 76.7%; object-fit: contain; }
+  .bt-portal .tag { position: absolute; left: 24px; top: 20px; background: #fff; border-radius: 999px; padding: 6px 12px; font-size: 0.6875rem; font-weight: 700; line-height: 15px; color: var(--brand); letter-spacing: .02em; }
+  .bt-stage { position: relative; flex: 0 1 576px; min-width: 0; padding: 34px 0 20px; }
+  .bt-stage .label { position: absolute; left: 8px; top: 0; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; color: var(--brand); text-transform: uppercase; }
+  .bt-stage .glow { position: absolute; border-radius: 50%; pointer-events: none; filter: blur(64px); z-index: 0; }
+  .bt-stage .glow.a { width: 320px; height: 320px; left: 120px; top: 117px; background: rgba(201,160,230,0.45); }
+  .bt-stage .glow.b { width: 220px; height: 220px; left: 330px; top: 435px; background: rgba(123,240,174,0.25); }
+  .ins-slot { position: relative; z-index: 1; width: min(470px, 100%); }
+  .ins-slot.s1 { margin-left: 0; }
+  .ins-slot.s2 { margin: -12px 0 0 96px; z-index: 2; }
+  .ins-slot.s3 { margin: 8px 0 0 30px; z-index: 3; }
+  .ins-float { animation: ins-float 6s ease-in-out infinite; }
+  .s2 .ins-float { animation-delay: 1.2s; }
+  .s3 .ins-float { animation-delay: 2.4s; }
+  @keyframes ins-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+  .ins-card { background: #fff; border: 1px solid rgba(133,63,172,0.12); border-radius: 22px; padding: 20px 22px; box-shadow: var(--card-shadow); display: flex; flex-direction: column; gap: 12px; transform: rotate(var(--tilt, 0deg)); transition: transform .4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow .3s ease; }
+  .s1 .ins-card { --tilt: 1.5deg; }
+  .s2 .ins-card { --tilt: -1.2deg; }
+  .s3 .ins-card { --tilt: 0.8deg; }
+  .ins-card:hover { transform: rotate(0deg); box-shadow: 0 2px 6px rgba(91,42,120,0.08), 0 24px 48px -8px rgba(91,42,120,0.22); }
+  .ins-head { display: flex; align-items: center; gap: 12px; }
+  .ins-num { width: 34px; height: 34px; border-radius: 11px; display: grid; place-items: center; color: #fff; font-weight: 900; font-size: 0.9375rem; }
+  .ins-chip { border-radius: 999px; padding: 5px 10px; font-size: 0.75rem; font-weight: 600; line-height: 1.35; }
+  .ins-card h3 { font-size: 1.0625rem; font-weight: 700; line-height: 1.35; letter-spacing: 0; color: #24142F; }
+  .ins-card p { font-size: 0.84rem; font-weight: 500; line-height: 1.35; color: #5A4D63; }
+  .ins-gauge { position: relative; height: 34px; }
+  .ins-gauge .bar { position: absolute; left: 0; right: 0; top: 6px; height: 8px; border-radius: 4px; background: linear-gradient(90deg, #F5B544 0%, #7BD389 30%, #7BD389 70%, #F5B544 100%); }
+  .ins-gauge .dot { position: absolute; left: 14.8%; top: 1px; width: 18px; height: 18px; border-radius: 50%; background: #fff; border: 4px solid var(--brand); box-shadow: 0 2px 6px rgba(91,42,120,0.3); }
+  .ins-gauge .lbl { position: absolute; top: 20px; font-size: 0.6875rem; font-weight: 500; color: #8A7A95; }
+  .ins-markers { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .mk { background: #fff; border: 1.5px solid rgba(133,63,172,0.35); border-radius: 999px; padding: 7px 12px; font-size: 0.8125rem; font-weight: 600; line-height: 1.35; color: #5B2A78; white-space: nowrap; }
+  .mk-plus { font-weight: 900; color: var(--brand); }
+  .float-mk { position: absolute; z-index: 4; box-shadow: 0 8px 18px rgba(91,42,120,0.12); transform: rotate(var(--r)); }
+  .mk-b12 { --r: -6deg; right: 25px; top: -66px; }
+  .mk-tsh { --r: 5deg; right: -30px; top: 131px; }
+  .mk-vitd { --r: 7deg; left: -30px; top: -30px; }
+  @media (max-width: 720px) { .mk-b12 { right: -4px; top: -22px; } .mk-tsh { right: -4px; top: -22px; } .mk-vitd { display: none; } }
+  .bubble { position: absolute; border-radius: 50%; pointer-events: none; z-index: 0; animation: drift var(--dur, 9s) ease-in-out infinite; animation-delay: var(--del, 0s); }
+  @keyframes drift { 0%, 100% { transform: translate(0, 0); } 33% { transform: translate(5px, -9px); } 66% { transform: translate(-4px, 6px); } }
+  .bubble.purple { background: radial-gradient(circle at 35% 30%, #E6C8F7, #A45FC8); opacity: .9; }
+  .bubble.green { background: radial-gradient(circle at 35% 30%, #D5F2DF, #3CC56E); opacity: .85; }
+  .bubble.gold { background: radial-gradient(circle at 35% 30%, #FFE3B3, #F5B544); opacity: .9; }
+  .bubble.deep { background: radial-gradient(circle at 35% 30%, #E6C8F7, #853FAC); opacity: .7; }
+  .bt-docbar { display: flex; align-items: center; gap: 28px; background: var(--plum); border-radius: 22px; padding: 22px 28px; margin-top: 56px; color: #fff; }
+  .bt-docbar img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; object-position: center 12%; flex-shrink: 0; }
+  .bt-docbar strong { display: block; font-size: 1.0625rem; line-height: 24px; }
+  .bt-docbar p { font-size: 0.875rem; line-height: 20px; color: rgba(255,255,255,0.95); margin-top: 4px; }
+  .bt-how { margin-top: 96px; text-align: center; }
+  .bt-how h2 { margin-top: 10px; font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1.09; letter-spacing: -0.025em; color: var(--plum); }
+  .bt-rail { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin: 36px 0 36px; }
+  .bt-rail::before { content: ""; position: absolute; left: 16.66%; right: 16.66%; top: 31px; border-top: 2px dashed #BE7ED8; }
+  .bt-badge { position: relative; justify-self: center; width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 900; font-size: 1.625rem; background: linear-gradient(135deg, #A45FC8 0%, #6E3190 100%); box-shadow: 0 8px 24px rgba(110,49,144,0.35); }
+  .bt-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; text-align: left; }
+  .bt-step { background: #fff; border: 1px solid var(--lav-2); border-radius: 28px; padding: 20px 20px 26px; box-shadow: 0 18px 44px -16px rgba(118,43,164,0.14); display: flex; flex-direction: column; gap: 14px; }
+  .bt-step-top { display: none; align-items: center; gap: 12px; }
+  .bt-step .vis { position: relative; height: 210px; border-radius: 20px; overflow: hidden; background: linear-gradient(147deg, #FBF5FE 0%, #E9D9F2 71%); }
+  .bt-step .vis.mint { background: linear-gradient(147deg, #F4EEFA 0%, #DCEBE3 71%); }
+  .bt-step .vis img { position: absolute; left: 3%; top: 4px; width: 94%; height: 240px; object-fit: contain; object-position: center top; }
+  .bt-step .pill { align-self: flex-start; display: inline-flex; gap: 6px; border-radius: 999px; padding: 6px 12px; font-size: 0.8125rem; font-weight: 700; line-height: 18px; background: rgba(133,63,172,0.12); color: var(--brand); white-space: nowrap; }
+  .bt-step .pill.ok { background: rgba(60,194,107,0.12); color: var(--green-b); }
+  .bt-step h3 { font-size: 1.375rem; font-weight: 800; line-height: 26px; color: var(--plum); letter-spacing: -0.01em; }
+  .bt-step p { font-size: 0.9375rem; line-height: 21px; color: var(--text-2); }
+  .mini-co { position: absolute; left: 50%; top: 6px; transform: translateX(-50%); width: 272px; background: #fff; border-radius: 16px; padding: 12px 18px; box-shadow: 0 8px 20px -6px rgba(0,0,0,0.1); display: flex; flex-direction: column; gap: 6px; }
+  .mini-co .row { display: flex; justify-content: space-between; align-items: center; }
+  .mini-co .row b { font-size: 0.875rem; line-height: 20px; color: var(--plum); }
+  .mini-co .row i { font-style: normal; font-weight: 900; font-size: 1rem; color: var(--brand); }
+  .mini-co .fld { background: #F6F2F9; border-radius: 8px; padding: 7px 12px; font-size: 0.75rem; font-weight: 500; line-height: 17px; color: var(--text-2); }
+  .mini-co .go { background: var(--brand); color: #fff; border-radius: 999px; padding: 9px 12px; text-align: center; font-size: 0.8125rem; font-weight: 700; line-height: 18px; }
+  .bt-cta-row { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 48px; }
+  @media (max-width: 1100px) {
+    .bt-get { flex-direction: column; gap: 32px; }
+    .bt-portal { flex: none; width: 100%; max-width: 560px; }
+    .bt-stage { flex: none; width: 100%; max-width: 576px; }
+  }
+  @media (max-width: 900px) {
+    .bt-rail { display: none; }
+    .bt-steps { grid-template-columns: 1fr; gap: 0; }
+    .bt-step + .bt-step { margin-top: 52px; position: relative; }
+    .bt-step + .bt-step::before { content: ""; position: absolute; left: 0; top: -40px; height: 26px; border-left: 2px solid #BE7ED8; }
+    .bt-step-top { display: flex; }
+    .bt-step-top .bt-badge { width: 44px; height: 44px; font-size: 1.25rem; justify-self: auto; }
+    .bt-step .pill.desk { display: none; }
+    .bt-step { padding: 16px 16px 22px; }
+    .bt-step .vis { height: 214px; }
+    .bt-steps { margin-top: 28px; }
+    .mini-co { width: min(272px, 88%); }
+    .bt-how { text-align: left; }
+  }
+  @media (max-width: 720px) {
+    .bt-head { text-align: left; }
+    .bt-head.center-m { text-align: center; }
+    .bt-docbar { flex-direction: row; align-items: flex-start; gap: 14px; padding: 18px; margin-top: 40px; }
+    .bt-docbar img { width: 52px; height: 52px; }
+    .bt-docbar strong { font-size: 0.95rem; line-height: 20px; }
+    .bt-docbar p { font-size: 0.8125rem; line-height: 18px; }
+    .bt-how { margin-top: 64px; }
+    .bt-portal { border-radius: 30px; aspect-ratio: 350 / 300; }
+    .bt-portal img { left: 3%; top: 6%; width: 94%; height: 88%; }
+    .ins-slot.s2 { margin-left: 24px; width: calc(100% - 24px); }
+    .ins-slot.s3 { margin-left: 6px; width: calc(100% - 6px); }
+    .ins-card { padding: 18px 18px; }
+    .bt-cta-row .bt-btn, .bt-wt .mid-cta .bt-btn { width: 100%; }
+    .bt-cta-row .bt-green-line { text-align: center; }
+  }
+
+  /* ---------- 04 PANELS (merged cards) ---------- */
+  .bt-panels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; align-items: stretch; }
+  .bt-panel { position: relative; background: #fff; border: 1px solid var(--lav-2); border-radius: 18px; padding: 23px 23px 23px; box-shadow: 0 8px 24px -10px rgba(118,43,164,0.1); display: flex; flex-direction: column; scroll-margin-top: 96px; transition: box-shadow .3s ease, border-color .3s ease; }
+  .bt-panel.featured { border-color: var(--brand); box-shadow: 0 18px 44px -14px rgba(175,75,237,0.35); }
+  .bt-panel.flash { box-shadow: 0 0 0 4px rgba(133,63,172,0.25), 0 18px 44px -14px rgba(175,75,237,0.35); }
+  .bt-panel .badge { position: absolute; top: -11px; left: 50%; transform: translateX(-50%); background: var(--brand); color: #fff; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 14px; border-radius: 999px; white-space: nowrap; }
+  .bt-panel h3 { font-size: 1.08rem; font-weight: 800; letter-spacing: -0.025em; line-height: 1.05; color: var(--ink); }
+  .bt-panel .price { font-weight: 900; font-size: 1.9rem; line-height: 1; color: var(--ink); margin-top: 6px; }
+  .bt-panel .price small { font-size: 0.72rem; font-weight: 600; color: var(--muted); margin-left: 2px; }
+  .bt-panel .sub { font-size: 0.86rem; line-height: 1.55; color: var(--muted); margin-top: 10px; min-height: 2.7em; }
+  .bt-panel .save { font-size: 0.78rem; font-weight: 700; color: #059669; margin-top: 6px; }
+  .bt-panel hr { border: 0; border-top: 1px solid var(--lav-2); margin: 16px 0 16px; }
+  .bt-panel .groups { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+  .bt-panel .groups li { font-size: 0.88rem; line-height: 1.45; color: var(--muted); }
+  .bt-panel .groups li strong { display: block; font-size: 0.86rem; font-weight: 800; color: var(--ink); }
+  .bt-panel details { margin-top: auto; padding-top: 16px; }
+  .bt-panel details > summary { border-top: 1px solid var(--lav-2); padding-top: 12px; cursor: pointer; list-style: none; font-size: 0.88rem; font-weight: 700; color: #9043bf; }
+  .bt-panel details > summary::-webkit-details-marker { display: none; }
+  .bt-panel details > summary::after { content: " ▾"; }
+  .bt-panel details[open] > summary::after { content: " ▴"; }
+  .bt-panel dl { margin: 10px 0 0; }
+  .bt-panel dt { font-size: 0.8rem; font-weight: 800; color: var(--ink); margin-top: 10px; }
+  .bt-panel dd { margin: 2px 0 0; font-size: 0.8rem; line-height: 1.5; color: var(--muted); }
+  .bt-order { display: flex; align-items: center; justify-content: center; margin-top: 16px; height: 48px; border-radius: 999px; color: #fff; font-weight: 600; font-size: 0.9rem; transition: transform .15s ease, filter .2s ease; }
+  .bt-order:hover { transform: translateY(-2px); filter: brightness(1.08); }
+  .bt-order.essential { background: linear-gradient(90deg, #3B1B52 0%, #1F1029 100%); box-shadow: 0 8px 18px -4px rgba(36,20,47,0.3); }
+  .bt-order.mens { background: #853FAC; box-shadow: 0 10px 28px -6px rgba(175,75,237,0.45); }
+  .bt-order.womens { background: linear-gradient(90deg, #3CC26B 0%, #0E7A3B 100%); box-shadow: 0 10px 28px -6px rgba(14,122,59,0.35); }
+  .bt-panels-foot { text-align: center; margin-top: 18px; font-size: 0.9rem; color: var(--muted); }
+  .bt-panels-foot a { color: #9043bf; font-weight: 700; }
+  .bt-also { display: flex; width: fit-content; max-width: 100%; margin: 20px auto 0; align-items: center; gap: 14px; flex-wrap: wrap; justify-content: center; background: #F6EEFB; border: 1px solid rgba(133,63,172,0.25); border-radius: 999px; padding: 14px 22px; font-size: 0.9375rem; text-align: center; }
+  .bt-also b { font-weight: 600; color: #28192F; }
+  .bt-also span { font-weight: 500; color: var(--muted); }
+  .bt-also a { font-weight: 600; color: var(--brand); text-decoration: underline; }
+  @media (max-width: 980px) { .bt-panels { grid-template-columns: 1fr; gap: 24px; } .bt-panel .sub { min-height: 0; } }
+  @media (max-width: 720px) { .bt-also { flex-direction: column; gap: 6px; border-radius: 22px; } }
+
+  /* ---------- 05 WHAT WE TEST (expandable goal cards) ---------- */
+  .bt-wt { position: relative; }
+  .bt-wt-grid { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; align-items: start; }
+  .bt-wt-grid .glow { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; z-index: 0; }
+  .bt-wt-grid .glow.a { width: 380px; height: 380px; left: 10%; top: 20%; background: rgba(201,160,230,0.35); }
+  .bt-wt-grid .glow.b { width: 300px; height: 300px; right: 5%; top: 45%; background: rgba(123,240,174,0.2); }
+  .wt-card { --c1: #F5B544; --c2: #E8893A; --wash: rgba(245,181,68,0.13); --tint: rgba(245,181,68,0.14); --tint-text: #C46A1C; --dot: #E8893A;
+    position: relative; z-index: 1; display: flex; flex-direction: column; background: #fff; background-image: linear-gradient(135deg, var(--wash) 0%, rgba(255,255,255,0) 45%); border: 1px solid rgba(133,63,172,0.12); border-radius: 22px; padding: 26px 26px 26px; box-shadow: var(--card-shadow); cursor: pointer; transition: transform .25s ease, box-shadow .25s ease; }
+  .wt-card:hover { transform: translateY(-4px); box-shadow: 0 2px 6px rgba(91,42,120,0.08), 0 26px 50px -8px rgba(91,42,120,0.24); }
+  .wt-card.c-hormone { --c1: #E07AB6; --c2: #A45FC8; --wash: rgba(224,122,182,0.13); --tint: rgba(164,95,200,0.12); --tint-text: #853FAC; --dot: #A45FC8; }
+  .wt-card.c-thyroid { --c1: #A45FC8; --c2: #853FAC; --wash: rgba(164,95,200,0.14); --tint: rgba(133,63,172,0.12); --tint-text: #6E3190; --dot: #853FAC; }
+  .wt-card.c-heart { --c1: #F07A8C; --c2: #C2459A; --wash: rgba(240,122,140,0.13); --tint: rgba(194,69,154,0.1); --tint-text: #B0347F; --dot: #C2459A; }
+  .wt-card.c-nutr { --c1: #F5B544; --c2: #3CC56E; --wash: rgba(245,181,68,0.13); --tint: rgba(60,197,110,0.12); --tint-text: #1E9B4E; --dot: #3CC56E; }
+  .wt-card.c-base { --c1: #3CC56E; --c2: #1E8F84; --wash: rgba(60,197,110,0.14); --tint: rgba(30,143,132,0.1); --tint-text: #1E8F84; --dot: #1E8F84; }
+  .wt-ico { width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center; color: #fff; background: linear-gradient(135deg, var(--c1) 0%, var(--c2) 100%); box-shadow: 0 6px 14px -4px var(--c2); margin-bottom: 14px; }
+  .wt-card h3 { font-size: 1.25rem; font-weight: 700; line-height: 28px; letter-spacing: -0.01em; color: var(--plum); }
+  .wt-collapse { display: grid; grid-template-rows: 1fr; transition: grid-template-rows .38s cubic-bezier(0.22, 1, 0.36, 1), opacity .3s ease; }
+  .wt-collapse > div { overflow: hidden; min-height: 0; }
+  .wt-sum { margin-top: 10px; }
+  .wt-sum p { font-size: 0.9375rem; line-height: 21px; color: var(--text-2); padding-bottom: 2px; }
+  .wt-more { grid-template-rows: 0fr; opacity: 0; }
+  .wt-card.open .wt-sum { grid-template-rows: 0fr; opacity: 0; }
+  .wt-card.open .wt-more { grid-template-rows: 1fr; opacity: 1; }
+  .wt-more ul { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  .wt-more li { position: relative; padding-left: 18px; font-size: 0.9375rem; line-height: 1.4; color: #4A3F55; }
+  .wt-more li::before { content: ""; position: absolute; left: 0; top: 7px; width: 7px; height: 7px; border-radius: 50%; background: var(--dot); }
+  .wt-more li b { color: var(--plum); font-weight: 700; }
+  .wt-more .close { margin-top: 14px; font-size: 0.9375rem; line-height: 1.45; color: var(--brand); }
+  .wt-chip { align-self: flex-start; display: inline-flex; align-items: center; gap: 7px; margin-top: 18px; border-radius: 999px; padding: 6px 12px; background: var(--tint); font-size: 0.8125rem; font-weight: 700; line-height: 18px; color: var(--plum); }
+  .wt-chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--dot); flex-shrink: 0; }
+  .wt-spacer { flex: 1 1 auto; }
+  .wt-toggle { margin-top: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; border: 0; cursor: pointer; font-family: inherit; font-size: 0.875rem; font-weight: 700; line-height: 18px; color: var(--tint-text); background: var(--tint); border-radius: 999px; padding: 10px 14px; transition: background .2s ease; }
+  .wt-toggle:hover { filter: brightness(0.97); }
+  .wt-toggle:focus-visible { outline: 3px solid rgba(133,63,172,0.45); outline-offset: 2px; }
+  .wt-toggle .pm { font-size: 1.05rem; font-weight: 600; line-height: 1; }
+  .wt-card.open .wt-toggle { background: transparent; justify-content: flex-start; padding-left: 0; }
+  .bt-wt .bubble { z-index: 0; }
+  @media (max-width: 1000px) { .bt-wt-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 680px) { .bt-wt-grid { grid-template-columns: 1fr; gap: 18px; } .wt-card { padding: 20px 18px 18px; } }
+
+  /* ---------- 06 COMPARISON (slim + expandable) ---------- */
+  .compare-row.extra[hidden] { display: none; }
+  .compare-more { display: block; margin: 24px auto 0; background: none; border: 0; cursor: pointer; font-family: inherit; font-size: 1rem; font-weight: 600; color: var(--brand); text-decoration: underline; }
+  .compare-cta { margin-top: 28px; }
+  .compare-cta .bt-btn { font-size: 1.08rem; padding: 20px 38px; }
+
+  /* ---------- 07 BOOK A DRAW ---------- */
+  .bt-book { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 560px); gap: 64px; align-items: center; justify-content: space-between; }
+  .bt-book h2 { font-size: clamp(2rem, 3vw, 2.75rem); line-height: 1.09; letter-spacing: -0.025em; color: var(--plum); margin-top: 18px; }
+  .bt-book p.lead { margin-top: 18px; font-size: 1.125rem; line-height: 25px; color: var(--text-2); }
+  .bt-book ul { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px; }
+  .bt-book li { font-weight: 600; font-size: 1rem; line-height: 22px; color: var(--plum); }
+  .bt-book-vis { position: relative; aspect-ratio: 560 / 450; background: #fff; border-radius: 36px; box-shadow: 0 20px 50px -16px rgba(118,43,164,0.18); overflow: hidden; }
+  .bt-book-vis img { position: absolute; left: 5.4%; top: 5.6%; width: 89.3%; height: 88.9%; object-fit: contain; }
+  @media (max-width: 900px) { .bt-book { grid-template-columns: 1fr; gap: 32px; } }
+
+  /* ---------- 08 OTHER PANELS ---------- */
+  .bt-others { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+  .op { --g1: #853FAC; --g2: #5B2A78; --bd: rgba(133,63,172,0.25); --t: rgba(133,63,172,0.1); --tc: #5B2A78; --cta: rgba(133,63,172,0.12);
+    display: flex; flex-direction: column; background: #fff; border: 1px solid var(--bd); border-radius: 24px; overflow: hidden; box-shadow: 0 16px 36px -6px rgba(91,42,120,0.14); transition: transform .2s ease, box-shadow .2s ease; }
+  .op:hover { transform: translateY(-4px); box-shadow: 0 22px 44px -8px rgba(91,42,120,0.22); }
+  .op.pink { --g1: #E07AB6; --g2: #A45FC8; --bd: rgba(224,122,182,0.25); --t: rgba(224,122,182,0.1); --tc: #A45FC8; --cta: rgba(224,122,182,0.12); }
+  .op.green { --g1: #3CC56E; --g2: #1E8F84; --bd: rgba(60,197,110,0.25); --t: rgba(60,197,110,0.1); --tc: #1E8F84; --cta: rgba(60,197,110,0.12); }
+  .op-h { background: linear-gradient(147deg, var(--g1) 0%, var(--g2) 71%); color: #fff; padding: 20px 22px; display: flex; flex-direction: column; gap: 6px; }
+  .op-top { display: flex; justify-content: space-between; align-items: center; }
+  .op-tag { background: #fff; color: var(--tc); border-radius: 999px; padding: 4px 10px; font-size: 0.6875rem; font-weight: 700; line-height: 1.35; }
+  .op-tag.gold { background: #FFD66B; color: #5A3B00; }
+  .op-price { font-weight: 900; font-size: 1.375rem; line-height: 1.35; }
+  .op-count { display: flex; align-items: baseline; gap: 8px; line-height: 1.1; }
+  .op-count b { font-weight: 900; font-size: 3.25rem; }
+  .op-count span { font-weight: 600; font-size: 1rem; color: #F3E3FF; }
+  .op-h h3 { color: #fff; font-size: 1.125rem; font-weight: 700; line-height: 1.35; letter-spacing: 0; }
+  .op-b { padding: 18px 22px 22px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .op-b p { font-size: 0.875rem; font-weight: 500; line-height: 1.35; color: var(--muted); }
+  .op-b .wi { font-size: 0.6875rem; font-weight: 700; letter-spacing: .04em; color: var(--tc); }
+  .op-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .op-chips span { display: inline-flex; align-items: center; gap: 6px; background: var(--t); border-radius: 999px; padding: 6px 10px; font-size: 0.78rem; font-weight: 600; line-height: 1.35; color: var(--muted); }
+  .op-chips span::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--tc); }
+  .op-cta { margin-top: auto; display: flex; justify-content: center; padding: 12px; border-radius: 999px; background: var(--cta); color: var(--tc); font-weight: 700; font-size: 0.9375rem; line-height: 1.35; }
+  @media (max-width: 980px) { .bt-others { grid-template-columns: 1fr; } }
+
+  /* ---------- 09 CLINICAL LEADERSHIP (square photo) ---------- */
+  .clinical-advisor-photo { border-radius: 28px !important; background: linear-gradient(135deg, #853FAC 0%, #762BA4 100%); box-shadow: 0 16px 40px rgba(118,43,164,0.22), 0 0 0 6px white, 0 0 0 7px var(--line) !important; }
+  .clinical-advisor-photo img { border-radius: 28px !important; object-position: center top !important; }
+
+  /* ---------- 11 FINAL CTA ---------- */
+  .bt-final { border-radius: 32px; padding: 96px 56px; text-align: center; color: #fff; background: linear-gradient(149deg, #3D1B52 0%, #853FAC 71%); box-shadow: 0 24px 60px -20px rgba(118,43,164,0.25); display: flex; flex-direction: column; align-items: center; gap: 40px; }
+  .bt-final h2 { color: #fff; max-width: 1000px; font-size: clamp(2rem, 3.4vw, 3rem); line-height: 1.08; letter-spacing: -0.025em; }
+  .bt-final h2 .h-italic { color: #E6B6FF; }
+  .bt-final .line { font-weight: 600; font-size: 1.125rem; line-height: 25px; color: #fff; }
+  .bt-final .bt-btn { background: #fff; color: var(--brand); font-weight: 700; padding: 18px 36px; box-shadow: none; }
+  .bt-final .bt-btn:hover { background: #FBF5FE; }
+  .bt-final .bt-fine { color: #fff; opacity: 1; }
+  @media (max-width: 720px) { .bt-final { padding: 56px 22px; gap: 26px; } .bt-final .bt-btn { width: 100%; } }
+
+  @media (max-width: 720px) {
+    .bt-main .container { padding-left: 20px !important; padding-right: 20px !important; }
+    .bt-sec { padding: 64px 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .ins-float, .bubble { animation: none !important; }
+    .ins-card, .wt-card, .wt-collapse, .bt-goal { transition: none !important; }
+  }
+  .bt-numbers-wrap { padding: 32px 0 0; }
+
 </style>
 <!-- FlexOffers AdvertiserMax click tracking -->
 <script>
@@ -828,14 +952,14 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
 </script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.directcare.ai/"},{"@type":"ListItem","position":2,"name":"Blood Labs"}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalTest","@id":"https://www.directcare.ai/blood-test#test","name":"DirectCare AI Comprehensive Blood Lab Panel","description":"Clinician-ordered blood panel covering 80+ biomarkers across hormones, metabolic health, lipids, inflammation, and nutrient status. Results delivered in 3-5 days with a personalized, plain-English action plan from a US-licensed clinician.","normalRange":"Reference ranges follow LabCorp and Quest standards","usedToDiagnose":[{"@type":"MedicalCondition","name":"Hormonal imbalance"},{"@type":"MedicalCondition","name":"Metabolic syndrome"},{"@type":"MedicalCondition","name":"Thyroid dysfunction"},{"@type":"MedicalCondition","name":"Vitamin and mineral deficiency"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalTest","@id":"https://www.directcare.ai/blood-test#test","name":"DirectCare AI Comprehensive Blood Lab Panel","description":"Clinician-ordered blood panels: three main panels of 70, 75 and 80 biomarkers, plus panels of 63, 67 and 88 biomarkers, covering hormones, metabolic health, lipids, inflammation and nutrient status. Drawn at Quest Diagnostics, with results in 3-5 days and a plain-English interpretation from a US-licensed clinician.","normalRange":"Reference ranges follow Quest Diagnostics standards"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","@id":"https://www.directcare.ai/#org","name":"DirectCare AI","url":"https://www.directcare.ai","logo":"https://www.directcare.ai/logo-color.png","areaServed":"United States","medicalSpecialty":["Endocrinology","PrimaryCare"],"contactPoint":{"@type":"ContactPoint","contactType":"customer support","email":"contact@directcareai.com","areaServed":"US","availableLanguage":"en"},"address":{"@type":"PostalAddress","streetAddress":"30 N Gould St, Ste N","addressLocality":"Sheridan","addressRegion":"WY","postalCode":"82801","addressCountry":"US"},"sameAs":["https://corporate.directcare.ai/"],"telephone":"+1-888-298-6718","email":"contact@directcareai.com"}</script>
-<link rel="preload" as="image" href="/optimized/fullscript2-800.webp" imagesrcset="/optimized/fullscript2-400.webp 400w, /optimized/fullscript2-800.webp 800w, /optimized/fullscript2-1200.webp 1200w, /optimized/fullscript2-1600.webp 1600w" imagesizes="(max-width: 720px) 100vw, 50vw" fetchpriority="high">
+<link rel="preload" as="image" href="/optimized/fullscript3-800.webp" imagesrcset="/optimized/fullscript3-400.webp 400w, /optimized/fullscript3-800.webp 800w, /optimized/fullscript3-1200.webp 1200w" imagesizes="(max-width: 720px) 92vw, 480px" fetchpriority="high">
   <script src="/js/dc-signal.js?v=20260911" defer></script>
   <script src="/js/dc-webmcp.js?v=20260914" defer></script>
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do I get my blood drawn?","acceptedAnswer":{"@type":"Answer","text":"After you complete your intake, we'll send a clinician-signed lab order to your portal. Walk into any of 2,000+ partner draw sites near you (Quest, Labcorp, and partner networks). No appointment needed at most locations. Prefer to stay home? Mobile phlebotomy is available in most metros for a small add-on fee."}},{"@type":"Question","name":"How fast do I get results?","acceptedAnswer":{"@type":"Answer","text":"Most panels come back from the lab in 3 to 5 business days. As soon as they're in, a clinician reviews every marker, writes your interpretation, and pushes your personalized plan to your portal. Typically within 1 to 2 business days of results landing."}},{"@type":"Question","name":"Can I retest later to track progress?","acceptedAnswer":{"@type":"Answer","text":"Yes. And we recommend it. Most members retest at 90 or 180 days to see how nutrition, supplements, and lifestyle changes have moved the needle. Your portal shows side-by-side comparisons of every biomarker over time, so you can see exactly what's improving."}}]}</script>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Blood Test Panels (clinician-ordered biomarkers)","description":"Blood labs reviewed by US-licensed clinicians: hormones, metabolic health, inflammation and micronutrients, plus a clinician-built supplement protocol.","url":"https://www.directcare.ai/blood-test","brand":{"@type":"Brand","name":"DirectCare AI"},"category":"Telehealth lab testing program","offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"196","availability":"https://schema.org/InStock","url":"https://www.directcare.ai/blood-test"},"image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do I get my blood drawn?","acceptedAnswer":{"@type":"Answer","text":"After checkout, your clinician-signed lab order appears in your portal. Walk into any of 2,000+ Quest Diagnostics locations near you — most don't need an appointment, or you can book a time online."}},{"@type":"Question","name":"How fast do I get results?","acceptedAnswer":{"@type":"Answer","text":"Most panels come back from the lab in 3 to 5 business days. As soon as they're in, a clinician reviews every marker, writes your interpretation, and pushes your personalized plan to your portal. Typically within 1 to 2 business days of results landing."}},{"@type":"Question","name":"Can I retest later to track progress?","acceptedAnswer":{"@type":"Answer","text":"Yes. And we recommend it. Most members retest at 90 or 180 days to see how nutrition, supplements, and lifestyle changes have moved the needle. Your portal shows side-by-side comparisons of every biomarker over time, so you can see exactly what's improving."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Blood Test Panels (clinician-ordered biomarkers)","description":"Blood labs reviewed by US-licensed clinicians: hormones, metabolic health, inflammation and micronutrients, plus a clinician-built supplement protocol.","url":"https://www.directcare.ai/blood-test","brand":{"@type":"Brand","name":"DirectCare AI"},"category":"Telehealth lab testing program","offers":{"@type":"AggregateOffer","priceCurrency":"USD","lowPrice":"149.99","highPrice":"429.99","offerCount":"6","availability":"https://schema.org/InStock","url":"https://www.directcare.ai/blood-test"},"image":"https://crsurakhmbalgxim.public.blob.vercel-storage.com/Health%20Check%20%E2%80%94%20lifestyleImage.png"}</script>
 <script type="application/ld+json" data-generated-by="dca-page-schema">{"@context":"https://schema.org","@type":"MedicalWebPage","@id":"https://www.directcare.ai/blood-test#webpage","url":"https://www.directcare.ai/blood-test","name":"Blood Labs & Biomarker Testing | DirectCare AI","inLanguage":"en-US","dateModified":"2026-09-14","publisher":{"@id":"https://www.directcare.ai/#org"},"reviewedBy":{"@type":"Person","@id":"https://www.directcare.ai/#dr-tim-pepin","name":"Dr. Tim Pepin","honorificPrefix":"Dr.","jobTitle":"Clinical Advisor","worksFor":{"@id":"https://www.directcare.ai/#org"}},"lastReviewed":"2026-07-05","description":"Blood labs reviewed by US-licensed clinicians: hormones, metabolic health, inflammation and micronutrients, plus a clinician-built supplement protocol."}</script>
 </head>
 <body>
@@ -926,246 +1050,398 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a class="drawer-portal" href="https://directcareai.portal.tellescope.com/">Log in / Patient portal</a>
 </div>
 
-<!-- HERO — full-bleed dark, background video -->
-<header class="hero">
-  <video class="hero-bg-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
-    <source src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/blood-labs-hero-video.mp4" type="video/mp4" />
-  </video>
-  <div class="hero-bg-overlay" aria-hidden="true"></div>
+<main class="bt-main">
 
-  <div class="container" role="main">
-    <div class="hero-inner">
-      <h1 class="rise d1">Blood tests online: biomarker panels<br/><span class="accent h-italic">ordered by licensed clinicians.</span></h1>
-      <p class="hero-sub rise d2">Up to <strong>80 clinician-ordered biomarkers</strong>, a plain-English interpretation, and a personalized supplement &amp; lifestyle protocol. Built around the numbers that drive how you feel, perform, and age.</p>
-      <div class="hero-cta-row rise d3">
-        <a href="#panels" class="btn btn-primary btn-primary-xl pulse-glow">See Panels &amp; Pricing →</a>
-        <a href="#how" class="btn btn-ghost-light btn-primary-xl">How it works</a>
+<!-- 01 HERO (Figma 34:4 / 38:16) -->
+<header class="bt-hero" id="top">
+  <div class="container">
+    <div class="bt-hero-grid">
+      <div class="bt-hero-copy">
+        <h1 class="rise d1">Understand your health signals. <span class="h-italic">Know what to do next.</span></h1>
+        <p class="bt-hero-sub rise d2">Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.</p>
+        <div class="rise d3">
+          <p class="bt-goals-q">What brings you here? Tap a goal to jump to the right panel.</p>
+          <nav class="bt-goals" aria-label="Jump to a panel by goal">
+            <a class="bt-goal g-energy" href="#panel-essential">
+              <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
+              <span class="gt"><strong>Fatigue or low energy</strong><span>Iron, B12, thyroid</span></span>
+              <span class="ga" aria-hidden="true">→</span>
+            </a>
+            <a class="bt-goal g-weight" href="#panel-essential">
+              <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+              <span class="gt"><strong>Weight or metabolism</strong><span>HbA1c, insulin, lipids</span></span>
+              <span class="ga" aria-hidden="true">→</span>
+            </a>
+            <a class="bt-goal g-hormone" href="#panel-mens">
+              <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+              <span class="gt"><strong>Hormones or libido</strong><span>Testosterone, estradiol</span></span>
+              <span class="ga" aria-hidden="true">→</span>
+            </a>
+            <a class="bt-goal g-base" href="#panel-essential">
+              <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
+              <span class="gt"><strong>I want a baseline</strong><span>Kidney, liver, blood count</span></span>
+              <span class="ga" aria-hidden="true">→</span>
+            </a>
+          </nav>
+        </div>
+        <div class="bt-hero-ctas rise d3">
+          <a href="#panels" class="bt-btn">Choose My Panel →</a>
+          <a href="#how" class="bt-link">How it works ↓</a>
+        </div>
+        <div class="bt-hero-notes rise d4">
+          <p class="flow">Pick your panel and check out with just your basic info. Then walk into a nearby Quest location for your draw — your clinician-signed lab order is waiting in your portal.</p>
+          <p class="bt-green-line">Main panels from $196 &nbsp;·&nbsp; No membership &nbsp;·&nbsp; No insurance required &nbsp;·&nbsp; Results in 3–5 days</p>
+          <p class="bt-fine">No diagnosis or prescription is guaranteed. Every order is reviewed for clinical appropriateness.</p>
+        </div>
       </div>
-      <div class="hero-price-chip rise d3">
-        <span>Panels from</span>
-        <strong>$196</strong>
-        <span style="opacity:.5;">·</span>
-        <span>up to 80 biomarkers</span>
-        <span style="opacity:.5;">·</span>
-        <span>save $1,000+ vs à la carte</span>
+      <div class="bt-hero-visual rise d2">
+        <img src="/optimized/fullscript3-800.webp" srcset="/optimized/fullscript3-400.webp 400w, /optimized/fullscript3-800.webp 800w, /optimized/fullscript3-1200.webp 1200w" sizes="(max-width: 720px) 92vw, 480px" alt="Results dashboard with lab results, a wellness plan, and a biomarker drill-down" width="1344" height="1156" decoding="async" fetchpriority="high">
+        <div class="cap"><strong>A clinician reads every result</strong><span>Plain-English notes + your next steps</span></div>
       </div>
     </div>
+    <div class="bt-trust" aria-label="Credentials">
+      <span>✓ LegitScript certified</span><span>✓ HIPAA compliant</span><span>✓ CLIA-certified labs</span><span>✓ 2,000+ draw sites</span><span>✓ Results in 3–5 days</span>
+    </div>
   </div>
-
-  <div class="hero-bg-fade" aria-hidden="true"></div>
 </header>
 
-<!-- TRUST BAR -->
-<div class="trust-seal-bar">
-  <div class="container trust-seal-inner">
-    <div class="seal">
-      <span class="seal-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
-      <span class="seal-text"><strong>LegitScript Certified</strong><span>LegitScript-certified telehealth</span></span>
-    </div>
-    <div class="seal">
-      <span class="seal-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
-      <span class="seal-text"><strong>HIPAA Compliant</strong><span>Encrypted &amp; private</span></span>
-    </div>
-    <div class="seal">
-      <span class="seal-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-      <span class="seal-text"><strong>Results in 3 to 5 days</strong><span>CLIA-certified labs</span></span>
-    </div>
-    <div class="seal">
-      <span class="seal-icon"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
-      <span class="seal-text"><strong>2,000+ draw sites</strong><span>Nationwide access</span></span>
+<!-- 02 NUMBERS STRIP (Figma 34:52 / 38:36) -->
+<section class="bt-numbers-wrap" aria-label="At a glance">
+  <div class="container">
+    <div class="bt-numbers">
+      <div class="bt-stat">
+        <span class="si" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z"/></svg></span>
+        <span class="sv"><strong>63–88</strong><span>biomarkers · 6 panels</span></span>
+      </div>
+      <div class="bt-stat">
+        <span class="si" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <span class="sv"><strong>3–5 days</strong><span>from draw to results</span></span>
+      </div>
+      <div class="bt-stat">
+        <span class="si" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span class="sv"><strong>2,000+</strong><span>Quest walk-in locations</span></span>
+      </div>
+      <div class="bt-stat">
+        <span class="si" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></svg></span>
+        <span class="sv"><strong>$196</strong><span>main panels from · no membership</span></span>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- QUICK PANEL PICKER (above-the-fold pricing + direct order CTAs) -->
-<section class="section" id="panels">
+<!-- 03 WHAT YOU GET + DOCTOR BAR + HOW IT WORKS (Figma 34:65, stage 46:23 / 46:82, timeline 37:2) -->
+<section class="bt-sec" id="what-you-get">
   <div class="container">
-    <div class="quick-panels-head">
+    <div class="bt-head section-head h48">
+      <h2>See exactly what you'll get.</h2>
+      <p>Not just numbers. Every result comes with clinician notes on what it may mean and what to discuss next.</p>
+    </div>
+    <div class="bt-get">
+      <div class="bt-portal">
+        <img src="/optimized/fullscript4-800.webp" srcset="/optimized/fullscript4-400.webp 400w, /optimized/fullscript4-800.webp 800w, /optimized/fullscript4-1200.webp 1200w" sizes="(max-width: 720px) 92vw, 460px" alt="Portal home screen with daily guidance and follow-up lab booking" width="1365" height="1092" decoding="async" loading="lazy">
+        <span class="tag">YOUR PORTAL — ILLUSTRATIVE</span>
+      </div>
+      <div class="bt-stage">
+        <span class="label">Example insights from a report</span>
+        <span class="glow a" aria-hidden="true"></span><span class="glow b" aria-hidden="true"></span>
+        <span class="bubble purple" aria-hidden="true" style="width:38px;height:38px;left:90.3%;top:3.7%;--dur:9s"></span>
+        <span class="bubble green" aria-hidden="true" style="width:26px;height:26px;left:1%;top:87.5%;--dur:10s;--del:-3s"></span>
+        <span class="bubble gold" aria-hidden="true" style="width:18px;height:18px;left:95.1%;top:62.4%;--dur:8s;--del:-1s"></span>
+        <span class="bubble deep" aria-hidden="true" style="width:14px;height:14px;left:43.4%;top:94.3%;--dur:9.5s;--del:-5s"></span>
+        <div class="ins-slot s1 bt-reveal"><div class="ins-float"><div class="ins-card">
+          <div class="ins-head"><span class="ins-num" style="background:linear-gradient(135deg,#F5B544 0%,#E8893A 71%)">1</span><span class="ins-chip" style="background:#FFF1D9;color:#9A5B00">Worth a conversation</span></div>
+          <h3>Ferritin at the low end of range</h3>
+          <div class="ins-gauge" role="img" aria-label="Illustrative range gauge: a value near the low end of the range">
+            <span class="bar"></span><span class="dot"></span>
+            <span class="lbl" style="left:0">low</span><span class="lbl" style="left:42%">optimal range</span><span class="lbl" style="right:0">high</span>
+          </div>
+          <p>Low iron stores can go along with tiredness. Your notes say what to discuss with your clinician and when to retest.</p>
+        </div></div></div>
+        <div class="ins-slot s2 bt-reveal"><span class="mk float-mk mk-b12" aria-hidden="true">B12</span><div class="ins-float"><div class="ins-card">
+          <div class="ins-head"><span class="ins-num" style="background:linear-gradient(135deg,#A45FC8 0%,#853FAC 71%)">2</span><span class="ins-chip" style="background:#F3E8FA;color:#6B2E8C">Read together</span></div>
+          <h3>HbA1c + fasting insulin, read together</h3>
+          <div class="ins-markers"><span class="mk">HbA1c</span><span class="mk-plus">+</span><span class="mk">Fasting insulin</span></div>
+          <p>How your body handles blood sugar over time — not just one glucose number.</p>
+        </div></div></div>
+        <div class="ins-slot s3 bt-reveal"><span class="mk float-mk mk-tsh" aria-hidden="true">TSH</span><span class="mk float-mk mk-vitd" aria-hidden="true">Vit D</span><div class="ins-float"><div class="ins-card">
+          <div class="ins-head"><span class="ins-num" style="background:linear-gradient(135deg,#3CC56E 0%,#1E9B4E 71%)">3</span><span class="ins-chip" style="background:#E3F6E8;color:#1E7A3C">Read as a set</span></div>
+          <h3>Total &amp; free testosterone with SHBG</h3>
+          <div class="ins-markers"><span class="mk">Total T</span><span class="mk-plus">+</span><span class="mk">Free T</span><span class="mk-plus">+</span><span class="mk">SHBG</span></div>
+          <p>Read as a set, with plain-English context on what the combination may mean.</p>
+        </div></div></div>
+      </div>
+    </div>
+
+    <div class="bt-docbar">
+      <img src="/optimized/dr-pepin-400.webp" alt="Dr. Tim Pepin, D.C." width="432" height="592" loading="lazy" decoding="async">
+      <div>
+        <strong>Dr. Tim Pepin, D.C. — Clinical Advisor &amp; Director of Integrative Health</strong>
+        <p>Lab orders are clinician-signed and every result is reviewed by US-licensed clinicians. Drawn at Quest Diagnostics (CLIA-certified) · LegitScript certified · HIPAA compliant.</p>
+      </div>
+    </div>
+
+    <div class="bt-how" id="how">
+      <span class="bt-eyebrow">How it works</span>
+      <h2>Three steps to <span class="h-italic">clear answers.</span></h2>
+      <div class="bt-rail" aria-hidden="true"><span class="bt-badge">1</span><span class="bt-badge">2</span><span class="bt-badge">3</span></div>
+      <ol class="bt-steps" style="list-style:none;margin:0;padding:0">
+        <li class="bt-step bt-reveal">
+          <div class="bt-step-top"><span class="bt-badge" aria-hidden="true">1</span><span class="pill">⏱ About 2 minutes</span></div>
+          <div class="vis" aria-hidden="true">
+            <div class="mini-co"><div class="row"><b>Men's Health Panel</b><i>$296</i></div><div class="fld">Full name</div><div class="fld">Email</div><div class="fld">Date of birth</div><div class="go">Complete checkout →</div></div>
+          </div>
+          <span class="pill desk">⏱&nbsp; About 2 minutes</span>
+          <h3>Choose your panel &amp; check out</h3>
+          <p>Just your basic info — no long questionnaire. Your clinician-signed lab order lands in your portal.</p>
+        </li>
+        <li class="bt-step bt-reveal">
+          <div class="bt-step-top"><span class="bt-badge" aria-hidden="true">2</span><span class="pill">📍 This week, on your schedule</span></div>
+          <div class="vis mint"><img src="/optimized/fullscript2-800.webp" srcset="/optimized/fullscript2-400.webp 400w, /optimized/fullscript2-800.webp 800w" sizes="320px" alt="Phone screens showing a lab location map and appointment details" width="1350" height="1078" loading="lazy" decoding="async"></div>
+          <span class="pill desk">📍&nbsp; This week, on your schedule</span>
+          <h3>Walk into Quest</h3>
+          <p>Pick from 2,000+ Quest Diagnostics locations near home or work and bring your requisition.</p>
+        </li>
+        <li class="bt-step bt-reveal">
+          <div class="bt-step-top"><span class="bt-badge" aria-hidden="true">3</span><span class="pill ok">✓ Results in 3–5 days</span></div>
+          <div class="vis"><img src="/optimized/fullscript3-800.webp" srcset="/optimized/fullscript3-400.webp 400w, /optimized/fullscript3-800.webp 800w" sizes="320px" alt="Lab results and plan screens in the portal" width="1344" height="1156" loading="lazy" decoding="async"></div>
+          <span class="pill ok desk">✓&nbsp; Results in 3–5 days</span>
+          <h3>Get results + your plan</h3>
+          <p>Plain-English clinician notes on every marker and clear next steps, right in your portal.</p>
+        </li>
+      </ol>
+      <div class="bt-cta-row">
+        <a href="#panels" class="bt-btn">Choose My Panel →</a>
+        <p class="bt-green-line">Main panels from $196 · No membership · No insurance required</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 PICK YOUR PANEL — merged cards (Figma 34:118) -->
+<section class="bt-sec tight-top" id="panels">
+  <div class="container">
+    <div class="bt-head section-head center-m">
       <h2>Pick your panel. <span class="h-italic">Order in 60 seconds.</span></h2>
       <p>Every panel includes the draw, clinician interpretation, a personalized supplement protocol, and permanent access to your results.</p>
     </div>
-    <div class="quick-panels">
-      <div class="quick-panel">
+    <div class="bt-panels">
+      <article class="bt-panel" id="panel-essential">
         <h3>Essential Panel</h3>
-        <div class="qp-price">$196<small>one-time</small></div>
-        <p class="qp-sub">70 biomarkers — the annual baseline everyone should have.</p>
-        <span class="qp-save">À la carte: ~$1,200 · You save ~$1,000</span>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=" class="btn btn-ghost">Order Essential →</a>
-      </div>
-      <div class="quick-panel featured">
-        <span class="qp-badge">Most Popular</span>
+        <div class="price">$196<small>one-time</small></div>
+        <p class="sub">70 biomarkers — the annual baseline everyone should have.</p>
+        <span class="save">À la carte: ~$1,200 · You save ~$1,000</span>
+        <hr>
+        <ul class="groups">
+          <li><strong>Energy, weight &amp; blood sugar</strong>HbA1c, fasting insulin, glucose</li>
+          <li><strong>Heart &amp; inflammation</strong>Full lipid panel, plus hsCRP and homocysteine (only in Essential)</li>
+          <li><strong>Fatigue &amp; nutrients</strong>Vitamin D, B12, folate (RBC), iron, ferritin</li>
+          <li><strong>Thyroid screen</strong>TSH</li>
+          <li><strong>Also included</strong>Liver, kidney, uric acid and a full CBC with differential</li>
+        </ul>
+        <details>
+          <summary>See all 70 biomarkers</summary>
+          <dl>
+            <dt>Cardiovascular (8)</dt><dd>Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated), hsCRP, Homocysteine</dd>
+            <dt>Metabolic (4)</dt><dd>HbA1c, Insulin, Glucose, Uric Acid</dd>
+            <dt>Nutrients (7)</dt><dd>Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)</dd>
+            <dt>Hormones (1)</dt><dd>TSH</dd>
+            <dt>Kidneys (9)</dt><dd>Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium</dd>
+            <dt>Liver (8)</dt><dd>Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein</dd>
+            <dt>Blood / CBC (33)</dt><dd>RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC</dd>
+          </dl>
+        </details>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=" class="bt-order essential">Order Essential →</a>
+      </article>
+
+      <article class="bt-panel featured" id="panel-mens">
+        <span class="badge">Most Popular</span>
         <h3>Men's Health Panel</h3>
-        <div class="qp-price">$296<small>one-time</small></div>
-        <p class="qp-sub">75 biomarkers — full testosterone, thyroid, metabolic &amp; cardio.</p>
-        <span class="qp-save">À la carte: ~$1,800 · You save ~$1,500</span>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=" class="btn btn-primary">Order Men's →</a>
-      </div>
-      <div class="quick-panel">
+        <div class="price">$296<small>one-time</small></div>
+        <p class="sub">75 biomarkers — full testosterone, thyroid, metabolic &amp; cardio.</p>
+        <span class="save">À la carte: ~$1,800 · You save ~$1,500</span>
+        <hr>
+        <ul class="groups">
+          <li><strong>Testosterone &amp; libido</strong>Total, free and bioavailable testosterone, SHBG, DHT, DHEA</li>
+          <li><strong>Thyroid &amp; stress</strong>TSH, Free T3, Free T4, morning cortisol</li>
+          <li><strong>Energy, weight &amp; blood sugar</strong>HbA1c, fasting insulin, glucose</li>
+          <li><strong>Heart</strong>Full lipid panel</li>
+          <li><strong>Fatigue &amp; nutrients</strong>Vitamin D, B12, iron, ferritin</li>
+        </ul>
+        <details>
+          <summary>See all 75 biomarkers</summary>
+          <dl>
+            <dt>Hormones (10)</dt><dd>TSH, Free T4, Free T3, Cortisol (AM), Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, DHEA (unconjugated)</dd>
+            <dt>Cardiovascular (6)</dt><dd>Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)</dd>
+            <dt>Metabolic (3)</dt><dd>HbA1c, Insulin, Glucose</dd>
+            <dt>Nutrients (6)</dt><dd>Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12</dd>
+            <dt>Kidneys (9)</dt><dd>Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium</dd>
+            <dt>Liver (8)</dt><dd>Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein</dd>
+            <dt>Blood / CBC (33)</dt><dd>RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC</dd>
+          </dl>
+        </details>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=" class="bt-order mens">Order Men's →</a>
+      </article>
+
+      <article class="bt-panel" id="panel-womens">
         <h3>Women's Health Panel</h3>
-        <div class="qp-price">$346<small>one-time</small></div>
-        <p class="qp-sub">80 biomarkers — full female hormones, thyroid, metabolic &amp; bone.</p>
-        <span class="qp-save">À la carte: ~$2,200 · You save ~$1,850</span>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=" class="btn btn-ghost">Order Women's →</a>
-      </div>
+        <div class="price">$346<small>one-time</small></div>
+        <p class="sub">80 biomarkers — full female hormones, testosterone, thyroid &amp; metabolic.</p>
+        <span class="save">À la carte: ~$2,200 · You save ~$1,850</span>
+        <hr>
+        <ul class="groups">
+          <li><strong>Cycle, perimenopause &amp; menopause</strong>Estradiol, progesterone, FSH, LH</li>
+          <li><strong>Testosterone &amp; libido</strong>Total, free and bioavailable testosterone, SHBG, DHT, DHEA</li>
+          <li><strong>Thyroid &amp; stress</strong>TSH, Free T3, Free T4, morning cortisol</li>
+          <li><strong>Energy, weight &amp; blood sugar</strong>HbA1c, fasting insulin, glucose</li>
+          <li><strong>Heart &amp; nutrients</strong>Full lipid panel, vitamin D, B12, folate (RBC), iron, ferritin</li>
+        </ul>
+        <details>
+          <summary>See all 80 biomarkers</summary>
+          <dl>
+            <dt>Hormones (14)</dt><dd>TSH, Free T4, Free T3, Cortisol (AM), Estradiol, Progesterone, Testosterone (Free), Testosterone (Total), SHBG, Testosterone (Bioavailable), DHT, FSH, LH, DHEA (unconjugated)</dd>
+            <dt>Cardiovascular (6)</dt><dd>Triglycerides, Total Cholesterol, HDL, Non-HDL Cholesterol, Cholesterol/HDL Ratio, LDL (calculated)</dd>
+            <dt>Metabolic (3)</dt><dd>HbA1c, Insulin, Glucose</dd>
+            <dt>Nutrients (7)</dt><dd>Vitamin D (25-OH), Iron, Ferritin, TIBC, Iron % Saturation, Vitamin B12, Folate (RBC)</dd>
+            <dt>Kidneys (9)</dt><dd>Creatinine, BUN/Creatinine Ratio, eGFR, Calcium, BUN, Carbon Dioxide, Chloride, Potassium, Sodium</dd>
+            <dt>Liver (8)</dt><dd>Albumin/Globulin Ratio, Total Bilirubin, Globulin (calculated), ALP, Albumin, AST, ALT, Total Protein</dd>
+            <dt>Blood / CBC (33)</dt><dd>RDW, Neutrophils (%), Monocytes (%), Lymphocytes (%), Eosinophils (%), Basophils (%), Platelet Count, MCHC, MCH, MCV, Hematocrit, Hemoglobin, Band Neutrophils, Blasts, Metamyelocytes, Myelocytes, Nucleated RBC, Promyelocytes, Band Neutrophils (%), Basophils, Blasts (%), Eosinophils, Lymphocytes, Metamyelocytes (%), Monocytes, Myelocytes (%), Neutrophils, Nucleated RBC (%), Promyelocytes (%), Reactive Lymphocytes, MPV, WBC, RBC</dd>
+          </dl>
+        </details>
+        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=" class="bt-order womens">Order Women's →</a>
+      </article>
     </div>
-    <p class="quick-panels-foot">Not sure which fits? <a href="#pricing">Compare everything included in each panel ↓</a></p>
+    <p class="bt-panels-foot">Not sure which fits? <a href="#what-we-test">Compare everything included in each panel ↓</a></p>
+    <p class="bt-also"><b>Also available:</b> <span>Comprehensive Hormone · 88 &nbsp; · &nbsp; Core Women’s · 67 &nbsp; · &nbsp; Core Health · 63</span> <a href="#other-panels">See other panels →</a></p>
   </div>
 </section>
 
-<!-- JOURNEY -->
-<section class="section soft" id="journey">
+<!-- 05 WHAT WE TEST, BY GOAL — expandable cards (Figma 34:184 / 38:171, open state 50:78) -->
+<section class="bt-sec bt-wt" id="what-we-test">
   <div class="container">
-    <div class="section-head">
-      <h2>Your Bloodwork,<br/><span class="h-italic">Made for You.</span></h2>
-      <p>With DirectCare AI and Fullscript, your care continues long after results land. Each panel comes with clear steps you can follow day-by-day, so you build momentum at your own pace.</p>
+    <div class="bt-head section-head h48">
+      <h2>What we test, <span class="h-italic">by what you care about.</span></h2>
+      <p>Every panel covers a full CBC, kidney and liver function. Here is what each goal looks at — and which panels include it.</p>
     </div>
-    <div class="journey-grid">
-      <div class="journey-card">
-        <div class="journey-num">01</div>
-        <h3>Easy, step-by-step support from your care team</h3>
-        <p>A US-licensed clinician reads every result, flags what matters, and builds a roadmap you can actually follow. No medical jargon required.</p>
+    <div class="bt-wt-grid">
+      <span class="glow a" aria-hidden="true"></span><span class="glow b" aria-hidden="true"></span>
+      <span class="bubble purple" aria-hidden="true" style="width:34px;height:34px;right:-60px;top:-40px;--dur:9s"></span>
+      <span class="bubble gold" aria-hidden="true" style="width:22px;height:22px;left:-52px;top:250px;--dur:10s;--del:-2s"></span>
+      <span class="bubble green" aria-hidden="true" style="width:16px;height:16px;right:-40px;top:400px;--dur:8.5s;--del:-4s"></span>
+
+      <div class="wt-card c-energy">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
+        <h3>Energy, weight &amp; blood sugar</h3>
+        <div class="wt-collapse wt-sum"><div><p>HbA1c, fasting insulin, glucose (+ uric acid in Essential)</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-1"><div>
+          <ul>
+            <li><b>HbA1c</b> — Your average blood sugar over about 3 months.</li>
+            <li><b>Fasting insulin</b> — How hard your body works to keep glucose steady.</li>
+            <li><b>Glucose</b> — A single-moment blood sugar snapshot.</li>
+            <li><b>Uric acid</b> — Often tracked alongside metabolic health (Essential).</li>
+          </ul>
+          <p class="close">Read together, these can help explain energy dips and weight changes — your clinician notes say what to discuss next.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">All 3 panels</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-1"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
       </div>
-      <div class="journey-card elev">
-        <div class="journey-num">02</div>
-        <h3>Nutrition, movement, and supplement plans built for your goals</h3>
-        <p>Targeted protocols based on <strong>your</strong> biomarkers. Sleep, energy, recovery, hormones, weight. Pharmaceutical-grade supplements shipped through Fullscript.</p>
+
+      <div class="wt-card c-hormone">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
+        <h3>Hormones &amp; libido</h3>
+        <div class="wt-collapse wt-sum"><div><p>Total, free &amp; bioavailable testosterone, SHBG, DHT, DHEA. Women’s adds estradiol, progesterone, FSH, LH</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-2"><div>
+          <ul>
+            <li><b>Total, free &amp; bioavailable testosterone</b> — How much is made, and how much your body can actually use.</li>
+            <li><b>SHBG</b> — The protein that binds testosterone and affects how much is free.</li>
+            <li><b>DHT &amp; DHEA</b> — Related hormones read alongside testosterone.</li>
+            <li><b>Estradiol, progesterone, FSH &amp; LH</b> — Key cycle and menopause hormones (Women's).</li>
+          </ul>
+          <p class="close">Hormones are read as a set, not one number in isolation.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">Men's &amp; Women's</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-2"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
       </div>
-      <div class="journey-card">
-        <div class="journey-num">03</div>
-        <h3>Simple progress tracking so you can see your growth over time</h3>
-        <p>Retest at 90 or 180 days. Compare every number side-by-side and watch your trends move. Visible proof your plan is working.</p>
+
+      <div class="wt-card c-thyroid">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg></span>
+        <h3>Thyroid &amp; stress</h3>
+        <div class="wt-collapse wt-sum"><div><p>TSH in every panel. Free T3, Free T4 and morning cortisol in Men’s &amp; Women’s</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-3"><div>
+          <ul>
+            <li><b>TSH</b> — The signal your brain sends your thyroid (every panel).</li>
+            <li><b>Free T3 &amp; Free T4</b> — The active thyroid hormones (Men's &amp; Women's).</li>
+            <li><b>Morning cortisol</b> — A snapshot of your main stress hormone (Men's &amp; Women's).</li>
+          </ul>
+          <p class="close">Together these can help explain tiredness, weight changes and feeling run-down.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">TSH: all · full thyroid: M &amp; W</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-3"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
+      </div>
+
+      <div class="wt-card c-heart">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+        <h3>Heart</h3>
+        <div class="wt-collapse wt-sum"><div><p>Full lipid panel in every panel. hsCRP and homocysteine in Essential</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-4"><div>
+          <ul>
+            <li><b>Full lipid panel</b> — Total, LDL, HDL and non-HDL cholesterol, triglycerides and ratios (every panel).</li>
+            <li><b>hsCRP</b> — A marker of low-grade inflammation (Essential).</li>
+            <li><b>Homocysteine</b> — An amino acid tracked for heart health (Essential).</li>
+          </ul>
+          <p class="close">Helps you track heart-health markers over time with your clinician.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">All 3 · inflammation: Essential</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-4"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
+      </div>
+
+      <div class="wt-card c-nutr">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
+        <h3>Fatigue &amp; nutrients</h3>
+        <div class="wt-collapse wt-sum"><div><p>Vitamin D, B12, iron, ferritin, TIBC, iron saturation. Folate (RBC) in Essential &amp; Women’s</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-5"><div>
+          <ul>
+            <li><b>Vitamin D &amp; B12</b> — Common gaps that can go along with low energy.</li>
+            <li><b>Iron, ferritin, TIBC &amp; saturation</b> — Your iron stores and how well iron moves around your body.</li>
+            <li><b>Folate (RBC)</b> — Included in Essential &amp; Women's.</li>
+          </ul>
+          <p class="close">Spot common nutrient gaps that can sit behind fatigue.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">All 3 panels</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-5"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
+      </div>
+
+      <div class="wt-card c-base">
+        <span class="wt-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Everyday baseline</h3>
+        <div class="wt-collapse wt-sum"><div><p>Kidney (9), liver (8) and a full blood count with differential (33)</p></div></div>
+        <div class="wt-collapse wt-more" id="wt-more-6"><div>
+          <ul>
+            <li><b>Kidney (9)</b> — Creatinine, eGFR, BUN and electrolytes.</li>
+            <li><b>Liver (8)</b> — ALT, AST, ALP, albumin and bilirubin.</li>
+            <li><b>Full blood count (33)</b> — Red cells, white cells and platelets.</li>
+          </ul>
+          <p class="close">The everyday baseline every panel includes.</p>
+        </div></div>
+        <span class="wt-spacer"></span>
+        <span class="wt-chip">All 3 panels</span>
+        <button type="button" class="wt-toggle" aria-expanded="false" aria-controls="wt-more-6"><span class="pm" aria-hidden="true">＋</span><span class="tl">What's included</span></button>
       </div>
     </div>
-    <div class="journey-note">
-      Real progress happens <strong>between visits</strong>. Your plan keeps you connected, informed, and motivated.
-    </div>
-    <div class="mid-cta">
-      <a href="#panels" class="btn btn-primary btn-primary-xl">Choose My Panel →</a>
-      <p class="cta-assure">Panels from $196 · Results in 3–5 days · 2,000+ draw sites nationwide</p>
-    </div>
+    <div class="mid-cta" style="margin-top:40px"><a href="#panels" class="bt-btn">Choose My Panel →</a></div>
   </div>
 </section>
 
-<!-- PATIENT EXPERIENCE / HOW IT WORKS -->
-<section class="section" id="how">
+<!-- 06 COMPARISON (Figma 34:220; full 16 rows = ref frame 40:2) -->
+<section class="bt-sec" id="compare">
   <div class="container">
-    <div class="section-head">
-      <h2>How it <span class="h-italic">actually</span> works.</h2>
-      <p>Four simple steps. Zero waiting rooms. A complete picture of what's happening inside your body. And exactly what to do about it.</p>
-    </div>
-
-    <div class="pe-steps-v2">
-
-      <div class="pe-row">
-        <div class="pe-row-text">
-          <span class="pe-step-badge"><span class="num">01</span><span class="lbl">Book your lab</span></span>
-          <h3>Pick a panel and <em>book your draw</em> in minutes.</h3>
-          <p>Complete a 3-minute intake. We send a clinician-signed lab order to your portal and you walk into one of <strong>2,000+ partner draw sites</strong> (Quest, Labcorp). No appointment needed at most. Prefer to stay home? Mobile phlebotomy available in most metros.</p>
-        </div>
-        <div class="pe-row-visual">
-          <img src="/optimized/fullscript2-800.webp" alt="Phone screens showing lab-draw booking with a map and appointment details" width="1350" height="1078" srcset="/optimized/fullscript2-400.webp 400w, /optimized/fullscript2-800.webp 800w, /optimized/fullscript2-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="eager" fetchpriority="high">
-        </div>
-      </div>
-
-      <div class="pe-row">
-        <div class="pe-row-text">
-          <span class="pe-step-badge"><span class="num">02</span><span class="lbl">Plain-English results</span></span>
-          <h3>See every biomarker ,  <em>actually explained.</em></h3>
-          <p>Every marker is translated into plain English with reference ranges, optimal targets, and a clinician note on what each number means for <em>your</em> health. Drill into any biomarker. Like Apolipoprotein B. To see context, trend, and the next step.</p>
-        </div>
-        <div class="pe-row-visual">
-          <img src="/optimized/fullscript3-800.webp" alt="Results dashboard with Lab Results, Wellness Plan, and a biomarker drill-down for Apolipoprotein B" width="1344" height="1156" srcset="/optimized/fullscript3-400.webp 400w, /optimized/fullscript3-800.webp 800w, /optimized/fullscript3-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        </div>
-      </div>
-
-      <div class="pe-row">
-        <div class="pe-row-text">
-          <span class="pe-step-badge"><span class="num">03</span><span class="lbl">Personalized plan</span></span>
-          <h3>A clinician builds a plan <em>around your numbers.</em></h3>
-          <p>A US-licensed clinician reviews every result, flags what matters, and writes you a targeted protocol. Nutrition, movement, pharmaceutical-grade supplements via Fullscript, and (if indicated) medication. All designed around <em>your</em> wellness score and out-of-range markers.</p>
-        </div>
-        <div class="pe-row-visual">
-          <img src="/optimized/fullscript1-800.webp" alt="Clinician with a stethoscope viewing a patient wellness score and lab results screen" width="1200" height="1200" srcset="/optimized/fullscript1-400.webp 400w, /optimized/fullscript1-800.webp 800w, /optimized/fullscript1-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        </div>
-      </div>
-
-      <div class="pe-row">
-        <div class="pe-row-text">
-          <span class="pe-step-badge"><span class="num">04</span><span class="lbl">Track &amp; retest</span></span>
-          <h3>Follow the plan. <em>See your numbers move.</em></h3>
-          <p>Daily guidance in the portal, async clinician messaging, and side-by-side retest tracking at 90 or 180 days. Book your follow-up draw in one tap and watch every marker improve over time. Visible proof your plan is working.</p>
-        </div>
-        <div class="pe-row-visual">
-          <img src="/optimized/fullscript4-800.webp" alt="Portal home screen with daily guidance and one-tap follow-up lab booking" width="1365" height="1092" srcset="/optimized/fullscript4-400.webp 400w, /optimized/fullscript4-800.webp 800w, /optimized/fullscript4-1200.webp 1200w" sizes="(max-width: 720px) 100vw, (max-width: 1280px) 50vw, 800px" decoding="async" loading="lazy">
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- BIOMARKER CATEGORIES -->
-<section class="section lavender">
-  <div class="container">
-    <div class="section-head">
-      <h2>Eight systems. <span class="h-italic">One full-body picture.</span></h2>
-      <p>From thyroid to testosterone, glucose to inflammation, vitamin D to iron stores. Every panel covers the biomarkers that drive how you feel, perform, and age.</p>
-    </div>
-    <div class="biomarker-grid">
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <h4>Sex Hormones</h4>
-        <p>Total / free / bioavailable testosterone, estradiol, progesterone, FSH, LH, DHEA, DHT, SHBG.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6"/><path d="M4.93 10.93 9.17 15.17"/><path d="M2 18h6"/><path d="M22 18h-6"/><path d="m19.07 10.93-4.24 4.24"/><path d="M12 22v-6"/></svg></div>
-        <h4>Thyroid</h4>
-        <p>TSH, Free T3, Free T4. Your full thyroid picture, not just TSH.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
-        <h4>Metabolic Health</h4>
-        <p>Glucose, fasting insulin, HbA1c. The full insulin-resistance picture, not just glucose.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/></svg></div>
-        <h4>Cardiovascular</h4>
-        <p>Total / HDL / LDL / Non-HDL cholesterol, triglycerides, ratios. Plus hsCRP &amp; homocysteine (Essential).</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m4.93 19.07 1.41-1.41"/><path d="m17.66 6.34 1.41-1.41"/></svg></div>
-        <h4>Vitamins &amp; Iron</h4>
-        <p>Vitamin D (25-OH), Vitamin B12, Folate (RBC), Ferritin, Iron, TIBC, % Saturation.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2a8 8 0 0 1 16 0h2"/><path d="M5 12v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6"/></svg></div>
-        <h4>Stress &amp; Inflammation</h4>
-        <p>Cortisol (AM), hsCRP (Essential), Ferritin. Chronic stress &amp; inflammation markers.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a6 6 0 0 0 12 0V3"/><path d="M6 21h12"/></svg></div>
-        <h4>Liver &amp; Kidney</h4>
-        <p>ALT, AST, ALP, total bilirubin, albumin, total protein, BUN, creatinine, eGFR.</p>
-      </div>
-      <div class="biomarker-cat">
-        <div class="ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div>
-        <h4>CBC w/ Differential</h4>
-        <p>Full white &amp; red cell differential, platelets, hemoglobin, hematocrit, MCV, MCH, RDW, MPV.</p>
-      </div>
-    </div>
-    <div class="mid-cta">
-      <a href="#panels" class="btn btn-primary btn-primary-xl">Test All 8 Systems →</a>
-      <p class="cta-assure">One draw covers everything · From $196 · Clinician-interpreted</p>
-    </div>
-  </div>
-</section>
-
-<!-- COMPARISON: DirectCare AI Journey vs Standard Annual Checkup -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
+    <div class="bt-head section-head center-m">
       <h2>What your annual physical <span class="h-italic">doesn't</span> tell you.</h2>
-      <p>Most primary-care annuals stop at ~30 basic markers. Every DirectCare AI panel runs 70 to 80 biomarkers and a clinician writes you a plain-English plan you can actually follow.</p>
+      <p>Most primary-care annuals stop at ~30 basic markers. Our six panels run 63 to 88 biomarkers and a clinician writes you a plain-English plan you can actually follow.</p>
     </div>
 
     <div class="compare-wrap">
@@ -1174,25 +1450,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="compare-col-us"><small>DirectCare AI</small>Every Panel</div>
         <div class="compare-col-them"><small>What you usually get</small>Standard Annual Checkup</div>
       </div>
-
       <div class="compare-row">
-        <div class="cell-label">Complete Blood Count (CBC w/ Differential)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Full panel</span></div>
-        <div class="cell-them"><span class="mark yes">✓</span><span class="cell-note">Standard</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="cell-label">Comprehensive Metabolic Panel (CMP)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">14 markers</span></div>
-        <div class="cell-them"><span class="mark yes">✓</span><span class="cell-note">Standard</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="cell-label">Lipid Panel (Total, HDL, LDL, Non-HDL, Triglycerides, ratios)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">All ratios</span></div>
-        <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">Basic only</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="cell-label">Thyroid. TSH <em>plus</em> Free T3 &amp; Free T4</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">All three</span></div>
+        <div class="cell-label"><span>Thyroid. TSH <em>plus</em> Free T3 &amp; Free T4</span></div>
+        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Men's &amp; Women's (TSH in Essential)</span></div>
         <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">TSH only</span></div>
       </div>
       <div class="compare-row">
@@ -1216,11 +1476,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Almost never</span></div>
       </div>
       <div class="compare-row">
-        <div class="cell-label">Female reproductive hormones. Estradiol, Progesterone, FSH, LH</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Women's Panel</span></div>
-        <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Almost never</span></div>
-      </div>
-      <div class="compare-row">
         <div class="cell-label">hsCRP (chronic inflammation) + Homocysteine (cardio risk)</div>
         <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Essential Panel</span></div>
         <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Not standard</span></div>
@@ -1231,122 +1486,143 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Values dumped, no narrative</span></div>
       </div>
       <div class="compare-row">
-        <div class="cell-label">Personalized supplement protocol (Fullscript)</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Tied to your markers</span></div>
-        <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Not offered</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="cell-label">Lifestyle &amp; nutrition plan tailored to your biomarkers</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Built for you</span></div>
-        <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Generic advice</span></div>
-      </div>
-      <div class="compare-row">
-        <div class="cell-label">Side-by-side retest tracking over time</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">In your portal</span></div>
-        <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">You manage it</span></div>
-      </div>
-      <div class="compare-row">
         <div class="cell-label">Results turnaround</div>
         <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">3 to 5 days</span></div>
         <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">1 to 3 weeks</span></div>
       </div>
-      <div class="compare-row">
-        <div class="cell-label">Insurance &amp; appointment friction</div>
-        <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Flat rate, no copay</span></div>
-        <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">Copay + deductible</span></div>
+      <div id="compare-extra">
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Complete Blood Count (CBC w/ Differential)</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Full panel</span></div>
+          <div class="cell-them"><span class="mark yes">✓</span><span class="cell-note">Standard</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Comprehensive Metabolic Panel (CMP)</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">14 markers</span></div>
+          <div class="cell-them"><span class="mark yes">✓</span><span class="cell-note">Standard</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Lipid Panel (Total, HDL, LDL, Non-HDL, Triglycerides, ratios)</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">All ratios</span></div>
+          <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">Basic only</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Female reproductive hormones. Estradiol, Progesterone, FSH, LH</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Women's Panel</span></div>
+          <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Almost never</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Personalized supplement protocol (Fullscript)</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Tied to your markers</span></div>
+          <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Not offered</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Lifestyle &amp; nutrition plan tailored to your biomarkers</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Built for you</span></div>
+          <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">Generic advice</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Side-by-side retest tracking over time</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">In your portal</span></div>
+          <div class="cell-them"><span class="mark no">✗</span><span class="cell-note">You manage it</span></div>
+        </div>
+        <div class="compare-row extra" hidden>
+          <div class="cell-label">Insurance &amp; appointment friction</div>
+          <div class="cell-us"><span class="mark yes">✓</span><span class="cell-note">Flat rate, no copay</span></div>
+          <div class="cell-them"><span class="mark partial">△</span><span class="cell-note">Copay + deductible</span></div>
+        </div>
       </div>
-
       <div class="compare-foot">
         <span class="key"><span class="mark yes">✓</span> Included</span>
         <span class="key"><span class="mark partial">△</span> Partial / variable</span>
         <span class="key"><span class="mark no">✗</span> Not included</span>
       </div>
     </div>
-
+    <button type="button" class="compare-more" aria-expanded="false" aria-controls="compare-extra">See full comparison (all 16 rows) →</button>
     <div class="compare-cta">
-      <a href="#panels" class="btn btn-primary btn-primary-xl pulse-glow">See the panel built for you →</a>
+      <a href="#panels" class="bt-btn">See the panel built for you →</a>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section soft" id="pricing">
+<!-- 07 BOOK A DRAW NEAR YOU (Figma 34:385) -->
+<section class="bt-sec" id="book-draw">
   <div class="container">
-    <div class="section-head">
-      <h2>Ready to see <span class="h-italic">your</span> numbers?</h2>
-      <p>Choose the panel that fits your goals. Every plan includes clinician interpretation, a personalized supplement protocol, lifestyle recommendations, and permanent access to your results.</p>
-      <p style="margin-top: 14px; font-size: 0.96rem; color: var(--ink);">À la carte at a typical lab + clinician, this is <strong>$1,200&ndash;$2,200+</strong>. At DirectCare AI: <strong style="color: var(--brand-deep);">$196&ndash;$346</strong>.</p>
+    <div class="bt-book">
+      <div class="bt-reveal">
+        <span class="bt-eyebrow">Book your draw</span>
+        <h2>Walk in near home or work.</h2>
+        <p class="lead">Choose from 2,000+ Quest Diagnostics locations, book a time, and bring the requisition from your portal.</p>
+        <ul>
+          <li>✓ Book online in minutes</li>
+          <li>✓ Requisition and prep checklist in your portal</li>
+          <li>✓ Results in 3–5 days</li>
+        </ul>
+      </div>
+      <div class="bt-book-vis bt-reveal">
+        <img src="/optimized/fullscript2-800.webp" srcset="/optimized/fullscript2-400.webp 400w, /optimized/fullscript2-800.webp 800w, /optimized/fullscript2-1200.webp 1200w" sizes="(max-width: 900px) 92vw, 500px" alt="Phone screens showing a lab location map and appointment details" width="1350" height="1078" loading="lazy" decoding="async">
+      </div>
     </div>
-    <div class="price-grid">
-      <!-- Plan 1: Essential -->
-      <div class="price-card">
-        <span class="price-tag"><span class="dot-mini"></span> Plan One</span>
-        <h3>Essential Panel</h3>
-        <div class="price-amt"><span class="num">$196</span><span class="per">one-time</span></div>
-        <div class="price-foot">Best for an annual baseline check-in</div>
-        <div class="price-reframe">
-          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$1,200</s></span>
-          <span class="reframe-save">You save ~$1,000</span>
-        </div>
-        <ul class="price-list">
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>70 biomarkers</strong>. Full CBC, CMP, thyroid, lipid, insulin, hsCRP &amp; homocysteine</span></li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Clinician interpretation of every result</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement list (Fullscript)</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; nutrition recommendations</li>
-        </ul>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=" class="btn btn-ghost">Order My Panel →</a>
-      </div>
+  </div>
+</section>
 
-      <!-- Plan 2: Men's (Featured) -->
-      <div class="price-card featured">
-        <span class="price-tag"><span class="dot-mini"></span> Plan Two</span>
-        <h3>Men's Health Panel</h3>
-        <div class="price-amt"><span class="num">$296</span><span class="per">one-time</span></div>
-        <div class="price-foot">Built around testosterone, metabolic &amp; cardiovascular health</div>
-        <div class="price-reframe">
-          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$1,800</s></span>
-          <span class="reframe-save">You save ~$1,500</span>
+<!-- 08 OTHER PANELS WE OFFER (Figma 34:395 / cards 47:23) -->
+<section class="bt-sec tight-top" id="other-panels">
+  <div class="container">
+    <div class="bt-head section-head center-m">
+      <h2>Other panels <span class="h-italic">we offer.</span></h2>
+      <p>Want something more focused, or more in-depth? These three are also available through our Fullscript store.</p>
+    </div>
+    <div class="bt-others">
+      <a class="op" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=">
+        <div class="op-h">
+          <div class="op-top"><span class="op-tag gold">BEST VALUE</span><span class="op-price">$429.99</span></div>
+          <div class="op-count"><b>88</b><span>biomarkers</span></div>
+          <h3>Comprehensive Hormone Panel</h3>
         </div>
-        <ul class="price-list">
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>75 biomarkers</strong>. Full hormone panel (testosterone, DHEA, DHT, cortisol, SHBG), Free T3 &amp; Free T4</span></li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed clinician interpretation of every result</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement protocol</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; training recommendations</li>
-        </ul>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=" class="btn btn-primary">Order My Panel →</a>
-      </div>
-
-      <!-- Plan 3: Women's -->
-      <div class="price-card">
-        <span class="price-tag"><span class="dot-mini"></span> Plan Three</span>
-        <h3>Women's Health Panel</h3>
-        <div class="price-amt"><span class="num">$346</span><span class="per">one-time</span></div>
-        <div class="price-foot">Hormones, thyroid, metabolic &amp; bone-health focused</div>
-        <div class="price-reframe">
-          <span class="reframe-was">À la carte at a typical lab + clinician: <s>~$2,200</s></span>
-          <span class="reframe-save">You save ~$1,850</span>
+        <div class="op-b">
+          <p>Our most in-depth hormone panel.</p>
+          <span class="wi">WHAT'S INSIDE</span>
+          <div class="op-chips"><span>Sex hormones</span><span>Thyroid</span><span>Adrenal</span><span>Metabolic</span></div>
+          <span class="op-cta">View panel →</span>
         </div>
-        <ul class="price-list">
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span><strong>80 biomarkers</strong>. Full female hormones (estradiol, progesterone, FSH, LH, DHEA, cortisol, SHBG), Free T3 &amp; Free T4</span></li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permanent access to your chart</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Detailed clinician interpretation of every result</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Personalized supplement protocol</li>
-          <li><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lifestyle &amp; nutrition recommendations</li>
-        </ul>
-        <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=" class="btn btn-ghost">Order My Panel →</a>
-      </div>
+      </a>
+      <a class="op pink" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=">
+        <div class="op-h">
+          <div class="op-top"><span class="op-tag">NEW</span><span class="op-price">$149.99</span></div>
+          <div class="op-count"><b>67</b><span>biomarkers</span></div>
+          <h3>Core Women's Health Panel</h3>
+        </div>
+        <div class="op-b">
+          <p>Foundational hormone testing for women.</p>
+          <span class="wi">WHAT'S INSIDE</span>
+          <div class="op-chips"><span>Key reproductive hormones</span></div>
+          <span class="op-cta">View panel →</span>
+        </div>
+      </a>
+      <a class="op green" href="https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=">
+        <div class="op-h">
+          <div class="op-top"><span class="op-tag">NEW</span><span class="op-price">$150</span></div>
+          <div class="op-count"><b>63</b><span>biomarkers</span></div>
+          <h3>Core Health Panel</h3>
+        </div>
+        <div class="op-b">
+          <p>A basic health check, plus vitamin B12.</p>
+          <span class="wi">WHAT'S INSIDE</span>
+          <div class="op-chips"><span>Basic health check</span><span>Vitamin B12</span></div>
+          <span class="op-cta">View panel →</span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- CLINICAL ADVISOR — Dr. Tim Pepin -->
-<section class="section">
+<section class="bt-sec tight-top" id="clinical-leadership">
   <div class="container">
     <section class="clinical-advisor" aria-labelledby="clinical-advisor-name">
       <div class="clinical-advisor-photo">
-        <img src="/optimized/dr-pepin-800.webp" alt="Dr. Tim Pepin, Clinical Advisor" width="864" height="1184" srcset="/optimized/dr-pepin-400.webp 400w, /optimized/dr-pepin-800.webp 800w" sizes="(max-width: 720px) 180px, 240px" decoding="async" loading="lazy">
+        <img src="/optimized/dr-pepin-800.webp" alt="Dr. Tim Pepin, Clinical Advisor" width="864" height="1184" srcset="/optimized/dr-pepin-400.webp 400w, /optimized/dr-pepin-800.webp 800w, /optimized/dr-pepin-1200.webp 1200w" sizes="200px" decoding="async" loading="lazy">
       </div>
       <div>
         <div class="clinical-advisor-eyebrow">Clinical leadership</div>
@@ -1374,7 +1650,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="faq-grid">
       <details class="faq" open>
         <summary>Where do I get my blood drawn?</summary>
-        <div class="faq-body">After you complete your intake, we'll send a clinician-signed lab order to your portal. Walk into any of 2,000+ partner draw sites near you (Quest, Labcorp, and partner networks). No appointment needed at most locations. Prefer to stay home? Mobile phlebotomy is available in most metros for a small add-on fee.</div>
+        <div class="faq-body">After checkout, your clinician-signed lab order appears in your portal. Walk into any of 2,000+ Quest Diagnostics locations near you — most don't need an appointment, or you can book a time online.</div>
       </details>
       <details class="faq">
         <summary>How fast do I get results?</summary>
@@ -1400,6 +1676,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+
+<!-- 11 FINAL CTA (Figma 34:445) -->
+<section class="bt-sec tight-top" id="final-cta">
+  <div class="container">
+    <div class="bt-final bt-reveal">
+      <h2>Understand your health signals. <span class="h-italic">Know what to do next.</span></h2>
+      <p class="line">Main panels from $196 · No membership · No insurance required · Results in 3–5 days</p>
+      <a href="#panels" class="bt-btn">Choose My Panel →</a>
+      <p class="bt-fine">No diagnosis or prescription is guaranteed. Every order is reviewed for clinical appropriateness.</p>
+    </div>
+  </div>
+</section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
@@ -1475,7 +1765,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
   <div class="sticky-cta-left">
     <span class="sticky-cta-price"><span class="accent">$196</span> Essential · <span class="accent">$296</span> Men's · <span class="accent">$346</span> Women's</span>
-    <span class="sticky-cta-sub">Up to 80 biomarkers · Results in 3–5 days</span>
+    <span class="sticky-cta-sub">Main panels: 70, 75 or 80 biomarkers · Results in 3–5 days</span>
   </div>
   <a class="btn btn-primary" href="#panels">Choose My Panel →</a>
 </div>
@@ -1485,7 +1775,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   (function() {
     var bar = document.getElementById('sticky-cta');
     if (!bar) return;
-    var hero = document.querySelector('.hero');
+    var hero = document.querySelector('.bt-hero');
     var footer = document.querySelector('footer');
     var panels = document.getElementById('panels');
     function onScroll() {
@@ -1554,7 +1844,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('is-visible'); });
       return;
     }
-    var TARGETS = ['.section .section-head', '.journey-card', '.pe-row', '.price-card', '.biomarker-cat', '.compare-wrap', '.doctor-card', '.faq', '.final-cta'];
+    var TARGETS = ['.section-head', '.bt-reveal', '.bt-numbers', '.bt-get .bt-portal', '.bt-docbar', '.bt-panel', '.wt-card', '.compare-wrap', '.op', '.clinical-advisor', '.faq'];
     TARGETS.forEach(function(sel) {
       document.querySelectorAll(sel).forEach(function(el) {
         if (!el.classList.contains('reveal')) el.classList.add('reveal');
@@ -1681,5 +1971,63 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   }, { passive: true });
 })();
 </script>
+<script>
+  /* What-we-test goal cards: expand in place, one open at a time. No tracking. */
+  (function() {
+    var cards = Array.prototype.slice.call(document.querySelectorAll('.wt-card'));
+    if (!cards.length) return;
+    function setOpen(card, open) {
+      var btn = card.querySelector('.wt-toggle');
+      card.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.querySelector('.pm').textContent = open ? '－' : '＋';
+      btn.querySelector('.tl').textContent = open ? 'Hide details' : "What's included";
+    }
+    cards.forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        if (e.target.closest('a')) return;
+        var willOpen = !card.classList.contains('open');
+        cards.forEach(function(c) { if (c !== card) setOpen(c, false); });
+        setOpen(card, willOpen);
+      });
+    });
+    /* Equal height in the collapsed state: min-height = tallest collapsed card in the grid. */
+    function equalize() {
+      cards.forEach(function(c) { c.style.minHeight = ''; });
+      if (window.innerWidth <= 680) return;
+      var max = 0;
+      cards.forEach(function(c) { if (!c.classList.contains('open')) max = Math.max(max, c.offsetHeight); });
+      cards.forEach(function(c) { c.style.minHeight = max + 'px'; });
+    }
+    equalize();
+    window.addEventListener('resize', equalize);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalize);
+  })();
+
+  /* Comparison table: reveal all 16 rows in place. */
+  (function() {
+    var btn = document.querySelector('.compare-more');
+    if (!btn) return;
+    btn.addEventListener('click', function() {
+      var open = btn.getAttribute('aria-expanded') !== 'true';
+      document.querySelectorAll('.compare-row.extra').forEach(function(r) { r.hidden = !open; });
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? 'Show fewer rows ↑' : 'See full comparison (all 16 rows) →';
+    });
+  })();
+
+  /* Goal tiles: briefly highlight the panel they jump to (visual only, no tracking). */
+  (function() {
+    document.querySelectorAll('.bt-goal').forEach(function(a) {
+      a.addEventListener('click', function() {
+        var t = document.querySelector(a.getAttribute('href'));
+        if (!t) return;
+        t.classList.add('flash');
+        setTimeout(function() { t.classList.remove('flash'); }, 1600);
+      });
+    });
+  })();
+</script>
+
 </body>
 </html>

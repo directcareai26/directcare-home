@@ -8,10 +8,71 @@ Source: https://www.directcare.ai/blood-test
 
  Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.
 
- What brings you here? Tap a goal to jump to the right panel.
+ What brings you here?
+
+ Pick one — we'll point you to the right panel.
+
+ You picked: Change
+
+ YOUR MATCH Start over
+
+#### Essential Panel
+
+ 70 biomarkers · **$196** one-time
+
+ WHAT'S COVERED
+ Energy, weight & blood sugar Heart & inflammation Fatigue & nutrients Thyroid screen (TSH) Liver, kidney & full CBC
+
+ [Start checkout →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=)
+ See all 70 biomarkers Compare all panels ↓
+
+ Checkout asks for basic info only. Then walk into a nearby Quest for your draw.
+
+ YOUR MATCH Start over
+
+#### Men's Health Panel
+
+ 75 biomarkers · **$296** one-time
+
+ WHAT'S COVERED
+ Testosterone & libido Thyroid & stress Energy, weight & blood sugar Heart Fatigue & nutrients
+
+ [Start checkout →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=)
+ See all 75 biomarkers Compare all panels ↓
+
+ Checkout asks for basic info only. Then walk into a nearby Quest for your draw.
+
+ YOUR MATCH Start over
+
+#### Women's Health Panel
+
+ 80 biomarkers · **$346** one-time
+
+ WHAT'S COVERED
+ Cycle, perimenopause & menopause Testosterone & libido Thyroid & stress Energy, weight & blood sugar Heart & nutrients
+
+ [Start checkout →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=)
+ See all 80 biomarkers Compare all panels ↓
+
+ Checkout asks for basic info only. Then walk into a nearby Quest for your draw.
+
+ YOUR MATCH Start over
+
+#### Comprehensive Hormone
+
+ 88 biomarkers · **$429.99** one-time
+
+ WHAT'S COVERED
+ Sex hormones Full thyroid + antibodies Cortisol & DHEA Vitamin D, B12, iron
+
+ [Start checkout →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=)
+ See all 88 biomarkers Compare all panels ↓
+
+ Checkout asks for basic info only. Then walk into a nearby Quest for your draw.
 
  Choose My Panel →
  How it works ↓
+ Or compare all panels ↓
 
  Pick your panel and check out with just your basic info. Then walk into a nearby Quest location for your draw — your clinician-signed lab order is waiting in your portal.
 
@@ -121,7 +182,7 @@ Source: https://www.directcare.ai/blood-test
 
 - Energy, weight & blood sugar HbA1c, fasting insulin, glucose
 
-- Heart & inflammation Full lipid panel, plus hsCRP and homocysteine (only in Essential)
+- Heart & inflammation Full lipid panel, plus hsCRP and homocysteine (not in Men's or Women's)
 
 - Fatigue & nutrients Vitamin D, B12, folate (RBC), iron, ferritin
 
@@ -478,30 +539,143 @@ Source: https://www.directcare.ai/blood-test
 
  Want something more focused, or more in-depth? These three are also available through our Fullscript store.
 
- [BEST VALUE $429.99
- 88 biomarkers
- Comprehensive Hormone Panel
+ BEST VALUE$429.99
+
+ **88**biomarkers
+
+#### Comprehensive Hormone Panel
 
  Our most in-depth hormone panel.
+
  WHAT'S INSIDE
- Sex hormones Thyroid Adrenal Metabolic
- View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=)
- [NEW $149.99
- 67 biomarkers
- Core Women's Health Panel
+ Sex hormones Full thyroid + antibodies Cortisol & DHEA Vitamin D, B12, iron
+
+ ALL 88 BIOMARKERS
+
+##### Hormone 20 biomarkers
+
+ Free T4 Free T3 Cortisol (AM) Estradiol Progesterone Testosterone, Free Testosterone, Total Sex Hormone Binding Globulin (SHBG) Testosterone, Bioavailable Dihydrotestosterone Follicle Stimulating Hormone (FSH) Luteinizing Hormone (LH) DHEA (Dehydroepiandrosterone), Unconjugated Thyroid-Stimulating Hormone Free T4 Index (T7) T3, Uptake T4 (Thyroxine), Total Reverse T3 Thyroglobulin antibodies Thyroid Peroxidase Antibodies (TPO)
+
+##### Nutrients 9 biomarkers
+
+ Vitamin D, 25-OH, Total Iron, Total Ferritin Total Iron Binding Capacity (TIBC) Iron % Saturation Vitamin B12 (Cobalamin) Folate (RBC) Selenium Iodine, Serum/Plasma
+
+ **Standard baseline** Heart, metabolic, kidney, liver, full blood count 59 markers
+
+##### Metabolic 3 biomarkers
+
+ Hemoglobin A1c Insulin Glucose (Blood)
+
+##### Cardiovascular 6 biomarkers
+
+ Triglycerides Total Cholesterol HDL Cholesterol Non-HDL Cholesterol Total Cholesterol / HDL Ratio LDL Cholesterol (by calculation)
+
+##### Kidneys 9 biomarkers
+
+ Creatinine BUN/Creatinine Ratio Estimated Glomerular Filtration Rate Calcium Blood Urea Nitrogen Carbon Dioxide Chloride Potassium Sodium
+
+##### Liver 8 biomarkers
+
+ Albumin/Globulin Ratio Total Bilirubin Globulin (Calculated) Alkaline Phosphatase (ALP) Albumin Aspartate Aminotransferase (AST) Alanine Aminotransferase (ALT) Protein, Total
+
+##### Blood 33 biomarkers
+
+ Red Cell Distribution Width (RDW) Neutrophils (%) Monocytes (%) Lymphocytes (%) Eosinophils (%) Basophils (%) Platelet Count Mean Corpuscular Hemoglobin Concentration (MCHC) Mean Corpuscular Hemoglobin (MCH) Mean Corpuscular Volume Hematocrit Hemoglobin (HGB) Band Neutrophils Blasts Metamyelocytes Myelocytes Nucleated RBC Promyelocytes Band Neutrophils (%) Basophils Blasts (%) Eosinophils Lymphocytes Metamyelocytes (%) Monocytes Myelocytes (%) Neutrophils Nucleated RBC (%) Promyelocytes (%) Reactive Lymphocytes Mean Platelet Volume (MPV) White Blood Cell Count (WBC) Red Blood Cell Count (RBC)
+
+ ＋ View panel
+ [Buy now →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=)
+
+ NEW$149.99
+
+ **67**biomarkers
+
+#### Core Women's Health Panel
 
  Foundational hormone testing for women.
+
  WHAT'S INSIDE
- Key reproductive hormones
- View panel →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=)
- [NEW $150
- 63 biomarkers
- Core Health Panel
+ Estradiol & progesterone FSH & LH Iron & ferritin
+
+ ALL 67 BIOMARKERS
+
+##### Hormone 4 biomarkers
+
+ Estradiol Follicle Stimulating Hormone (FSH) Luteinizing Hormone (LH) Progesterone
+
+##### Nutrients 4 biomarkers
+
+ Iron, Total Ferritin Total Iron Binding Capacity (TIBC) Iron % Saturation
+
+ **Standard baseline** Heart, metabolic, kidney, liver, full blood count 59 markers
+
+##### Metabolic 3 biomarkers
+
+ Glucose (Blood) Hemoglobin A1c Insulin
+
+##### Cardiovascular 6 biomarkers
+
+ Triglycerides Total Cholesterol HDL Cholesterol Non-HDL Cholesterol Total Cholesterol / HDL Ratio LDL Cholesterol (by calculation)
+
+##### Kidneys 9 biomarkers
+
+ Creatinine BUN/Creatinine Ratio Estimated Glomerular Filtration Rate Calcium Blood Urea Nitrogen Carbon Dioxide Chloride Potassium Sodium
+
+##### Liver 8 biomarkers
+
+ Albumin/Globulin Ratio Total Bilirubin Globulin (Calculated) Alkaline Phosphatase (ALP) Albumin Aspartate Aminotransferase (AST) Alanine Aminotransferase (ALT) Protein, Total
+
+##### Blood 33 biomarkers
+
+ Red Cell Distribution Width (RDW) Neutrophils (%) Monocytes (%) Lymphocytes (%) Eosinophils (%) Basophils (%) Platelet Count Mean Corpuscular Hemoglobin Concentration (MCHC) Mean Corpuscular Hemoglobin (MCH) Mean Corpuscular Volume Hematocrit Hemoglobin (HGB) Band Neutrophils Blasts Metamyelocytes Myelocytes Nucleated RBC Promyelocytes Band Neutrophils (%) Basophils Blasts (%) Eosinophils Lymphocytes Metamyelocytes (%) Monocytes Myelocytes (%) Neutrophils Nucleated RBC (%) Promyelocytes (%) Reactive Lymphocytes Mean Platelet Volume (MPV) White Blood Cell Count (WBC) Red Blood Cell Count (RBC)
+
+ ＋ View panel
+ [Buy now →](https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=)
+
+ NEW$150
+
+ **63**biomarkers
+
+#### Core Health Panel
 
  A basic health check, plus vitamin B12.
+
  WHAT'S INSIDE
- Basic health check Vitamin B12
- View panel →](https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=)
+ ApoB & hsCRP Vitamin B12 TSH
+
+ ALL 63 BIOMARKERS
+
+##### Cardiovascular 8 biomarkers
+
+ Triglycerides Total Cholesterol HDL Cholesterol Non-HDL Cholesterol Total Cholesterol / HDL Ratio LDL Cholesterol (by calculation) Apolipoprotein B hsCRP
+
+##### Nutrients 1 biomarker
+
+ Vitamin B12 (Cobalamin)
+
+##### Hormone 1 biomarker
+
+ Thyroid-Stimulating Hormone
+
+ **Standard baseline** Metabolic, kidney, liver, full blood count 53 markers
+
+##### Metabolic 3 biomarkers
+
+ Hemoglobin A1c Insulin Glucose (Blood)
+
+##### Kidneys 9 biomarkers
+
+ Creatinine BUN/Creatinine Ratio Estimated Glomerular Filtration Rate Calcium Blood Urea Nitrogen Carbon Dioxide Chloride Potassium Sodium
+
+##### Liver 8 biomarkers
+
+ Albumin/Globulin Ratio Total Bilirubin Globulin (Calculated) Alkaline Phosphatase (ALP) Albumin Aspartate Aminotransferase (AST) Alanine Aminotransferase (ALT) Protein, Total
+
+##### Blood 33 biomarkers
+
+ Red Cell Distribution Width (RDW) Neutrophils (%) Monocytes (%) Lymphocytes (%) Eosinophils (%) Basophils (%) Platelet Count Mean Corpuscular Hemoglobin Concentration (MCHC) Mean Corpuscular Hemoglobin (MCH) Mean Corpuscular Volume Hematocrit Hemoglobin (HGB) Band Neutrophils Blasts Metamyelocytes Myelocytes Nucleated RBC Promyelocytes Band Neutrophils (%) Basophils Blasts (%) Eosinophils Lymphocytes Metamyelocytes (%) Monocytes Myelocytes (%) Neutrophils Nucleated RBC (%) Promyelocytes (%) Reactive Lymphocytes Mean Platelet Volume (MPV) White Blood Cell Count (WBC) Red Blood Cell Count (RBC)
+
+ ＋ View panel
+ [Buy now →](https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=)
 
  ![Dr. Tim Pepin, Clinical Advisor]
 

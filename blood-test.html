@@ -664,11 +664,14 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   @media (max-width: 720px) {
     .bt-hero h1 { font-size: 2.42rem; line-height: 1.05; }
     .bt-hero-sub { font-size: 1.125rem; line-height: 26px; }
-    .bt-goals { grid-template-columns: 1fr 1fr; gap: 12px; }
-    .bt-goal { flex-direction: column; align-items: flex-start; padding: 16px 14px; gap: 10px; }
-    .bt-goal .ga { display: none; }
-    .bt-goal .gt strong { font-size: 0.97rem; }
-    .bt-hero-ctas .bt-btn { width: 100%; }
+    .bt-goals { grid-template-columns: 1fr; gap: 10px; max-width: none; }
+    .bt-goal { padding: 15px 16px 15px 14px; gap: 14px; }
+    .bt-goal .gt strong { font-size: 1rem; }
+    .bt-goal .gt span { font-size: 0.8125rem; }
+    .bt-hero-ctas .bt-btn { display: none; }
+    .bt-hero-ctas .bt-cmp { display: inline; }
+    .bt-hero-copy.matched .bt-hero-ctas { display: none; }
+    .bt-mcard h3 { font-size: 1.375rem; }
     .bt-hero-ctas .bt-link { display: none; }
     .bt-hero-visual { aspect-ratio: 350 / 320; border-radius: 32px; }
     .bt-hero-visual img { left: 4%; top: 6%; width: 92%; height: 86%; }
@@ -947,13 +950,79 @@ src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
   }
   .bt-numbers-wrap { padding: 32px 0 0; }
 
+  /* ---------- 01b PANEL FINDER (Figma 60:2 · mobile hero B+C 61:2/61:54/61:130). No tracking of answers. ---------- */
+  .bt-goals-sub { font-size: 0.875rem; line-height: 20px; color: var(--text-2); margin: -8px 0 12px; }
+  .bt-goals { grid-auto-flow: dense; }
+  .bt-goals.picking .bt-goal:not(.sel) { opacity: .5; }
+  .bt-goal.sel { border: 2px solid var(--brand); background: #F6EEFB; padding: 11px 13px 11px 11px; }
+  .bt-goal.sel .ga { font-size: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--brand); display: grid; place-items: center; }
+  .bt-goal.sel .ga::after { content: ""; width: 10px; height: 5px; border-left: 2px solid #fff; border-bottom: 2px solid #fff; transform: translateY(-1px) rotate(-45deg); }
+  .bt-fit { grid-column: 1 / -1; display: flex; flex-direction: column; gap: 14px; background: #fff; border: 1.5px solid #E7D9F1; border-radius: 20px; padding: 18px; box-shadow: 0 12px 32px -8px rgba(133,63,172,0.14); }
+  .bt-fit[hidden], .bt-match[hidden], .bt-mcard[hidden] { display: none; }
+  .bt-fit-prog { display: flex; align-items: center; gap: 10px; font-size: 0.75rem; font-weight: 600; letter-spacing: .02em; color: var(--brand); }
+  .bt-fit-prog .bars { flex: 1; display: flex; gap: 5px; }
+  .bt-fit-prog .bars i { flex: 1; height: 5px; border-radius: 3px; background: var(--brand); }
+  .bt-fit h3 { font-size: 1.125rem; line-height: 24px; font-weight: 700; letter-spacing: 0; color: var(--plum); outline: none; }
+  .bt-fit-opts { display: flex; flex-direction: column; gap: 8px; }
+  .bt-fit-opt { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; font: inherit; cursor: pointer; background: #F6EEFB; border: 1.5px solid var(--brand); border-radius: 14px; padding: 12px 14px 12px 16px; transition: background .15s ease; }
+  .bt-fit-opt:hover, .bt-fit-opt:focus-visible { background: #EFE2F8; }
+  .bt-fit-opt .ft { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .bt-fit-opt b { font-size: 0.9375rem; font-weight: 600; line-height: 1.3; color: var(--brand); }
+  .bt-fit-opt small { font-size: 0.78rem; line-height: 1.35; color: var(--text-2); }
+  .bt-fit-opt .ar { font-weight: 600; color: var(--brand); flex-shrink: 0; }
+  .bt-match { display: flex; flex-direction: column; gap: 14px; max-width: 572px; }
+  .bt-match-sum { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; }
+  .bt-match-sum .ans { background: #F6EEFB; color: var(--brand); border-radius: 999px; padding: 8px 14px; font-size: 0.8125rem; font-weight: 500; line-height: 1.35; }
+  .bt-reset { background: none; border: 0; padding: 0; font: inherit; font-size: 0.8125rem; font-weight: 500; color: var(--brand); text-decoration: underline; cursor: pointer; }
+  .bt-mcard .bt-reset { color: var(--text-2); }
+  .bt-mcard { display: flex; flex-direction: column; gap: 14px; background: #fff; border: 1.5px solid #E7D9F1; border-radius: 20px; padding: 22px; box-shadow: 0 12px 32px rgba(133,63,172,0.10); }
+  .bt-mcard .top { display: flex; justify-content: space-between; align-items: center; }
+  .bt-mcard .tag { background: #F6EEFB; color: var(--brand); border-radius: 999px; padding: 5px 10px; font-size: 0.6875rem; font-weight: 600; letter-spacing: .08em; }
+  .bt-mcard h3 { font-size: 1.625rem; line-height: 1.15; font-weight: 700; letter-spacing: -0.01em; color: var(--plum); outline: none; }
+  .bt-mcard .meta { font-size: 0.9375rem; font-weight: 500; color: var(--plum); margin-top: -8px; }
+  .bt-mcard .meta b { font-weight: 700; color: var(--brand); }
+  .bt-mcard hr { border: 0; border-top: 1px solid #E7D9F1; margin: 0; }
+  .bt-mcard .lbl { font-size: 0.6875rem; font-weight: 600; letter-spacing: .08em; color: var(--text-2); }
+  .bt-mcard .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: -6px; }
+  .bt-mcard .chips span { background: #F6EEFB; border-radius: 999px; padding: 6px 10px; font-size: 0.78rem; font-weight: 500; line-height: 1.35; color: var(--plum); }
+  .bt-mcard .bt-order { margin-top: 0; height: 52px; font-size: 0.9375rem; }
+  .bt-order.ch { background: linear-gradient(147deg, #853FAC 0%, #5B2A78 100%); box-shadow: 0 10px 28px -6px rgba(91,42,120,0.4); }
+  .bt-mcard .links { display: flex; flex-wrap: wrap; gap: 6px 16px; }
+  .bt-mcard .links a { font-size: 0.8125rem; font-weight: 500; color: var(--brand); }
+  .bt-mcard .links a:hover { text-decoration: underline; }
+  .bt-mcard .fine { font-size: 0.75rem; line-height: 17px; color: var(--text-2); }
+  .bt-cmp { display: none; font-weight: 600; font-size: 1rem; color: var(--brand); text-decoration: underline; }
+  .bt-hero-copy.matched .bt-goals-q, .bt-hero-copy.matched .bt-goals-sub, .bt-hero-copy.matched .bt-goals { display: none; }
+
+  /* ---------- 08b OTHER PANELS: View panel / Buy now + compact open state (Figma 47:23 · 60:488) ---------- */
+  .bt-others { align-items: start; }
+  .op:hover { transform: none; }
+  .op-list { display: flex; flex-direction: column; gap: 14px; }
+  .op-list[hidden] { display: none; }
+  .op.flash { box-shadow: 0 0 0 4px rgba(133,63,172,0.25), 0 16px 36px -6px rgba(91,42,120,0.14); }
+  .op-list .all { font-size: 0.6875rem; font-weight: 700; letter-spacing: .04em; color: var(--tc); }
+  .op-g h4 { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--line); font-size: 0.875rem; font-weight: 700; letter-spacing: 0; color: var(--ink); }
+  .op-g h4 span { font-size: 0.75rem; font-weight: 500; color: var(--text-2); }
+  .op-m { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+  .op-m span { background: #fff; border: 1px solid var(--bd); border-radius: 999px; padding: 4px 9px; font-size: 0.75rem; line-height: 1.35; color: var(--muted); }
+  .op-base { border: 1px dashed var(--bd); background: var(--t); border-radius: 12px; }
+  .op-base > summary { list-style: none; cursor: pointer; display: flex; align-items: center; gap: 10px; padding: 12px 14px; }
+  .op-base > summary::-webkit-details-marker { display: none; }
+  .op-base .bt { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+  .op-base .bt b { font-size: 0.84rem; font-weight: 600; color: var(--tc); }
+  .op-base .bt b::before { content: "＋ "; }
+  .op-base[open] .bt b::before { content: "－ "; }
+  .op-base .bt small { font-size: 0.78rem; line-height: 1.35; color: var(--text-2); }
+  .op-base .bn { font-size: 0.78rem; font-weight: 600; color: var(--ink); flex-shrink: 0; }
+  .op-base .op-rest { display: flex; flex-direction: column; gap: 14px; padding: 2px 14px 14px; }
+  .op-actions { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding-top: 4px; }
+  .op-view, .op-buy { display: flex; align-items: center; justify-content: center; padding: 12px; border-radius: 999px; font: inherit; font-weight: 700; font-size: 0.9375rem; line-height: 1.35; text-align: center; }
+  .op-view { background: var(--cta); color: var(--tc); border: 0; cursor: pointer; }
+  .op-view:hover { filter: brightness(0.97); }
+  .op-buy { background: linear-gradient(147deg, var(--g1) 0%, var(--g2) 100%); color: #fff; box-shadow: 0 8px 18px -6px rgba(91,42,120,0.35); transition: transform .15s ease, filter .2s ease; }
+  .op-buy:hover { transform: translateY(-2px); filter: brightness(1.06); }
+
 </style>
-<!-- FlexOffers AdvertiserMax click tracking -->
-<script>
-  !function(){var e=window.AdvertiserMaxTrack=window.AdvertiserMaxTrack||[];if(e.invoked)window.console&&console.error&&console.error("FlexOffers library was included more than once.");else{e.invoked=!0,e.methods=["init","getClick","track"],e.factory=function(r){return function(){var t=Array.prototype.slice.call(arguments);return t.unshift(r),e.push(t),e}};for(var r=0;r<e.methods.length;r++){var t=e.methods[r];e[t]=e.factory(t)}e.init=function(r){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://advertisermax.flexoffers.com/vendors/advertisermax/advertisermax.tracking.lib.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n),e.advertiserId=r}}}();
-  AdvertiserMaxTrack.init("89e67cb5-53f0-4c60-a91d-0a4f729e9029");
-  AdvertiserMaxTrack.getClick();
-</script>
 
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.directcare.ai/"},{"@type":"ListItem","position":2,"name":"Blood Labs"}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalTest","@id":"https://www.directcare.ai/blood-test#test","name":"DirectCare AI Comprehensive Blood Lab Panel","description":"Clinician-ordered blood panels: three main panels of 70, 75 and 80 biomarkers, plus panels of 63, 67 and 88 biomarkers, covering hormones, metabolic health, lipids, inflammation and nutrient status. Drawn at Quest Diagnostics, with results in 3-5 days and a plain-English interpretation from a US-licensed clinician.","normalRange":"Reference ranges follow Quest Diagnostics standards"}</script>
@@ -1063,34 +1132,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="bt-hero-copy">
         <h1 class="rise d1">Understand your health signals. <span class="h-italic"><span class="ov">Know</span> <span class="keep-line">what to do next.</span></span></h1>
         <p class="bt-hero-sub rise d2">Personalized blood panels, with main panels from $196. No membership. No insurance required. A licensed clinician reviews every result and gives you clear next steps.</p>
-        <div class="rise d3">
-          <p class="bt-goals-q">What brings you here? Tap a goal to jump to the right panel.</p>
-          <nav class="bt-goals" aria-label="Jump to a panel by goal">
-            <a class="bt-goal g-energy" href="#panel-essential">
+        <div class="rise d3 bt-finder" id="bt-finder">
+          <p class="bt-goals-q">What brings you here?</p>
+          <p class="bt-goals-sub">Pick one — we'll point you to the right panel.</p>
+          <nav class="bt-goals" aria-label="Find your panel by goal">
+            <a class="bt-goal g-energy" href="#panel-essential" data-goal="energy">
               <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
               <span class="gt"><strong>Fatigue or low energy</strong><span>Iron, B12, thyroid</span></span>
               <span class="ga" aria-hidden="true">→</span>
             </a>
-            <a class="bt-goal g-weight" href="#panel-essential">
+            <a class="bt-goal g-weight" href="#panel-essential" data-goal="weight">
               <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg></span>
               <span class="gt"><strong>Weight or metabolism</strong><span>HbA1c, insulin, lipids</span></span>
               <span class="ga" aria-hidden="true">→</span>
             </a>
-            <a class="bt-goal g-hormone" href="#panel-mens">
+            <a class="bt-goal g-hormone" href="#panel-mens" data-goal="hormone">
               <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
               <span class="gt"><strong>Hormones or libido</strong><span>Testosterone, estradiol</span></span>
               <span class="ga" aria-hidden="true">→</span>
             </a>
-            <a class="bt-goal g-base" href="#panel-essential">
+            <div class="bt-fit" id="bt-fit" hidden>
+              <div class="bt-fit-prog"><span>Step 2 of 2</span><span class="bars" aria-hidden="true"><i></i><i></i></span></div>
+              <h3 tabindex="-1">Which fits you?</h3>
+              <div class="bt-fit-opts">
+                <button type="button" class="bt-fit-opt" data-pick="M" data-label="Man"><span class="ft"><b>Man</b><small>Men&#x27;s Health · 75 biomarkers · $296</small></span><span class="ar" aria-hidden="true">→</span></button>
+                <button type="button" class="bt-fit-opt" data-pick="W" data-label="Woman"><span class="ft"><b>Woman</b><small>Women&#x27;s Health · 80 biomarkers · $346</small></span><span class="ar" aria-hidden="true">→</span></button>
+                <button type="button" class="bt-fit-opt" data-pick="C" data-label="Test everything"><span class="ft"><b>I want the most complete — test everything</b><small>Comprehensive Hormone · 88 biomarkers · $429.99</small></span><span class="ar" aria-hidden="true">→</span></button>
+              </div>
+            </div>
+            <a class="bt-goal g-base" href="#panel-essential" data-goal="base">
               <span class="gi" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span>
               <span class="gt"><strong>I want a baseline</strong><span>Kidney, liver, blood count</span></span>
               <span class="ga" aria-hidden="true">→</span>
             </a>
           </nav>
+          <div class="bt-match" id="bt-match" hidden>
+            <div class="bt-match-sum"><span class="ans">You picked: <span class="why"></span></span><button type="button" class="bt-reset">Change</button></div>
+            <article class="bt-mcard" data-card="E" hidden>
+              <div class="top"><span class="tag">YOUR MATCH</span><button type="button" class="bt-reset">Start over</button></div>
+              <h3 tabindex="-1">Essential Panel</h3>
+              <p class="meta">70 biomarkers · <b>$196</b> one-time</p>
+              <hr>
+              <span class="lbl">WHAT'S COVERED</span>
+              <div class="chips"><span>Energy, weight &amp; blood sugar</span> <span>Heart &amp; inflammation</span> <span>Fatigue &amp; nutrients</span> <span>Thyroid screen (TSH)</span> <span>Liver, kidney &amp; full CBC</span></div>
+              <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzQ=" class="bt-order essential">Start checkout →</a>
+              <div class="links"><a href="#panel-essential" data-see="panel-essential">See all 70 biomarkers</a> <a href="#panels">Compare all panels ↓</a></div>
+              <p class="fine">Checkout asks for basic info only. Then walk into a nearby Quest for your draw.</p>
+            </article>
+            <article class="bt-mcard" data-card="M" hidden>
+              <div class="top"><span class="tag">YOUR MATCH</span><button type="button" class="bt-reset">Start over</button></div>
+              <h3 tabindex="-1">Men&#x27;s Health Panel</h3>
+              <p class="meta">75 biomarkers · <b>$296</b> one-time</p>
+              <hr>
+              <span class="lbl">WHAT'S COVERED</span>
+              <div class="chips"><span>Testosterone &amp; libido</span> <span>Thyroid &amp; stress</span> <span>Energy, weight &amp; blood sugar</span> <span>Heart</span> <span>Fatigue &amp; nutrients</span></div>
+              <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzY=" class="bt-order mens">Start checkout →</a>
+              <div class="links"><a href="#panel-mens" data-see="panel-mens">See all 75 biomarkers</a> <a href="#panels">Compare all panels ↓</a></div>
+              <p class="fine">Checkout asks for basic info only. Then walk into a nearby Quest for your draw.</p>
+            </article>
+            <article class="bt-mcard" data-card="W" hidden>
+              <div class="top"><span class="tag">YOUR MATCH</span><button type="button" class="bt-reset">Start over</button></div>
+              <h3 tabindex="-1">Women&#x27;s Health Panel</h3>
+              <p class="meta">80 biomarkers · <b>$346</b> one-time</p>
+              <hr>
+              <span class="lbl">WHAT'S COVERED</span>
+              <div class="chips"><span>Cycle, perimenopause &amp; menopause</span> <span>Testosterone &amp; libido</span> <span>Thyroid &amp; stress</span> <span>Energy, weight &amp; blood sugar</span> <span>Heart &amp; nutrients</span></div>
+              <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMzU=" class="bt-order womens">Start checkout →</a>
+              <div class="links"><a href="#panel-womens" data-see="panel-womens">See all 80 biomarkers</a> <a href="#panels">Compare all panels ↓</a></div>
+              <p class="fine">Checkout asks for basic info only. Then walk into a nearby Quest for your draw.</p>
+            </article>
+            <article class="bt-mcard" data-card="C" hidden>
+              <div class="top"><span class="tag">YOUR MATCH</span><button type="button" class="bt-reset">Start over</button></div>
+              <h3 tabindex="-1">Comprehensive Hormone</h3>
+              <p class="meta">88 biomarkers · <b>$429.99</b> one-time</p>
+              <hr>
+              <span class="lbl">WHAT'S COVERED</span>
+              <div class="chips"><span>Sex hormones</span> <span>Full thyroid + antibodies</span> <span>Cortisol &amp; DHEA</span> <span>Vitamin D, B12, iron</span></div>
+              <a href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=" class="bt-order ch">Start checkout →</a>
+              <div class="links"><a href="#op-ch" data-see="op-ch">See all 88 biomarkers</a> <a href="#panels">Compare all panels ↓</a></div>
+              <p class="fine">Checkout asks for basic info only. Then walk into a nearby Quest for your draw.</p>
+            </article>
+          </div>
         </div>
         <div class="bt-hero-ctas rise d3">
           <a href="#panels" class="bt-btn">Choose My Panel →</a>
           <a href="#how" class="bt-link">How it works ↓</a>
+          <a href="#panels" class="bt-cmp">Or compare all panels ↓</a>
         </div>
         <div class="bt-hero-notes rise d4">
           <p class="flow">Pick your panel and check out with just your basic info. Then walk into a nearby Quest location for your draw — your clinician-signed lab order is waiting in your portal.</p>
@@ -1578,7 +1705,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <p>Want something more focused, or more in-depth? These three are also available through our Fullscript store.</p>
     </div>
     <div class="bt-others">
-      <a class="op" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=">
+      <article class="op" id="op-ch">
         <div class="op-h">
           <div class="op-top"><span class="op-tag gold">BEST VALUE</span><span class="op-price">$429.99</span></div>
           <div class="op-count"><b>88</b><span>biomarkers</span></div>
@@ -1587,24 +1714,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="op-b">
           <p>Our most in-depth hormone panel.</p>
           <span class="wi">WHAT'S INSIDE</span>
-          <div class="op-chips"><span>Sex hormones</span><span>Thyroid</span><span>Adrenal</span><span>Metabolic</span></div>
-          <span class="op-cta">View panel →</span>
+          <div class="op-chips"><span>Sex hormones</span> <span>Full thyroid + antibodies</span> <span>Cortisol &amp; DHEA</span> <span>Vitamin D, B12, iron</span></div>
+          <div class="op-list" id="op-ch-list" hidden>
+            <span class="all">ALL 88 BIOMARKERS</span>
+            <div class="op-g"><h4>Hormone<span>20 biomarkers</span></h4><div class="op-m"><span>Free T4</span> <span>Free T3</span> <span>Cortisol (AM)</span> <span>Estradiol</span> <span>Progesterone</span> <span>Testosterone, Free</span> <span>Testosterone, Total</span> <span>Sex Hormone Binding Globulin (SHBG)</span> <span>Testosterone, Bioavailable</span> <span>Dihydrotestosterone</span> <span>Follicle Stimulating Hormone (FSH)</span> <span>Luteinizing Hormone (LH)</span> <span>DHEA (Dehydroepiandrosterone), Unconjugated</span> <span>Thyroid-Stimulating Hormone</span> <span>Free T4 Index (T7)</span> <span>T3, Uptake</span> <span>T4 (Thyroxine), Total</span> <span>Reverse T3</span> <span>Thyroglobulin antibodies</span> <span>Thyroid Peroxidase Antibodies (TPO)</span></div></div>
+            <div class="op-g"><h4>Nutrients<span>9 biomarkers</span></h4><div class="op-m"><span>Vitamin D, 25-OH, Total</span> <span>Iron, Total</span> <span>Ferritin</span> <span>Total Iron Binding Capacity (TIBC)</span> <span>Iron % Saturation</span> <span>Vitamin B12 (Cobalamin)</span> <span>Folate (RBC)</span> <span>Selenium</span> <span>Iodine, Serum/Plasma</span></div></div>
+            <details class="op-base">
+              <summary><span class="bt"><b>Standard baseline</b> <small>Heart, metabolic, kidney, liver, full blood count</small></span> <span class="bn">59 markers</span></summary>
+              <div class="op-rest">
+                <div class="op-g"><h4>Metabolic<span>3 biomarkers</span></h4><div class="op-m"><span>Hemoglobin A1c</span> <span>Insulin</span> <span>Glucose (Blood)</span></div></div>
+                <div class="op-g"><h4>Cardiovascular<span>6 biomarkers</span></h4><div class="op-m"><span>Triglycerides</span> <span>Total Cholesterol</span> <span>HDL Cholesterol</span> <span>Non-HDL Cholesterol</span> <span>Total Cholesterol / HDL Ratio</span> <span>LDL Cholesterol (by calculation)</span></div></div>
+                <div class="op-g"><h4>Kidneys<span>9 biomarkers</span></h4><div class="op-m"><span>Creatinine</span> <span>BUN/Creatinine Ratio</span> <span>Estimated Glomerular Filtration Rate</span> <span>Calcium</span> <span>Blood Urea Nitrogen</span> <span>Carbon Dioxide</span> <span>Chloride</span> <span>Potassium</span> <span>Sodium</span></div></div>
+                <div class="op-g"><h4>Liver<span>8 biomarkers</span></h4><div class="op-m"><span>Albumin/Globulin Ratio</span> <span>Total Bilirubin</span> <span>Globulin (Calculated)</span> <span>Alkaline Phosphatase (ALP)</span> <span>Albumin</span> <span>Aspartate Aminotransferase (AST)</span> <span>Alanine Aminotransferase (ALT)</span> <span>Protein, Total</span></div></div>
+                <div class="op-g"><h4>Blood<span>33 biomarkers</span></h4><div class="op-m"><span>Red Cell Distribution Width (RDW)</span> <span>Neutrophils (%)</span> <span>Monocytes (%)</span> <span>Lymphocytes (%)</span> <span>Eosinophils (%)</span> <span>Basophils (%)</span> <span>Platelet Count</span> <span>Mean Corpuscular Hemoglobin Concentration (MCHC)</span> <span>Mean Corpuscular Hemoglobin (MCH)</span> <span>Mean Corpuscular Volume</span> <span>Hematocrit</span> <span>Hemoglobin (HGB)</span> <span>Band Neutrophils</span> <span>Blasts</span> <span>Metamyelocytes</span> <span>Myelocytes</span> <span>Nucleated RBC</span> <span>Promyelocytes</span> <span>Band Neutrophils (%)</span> <span>Basophils</span> <span>Blasts (%)</span> <span>Eosinophils</span> <span>Lymphocytes</span> <span>Metamyelocytes (%)</span> <span>Monocytes</span> <span>Myelocytes (%)</span> <span>Neutrophils</span> <span>Nucleated RBC (%)</span> <span>Promyelocytes (%)</span> <span>Reactive Lymphocytes</span> <span>Mean Platelet Volume (MPV)</span> <span>White Blood Cell Count (WBC)</span> <span>Red Blood Cell Count (RBC)</span></div></div>
+              </div>
+            </details>
+          </div>
+          <div class="op-actions">
+            <button type="button" class="op-view" aria-expanded="false" aria-controls="op-ch-list">＋ View panel</button>
+            <a class="op-buy" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTc=">Buy now →</a>
+          </div>
         </div>
-      </a>
-      <a class="op pink" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=">
+      </article>
+      <article class="op pink" id="op-cw">
         <div class="op-h">
           <div class="op-top"><span class="op-tag">NEW</span><span class="op-price">$149.99</span></div>
           <div class="op-count"><b>67</b><span>biomarkers</span></div>
-          <h3>Core Women's Health Panel</h3>
+          <h3>Core Women&#x27;s Health Panel</h3>
         </div>
         <div class="op-b">
           <p>Foundational hormone testing for women.</p>
           <span class="wi">WHAT'S INSIDE</span>
-          <div class="op-chips"><span>Key reproductive hormones</span></div>
-          <span class="op-cta">View panel →</span>
+          <div class="op-chips"><span>Estradiol &amp; progesterone</span> <span>FSH &amp; LH</span> <span>Iron &amp; ferritin</span></div>
+          <div class="op-list" id="op-cw-list" hidden>
+            <span class="all">ALL 67 BIOMARKERS</span>
+            <div class="op-g"><h4>Hormone<span>4 biomarkers</span></h4><div class="op-m"><span>Estradiol</span> <span>Follicle Stimulating Hormone (FSH)</span> <span>Luteinizing Hormone (LH)</span> <span>Progesterone</span></div></div>
+            <div class="op-g"><h4>Nutrients<span>4 biomarkers</span></h4><div class="op-m"><span>Iron, Total</span> <span>Ferritin</span> <span>Total Iron Binding Capacity (TIBC)</span> <span>Iron % Saturation</span></div></div>
+            <details class="op-base">
+              <summary><span class="bt"><b>Standard baseline</b> <small>Heart, metabolic, kidney, liver, full blood count</small></span> <span class="bn">59 markers</span></summary>
+              <div class="op-rest">
+                <div class="op-g"><h4>Metabolic<span>3 biomarkers</span></h4><div class="op-m"><span>Glucose (Blood)</span> <span>Hemoglobin A1c</span> <span>Insulin</span></div></div>
+                <div class="op-g"><h4>Cardiovascular<span>6 biomarkers</span></h4><div class="op-m"><span>Triglycerides</span> <span>Total Cholesterol</span> <span>HDL Cholesterol</span> <span>Non-HDL Cholesterol</span> <span>Total Cholesterol / HDL Ratio</span> <span>LDL Cholesterol (by calculation)</span></div></div>
+                <div class="op-g"><h4>Kidneys<span>9 biomarkers</span></h4><div class="op-m"><span>Creatinine</span> <span>BUN/Creatinine Ratio</span> <span>Estimated Glomerular Filtration Rate</span> <span>Calcium</span> <span>Blood Urea Nitrogen</span> <span>Carbon Dioxide</span> <span>Chloride</span> <span>Potassium</span> <span>Sodium</span></div></div>
+                <div class="op-g"><h4>Liver<span>8 biomarkers</span></h4><div class="op-m"><span>Albumin/Globulin Ratio</span> <span>Total Bilirubin</span> <span>Globulin (Calculated)</span> <span>Alkaline Phosphatase (ALP)</span> <span>Albumin</span> <span>Aspartate Aminotransferase (AST)</span> <span>Alanine Aminotransferase (ALT)</span> <span>Protein, Total</span></div></div>
+                <div class="op-g"><h4>Blood<span>33 biomarkers</span></h4><div class="op-m"><span>Red Cell Distribution Width (RDW)</span> <span>Neutrophils (%)</span> <span>Monocytes (%)</span> <span>Lymphocytes (%)</span> <span>Eosinophils (%)</span> <span>Basophils (%)</span> <span>Platelet Count</span> <span>Mean Corpuscular Hemoglobin Concentration (MCHC)</span> <span>Mean Corpuscular Hemoglobin (MCH)</span> <span>Mean Corpuscular Volume</span> <span>Hematocrit</span> <span>Hemoglobin (HGB)</span> <span>Band Neutrophils</span> <span>Blasts</span> <span>Metamyelocytes</span> <span>Myelocytes</span> <span>Nucleated RBC</span> <span>Promyelocytes</span> <span>Band Neutrophils (%)</span> <span>Basophils</span> <span>Blasts (%)</span> <span>Eosinophils</span> <span>Lymphocytes</span> <span>Metamyelocytes (%)</span> <span>Monocytes</span> <span>Myelocytes (%)</span> <span>Neutrophils</span> <span>Nucleated RBC (%)</span> <span>Promyelocytes (%)</span> <span>Reactive Lymphocytes</span> <span>Mean Platelet Volume (MPV)</span> <span>White Blood Cell Count (WBC)</span> <span>Red Blood Cell Count (RBC)</span></div></div>
+              </div>
+            </details>
+          </div>
+          <div class="op-actions">
+            <button type="button" class="op-view" aria-expanded="false" aria-controls="op-cw-list">＋ View panel</button>
+            <a class="op-buy" href="https://us.fullscript.com/checkout/directcareai/journey/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTg=">Buy now →</a>
+          </div>
         </div>
-      </a>
-      <a class="op green" href="https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=">
+      </article>
+      <article class="op green" id="op-core">
         <div class="op-h">
           <div class="op-top"><span class="op-tag">NEW</span><span class="op-price">$150</span></div>
           <div class="op-count"><b>63</b><span>biomarkers</span></div>
@@ -1613,10 +1776,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="op-b">
           <p>A basic health check, plus vitamin B12.</p>
           <span class="wi">WHAT'S INSIDE</span>
-          <div class="op-chips"><span>Basic health check</span><span>Vitamin B12</span></div>
-          <span class="op-cta">View panel →</span>
+          <div class="op-chips"><span>ApoB &amp; hsCRP</span> <span>Vitamin B12</span> <span>TSH</span></div>
+          <div class="op-list" id="op-core-list" hidden>
+            <span class="all">ALL 63 BIOMARKERS</span>
+            <div class="op-g"><h4>Cardiovascular<span>8 biomarkers</span></h4><div class="op-m"><span>Triglycerides</span> <span>Total Cholesterol</span> <span>HDL Cholesterol</span> <span>Non-HDL Cholesterol</span> <span>Total Cholesterol / HDL Ratio</span> <span>LDL Cholesterol (by calculation)</span> <span>Apolipoprotein B</span> <span>hsCRP</span></div></div>
+            <div class="op-g"><h4>Nutrients<span>1 biomarker</span></h4><div class="op-m"><span>Vitamin B12 (Cobalamin)</span></div></div>
+            <div class="op-g"><h4>Hormone<span>1 biomarker</span></h4><div class="op-m"><span>Thyroid-Stimulating Hormone</span></div></div>
+            <details class="op-base">
+              <summary><span class="bt"><b>Standard baseline</b> <small>Metabolic, kidney, liver, full blood count</small></span> <span class="bn">53 markers</span></summary>
+              <div class="op-rest">
+                <div class="op-g"><h4>Metabolic<span>3 biomarkers</span></h4><div class="op-m"><span>Hemoglobin A1c</span> <span>Insulin</span> <span>Glucose (Blood)</span></div></div>
+                <div class="op-g"><h4>Kidneys<span>9 biomarkers</span></h4><div class="op-m"><span>Creatinine</span> <span>BUN/Creatinine Ratio</span> <span>Estimated Glomerular Filtration Rate</span> <span>Calcium</span> <span>Blood Urea Nitrogen</span> <span>Carbon Dioxide</span> <span>Chloride</span> <span>Potassium</span> <span>Sodium</span></div></div>
+                <div class="op-g"><h4>Liver<span>8 biomarkers</span></h4><div class="op-m"><span>Albumin/Globulin Ratio</span> <span>Total Bilirubin</span> <span>Globulin (Calculated)</span> <span>Alkaline Phosphatase (ALP)</span> <span>Albumin</span> <span>Aspartate Aminotransferase (AST)</span> <span>Alanine Aminotransferase (ALT)</span> <span>Protein, Total</span></div></div>
+                <div class="op-g"><h4>Blood<span>33 biomarkers</span></h4><div class="op-m"><span>Red Cell Distribution Width (RDW)</span> <span>Neutrophils (%)</span> <span>Monocytes (%)</span> <span>Lymphocytes (%)</span> <span>Eosinophils (%)</span> <span>Basophils (%)</span> <span>Platelet Count</span> <span>Mean Corpuscular Hemoglobin Concentration (MCHC)</span> <span>Mean Corpuscular Hemoglobin (MCH)</span> <span>Mean Corpuscular Volume</span> <span>Hematocrit</span> <span>Hemoglobin (HGB)</span> <span>Band Neutrophils</span> <span>Blasts</span> <span>Metamyelocytes</span> <span>Myelocytes</span> <span>Nucleated RBC</span> <span>Promyelocytes</span> <span>Band Neutrophils (%)</span> <span>Basophils</span> <span>Blasts (%)</span> <span>Eosinophils</span> <span>Lymphocytes</span> <span>Metamyelocytes (%)</span> <span>Monocytes</span> <span>Myelocytes (%)</span> <span>Neutrophils</span> <span>Nucleated RBC (%)</span> <span>Promyelocytes (%)</span> <span>Reactive Lymphocytes</span> <span>Mean Platelet Volume (MPV)</span> <span>White Blood Cell Count (WBC)</span> <span>Red Blood Cell Count (RBC)</span></div></div>
+              </div>
+            </details>
+          </div>
+          <div class="op-actions">
+            <button type="button" class="op-view" aria-expanded="false" aria-controls="op-core-list">＋ View panel</button>
+            <a class="op-buy" href="https://us.fullscript.com/j/directcareai/TGFiczo6Sm91cm5leXM6OlBhY2thZ2UtMjE1OTk=">Buy now →</a>
+          </div>
         </div>
-      </a>
+      </article>
     </div>
   </div>
 </section>
@@ -2020,16 +2201,115 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
   })();
 
-  /* Goal tiles: briefly highlight the panel they jump to (visual only, no tracking). */
+  /* Panel finder (hero): goal → (Hormones only) "Which fits you?" → one match card.
+     Answers stay in the page: no dataLayer pushes, no pixel events, nothing stored. */
   (function() {
-    document.querySelectorAll('.bt-goal').forEach(function(a) {
+    var root = document.getElementById('bt-finder');
+    if (!root) return;
+    var copy = root.closest('.bt-hero-copy');
+    var grid = root.querySelector('.bt-goals');
+    var fit = document.getElementById('bt-fit');
+    var match = document.getElementById('bt-match');
+    var why = match.querySelector('.why');
+    var tiles = Array.prototype.slice.call(grid.querySelectorAll('.bt-goal'));
+    var cards = Array.prototype.slice.call(match.querySelectorAll('.bt-mcard'));
+    var hormone = grid.querySelector('[data-goal="hormone"]');
+    tiles.forEach(function(t) { t.setAttribute('role', 'button'); });
+    hormone.setAttribute('aria-expanded', 'false');
+    hormone.setAttribute('aria-controls', 'bt-fit');
+    function reset() {
+      tiles.forEach(function(t) { t.classList.remove('sel'); });
+      hormone.setAttribute('aria-expanded', 'false');
+      grid.classList.remove('picking');
+      fit.hidden = true;
+      match.hidden = true;
+      cards.forEach(function(c) { c.hidden = true; });
+      copy.classList.remove('matched');
+    }
+    function show(key, label) {
+      reset();
+      why.textContent = label;
+      var card = match.querySelector('[data-card="' + key + '"]');
+      card.hidden = false;
+      match.hidden = false;
+      copy.classList.add('matched');
+      card.querySelector('h3').focus({ preventScroll: true });
+      var r = match.getBoundingClientRect();
+      if (r.top < 70 || r.top > window.innerHeight - 160) match.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }
+    tiles.forEach(function(t) {
+      t.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (t === hormone) {
+          var open = !t.classList.contains('sel');
+          reset();
+          if (!open) return;
+          t.classList.add('sel');
+          t.setAttribute('aria-expanded', 'true');
+          grid.classList.add('picking');
+          fit.hidden = false;
+          fit.querySelector('h3').focus({ preventScroll: true });
+          return;
+        }
+        show('E', t.querySelector('strong').textContent);
+      });
+    });
+    fit.querySelectorAll('.bt-fit-opt').forEach(function(b) {
+      b.addEventListener('click', function() {
+        show(b.getAttribute('data-pick'), 'Hormones or libido · ' + b.getAttribute('data-label'));
+      });
+    });
+    match.querySelectorAll('.bt-reset').forEach(function(b) {
+      b.addEventListener('click', function() {
+        reset();
+        var r = root.getBoundingClientRect();
+        if (r.top < 0) root.scrollIntoView({ block: 'start', behavior: 'smooth' });
+        hormone.parentNode.querySelector('.bt-goal').focus({ preventScroll: true });
+      });
+    });
+    /* "See all N biomarkers": open that panel's list where it lives. */
+    match.querySelectorAll('[data-see]').forEach(function(a) {
       a.addEventListener('click', function() {
-        var t = document.querySelector(a.getAttribute('href'));
+        var t = document.getElementById(a.getAttribute('data-see'));
         if (!t) return;
+        var d = t.querySelector('details');
+        if (t.classList.contains('op')) { if (!t.classList.contains('open')) t.querySelector('.op-view').click(); }
+        else if (d) d.open = true;
         t.classList.add('flash');
         setTimeout(function() { t.classList.remove('flash'); }, 1600);
       });
     });
+  })();
+
+  /* Other panels: "View panel" opens the compact list in place (one card at a time); "Buy now" is a plain link. No tracking. */
+  (function() {
+    var ops = Array.prototype.slice.call(document.querySelectorAll('.op'));
+    if (!ops.length) return;
+    function setOpen(op, open) {
+      var b = op.querySelector('.op-view');
+      op.querySelector('.op-list').hidden = !open;
+      op.classList.toggle('open', open);
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      b.textContent = open ? '－ Hide panel' : '＋ View panel';
+    }
+    ops.forEach(function(op) {
+      op.querySelector('.op-view').addEventListener('click', function() {
+        var willOpen = !op.classList.contains('open');
+        ops.forEach(function(o) { if (o !== op) setOpen(o, false); });
+        setOpen(op, willOpen);
+      });
+    });
+    /* Equal height while closed: min-height = tallest closed card (desktop grid only). */
+    function equalize() {
+      ops.forEach(function(o) { o.style.minHeight = ''; });
+      if (window.innerWidth <= 980) return;
+      var max = 0;
+      ops.forEach(function(o) { if (!o.classList.contains('open')) max = Math.max(max, o.offsetHeight); });
+      ops.forEach(function(o) { o.style.minHeight = max + 'px'; });
+    }
+    equalize();
+    window.addEventListener('resize', equalize);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalize);
   })();
 </script>
 

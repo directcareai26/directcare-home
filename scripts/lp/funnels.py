@@ -305,6 +305,7 @@ SHELL_JS = r"""
       }
     }
     if (d.type === 'submit' || d.submitted) dl('intake_lead', {form:'__FORMID__'});
+    if (d.type === 'continue_to_payment') dl('continue_to_payment', {form:'__FORMID__'});
   });
 })();
 """

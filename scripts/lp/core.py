@@ -363,6 +363,7 @@ def sticky_and_js(variant, first_q_id="intakeWrap"):
       }}
     }}
     if (d.type === 'submit' || d.submitted) dl('intake_lead', {{form:'6a91c05fa9cb082abb340d5e'}});
+    if (d.type === 'continue_to_payment') dl('continue_to_payment', {{form:'6a91c05fa9cb082abb340d5e'}});
   }});
 }})();
 </script>"""

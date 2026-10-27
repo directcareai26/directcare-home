@@ -8,7 +8,7 @@ Legal
 
 ## Privacy Policy
 
- Last Updated: April 7, 2026
+ Last Updated: October 27, 2026
 
  **PLEASE READ THIS PRIVACY POLICY CAREFULLY BEFORE USING OUR SERVICES OR WEBSITE.**
 
@@ -123,6 +123,10 @@ Legal
 - Payment processors
 
 - Analytics providers
+
+#### 6. Apple Health
+
+If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
 
 ### III. How We Collect Information
 

@@ -8,7 +8,7 @@ Legal
 
 ## Privacy Policy
 
- Last Updated: October 27, 2026
+ Last Updated: October 28, 2026
 
  **PLEASE READ THIS PRIVACY POLICY CAREFULLY BEFORE USING OUR SERVICES OR WEBSITE.**
 
@@ -126,9 +126,21 @@ Legal
 
 #### 6. Apple Health
 
- If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
+ If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers unless you turn on the optional AI features described in section 7 below, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
 
- Food diary. Meal photos and notes you add in My Health are saved only on your iPhone. We do not upload them, analyze them, or use them for advertising.
+ Food diary. Meal photos and notes you add in My Health are saved only on your iPhone. We do not upload or analyze them unless you turn on the optional AI features in section 7, and we never use them for advertising.
+
+#### 7. AI Features in My Health (Optional)
+
+If you turn on AI features in My Health, we send what you choose to analyze to our service providers so they can analyze it for you. This includes a meal photo, a meal description or a barcode, and weekly summary numbers from Apple Health (such as average steps, sleep and resting heart rate). We do not send your name or email to the AI.
+
+**Who processes it:** Amazon Web Services (AWS) runs Anthropic’s Claude AI model for us in the United States, under a business associate agreement. Food nutrition facts come from the U.S. Department of Agriculture’s FoodData Central, which receives only food names or barcodes.
+
+**What we keep:** Meal photos are deleted right after analysis. We don’t store the analyzed data on our servers. Your food diary and health data stay on your iPhone. Your data is not used to train AI models and is not used for advertising or sold.
+
+**What AI does not do:** AI gives estimates and general education. It does not diagnose, treat, set calorie goals, or replace your care team.
+
+**Your choices:** AI features are off unless you turn them on. You can turn them off anytime in My Health › Devices › AI features, which stops all sending right away.
 
 ### III. How We Collect Information
 

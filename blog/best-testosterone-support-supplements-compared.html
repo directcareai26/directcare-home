@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+<!-- Global Privacy Control — honored, as promised in our CCPA notice. When the browser sends the GPC
+     signal, the advertising pixels are stubbed out before they can initialize, so no identifiers are shared. -->
+<script>(function(){try{var gpc=(navigator.globalPrivacyControl===true)||(document.cookie.indexOf('dca_gpc=1')>-1);
+if(!gpc)return;window.__dcaGPC=true;
+var noop=function(){};noop.queue=[];noop.push=noop;noop.loaded=true;noop.version='2.0';noop.callMethod=null;
+window.fbq=window._fbq=noop;window.pintrk=noop;window.pintrk.queue=[];
+window.dcaSuppressAds=true;}catch(e){}})();</script>
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
+
+  // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+alt="" /></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
+alt="" /></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#241432" />
+<title>Best Testosterone Support Supplements: 2026 Verdict</title>
+<meta name="description" content="The best testosterone support supplements address a real nutrient deficiency. Compare vitamin D, zinc, magnesium, and herbs before choosing your next step." />
+<meta name="keywords" content="Supplements" />
+<link rel="canonical" href="https://www.directcare.ai/blog/best-testosterone-support-supplements-compared" />
+<link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/json" />
+<link rel="alternate" type="application/rss+xml" title="DirectCare AI Blog" href="https://www.directcare.ai/blog/rss.xml" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.directcare.ai/blog/best-testosterone-support-supplements-compared" />
+<meta property="og:title" content="Best Testosterone Support Supplements: 2026 Verdict" />
+<meta property="og:description" content="The best testosterone support supplements address a real nutrient deficiency. Compare vitamin D, zinc, magnesium, and herbs before choosing your next step." />
+<meta property="og:image" content="https://www.directcare.ai/optimized/blog-best-testosterone-support-supplements-compared-featured.jpg" />
+<meta property="article:published_time" content="2026-10-28" />
+<meta property="article:section" content="Supplements" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalScholarlyArticle",
+  "headline": "Best testosterone-support supplements compared in 2026",
+  "datePublished": "2026-10-28",
+  "dateModified": "2026-10-28",
+  "description": "The best testosterone support supplements address a real nutrient deficiency. Compare vitamin D, zinc, magnesium, and herbs before choosing your next step.",
+  "image": "https://www.directcare.ai/optimized/blog-best-testosterone-support-supplements-compared-featured.jpg",
+  "articleSection": "Supplements",
+  "author": {
+    "@type": "Organization",
+    "name": "DirectCare AI Clinical Team",
+    "url": "https://www.directcare.ai"
+  },"reviewedBy": {"@type": "Person", "name": "Dr. Tim Pepin", "honorificSuffix": "D.C.", "jobTitle": "Clinical Advisor", "url": "https://www.directcare.ai/#dr-tim-pepin", "hasCredential": {"@type": "EducationalOccupationalCredential", "name": "Doctor of Chiropractic", "credentialCategory": "degree"}}, "lastReviewed": "2026-10-28",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DirectCare AI",
+    "url": "https://www.directcare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.directcare.ai/logo-color.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.directcare.ai/blog/best-testosterone-support-supplements-compared"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #faf6f0; --bg-2: #f4eee5; --bg-cream: #f0e8d8; --surface: #ffffff;
+    --ink: #241432; --ink-soft: #332543; --muted: #3d3247;
+    --line: rgba(36,20,50,0.10); --line-strong: rgba(36,20,50,0.18);
+    --brand: #853FAC; --brand-deep: #762ba4; --brand-darker: #44215A; --dark: #241432;
+    --gold-soft: #f5e6c2;
+    --radius: 14px; --radius-lg: 22px; --radius-xl: 32px;
+  }
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: -0.01em; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.1; font-weight: 500; color: var(--ink); }
+  p { margin: 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+
+  .top-strip { background: var(--gold-soft); color: var(--ink); padding: 9px 16px; text-align: center; font-size: 0.82rem; font-weight: 500; }
+  .top-strip a { font-weight: 600; text-decoration: underline; margin-left: 4px; }
+
+  .nav { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1320px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); gap: 16px; }
+  .nav-logo img { height: 30px; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-link { font-size: 0.90rem; font-weight: 500; color: var(--ink); padding: 6px 0; display: inline-flex; align-items: center; gap: 4px; transition: color .15s ease; }
+  .nav-link:hover { color: var(--brand-deep); }
+  .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
+  .nav-link.active { color: var(--brand-deep); font-weight: 600; }
+  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  .mobile-toggle { display: none; width: 38px; height: 38px; border-radius: 50%; background: var(--bg-2); border: 1px solid var(--line); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  .mobile-toggle svg { width: 20px; height: 20px; }
+  @media (max-width: 820px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } .nav-login { display: none; } }
+
+  /* ARTICLE LAYOUT */
+  .article-hero { padding: clamp(36px, 5vw, 60px) 0 0; }
+  .article-meta { display: inline-flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 18px; }
+  .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--brand-deep); opacity: 0.5; }
+  .article-references { margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line, #e6e1ee); }
+  .article-references h2 { font-size: 1.02rem; letter-spacing: 0.01em; margin-bottom: 12px; }
+  .article-references ol { padding-left: 20px; }
+  .article-references li { font-size: 0.86rem; line-height: 1.55; color: var(--muted, #5b5566); margin-bottom: 9px; }
+  .article-references a { color: var(--brand-deep); white-space: nowrap; }
+  .article-meta .reviewed { text-transform: none; letter-spacing: 0.01em; font-weight: 500; }
+  .article-meta .date { color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
+  .article-meta a { color: var(--brand-deep); }
+  .article-title { font-size: clamp(2.0rem, 4.4vw, 3.4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.0; max-width: 880px; margin-bottom: 18px; }
+  .article-title em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-deck { font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(1.05rem, 1.4vw, 1.22rem); color: var(--ink-soft); line-height: 1.55; max-width: 760px; margin: 0 0 32px; }
+  .article-cover { aspect-ratio: 16/9; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 48px; box-shadow: 0 24px 56px -20px rgba(36,20,50,0.30); }
+  .article-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .article-body { max-width: 720px; margin: 0 auto; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.1rem; line-height: 1.75; color: var(--ink); }
+  .article-body h2 { font-family: 'Geist', sans-serif; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.025em; margin: 56px 0 18px; line-height: 1.15; color: var(--ink); }
+  .article-body h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-body h3 { font-family: 'Geist', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.015em; margin: 36px 0 12px; color: var(--ink); }
+  .article-body p { margin: 0 0 22px; }
+  .article-body a { color: var(--brand-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .article-body a:hover { color: var(--brand-darker); }
+  .article-body ul, .article-body ol { margin: 0 0 22px; padding-left: 24px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body blockquote { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.22rem; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--brand); padding: 4px 0 4px 24px; margin: 32px 0; }
+  .article-body strong { font-weight: 600; color: var(--ink); }
+  .article-body .table-wrap { overflow-x: auto; margin: 0 0 28px; -webkit-overflow-scrolling: touch; }
+  .article-body table { width: 100%; border-collapse: collapse; font-family: 'Geist', sans-serif; font-size: 0.92rem; line-height: 1.5; }
+  .article-body th, .article-body td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+  .article-body th { font-weight: 600; color: var(--ink); background: var(--bg-cream); }
+  .article-body figure { margin: 32px 0; }
+  .article-body figure img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); }
+  .article-body figcaption { font-family: 'Geist', sans-serif; font-size: 0.85rem; color: var(--ink-soft); margin-top: 8px; }
+  .callout { background: var(--bg-cream); border-radius: var(--radius-lg); padding: 22px 26px; margin: 32px 0; font-family: 'Geist', sans-serif; font-size: 0.98rem; line-height: 1.6; color: var(--ink-soft); }
+  .callout-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 6px; }
+
+  /* PRODUCT CTA */
+  .product-cta { background: linear-gradient(135deg, #efe0fa 0%, #f4eee5 100%); border-radius: var(--radius-xl); padding: 32px 36px; margin: 48px 0; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+  @media (max-width: 720px) { .product-cta { grid-template-columns: 1fr; text-align: center; } }
+  .product-cta-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; font-family: 'Geist', sans-serif; }
+  .product-cta h3 { font-family: 'Geist', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; color: var(--ink); }
+  .product-cta p { font-family: 'Geist', sans-serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5; margin-bottom: 16px; }
+  .product-cta .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); padding: 12px 24px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; font-family: 'Geist', sans-serif; transition: background .25s ease; }
+  .product-cta .btn:hover { background: var(--brand-darker); }
+
+  .article-disclaimer { max-width: 720px; margin: 56px auto 0; padding: 20px 0 0; border-top: 1px solid var(--line); font-family: 'Geist', sans-serif; font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+  /* RELATED POSTS */
+  .related-section { max-width: 1280px; margin: 72px auto 0; padding: 0 clamp(20px, 4vw, 48px); }
+  .related-section h3 { font-family: 'Geist', sans-serif; font-size: 1.4rem; font-weight: 500; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 80px; }
+  @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: 1fr; } }
+  .related-card { background: white; border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -18px rgba(36,20,50,0.22); border-color: var(--line-strong); }
+  .related-card-image { aspect-ratio: 16/10; overflow: hidden; background: var(--bg-2); }
+  .related-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
+  .related-card:hover .related-card-image img { transform: scale(1.05); }
+  .related-card-body { padding: 20px 22px 22px; }
+  .related-card-meta { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-deep); margin-bottom: 8px; }
+  .related-card h3 { font-family: 'Geist', sans-serif; font-size: 1.04rem; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; color: var(--ink); }
+
+  /* FOOTER (lite) */
+  footer { background: var(--bg-2); border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 40px; font-family: 'Geist', sans-serif; }
+  footer .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 16px; }
+  .foot-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 360px; color: var(--ink-soft); }
+  .foot-col h2 { font-size: 0.82rem; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 16px; }
+  .foot-col a { display: block; font-size: 0.9rem; color: var(--muted); padding: 4px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
+.answer-first{font-size:1.08rem;line-height:1.65;font-weight:500;color:var(--ink,#1c1330);padding:16px 20px;border-left:3px solid var(--brand-deep,#500978);background:rgba(80,9,120,.04);border-radius:8px;margin:0 0 28px}
+.post-callout{border-left:3px solid var(--brand-deep,#500978);background:rgba(80,9,120,.045);border-radius:8px;padding:14px 18px;margin:24px 0;line-height:1.6}.post-callout strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--brand-deep,#500978);margin-bottom:5px}
+</style>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
+  <script src="/js/dc-webmcp.js?v=20260914" defer></script>
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="top-strip">
+  Save up to 80% on prescriptions with the DirectCare Pharmacy Card. <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer">Get yours free →</a>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="/logo-color.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <a class="nav-link has-arrow" href="/womens-health">Women's Health</a>
+      <a class="nav-link has-arrow" href="/mens-health">Men's Health</a>
+      <a class="nav-link" href="/supplements">Supplements</a>
+      <a class="nav-link" href="/blood-test">Blood Labs</a>
+    </div>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+  </div>
+</nav>
+
+<div class="container" role="main">
+  <article>
+    <header class="article-hero">
+      <div class="article-meta">
+        <a href="/blog">Blog</a>
+        <span class="dot"></span>
+        <span>Supplements</span>
+        <span class="dot"></span>
+        <span class="date">October 28, 2026</span>
+      <span class="dot"></span><span class="reviewed">Clinically reviewed by <a href="https://www.directcare.ai/#dr-tim-pepin">Dr. Tim Pepin, D.C.</a> on <time datetime="2026-10-28">2026-10-28</time></span></div>
+      <h1 class="article-title">Best testosterone-support supplements compared in 2026</h1>
+      <p class="article-deck">The best testosterone support supplements address a real nutrient deficiency. Compare vitamin D, zinc, magnesium, and herbs before choosing your next step.</p>
+      <div class="article-cover">
+        <img src="https://www.directcare.ai/optimized/blog-best-testosterone-support-supplements-compared-featured.jpg" alt="" />
+      </div>
+    </header>
+
+    <div class="article-body">
+<p><strong>Best overall approach: correct a documented nutrient deficiency. Best for low vitamin D: vitamin D. Best for inadequate zinc intake: zinc. Best for a magnesium intake gap: magnesium.</strong> This 2026 guide compares the best testosterone support supplements without treating a supplement label as proof that a product raises testosterone.</p>
+<div class="callout"><div class="callout-eyebrow">TL;DR</div><ul><li>The best testosterone support supplements address a specific deficiency; none reliably treats every cause of low testosterone.</li><li>Vitamin D, zinc, and magnesium serve different nutritional needs, not interchangeable testosterone-boosting roles.</li><li>Ashwagandha has limited testosterone evidence and important safety concerns; skip it as a substitute for diagnosis.</li><li>DirectCare AI is best for adults seeking clinician-led testosterone assessment rather than a supplement-only approach.</li></ul></div>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Low energy, reduced libido, and poor workout recovery do not establish low testosterone. Sleep problems, medication effects, thyroid disease, depression, and other conditions can produce overlapping symptoms. Buying a supplement before identifying the cause risks treating the wrong problem.</p>
+<p><a href="/">DirectCare AI</a> connects US adults with licensed clinicians for services including blood lab testing and prescribed testosterone treatment. That clinical route answers a different question from supplement shopping: whether you have a hormone problem that needs treatment.</p>
+<p>For your 2026 shortlist, separate nutritional support from treatment for hypogonadism. <strong>Correcting a deficiency supports normal physiology; it does not guarantee a testosterone increase.</strong></p>
+<h2 id="what-makes-the-best-testosterone-support-supplements">What makes the best testosterone support supplements?</h2>
+<p>Use these criteria before comparing labels:</p>
+<ul>
+<li><strong>A specific reason to take it.</strong> A documented deficiency or identified dietary gap is stronger justification than fatigue alone.</li>
+<li><strong>Evidence that matches the claim.</strong> Improving sleep, strength, or stress is not the same outcome as treating testosterone deficiency.</li>
+<li><strong>A transparent ingredient list.</strong> Individual ingredient amounts let you check total intake and identify interactions. Proprietary blends make that harder.</li>
+<li><strong>A sensible safety margin.</strong> Include food, multivitamins, and other supplements when assessing intake. More is not better.</li>
+<li><strong>Independent quality verification.</strong> Third-party testing helps assess label accuracy and contamination, but does not establish testosterone benefits.</li>
+<li><strong>A reassessment plan.</strong> Know what you are correcting, what improvement matters, and when your clinician wants follow-up.</li>
+</ul>
+<p>These criteria favor targeted ingredients over broad testosterone-booster blends. They also explain why an ingredient can rank well for a nutritional need without earning a recommendation for hormone treatment.</p>
+<h2 id="testosterone-support-supplements-at-a-glance-2026">Testosterone support supplements at a glance: 2026</h2>
+<p>The ranking below concerns ingredient categories, not specific retail products. No individual formulation has been assessed here.</p>
+<div class="table-wrap"><table><thead><tr><th>Rank and ingredient</th><th>Best for</th><th>Standout role</th><th>Key limitation</th></tr></thead><tbody><tr><td>1. Vitamin D</td><td>Documented low vitamin D</td><td>Correcting vitamin D deficiency</td><td>Not a reliable testosterone treatment when levels are adequate</td></tr><tr><td>2. Zinc</td><td>Confirmed deficiency or inadequate intake</td><td>Restoring an essential mineral</td><td>Excess intake can cause copper deficiency</td></tr><tr><td>3. Magnesium</td><td>An identified dietary magnesium gap</td><td>Supporting normal muscle and nerve function</td><td>Does not establish a testosterone benefit</td></tr><tr><td>4. Ashwagandha</td><td>A clinician-reviewed discussion about stress support</td><td>Some small studies report hormone changes</td><td>Limited evidence, interactions, and liver and thyroid concerns</td></tr></tbody></table></div>
+<h2 id="1-vitamin-d-best-for-documented-low-vitamin-d">1. Vitamin D: best for documented low vitamin D</h2>
+<p>Vitamin D helps your body absorb calcium and supports bone health. Low vitamin D and low testosterone sometimes occur together, but that association does not prove that vitamin D supplements will raise testosterone.</p>
+<p><strong>Best for:</strong> Someone with documented vitamin D deficiency and a clinician-directed correction plan. Vitamin D earns its place for treating that deficiency, not for delivering a predictable hormone increase.</p>
+<h3 id="vitamin-d-pros">Vitamin D pros</h3>
+<ul>
+<li>Corrects an established nutritional deficiency when taken appropriately.</li>
+<li>Supports calcium absorption and bone health independently of testosterone.</li>
+<li>Allows a targeted approach rather than a multi-ingredient hormone blend.</li>
+</ul>
+<h3 id="vitamin-d-cons">Vitamin D cons</h3>
+<ul>
+<li>Supplementation does not consistently raise testosterone in people with adequate vitamin D.</li>
+<li>Excess intake can cause high blood calcium and serious harm.</li>
+<li>A deficiency-treatment dose requires a different assessment from routine daily intake.</li>
+</ul>
+<p>The NIH Office of Dietary Supplements lists <strong>600 IU, or 15 micrograms, daily</strong> as the recommended intake for adults aged 19–70. Its adult tolerable upper intake level is <strong>4,000 IU, or 100 micrograms, daily</strong>; that ceiling is not a target, and clinicians sometimes use different regimens to treat deficiency.</p>
+<p>Check what your multivitamin already supplies. Do not add a high-dose product simply because a testosterone-booster label presents vitamin D as a hormone ingredient.</p>
+<p><strong>Verdict: Buy for documented deficiency with an appropriate plan; skip vitamin D as a stand-alone testosterone treatment.</strong></p>
+<h2 id="2-zinc-best-for-confirmed-deficiency-or-inadequate-intake">2. Zinc: best for confirmed deficiency or inadequate intake</h2>
+<p>Zinc supports normal immune function, cell processes, and reproductive physiology. Zinc deficiency can impair normal testosterone production, but taking extra zinc when your intake is sufficient is not an established way to improve testosterone.</p>
+<p><strong>Best for:</strong> Someone whose dietary review and clinical assessment identify inadequate zinc intake or deficiency. This is a correction strategy, not a reason for every man to supplement.</p>
+<h3 id="zinc-pros">Zinc pros</h3>
+<ul>
+<li>Addresses a nutrient deficiency that can affect reproductive function.</li>
+<li>Has an established daily intake benchmark.</li>
+<li>Can be assessed separately from other ingredients in a single-ingredient product.</li>
+</ul>
+<h3 id="zinc-cons">Zinc cons</h3>
+<ul>
+<li>Excess zinc can interfere with copper absorption and cause deficiency.</li>
+<li>Zinc can cause nausea and interact with certain antibiotics.</li>
+<li>A high-dose label does not establish a larger testosterone benefit.</li>
+</ul>
+<p>The NIH Office of Dietary Supplements sets the recommended intake for adult men at <strong>11 mg daily</strong>. The adult upper intake level is <strong>40 mg daily</strong> from food and supplements combined, unless a clinician directs treatment.</p>
+<p>Check the amount of elemental zinc rather than judging a product by the name of its zinc compound. Also review cold remedies, multivitamins, and combination supplements; they can contribute additional zinc without appearing to be part of your testosterone routine.</p>
+<p><strong>Verdict: Buy to address an identified zinc shortfall; skip high-dose zinc for testosterone boosting when intake is already adequate.</strong></p>
+<h2 id="3-magnesium-best-for-an-identified-dietary-gap">3. Magnesium: best for an identified dietary gap</h2>
+<p>Magnesium supports normal muscle and nerve function and participates in many enzyme reactions. Those functions make it an essential nutrient, not a proven treatment for low testosterone.</p>
+<p><strong>Best for:</strong> Someone whose eating pattern leaves a magnesium gap. Start by reviewing food intake rather than assuming cramps, poor sleep, or fatigue confirm magnesium deficiency.</p>
+<h3 id="magnesium-pros">Magnesium pros</h3>
+<ul>
+<li>Helps fill an identified nutritional shortfall.</li>
+<li>Supports normal muscle and nerve function regardless of testosterone status.</li>
+<li>Can be considered alongside magnesium-rich foods such as legumes, nuts, and whole grains.</li>
+</ul>
+<h3 id="magnesium-cons">Magnesium cons</h3>
+<ul>
+<li>Supplemental magnesium commonly causes diarrhea or abdominal discomfort.</li>
+<li>Kidney disease increases the risk of magnesium accumulation.</li>
+<li>Evidence does not establish magnesium supplements as treatment for hypogonadism.</li>
+</ul>
+<p>The NIH Office of Dietary Supplements lists <strong>400–420 mg daily</strong> as the recommended intake for adult men, depending on age. The adult upper limit of <strong>350 mg daily</strong> applies specifically to magnesium from supplements and medications, not magnesium naturally present in food.</p>
+<p>That distinction matters when comparing labels. A daily nutritional requirement is not an instruction to take the entire amount in a capsule, and a tolerable upper limit is not a suggested dose.</p>
+<p>Ask a pharmacist about medication spacing if you take antibiotics or other medicines affected by magnesium. Choose the ingredient to address your nutritional need, not because a label promises better hormone levels.</p>
+<p><strong>Verdict: Buy for a confirmed intake gap when appropriate; skip magnesium as a substitute for testosterone evaluation.</strong></p>
+<h2 id="4-ashwagandha-best-for-a-clinician-reviewed-stress-discussion">4. Ashwagandha: best for a clinician-reviewed stress discussion</h2>
+<p>Ashwagandha is an herbal supplement studied for several outcomes, including stress and sleep. Some small studies report testosterone changes, but those findings do not establish it as a treatment for testosterone deficiency.</p>
+<p><strong>Best for:</strong> A discussion about stress support after a clinician reviews your health history and medications. It is not the default choice for someone investigating low testosterone.</p>
+<h3 id="ashwagandha-pros">Ashwagandha pros</h3>
+<ul>
+<li>Has human research examining stress and sleep outcomes.</li>
+<li>Has some preliminary research examining testosterone-related outcomes.</li>
+<li>Can be evaluated as a single ingredient rather than an undisclosed blend.</li>
+</ul>
+<h3 id="ashwagandha-cons">Ashwagandha cons</h3>
+<ul>
+<li>Small, short studies do not establish durable treatment benefits for hypogonadism.</li>
+<li>Rare liver injury has been reported, and thyroid effects require caution.</li>
+<li>Extract differences make results from one preparation difficult to apply to every product.</li>
+</ul>
+<p>The National Center for Complementary and Integrative Health identifies important precautions involving thyroid and autoimmune disorders, pregnancy, and medication interactions. An herbal label does not remove those concerns.</p>
+<p>If fatigue is the main reason you are considering ashwagandha, investigate the fatigue first. A change in perceived stress or sleep does not prove that testosterone was low or that a supplement corrected it.</p>
+<p><strong>Verdict: Skip as a self-directed testosterone treatment; discuss stress-focused use separately with a clinician.</strong></p>
+<h2 id="how-this-2026-ranking-works">How this 2026 ranking works</h2>
+<p>The ranking puts a clear nutritional indication ahead of a hormone-marketing claim. Vitamin D, zinc, and magnesium each have established physiological roles and defined intake guidance; their positions do not mean they reliably raise testosterone in people without a deficiency.</p>
+<p>Ashwagandha ranks last because preliminary hormone findings do not settle effectiveness or safety for testosterone deficiency. <strong>No ingredient here earns a universal recommendation.</strong></p>
+<p>The nutritional amounts and upper limits above come from NIH Office of Dietary Supplements fact sheets. The herbal safety discussion follows the National Center for Complementary and Integrative Health's ashwagandha guidance. These sources address nutrition and safety, not approval of a testosterone-booster product.</p>
+<h2 id="before-choosing-a-supplement-follow-the-diagnostic-sequence">Before choosing a supplement, follow the diagnostic sequence</h2>
+<p>For a 2026 testosterone assessment, symptoms and properly interpreted blood testing belong together. DirectCare AI's testosterone care sits within clinician-led telehealth; it should not be confused with a promise that every symptom requires testosterone treatment.</p>
+<ul>
+<li><strong>Symptoms:</strong> Describe libido changes, erectile difficulties, energy, sleep, medication use, and fertility plans.</li>
+<li><strong>Morning testing:</strong> Your clinician determines whether an early-morning testosterone measurement is appropriate.</li>
+<li><strong>Repeat testing:</strong> A low result generally needs confirmation on a separate morning before diagnosing testosterone deficiency.</li>
+<li><strong>Treatment review:</strong> Discuss the cause, relevant additional tests, nutritional gaps, and treatment risks before choosing a plan.</li>
+</ul>
+<figure><img src="/optimized/blog-best-testosterone-support-supplements-compared-1.jpg" alt="Sequence from reviewing symptoms through morning testing, repeat testing, and treatment review." loading="lazy" /><figcaption>A supplement decision belongs after assessment, not in place of it.</figcaption></figure>
+<p>Acute illness, sleep disruption, and testing conditions can affect interpretation. One unexpected result is not a reason to start a hormone-focused supplement stack.</p>
+<p>Tell your clinician if you want children. Prescribed testosterone can suppress sperm production, and fertility goals change the treatment discussion. Supplements do not remove that risk or replace a fertility-aware treatment plan.</p>
+<div class="callout"><div class="callout-eyebrow">Start with a clinical assessment</div><p>Discuss symptoms, blood lab testing, and treatment questions with DirectCare AI.</p><p><a href="/testosterone-replacement-therapy">Explore clinical care →</a></p></div>
+<h2 id="which-testosterone-support-supplement-should-you-choose">Which testosterone support supplement should you choose?</h2>
+<p><strong>Choose the ingredient that addresses your actual nutritional problem—or choose none.</strong> Vitamin D makes sense for documented low vitamin D, zinc for an identified zinc shortfall, and magnesium for a dietary gap.</p>
+<p>If you have persistent symptoms, the better next step is assessment rather than trying several supplements in sequence. DirectCare AI is best for adults seeking clinician-led testosterone assessment rather than a supplement-only approach.</p>
+<p>Keep your 2026 decision simple: establish the problem, choose an intervention that matches it, and agree on follow-up. Avoid changing several ingredients at once; doing so makes benefits, side effects, and unnecessary products harder to identify.</p>
+<h2 id="faq">FAQ</h2>
+<h3>What's the best testosterone support supplement?</h3><p>There is no universally best testosterone support supplement. Vitamin D, zinc, or magnesium makes sense when it addresses a specific deficiency or intake gap; none reliably treats every cause of low testosterone.</p><h3>Does zinc increase testosterone?</h3><p>Correcting zinc deficiency can support normal testosterone production, but extra zinc is not an established testosterone booster when intake is adequate. Excess zinc can cause copper deficiency and other adverse effects.</p><h3>Is vitamin D better than magnesium for testosterone?</h3><p>Neither vitamin D nor magnesium is an established testosterone treatment for people without a relevant deficiency. Choose between them based on nutritional assessment, not a claim that one boosts hormones more.</p><h3>Does ashwagandha work for low testosterone?</h3><p>Ashwagandha is not an established treatment for testosterone deficiency. Some small studies report hormone changes, but evidence limitations and liver, thyroid, and medication concerns make clinical review important.</p><h3>Should I get blood tests before taking a testosterone booster?</h3><p>Persistent symptoms suggesting low testosterone warrant clinical assessment rather than a supplement trial. Diagnosis generally requires compatible symptoms and consistently low testosterone, confirmed with repeat morning testing.</p><h3>Are testosterone support supplements the same as TRT?</h3><p>No. Testosterone replacement therapy supplies prescribed testosterone, while supplements contain nutrients or other ingredients and do not provide equivalent treatment. TRT also requires discussion of monitoring, contraindications, and fertility.</p><h3>Can women take testosterone support supplements?</h3><p>Women should not use testosterone-support supplements to self-treat fatigue, low libido, or other possible hormone symptoms. These symptoms have multiple causes, and a clinician should assess the underlying issue before recommending treatment.</p>
+<h2 id="one-last-thing">One last thing</h2>
+<p>The phrase <em>testosterone support</em> on a bottle does not establish that the product treats testosterone deficiency. In the US, dietary supplements do not undergo FDA approval for safety and effectiveness before marketing in the way prescription drugs do.</p>
+<p>For your 2026 decision, bring photographs of every supplement label to your appointment. Include multivitamins and workout products. That simple inventory helps your clinician spot overlapping ingredients and interactions before you add another capsule.</p>
+<h2 id="related-guides">Related guides</h2>
+<ul>
+<li><a href="/blog/best-testosterone-delivery-methods-compared">Best testosterone delivery methods compared</a></li>
+<li><a href="/blog/trt-and-fertility-preserve-sperm-production">Best TRT protocols for preserving fertility ranked</a></li>
+<li><a href="/blog/best-hair-loss-treatments-for-men-ranked">Best hair loss treatments for men ranked</a></li>
+</ul>
+<section class="article-references" aria-labelledby="references-heading">
+  <h2 id="references-heading">References</h2>
+  <ol>
+    <li>Clemesha CG, et al. &#x27;Testosterone boosting&#x27; supplements composition and claims are not supported by the academic literature. World J Mens Health. 2020. <a href="https://pubmed.ncbi.nlm.nih.gov/31385468/" rel="noopener nofollow" target="_blank">Source</a></li>
+    <li>Bhasin S, et al. Testosterone therapy in men with hypogonadism: an Endocrine Society clinical practice guideline. J Clin Endocrinol Metab. 2018. <a href="https://pubmed.ncbi.nlm.nih.gov/29562364/" rel="noopener nofollow" target="_blank">Source</a></li>
+  </ol>
+</section>
+
+      <div class="product-cta">
+        <div>
+          <div class="product-cta-eyebrow">Build your stack with intent.</div>
+          <h3>Physician-formulated supplement protocols.</h3>
+          <p>DirectCare AI clinicians curate supplement protocols matched to your actual bloodwork — not a generic multivitamin.</p>
+          <a class="btn" href="/supplements">Browse supplements →</a>
+        </div>
+        <div></div>
+      </div>
+      <p class="article-disclaimer">
+        <strong>Editorial disclosure:</strong> This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.
+      </p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <h3>Keep reading</h3>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/best-supplements-to-support-glp-1-weight-loss"><div class="related-card-image"><img src="https://www.directcare.ai/optimized/blog-best-supplements-to-support-glp-1-weight-loss-featured.jpg" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Best supplements to support GLP-1 weight loss in 2026</h3></div></a><a class="related-card" href="/blog/electrolytes-sodium-potassium-magnesium-athletes"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/flatlay%20of%20women%27s%20protocol%20bottles.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Electrolytes for Athletes: Sodium, Potassium, Magnesium</h3></div></a><a class="related-card" href="/blog/vitamin-b12-folate-deficiency-labs-guide"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Gemini%20Flash_Professional%20nutritionist%20consulting%20with%20healthy%20adult%20client%2C%20discussing%20meal%20plan%20%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">Supplements</div><h3>Vitamin B12 and Folate: Who Runs Low and How Labs Guide It</h3></div></a></div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="/logo-color.png" alt="DirectCare AI" />
+        <p>DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h2>Blog</h2>
+        <a href="/blog">All posts</a>
+        <a href="/blog?cat=TRT">TRT</a>
+        <a href="/blog?cat=HRT">HRT</a>
+        <a href="/blog?cat=Weight%20Loss">Weight Loss</a>
+      </div>
+      <div class="foot-col">
+        <h2>Products</h2>
+        <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/weight-loss">Weight Loss</a>
+        <a href="/blood-test">Blood Labs</a>
+      </div>
+      <div class="foot-col">
+        <h2>Legal</h2>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Related posts: pull other recent posts from manifest, excluding this slug
+  (function() {
+    var grid = document.getElementById('related-grid');
+    if (!grid || grid.children.length) return;   // server-rendered related posts win
+    var thisSlug = 'best-testosterone-support-supplements-compared';
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+    fetch('/blog/posts.json', { cache: 'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var posts = (data.posts || []).filter(function(p){ return p.slug !== thisSlug; }).slice(0, 3);
+        if (posts.length === 0) { grid.parentElement.style.display = 'none'; return; }
+        grid.innerHTML = posts.map(function(p){
+          return ''
+            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '">'
+            +   '<div class="related-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
+            +   '<div class="related-card-body">'
+            +     '<div class="related-card-meta">' + escapeHtml(p.category) + '</div>'
+            +     '<h3>' + escapeHtml(p.title) + '</h3>'
+            +   '</div>'
+            + '</a>';
+        }).join('');
+      })
+      .catch(function(){ grid.parentElement.style.display = 'none'; });
+  })();
+</script>
+
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="tellescope.com"]');
+    if (a) {
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

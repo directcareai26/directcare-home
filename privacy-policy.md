@@ -126,9 +126,9 @@ Legal
 
 #### 6. Apple Health
 
-If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
+ If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
 
-Food diary. Meal photos and notes you add in My Health are saved only on your iPhone. We do not upload them, analyze them, or use them for advertising.
+ Food diary. Meal photos and notes you add in My Health are saved only on your iPhone. We do not upload them, analyze them, or use them for advertising.
 
 ### III. How We Collect Information
 

@@ -291,7 +291,10 @@ def render_callouts(html: str) -> str:
 
 def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     """Render one post. Returns (html, manifest_entry)."""
-    required = ["slug", "title", "category", "deck", "body_markdown"]
+    # `body_html` lets an imported article keep markup the markdown subset cannot
+    # express (tables, figures). It is inserted as-is, so only trusted, sanitized
+    # HTML belongs there; generated posts keep using body_markdown. 2026-10-28.
+    required = ["slug", "title", "category", "deck"] + ([] if payload.get("body_html") else ["body_markdown"])
     missing = [k for k in required if not payload.get(k)]
     if missing:
         raise ValueError(f"Missing required post fields: {missing}")
@@ -316,7 +319,7 @@ def render_post(payload: dict[str, Any]) -> tuple[str, dict[str, Any]]:
     title_html = payload.get("title_html") or _html.escape(title)
     category = payload["category"].strip()
     deck = payload["deck"].strip()
-    body_html = md_to_html(payload["body_markdown"])
+    body_html = payload.get("body_html") or md_to_html(payload["body_markdown"])
 
     date_iso = payload.get("date") or dt.date.today().isoformat()
     date_obj = dt.date.fromisoformat(date_iso)

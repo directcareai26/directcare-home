@@ -284,8 +284,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - [GLP-1 medications for weight loss compared](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference)
 
-- [Tirzepatide options ranked](https://www.directcare.ai/blog/best-tirzepatide-options-ranked-by-price)
-
 - [Hair regrowth treatments for women ranked](https://www.directcare.ai/blog/best-hair-regrowth-treatments-for-women-ranked)
 
 ### References

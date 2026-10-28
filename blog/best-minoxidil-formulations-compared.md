@@ -267,8 +267,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 - [GLP-1 medications for weight loss compared](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference)
 
-- [Tirzepatide options compared](https://www.directcare.ai/blog/best-tirzepatide-options-ranked-by-price)
-
 ### References
 
 - Minoxidil: a comprehensive review. J Dermatolog Treat. 2022. [Source](https://pubmed.ncbi.nlm.nih.gov/34159872/)

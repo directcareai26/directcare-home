@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Hair Regrowth
 
  October 28, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-28
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-28
 
 ## Best minoxidil formulations compared in 2026
 
@@ -266,8 +266,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 - [Testosterone delivery methods compared](https://www.directcare.ai/blog/best-testosterone-delivery-methods-compared)
 
 - [GLP-1 medications for weight loss compared](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference)
-
-- [Tirzepatide options compared](https://www.directcare.ai/blog/best-tirzepatide-options-ranked-by-price)
 
 ### References
 

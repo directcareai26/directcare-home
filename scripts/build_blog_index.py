@@ -9,6 +9,7 @@ Run this whenever you add a post to posts.json:
 import html
 import json
 import re
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,17 +51,20 @@ posts_inline = json.dumps({"posts": POSTS}, separators=(",", ":"))
 
 text = INDEX.read_text()
 
-# 1) Inject featured into featured-slot
-text = re.sub(
-    r'<div id="featured-slot">[\s\S]*?</div>',
-    f'<div id="featured-slot">{featured}</div>',
-    text, count=1,
+# 1+2) Replace the featured slot and the grid as ONE region, ending at the
+# subscribe block. The old per-div patterns ended at the first nested </div>,
+# so every run left the previous featured card and grid behind: by 2026-10-28
+# the raw HTML held 3,489 cards for 122 posts (2.8 MB), including retired posts.
+region = re.compile(
+    r'<div id="featured-slot">[\s\S]*?(?=<section class="subscribe-block">)'
 )
-
-# 2) Inject cards into post-grid
-text = re.sub(
-    r'<div class="post-grid" id="post-grid">[\s\S]*?</div>',
-    f'<div class="post-grid" id="post-grid">{cards}</div>',
+if len(region.findall(text)) != 1:
+    sys.exit("build_blog_index: featured-slot .. subscribe-block region not found exactly once")
+text = region.sub(
+    lambda _: (
+        f'<div id="featured-slot">{featured}</div>\n'
+        f'  <div class="post-grid" id="post-grid">{cards}</div>\n\n  '
+    ),
     text, count=1,
 )
 

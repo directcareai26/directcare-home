@@ -186,7 +186,11 @@ def check_references(refs, category: str, verify: bool = True) -> list[str]:
 
 
 def byline_html(slug: str, reg: dict) -> str:
-    """Reviewer byline for a post, or '' when no review is on record."""
+    """Reviewer byline for a post, or '' when no review is on record.
+
+    No credential suffix, here or in reviewer_schema: owner decision 2026-09-16
+    (177bd4d). That commit cleaned the HTML but not this generator, so every post
+    rendered afterwards carried 'D.C.' again until 2026-10-28."""
     entry = (reg.get("reviews") or {}).get(slug)
     if not isinstance(entry, dict):
         return ""
@@ -195,7 +199,7 @@ def byline_html(slug: str, reg: dict) -> str:
         return ""
     return (
         '<span class="dot"></span><span class="reviewed">Clinically reviewed by '
-        f'<a href="{who["url"]}">{who["name"]}, {who["credential"]}</a> '
+        f'<a href="{who["url"]}">{who["name"]}</a> '
         f'on <time datetime="{entry["date"]}">{entry["date"]}</time></span>'
     )
 
@@ -211,14 +215,8 @@ def reviewer_schema(slug: str, reg: dict):
         "reviewedBy": {
             "@type": "Person",
             "name": who["name"],
-            "honorificSuffix": who["credential"],
             "jobTitle": who.get("title", "Clinical Advisor"),
             "url": who["url"],
-            "hasCredential": {
-                "@type": "EducationalOccupationalCredential",
-                "name": who["credentialName"],
-                "credentialCategory": "degree",
-            },
         },
         "lastReviewed": entry["date"],
     }

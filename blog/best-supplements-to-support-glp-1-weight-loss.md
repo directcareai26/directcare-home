@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  Supplements
 
  October 28, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-28
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-28
 
 ## Best supplements to support GLP-1 weight loss in 2026
 
@@ -283,8 +283,6 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 ### Related guides
 
 - [GLP-1 medications for weight loss compared](https://www.directcare.ai/blog/semaglutide-tirzepatide-difference)
-
-- [Tirzepatide options ranked](https://www.directcare.ai/blog/best-tirzepatide-options-ranked-by-price)
 
 - [Hair regrowth treatments for women ranked](https://www.directcare.ai/blog/best-hair-regrowth-treatments-for-women-ranked)
 

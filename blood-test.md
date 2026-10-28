@@ -124,9 +124,9 @@ Source: https://www.directcare.ai/blood-test
 
  Read as a set, with plain-English context on what the combination may mean.
 
- ![Dr. Tim Pepin, D.C.]
+ ![Dr. Tim Pepin]
 
- **Dr. Tim Pepin, D.C. — Clinical Advisor & Director of Integrative Health**
+ **Dr. Tim Pepin — Clinical Advisor & Director of Integrative Health**
  Lab orders are clinician-signed and every result is reviewed by US-licensed clinicians. Drawn at Quest Diagnostics (CLIA-certified) · LegitScript certified · HIPAA compliant.
 
  How it works

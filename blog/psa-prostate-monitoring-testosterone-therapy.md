@@ -11,7 +11,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
  TRT
 
  September 22, 2026
- Clinically reviewed by [Dr. Tim Pepin, D.C.](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-02
+ Clinically reviewed by [Dr. Tim Pepin](https://www.directcare.ai/#dr-tim-pepin) on 2026-10-02
 
 ## PSA and Prostate Monitoring on Testosterone: what to actually check
 

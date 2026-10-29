@@ -8,7 +8,7 @@ Legal
 
 ## Privacy Policy
 
- Last Updated: October 28, 2026
+ Last Updated: October 29, 2026
 
  **PLEASE READ THIS PRIVACY POLICY CAREFULLY BEFORE USING OUR SERVICES OR WEBSITE.**
 
@@ -124,19 +124,21 @@ Legal
 
 - Analytics providers
 
-#### 6. Apple Health
+#### 6. Apple Health and Health Connect
 
  If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers unless you turn on the optional AI features described in section 7 below, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
 
- Food diary. Meal photos and notes you add in My Health are saved only on your iPhone. We do not upload or analyze them unless you turn on the optional AI features in section 7, and we never use them for advertising.
+ Food diary. Meal photos and notes you add in My Health are saved only on your phone. We do not upload or analyze them unless you turn on the optional AI features in section 7, and we never use them for advertising.
+
+**Health Connect (Android).** If you turn on My Health on an Android phone, the app uses Health Connect to read the data you choose: steps, exercise sessions, active calories, distance, sleep, resting heart rate, heart rate variability, blood oxygen, weight, blood glucose and water. It writes only the water you log. We read this data only while you are using My Health, to show it to you and to build a PDF report on your phone when you ask for one. It stays on your phone: we do not send it to our servers unless you turn on the optional AI features in section 7, and then only weekly averages of steps, sleep and resting heart rate are sent, without your name or email. We never sell Health Connect data, never use it for advertising or marketing, never use it to train AI models, and never use it for credit, insurance or employment decisions. The de-identified and aggregated data uses described elsewhere in this policy do not apply to Health Connect data. You can see and change what DirectCare AI may read at any time in Health Connect › App permissions › DirectCare AI, and turning permissions off stops all reading. DirectCare AI's use of information received from Health Connect adheres to the Health Connect Permissions policy, including the Limited Use requirements.
 
 #### 7. AI Features in My Health (Optional)
 
-If you turn on AI features in My Health, we send what you choose to analyze to our service providers so they can analyze it for you. This includes a meal photo, a meal description or a barcode, and weekly summary numbers from Apple Health (such as average steps, sleep and resting heart rate). We do not send your name or email to the AI.
+If you turn on AI features in My Health, we send what you choose to analyze to our service providers so they can analyze it for you. This includes a meal photo, a meal description or a barcode, and weekly summary numbers from Apple Health or Health Connect (such as average steps, sleep and resting heart rate). We do not send your name or email to the AI.
 
 **Who processes it:** Amazon Web Services (AWS) runs Anthropic’s Claude AI model for us in the United States, under a business associate agreement. Food nutrition facts come from the U.S. Department of Agriculture’s FoodData Central, which receives only food names or barcodes.
 
-**What we keep:** Meal photos are deleted right after analysis. We don’t store the analyzed data on our servers. Your food diary and health data stay on your iPhone. Your data is not used to train AI models and is not used for advertising or sold.
+**What we keep:** Meal photos are deleted right after analysis. We don’t store the analyzed data on our servers. Your food diary and health data stay on your phone. Your data is not used to train AI models and is not used for advertising or sold.
 
 **What AI does not do:** AI gives estimates and general education. It does not diagnose, treat, set calorie goals, or replace your care team.
 

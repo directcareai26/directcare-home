@@ -70,6 +70,7 @@ blog/hrt-after-40-what-actually-changes.md
 blog/hrt-bone-density-estradiol-prevents-fractures.md
 blog/hrv-heart-rate-variability-recovery-tracking.md
 blog/index.md
+blog/iron-rich-meals-for-women-vitamin-c-pairing.md
 blog/lifting-through-perimenopause-rep-ranges-recovery.md
 blog/low-libido-men-testosterone-stress-or-neither.md
 blog/magnesium-glycinate-vs-citrate-vs-threonate.md

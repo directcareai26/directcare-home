@@ -43,6 +43,16 @@ from render_post import write_post  # noqa: E402
 CLAUDE_MODEL = os.environ.get("CLAUDE_MODEL", "claude-opus-4-7")
 MAX_TOKENS = 8000
 
+# Which model writes the post. "anthropic" (default) calls the Claude API and
+# spends API credits. "local" calls an OpenAI-compatible server on the machine
+# running the job — the DGX Spark's Ollama — and costs nothing per post.
+LLM_BACKEND = os.environ.get("LLM_BACKEND", "anthropic").strip().lower()
+LOCAL_LLM_BASE_URL = os.environ.get("LOCAL_LLM_BASE_URL", "http://127.0.0.1:11434/v1").rstrip("/")
+LOCAL_LLM_MODEL = os.environ.get("LOCAL_LLM_MODEL", "gpt-oss:120b")
+# Set to "1" to fall back to Claude when the local model fails. Off by default
+# so the free pipeline never spends credits without being told to.
+LLM_FALLBACK_TO_CLAUDE = os.environ.get("LLM_FALLBACK_TO_CLAUDE", "0") == "1"
+
 BLOB = "https://crsurakhmbalgxim.public.blob.vercel-storage.com"
 
 # Image pools per category — generator picks one deterministically per post.
@@ -567,6 +577,64 @@ HARD PROHIBITIONS (a violation is a failed post, not a style note):
 """
 
 
+def _parse_json_reply(text: str) -> dict:
+    text = text.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+    # Reasoning models sometimes wrap the object in a sentence; take the
+    # outermost {...} span rather than failing the day on stray prose.
+    if not text.startswith("{"):
+        start, end = text.find("{"), text.rfind("}")
+        if start != -1 and end > start:
+            text = text[start:end + 1]
+    return json.loads(text)
+
+
+def call_local(topic: dict[str, str], date_label: str) -> dict:
+    """Generate the post with a local OpenAI-compatible server (Ollama on the DGX)."""
+    import urllib.request
+
+    prompt = PROMPT_TEMPLATE.format(category=topic["category"], angle=topic["angle"], date_label=date_label)
+    body = json.dumps({
+        "model": LOCAL_LLM_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "response_format": {"type": "json_object"},
+        "max_tokens": 16000,   # reasoning tokens count against this on gpt-oss
+        "stream": False,
+    }).encode("utf-8")
+    last_err: Exception | None = None
+    for attempt in range(1, 4):
+        try:
+            req = urllib.request.Request(
+                f"{LOCAL_LLM_BASE_URL}/chat/completions", data=body,
+                headers={"Content-Type": "application/json"},
+            )
+            with urllib.request.urlopen(req, timeout=1800) as r:
+                resp = json.loads(r.read().decode("utf-8"))
+            return _parse_json_reply(resp["choices"][0]["message"]["content"] or "")
+        except Exception as err:  # noqa: BLE001 — retry anything; the model can emit bad JSON
+            last_err = err
+            print(f"[generate_daily_post] local attempt {attempt}/3 failed: {type(err).__name__}: {err}",
+                  file=sys.stderr)
+            if attempt < 3:
+                time.sleep(15)
+    raise SystemExit(f"ERROR: local model {LOCAL_LLM_MODEL} at {LOCAL_LLM_BASE_URL} failed after 3 attempts: {last_err}")
+
+
+def generate_payload(topic: dict[str, str], date_label: str) -> dict:
+    if LLM_BACKEND != "local":
+        return call_claude(topic, date_label)
+    print(f"[generate_daily_post] writing with local model {LOCAL_LLM_MODEL}", file=sys.stderr)
+    try:
+        return call_local(topic, date_label)
+    except SystemExit:
+        if LLM_FALLBACK_TO_CLAUDE and os.environ.get("ANTHROPIC_API_KEY"):
+            print("[generate_daily_post] local model failed — falling back to Claude", file=sys.stderr)
+            return call_claude(topic, date_label)
+        raise
+
+
 def call_claude(topic: dict[str, str], date_label: str) -> dict:
     try:
         import anthropic  # type: ignore
@@ -661,7 +729,7 @@ def main() -> int:
         exhausted = topic["angle"] in load_used_angles()
         print(f"[generate_daily_post] {today} — {topic['category']}: {topic['angle']}", file=sys.stderr)
 
-        payload = call_claude(topic, date_label)
+        payload = generate_payload(topic, date_label)
         payload["date"] = today.isoformat()
         payload["dateLabel"] = date_label
         payload = merge_product_metadata(payload, topic["category"])

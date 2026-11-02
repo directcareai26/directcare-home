@@ -34,7 +34,12 @@ concurrency:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest
+    # BLOG_RUNNER repo variable picks the machine: unset = GitHub's ubuntu-latest
+    # (Claude API, costs credits); "dgx" = the self-hosted DGX Spark runner
+    # (local model, free). Flip it in Settings -> Secrets and variables -> Variables.
+    runs-on: ${{ vars.BLOG_RUNNER || 'ubuntu-latest' }}
+    # Local generation can take several minutes on a 120B model.
+    timeout-minutes: 60
     permissions:
       contents: write     # allow the workflow to commit + push the new post
 
@@ -77,6 +82,10 @@ jobs:
         if: steps.guard.outputs.already_posted == 'false'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # "local" = DGX model (free); anything else = Claude API.
+          LLM_BACKEND: ${{ vars.LLM_BACKEND || 'anthropic' }}
+          LOCAL_LLM_MODEL: ${{ vars.LOCAL_LLM_MODEL || 'gpt-oss:120b' }}
+          LLM_FALLBACK_TO_CLAUDE: ${{ vars.LLM_FALLBACK_TO_CLAUDE || '0' }}
           FORCE_CATEGORY: ${{ github.event.inputs.category }}
           FORCE_ANGLE: ${{ github.event.inputs.angle }}
         run: |

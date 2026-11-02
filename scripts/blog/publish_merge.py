@@ -54,6 +54,13 @@ def main():
             u = load("scripts/used_topics.json") if pathlib.Path("scripts/used_topics.json").exists() else []
             u += [a for a in new_angles if a not in u]
             pathlib.Path("scripts/used_topics.json").write_text(json.dumps(u, indent=2) + "\n")
+        # A post published from blog-queue/: the reset above restored its tracked
+        # queue file, so consume it again. Its images were moved into optimized/
+        # as untracked files, which the reset leaves alone.
+        for p in new_entries:
+            for q in [*pathlib.Path("blog-queue").glob(f"[0-9]*-{p['slug']}.json"),
+                      *pathlib.Path("blog-queue/images").glob(f"blog-{p['slug']}-*")]:
+                q.unlink()
         import render_post
         render_post.update_sitemap()
         sh("python3", "scripts/build_blog_index.py")
@@ -61,6 +68,9 @@ def main():
         sh("python3", "scripts/agent-files/build_agent_files.py")
         sh("git", "add", "-A", "blog", "sitemap.xml", "llms-full.txt", "scripts/used_topics.json", "scripts/agent-files/generated-files.txt")
         sh("git", "add", "-A", "--", "*.md", check=False)
+        sh("git", "add", "-A", "--", "blog-queue", check=False)
+        for p in new_entries:
+            sh("git", "add", "--", f"optimized/blog-{p['slug']}-*", check=False)
         title = new_entries[0]["title"]
         if sh("git", "diff", "--cached", "--quiet", check=False).returncode == 0:
             print("publish_merge: nothing to commit"); return 0

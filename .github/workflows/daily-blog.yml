@@ -82,7 +82,13 @@ jobs:
         run: |
           if [ -n "$FORCE_ANGLE" ]; then
             python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}" --category "$FORCE_CATEGORY" --angle "$FORCE_ANGLE"
+          # Pre-written posts in blog-queue/ (e.g. Ryze imports) take today's slot,
+          # one per day. Empty queue (exit 3) or a post the editorial guard blocks
+          # (exit 1, it stays queued) falls back to the generator.
+          elif python3 scripts/blog/publish_from_queue.py --date "${{ steps.guard.outputs.today }}"; then
+            echo "Published today's post from blog-queue/."
           else
+            [ $? -eq 1 ] && echo "::warning::Queued post was blocked by the editorial guard; generating instead. See the log above."
             python3 scripts/generate_daily_post.py --date "${{ steps.guard.outputs.today }}"
           fi
 

@@ -100,6 +100,7 @@ blog/protein-timing-post-workout-window.md
 blog/psa-prostate-monitoring-testosterone-therapy.md
 blog/pt-141-bremelanotide-libido-melanocortin-pathway.md
 blog/read-hormone-panel-like-clinician.md
+blog/ro-alternatives-for-weight-loss.md
 blog/rucking-cardio-strength-training-guide.md
 blog/salmon-tacos-cabbage-slaw-recipe.md
 blog/semaglutide-tirzepatide-difference.md

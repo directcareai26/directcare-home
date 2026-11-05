@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N7ZG3PT8');</script>
+<!-- End Google Tag Manager -->
+<!-- Global Privacy Control — honored, as promised in our CCPA notice. When the browser sends the GPC
+     signal, the advertising pixels are stubbed out before they can initialize, so no identifiers are shared. -->
+<script>(function(){try{var gpc=(navigator.globalPrivacyControl===true)||(document.cookie.indexOf('dca_gpc=1')>-1);
+if(!gpc)return;window.__dcaGPC=true;
+var noop=function(){};noop.queue=[];noop.push=noop;noop.loaded=true;noop.version='2.0';noop.callMethod=null;
+window.fbq=window._fbq=noop;window.pintrk=noop;window.pintrk.queue=[];
+window.dcaSuppressAds=true;}catch(e){}})();</script>
+<!-- Meta Pixel Code (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create fbq() stub immediately so events queue regardless of when fbevents.js loads
+  if (window.fbq) return;
+  var n = window.fbq = function(){
+    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+  };
+  if (!window._fbq) window._fbq = n;
+  n.push = n; n.loaded = true; n.version = '2.0'; n.queue = [];
+
+  // Queue events NOW so they're sent the moment fbevents.js loads
+  fbq('init', '1567193354573862');
+  fbq('init', '1068250912518605');
+  /* PageView fired by /js/dc-signal.js with a shared event_id */
+
+  // Lazy-load fbevents.js on first interaction or 2.5s — keeps it out of
+  // the PageSpeed TBT measurement window on mobile
+  var loaded = false;
+  function loadFbEvents() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadFbEvents, { once: true, passive: true });
+  });
+  setTimeout(loadFbEvents, 10000);
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1567193354573862&ev=PageView&noscript=1"
+alt="" /></noscript>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1068250912518605&ev=PageView&noscript=1"
+alt="" /></noscript>
+<!-- End Meta Pixel Code -->
+<!-- Pinterest Tag (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(){
+  // Create pintrk() stub immediately so events queue regardless of when core.js loads
+  if (window.pintrk) return;
+  window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments));
+  };
+  var n = window.pintrk; n.queue = []; n.version = '3.0';
+
+  // Queue events NOW so they fire the moment core.js loads
+  pintrk('load', '549770546296');
+  pintrk('page');
+
+  // Lazy-load core.js on first interaction or 10s — keeps it out of the
+  // PageSpeed TBT window on mobile (same pattern as GTM / Meta Pixel above)
+  var loaded = false;
+  function loadPinterest() {
+    if (loaded) return;
+    loaded = true;
+    var t = document.createElement('script');
+    t.async = true;
+    t.src = 'https://s.pinimg.com/ct/core.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(t, s);
+  }
+  var events = ['scroll', 'click', 'touchstart', 'keydown', 'mousemove'];
+  events.forEach(function(evt) {
+    window.addEventListener(evt, loadPinterest, { once: true, passive: true });
+  });
+  setTimeout(loadPinterest, 10000);
+
+  // Conversion event: fire Pinterest 'lead' + server-side CAPI (deduped via event_id)
+  // when a visitor clicks through to the intake portal — the genuine signup intent.
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || !a.href || a.href.indexOf('portal.tellescope.com') === -1) return;
+    var eid = 'dca-' + Date.now() + '-' + Math.random().toString(36).slice(2, 10);
+    try { pintrk('track', 'lead', { event_id: eid }); } catch (err) {}
+    try { rkp('event', 'LEAD', { event_id: eid }); } catch (err) {}
+    try {
+      navigator.sendBeacon('/api/pinterest-capi', JSON.stringify({
+        event_name: 'lead', event_id: eid, event_url: location.href
+      }));
+      navigator.sendBeacon('/api/roku-capi', JSON.stringify({
+        event_name: 'LEAD', event_id: eid, event_url: location.href
+      }));
+    } catch (err) {}
+  }, { capture: true });
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt=""
+src="https://ct.pinterest.com/v3/?event=init&tid=549770546296&noscript=1"
+/></noscript>
+<!-- End Pinterest Tag -->
+<!-- Roku Pixel (lazy-loaded — fires on first interaction or 10s, whichever first) -->
+<script>
+(function(w,d){
+  if (w.rkp) return;
+  // Roku's official pixel stub: queues rkp() calls until the loader lands.
+  var t = w.rkp = function(){
+    var a = Array.prototype.slice.call(arguments);
+    a.push(Date.now());
+    t.eventProcessor ? t.eventProcessor.apply(t, a) : t.queue.push(a);
+  };
+  t.initiatorVersion = '1.0';
+  t.queue = [];
+  t.load = function(src){
+    var s = d.createElement('script'); s.async = true; s.src = src;
+    var f = d.getElementsByTagName('script')[0];
+    (f ? f.parentNode : d.body).insertBefore(s, f);
+  };
+
+  // Queue init + PageView NOW so they fire the moment the loader executes
+  rkp('init', 'Pacc66xnjXEH');
+  rkp('event', 'PAGE_VIEW');
+
+  // Lazy-load the loader on first interaction or 10s — same pattern as GTM/Meta/Pinterest
+  var loaded = false;
+  function loadRoku(){ if (loaded) return; loaded = true; rkp.load('https://cdn.ravm.tv/ust/dist/rkp.loader.js'); }
+  ['scroll','click','touchstart','keydown','mousemove'].forEach(function(evt){
+    window.addEventListener(evt, loadRoku, { once: true, passive: true });
+  });
+  setTimeout(loadRoku, 10000);
+})(window, document);
+</script>
+<!-- End Roku Pixel -->
+
+
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#241432" />
+<title>Ro alternatives for TRT in 2026 | DirectCare AI</title>
+<meta name="description" content="Compare Ro alternatives for TRT in 2026: DirectCare AI for telehealth TRT, or specialist care for complex symptoms. Know which labs and questions matter." />
+<meta name="keywords" content="TRT" />
+<link rel="canonical" href="https://www.directcare.ai/blog/ro-alternatives-for-trt" />
+<link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/json" />
+<link rel="alternate" type="application/rss+xml" title="DirectCare AI Blog" href="https://www.directcare.ai/blog/rss.xml" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.directcare.ai/blog/ro-alternatives-for-trt" />
+<meta property="og:title" content="Ro alternatives for TRT in 2026" />
+<meta property="og:description" content="Compare Ro alternatives for TRT in 2026: DirectCare AI for telehealth TRT, or specialist care for complex symptoms. Know which labs and questions matter." />
+<meta property="og:image" content="https://www.directcare.ai/optimized/blog-ro-alternatives-for-trt-featured.jpg" />
+<meta property="article:published_time" content="2026-11-05" />
+<meta property="article:section" content="TRT" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/png" href="/icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalScholarlyArticle",
+  "headline": "Ro alternatives for TRT in 2026",
+  "datePublished": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "description": "Compare Ro alternatives for TRT in 2026: DirectCare AI for telehealth TRT, or specialist care for complex symptoms. Know which labs and questions matter.",
+  "image": "https://www.directcare.ai/optimized/blog-ro-alternatives-for-trt-featured.jpg",
+  "articleSection": "TRT",
+  "author": {
+    "@type": "Organization",
+    "name": "DirectCare AI Clinical Team",
+    "url": "https://www.directcare.ai"
+  },"reviewedBy": {"@type": "Person", "name": "Dr. Tim Pepin", "jobTitle": "Clinical Advisor", "url": "https://www.directcare.ai/#dr-tim-pepin"}, "lastReviewed": "2026-11-05",
+  "publisher": {
+    "@type": "Organization",
+    "name": "DirectCare AI",
+    "url": "https://www.directcare.ai",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.directcare.ai/logo-color.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.directcare.ai/blog/ro-alternatives-for-trt"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --bg: #faf6f0; --bg-2: #f4eee5; --bg-cream: #f0e8d8; --surface: #ffffff;
+    --ink: #241432; --ink-soft: #332543; --muted: #3d3247;
+    --line: rgba(36,20,50,0.10); --line-strong: rgba(36,20,50,0.18);
+    --brand: #853FAC; --brand-deep: #762ba4; --brand-darker: #44215A; --dark: #241432;
+    --gold-soft: #f5e6c2;
+    --radius: 14px; --radius-lg: 22px; --radius-xl: 32px;
+  }
+  * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body { font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: -0.01em; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  h1, h2, h3, h4 { margin: 0; font-family: 'Geist', sans-serif; letter-spacing: -0.025em; line-height: 1.1; font-weight: 500; color: var(--ink); }
+  p { margin: 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+
+  .top-strip { background: var(--gold-soft); color: var(--ink); padding: 9px 16px; text-align: center; font-size: 0.82rem; font-weight: 500; }
+  .top-strip a { font-weight: 600; text-decoration: underline; margin-left: 4px; }
+
+  .nav { position: sticky; top: 0; z-index: 50; background: var(--bg); border-bottom: 1px solid var(--line); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1320px; margin: 0 auto; padding: 14px clamp(20px, 4vw, 48px); gap: 16px; }
+  .nav-logo img { height: 30px; }
+  .nav-links { display: flex; gap: 30px; align-items: center; }
+  .nav-link { font-size: 0.90rem; font-weight: 500; color: var(--ink); padding: 6px 0; display: inline-flex; align-items: center; gap: 4px; transition: color .15s ease; }
+  .nav-link:hover { color: var(--brand-deep); }
+  .nav-link.has-arrow::after { content: "▾"; font-size: 0.62em; opacity: 0.7; }
+  .nav-link.active { color: var(--brand-deep); font-weight: 600; }
+  .nav-login { font-size: 0.88rem; font-weight: 600; color: var(--ink); }
+  .mobile-toggle { display: none; width: 38px; height: 38px; border-radius: 50%; background: var(--bg-2); border: 1px solid var(--line); cursor: pointer; align-items: center; justify-content: center; color: var(--ink); }
+  .mobile-toggle svg { width: 20px; height: 20px; }
+  @media (max-width: 820px) { .nav-links { display: none; } .mobile-toggle { display: inline-flex; } .nav-login { display: none; } }
+
+  /* ARTICLE LAYOUT */
+  .article-hero { padding: clamp(36px, 5vw, 60px) 0 0; }
+  .article-meta { display: inline-flex; align-items: center; gap: 10px; font-size: 0.74rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 18px; }
+  .article-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--brand-deep); opacity: 0.5; }
+  .article-references { margin: 40px 0 8px; padding-top: 24px; border-top: 1px solid var(--line, #e6e1ee); }
+  .article-references h2 { font-size: 1.02rem; letter-spacing: 0.01em; margin-bottom: 12px; }
+  .article-references ol { padding-left: 20px; }
+  .article-references li { font-size: 0.86rem; line-height: 1.55; color: var(--muted, #5b5566); margin-bottom: 9px; }
+  .article-references a { color: var(--brand-deep); white-space: nowrap; }
+  .article-meta .reviewed { text-transform: none; letter-spacing: 0.01em; font-weight: 500; }
+  .article-meta .date { color: var(--muted); font-weight: 500; letter-spacing: 0.04em; }
+  .article-meta a { color: var(--brand-deep); }
+  .article-title { font-size: clamp(2.0rem, 4.4vw, 3.4rem); font-weight: 500; letter-spacing: -0.035em; line-height: 1.0; max-width: 880px; margin-bottom: 18px; }
+  .article-title em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-deck { font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(1.05rem, 1.4vw, 1.22rem); color: var(--ink-soft); line-height: 1.55; max-width: 760px; margin: 0 0 32px; }
+  .article-cover { aspect-ratio: 16/9; border-radius: var(--radius-xl); overflow: hidden; margin-bottom: 48px; box-shadow: 0 24px 56px -20px rgba(36,20,50,0.30); }
+  .article-cover img { width: 100%; height: 100%; object-fit: cover; }
+
+  .article-body { max-width: 720px; margin: 0 auto; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.1rem; line-height: 1.75; color: var(--ink); }
+  .article-body h2 { font-family: 'Geist', sans-serif; font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 500; letter-spacing: -0.025em; margin: 56px 0 18px; line-height: 1.15; color: var(--ink); }
+  .article-body h2 em { font-style: italic; color: var(--brand-deep); font-weight: 500; }
+  .article-body h3 { font-family: 'Geist', sans-serif; font-size: 1.25rem; font-weight: 600; letter-spacing: -0.015em; margin: 36px 0 12px; color: var(--ink); }
+  .article-body p { margin: 0 0 22px; }
+  .article-body a { color: var(--brand-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .article-body a:hover { color: var(--brand-darker); }
+  .article-body ul, .article-body ol { margin: 0 0 22px; padding-left: 24px; }
+  .article-body li { margin-bottom: 8px; }
+  .article-body blockquote { font-family: 'Source Serif 4', Georgia, serif; font-style: italic; font-size: 1.22rem; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--brand); padding: 4px 0 4px 24px; margin: 32px 0; }
+  .article-body strong { font-weight: 600; color: var(--ink); }
+  .article-body .table-wrap { overflow-x: auto; margin: 0 0 28px; -webkit-overflow-scrolling: touch; }
+  .article-body table { width: 100%; border-collapse: collapse; font-family: 'Geist', sans-serif; font-size: 0.92rem; line-height: 1.5; }
+  .article-body th, .article-body td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid rgba(0,0,0,0.08); }
+  .article-body th { font-weight: 600; color: var(--ink); background: var(--bg-cream); }
+  .article-body figure { margin: 32px 0; }
+  .article-body figure img { display: block; width: 100%; height: auto; border-radius: var(--radius-lg); }
+  .article-body figcaption { font-family: 'Geist', sans-serif; font-size: 0.85rem; color: var(--ink-soft); margin-top: 8px; }
+  .callout { background: var(--bg-cream); border-radius: var(--radius-lg); padding: 22px 26px; margin: 32px 0; font-family: 'Geist', sans-serif; font-size: 0.98rem; line-height: 1.6; color: var(--ink-soft); }
+  .callout-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 6px; }
+
+  /* PRODUCT CTA */
+  .product-cta { background: linear-gradient(135deg, #efe0fa 0%, #f4eee5 100%); border-radius: var(--radius-xl); padding: 32px 36px; margin: 48px 0; display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: center; }
+  @media (max-width: 720px) { .product-cta { grid-template-columns: 1fr; text-align: center; } }
+  .product-cta-eyebrow { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.10em; color: var(--brand-deep); margin-bottom: 8px; font-family: 'Geist', sans-serif; }
+  .product-cta h3 { font-family: 'Geist', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: -0.02em; margin-bottom: 8px; color: var(--ink); }
+  .product-cta p { font-family: 'Geist', sans-serif; font-size: 0.95rem; color: var(--ink-soft); line-height: 1.5; margin-bottom: 16px; }
+  .product-cta .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--ink); color: var(--bg); padding: 12px 24px; border-radius: 999px; font-size: 0.9rem; font-weight: 600; font-family: 'Geist', sans-serif; transition: background .25s ease; }
+  .product-cta .btn:hover { background: var(--brand-darker); }
+
+  .article-disclaimer { max-width: 720px; margin: 56px auto 0; padding: 20px 0 0; border-top: 1px solid var(--line); font-family: 'Geist', sans-serif; font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
+
+  /* RELATED POSTS */
+  .related-section { max-width: 1280px; margin: 72px auto 0; padding: 0 clamp(20px, 4vw, 48px); }
+  .related-section h3 { font-family: 'Geist', sans-serif; font-size: 1.4rem; font-weight: 500; margin-bottom: 24px; letter-spacing: -0.02em; }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 80px; }
+  @media (max-width: 900px) { .related-grid { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: 1fr; } }
+  .related-card { background: white; border: 1px solid var(--line); border-radius: var(--radius-xl); overflow: hidden; display: flex; flex-direction: column; transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .related-card:hover { transform: translateY(-4px); box-shadow: 0 24px 48px -18px rgba(36,20,50,0.22); border-color: var(--line-strong); }
+  .related-card-image { aspect-ratio: 16/10; overflow: hidden; background: var(--bg-2); }
+  .related-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(0.22, 1, 0.36, 1); }
+  .related-card:hover .related-card-image img { transform: scale(1.05); }
+  .related-card-body { padding: 20px 22px 22px; }
+  .related-card-meta { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--brand-deep); margin-bottom: 8px; }
+  .related-card h3 { font-family: 'Geist', sans-serif; font-size: 1.04rem; font-weight: 500; letter-spacing: -0.015em; line-height: 1.3; color: var(--ink); }
+
+  /* FOOTER (lite) */
+  footer { background: var(--bg-2); border-top: 1px solid var(--line); padding: 48px 0 24px; margin-top: 40px; font-family: 'Geist', sans-serif; }
+  footer .container { max-width: 1280px; margin: 0 auto; padding: 0 clamp(20px, 4vw, 48px); }
+  .foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; } .foot-brand { grid-column: 1 / -1; } }
+  @media (max-width: 540px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-brand img { height: 30px; margin-bottom: 16px; }
+  .foot-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 360px; color: var(--ink-soft); }
+  .foot-col h2 { font-size: 0.82rem; font-weight: 700; color: var(--ink); text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 16px; }
+  .foot-col a { display: block; font-size: 0.9rem; color: var(--muted); padding: 4px 0; }
+  .foot-col a:hover { color: var(--brand); }
+  .legal { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-top: 28px; margin-top: 40px; border-top: 1px solid var(--line); font-size: 0.8rem; color: var(--muted); }
+
+  /* Mobile legibility: raise the floor on small text (≤720px) */
+  @media (max-width: 720px) {
+    p, li, .faq-body, .article-body p, .article-body li { font-size: max(1rem, 1em); }
+    small, .fine, .foot-col a, .legal, .disclaimer, .article-disclaimer { font-size: max(0.85rem, 1em); }
+  }
+.answer-first{font-size:1.08rem;line-height:1.65;font-weight:500;color:var(--ink,#1c1330);padding:16px 20px;border-left:3px solid var(--brand-deep,#500978);background:rgba(80,9,120,.04);border-radius:8px;margin:0 0 28px}
+.post-callout{border-left:3px solid var(--brand-deep,#500978);background:rgba(80,9,120,.045);border-radius:8px;padding:14px 18px;margin:24px 0;line-height:1.6}.post-callout strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--brand-deep,#500978);margin-bottom:5px}
+</style>
+  <script src="/js/dc-signal.js?v=20260911" defer></script>
+  <script src="/js/dc-webmcp.js?v=20260914" defer></script>
+  <script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N7ZG3PT8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="top-strip">
+  Save up to 80% on prescriptions with the DirectCare Pharmacy Card. <a href="https://therxcard.net/ZW6727/en/home" target="_blank" rel="noopener noreferrer">Get yours free →</a>
+</div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="/">
+      <img src="/logo-color.png" alt="DirectCare AI" />
+    </a>
+    <div class="nav-links">
+      <a class="nav-link has-arrow" href="/womens-health">Women's Health</a>
+      <a class="nav-link has-arrow" href="/mens-health">Men's Health</a>
+      <a class="nav-link" href="/supplements">Supplements</a>
+      <a class="nav-link" href="/blood-test">Blood Labs</a>
+    </div>
+    <a class="nav-login" href="https://directcareai.portal.tellescope.com/">Log in</a>
+  </div>
+</nav>
+
+<div class="container" role="main">
+  <article>
+    <header class="article-hero">
+      <div class="article-meta">
+        <a href="/blog">Blog</a>
+        <span class="dot"></span>
+        <span>TRT</span>
+        <span class="dot"></span>
+        <span class="date">November 5, 2026</span>
+      <span class="dot"></span><span class="reviewed">Clinically reviewed by <a href="https://www.directcare.ai/#dr-tim-pepin">Dr. Tim Pepin</a> on <time datetime="2026-11-05">2026-11-05</time></span></div>
+      <h1 class="article-title">Ro alternatives for TRT in 2026</h1>
+      <p class="article-deck">Compare Ro alternatives for TRT in 2026: DirectCare AI for telehealth TRT, or specialist care for complex symptoms. Know which labs and questions matter.</p>
+      <div class="article-cover">
+        <img src="https://www.directcare.ai/optimized/blog-ro-alternatives-for-trt-featured.jpg" alt="" />
+      </div>
+    </header>
+
+    <div class="article-body">
+<p>Ro’s strength is bringing several health concerns into an online-care setting, but a familiar telehealth brand is not enough to establish whether a service fits your testosterone needs. The best Ro alternatives for TRT in 2026 are <a href="/testosterone-replacement-therapy">DirectCare AI</a> if you want a telehealth platform that explicitly includes TRT, and an endocrinologist if you need specialist evaluation of a complicated hormone problem. Choose the clinical pathway first—not the brand you recognize.</p>
+<div class="callout"><div class="callout-eyebrow">TL;DR</div><ul><li>DirectCare AI belongs on your shortlist of Ro alternatives for TRT because its stated telehealth services include TRT and blood lab testing.</li><li>An endocrinologist is the stronger fit when low testosterone needs a detailed investigation of its cause.</li><li>A urologist is a useful option when testosterone concerns overlap with fertility or testicular symptoms.</li><li>TRT decisions require symptoms, properly timed testosterone testing, and a monitoring plan—not fatigue alone.</li></ul></div>
+<h2 id="why-this-matters">Why this matters</h2>
+<p>Testosterone replacement therapy treats a medical condition, not a vague feeling that you should have more energy. Fatigue, reduced sex drive, and erectile difficulties can overlap with poor sleep, medication effects, depression, and other conditions.</p>
+<p><strong>DirectCare AI is a telehealth TRT option for adult men seeking licensed-clinician evaluation rather than choosing treatment from symptoms alone.</strong> That makes it relevant to this comparison; it does not establish that TRT is right for you.</p>
+<p>For a 2026 decision, separate three questions: Does the provider evaluate testosterone deficiency? Does that evaluation fit your medical history? Can the provider manage the follow-up your treatment requires?</p>
+<h2 id="ro-alternatives-at-a-glance">Ro alternatives at a glance</h2>
+<p>This comparison separates a named telehealth platform from clinical care routes. Specialist and primary-care practices differ, so confirm what an individual clinician actually manages before booking.</p>
+<div class="table-wrap"><table><thead><tr><th>Option</th><th>Best for</th><th>Main distinction</th><th>What to check before choosing</th></tr></thead><tbody><tr><td>Ro</td><td>People evaluating a familiar online-care brand</td><td>An online-care starting point rather than proof of a particular TRT pathway</td><td>Whether the current service evaluates and treats testosterone deficiency</td></tr><tr><td>DirectCare AI</td><td>People seeking telehealth evaluation for TRT</td><td>Explicitly lists TRT and blood lab testing among its services</td><td>Eligibility, required labs, treatment choices, and follow-up arrangements</td></tr><tr><td>Endocrinologist</td><td>Complicated or unexplained hormone findings</td><td>Specialist training in hormone disorders</td><td>Whether the practice evaluates adult testosterone deficiency</td></tr><tr><td>Urologist</td><td>Testosterone concerns involving fertility or testicular symptoms</td><td>Specialist training in the urinary and male reproductive systems</td><td>Whether the clinician focuses on men&#x27;s reproductive health</td></tr><tr><td>Primary-care clinician</td><td>Symptoms that need a broad initial assessment</td><td>A starting point for evaluating several possible causes</td><td>Whether ongoing TRT management or referral fits the practice</td></tr></tbody></table></div>
+<p>The useful distinction is not online versus offline. It is whether the clinician can establish the diagnosis, explain the cause, and respond when your treatment needs change.</p>
+<h2 id="1-directcare-best-for-a-telehealth-trt-starting-point">1. DirectCare AI: best for a telehealth TRT starting point</h2>
+<p>DirectCare AI connects US patients with licensed clinicians, and its stated services include TRT and blood lab testing. That makes the platform a relevant starting point when you specifically want to discuss testosterone treatment through telehealth.</p>
+<p>Do not turn that service description into a prescription expectation. A clinician still needs to determine whether your symptoms, test results, and medical history support treatment.</p>
+<h3 id="where-directcare-shines">Where DirectCare AI shines</h3>
+<ul>
+<li>TRT is an explicitly stated service, rather than an assumption based on a general men&#x27;s-health label.</li>
+<li>Blood lab testing is also included in the platform&#x27;s stated scope, and its TRT program lists an enclomiphene pathway for men who want to preserve fertility.</li>
+<li>Its broader service range includes sexual health, which is relevant when you need to explain overlapping concerns during evaluation.</li>
+</ul>
+<h3 id="where-this-option-falls-short">Where this option falls short</h3>
+<ul>
+<li>A remote appointment cannot perform a hands-on examination of a testicular lump, breast change, or other physical finding.</li>
+<li>A telehealth starting point does not replace specialist investigation when the cause of low testosterone is unclear.</li>
+<li>A service listing alone does not tell you which formulation, testing schedule, or treatment plan will suit you.</li>
+</ul>
+<p>Ask who reviews your results, which findings trigger referral, and how follow-up works before choosing a provider. Those answers matter more than whether an intake form is easy to finish.</p>
+<p><strong>Best for:</strong> Adults who want a telehealth route to a clinician-led TRT discussion.</p>
+<p><strong>Verdict: Hold off on treatment until the clinician establishes the diagnosis and monitoring plan.</strong></p>
+<h2 id="2-endocrinologist-best-for-complex-hormone-findings">2. Endocrinologist: best for complex hormone findings</h2>
+<p>An endocrinologist evaluates disorders involving hormones and the glands that produce them. This route is particularly relevant when low testosterone appears alongside other abnormal hormone results or needs investigation beyond replacement therapy.</p>
+<p>Low testosterone is a finding; it is not always the full diagnosis. The useful question is why it is low.</p>
+<h3 id="where-an-endocrinologist-shines">Where an endocrinologist shines</h3>
+<ul>
+<li>Investigates hormone-related causes of testosterone deficiency.</li>
+<li>Can assess whether pituitary or testicular signaling needs further evaluation.</li>
+<li>Helps distinguish a replacement-treatment question from a broader endocrine problem.</li>
+</ul>
+<h3 id="where-an-endocrinologist-falls-short">Where an endocrinologist falls short</h3>
+<ul>
+<li>Specialist evaluation is not a substitute for urgent assessment of sudden or severe symptoms.</li>
+<li>Not every endocrinology practice focuses on adult male reproductive hormones.</li>
+<li>A specialist visit does not guarantee that testosterone treatment is indicated.</li>
+</ul>
+<div class="table-wrap"><table><thead><tr><th>Decision point</th><th>Endocrinologist</th><th>Ro</th></tr></thead><tbody><tr><td>Clinical starting point</td><td>Hormone-disorder evaluation</td><td>Online-care service selection</td></tr><tr><td>Main fit</td><td>Investigating complicated hormone findings</td><td>Exploring the services currently offered</td></tr><tr><td>Question to ask</td><td>What explains the abnormal testosterone result?</td><td>Does the current service provide the evaluation I need?</td></tr></tbody></table></div>
+<p>In 2026, choose an endocrinologist when the explanation matters as much as the treatment. Tell the practice about abnormal results and relevant symptoms when requesting an appointment.</p>
+<p><strong>Best for:</strong> People with unexplained low testosterone or a more complicated hormone history.</p>
+<p><strong>Verdict: Hold off on a treatment-first approach until the underlying findings are assessed.</strong></p>
+<h2 id="3-urologist-best-for-fertility-and-testicular-concerns">3. Urologist: best for fertility and testicular concerns</h2>
+<p>A urologist is a relevant alternative when testosterone concerns overlap with reproductive health. Fertility goals, testicular symptoms, and some sexual-health problems change what a useful evaluation needs to cover.</p>
+<p>This distinction matters because externally supplied testosterone can suppress sperm production. A discussion about future pregnancy plans belongs before treatment, not after it starts.</p>
+<h3 id="where-a-urologist-shines">Where a urologist shines</h3>
+<ul>
+<li>Evaluates testicular and male reproductive concerns.</li>
+<li>Can address fertility questions alongside testosterone symptoms.</li>
+<li>Provides an in-person route when physical examination is necessary.</li>
+</ul>
+<h3 id="where-a-urologist-falls-short">Where a urologist falls short</h3>
+<ul>
+<li>Not every urologist specializes in reproductive medicine or testosterone management.</li>
+<li>A urology appointment does not make every erectile problem a testosterone problem.</li>
+<li>Hormone findings involving other endocrine conditions can require additional specialist input.</li>
+</ul>
+<p><strong>Best for:</strong> People whose testosterone concerns include fertility goals or testicular findings.</p>
+<p><strong>Verdict: Skip a TRT-first approach until fertility goals and relevant physical symptoms are addressed.</strong></p>
+<h2 id="4-primary-care-best-for-a-broad-first-assessment">4. Primary care: best for a broad first assessment</h2>
+<p>A primary-care clinician is a practical starting point when your main complaint is tiredness, reduced libido, or a general decline in how you feel. The job is to assess the whole picture before narrowing the explanation to testosterone.</p>
+<p>Bring your medication list, sleep history, previous results, and a clear description of when symptoms started. Those details help the clinician decide what testing and referrals are appropriate.</p>
+<h3 id="where-primary-care-shines">Where primary care shines</h3>
+<ul>
+<li>Assesses common alternative explanations for nonspecific symptoms.</li>
+<li>Can put new symptoms in the context of existing conditions and medications.</li>
+<li>Provides a route to specialist referral when the findings call for it.</li>
+</ul>
+<h3 id="where-primary-care-falls-short">Where primary care falls short</h3>
+<ul>
+<li>Individual clinicians differ in whether they manage TRT themselves.</li>
+<li>Complicated hormone or fertility findings can require specialist care.</li>
+</ul>
+<p><strong>Best for:</strong> People who need an initial assessment rather than a predetermined treatment.</p>
+<p><strong>Verdict: Hold off on choosing a testosterone prescription before completing a broad evaluation.</strong></p>
+<h2 id="what-a-sound-trt-evaluation-includes">What a sound TRT evaluation includes</h2>
+<p>A useful comparison of providers starts with the clinical process. In 2026, a polished website still cannot replace a diagnosis supported by symptoms and appropriate testing.</p>
+<h3 id="symptoms">Symptoms</h3>
+<p>Explain what changed and how it affects you. Reduced libido, fewer spontaneous erections, and other symptoms deserve assessment, but none establishes testosterone deficiency on its own.</p>
+<h3 id="morning-testing">Morning testing</h3>
+<p>The American Urological Association recommends diagnosing low testosterone only after <strong>2 total-testosterone measurements on separate early mornings</strong>, together with symptoms or signs. Testosterone varies, so a single result is not enough.</p>
+<p>The association uses <strong>below 300 ng/dL</strong> as a reasonable total-testosterone cutoff supporting the diagnosis. That threshold is not permission to self-prescribe; your clinician must interpret the result in context.</p>
+<h3 id="cause-assessment">Cause assessment</h3>
+<p>Ask what the results suggest about the source of the problem. Depending on the findings, clinicians use additional testing, including luteinizing hormone, to help distinguish different causes.</p>
+<p>Also disclose fertility goals, sleep apnea, medications, and relevant medical history. These details affect the decision, not just the paperwork.</p>
+<h3 id="monitoring">Monitoring</h3>
+<p>Ask how the clinician will review symptoms, testosterone levels, and blood counts if treatment begins. The Endocrine Society&#x27;s testosterone-therapy guidance identifies a <strong>hematocrit above 54%</strong> as a reason to stop treatment temporarily and evaluate contributing factors under medical supervision.</p>
+<p>Hematocrit describes how much of your blood consists of red blood cells. Do not change a prescribed dose yourself after reading a threshold online.</p>
+<h2 id="why-people-switch-from-ro">Why people switch from Ro</h2>
+<p>The defensible reason to switch is a mismatch between your clinical need and the service you are considering—not an unsupported claim that another brand is better.</p>
+<p>Consider another route when:</p>
+<ul>
+<li><strong>You need a confirmed TRT pathway.</strong> Verify that the service explicitly evaluates testosterone deficiency before completing an intake.</li>
+<li><strong>You need an examination.</strong> Physical findings need an appropriate in-person assessment.</li>
+<li><strong>You need fertility advice.</strong> Treatment selection must account for the possibility of suppressed sperm production.</li>
+<li><strong>You need a deeper investigation.</strong> Abnormal hormone findings sometimes require specialist evaluation rather than a treatment-focused visit.</li>
+</ul>
+<p>Nothing in that list establishes a problem with Ro. It identifies situations where choosing by brand recognition alone leaves an important clinical question unanswered.</p>
+<h2 id="questions-to-ask-before-you-commit">Questions to ask before you commit</h2>
+<p>For your 2026 shortlist, ask every provider the same questions. Clear answers make different care routes easier to compare.</p>
+<ul>
+<li>Who makes the diagnosis and reviews the lab results?</li>
+<li>How are repeat morning testosterone measurements handled?</li>
+<li>What findings require an in-person visit or specialist referral?</li>
+<li>How do fertility goals affect treatment recommendations?</li>
+<li>What happens if symptoms do not improve despite a changed testosterone level?</li>
+<li>Who responds to side effects, and how is follow-up arranged?</li>
+</ul>
+<p><strong>Choose the provider that explains the diagnostic reasoning, not the provider that treats a prescription as the inevitable outcome.</strong> A decision against TRT can be an appropriate result of a good evaluation.</p>
+<h2 id="when-staying-with-ro-makes-sense">When staying with Ro makes sense</h2>
+<p>Stay with Ro when its current service matches the care you need and the clinician explains the evaluation, treatment boundaries, and follow-up clearly. Brand switching has no clinical value by itself.</p>
+<p>If your concern is not actually testosterone deficiency, a TRT-focused alternative is not automatically an upgrade. Start with the problem you need assessed, then choose the service that addresses it.</p>
+<h2 id="faq">FAQ</h2>
+<h3>What&#x27;s the best Ro alternative for TRT in 2026?</h3><p>DirectCare AI is a relevant telehealth alternative because its stated services include TRT and blood lab testing. An endocrinologist is a stronger fit when you need specialist investigation of complex hormone findings.</p><h3>Does Ro provide the testosterone treatment I need?</h3><p>Confirm Ro&#x27;s current testosterone-related services directly before choosing it for TRT. A general men&#x27;s-health service listing does not establish which evaluation or treatment pathway applies to you.</p><h3>Do I need two testosterone tests before starting TRT?</h3><p>The American Urological Association recommends 2 total-testosterone measurements on separate early mornings to establish low testosterone. Diagnosis also requires relevant symptoms or signs, not a lab result alone.</p><h3>Is a testosterone level below 300 ng/dL enough to start treatment?</h3><p>No, a result below 300 ng/dL does not establish that you should start TRT. The American Urological Association uses that cutoff to support diagnosis alongside repeat morning testing and relevant symptoms or signs.</p><h3>Should I see a urologist if I want children?</h3><p>A urologist with reproductive-health expertise is a relevant option when fertility matters. Externally supplied testosterone can suppress sperm production, so discuss pregnancy plans before treatment.</p><h3>Can telehealth replace an in-person testosterone evaluation?</h3><p>Telehealth cannot replace every part of an in-person evaluation. A testicular lump, examination finding, or other concern requiring physical assessment needs an appropriate in-person care route.</p><h3>What should I compare besides the treatment itself?</h3><p>Compare diagnostic requirements, clinician responsibility, monitoring, and referral arrangements. A suitable TRT service explains what happens before treatment, during follow-up, and when a problem needs different care.</p>
+<h2 id="one-last-thing">One last thing</h2>
+<p>A higher testosterone result is not the same as a successful treatment outcome. If symptoms persist, the next step is a clinical review—not an automatic dose increase.</p>
+<p>For a 2026 decision, keep one question at the center: <strong>What evidence would make this clinician recommend against TRT?</strong> The answer tells you whether you are choosing an evaluation or simply expecting a prescription.</p>
+<h2 id="related-guides">Related guides</h2>
+<ul>
+<li><a href="/about">About DirectCare AI</a></li>
+<li><a href="/testosterone-replacement-therapy">Explore care services</a></li>
+</ul>
+<section class="article-references" aria-labelledby="references-heading">
+  <h2 id="references-heading">References</h2>
+  <ol>
+    <li>Mulhall JP et al. Evaluation and Management of Testosterone Deficiency: AUA Guideline. J Urol. 2018;200(2):423-432. <a href="https://pubmed.ncbi.nlm.nih.gov/29601923/" rel="noopener nofollow" target="_blank">Source</a></li>
+    <li>Bhasin S et al. Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline. J Clin Endocrinol Metab. 2018;103(5):1715-1744. <a href="https://pubmed.ncbi.nlm.nih.gov/29562364/" rel="noopener nofollow" target="_blank">Source</a></li>
+    <li>World Health Organization Task Force on Methods for the Regulation of Male Fertility. Contraceptive efficacy of testosterone-induced azoospermia in normal men. Lancet. 1990;336(8721):955-959. <a href="https://pubmed.ncbi.nlm.nih.gov/1977002/" rel="noopener nofollow" target="_blank">Source</a></li>
+  </ol>
+</section>
+
+      <div class="product-cta">
+        <div>
+          <div class="product-cta-eyebrow">Ready to find your protocol?</div>
+          <h3>Testosterone therapy, tuned to your levels.</h3>
+          <p>Injectable, oral, or enclomiphene — DirectCare AI&#x27;s clinical team reviews your full hormone panel and recommends the protocol that fits your numbers and your life.</p>
+          <a class="btn" href="/testosterone-replacement-therapy">Start your TRT consult →</a>
+        </div>
+        <div></div>
+      </div>
+      <p class="article-disclaimer">
+        <strong>Editorial disclosure:</strong> This article is for informational purposes only and does not constitute medical advice. All treatments at DirectCare AI are prescribed by US-licensed clinicians based on individual medical evaluation. Compounded medications are not FDA-approved and are not reviewed by the FDA for safety, effectiveness, or quality. Always consult a US-licensed clinician before starting or changing any therapy.
+      </p>
+    </div>
+  </article>
+
+  <section class="related-section">
+    <h3>Keep reading</h3>
+    <div class="related-grid" id="related-grid"><a class="related-card" href="/blog/best-testosterone-delivery-methods-compared"><div class="related-card-image"><img src="https://www.directcare.ai/optimized/blog-best-testosterone-delivery-methods-compared-featured.jpg" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>Best testosterone delivery methods compared in 2026</h3></div></a><a class="related-card" href="/blog/shbg-explained-free-testosterone-binding-protein"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Professional%20businessman%20in%20his%2040s%20smiling%20confidently%20in%20modern%20office%2C%20healthy%20app%2022947.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>SHBG Explained: The Protein That Gates Your Testosterone</h3></div></a><a class="related-card" href="/blog/psa-prostate-monitoring-testosterone-therapy"><div class="related-card-image"><img src="https://crsurakhmbalgxim.public.blob.vercel-storage.com/Firefly_Ultra%20realistic%20portrait%20of%20healthy%20smiling%20man%20age%2035-45%2C%20natural%20sunlight%2C%20genuine%20%20395753.png" alt="" loading="lazy" /></div><div class="related-card-body"><div class="related-card-meta">TRT</div><h3>PSA and Prostate Monitoring on Testosterone: What to Check</h3></div></a></div>
+  </section>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="/logo-color.png" alt="DirectCare AI" />
+        <p>DirectCare AI is a direct-to-patient telehealth platform delivering personalized, clinician-prescribed protocols across weight loss, hormones, sexual health, hair regrowth, supplements, blood labs, and chronic condition care.</p>
+      </div>
+      <div class="foot-col">
+        <h2>Blog</h2>
+        <a href="/blog">All posts</a>
+        <a href="/blog?cat=TRT">TRT</a>
+        <a href="/blog?cat=HRT">HRT</a>
+        <a href="/blog?cat=Weight%20Loss">Weight Loss</a>
+      </div>
+      <div class="foot-col">
+        <h2>Products</h2>
+        <a href="/testosterone-replacement-therapy">Testosterone (TRT)</a>
+        <a href="/hormone-replacement-therapy">HRT</a>
+        <a href="/weight-loss">Weight Loss</a>
+        <a href="/blood-test">Blood Labs</a>
+      </div>
+      <div class="foot-col">
+        <h2>Legal</h2>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/safety">Safety</a>
+        <a href="/medical-consent">Medical Consent</a>
+      </div>
+    </div>
+    <div class="legal">
+      <div>© 2026 DirectCare AI. All rights reserved.</div>
+      <div>HIPAA Compliant · US Licensed Clinicians · US Compounding Pharmacy</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Related posts: pull other recent posts from manifest, excluding this slug
+  (function() {
+    var grid = document.getElementById('related-grid');
+    if (!grid || grid.children.length) return;   // server-rendered related posts win
+    var thisSlug = 'ro-alternatives-for-trt';
+    function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, function(c){ return ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'})[c]; }); }
+    fetch('/blog/posts.json', { cache: 'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(data){
+        var posts = (data.posts || []).filter(function(p){ return p.slug !== thisSlug; }).slice(0, 3);
+        if (posts.length === 0) { grid.parentElement.style.display = 'none'; return; }
+        grid.innerHTML = posts.map(function(p){
+          return ''
+            + '<a class="related-card" href="/blog/' + escapeHtml(p.slug) + '">'
+            +   '<div class="related-card-image"><img src="' + escapeHtml(p.image) + '" alt="" loading="lazy" /></div>'
+            +   '<div class="related-card-body">'
+            +     '<div class="related-card-meta">' + escapeHtml(p.category) + '</div>'
+            +     '<h3>' + escapeHtml(p.title) + '</h3>'
+            +   '</div>'
+            + '</a>';
+        }).join('');
+      })
+      .catch(function(){ grid.parentElement.style.display = 'none'; });
+  })();
+</script>
+
+
+<script>
+/* Meta Pixel: track Lead event on clicks to Tellescope intake forms */
+(function(){
+  if (typeof fbq !== 'function') return;
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('a[href*="tellescope.com"]');
+    if (a) {
+      /* browser + Conversions API on one event_id: the Lead still counts when the
+         pixel is blocked, and it carries the customer information parameters
+         (external_id, fbp, fbc, any remembered em/ph/fn) plus client_ip_address
+         and client_user_agent added server-side. content_name stays on the
+         browser copy only — the relay's allow-list keeps it off the server event. */
+      try { (window.dcaQueue = window.dcaQueue || []).push(['Lead', { content_name: a.textContent.trim().slice(0, 80) }]); } catch (err) {}
+    }
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

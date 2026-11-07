@@ -1272,6 +1272,7 @@ PRODUCTS.append({
  "slug": "ed",
  "canonical": "https://www.directcare.ai/erectile-dysfunction",
  "product": "ed", "category": "ED", "funnel": "ed",
+ "generator": "redesign",  # pages written by scripts/lp/redesign.py, not main() below
  "formid": "6a91c05fa9cb082abb340d5e",
  "form_title": "ED intake evaluation",
  "bar": "100% online &middot; free shipping &middot; plain, unmarked packaging",
@@ -1396,7 +1397,11 @@ PRODUCTS.append({
  **_HRT,
  "slug": "hrt-weight",
  "canonical": "https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes",
- "product": "hrt", "category": "HRT", "funnel": "hrt-weight",
+ "product": "hrt", "category": "HRT",
+ # funnel must be a key of api/quiz-submit.js FUNNEL_NAME or the contact lands
+ # in GHL untagged; "hrt-weight" is not one. lp source still says hrt-weight-fN.
+ "funnel": "hrt",
+ "generator": "redesign",  # pages written by scripts/lp/redesign.py, not main() below
  "form_title": "Hormone care intake evaluation",
  "hero_img": "firefly-gemini-flash-authentic-black-45-year-old-woman-wearing-lavender-in-soft-natural-morning-light-sitt-977551",
  "band_img": "age-diverse-women",
@@ -1489,6 +1494,8 @@ PRODUCTS.append({
 def main():
     written = []
     for p in PRODUCTS:
+        if p.get("generator") == "redesign":
+            continue  # scripts/lp/redesign.py owns these
         for name, fn in BUILDERS:
             d = OUT / p["slug"] / name
             d.mkdir(parents=True, exist_ok=True)

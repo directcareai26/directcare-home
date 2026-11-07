@@ -1,0 +1,581 @@
+# -*- coding: utf-8 -*-
+# Redesigned Google Ads landing pages for lp/ed and lp/hrt-weight (2026-11-06).
+#
+# Source of truth for lp/ed/f1..f5 and lp/hrt-weight/f1..f5. funnels.py still
+# holds the product data and copy for both (PRODUCTS entries tagged
+# "generator": "redesign") and skips them in its own main().
+#
+# Every compliance rule from funnels.py's header applies here unchanged:
+#   - GTM-N7ZG3PT8 and nothing else. No dc-signal.js, dc-webmcp.js, Ahrefs,
+#     Meta, TikTok, Pinterest or Roku. The path IS the condition.
+#   - noindex,nofollow, canonical to the organic parent, not in sitemap.xml,
+#     not disallowed in robots.txt (AdsBot must fetch it).
+#   - No prescription drug names, no mg doses.
+#   - The HRT symptom checklist is client-side only. Selections are NEVER sent
+#     to the dataLayer, the URL or any API: they are health data.
+#
+# Two themes, one structure:
+#   ink   (ED)          dark, discreet, premium: ink + warm brass, serif display
+#   linen (HRT, 40+)    warm editorial: linen + deep plum + terracotta
+#
+#   python3 scripts/lp/redesign.py
+
+import pathlib
+import sys
+
+HERE = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import funnels as F  # noqa: E402  (data + SHELL_JS only; its main() is not run)
+
+ROOT = HERE.parents[1]
+OUT = ROOT / "lp"
+IMG = "/optimized/%s-1200.webp"
+IMG_S = "/optimized/%s-800.webp"
+GTM = "GTM-N7ZG3PT8"
+
+# ------------------------------------------------------------------ themes
+# Contrast checked against WCAG AA (4.5:1 body text, 3:1 large text/UI):
+#   ink:   #F3EEE6 on #0E1015 = 16.2   #A9A6A0 on #0E1015 = 7.9
+#          #0E1015 on #D6B27A (CTA) = 9.6
+#   linen: #2B1730 on #FBF7F1 = 15.3   #6A5A6C on #FBF7F1 = 6.2
+#          #FFFFFF on #A8452A (CTA) = 5.6
+THEMES = {
+ "ink": {
+  "fonts": "family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700",
+  "vars": """
+    --bg:#0E1015; --bg2:#14171E; --card:#191D26; --line:#2A2F3A;
+    --fg:#F3EEE6; --muted:#A9A6A0; --accent:#D6B27A; --accent-ink:#0E1015;
+    --accent-soft:rgba(214,178,122,.12); --ok:#9CC9A4;
+    --display:'Instrument Serif', Georgia, serif; --body:'Inter', system-ui, sans-serif;
+    --hero-shade:linear-gradient(90deg,#0E1015 0%,rgba(14,16,21,.92) 38%,rgba(14,16,21,.35) 70%,rgba(14,16,21,.15) 100%);
+    --hero-shade-m:linear-gradient(180deg,rgba(14,16,21,.25) 0%,rgba(14,16,21,.85) 45%,#0E1015 70%);
+    --display-weight:400; --display-track:-.01em;""",
+ },
+ "linen": {
+  "fonts": "family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600;700",
+  "vars": """
+    --bg:#FBF7F1; --bg2:#F4EAE1; --card:#FFFFFF; --line:#E8DCD2;
+    --fg:#2B1730; --muted:#6A5A6C; --accent:#A8452A; --accent-ink:#FFFFFF;
+    --accent-soft:#F6E2D8; --ok:#4F7A5A;
+    --display:'Fraunces', Georgia, serif; --body:'Inter', system-ui, sans-serif;
+    --hero-shade:none; --hero-shade-m:none;
+    --display-weight:400; --display-track:-.02em;""",
+ },
+}
+
+CSS = r"""
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--display);font-weight:var(--display-weight);letter-spacing:var(--display-track);line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(44px,6.4vw,84px)}
+h2{font-size:clamp(34px,4.2vw,54px)}
+h3{font-family:var(--body);font-weight:600;font-size:18px;letter-spacing:0;line-height:1.35}
+p{margin:0}
+.eyebrow{font:600 12.5px/1 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.lede{font-size:clamp(17px,1.5vw,20px);color:var(--muted);max-width:34em}
+.muted{color:var(--muted)}
+.tiny{font-size:13px;line-height:1.55;color:var(--muted)}
+em.hl{font-style:italic;color:var(--accent)}
+section{padding:clamp(72px,9vw,120px) 0}
+.alt{background:var(--bg2)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;
+  border-radius:999px;background:var(--accent);color:var(--accent-ink);font:600 16.5px/1 var(--body);
+  text-decoration:none;border:0;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-1px);box-shadow:0 10px 30px -10px var(--accent)}
+.btn svg{width:18px;height:18px}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.sm{min-height:44px;padding:0 20px;font-size:14.5px}
+
+/* top */
+.bar{background:var(--fg);color:var(--bg);text-align:center;font:500 12.5px/1 var(--body);letter-spacing:.06em;padding:11px 16px}
+.nav{position:relative;z-index:3}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.nav img{height:26px;width:auto}
+.theme-ink .nav img{filter:brightness(0) invert(1);opacity:.92}
+
+/* hero */
+.hero{position:relative;padding:0;overflow:hidden}
+.hero .inner{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;
+  padding:clamp(40px,6vw,88px) 24px clamp(64px,8vw,112px)}
+.hero h1{margin:18px 0 22px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:32px}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;padding:0;list-style:none;font-size:14.5px;color:var(--muted)}
+.ticks li{display:flex;gap:8px;align-items:center}
+.ticks svg{width:16px;height:16px;color:var(--ok);flex:none}
+/* ink hero: full-bleed photo behind text */
+.theme-ink .hero .bgimg{position:absolute;inset:0;z-index:0}
+.theme-ink .hero .bgimg img{width:100%;height:100%;object-fit:cover;object-position:70% 30%}
+.theme-ink .hero .bgimg::after{content:"";position:absolute;inset:0;background:var(--hero-shade)}
+.theme-ink .hero .visual{display:flex;justify-content:flex-end;align-self:end}
+/* linen hero: framed portrait */
+.theme-linen .hero .visual{position:relative}
+.theme-linen .hero .visual img.portrait{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:220px 220px 24px 24px}
+.offer{display:flex;gap:16px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:14px 20px 14px 14px;max-width:360px;box-shadow:0 24px 60px -30px rgba(0,0,0,.45)}
+.offer img{width:72px;height:72px;border-radius:14px;object-fit:cover;flex:none}
+.offer b{display:block;font-size:16px}
+.offer .p{font:600 15px/1.3 var(--body);color:var(--accent)}
+.offer .s{font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:2px}
+.theme-linen .hero .offer{position:absolute;left:-36px;bottom:36px}
+
+/* proof strip */
+.proof{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0}
+.proof ul{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:0;padding:0;list-style:none}
+.proof li{display:flex;gap:12px;align-items:center;font-size:14.5px;line-height:1.35}
+.proof svg{width:22px;height:22px;color:var(--accent);flex:none}
+
+/* section heads */
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px}
+.head .lede{justify-self:end}
+
+/* numbered editorial list */
+.nums{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.nums > div{padding:32px 32px 8px 0;border-right:1px solid var(--line)}
+.nums > div + div{padding-left:32px}
+.nums > div:last-child{border-right:0}
+.nums .n{font-family:var(--display);font-size:56px;line-height:1;color:var(--accent);margin-bottom:22px}
+.nums p{color:var(--muted);margin-top:10px;font-size:16px}
+
+/* quotes / objections */
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.qgrid.two{grid-template-columns:repeat(2,1fr)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px}
+.q h3{font-family:var(--display);font-weight:var(--display-weight);font-size:26px;line-height:1.15;letter-spacing:var(--display-track)}
+.q p{color:var(--muted);margin-top:14px;font-size:15.5px}
+
+/* compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.compare > div{border-radius:22px;padding:30px;border:1px solid var(--line)}
+.compare .us{background:var(--accent-soft);border-color:transparent}
+.compare h3{margin-bottom:10px}
+.compare p{color:var(--muted);font-size:15.5px}
+
+/* symptom chips (linen) -- client-side only, never transmitted */
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 28px}
+.chip{min-height:48px;padding:0 20px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--fg);
+  font:500 15.5px/1 var(--body);cursor:pointer;display:inline-flex;align-items:center;gap:10px;transition:background .15s,border-color .15s}
+.chip svg{width:16px;height:16px;opacity:0;transition:opacity .15s}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.chip[aria-pressed="true"] svg{opacity:1}
+.chipnote{min-height:28px;font-size:16px;color:var(--fg)}
+.chipnote b{color:var(--accent)}
+
+/* privacy (ink) */
+.priv{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.priv img{border-radius:24px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.priv ul{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:22px}
+.priv li{display:grid;grid-template-columns:28px 1fr;gap:14px}
+.priv li svg{width:22px;height:22px;color:var(--accent);margin-top:2px}
+.priv li p{color:var(--muted);font-size:15.5px;margin-top:4px}
+
+/* plans */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:24px;
+  padding:30px;text-decoration:none;transition:border-color .18s,transform .18s}
+.plan:hover{border-color:var(--accent);transform:translateY(-2px)}
+.plan .name{font:600 18px/1.3 var(--body)}
+.plan .sub{color:var(--muted);font-size:14.5px;margin-top:6px;min-height:44px}
+.plan .price{font-family:var(--display);font-size:52px;line-height:1;margin:26px 0 24px}
+.plan .go{margin-top:auto;font:600 15px/1 var(--body);color:var(--accent);display:flex;align-items:center;gap:8px}
+.plan .go svg{width:16px;height:16px}
+.plan.feat{border-color:var(--accent)}
+.plan .tag{position:absolute;top:-12px;left:30px;background:var(--accent);color:var(--accent-ink);font:600 11.5px/1 var(--body);
+  letter-spacing:.1em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+
+/* intake */
+#intakeWrap{scroll-margin-top:12px}
+.intake{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px;align-items:start}
+.rail{position:sticky;top:24px}
+.rail h2{margin:14px 0 18px}
+.rail ul{list-style:none;padding:0;margin:26px 0;display:grid;gap:16px}
+.rail li{display:grid;grid-template-columns:22px 1fr;gap:12px;font-size:15.5px;color:var(--muted)}
+.rail li b{color:var(--fg);font-weight:600}
+.rail li svg{width:18px;height:18px;color:var(--ok);margin-top:3px}
+.rail .total{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);padding-top:18px}
+.rail .total b{font-family:var(--display);font-size:34px;font-weight:var(--display-weight)}
+.shell{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 30px 80px -40px rgba(0,0,0,.5);border:1px solid var(--line)}
+#intake{display:block;width:100%;height:820px;border:0;background:#fff}
+
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:center;
+  padding:26px 0;font:500 19px/1.4 var(--body);min-height:44px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary svg{width:20px;height:20px;flex:none;color:var(--accent);transition:transform .2s}
+.faq details[open] summary svg{transform:rotate(45deg)}
+.faq details p{color:var(--muted);padding:0 0 26px;max-width:42em}
+
+/* capture */
+.capture{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;background:var(--card);border:1px solid var(--line);
+  border-radius:28px;padding:clamp(28px,4vw,52px)}
+.capture.hide{display:none}
+.capture form{display:grid;gap:12px}
+.capture label{font:500 13.5px/1 var(--body);color:var(--muted);display:grid;gap:8px}
+.field{width:100%;min-height:52px;padding:0 18px;border-radius:14px;border:1px solid var(--line);background:var(--bg);color:var(--fg);font:400 16px var(--body)}
+.field:focus{outline:2px solid var(--accent);outline-offset:1px}
+.err{display:none;color:#E5484D;font-size:14px;margin:0}
+
+/* closing */
+.closing{text-align:center}
+.closing h2{max-width:14em;margin:0 auto 22px}
+.closing .lede{margin:0 auto 34px}
+
+/* footer */
+footer{border-top:1px solid var(--line);padding:56px 0 120px}
+footer img{height:24px;width:auto;margin-bottom:22px}
+.theme-ink footer img{filter:brightness(0) invert(1);opacity:.8}
+footer p{margin-bottom:12px}
+footer a{color:var(--fg)}
+
+/* sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-top:1px solid var(--line);
+  transform:translateY(110%);transition:transform .25s ease}
+.sticky.show{transform:none}
+.sticky .btn{width:100%}
+@media (min-width:900px){.sticky{display:none}}
+
+@media (max-width:899px){
+  .hero .inner{grid-template-columns:1fr;gap:36px;padding-top:24px}
+  .theme-ink .hero .bgimg::after{background:var(--hero-shade-m)}
+  .theme-ink .hero .bgimg img{object-position:62% 0}
+  .theme-ink .hero .inner{padding-top:300px}
+  .theme-ink .hero .visual{justify-content:flex-start}
+  .theme-linen .hero .visual{order:-1}
+  .theme-linen .hero .visual img.portrait{aspect-ratio:1/1;border-radius:24px}
+  .theme-linen .hero .offer{position:static;margin-top:-48px;margin-left:16px;margin-right:16px;position:relative}
+  .proof ul{grid-template-columns:1fr 1fr;gap:18px}
+  .head{grid-template-columns:1fr;gap:18px;margin-bottom:36px}
+  .head .lede{justify-self:start}
+  .nums{grid-template-columns:1fr}
+  .nums > div,.nums > div + div{padding:26px 0;border-right:0;border-bottom:1px solid var(--line)}
+  .qgrid,.qgrid.two,.compare,.plans,.priv,.intake,.capture{grid-template-columns:1fr}
+  .rail{position:static}
+  .hero .ctas .btn{width:100%}
+}
+"""
+
+# ------------------------------------------------------------------ icons
+def ico(name):
+    paths = {
+      "arrow": '<path d="M5 12h14M13 6l6 6-6 6"/>',
+      "check": '<path d="M20 6 9 17l-5-5"/>',
+      "shield": '<path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z"/><path d="m9 12 2 2 4-4"/>',
+      "steth": '<path d="M5 3v6a5 5 0 0 0 10 0V3"/><path d="M10 14v2a5 5 0 0 0 10 0v-3"/><circle cx="20" cy="11" r="2"/>',
+      "lock": '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+      "zero": '<circle cx="12" cy="12" r="9"/><path d="M9 12h6"/>',
+      "box": '<path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/>',
+      "card": '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>',
+      "file": '<path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/>',
+      "plus": '<path d="M12 5v14M5 12h14"/>',
+    }
+    return (f'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+            f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{paths[name]}</svg>')
+
+
+ARROW = ico("arrow")
+
+
+def cta(label, where, cls="btn"):
+    return f'<a class="{cls}" href="#intakeWrap" data-start data-cta="{where}">{label} {ARROW}</a>'
+
+
+# ------------------------------------------------------------- per-product
+# Design-only content. All clinical/price copy comes from funnels.PRODUCTS.
+EXTRA = {
+ "ed": {
+  "theme": "ink",
+  "eyebrow": "Men&rsquo;s health &middot; online",
+  "ticks": ["US-licensed clinicians", "Plain, unmarked packaging", "$0 if you don&rsquo;t qualify"],
+  "feat_plan": "surgemax",
+  "intake_h2": "Your private evaluation",
+  "closing_h2": "Most men put this off for years. <em class=\"hl\">It takes a few minutes.</em>",
+  "closing_lede": "Answer privately. A clinician licensed in your state reviews it, usually within 24 hours.",
+  "capture_h2": "Not ready right now?",
+  "capture_p": "We&rsquo;ll email your options and a link to pick this up later. Nothing else, and one click to unsubscribe.",
+ },
+ "hrt-weight": {
+  "theme": "linen",
+  "eyebrow": "Hormone care for women 40+",
+  "ticks": ["Clinicians licensed in your state", "Hormonal &amp; non-hormonal routes", "$0 if you don&rsquo;t qualify"],
+  "feat_plan": "transdermal",
+  "intake_h2": "Your evaluation",
+  "closing_h2": "You&rsquo;ve tried harder. <em class=\"hl\">Now try a clinician.</em>",
+  "closing_lede": "About five minutes on your phone. A clinician licensed in your state reviews it, usually within 24 hours.",
+  "capture_h2": "Not ready right now?",
+  "capture_p": "We&rsquo;ll email your options and a link to pick this up whenever it suits. One click to unsubscribe.",
+  # Symptom chips: on-page only. NEVER sent anywhere (see header).
+  "chips_h2": "Which of these sound like you?",
+  "chips_lede": "Tap any that apply. This stays on your screen &mdash; nothing here is saved or sent.",
+  "chips": ["Weight that won&rsquo;t move", "Belly weight that&rsquo;s new", "3pm energy crash",
+            "Waking at 3am", "Night sweats", "Stronger cravings", "Brain fog", "Shorter fuse"],
+ },
+}
+
+DEFAULT_STEPS = [
+  ("Answer the evaluation", "A few minutes on your phone. No video visit, no waiting room."),
+  ("A clinician reviews it", "A clinician licensed in your state, usually within 24 hours. If it isn&rsquo;t appropriate for you, you are not charged."),
+  ("It ships free", "From a licensed US pharmacy in plain, unmarked packaging."),
+]
+
+
+# ------------------------------------------------------------------ blocks
+def head(p, a, variant, theme):
+    t = THEMES[theme]
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{a['title']}</title>
+<meta name="description" content="{a['desc']}">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="{'#0E1015' if theme == 'ink' else '#FBF7F1'}">
+<link rel="canonical" href="{p['canonical']}">
+<link rel="preconnect" href="https://business.tellescope.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?{t['fonts']}&display=swap">
+<link rel="preload" as="image" href="{IMG % p['hero_img']}" fetchpriority="high">
+<link rel="icon" type="image/png" href="/icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
+<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});
+var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+}})(window,document,'script','dataLayer','{GTM}');</script>
+<style>:root{{{t['vars']}
+}}{CSS}</style>
+</head>
+<body class="theme-{theme}" data-variant="{variant}">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="bar">{p['bar']}</div>
+<header class="nav"><div class="wrap"><img src="/logo-color.png" alt="DirectCare AI" width="150" height="26">
+{cta('Check if I qualify', 'nav', 'btn sm ghost')}</div></header>
+"""
+
+
+def offer_card(p):
+    return (f'<div class="offer"><img src="{IMG_S % p["card_img"]}" alt="" width="72" height="72">'
+            f'<div><b>{p["offer_name"]}</b><div class="p">{p["offer_price"]}</div>'
+            f'<div class="s">{p["offer_sub"]}</div></div></div>')
+
+
+def hero(p, a, x):
+    ticks = "".join(f"<li>{ico('check')}{t}</li>" for t in x["ticks"])
+    text = f"""<div>
+      <span class="eyebrow">{a.get('pill', x['eyebrow'])}</span>
+      <h1>{a['h1']}</h1>
+      <p class="lede">{a['lede']}</p>
+      <div class="ctas">{cta('Check if I qualify', 'hero')}</div>
+      <ul class="ticks">{ticks}</ul>
+    </div>"""
+    if x["theme"] == "ink":
+        return f"""<section class="hero" data-hero>
+  <div class="bgimg"><img src="{IMG % p['hero_img']}" alt="" fetchpriority="high"></div>
+  <div class="wrap inner">{text}<div class="visual">{offer_card(p)}</div></div>
+</section>"""
+    return f"""<section class="hero" data-hero>
+  <div class="wrap inner">{text}
+    <div class="visual"><img class="portrait" src="{IMG % p['hero_img']}" alt="" fetchpriority="high">{offer_card(p)}</div>
+  </div>
+</section>"""
+
+
+def proof():
+    items = [("shield", "LegitScript-certified telehealth"), ("steth", "Clinicians licensed in your state"),
+             ("lock", "HIPAA-secure records"), ("zero", "$0 if you don&rsquo;t qualify")]
+    li = "".join(f"<li>{ico(i)}<span>{t}</span></li>" for i, t in items)
+    return f'<div class="proof"><div class="wrap"><ul>{li}</ul></div></div>'
+
+
+def section_head(eyebrow, h2, lede=""):
+    l = f'<p class="lede">{lede}</p>' if lede else ""
+    return f'<div class="head"><div><span class="eyebrow">{eyebrow}</span><h2 style="margin-top:14px">{h2}</h2></div>{l}</div>'
+
+
+def nums(items):
+    cells = "".join(f'<div><div class="n">0{i+1}</div><h3>{t}</h3><p>{d}</p></div>'
+                    for i, (t, d) in enumerate(items))
+    return f'<div class="nums">{cells}</div>'
+
+
+def angle_section(p, a, v):
+    """The variant-specific middle section."""
+    if v == "f1":
+        return f'<section><div class="wrap">{section_head("How it works", "Three steps. No waiting room.")}{nums(DEFAULT_STEPS)}</div></section>'
+    if v == "f2":
+        cmp_ = (f'<div class="compare"><div class="us"><h3>DirectCare AI</h3><p>{a["compare_us"]}</p></div>'
+                f'<div><h3>The usual way</h3><p>{a["compare_them"]}</p></div></div>')
+        return (f'<section><div class="wrap">{section_head("How it works", "Three steps. One price.")}'
+                f'{nums(a["steps"])}</div></section>'
+                f'<section class="alt"><div class="wrap">{section_head("What you actually pay", "No membership. No surprise add-ons.")}{cmp_}</div></section>')
+    if v == "f3":
+        return f'<section><div class="wrap">{section_head(a["pill"], a["mech_h2"])}{nums(a["mech"])}</div></section>'
+    if v == "f4":
+        q = "".join(f'<div class="q"><h3>&ldquo;{t}&rdquo;</h3><p>{d}</p></div>' for t, d in a["quotes"])
+        return f'<section><div class="wrap">{section_head("Find your fit", a["quotes_h2"])}<div class="qgrid">{q}</div></div></section>'
+    if v == "f5":
+        q = "".join(f'<div class="q"><h3>{t}</h3><p>{d}</p></div>' for t, d in a["objections"])
+        return f'<section><div class="wrap">{section_head("Before you start", a["obj_h2"])}<div class="qgrid two">{q}</div></div></section>'
+    raise ValueError(v)
+
+
+def ed_privacy(p):
+    rows = [("box", "Plain, unmarked packaging", "No branding and no medical descriptors on the outside. A generic return address."),
+            ("card", "A generic name on your statement", "Your card shows a generic merchant name, not what you ordered."),
+            ("file", "Records in a HIPAA-secure system", "Your answers go to your clinician, not to an advertiser.")]
+    li = "".join(f'<li>{ico(i)}<div><h3>{t}</h3><p>{d}</p></div></li>' for i, t, d in rows)
+    return f"""<section class="alt"><div class="wrap priv">
+  <div><span class="eyebrow">Private by default</span><h2 style="margin-top:14px">Nobody needs to know.</h2><ul>{li}</ul></div>
+  <img src="{IMG % p['band_img']}" alt="A plain, unmarked package on a doorstep" loading="lazy">
+</div></section>"""
+
+
+def hrt_chips(x):
+    chips = "".join(f'<button type="button" class="chip" aria-pressed="false">{ico("check")}{c}</button>' for c in x["chips"])
+    return f"""<section class="alt"><div class="wrap">
+  {section_head("You&rsquo;re not imagining it", x['chips_h2'], x['chips_lede'])}
+  <div class="chips" id="chips">{chips}</div>
+  <p class="chipnote" id="chipnote" aria-live="polite"></p>
+  <p style="margin-top:22px">{cta('Bring these to a clinician', 'chips')}</p>
+</div></section>
+<script>
+/* On-page only. Selections are never pushed to dataLayer, stored, or sent. */
+(function(){{
+  var box=document.getElementById('chips'), note=document.getElementById('chipnote');
+  if(!box) return;
+  box.addEventListener('click',function(e){{
+    var b=e.target.closest('.chip'); if(!b) return;
+    b.setAttribute('aria-pressed', b.getAttribute('aria-pressed')==='true'?'false':'true');
+    var n=box.querySelectorAll('[aria-pressed="true"]').length;
+    note.innerHTML = n===0 ? '' : n===1 ? 'That&rsquo;s worth raising with a clinician.'
+      : '<b>'+n+' at once</b> is a pattern, not a coincidence &mdash; and it&rsquo;s worth a clinician&rsquo;s look.';
+  }});
+}})();
+</script>"""
+
+
+def plans(p, a, x):
+    cards = ""
+    for n, sub, price, k in p["plans"]:
+        feat = k == x["feat_plan"]
+        tag = '<span class="tag">Most chosen</span>' if feat and x["theme"] == "linen" else ""
+        sub = sub.replace("Most chosen", "Through the skin")
+        cards += (f'<a class="plan{" feat" if feat else ""}" href="#intakeWrap" data-start data-cta="plan-{k}">{tag}'
+                  f'<span class="name">{n}</span><span class="sub">{sub}</span>'
+                  f'<span class="price">{price}</span><span class="go">Check if I qualify {ARROW}</span></a>')
+    return f"""<section id="shelf"><div class="wrap">
+  {section_head("Pricing", a.get('shelf_h2', 'Your options'), a.get('shelf_lede', ''))}
+  <div class="plans">{cards}</div>
+  <p class="tiny" style="margin-top:20px;max-width:60em">{p['plans_note']}</p>
+</div></section>"""
+
+
+def intake(p, x):
+    rail = "".join(f"<li>{ico('check')}<span>{i}</span></li>" for i in p["included"])
+    return f"""<section id="intakeWrap" class="alt"><div class="wrap intake">
+  <aside class="rail">
+    <span class="eyebrow">Free &middot; about five minutes</span>
+    <h2>{x['intake_h2']}</h2>
+    <p class="muted">A US-licensed clinician reviews this, usually within 24 hours. If treatment isn&rsquo;t
+      appropriate for you, you are not charged.</p>
+    <ul>{rail}</ul>
+    <div class="total"><span class="muted">{p['price_label']}</span><b>{p['price_from']}</b></div>
+    <p class="tiny" style="margin-top:8px">{p['price_note']}</p>
+  </aside>
+  <div class="shell">
+    <iframe id="intake" src="https://business.tellescope.com/e/public/form?f={p['formid']}&businessId=67fe9d4248c4ab911e8bdcd6&nextFormId=&publicIdentifier=&customTypeId=&orgIds=&skipMatch=false&autoStart=false&sessionId=&" title="{p['form_title']}" scrolling="no"
+      loading="eager" allow="clipboard-write; clipboard-read" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div></section>"""
+
+
+def faq(p, v):
+    if v == "f5":
+        return ""  # f5 already leads with these
+    items = "".join(f'<details><summary>{q}{ico("plus")}</summary><p>{d}</p></details>'
+                    for q, d in p["angles"]["f5"]["objections"])
+    return f'<section><div class="wrap">{section_head("Questions", "The ones people ask first.")}<div class="faq">{items}</div></div></section>'
+
+
+def capture(x):
+    return f"""<section style="padding-top:0"><div class="wrap">
+  <div class="capture" id="capture">
+    <div><h2 style="font-size:clamp(30px,3.4vw,42px)">{x['capture_h2']}</h2><p class="muted" style="margin-top:14px">{x['capture_p']}</p></div>
+    <form id="leadForm" novalidate>
+      <label>First name<input class="field" name="first_name" autocomplete="given-name"></label>
+      <label>Email<input class="field" name="email" type="email" autocomplete="email" required></label>
+      <label>Mobile (optional)<input class="field" name="phone" type="tel" autocomplete="tel"></label>
+      <p class="err" role="alert"></p>
+      <button class="btn" type="submit" data-cta="capture">Send my options {ARROW}</button>
+    </form>
+  </div>
+</div></section>"""
+
+
+def closing(x):
+    return f"""<section class="closing"><div class="wrap">
+  <h2>{x['closing_h2']}</h2><p class="lede">{x['closing_lede']}</p>{cta('Check if I qualify', 'closing')}
+</div></section>"""
+
+
+def footer(p):
+    return f"""<footer><div class="wrap">
+  <img src="/logo-color.png" alt="DirectCare AI" width="140" height="24">
+  <p class="tiny">{p['disclaimer']}</p>
+  <p class="tiny"><b>Side effects.</b> If you have a side effect, stop and contact your clinician. You can report it to us at
+    <a href="mailto:support@directcare.ai">support@directcare.ai</a>, or to the FDA at
+    <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program" target="_blank" rel="noopener noreferrer">MedWatch</a>
+    or 1-800-FDA-1088. Tell your clinician if you are pregnant, planning to become pregnant, or breastfeeding.</p>
+  <p class="tiny"><a href="/privacy-policy">Privacy</a> &middot; <a href="/terms-and-conditions">Terms</a>
+    &middot; DirectCare AI, 30 N Gould St, STE N, Sheridan, WY 82801</p>
+</div></footer>"""
+
+
+def tail(p):
+    js = F.SHELL_JS.replace("__FUNNEL__", p["funnel"]).replace("__FORMID__", p["formid"])
+    # SHELL_JS sets the source to 'lp-'+variant, so leads still say lp-hrt-weight-fN.
+    return (f'<div class="sticky" id="stickyBar">{cta("Check if I qualify", "sticky")}</div>\n'
+            f'<script>{js}</script>\n</body></html>\n')
+
+
+# -------------------------------------------------------------------- page
+def page(p, v):
+    x = EXTRA[p["slug"]]
+    a = p["angles"][v]
+    s = head(p, a, f"{p['slug']}-{v}", x["theme"])
+    s += hero(p, a, x) + proof()
+    s += angle_section(p, a, v)
+    s += ed_privacy(p) if p["slug"] == "ed" else hrt_chips(x)
+    s += plans(p, a, x) + intake(p, x) + faq(p, v) + capture(x) + closing(x)
+    s += footer(p) + tail(p)
+    return s
+
+
+def main():
+    n = 0
+    for p in F.PRODUCTS:
+        if p.get("generator") != "redesign":
+            continue
+        for v in ("f1", "f2", "f3", "f4", "f5"):
+            d = OUT / p["slug"] / v
+            d.mkdir(parents=True, exist_ok=True)
+            (d / "index.html").write_text(page(p, v), encoding="utf-8")
+            print("wrote", f"lp/{p['slug']}/{v}/index.html")
+            n += 1
+    print(f"\n{n} pages")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Ad funnel landing pages for weight loss, hair loss (men/women), TRT and HRT.
+# Ad funnel landing pages for weight loss, hair loss (men/women), TRT, HRT, ED and HRT-weight (women 40+).
 #
 # STATUS: CURRENT as of 2026-09-19. This generator IS the source of truth for
 # everything under ~/directcare-home/lp/. If you edit the generated HTML
@@ -1257,6 +1257,232 @@ PRODUCTS += [{
   },
  },
 }]
+
+
+# =========================================================== ED (Surge Max) ==
+# Google Ads ED funnel, added 2026-11-06. Replaces the role of surge/f1..f5 for
+# paid search: those pages are owned by the stale build.py and still load
+# dc-signal.js, which is exactly the disclosure removed from lp/ (see header).
+# Prices transcribed from the surge-max organic page pricing FAQ.
+#
+# Google treats ED as sexual-health content: no bedroom/intimacy imagery, no
+# performance-guarantee language, no onset/duration claims. Brand product names
+# (Surge Max, Go Long, Daily Boost) are fine; ingredient names and mg are not.
+PRODUCTS.append({
+ "slug": "ed",
+ "canonical": "https://www.directcare.ai/erectile-dysfunction",
+ "product": "ed", "category": "ED", "funnel": "ed",
+ "formid": "6a91c05fa9cb082abb340d5e",
+ "form_title": "ED intake evaluation",
+ "bar": "100% online &middot; free shipping &middot; plain, unmarked packaging",
+ "bar_plain": "No insurance needed &middot; no membership fee &middot; discreet billing",
+ "hero_img": "the-spark-man",
+ "band_img": "unmarked-package-on-doorstep",
+ "card_img": "surge-max-pack",
+ "offer_name": "Surge Max",
+ "offer_price": "From $119",
+ "offer_sub": "Clinician review, prescription and free shipping included",
+ "price_from": "From $119",
+ "price_label": "ED treatment",
+ "price_note": "Surge Max 10-pack $179 &middot; Go Long 12-pack $149 &middot; Daily Boost 28-pack $119",
+ "eval_blurb": ("A few minutes of private questions. A US-licensed clinician reviews them within 24 hours "
+                "&mdash; and if treatment isn&rsquo;t appropriate for you, you are not charged."),
+ "stat_time": "3 min",
+ "included": [
+   "<b>A clinician licensed in your state</b> reads your evaluation before anything is prescribed.",
+   "<b>As-needed or daily options</b>, chosen with your clinician based on your health history.",
+   "<b>Plain, unmarked packaging</b> and a generic name on your card statement.",
+   "<b>$0 if you don&rsquo;t qualify.</b> The intake and clinician review are free.",
+ ],
+ "plans": [
+   ("Surge Max", "10 doses &middot; $17.90 a dose", "$179", "surgemax"),
+   ("Go Long", "12 doses &middot; $12.42 a dose", "$149", "golong"),
+   ("Daily Boost", "28-day supply &middot; $4.25 a day", "$119", "daily"),
+ ],
+ "plans_note": ("Each price is the complete price: clinician review, prescription and free shipping are "
+                "included, with no membership fee. Which option is appropriate is your clinician&rsquo;s decision."),
+ "disclaimer": (COMPOUNDED_LINE + CLINICIAN_LINE +
+                " ED treatment is not appropriate for men who take nitrates or have certain heart, blood "
+                "pressure, eye or liver conditions; disclose all medications at intake. Seek emergency care "
+                "for an erection lasting more than four hours."),
+ "angles": {
+  "f1": {
+    "title": "ED treatment — see if you qualify",
+    "desc": "Private online ED evaluation reviewed by a US-licensed clinician. Discreet shipping, no charge if you don't qualify.",
+    "h1": "ED is common.<br>Treating it can be<br>private.",
+    "lede": ("No waiting room and no conversation at the pharmacy counter. Answer a few private questions "
+             "and a US-licensed clinician reviews them within 24 hours."),
+    "shelf_h2": "Good news &mdash; you&rsquo;ve got options.",
+    "shelf_lede": "As-needed or daily. Your clinician confirms what is appropriate for you.",
+  },
+  "f2": {
+    "title": "ED treatment — from $119, everything included",
+    "desc": "ED treatment from $119 with clinician review, prescription and free discreet shipping included.",
+    "h1": "From $119,<br>everything included.",
+    "lede": ("Clinician review, prescription and free shipping in one price. No insurance, no membership "
+             "fee, no office visit."),
+    "quiz_q": "See if you qualify in a few minutes",
+    "steps": [
+      ("Answer privately", "A few minutes on your phone. No video visit, no waiting room."),
+      ("A clinician reviews it", "A clinician licensed in your state, usually within 24 hours. If it isn&rsquo;t appropriate for you, you are not charged."),
+      ("It ships discreetly", "From a licensed US pharmacy in plain, unmarked packaging, free."),
+    ],
+    "compare_us": ("One price covers the clinician review, the prescription and shipping. No membership fee, "
+                   "no separate consult charge."),
+    "compare_them": ("An office visit and copay, then the pharmacy line, then the same conversation again at "
+                     "the counter &mdash; every refill."),
+    "shelf_h2": "Three options, priced honestly",
+    "shelf_lede": "Which one is appropriate is a clinical decision made with you.",
+  },
+  "f3": {
+    "title": "ED treatment — a liquid, not a pill",
+    "desc": "A compounded sublingual ED option prescribed online by a US-licensed clinician. Discreet shipping.",
+    "pill": "A different format",
+    "h1": "A few drops.<br>Not another pill.",
+    "lede": ("Surge Max is a compounded liquid taken under the tongue, combining four active ingredients "
+             "in one dose. A clinician decides whether it is right for you."),
+    "mech_h2": "What makes it different",
+    "mech": [
+      ("Under the tongue", "A sublingual liquid rather than a tablet &mdash; no water, nothing to swallow."),
+      ("Four ingredients, one dose", "Combines ingredients that work through more than one pathway, at doses set by a clinician."),
+      ("Reviewed, not auto-approved", "A clinician licensed in your state reads your history, including heart health and medications, before anything is prescribed."),
+    ],
+    "shelf_h2": "What each option costs",
+    "shelf_lede": "Clinician review and free shipping are included in every one.",
+  },
+  "f4": {
+    "title": "ED treatment — which option fits",
+    "desc": "As-needed or daily ED treatment from $119, reviewed by a US-licensed clinician within 24 hours.",
+    "h1": "Three options.<br>One of them fits.",
+    "lede": "As-needed or daily, same clinician review. A clinician confirms what is actually appropriate.",
+    "quiz_q": "Not sure which? Start the evaluation.",
+    "quotes_h2": "Which one sounds like you?",
+    "quotes": [
+      ("I want something for when I need it.", "Surge Max is a 10-pack at $179 &mdash; $17.90 a dose, used as needed."),
+      ("I want more doses for less.", "Go Long is a 12-pack at $149, bringing it to $12.42 a dose."),
+      ("I&rsquo;d rather not plan around it.", "Daily Boost is a 28-day supply at $119 &mdash; $4.25 a day, taken daily."),
+    ],
+  },
+  "f5": {
+    "title": "ED treatment — if a clinician says no, you don’t pay",
+    "desc": "LegitScript certified, US-licensed clinicians, licensed US pharmacy, discreet shipping.",
+    "h1": "If a clinician says no,<br>you don&rsquo;t pay.",
+    "lede": ("The evaluation is free and so is the clinician review. You are only charged if a US-licensed "
+             "clinician prescribes and you decide to start."),
+    "obj_h2": "The four questions men stop on",
+    "objections": [
+      ("Will anyone know?", "Packaging is plain and unmarked, the return address is generic, and your card statement shows a generic merchant name."),
+      ("What if I don&rsquo;t qualify?", "Then you pay nothing. ED treatment isn&rsquo;t safe for everyone &mdash; for example, men taking nitrates &mdash; and a clinician saying no is the system working."),
+      ("Is this legitimate?", "LegitScript-certified telehealth, clinicians licensed in your state, and a licensed US pharmacy. Records are held in a HIPAA-secure system."),
+      ("Pills haven&rsquo;t worked for me.", "Tell your clinician. That history matters, and it is exactly what the evaluation asks about."),
+    ],
+    "shelf_h2": "Now the part that costs you nothing",
+    "shelf_lede": "Start the evaluation, then pick an option only if a clinician prescribes.",
+  },
+ },
+})
+
+
+# =================================================== HRT: weight, women 40+ ==
+# Google Ads funnel for midlife weight gain, added 2026-11-06. Same HRT intake
+# form, prices and plans as the hrt funnel; only the angle differs.
+#
+# Claims rule specific to this funnel: HRT is NOT a weight-loss drug and must
+# never be presented as one. Copy says hormonal change is part of why midlife
+# weight shifts, and that a clinician evaluates it — no pounds, no percentages,
+# no before/after, no "lose weight with HRT".
+_HRT = next(p for p in PRODUCTS if p["slug"] == "hrt")
+PRODUCTS.append({
+ **_HRT,
+ "slug": "hrt-weight",
+ "canonical": "https://www.directcare.ai/hormone-replacement-therapy/weight-gain-energy-crashes",
+ "product": "hrt", "category": "HRT", "funnel": "hrt-weight",
+ "form_title": "Hormone care intake evaluation",
+ "hero_img": "firefly-gemini-flash-authentic-black-45-year-old-woman-wearing-lavender-in-soft-natural-morning-light-sitt-977551",
+ "band_img": "age-diverse-women",
+ "card_img": "flatlay-of-women-s-protocol-bottles",
+ "included": [
+   "<b>A clinician licensed in your state</b> looks at the whole picture &mdash; hormones, sleep, energy and weight.",
+   "<b>A route that fits your life</b> &mdash; oral, patch, cream, gel or insert, or non-hormonal, where appropriate.",
+   "<b>Optional 80+ biomarker panel</b> ($196 once) so the plan starts from your numbers, not guesses.",
+   "<b>$0 if you don&rsquo;t qualify.</b> The intake and clinician review are free.",
+ ],
+ "angles": {
+  "f1": {
+    "title": "Midlife weight gain — see if hormone care fits",
+    "desc": "For women 40+: a US-licensed clinician looks at the hormonal side of midlife weight and energy. Free evaluation.",
+    "h1": "Same habits.<br>Different body.<br>It isn&rsquo;t willpower.",
+    "lede": ("After 40, falling estrogen changes sleep, energy and where weight settles. A US-licensed "
+             "clinician can look at the hormonal side of it &mdash; usually within 24 hours."),
+    "shelf_h2": "Good news &mdash; you&rsquo;ve got options.",
+    "shelf_lede": "Pick a route and a clinician confirms what is appropriate for you.",
+  },
+  "f2": {
+    "title": "Midlife hormone care — from $59 a month",
+    "desc": "Hormone care for women 40+ from $59 a month, with clinician review, refills and shipping included.",
+    "h1": "From $59 a month,<br>for the part diet<br>doesn&rsquo;t touch.",
+    "lede": ("Eating less and doing more cardio doesn&rsquo;t address hormones. Clinician care, refills and "
+             "free shipping in one price &mdash; including a non-hormonal route."),
+    "quiz_q": "See if you qualify in about five minutes",
+    "steps": [
+      ("Answer the evaluation", "About five minutes on your phone. Symptoms, history, goals."),
+      ("A clinician reviews it", "A clinician licensed in your state, usually within 24 hours. If it isn&rsquo;t appropriate for you, you are not charged."),
+      ("It ships free", "From a licensed US pharmacy, plain and unmarked, with refills included."),
+    ],
+    "compare_us": ("$59 to $116 a month by route, covering clinician care, refills and shipping. Bloodwork is "
+                   "optional at $196. No membership fee."),
+    "compare_them": ("Another diet plan that ignores hormones, or a weeks-long wait for a ten-minute "
+                     "appointment that ends with &ldquo;it&rsquo;s just your age.&rdquo;"),
+    "shelf_h2": "Four routes, priced honestly",
+    "shelf_lede": "Which route is appropriate is a clinical decision made with you.",
+  },
+  "f3": {
+    "title": "Midlife weight gain — three things change at once",
+    "desc": "Estrogen, sleep and muscle all shift after 40. A clinician evaluates the hormonal side. From $59 a month.",
+    "pill": "Why it changed",
+    "h1": "Three things<br>changed at once.",
+    "lede": ("Midlife weight gain is rarely one thing. Hormones, sleep and muscle all shift together, and "
+             "each makes the others harder."),
+    "mech_h2": "What shifts after 40",
+    "mech": [
+      ("Estrogen falls", "Falling estrogen changes where the body stores fat and how it handles sugar &mdash; the part a clinician can evaluate."),
+      ("Sleep breaks", "Night sweats and 3am wake-ups leave you tired, hungrier and craving quick energy the next day."),
+      ("Muscle quietly drops", "Muscle declines faster after 40 without strength training, and the routine that worked at 32 stops working."),
+    ],
+    "shelf_h2": "What each route costs",
+    "shelf_lede": "Clinician care, refills and shipping are included in every one.",
+  },
+  "f4": {
+    "title": "Midlife hormone care — which one sounds like you",
+    "desc": "Hormone care for women 40+ from $59 a month, reviewed by a US-licensed clinician within 24 hours.",
+    "h1": "Which one<br>sounds like you?",
+    "lede": "Most women recognise themselves in one of these. A clinician confirms what is actually appropriate.",
+    "quiz_q": "Not sure which? Start the evaluation.",
+    "quotes_h2": "Which one sounds like you?",
+    "quotes": [
+      ("Nothing changed, but my body did.", "Hormonal change is a real part of midlife weight. A clinician licensed in your state can evaluate it."),
+      ("I&rsquo;m exhausted by 3pm.", "Energy crashes and broken sleep often travel together, and both are worth raising in your evaluation."),
+      ("I can&rsquo;t take hormones.", "There is a non-hormonal route at $59 a month for exactly this reason."),
+    ],
+  },
+  "f5": {
+    "title": "Midlife hormone care — if a clinician says no, you don’t pay",
+    "desc": "LegitScript certified, US-licensed clinicians, licensed US pharmacy. For women 40+.",
+    "h1": "If a clinician says no,<br>you don&rsquo;t pay.",
+    "lede": ("The evaluation is free and so is the clinician review. You are only charged if a US-licensed "
+             "clinician prescribes and you decide to start."),
+    "obj_h2": "The four questions women stop on",
+    "objections": [
+      ("Will HRT make me lose weight?", "It isn&rsquo;t a weight-loss medication, and no one honest will promise that. It treats menopause symptoms such as sleep, hot flashes and energy, and your clinician will talk through what else fits your goals."),
+      ("Isn&rsquo;t HRT risky?", "It carries real risks, and they depend on your history &mdash; including any history of certain cancers, blood clots, stroke or liver disease. That is exactly what the clinician review is for."),
+      ("What if I don&rsquo;t qualify?", "Then you pay nothing. Hormone therapy is not appropriate for everyone, and a clinician saying no is the system working as it should."),
+      ("What if I can&rsquo;t use hormones?", "There is a non-hormonal route at $59 a month, and your clinician can talk you through what it does and doesn&rsquo;t address."),
+    ],
+    "shelf_h2": "Now the part that costs you nothing",
+    "shelf_lede": "Start the evaluation, then pick a route only if a clinician prescribes.",
+  },
+ },
+})
 
 
 # ---------------------------------------------------------------------- main

@@ -8,7 +8,7 @@ Legal
 
 ## Privacy Policy
 
- Last Updated: October 29, 2026
+ Last Updated: November 11, 2026
 
  **PLEASE READ THIS PRIVACY POLICY CAREFULLY BEFORE USING OUR SERVICES OR WEBSITE.**
 
@@ -129,6 +129,8 @@ Legal
  If you turn on My Health, the app reads the Apple Health data you choose (activity, workouts, sleep, weight, heart rate, HRV, blood oxygen and glucose) and writes the water you log. This data stays on your iPhone: we do not send it to our servers unless you turn on the optional AI features described in section 7 below, and we never sell it or use it for advertising or marketing. A PDF you create is made on your phone and goes only where you share it.
 
  Food diary. Meal photos and notes you add in My Health are saved only on your phone. We do not upload or analyze them unless you turn on the optional AI features in section 7, and we never use them for advertising.
+
+ **Cycle tracking, daily check-ins and weekly recap (iPhone).** The daily check-in (mood, energy, sleep quality and anything bothering you) and the weekly recap are saved and worked out only on your iPhone. If you also turn on cycle tracking, the app reads the menstrual flow you choose to share from Apple Health and saves the periods, cycle symptoms and cycle notes you log on your iPhone. The app does not write any of this to Apple Health. We do not send any of it to our servers, including when the optional AI features in section 7 are on, and we never sell it or use it for advertising or marketing. Like other app data, it is included in backups of your iPhone that you make. Period and fertile-window dates are estimates worked out on your phone from your own entries. They are not medical advice and should not be used as birth control or to plan a pregnancy. You can turn cycle tracking off anytime in My Health › Devices. This deletes your logged period flow, cycle symptoms and cycle notes from the app. Your check-ins (mood, energy, sleep quality and anything bothering you) stay, and Apple Health is not changed. Deleting the app deletes all of this data from your iPhone.
 
  **Health Connect (Android).** If you turn on My Health on an Android phone, the app uses Health Connect to read the data you choose: steps, exercise sessions, active calories, distance, sleep, resting heart rate, heart rate variability, blood oxygen, weight, blood glucose and water. It writes only the water you log. We read this data only while you are using My Health, to show it to you and to build a PDF report on your phone when you ask for one. It stays on your phone: we do not send it to our servers unless you turn on the optional AI features in section 7, and then only weekly averages of steps, sleep and resting heart rate are sent, without your name or email. We never sell Health Connect data, never use it for advertising or marketing, never use it to train AI models, and never use it for credit, insurance or employment decisions. The de-identified and aggregated data uses described elsewhere in this policy do not apply to Health Connect data. You can see and change what DirectCare AI may read at any time in Health Connect › App permissions › DirectCare AI, and turning permissions off stops all reading. DirectCare AI’s use of information received from Health Connect adheres to the Health Connect Permissions policy, including the Limited Use requirements.
 

@@ -28,6 +28,7 @@ blog/best-testosterone-delivery-methods-compared.md
 blog/best-testosterone-support-supplements-compared.md
 blog/best-treatments-for-low-libido-in-women-ranked.md
 blog/best-vitamin-d3-and-k2-supplements-ranked.md
+blog/blood-markers-routine-physical-leaves-out.md
 blog/body-recomp-glp1-protect-muscle.md
 blog/coming-off-hormone-therapy-tapering-guide.md
 blog/compounded-semaglutide-online-what-to-verify.md
@@ -38,6 +39,7 @@ blog/creatine-for-women-cognition-bone-longevity.md
 blog/deload-weeks-planned-rest-strength-gains.md
 blog/dhea-in-womens-hrt-the-third-sex-hormone.md
 blog/dutasteride-vs-finasteride-when-to-step-up.md
+blog/early-signs-of-perimenopause-in-your-40s.md
 blog/eat-the-rainbow-phytonutrient-targets-by-color.md
 blog/ed-cardiovascular-warning-signs-labs.md
 blog/ed-medication-prescribed-online-safely.md
@@ -112,6 +114,7 @@ blog/ro-alternatives-for-trt.md
 blog/ro-alternatives-for-weight-loss.md
 blog/rucking-cardio-strength-training-guide.md
 blog/salmon-tacos-cabbage-slaw-recipe.md
+blog/same-food-different-blood-sugar-response.md
 blog/semaglutide-tirzepatide-difference.md
 blog/shbg-explained-free-testosterone-binding-protein.md
 blog/sheet-pan-chicken-thighs-roasted-vegetables.md
@@ -131,8 +134,11 @@ blog/two-lift-minimum-busy-week-strength-template.md
 blog/vaginal-estradiol-gsm-most-underprescribed-hrt.md
 blog/vitamin-b12-folate-deficiency-labs-guide.md
 blog/vitamin-d3-k2-dosing-blood-level-targets.md
+blog/vo2-max-longevity-how-to-raise-it-after-40.md
+blog/waist-to-height-ratio-vs-bmi.md
 blog/walking-7000-steps-cardio-prescription.md
 blog/walking-vs-running-cardiovascular-risk-data.md
+blog/wall-sits-isometric-exercise-blood-pressure.md
 blog/weight-loss-plateau-hormonal-not-motivational.md
 blog/weight-setpoint-theory-glp1-can-drugs-move-it.md
 blog/womens-hair-loss-hormonal-panel.md

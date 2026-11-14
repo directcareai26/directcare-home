@@ -1,6 +1,40 @@
 {
   "posts": [
     {
+      "slug": "ultra-processed-foods-500-extra-calories-nih-study",
+      "title": "Ultra-Processed Foods: The NIH Study That Found 500 Extra Calories a Day",
+      "excerpt": "In a controlled NIH trial, adults ate about 500 more calories a day on an ultra-processed diet than on an unprocessed one, even though the meals were matched for calories, sugar, fat and fiber.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-ultra-processed-foods-500-extra-calories-nih-study-featured.jpg",
+      "keywords": [
+        "ultra-processed foods",
+        "processed food and overeating",
+        "NIH diet study",
+        "whole foods diet",
+        "calorie intake"
+      ]
+    },
+    {
+      "slug": "strength-training-at-90-fiatarone-study",
+      "title": "Strength Training at 90: The Study That Changed the Rules",
+      "excerpt": "In a 1990 JAMA study, frail 90-year-olds increased leg strength by an average of 174% after 8 weeks of supervised high-intensity resistance training.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-strength-training-at-90-fiatarone-study-featured.jpg",
+      "keywords": [
+        "strength training for seniors",
+        "weight training at 90",
+        "sarcopenia",
+        "resistance training older adults",
+        "never too late to exercise"
+      ]
+    },
+    {
       "slug": "social-connection-longevity-148-studies",
       "title": "Social Connection and Longevity: What 148 Studies Found",
       "excerpt": "A review of 148 studies and more than 300,000 people found that those with stronger social relationships were 50% more likely to survive over the study period.",
@@ -52,6 +86,74 @@
       ]
     },
     {
+      "slug": "sleep-regularity-seven-hours-consistent-schedule",
+      "title": "Sleep Regularity and the 7-Hour Mark: What the Research Shows",
+      "excerpt": "A regular sleep schedule predicted mortality risk better than sleep duration in a 2024 study, about 7 hours was linked with the best thinking and mood, and at least 30% of adults in every US state fall short.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-sleep-regularity-seven-hours-consistent-schedule-featured.jpg",
+      "keywords": [
+        "sleep regularity",
+        "how much sleep do adults need",
+        "7 hours of sleep",
+        "consistent sleep schedule",
+        "sleep and mortality"
+      ]
+    },
+    {
+      "slug": "sauna-bathing-heart-health-finnish-study",
+      "title": "Sauna Use and Heart Health: The 20-Year Finnish Study",
+      "excerpt": "Finnish men who used a sauna 4 to 7 times a week had a 63% lower risk of sudden cardiac death over 20 years than men who went once a week.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-sauna-bathing-heart-health-finnish-study-featured.jpg",
+      "keywords": [
+        "sauna benefits",
+        "sauna and heart health",
+        "Finnish sauna study",
+        "sauna frequency",
+        "sudden cardiac death"
+      ]
+    },
+    {
+      "slug": "push-up-capacity-heart-disease-risk-men",
+      "title": "Push-Up Capacity and Heart Disease Risk in Men",
+      "excerpt": "In a 10-year study of active men, those who could complete more than 40 push-ups had a 96% lower risk of cardiovascular events than those who could do fewer than 10.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-push-up-capacity-heart-disease-risk-men-featured.jpg",
+      "keywords": [
+        "push-up test",
+        "push-ups and heart health",
+        "fitness test for men",
+        "cardiovascular risk",
+        "functional fitness"
+      ]
+    },
+    {
+      "slug": "protein-needs-after-65-prot-age-recommendations",
+      "title": "Protein Needs After 65: The PROT-AGE Recommendations",
+      "excerpt": "An international expert group recommends 1.0 to 1.2 grams of protein per kilogram of body weight a day for adults over 65, above the standard 0.8 gram allowance.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-protein-needs-after-65-prot-age-recommendations-featured.jpg",
+      "keywords": [
+        "protein needs over 65",
+        "protein for older adults",
+        "PROT-AGE",
+        "sarcopenia nutrition",
+        "how much protein per day"
+      ]
+    },
+    {
       "slug": "protein-distribution-across-meals-muscle-protein-synthesis",
       "title": "Protein at Every Meal: What Even Distribution Does for Muscle",
       "excerpt": "In a 2014 study, the same daily protein split evenly across three meals raised 24-hour muscle protein synthesis 25% compared with loading it at dinner.",
@@ -86,6 +188,74 @@
       ]
     },
     {
+      "slug": "optimism-purpose-in-life-longevity",
+      "title": "Optimism, Purpose and Longevity: What Two Large Studies Found",
+      "excerpt": "The most optimistic women lived about 15% longer than the least optimistic, and adults over 50 with the weakest sense of purpose were more than twice as likely to die during follow-up.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-optimism-purpose-in-life-longevity-featured.jpg",
+      "keywords": [
+        "optimism and longevity",
+        "purpose in life",
+        "healthy aging",
+        "mental wellbeing and health",
+        "living longer"
+      ]
+    },
+    {
+      "slug": "olive-oil-daily-mortality-risk-28-year-study",
+      "title": "Olive Oil and Mortality: What a 28-Year Study Found",
+      "excerpt": "US adults who ate more than half a tablespoon of olive oil a day had a 19% lower risk of death over 28 years than those who rarely used it.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-olive-oil-daily-mortality-risk-28-year-study-featured.jpg",
+      "keywords": [
+        "olive oil benefits",
+        "olive oil and mortality",
+        "olive oil vs butter",
+        "Mediterranean diet",
+        "healthy fats"
+      ]
+    },
+    {
+      "slug": "minimum-effective-exercise-short-bursts-weekend-stairs",
+      "title": "How Little Exercise Still Counts: 22 Minutes, Short Bursts, Weekends and Stairs",
+      "excerpt": "Four large studies using activity trackers point the same way: 22 minutes a day offsets long sitting, short bursts of effort count, weekend-only exercise works, and stairs add up.",
+      "category": "Fitness",
+      "categorySlug": "fitness",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-minimum-effective-exercise-short-bursts-weekend-stairs-featured.jpg",
+      "keywords": [
+        "minimum exercise",
+        "exercise snacks",
+        "weekend warrior",
+        "stair climbing",
+        "sitting and mortality"
+      ]
+    },
+    {
+      "slug": "late-eating-hunger-calories-burned-meal-timing",
+      "title": "Late Eating: Hungrier and Burning Fewer Calories on the Same Food",
+      "excerpt": "In a controlled crossover trial, eating identical meals later in the day increased hunger, lowered daytime energy expenditure and shifted fat tissue toward storage.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-late-eating-hunger-calories-burned-meal-timing-featured.jpg",
+      "keywords": [
+        "late eating",
+        "meal timing",
+        "eating late at night",
+        "hunger hormones",
+        "energy expenditure"
+      ]
+    },
+    {
       "slug": "hydration-serum-sodium-biological-aging-nih-study",
       "title": "Hydration and Aging: What the NIH Serum Sodium Study Found",
       "excerpt": "A 25-year NIH analysis linked blood sodium at the high end of normal in middle age, a sign of lower fluid intake, with faster biological aging and more chronic disease.",
@@ -100,6 +270,23 @@
         "biological age",
         "how much water to drink",
         "chronic disease risk"
+      ]
+    },
+    {
+      "slug": "high-blood-pressure-half-of-adults-dash-diet",
+      "title": "High Blood Pressure: Nearly Half of US Adults, and What the DASH Diet Does",
+      "excerpt": "The CDC estimates 48.1% of US adults have high blood pressure and about 1 in 4 of them has it controlled. In the DASH trial, diet alone lowered systolic pressure 11 points in adults with hypertension.",
+      "category": "Blood Labs",
+      "categorySlug": "blood-labs",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-high-blood-pressure-half-of-adults-dash-diet-featured.jpg",
+      "keywords": [
+        "high blood pressure",
+        "DASH diet",
+        "hypertension statistics",
+        "lower blood pressure naturally",
+        "blood pressure control"
       ]
     },
     {
@@ -134,6 +321,23 @@
         "carbs last",
         "post-meal blood sugar",
         "meal sequencing"
+      ]
+    },
+    {
+      "slug": "coffee-timing-morning-coffee-caffeine-cutoff",
+      "title": "Coffee Timing: Morning Coffee and the 6-Hour Caffeine Cutoff",
+      "excerpt": "Morning coffee drinkers had a 16% lower risk of death than non-drinkers in a 2025 study, and caffeine taken 6 hours before bed still disrupted sleep in a lab trial.",
+      "category": "Nutrition",
+      "categorySlug": "nutrition",
+      "date": "2026-11-14",
+      "dateLabel": "November 14, 2026",
+      "image": "https://www.directcare.ai/optimized/blog-coffee-timing-morning-coffee-caffeine-cutoff-featured.jpg",
+      "keywords": [
+        "coffee timing",
+        "morning coffee",
+        "caffeine and sleep",
+        "caffeine cutoff",
+        "coffee and mortality"
       ]
     },
     {

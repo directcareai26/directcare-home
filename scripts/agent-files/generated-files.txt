@@ -14,6 +14,7 @@ blog/5-minute-chickpea-tuna-lunch-bowl.md
 blog/5-minute-mobility-warmup-reduce-injury-risk.md
 blog/alt-ast-liver-enzymes-high-when-to-retest.md
 blog/apob-vs-ldl-cholesterol-cardiologists-ask.md
+blog/arm-position-blood-pressure-reading-accuracy.md
 blog/balance-training-after-40-fall-prevention.md
 blog/berberine-natures-ozempic-clinician-honest-view.md
 blog/best-creatine-supplements-for-women-ranked.md
@@ -31,6 +32,7 @@ blog/best-treatments-for-low-libido-in-women-ranked.md
 blog/best-vitamin-d3-and-k2-supplements-ranked.md
 blog/blood-markers-routine-physical-leaves-out.md
 blog/body-recomp-glp1-protect-muscle.md
+blog/breaking-up-sitting-walking-breaks-blood-sugar.md
 blog/coming-off-hormone-therapy-tapering-guide.md
 blog/compounded-semaglutide-online-what-to-verify.md
 blog/compounded-vs-branded-glp1-actual-difference.md
@@ -54,6 +56,7 @@ blog/female-pattern-hair-loss-hormonal-panel.md
 blog/ferritin-iron-deficiency-women-mistaken-for-menopause.md
 blog/fiber-on-glp1-25-35g-daily-appetite.md
 blog/fiber-target-most-patients-underdose.md
+blog/food-order-vegetables-protein-before-carbs-blood-sugar.md
 blog/foods-that-lower-ldl-cholesterol-swaps.md
 blog/free-vs-total-testosterone-what-actually-matters.md
 blog/glp1-dose-titration-without-nausea.md
@@ -68,6 +71,7 @@ blog/greek-yogurt-breakfast-bowl-40g-protein.md
 blog/grip-strength-longevity-predictor-three-exercises.md
 blog/hair-shedding-rapid-weight-loss-nutrition-gaps.md
 blog/harissa-salmon-sheet-pan-recipe-36g-protein.md
+blog/heavy-lifting-bone-density-after-menopause-liftmor-trial.md
 blog/hematocrit-on-trt-blood-donation-frequency.md
 blog/high-protein-snacks-under-200-calories.md
 blog/hims-alternatives-for-trt.md
@@ -78,6 +82,7 @@ blog/how-to-choose-online-trt-clinic-eight-checks.md
 blog/hrt-after-40-what-actually-changes.md
 blog/hrt-bone-density-estradiol-prevents-fractures.md
 blog/hrv-heart-rate-variability-recovery-tracking.md
+blog/hydration-serum-sodium-biological-aging-nih-study.md
 blog/index.md
 blog/iron-rich-meals-for-women-vitamin-c-pairing.md
 blog/lifting-through-perimenopause-rep-ranges-recovery.md
@@ -106,7 +111,9 @@ blog/perimenopause-nutrition-foods-that-help.md
 blog/perimenopause-vs-menopause-lab-values.md
 blog/plant-protein-perimenopause-lentil-tofu-tempeh.md
 blog/post-meal-walk-blood-sugar-glucose-response.md
+blog/prediabetes-2-in-5-adults-most-dont-know.md
 blog/progesterone-at-night-timing-vs-dose.md
+blog/protein-distribution-across-meals-muscle-protein-synthesis.md
 blog/protein-fiber-breakfast-template-busy-mornings.md
 blog/protein-timing-post-workout-window.md
 blog/psa-prostate-monitoring-testosterone-therapy.md
@@ -124,6 +131,9 @@ blog/sheet-pan-chicken-thighs-roasted-vegetables.md
 blog/sheet-pan-miso-salmon-bok-choy-recipe.md
 blog/sildenafil-vs-tadalafil-daily-vs-on-demand.md
 blog/sleep-alcohol-sexual-function-everyday-habits.md
+blog/sleep-restriction-testosterone-one-week-study.md
+blog/sleeping-with-light-on-heart-rate-insulin-resistance.md
+blog/social-connection-longevity-148-studies.md
 blog/subq-vs-im-testosterone-injections-pharmacokinetics.md
 blog/supplement-protocol-from-labs-not-guessing.md
 blog/telehealth-weight-loss-programs-compared.md

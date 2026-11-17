@@ -15,7 +15,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## Female Hair Loss: the hormonal panel to run first
 
- Female-pattern hair loss is rarely just genetic — it's a signal from thyroid, iron, androgens, and estrogen working (or misfiring) together. Here are the exact labs a clinician should order before you touch minoxidil, spironolactone, or oral finasteride.
+ [Female-pattern hair loss](https://www.directcare.ai/womans-hair-loss) is rarely just genetic — it's a signal from thyroid, iron, androgens, and estrogen working (or misfiring) together. Here are the exact labs a clinician should order before you touch minoxidil, spironolactone, or oral finasteride.
 
  Female hair loss often stems from hormonal imbalances, not just genetics. Before starting treatment, clinicians should test thyroid function, iron levels, androgen levels, and estrogen status. Key tests include TSH, free T4, free T3, TPO antibodies, ferritin, total and free testosterone, DHEA-S, SHBG, prolactin, and vitamin D. These labs help identify underlying causes like thyroid issues, iron deficiency, or elevated androgens.
 

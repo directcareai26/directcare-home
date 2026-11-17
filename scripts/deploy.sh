@@ -61,6 +61,14 @@ grep -q 'SURGE MAX is \$179 for a 10-pack' surge-max/index.html \
   || die "surge-max FAQ still carries stale pricing."
 ok "content preflight passed"
 
+# 4b. structural crawl-exclusion guard (HARD BLOCK) --------------------------
+# A hand-maintained robots disallow list let /blog/_post-template ship live at 200
+# with 33 raw {{PLACEHOLDER}} tokens while robots.txt grants GPTBot Allow: /.
+# This refuses the deploy instead of relying on anyone remembering to add a path.
+python3 scripts/predeploy_check.py \
+  || die "structural precheck failed (see above) — an undeployable artifact is in the tree."
+ok "structural crawl-exclusion precheck passed"
+
 # 5. deploy a clean copy of committed state ---------------------------------
 STAGE=$(mktemp -d)
 trap 'rm -rf "$STAGE"' EXIT

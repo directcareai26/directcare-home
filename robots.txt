@@ -13,6 +13,10 @@ Disallow: /hero-collage
 Disallow: /trt-preview
 Disallow: /index-legacy-2026-05-21
 
+# Unrendered page template — ships placeholders, not content. Excluded from
+# deploy via .vercelignore; listed here so any crawler that saw it drops it.
+Disallow: /blog/_post-template
+
 # ---------------------------------------------------------------------------
 # Content Signals — our stated preference for how this content may be used.
 # Syntax: https://contentsignals.org  (Cloudflare, 2025). A declaration of

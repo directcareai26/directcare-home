@@ -17,9 +17,6 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
-<script src="/js/dc-signal.js?v=20260911" defer></script>
-<script src="/js/dc-webmcp.js?v=20260914" defer></script>
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -266,7 +263,7 @@ footer .tiny{max-width:78ch}
 (function(){
   var V = document.body.dataset.variant;
   var dl = function(ev, extra){ window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({event:ev, variant:V, product:'weight-loss', category:'Weight loss'}, extra||{})); };
+    window.dataLayer.push(Object.assign({event:ev, variant:V}, extra||{})); };
   dl('lp_view');
 
   // sticky CTA appears once the hero is behind you
@@ -299,14 +296,6 @@ footer .tiny{max-width:78ch}
         answers: [] };
       fetch('/api/quiz-submit', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
         .catch(function(){});
-      // advanced matching: identify first so the Lead carries the parameters,
-      // then fire once — dcaTrack sends browser + server with one event_id.
-      try {
-        if (window.dcaIdentify) window.dcaIdentify({
-          em: email, ph: (fd.get('phone')||'').trim(), fn: (fd.get('first_name')||'').trim(), country: 'us'
-        });
-        if (window.dcaTrack) window.dcaTrack('Lead');
-      } catch(_e) {}
       dl('lead_captured');
       document.getElementById('capture').classList.add('hide');
       window.startIntake();
@@ -357,6 +346,11 @@ footer .tiny{max-width:78ch}
   <div class="wrap">
     <img src="/logo-color.png" alt="DirectCare AI" style="width:150px;margin-bottom:14px">
     <p class="tiny">Compounded medications are not FDA-approved and have not been evaluated by the FDA for safety, effectiveness or quality. Prescription products require an online consultation; a US-licensed clinician decides whether treatment is appropriate for you, and not every protocol is appropriate for every patient. Not available in all states. Individual results vary. Weight loss varies from person to person and is not guaranteed. This program is intended to be used alongside diet and exercise.</p>
+    <p class="tiny"><b>Side effects.</b> If you have a side effect, stop and contact your clinician.
+      You can report it to us at <a href="mailto:support@directcare.ai">support@directcare.ai</a>, or to the
+      FDA at <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program"
+      target="_blank" rel="noopener noreferrer">MedWatch</a> or 1-800-FDA-1088. Tell your clinician if you are
+      pregnant, planning to become pregnant, or breastfeeding.</p>
     <p class="tiny"><a href="/privacy-policy">Privacy</a> &middot; <a href="/terms-and-conditions">Terms</a>
       &middot; DirectCare AI, 30 N Gould St, STE N, Sheridan, WY 82801</p>
   </div>

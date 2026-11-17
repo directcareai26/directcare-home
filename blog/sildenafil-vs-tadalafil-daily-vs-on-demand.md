@@ -21,7 +21,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  That's still how most PDE5 medication gets prescribed. It's not how it has to be used.
 
- Daily low-dose tadalafil (2.5 or 5 mg taken every day) has been FDA-approved for ED since 2008, and the cumulative data behind it now makes a strong case that for a meaningful slice of patients it's the better protocol — not just the more convenient one. Here's the clinical case, the trade-offs, and how to decide if it fits you.
+ Daily low-dose tadalafil (2.5 or 5 mg taken every day) has been [FDA-approved for ED since 2008](https://www.directcare.ai/erectile-dysfunction), and the cumulative data behind it now makes a strong case that for a meaningful slice of patients it's the better protocol — not just the more convenient one. Here's the clinical case, the trade-offs, and how to decide if it fits you.
 
 ### Quick refresher on the molecules
 

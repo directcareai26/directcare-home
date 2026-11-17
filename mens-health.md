@@ -34,7 +34,7 @@ Source: https://www.directcare.ai/mens-health
  For men with clinically low testosterone — confirmed by labs, prescribed by a provider.
  Learn more](https://www.directcare.ai/testosterone-replacement-therapy)
  [Sexual Health
- Surge Max, the 4-in-1 sublingual: sildenafil + tadalafil + vardenafil + apomorphine.
+ Surge Max, the 4-in-1 sublingual: sildenafil + tadalafil + citrulline + apomorphine.
  Provider prescribed.
  Learn more](https://www.directcare.ai/surge-max)
  [Hair Regrowth

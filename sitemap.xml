@@ -12,6 +12,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/hormone-replacement-therapy/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -27,9 +32,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/testosterone-replacement-therapy/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/weight-loss</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/weight-loss/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/surge-max</loc>
@@ -37,14 +52,29 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/surge-max/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/mens-hair-loss</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.directcare.ai/mens-hair-loss/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.directcare.ai/womans-hair-loss</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.directcare.ai/womans-hair-loss/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.directcare.ai/blood-test</loc>

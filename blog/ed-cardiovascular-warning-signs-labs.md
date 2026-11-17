@@ -15,7 +15,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
 ## ED as a Cardiovascular Warning: The Labs That Confirm It
 
- Erectile dysfunction often shows up 3-5 years before a cardiac event because penile arteries clog first. The right blood panel can tell you whether ED is a plumbing problem, a hormone problem, or an early warning about your heart.
+ [Erectile dysfunction](https://www.directcare.ai/erectile-dysfunction) often shows up 3-5 years before a cardiac event because penile arteries clog first. The right blood panel can tell you whether ED is a plumbing problem, a hormone problem, or an early warning about your heart.
 
  Erectile dysfunction can signal early cardiovascular disease because penile arteries, being smaller, show signs of blockage before larger coronary arteries. Key lab tests that confirm this include ApoB, hs-CRP, HbA1c, fasting insulin, and testosterone levels. These markers reveal vascular, metabolic, and hormonal issues underlying ED, helping distinguish between symptom relief and actual disease prevention.
 

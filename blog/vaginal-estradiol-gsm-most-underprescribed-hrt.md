@@ -39,7 +39,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  All of these tissues — vaginal, vulvar, urethral, bladder trigone — are estrogen-responsive. When estradiol drops in menopause, the tissue thins, blood flow decreases, the vaginal pH shifts, the local microbiome changes, and the cluster of symptoms shows up.
 
- Unlike hot flashes, which usually fade within 4–7 years, **GSM is progressive.** It doesn't go away on its own. Left untreated, it gets worse over time as the tissue continues to atrophy.
+ Unlike [hot flashes](https://www.directcare.ai/hormone-replacement-therapy/hot-flashes-and-night-sweats), which usually fade within 4–7 years, **GSM is progressive.** It doesn't go away on its own. Left untreated, it gets worse over time as the tissue continues to atrophy.
 
 ### Why systemic HRT often isn't enough.
 

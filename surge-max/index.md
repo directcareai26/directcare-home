@@ -1,6 +1,6 @@
 # ED Treatment Online — Surge Max 4-in-1 | DirectCare AI
 
-> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, vardenafil and apomorphine. Prescribed online, shipped discreetly.
+> Surge Max: a 4-in-1 sublingual combining sildenafil, tadalafil, citrulline and apomorphine. Prescribed online, shipped discreetly.
 
 Source: https://www.directcare.ai/surge-max
 
@@ -48,27 +48,21 @@ One Liquid Dose.
 
  The SURGE MAX Formula
 
- **Sildenafil 40 mg**
+ **Sildenafil**
  +
- **Tadalafil 11 mg**
+ **Tadalafil**
  +
- **Vardenafil 7.5 mg**
+ **Citrulline**
  +
- **Apomorphine 2 mg**
+ **Apomorphine**
 
  Sildenafil
- 40 mg
 
  Tadalafil
- 11 mg
 
- Vardenafil
- 7.5 mg
+ Citrulline
 
  Apomorphine
- 2 mg
-
- 40 mg
 
  Peak Strength
 
@@ -113,11 +107,11 @@ Your treatment shouldn't either.
 
  The Strength
 
-### Two PDE5s. Maximum response.
+### Two PDE5s. Full coverage.
 
- Vardenafil and Sildenafil are the two most potent PDE5 inhibitors ever studied. Together, they ensure rapid, reliable, full strength. Without the dropoff that ruins the moment.
+ Sildenafil brings the rapid onset; tadalafil holds the window open. Together they cover both speed and staying power, so the response does not fade early.
 
- Vardenafil
+ Tadalafil
  Sildenafil
  PDE5 Inhibition
 
@@ -300,13 +294,13 @@ Your treatment shouldn't either.
  Honest answers, before you start. Six of the questions we hear most. And what our team would tell you on a call.
 
  What is Surge Max?
- Surge Max is a compounded rapid-onset sublingual sexual health protocol combining four active ingredients: sildenafil, tadalafil, vardenafil, and apomorphine. It dissolves under the tongue for faster absorption (15-30 minutes) compared to oral tablets (30-60 minutes).
+ Surge Max is a compounded rapid-onset sublingual sexual health protocol combining four active ingredients: sildenafil, tadalafil, citrulline, and apomorphine. It dissolves under the tongue for faster absorption (15-30 minutes) compared to oral tablets (30-60 minutes).
 
  How does sublingual delivery work?
  Medication dissolved under the tongue absorbs directly into the bloodstream through capillaries in the oral mucosa, bypassing first-pass liver metabolism. This typically results in faster onset and slightly higher bioavailability than swallowed tablets.
 
  What's the difference between Surge Max and Viagra/Cialis?
- Viagra (sildenafil 25-100mg) and Cialis (tadalafil 5-20mg) are single-ingredient FDA-approved tablets. Surge Max combines four active ingredients at clinician-calibrated doses in a sublingual delivery format. The combination targets multiple pathways (PDE-5 inhibition + dopaminergic stimulation via apomorphine).
+ Viagra (sildenafil) and Cialis (tadalafil) are single-ingredient FDA-approved tablets. Surge Max combines four active ingredients at clinician-calibrated doses in a sublingual delivery format. The combination targets multiple pathways (PDE-5 inhibition, nitric-oxide support, and dopaminergic stimulation via apomorphine).
 
  How fast does Surge Max work?
  Most patients report effect within 15-30 minutes of dissolving under the tongue. Full effect typically peaks at 30-45 minutes and lasts 4-6 hours, depending on individual metabolism.
@@ -330,10 +324,10 @@ Your treatment shouldn't either.
  Often, yes. Sublingual delivery bypasses first-pass liver metabolism, achieving higher peak plasma levels at lower doses. The four-ingredient combination also targets pathways beyond PDE-5. If pure PDE-5 inhibition failed, the apomorphine component (which works on dopamine receptors in the brain) may make the difference.
 
  Can I take Surge Max daily?
- Surge Max is designed for as-needed use, not daily dosing. Daily PDE-5 inhibitor therapy (low-dose tadalafil 2.5-5mg daily) is a separate protocol that some patients prefer for spontaneity. Discuss with your clinician at intake which approach fits your lifestyle.
+ Surge Max is designed for as-needed use, not daily dosing. Daily PDE-5 inhibitor therapy (low-dose daily tadalafil) is a separate protocol that some patients prefer for spontaneity. Discuss with your clinician at intake which approach fits your lifestyle.
 
  Does Surge Max increase libido?
- The PDE-5 components (sildenafil, tadalafil, vardenafil) do not increase libido — they enable an erectile response when libido is already present. The apomorphine component works on central dopaminergic pathways and may modestly enhance arousal in some patients.
+ The PDE-5 components (sildenafil and tadalafil) do not increase libido — they enable an erectile response when libido is already present. The apomorphine component works on central dopaminergic pathways and may modestly enhance arousal in some patients.
 
  Can I take Surge Max with TRT?
  Yes. Many patients are on both. TRT addresses libido and morning erection quality (testosterone-dependent); Surge Max addresses the on-demand mechanical response. The two are complementary, not redundant.

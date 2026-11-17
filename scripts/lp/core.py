@@ -33,7 +33,7 @@ PLANS = [
     ("SURGE MAX", "10-pack", "$179", "$17.90 a dose",
      "The 4-in-1 rapid-absorb liquid. Absorbs in about 90 seconds, 36-hour window.", "surgemax"),
     ("Go Long", "12-pack", "$149", "$12.42 a dose",
-     "Silodosin + tadalafil troche, built for staying power.", "golong"),
+     "A dissolvable troche, built for staying power.", "golong"),
     ("Daily Boost", "28-pack", "$119", "$4.25 a day",
      "A low daily dose &mdash; readiness as the default rather than an event.", "dailyboost"),
 ]

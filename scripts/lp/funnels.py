@@ -16,6 +16,30 @@
 # and Google Ads/AdsBot must be able to fetch a landing page or the ad is
 # disapproved. Crawlable + noindex is the correct combination.
 #
+# NO THIRD-PARTY AD PIXELS ON THESE PAGES — 2026-09-20. Deliberate, do not "fix".
+#
+# These pages carry GTM (GTM-N7ZG3PT8) and nothing else. dc-signal.js, dc-webmcp.js
+# and the Ahrefs tag were REMOVED, and the dataLayer push no longer carries
+# product/category. The reason is specific and survives a casual reading of the code:
+#
+#   The path IS the condition. /lp/trt/f1, /lp/hair-loss-women/f1. dc-signal.js sends
+#   origin+pathname to Meta as event_source_url and reports the page to TikTok via
+#   ttq.page() — its own header says to treat that as disclosed to both vendors. On
+#   the ORGANIC pages that is a considered trade. Here it was paired with
+#   dcaIdentify(em, ph, fn) on lead capture, so Meta received a named person joined
+#   to a health condition. That is the GoodRx/BetterHelp/Cerebral fact pattern and it
+#   is what a dca-risk-compliance review BLOCKED these pages on.
+#
+#   Note the earlier review located the leak in the dataLayer `category` key. That was
+#   wrong: GTM-N7ZG3PT8 contains no Meta, Pinterest or TikTok tags at all (verified
+#   2026-09-20 against the published container — only GA4 G-8D0RZ5YEDL, the Google
+#   tag and Google Ads enhanced conversions). `category` never reached an ad platform.
+#   dc-signal.js did, independently of GTM. Removing the script is the fix; removing
+#   `category` alone would have looked like a fix and changed nothing.
+#
+# Restoring either script re-opens the disclosure. If Meta measurement is ever needed
+# here, the answer is condition-neutral URLs, not putting dc-signal.js back.
+
 # Hard rule: NO prescription drug names and NO mg doses on these pages. Drug
 # names stay on the organic pages. Routes of administration (patch, cream,
 # injection, oral) are delivery formats, not drug names, and are allowed.
@@ -24,7 +48,9 @@
 
 import pathlib
 
-ROOT = pathlib.Path.home() / "directcare-home"
+# Derived from this file's location, not $HOME: running the generator from a git
+# worktree must not write into a different checkout of the repo.
+ROOT = pathlib.Path(__file__).resolve().parents[2]
 OUT = ROOT / "lp"
 IMG = "/optimized/%s-1200.webp"
 LOGO_D = "/logo-color.png"
@@ -202,7 +228,7 @@ SHELL_JS = r"""
 (function(){
   var V = document.body.dataset.variant;
   var dl = function(ev, extra){ window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(Object.assign({event:ev, variant:V, product:'__PRODUCT__', category:'__CATEGORY__'}, extra||{})); };
+    window.dataLayer.push(Object.assign({event:ev, variant:V}, extra||{})); };
   dl('lp_view');
 
   // sticky CTA appears once the hero is behind you
@@ -235,14 +261,6 @@ SHELL_JS = r"""
         answers: [] };
       fetch('/api/quiz-submit', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)})
         .catch(function(){});
-      // advanced matching: identify first so the Lead carries the parameters,
-      // then fire once — dcaTrack sends browser + server with one event_id.
-      try {
-        if (window.dcaIdentify) window.dcaIdentify({
-          em: email, ph: (fd.get('phone')||'').trim(), fn: (fd.get('first_name')||'').trim(), country: 'us'
-        });
-        if (window.dcaTrack) window.dcaTrack('Lead');
-      } catch(_e) {}
       dl('lead_captured');
       document.getElementById('capture').classList.add('hide');
       window.startIntake();
@@ -314,9 +332,6 @@ def head(p, angle, variant):
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
 <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png" />
-<script src="/js/dc-signal.js?v=20260911" defer></script>
-<script src="/js/dc-webmcp.js?v=20260914" defer></script>
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="PQ3GbQ0nkXYtYfgz9bywyA" async></script>
 <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});
 var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -424,9 +439,7 @@ def capture_block():
 
 
 def sticky_and_js(p):
-    js = (SHELL_JS.replace("__PRODUCT__", p["product"])
-                  .replace("__CATEGORY__", p["category"])
-                  .replace("__FUNNEL__", p["funnel"])
+    js = (SHELL_JS.replace("__FUNNEL__", p["funnel"])
                   .replace("__FORMID__", p["formid"]))
     return (f'<div class="sticky" id="stickyBar"><a class="cta" href="#intakeWrap" data-cta="sticky">'
             f'Check if I qualify &nbsp;&rarr;</a></div>\n<script>{js}</script>')
@@ -437,6 +450,11 @@ def footer(p):
   <div class="wrap">
     <img src="{LOGO_D}" alt="DirectCare AI" style="width:150px;margin-bottom:14px">
     <p class="tiny">{p['disclaimer']}</p>
+    <p class="tiny"><b>Side effects.</b> If you have a side effect, stop and contact your clinician.
+      You can report it to us at <a href="mailto:support@directcare.ai">support@directcare.ai</a>, or to the
+      FDA at <a href="https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program"
+      target="_blank" rel="noopener noreferrer">MedWatch</a> or 1-800-FDA-1088. Tell your clinician if you are
+      pregnant, planning to become pregnant, or breastfeeding.</p>
     <p class="tiny"><a href="/privacy-policy">Privacy</a> &middot; <a href="/terms-and-conditions">Terms</a>
       &middot; DirectCare AI, 30 N Gould St, STE N, Sheridan, WY 82801</p>
   </div>
@@ -780,6 +798,14 @@ HAIR_DISCLAIMER = (COMPOUNDED_LINE + CLINICIAN_LINE +
                    " Regrowth takes months, varies from person to person, and is not guaranteed; "
                    "treatment generally has to be continued to maintain any result.")
 
+# Women's hair-loss protocols carry a pregnancy contraindication that the men's do
+# not. Worded without naming a drug, because these pages name none. AWAITING
+# CLINICAL CONFIRMATION against the actual women's protocol (2026-09-20).
+HAIR_DISCLAIMER_WOMEN = (HAIR_DISCLAIMER +
+                   " Some hair-loss treatments can seriously harm a developing baby and must not be used "
+                   "if you are pregnant, may become pregnant, or are breastfeeding \u2014 tell your clinician "
+                   "before starting.")
+
 # ============================================================ HAIR LOSS (MEN) ==
 PRODUCTS += [{
  "slug": "hair-loss-men",
@@ -919,7 +945,7 @@ PRODUCTS += [{
  "plans": HAIR_PLANS,
  "plans_note": ("Every plan includes your custom-compounded protocol, clinician care and free shipping. "
                 "Bloodwork is optional at $196 for the comprehensive panel. No membership fee."),
- "disclaimer": HAIR_DISCLAIMER,
+ "disclaimer": HAIR_DISCLAIMER_WOMEN,
  "angles": {
   "f1": {
     "title": "Women&rsquo;s hair loss — see if you qualify",

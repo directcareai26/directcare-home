@@ -60,7 +60,7 @@ Save up to 80% on prescriptions with the DirectCare Pharmacy Card. [Get yours fr
 
  Head-to-head, estradiol and bisphosphonates produce similar gains in bone mineral density over 2–3 years. But they aren't interchangeable.
 
- Estradiol works upstream — it addresses the cause of postmenopausal bone loss (estrogen deficiency). Bisphosphonates work downstream, poisoning osteoclasts to slow resorption after the fact. For a 52-year-old with hot flashes, sleep disruption, and early bone loss, estradiol treats the whole physiology. For a 78-year-old with established osteoporosis and no vasomotor symptoms, a bisphosphonate (or denosumab, or a bone anabolic like romosozumab) is usually the right tool.
+ Estradiol works upstream — it addresses the cause of postmenopausal bone loss (estrogen deficiency). Bisphosphonates work downstream, poisoning osteoclasts to slow resorption after the fact. For a 52-year-old with hot flashes, [sleep disruption](https://www.directcare.ai/hormone-replacement-therapy/trouble-sleeping), and early bone loss, estradiol treats the whole physiology. For a 78-year-old with established osteoporosis and no vasomotor symptoms, a bisphosphonate (or denosumab, or a bone anabolic like romosozumab) is usually the right tool.
 
  The two aren't mutually exclusive later in life, but the earlier decision — do we let the bone loss happen and clean up later, or do we prevent it — is where estradiol earns its place.
 

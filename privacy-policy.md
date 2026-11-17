@@ -8,7 +8,7 @@ Legal
 
 ## Privacy Policy
 
- Last Updated: November 11, 2026
+ Last Updated: November 17, 2026
 
  **PLEASE READ THIS PRIVACY POLICY CAREFULLY BEFORE USING OUR SERVICES OR WEBSITE.**
 
@@ -118,7 +118,7 @@ Legal
 
 - Healthcare providers and clinical partners (e.g., OpenLoop)
 
-- Device and data integrations (e.g., wearables)
+- Device and data integrations you connect (Apple Health, Health Connect and Oura)
 
 - Payment processors
 
@@ -132,19 +132,23 @@ Legal
 
  **Cycle tracking, daily check-ins and weekly recap (iPhone).** The daily check-in (mood, energy, sleep quality and anything bothering you) and the weekly recap are saved and worked out only on your iPhone. If you also turn on cycle tracking, the app reads the menstrual flow you choose to share from Apple Health and saves the periods, cycle symptoms and cycle notes you log on your iPhone. The app does not write any of this to Apple Health. We do not send any of it to our servers, including when the optional AI features in section 7 are on, and we never sell it or use it for advertising or marketing. Like other app data, it is included in backups of your iPhone that you make. Period and fertile-window dates are estimates worked out on your phone from your own entries. They are not medical advice and should not be used as birth control or to plan a pregnancy. You can turn cycle tracking off anytime in My Health › Devices. This deletes your logged period flow, cycle symptoms and cycle notes from the app. Your check-ins (mood, energy, sleep quality and anything bothering you) stay, and Apple Health is not changed. Deleting the app deletes all of this data from your iPhone.
 
- **Health Connect (Android).** If you turn on My Health on an Android phone, the app uses Health Connect to read the data you choose: steps, exercise sessions, active calories, distance, sleep, resting heart rate, heart rate variability, blood oxygen, weight, blood glucose and water. It writes only the water you log. We read this data only while you are using My Health, to show it to you and to build a PDF report on your phone when you ask for one. It stays on your phone: we do not send it to our servers unless you turn on the optional AI features in section 7, and then only weekly averages of steps, sleep and resting heart rate are sent, without your name or email. We never sell Health Connect data, never use it for advertising or marketing, never use it to train AI models, and never use it for credit, insurance or employment decisions. The de-identified and aggregated data uses described elsewhere in this policy do not apply to Health Connect data. You can see and change what DirectCare AI may read at any time in Health Connect › App permissions › DirectCare AI, and turning permissions off stops all reading. DirectCare AI’s use of information received from Health Connect adheres to the Health Connect Permissions policy, including the Limited Use requirements.
+ **Health Connect (Android).** If you turn on My Health on an Android phone, the app uses Health Connect to read the data you choose: steps, exercise sessions, active calories, distance, sleep, resting heart rate, heart rate variability, blood oxygen, weight, blood glucose and water. It writes only the water you log. We read this data only while you are using My Health, to show it to you and to build a PDF report on your phone when you ask for one. It stays on your phone: we do not send it to our servers unless you turn on the optional AI features in section 7, and then only the data described in section 7 is sent, without your name or email. We never sell Health Connect data, never use it for advertising or marketing, never use it to train AI models, and never use it for credit, insurance or employment decisions. The de-identified and aggregated data uses described elsewhere in this policy do not apply to Health Connect data. You can see and change what DirectCare AI may read at any time in Health Connect › App permissions › DirectCare AI, and turning permissions off stops all reading. DirectCare AI’s use of information received from Health Connect adheres to the Health Connect Permissions policy, including the Limited Use requirements.
 
 #### 7. AI Features in My Health (Optional)
 
- If you turn on AI features in My Health, we send what you choose to analyze to our service providers so they can analyze it for you. This includes a meal photo, a meal description or a barcode, and weekly summary numbers from Apple Health or Health Connect (such as average steps, sleep and resting heart rate). We do not send your name or email to the AI.
+ If you turn on AI features in My Health, we send what you choose to analyze to our service providers so they can analyze it for you. This includes a meal photo, a meal description or a barcode, and weekly summary numbers from Apple Health or Health Connect (such as average steps, sleep and resting heart rate). If you use the My Health AI chat, we also send your question, up to your last six messages, and the recent daily numbers shown in the chat’s consent screen (weight for 30 days; sleep, steps, exercise minutes, water and food-diary calories for 14 days). The chat never sends cycle tracking, check-in notes, heart rate or glucose. We do not send your name or email to the AI.
 
  **Who processes it:** Amazon Web Services (AWS) runs Anthropic’s Claude AI model for us in the United States, under a business associate agreement. Food nutrition facts come from the U.S. Department of Agriculture’s FoodData Central, which receives only food names or barcodes.
 
- **What we keep:** Meal photos are deleted right after analysis. We don’t store the analyzed data on our servers. Your food diary and health data stay on your phone. Your data is not used to train AI models and is not used for advertising or sold.
+ **What we keep:** Meal photos are deleted right after analysis. We don’t store the analyzed data on our servers. Your food diary and health data stay on your phone. Your data is not used to train AI models and is not used for advertising or sold. We keep a record that you agreed to the AI terms.
 
  **What AI does not do:** AI gives estimates and general education. It does not diagnose, treat, set calorie goals, or replace your care team.
 
  **Your choices:** AI features are off unless you turn them on. You can turn them off anytime in My Health › Devices › AI features, which stops all sending right away.
+
+#### 8. Oura Ring (iPhone)
+
+ If you connect an Oura Ring, you sign in on Oura’s own page and choose to share. Your Oura readiness, sleep score and daily stress go directly from Oura to your iPhone and are shown only to you. Our server helps complete the sign-in but does not store your Oura data or your Oura sign-in; your Oura access stays in your iPhone’s secure storage. We never use Oura data for advertising or marketing, never sell it, never use it to train AI models, and never send it to any AI feature, including the My Health AI chat. You can disconnect anytime in My Health › Devices, which removes access from your phone right away; you can also remove DirectCare AI’s access in your Oura account. If you ask us to delete your data, we delete any Oura data within 72 hours. Oura’s own privacy policy covers the data Oura keeps.
 
 ### III. How We Collect Information
 
